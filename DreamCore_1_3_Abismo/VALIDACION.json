@@ -1,0 +1,77 @@
+{
+  "version": "DreamCore 1.3",
+  "validation": {
+    "kotlin": "Kotlin 1.9.24 / JVM1.8 / API Android19 real; R IDs generados",
+    "shader": "OpenGL ES 2.0 Mesa25; escena y cielo compilan/enlazan",
+    "physics_checks": 36,
+    "radial_checks": 480,
+    "fall_framerates": [
+      20,
+      30,
+      60,
+      120
+    ],
+    "mesh": {
+      "vertices": 94830,
+      "triangles": 31610,
+      "bytes": 3793200
+    },
+    "apk_built": false,
+    "phone_tested": false,
+    "windows_installer_executed": false
+  },
+  "files": {
+    "Instalar_Windows.cmd": {
+      "bytes": 2183,
+      "sha256": "ebd510b060f03f731e444555396ade8b49893c7298f7a936bd623cb124d1cae7"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamAudio.kt": {
+      "bytes": 6141,
+      "sha256": "4b9cd2c3e25719a6867c88371c4b0843014a0dc0a4cce700babe685200da4af2"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCraterPhysics.kt": {
+      "bytes": 3082,
+      "sha256": "d2ee3ff67f5c9f82e31fe878ba02791c4499032dbd2a96782c3787cd0339606f"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamEglConfigChooser.kt": {
+      "bytes": 1205,
+      "sha256": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamRenderer.kt": {
+      "bytes": 25907,
+      "sha256": "9bb87b31e2bc82332241efd737256f0335d5e64a86fab3b4d1ba0acabd4648f4"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamShaders.kt": {
+      "bytes": 16011,
+      "sha256": "1749b300b37d58405ae631cbdbdc7f6b376e37fdbe46f961924dfde167356f54"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamTextures.kt": {
+      "bytes": 2456,
+      "sha256": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamWorlds.kt": {
+      "bytes": 65639,
+      "sha256": "837ed5ad5a4d06e25984343f6222174a9145fd51324d50b89c0f885666bf3a38"
+    },
+    "app/src/main/java/com/dreamcore/game/MainActivity.kt": {
+      "bytes": 15935,
+      "sha256": "51e262d6c364f2d5cae7567dce80cdf8f86a87dc45163e5aa6413d4fd703dc38"
+    },
+    "app/src/main/res/raw/layer_abyss_13.ogg": {
+      "bytes": 261749,
+      "sha256": "7b8b7037c19133849b1d2caed4d98553597682b5fdd7c7bb0d5eb2d442051128"
+    },
+    "app/src/main/res/raw/music_crater_13.ogg": {
+      "bytes": 510015,
+      "sha256": "741563ec53d514cbb86153c53b11b731f2c9cb959952eec2df36cda0258c91fa"
+    },
+    "tests/CraterPhysicsCheck.kt": {
+      "bytes": 3545,
+      "sha256": "bb4db74d4cf06649535573b55bae1ea9480b595541d09fc3154d38dd953e312c"
+    },
+    "tests/RadialFallCheck.kt": {
+      "bytes": 1758,
+      "sha256": "ca7fa6c7a993e3f5a6fce413a8b85e7f79b9464d9bf56f2d24d612ac1e7405a1"
+    }
+  }
+}

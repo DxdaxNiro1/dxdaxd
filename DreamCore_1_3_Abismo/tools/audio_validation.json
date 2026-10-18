@@ -1,0 +1,69 @@
+{
+  "music_crater_13.ogg": {
+    "source": {
+      "seconds": 64.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5963458,
+      "rms": 0.14,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00499883,
+      "interior_max_step": 0.03108303,
+      "interior_p99_step": 0.01424493,
+      "dc": [
+        -0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 64.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.608337,
+      "rms": 0.1399772,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00691272,
+      "interior_max_step": 0.03076213,
+      "interior_p99_step": 0.01427282,
+      "dc": [
+        -4.26e-06,
+        -1.15e-06
+      ]
+    },
+    "file_bytes": 510015
+  },
+  "layer_abyss_13.ogg": {
+    "source": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.3396762,
+      "rms": 0.085,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.0011051,
+      "interior_max_step": 0.0061224,
+      "interior_p99_step": 0.00347216,
+      "dc": [
+        -0.0,
+        0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.3431188,
+      "rms": 0.0848937,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00400783,
+      "interior_max_step": 0.00595172,
+      "interior_p99_step": 0.00345504,
+      "dc": [
+        1.866e-05,
+        1.27e-06
+      ]
+    },
+    "file_bytes": 261749
+  },
+  "note": "Signal checks do not replace listening on a real Android device."
+}
