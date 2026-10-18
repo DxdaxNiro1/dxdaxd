@@ -1,0 +1,19 @@
+DREAM CORE 1.2 — ACTUALIZACIÓN DEL CRÁTER
+Basado en el archivo Kotlin 1.1 enviado por el usuario.
+
+INSTALACIÓN
+1. Haz una copia de seguridad de tu proyecto en Android Studio.
+2. Sustituye DreamWorlds.kt y DreamRenderer.kt en app/src/main/java/com/dreamcore/game/ por los de este paquete. Si Android Studio los muestra en kotlin/, usa la ubicación de tus archivos existentes; no crees duplicados.
+3. Conserva todos los recursos, música y demás archivos originales.
+4. Ejecuta Build > Make Project y prueba en tu teléfono.
+5. Para Android el formato es APK (no PKG). Usa la opción de generar APK del menú Build; para publicar utiliza Generate Signed App Bundle / APK y tu propia clave.
+
+CAMBIOS
+Pozo de 180 unidades de profundidad (antes aprox. 59), paredes geométricas verticales, terreno circular sin triángulos cruzando la abertura, casas flotantes y fragmentos animados tipo glitch. Materiales del cráter menos contrastados. Portales e interior de la casa del borde conservados.
+
+LÍMITES
+Esta versión permite explorar el borde. Se bloquea caminar hacia el pozo: el motor original sigue la altura del terreno sin simular caída física, y permitir entrar causaría un descenso artificial. No hay descenso jugable ni pasarela hasta el fondo en esta entrega.
+No se incluyen APK, música ni texturas nuevas. No se ha compilado con Android SDK ni probado en GPU; requiere verificar compilación y apariencia en Android Studio. Mantén copias de los originales para volver atrás.
+
+PRUEBA EN DISPOSITIVO
+Entra al cráter desde la estación, recorre la boca, comprueba que no puedes cruzar el borde, mira las casas a distintas profundidades y los fragmentos animados. Entra y sal de la casa del borde y vuelve a la estación. Comprueba también que otro mundo conserva su apariencia. Mide fluidez y revisa Logcat ante errores.
