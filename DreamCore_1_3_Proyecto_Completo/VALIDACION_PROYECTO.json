@@ -1,0 +1,37 @@
+{
+  "project": "DreamCore",
+  "base_version": "1.3",
+  "source": "Codigo Kotlin1.1 proporcionado por el usuario +actualizacion1.3 +recursos del APK del usuario",
+  "toolchain": {
+    "gradle": "8.7",
+    "android_gradle_plugin": "8.5.2",
+    "kotlin": "1.9.24",
+    "compileSdk": 34,
+    "minSdk": 21,
+    "jvm_target": 17
+  },
+  "builds": {
+    "1.3": {
+      "assembleDebug": "passed",
+      "apk_signature": "verified",
+      "apk_bytes": 8327510,
+      "apk_sha256": "8fbce2d77979c00cfc319d23a26a8d14202c98884d2429a4ea5c111bb97e6a6a"
+    },
+    "1.4": {
+      "assembleDebug": "passed",
+      "apk_signature": "verified",
+      "apk_bytes": 12248173,
+      "apk_sha256": "901d93538bc0f7ae63e4d1e972655fd4431f974c1253d3aaf58acf61a8fe3c7c"
+    }
+  },
+  "tested_on_phone": false,
+  "windows_studio_tested": false,
+  "wrapper_jar_sha256": "cb0da6751c2b753a16ac168bb354870ebb1e162e9083f116729cec9c781156b8",
+  "excluded": [
+    "local.properties",
+    "SDK",
+    "build outputs",
+    "Gradle caches",
+    "signing keys"
+  ]
+}
