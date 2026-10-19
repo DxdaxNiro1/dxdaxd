@@ -1,0 +1,95 @@
+{
+  "version": "1.6",
+  "version_code": 16,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_sha256": "d9b74705654215c5b2f76140bf704b4858db0be4f5207455391bbff19593d8b8",
+  "apk_bytes": 14106002,
+  "compiler": "Kotlin 1.9.24 / AGP 8.5.2 / Gradle 8.7 / SDK 34",
+  "checks": {
+    "journey_geometry_exploration_chunks": 646,
+    "crater_physics": 36,
+    "radial_falls_routes": 480,
+    "total": 1162
+  },
+  "first_two_world_meshes_identical_to_1_5": true,
+  "dark_geometry_preserved": true,
+  "shaders": {
+    "EGL": "1.5",
+    "GL_VERSION": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "GL_RENDERER": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "programs": [
+      {
+        "pair": "scene",
+        "linked": true,
+        "log": ""
+      },
+      {
+        "pair": "sky",
+        "linked": true,
+        "log": ""
+      }
+    ]
+  },
+  "mediump_fallback_shaders": {
+    "EGL": "1.5",
+    "GL_VERSION": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "GL_RENDERER": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "programs": [
+      {
+        "pair": "scene",
+        "linked": true,
+        "log": ""
+      },
+      {
+        "pair": "sky",
+        "linked": true,
+        "log": ""
+      }
+    ]
+  },
+  "rendered_views": 13,
+  "mirror_framebuffer_render_verified": true,
+  "audio": {
+    "new_original_world_scores": 13,
+    "synthesized_environment_loops": 4,
+    "synthesized_short_effects": 6,
+    "decoded_ogg_files_checked": 23,
+    "clipped_samples": 0
+  },
+  "device_execution_tested": false,
+  "phone_fps_measured": false,
+  "windows_installer_executed": false,
+  "source_and_changed_assets_identical_to_build": true,
+  "source_sha256": {
+    "DreamAudio.kt": "63cf532ac2af0bddaaf3dc21ea33d1410d60f76b4eb90622373d5398baaa1850",
+    "DreamChessMap.kt": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2",
+    "DreamChunks.kt": "69b746a34ba4cfdafc87dcce66b2d8d8d7ffcba6b50d51d5c8441ca2a8b63c94",
+    "DreamCloudMap.kt": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65",
+    "DreamCloudTexture.kt": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2",
+    "DreamCraterPhysics.kt": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb",
+    "DreamDarkMap.kt": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb",
+    "DreamEglConfigChooser.kt": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b",
+    "DreamExpansion.kt": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962",
+    "DreamExploration.kt": "d34ce8c89018f18d175fef6d894aafa5131f469d036c90c5c2ae78acbd154818",
+    "DreamFootsteps.kt": "3a019447acee188b46cc81a24a94f8116965c856535f5a5c3027270c4179c536",
+    "DreamJourney.kt": "c0260c5a694626a5b7b0c8cf0821be927fc31ee91cf094fe93b8def4c55f5b40",
+    "DreamLands.kt": "30c19cc31434f7f92075b18633a09aadc4463c5280393e8bc537f38617983442",
+    "DreamMesh.kt": "177974e576329f69c7c65c441dbce4564507490c20770e7dca2e7101c64a89f0",
+    "DreamMoonTexture.kt": "e5a3427cb69ed96909c3787bee6550c37ef85d44f090817b1df40c37d5c343d3",
+    "DreamRenderer.kt": "154cd4e527c2e5af7b62bf8e88c9c3a2d4b3d45a1c7fb3f1a91bcf315fe46abb",
+    "DreamRoadMap.kt": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f",
+    "DreamShaders.kt": "e202fecb6dacb3bd65e899da2f42001efc1edb21ef4c8db6535d3495434dbbd3",
+    "DreamTextures.kt": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e",
+    "DreamTunnelMap.kt": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424",
+    "DreamWorlds.kt": "8850997b343487dc8240aa93fcb29e5d2d67f4314728da5bb12918c0c358588b",
+    "MainActivity.kt": "67a10b2a6b812ae8a46ea761b0024cbe884e449089c39fb2e59718f2bb5c8b3b"
+  },
+  "limitations": [
+    "Finite worlds with distant fog; not infinite procedural streaming",
+    "Approximate contact shading and local light spill, no dynamic shadow maps",
+    "Planar reflections near four mirrors, at most 10 updates/sec; no recursive mirrors or player body",
+    "Layered textured clouds; not volumetric photorealism",
+    "Discoveries persist within the session; no multiplayer"
+  ]
+}

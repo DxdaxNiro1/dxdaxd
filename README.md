@@ -1,25 +1,31 @@
-# DreamCore 1.5 — Umbrales y lunas dormidas
+# DreamCore 1.6 — Sueños sin medida
 
-[**Descargar actualización 1.5 para tu proyecto actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_5_Umbrales.zip)
+[**Descargar actualización 1.6 para tu proyecto actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_6_Suenos.zip)
 
-[**Descargar proyecto completo 1.5 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_5_Proyecto_Completo.zip)
+[**Descargar proyecto completo 1.6 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_6_Proyecto_Completo.zip)
 
-Al comenzar hay dos portales: **Dreamcore a la izquierda y Dark Fantasy a la derecha**. Dreamcore recorre sus once etapas una tras otra, desde las piscinas y el hoyo hasta una puerta final. Las entradas permiten volver a la etapa anterior.
+La piscina y el hoyo conservan su geometría y su lugar como etapas 1 y 2. Se reconstruyeron los nueve mundos siguientes: valle de agua, invernadero estelar, pueblo, casa cambiante, mar suspendido, ajedrez, hotel, carretera nocturna y estación final. Dreamcore sigue conectado de uno en uno, y Dark Fantasy conserva su portal independiente y sus lunas.
 
-El hoyo conserva 180 m de profundidad, ahora con paredes verdes y 23 repisas circulares inspiradas en la referencia del usuario. La casa central continúa hacia los túneles; al regresar apareces en la isla.
+Los exteriores renovados tienen unos 760 × 775 m transitables. El pueblo tiene 73 casas con interiores sencillos, jardines, calles, relieve suave y columpios. Una casa pequeña lleva a una piscina imposible de otra escala y permite volver al pueblo. Hay 23 descubrimientos, puertas ocultas, sonidos lejanos, una figura que reacciona a la mirada, ventanas que cambian al regresar y orientación hacia el siguiente umbral.
 
-Dark Fantasy es una experiencia aparte con catedral, bosque, jardines inundados, figuras de piedra, una luna con rostro esculpido y otra en fase parcial. Tiene música ambiental original propia y regreso al Umbral. Sus figuras son esculturas; todavía no hay IA de enemigos o multijugador.
+Cuatro espejos reflejan la escena con una cámara reflejada. Nubes en dos capas con vientos independientes, grandes masas en pueblo/hotel, estrellas que titilan y cuerpos luminosos que se desplazan en ciertos mapas. Luz leve en el suelo y carga de geometría cercana por zonas. Los mundos son finitos y el estilo es procedural y onírico.
 
-El proyecto completo puede abrirse directamente mediante Android Studio → Open → carpeta DreamCore. El paquete de actualización incluye instalador Windows con copia de seguridad y alternativa manual. [Instrucciones y recorrido](DreamCore_1_5_Umbrales/LEEME.md).
+13 temas musicales nuevos y originales con frases, notas, instrumentos y pausas diferentes. Fundidos entre mundos, capas ambientales por zona, pasos de hierba/madera/piedra/baldosa/agua y ecos interiores. No se extrajo música de los videos.
 
-Compilación real de APK 1.5 y firma verificadas. Pasaron 774 comprobaciones de geometría, rutas y física; shaders y vistas reales en GLES2/Mesa. La música se comprobó numéricamente. Falta la prueba en teléfono y del instalador en Windows.
+**Proyecto completo:** Android Studio → Open → carpeta DreamCore (donde está settings.gradle.kts). **Actualización:** extraer todo y ejecutar Instalar_Windows.cmd, que respalda los archivos antes de copiar. [Instrucciones, ruta y límites](DreamCore_1_6_Suenos/LEEME.md).
 
-## Vistas renderizadas con los mapas y shaders reales
+APK real 1.6 compilado; firma, versión y recursos verificados. Pasaron **1.162 comprobaciones** de rutas, exploración, mallas y física; shaders y 13 vistas en GLES2/Mesa, incluyendo un pase de reflexión. Se comprobaron 23 archivos OGG decodificados sin clipping. Falta probar la ejecución y el rendimiento en teléfono y el instalador en Windows. [Validación](DreamCore_1_6_Suenos/VALIDACION.json).
 
-![Dark Fantasy](DreamCore_1_5_Umbrales/vistas/dark_fantasy.png)
+## Vistas con geometría y shaders reales
 
-![Hoyo verde](DreamCore_1_5_Umbrales/vistas/hoyo_verde.png)
+Son renders sin HUD hechos en la nube; no capturas del teléfono.
 
-![El Umbral](DreamCore_1_5_Umbrales/vistas/umbral.png)
+![El pueblo](DreamCore_1_6_Suenos/vistas/pueblo.png)
 
-Los archivos de las versiones 1.2, 1.3 y 1.4 se conservan en el repositorio. [Proyecto base 1.3 completo](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_3_Proyecto_Completo.zip).
+![Invernadero](DreamCore_1_6_Suenos/vistas/invernadero.png)
+
+![Piscina imposible](DreamCore_1_6_Suenos/vistas/piscina_imposible.png)
+
+![Presencia](DreamCore_1_6_Suenos/vistas/presencia.png)
+
+Las versiones anteriores se conservan en el repositorio, incluida [la 1.5 completa](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_5_Proyecto_Completo.zip).
