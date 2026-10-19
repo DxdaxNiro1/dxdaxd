@@ -1,0 +1,187 @@
+{
+  "version": "DreamCore 1.4",
+  "worlds": 12,
+  "new_worlds": [
+    "dream_09",
+    "dream_10",
+    "dream_11",
+    "dream_12"
+  ],
+  "checks": {
+    "kotlin": "Kotlin1.9.24/JVM1.8 contra Android API19 real; solo R generado",
+    "crater_checks": 36,
+    "radial_checks": 480,
+    "expansion_checks": 54,
+    "floor_support_points": 524,
+    "audio_state_checks": 44,
+    "shader": "escena y cielo compilan y enlazan; 6 vistas GLES2/Mesa sin errores",
+    "apk_built": false,
+    "phone_tested": false,
+    "windows_installer_executed": false
+  },
+  "geometry_triangles": {
+    "chess": 34804,
+    "tunnels": 34782,
+    "cloud_hotel": 24908,
+    "road": 21738,
+    "crater": 31610
+  },
+  "files": {
+    "Instalar_Windows.cmd": {
+      "bytes": 2442,
+      "sha256": "3cabab77ffd80047c2ab6a17cefaf1014b475231e673433ccdfe831c4e2fdc63"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamAudio.kt": {
+      "bytes": 7187,
+      "sha256": "4d4700061f3be3d939380da657c4ddb30309544d8d1e4eb49455f0df7f82e9e5"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamChessMap.kt": {
+      "bytes": 15616,
+      "sha256": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCloudMap.kt": {
+      "bytes": 10075,
+      "sha256": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCloudTexture.kt": {
+      "bytes": 1878,
+      "sha256": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCraterPhysics.kt": {
+      "bytes": 3082,
+      "sha256": "d2ee3ff67f5c9f82e31fe878ba02791c4499032dbd2a96782c3787cd0339606f"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamEglConfigChooser.kt": {
+      "bytes": 1205,
+      "sha256": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamExpansion.kt": {
+      "bytes": 5946,
+      "sha256": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamMesh.kt": {
+      "bytes": 4342,
+      "sha256": "177974e576329f69c7c65c441dbce4564507490c20770e7dca2e7101c64a89f0"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamRenderer.kt": {
+      "bytes": 27389,
+      "sha256": "6304844047321ffcb6801fc380fed58244be013a87fbd1995fdda20d952a5ed7"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamRoadMap.kt": {
+      "bytes": 13102,
+      "sha256": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamShaders.kt": {
+      "bytes": 20382,
+      "sha256": "04a4b8887689424606a0598463a3092b8341f8fd57819e91a9ae93ea882d224c"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamTextures.kt": {
+      "bytes": 2456,
+      "sha256": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamTunnelMap.kt": {
+      "bytes": 16560,
+      "sha256": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamWorlds.kt": {
+      "bytes": 65791,
+      "sha256": "8c8f1ae8af5874bea14717e719b4f703875015668f8aa63cc6b8ab7e24c48585"
+    },
+    "app/src/main/java/com/dreamcore/game/MainActivity.kt": {
+      "bytes": 14982,
+      "sha256": "101b1fc7005b1750577eaf0b11cb9acd94bbf28aebb4d0e456a773d64a8301bf"
+    },
+    "app/src/main/res/drawable-nodpi/dream_cloud_density.png": {
+      "bytes": 597580,
+      "sha256": "133fac221a98b0da12bd4d57a44156695ca8cfb893eb99af63701272c2ee56a8"
+    },
+    "app/src/main/res/raw/layer_abyss_13.ogg": {
+      "bytes": 261749,
+      "sha256": "7b8b7037c19133849b1d2caed4d98553597682b5fdd7c7bb0d5eb2d442051128"
+    },
+    "app/src/main/res/raw/music_aquarium_14.ogg": {
+      "bytes": 286748,
+      "sha256": "29e4a4898e27a26df2f786461d0d139fcbea434b92656bb544a7213ea534d686"
+    },
+    "app/src/main/res/raw/music_chess_14.ogg": {
+      "bytes": 274769,
+      "sha256": "a489a9857d39d3b820a5b83f7bef641bf849092f0e96a53789eaede2781729d6"
+    },
+    "app/src/main/res/raw/music_cloud_hotel_14.ogg": {
+      "bytes": 323429,
+      "sha256": "4053fb05fb7ec259f95ff1189e75a6a5fae52121c1359d73961b54895baea6a4"
+    },
+    "app/src/main/res/raw/music_crater_14.ogg": {
+      "bytes": 274871,
+      "sha256": "1373b8a70414d8bdc0ededdee61a0e102fc1cce2327a9e126c794c4ef3f02605"
+    },
+    "app/src/main/res/raw/music_garden_14.ogg": {
+      "bytes": 291107,
+      "sha256": "0791954b837d98e556320bf8221d22acc7bb0c1e486a033aa3cfd337f67c0c2e"
+    },
+    "app/src/main/res/raw/music_house_crater_14.ogg": {
+      "bytes": 175100,
+      "sha256": "71a979f52a7d06fc3d8870584c694a4afb8661fe7b9dfdd7bd4a5b41eee6ba38"
+    },
+    "app/src/main/res/raw/music_house_meadow_14.ogg": {
+      "bytes": 188253,
+      "sha256": "15839e9f32cccd763e072ba0adaa633c29a5b01e80ad3a7c62fb0ed344ebfa93"
+    },
+    "app/src/main/res/raw/music_meadow_14.ogg": {
+      "bytes": 316977,
+      "sha256": "31eec9eafdb60ab6ee704056da6c7323e890bd8d5c6e3b8764efab489865c0c3"
+    },
+    "app/src/main/res/raw/music_pools_14.ogg": {
+      "bytes": 334515,
+      "sha256": "d3baf9c95857553e9842af5bcf7190bc9e47a6ff4ad37d54a8444ff4c530a0ad"
+    },
+    "app/src/main/res/raw/music_road_14.ogg": {
+      "bytes": 285116,
+      "sha256": "e3570c57817388f3d48348bea19b28545a3189e3094cb3c86ae2be624b0a2b41"
+    },
+    "app/src/main/res/raw/music_station_14.ogg": {
+      "bytes": 282062,
+      "sha256": "dac2857d120adfe63c749ce07ca48aeb03e86b13b7892d5d2c23a3bf15ccabc9"
+    },
+    "app/src/main/res/raw/music_tunnels_14.ogg": {
+      "bytes": 240537,
+      "sha256": "ab40b8998e5c04464d19692d3a9e9920152114e7ab0bfcdf1aed5a84cb70cf8a"
+    },
+    "tests/CraterPhysicsCheck.kt": {
+      "bytes": 3545,
+      "sha256": "bb4db74d4cf06649535573b55bae1ea9480b595541d09fc3154d38dd953e312c"
+    },
+    "tests/ExpansionValidation.kt": {
+      "bytes": 6224,
+      "sha256": "316bdcbe9be360f44778e9e45c77e892e5b1c617aadfee21ed4075e50de142a6"
+    },
+    "tests/RadialFallCheck.kt": {
+      "bytes": 1758,
+      "sha256": "ca7fa6c7a993e3f5a6fce413a8b85e7f79b9464d9bf56f2d24d612ac1e7405a1"
+    },
+    "vistas/abismo.png": {
+      "bytes": 382850,
+      "sha256": "9ebde4523f1cf49662af186bda98a993225bb7fdfc5271385fd5481bfbd1169a"
+    },
+    "vistas/ajedrez.png": {
+      "bytes": 254907,
+      "sha256": "7c46c0dbbc3f9e4824f388032f018086e9f1117e8ecdb0f616942f615b5a9c51"
+    },
+    "vistas/carretera.png": {
+      "bytes": 201987,
+      "sha256": "cbb82ce901e8e07db0d172abe604a6d7048b73b708194617042e9ff90c6287b5"
+    },
+    "vistas/estacion.png": {
+      "bytes": 423526,
+      "sha256": "ad2405d3ad53ef41cbf1313a3a37005960b8718052f3deea6d24a1e9843b4558"
+    },
+    "vistas/hotel.png": {
+      "bytes": 247154,
+      "sha256": "3baad500936c9a2ddc47e1f07c643b6820853de0af40c79a2d352bb271b41136"
+    },
+    "vistas/tuneles.png": {
+      "bytes": 241934,
+      "sha256": "4baf69ff65bebf12e2fe67edb8e37c93d2f63a77d8daa7fecfd75eb983c86c0f"
+    }
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "music_station_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5590593,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00011132,
+      "interior_max_step": 0.03128056,
+      "interior_p99_step": 0.01502145,
+      "dc": [
+        0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5612055,
+      "rms": 0.1253891,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00649526,
+      "interior_max_step": 0.03161208,
+      "interior_p99_step": 0.01507418,
+      "dc": [
+        -1e-08,
+        -6e-08
+      ]
+    },
+    "file_bytes": 282062,
+    "description": "Estación: teclas de juguete lejanas, acorde mayor cálido y pausas largas.",
+    "timbre": "toy_keys",
+    "sha256": "dac2857d120adfe63c749ce07ca48aeb03e86b13b7892d5d2c23a3bf15ccabc9"
+  },
+  "music_pools_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5789481,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 5.326e-05,
+      "interior_max_step": 0.05665511,
+      "interior_p99_step": 0.02615818,
+      "dc": [
+        0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5839925,
+      "rms": 0.1254471,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00384602,
+      "interior_max_step": 0.05743273,
+      "interior_p99_step": 0.02627197,
+      "dc": [
+        1e-07,
+        3.2e-07
+      ]
+    },
+    "file_bytes": 334515,
+    "description": "Piscinas: gotas de cristal, quintas abiertas y ecos alternados.",
+    "timbre": "glass",
+    "sha256": "d3baf9c95857553e9842af5bcf7190bc9e47a6ff4ad37d54a8444ff4c530a0ad"
+  },
+  "music_crater_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.4948953,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 7.582e-05,
+      "interior_max_step": 0.0150967,
+      "interior_p99_step": 0.00904215,
+      "dc": [
+        0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.4970641,
+      "rms": 0.1251956,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00270916,
+      "interior_max_step": 0.01516327,
+      "interior_p99_step": 0.00907559,
+      "dc": [
+        -7.46e-06,
+        -2.865e-05
+      ]
+    },
+    "file_bytes": 274871,
+    "description": "Abismo: registro grave, acordes suspendidos y cuatro campanas solitarias.",
+    "timbre": "celesta",
+    "sha256": "1373b8a70414d8bdc0ededdee61a0e102fc1cce2327a9e126c794c4ef3f02605"
+  },
+  "music_garden_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.6463441,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 2.817e-05,
+      "interior_max_step": 0.06807781,
+      "interior_p99_step": 0.02320312,
+      "dc": [
+        -0.0,
+        0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.6430082,
+      "rms": 0.1254047,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00434183,
+      "interior_max_step": 0.06843637,
+      "interior_p99_step": 0.02331591,
+      "dc": [
+        4.7e-07,
+        2e-07
+      ]
+    },
+    "file_bytes": 291107,
+    "description": "Jardín: arpegios de cuerda sintética suaves y armonía luminosa.",
+    "timbre": "plucked",
+    "sha256": "0791954b837d98e556320bf8221d22acc7bb0c1e486a033aa3cfd337f67c0c2e"
+  },
+  "music_meadow_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5110773,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 4.246e-05,
+      "interior_max_step": 0.03041253,
+      "interior_p99_step": 0.01550683,
+      "dc": [
+        -0.0,
+        0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5098204,
+      "rms": 0.1253828,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00271024,
+      "interior_max_step": 0.03037161,
+      "interior_p99_step": 0.01555789,
+      "dc": [
+        -3e-08,
+        -5e-08
+      ]
+    },
+    "file_bytes": 316977,
+    "description": "Pradera: voz de aire sin palabras y cambios mayores amplios.",
+    "timbre": "flute",
+    "sha256": "31eec9eafdb60ab6ee704056da6c7323e890bd8d5c6e3b8764efab489865c0c3"
+  },
+  "music_aquarium_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5427102,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 8.724e-05,
+      "interior_max_step": 0.02213012,
+      "interior_p99_step": 0.01154297,
+      "dc": [
+        -0.0,
+        0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5471976,
+      "rms": 0.1251247,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00599683,
+      "interior_max_step": 0.02223645,
+      "interior_p99_step": 0.01158392,
+      "dc": [
+        4.09e-06,
+        4.96e-06
+      ]
+    },
+    "file_bytes": 286748,
+    "description": "Acuario: vidrio grave, acordes menores lentos y reverberación oscura.",
+    "timbre": "glass_low",
+    "sha256": "29e4a4898e27a26df2f786461d0d139fcbea434b92656bb544a7213ea534d686"
+  },
+  "music_house_meadow_14.ogg": {
+    "source": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5799792,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 3.728e-05,
+      "interior_max_step": 0.04448891,
+      "interior_p99_step": 0.02128128,
+      "dc": [
+        -0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5825564,
+      "rms": 0.1254231,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00538283,
+      "interior_max_step": 0.04464993,
+      "interior_p99_step": 0.02138631,
+      "dc": [
+        6e-08,
+        -4.2e-07
+      ]
+    },
+    "file_bytes": 188253,
+    "description": "Casa de la pradera: piano íntimo, memoria tranquila y notas descendentes.",
+    "timbre": "piano",
+    "sha256": "15839e9f32cccd763e072ba0adaa633c29a5b01e80ad3a7c62fb0ed344ebfa93"
+  },
+  "music_house_crater_14.ogg": {
+    "source": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.529035,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 3.337e-05,
+      "interior_max_step": 0.02466778,
+      "interior_p99_step": 0.01040399,
+      "dc": [
+        0.0,
+        0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5337136,
+      "rms": 0.1251759,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00080804,
+      "interior_max_step": 0.02475215,
+      "interior_p99_step": 0.01043302,
+      "dc": [
+        2.62e-06,
+        1.7e-07
+      ]
+    },
+    "file_bytes": 175100,
+    "description": "Casa del abismo: piano de fieltro grave, silencios y armonía melancólica.",
+    "timbre": "felt_low",
+    "sha256": "71a979f52a7d06fc3d8870584c694a4afb8661fe7b9dfdd7bd4a5b41eee6ba38"
+  },
+  "music_chess_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5855168,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 7.223e-05,
+      "interior_max_step": 0.0348469,
+      "interior_p99_step": 0.0161394,
+      "dc": [
+        -0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5912785,
+      "rms": 0.1252854,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00175744,
+      "interior_max_step": 0.03553965,
+      "interior_p99_step": 0.01621532,
+      "dc": [
+        -3.28e-06,
+        -1.7e-07
+      ]
+    },
+    "file_bytes": 274769,
+    "description": "Ajedrez: celesta solitaria y acordes monumentales, sin percusión.",
+    "timbre": "celesta",
+    "sha256": "a489a9857d39d3b820a5b83f7bef641bf849092f0e96a53789eaede2781729d6"
+  },
+  "music_tunnels_14.ogg": {
+    "source": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5892203,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00010266,
+      "interior_max_step": 0.06034975,
+      "interior_p99_step": 0.02961697,
+      "dc": [
+        -0.0,
+        0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 32.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.598286,
+      "rms": 0.1254212,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00397305,
+      "interior_max_step": 0.06109827,
+      "interior_p99_step": 0.02975482,
+      "dc": [
+        -6.3e-07,
+        1.21e-06
+      ]
+    },
+    "file_bytes": 240537,
+    "description": "Túneles: notas acuáticas irregulares y cristal con eco corto.",
+    "timbre": "glass",
+    "sha256": "ab40b8998e5c04464d19692d3a9e9920152114e7ab0bfcdf1aed5a84cb70cf8a"
+  },
+  "music_cloud_hotel_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5236756,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 7.17e-05,
+      "interior_max_step": 0.03505795,
+      "interior_p99_step": 0.01636524,
+      "dc": [
+        0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5196655,
+      "rms": 0.1253557,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00410914,
+      "interior_max_step": 0.03528944,
+      "interior_p99_step": 0.01641073,
+      "dc": [
+        2.3e-07,
+        1.1e-07
+      ]
+    },
+    "file_bytes": 323429,
+    "description": "Hotel de nubes: sintetizador cálido desafinado y melodía suspendida.",
+    "timbre": "tape",
+    "sha256": "4053fb05fb7ec259f95ff1189e75a6a5fae52121c1359d73961b54895baea6a4"
+  },
+  "music_road_14.ogg": {
+    "source": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.578195,
+      "rms": 0.125,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 7.873e-05,
+      "interior_max_step": 0.05394844,
+      "interior_p99_step": 0.02407507,
+      "dc": [
+        0.0,
+        -0.0
+      ]
+    },
+    "decoded_ogg": {
+      "seconds": 48.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.5817505,
+      "rms": 0.1254104,
+      "clipped_samples": 0,
+      "loop_boundary_max_step": 0.00462364,
+      "interior_max_step": 0.05432659,
+      "interior_p99_step": 0.0241996,
+      "dc": [
+        9.4e-07,
+        6e-07
+      ]
+    },
+    "file_bytes": 285116,
+    "description": "Carretera: piano nostálgico en arpegios y un fondo de cinta tenue.",
+    "timbre": "piano",
+    "sha256": "e3570c57817388f3d48348bea19b28545a3189e3094cb3c86ae2be624b0a2b41"
+  }
+}
