@@ -1,0 +1,232 @@
+{
+  "music_station_16": {
+    "description": "glass, choir; 44s; 4 main events; tonic MIDI 57",
+    "seconds": 44.0,
+    "peak": 0.5775361061096191,
+    "rms": 0.09549255669116974,
+    "seam": 3.5470915463520214e-05,
+    "clipped": 0,
+    "sha256": "bbad6bba5d8b6cb576a63698fb33338455d795b65333850a4adcc249a06fd2fc",
+    "bytes": 288795
+  },
+  "music_pools_16": {
+    "description": "glass, flute; 54s; 5 main events; tonic MIDI 62",
+    "seconds": 54.0,
+    "peak": 0.6105385422706604,
+    "rms": 0.09547766298055649,
+    "seam": 2.243007838842459e-05,
+    "clipped": 0,
+    "sha256": "c1ac1ac316de74c7a32bc1c27fb25245abff9fb0c7d99b3ab2f0a661124fdb05",
+    "bytes": 344625
+  },
+  "music_crater_16": {
+    "description": "choir, glass; 64s; 4 main events; tonic MIDI 38",
+    "seconds": 64.0,
+    "peak": 0.5111433863639832,
+    "rms": 0.08021412789821625,
+    "seam": 3.046480742341373e-06,
+    "clipped": 0,
+    "sha256": "4c5b337eebe631a2cd668c9a0412b76689dfa9b76ed9b869edd95d2e95ef0c42",
+    "bytes": 520164
+  },
+  "music_tunnels_16": {
+    "description": "flute, harp; 47s; 6 main events; tonic MIDI 55",
+    "seconds": 47.0,
+    "peak": 0.3906286656856537,
+    "rms": 0.09548977017402649,
+    "seam": 2.0115909137530252e-05,
+    "clipped": 0,
+    "sha256": "d9e38402bcdd7da5abbb945eb44015541af859520fb6aaa7e2c0396bf78992d6",
+    "bytes": 289194
+  },
+  "music_garden_16": {
+    "description": "harp, glass; 58s; 7 main events; tonic MIDI 60",
+    "seconds": 58.0,
+    "peak": 0.6054338216781616,
+    "rms": 0.08496206998825073,
+    "seam": 1.369824713037815e-05,
+    "clipped": 0,
+    "sha256": "65a507737851d9e0c4a1aea412b5dae45bd90fdefdc4f8ce9d045369f919b9f1",
+    "bytes": 539293
+  },
+  "music_meadow_16": {
+    "description": "piano, flute; 63s; 8 main events; tonic MIDI 57",
+    "seconds": 63.0,
+    "peak": 0.606467068195343,
+    "rms": 0.08095020055770874,
+    "seam": 5.860964301973581e-05,
+    "clipped": 0,
+    "sha256": "5636b8e01efc959684de6b9ddd54bc49e3aabff42d3df8f858082578bc5d956d",
+    "bytes": 450740
+  },
+  "music_house_meadow_16": {
+    "description": "piano, glass; 52s; 4 main events; tonic MIDI 53",
+    "seconds": 52.0,
+    "peak": 0.6157466769218445,
+    "rms": 0.08868774026632309,
+    "seam": 1.98884736164473e-05,
+    "clipped": 0,
+    "sha256": "240e46bdfd216342b914853de139610703a1f8bbe1242bd105578b1dce16aa41",
+    "bytes": 418420
+  },
+  "music_aquarium_16": {
+    "description": "flute, choir; 59s; 5 main events; tonic MIDI 50",
+    "seconds": 59.0,
+    "peak": 0.47188305854797363,
+    "rms": 0.09365558624267578,
+    "seam": 1.2510871783888433e-05,
+    "clipped": 0,
+    "sha256": "9b8d75fb365b70bf09fc0f7afc0baddd4d39e0a17a5b85b95a00fd1de8564f48",
+    "bytes": 397148
+  },
+  "music_chess_16": {
+    "description": "harp, piano; 48s; 6 main events; tonic MIDI 58",
+    "seconds": 48.0,
+    "peak": 0.4942780137062073,
+    "rms": 0.0954834520816803,
+    "seam": 7.423641818604665e-06,
+    "clipped": 0,
+    "sha256": "c164e134da30baa3a2b8cdcab9c59532928ddadb80a38e57377fa8bae6e36703",
+    "bytes": 421059
+  },
+  "music_cloud_hotel_16": {
+    "description": "glass, choir; 61s; 5 main events; tonic MIDI 61",
+    "seconds": 61.0,
+    "peak": 0.5696190595626831,
+    "rms": 0.09550190716981888,
+    "seam": 4.4021348003298044e-05,
+    "clipped": 0,
+    "sha256": "f324558eb0f605f6a33f6b235b45e73de1f2c5c8e62f76dee4cb8ae900452b42",
+    "bytes": 393112
+  },
+  "music_road_16": {
+    "description": "organ, glass; 57s; 5 main events; tonic MIDI 45",
+    "seconds": 57.0,
+    "peak": 0.4735102653503418,
+    "rms": 0.09539657086133957,
+    "seam": 5.9114630857948214e-05,
+    "clipped": 0,
+    "sha256": "6088510414932002b24048a9f078e6174619ce36d3b7d6f276d6539546902721",
+    "bytes": 343751
+  },
+  "music_house_crater_16": {
+    "description": "piano, choir; 68s; 6 main events; tonic MIDI 55",
+    "seconds": 68.0,
+    "peak": 0.61399906873703,
+    "rms": 0.08386393636465073,
+    "seam": 9.86520080914488e-06,
+    "clipped": 0,
+    "sha256": "056cfa5e9630a80dda4dca89c7da763cb8836ab12f097c73fb83381b7fd580ae",
+    "bytes": 530249
+  },
+  "music_dark_fantasy_16": {
+    "description": "organ, choir; 66s; 5 main events; tonic MIDI 38",
+    "seconds": 66.0,
+    "peak": 0.4327707588672638,
+    "rms": 0.09525871276855469,
+    "seam": 1.1213860489078797e-05,
+    "clipped": 0,
+    "sha256": "06cc787e90b42a99b596be2617a8d58ee57395fcdf9c110b6459aa33b24a0d51",
+    "bytes": 436471
+  },
+  "air_wind_16": {
+    "description": "wind",
+    "seconds": 24.0,
+    "peak": 0.2950524091720581,
+    "rms": 0.05335818603634834,
+    "seam": 6.558049790328369e-05,
+    "clipped": 0,
+    "sha256": "647bf914a1aa94a14ab0c62ba15ac4621528ca29b5dc25eea748414831c41873",
+    "bytes": 191694
+  },
+  "air_room_16": {
+    "description": "room",
+    "seconds": 24.0,
+    "peak": 0.33608847856521606,
+    "rms": 0.05359285697340965,
+    "seam": 1.2420290659065358e-05,
+    "clipped": 0,
+    "sha256": "5431ca5d4f2e5964a4c141282c649a5ae8eca4eceea6cbd5c365787a7c447f96",
+    "bytes": 176236
+  },
+  "air_water_16": {
+    "description": "water",
+    "seconds": 24.0,
+    "peak": 0.3390008211135864,
+    "rms": 0.05299451947212219,
+    "seam": 9.652560402173549e-05,
+    "clipped": 0,
+    "sha256": "802beb3190c97c8eaeb849c2a74ca9ce7e398207785935aa4941c58298222fbd",
+    "bytes": 246650
+  },
+  "air_garden_16": {
+    "description": "garden",
+    "seconds": 24.0,
+    "peak": 0.2936439514160156,
+    "rms": 0.05329618602991104,
+    "seam": 0.00016626334399916232,
+    "clipped": 0,
+    "sha256": "17aeac5db979fca64c3edb888d2bcb70daca4387ccfa137553d5f4619ff3fa94",
+    "bytes": 195845
+  },
+  "fx_grass_16": {
+    "description": "grass",
+    "seconds": 0.647,
+    "peak": 0.2668057084083557,
+    "rms": 0.032049234956502914,
+    "seam": 1.8228613043902442e-05,
+    "clipped": 0,
+    "sha256": "5a2239a18dff771c93a76482bf88544de0a15bb0999d42d695b3667c56763743",
+    "bytes": 11955
+  },
+  "fx_stone_16": {
+    "description": "stone",
+    "seconds": 0.647,
+    "peak": 0.13628455996513367,
+    "rms": 0.017956577241420746,
+    "seam": 1.2309099474805407e-05,
+    "clipped": 0,
+    "sha256": "c08fd7d7c493f0c356d0292505f5c53dbc487bafc5b4489ee76c5a2e23b4476e",
+    "bytes": 11747
+  },
+  "fx_tile_16": {
+    "description": "tile",
+    "seconds": 0.647,
+    "peak": 0.16422337293624878,
+    "rms": 0.017725467681884766,
+    "seam": 2.1866704628337175e-05,
+    "clipped": 0,
+    "sha256": "ffd06ed11d8082931ddf45f43c4892b541265966ff53feebd6b796a7f49a0f12",
+    "bytes": 11843
+  },
+  "fx_wood_16": {
+    "description": "wood",
+    "seconds": 0.647,
+    "peak": 0.18380922079086304,
+    "rms": 0.03174633905291557,
+    "seam": 7.338047726079822e-05,
+    "clipped": 0,
+    "sha256": "1a5ed6cd18fef8d36f2e4832364abc4b84bac460b0efe7aa8ca730ca891e96a5",
+    "bytes": 11831
+  },
+  "fx_water_16": {
+    "description": "water",
+    "seconds": 0.647,
+    "peak": 0.3237477242946625,
+    "rms": 0.038758788257837296,
+    "seam": 0.00027422900893725455,
+    "clipped": 0,
+    "sha256": "876a121e4362487cf9f4fd9528daf7813a556b180164bdc0a16601f99b3ea821",
+    "bytes": 12425
+  },
+  "fx_chime_16": {
+    "description": "chime",
+    "seconds": 2.8,
+    "peak": 0.20127008855342865,
+    "rms": 0.07685795426368713,
+    "seam": 8.391466508328449e-07,
+    "clipped": 0,
+    "sha256": "3440fe98f91061a57369757cc567a5429be2df4feb3f90ee7a533592d45321d5",
+    "bytes": 19739
+  }
+}
