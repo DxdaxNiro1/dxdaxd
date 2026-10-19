@@ -1,0 +1,35 @@
+{
+  "source": {
+    "seconds": 48.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak": 0.5019519,
+    "rms": 0.12,
+    "clipped_samples": 0,
+    "loop_boundary_max_step": 3.932e-05,
+    "interior_max_step": 0.01676721,
+    "interior_p99_step": 0.00807668,
+    "dc": [
+      -0.0,
+      0.0
+    ]
+  },
+  "decoded_ogg": {
+    "seconds": 48.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak": 0.5009767,
+    "rms": 0.1202091,
+    "clipped_samples": 0,
+    "loop_boundary_max_step": 0.00604035,
+    "interior_max_step": 0.01675586,
+    "interior_p99_step": 0.0081168,
+    "dc": [
+      4.11e-06,
+      1.218e-05
+    ]
+  },
+  "file_bytes": 278297,
+  "sha256": "5d3fc2f9d177e307fc919d39c2193f9149925bc3872c57e9d7e895b79edea34e",
+  "description": "Composición original: acordes menores de órgano sintético, campanas graves y reverberación. No contiene audio del video."
+}

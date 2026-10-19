@@ -1,0 +1,194 @@
+{
+  "version": "1.5",
+  "worlds_total": 13,
+  "dreamcore_stages": 11,
+  "dark_fantasy_worlds": 1,
+  "hub_portals": 2,
+  "validation": {
+    "gradle_assembleDebug": "passed",
+    "apk_signature": "verified",
+    "apk_sha256": "173677d21c22c8cb821a1d6e282993f30eb102ebef436819933d0a02a3072950",
+    "apk_bytes": 13842603,
+    "journey_geometry_shelves_checks": 258,
+    "physics_checks": 36,
+    "radial_route_checks": 480,
+    "shader_programs": "scene + sky link passed GLES2 Mesa",
+    "phone_tested": false,
+    "windows_installer_executed": false
+  },
+  "notes": [
+    "El paquete de actualizacion y el proyecto compilado contienen el mismo codigo y recursos nuevos.",
+    "El APK se genero para validar; los ZIP entregan codigo y recursos sin claves de firma."
+  ],
+  "files": {
+    "Instalar_Windows.cmd": {
+      "bytes": 2445,
+      "sha256": "b601f5fe9c6ed4fe30d86a48916da224577bbc7d6838182b0a4bf9f9cb6bb391"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamAudio.kt": {
+      "bytes": 7244,
+      "sha256": "f4b08b2ce8a2c048deb01d63dc513810e19fa123f33f7bdef4592f19ab4d01df"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamChessMap.kt": {
+      "bytes": 15616,
+      "sha256": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCloudMap.kt": {
+      "bytes": 10075,
+      "sha256": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCloudTexture.kt": {
+      "bytes": 1878,
+      "sha256": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamCraterPhysics.kt": {
+      "bytes": 3224,
+      "sha256": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamDarkMap.kt": {
+      "bytes": 8393,
+      "sha256": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamEglConfigChooser.kt": {
+      "bytes": 1205,
+      "sha256": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamExpansion.kt": {
+      "bytes": 5946,
+      "sha256": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamJourney.kt": {
+      "bytes": 7245,
+      "sha256": "22ac380ea7956337fcb7c46342d382af982f1901d11cf26567b055ba8e127f54"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamMesh.kt": {
+      "bytes": 4342,
+      "sha256": "177974e576329f69c7c65c441dbce4564507490c20770e7dca2e7101c64a89f0"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamMoonTexture.kt": {
+      "bytes": 1228,
+      "sha256": "e5a3427cb69ed96909c3787bee6550c37ef85d44f090817b1df40c37d5c343d3"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamRenderer.kt": {
+      "bytes": 23063,
+      "sha256": "a4fef69cdd2e30f6ac88d5b791ad7832618a12d464601cd91442ab027f033dc4"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamRoadMap.kt": {
+      "bytes": 13102,
+      "sha256": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamShaders.kt": {
+      "bytes": 24532,
+      "sha256": "328cc8afd365c4c253c4bf1a273d6dca5409be4d93efb4f27f98c3f24b4d30d8"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamTextures.kt": {
+      "bytes": 2456,
+      "sha256": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamTunnelMap.kt": {
+      "bytes": 16560,
+      "sha256": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424"
+    },
+    "app/src/main/java/com/dreamcore/game/DreamWorlds.kt": {
+      "bytes": 66944,
+      "sha256": "8f1e3ed35b9bcdb6a0c2a94101cd2ccdf217eacd27c527a801233f8a5957e0fc"
+    },
+    "app/src/main/java/com/dreamcore/game/MainActivity.kt": {
+      "bytes": 15091,
+      "sha256": "be5d886059b884030c22e0a2df2542c03d9dd792d03479d59e0ff2079c561fde"
+    },
+    "app/src/main/res/drawable-nodpi/dream_cloud_density.png": {
+      "bytes": 597580,
+      "sha256": "133fac221a98b0da12bd4d57a44156695ca8cfb893eb99af63701272c2ee56a8"
+    },
+    "app/src/main/res/drawable-nodpi/dream_moon_face.png": {
+      "bytes": 612165,
+      "sha256": "3186b29ca0e286e611520484bc9568339aecd7d2e200d54647b1bd12de40b6a4"
+    },
+    "app/src/main/res/raw/layer_abyss_13.ogg": {
+      "bytes": 261749,
+      "sha256": "7b8b7037c19133849b1d2caed4d98553597682b5fdd7c7bb0d5eb2d442051128"
+    },
+    "app/src/main/res/raw/music_aquarium_14.ogg": {
+      "bytes": 286748,
+      "sha256": "29e4a4898e27a26df2f786461d0d139fcbea434b92656bb544a7213ea534d686"
+    },
+    "app/src/main/res/raw/music_chess_14.ogg": {
+      "bytes": 274769,
+      "sha256": "a489a9857d39d3b820a5b83f7bef641bf849092f0e96a53789eaede2781729d6"
+    },
+    "app/src/main/res/raw/music_cloud_hotel_14.ogg": {
+      "bytes": 323429,
+      "sha256": "4053fb05fb7ec259f95ff1189e75a6a5fae52121c1359d73961b54895baea6a4"
+    },
+    "app/src/main/res/raw/music_crater_14.ogg": {
+      "bytes": 274871,
+      "sha256": "1373b8a70414d8bdc0ededdee61a0e102fc1cce2327a9e126c794c4ef3f02605"
+    },
+    "app/src/main/res/raw/music_dark_fantasy_15.ogg": {
+      "bytes": 278297,
+      "sha256": "5d3fc2f9d177e307fc919d39c2193f9149925bc3872c57e9d7e895b79edea34e"
+    },
+    "app/src/main/res/raw/music_garden_14.ogg": {
+      "bytes": 291107,
+      "sha256": "0791954b837d98e556320bf8221d22acc7bb0c1e486a033aa3cfd337f67c0c2e"
+    },
+    "app/src/main/res/raw/music_house_crater_14.ogg": {
+      "bytes": 175100,
+      "sha256": "71a979f52a7d06fc3d8870584c694a4afb8661fe7b9dfdd7bd4a5b41eee6ba38"
+    },
+    "app/src/main/res/raw/music_house_meadow_14.ogg": {
+      "bytes": 188253,
+      "sha256": "15839e9f32cccd763e072ba0adaa633c29a5b01e80ad3a7c62fb0ed344ebfa93"
+    },
+    "app/src/main/res/raw/music_meadow_14.ogg": {
+      "bytes": 316977,
+      "sha256": "31eec9eafdb60ab6ee704056da6c7323e890bd8d5c6e3b8764efab489865c0c3"
+    },
+    "app/src/main/res/raw/music_pools_14.ogg": {
+      "bytes": 334515,
+      "sha256": "d3baf9c95857553e9842af5bcf7190bc9e47a6ff4ad37d54a8444ff4c530a0ad"
+    },
+    "app/src/main/res/raw/music_road_14.ogg": {
+      "bytes": 285116,
+      "sha256": "e3570c57817388f3d48348bea19b28545a3189e3094cb3c86ae2be624b0a2b41"
+    },
+    "app/src/main/res/raw/music_station_14.ogg": {
+      "bytes": 282062,
+      "sha256": "dac2857d120adfe63c749ce07ca48aeb03e86b13b7892d5d2c23a3bf15ccabc9"
+    },
+    "app/src/main/res/raw/music_tunnels_14.ogg": {
+      "bytes": 240537,
+      "sha256": "ab40b8998e5c04464d19692d3a9e9920152114e7ab0bfcdf1aed5a84cb70cf8a"
+    },
+    "tests/CraterPhysicsCheck.kt": {
+      "bytes": 3545,
+      "sha256": "bb4db74d4cf06649535573b55bae1ea9480b595541d09fc3154d38dd953e312c"
+    },
+    "tests/Journey15Check.kt": {
+      "bytes": 5696,
+      "sha256": "3e0a60c6f7739629a8c6e97dabf6ade272fdf8158cebee5501b7ea2fe42a826a"
+    },
+    "tests/RadialFallCheck.kt": {
+      "bytes": 1758,
+      "sha256": "ca7fa6c7a993e3f5a6fce413a8b85e7f79b9464d9bf56f2d24d612ac1e7405a1"
+    },
+    "vistas/dark_fantasy.png": {
+      "bytes": 241071,
+      "sha256": "db1e046326310b37922529c823c2244d15f84e01ef76bb930b05544b5653c50f"
+    },
+    "vistas/hoyo_verde.png": {
+      "bytes": 326822,
+      "sha256": "520b0b883ab09c449e735f523c7e27f926f3e70021f4249e9241d51dade7f491"
+    },
+    "vistas/lunas.png": {
+      "bytes": 214394,
+      "sha256": "db55f76d8e147160d62468ea3054d0b52574bfefffb630c62bfe4b43e4a6f681"
+    },
+    "vistas/umbral.png": {
+      "bytes": 206093,
+      "sha256": "d2b7a15eea5bd84c8c429111b4c2458de11d54c7b090b63ffa6029c44e24126e"
+    }
+  },
+  "artifact_type": "source_update"
+}

@@ -1,0 +1,198 @@
+package com.dreamcore.game
+
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.animation.ValueAnimator
+import android.content.Context
+import android.media.MediaPlayer
+import android.util.Log
+import android.view.animation.LinearInterpolator
+import kotlin.math.sqrt
+
+/** Twelve original world themes, loaded on demand: at most two bases + two layers. */
+class DreamAudio(private val context: Context) {
+    private val volume = .46f
+    private val layerVolume = .22f
+    private var activeWorld = DreamWorlds.STATION
+    private var zone = "CALMA"
+    private var running = false
+    private var released = false
+
+    private class Slot(val resource: Int, val player: MediaPlayer) {
+        var gain = 0f
+    }
+
+    private fun create(resource: Int): MediaPlayer? {
+        var player: MediaPlayer? = null
+        return try {
+            player = MediaPlayer.create(context, resource)
+            player?.apply { isLooping = true; setVolume(0f, 0f) }
+        } catch (problem: Exception) {
+            player?.release()
+            Log.w("DreamCore", "No se pudo abrir un recurso de audio", problem)
+            null
+        }
+    }
+
+    /** If a third theme arrives mid-fade, free one slot without a volume jump first. */
+    private inner class Mixer(private val fullVolume: Float, private val fadeMs: Long) {
+        private val slots = mutableListOf<Slot>()
+        private var animator: ValueAnimator? = null
+        private var wanted: Int? = null
+        private var draining = false
+
+        private fun gain(slot: Slot, value: Float) {
+            slot.gain = value.coerceIn(0f, 1f)
+            slot.player.setVolume(slot.gain, slot.gain)
+        }
+
+        private fun remove(slot: Slot) {
+            slot.player.release()
+            slots.remove(slot)
+        }
+
+        fun select(resource: Int?, duration: Long = fadeMs) {
+            wanted = resource
+            if (!running) {
+                // No decoding while paused, and no stale world retained after a switch.
+                slots.toList().filter { it.resource != wanted }.forEach { remove(it) }
+                return
+            }
+            // Keep a running bridge short even when several newer requests arrive.
+            if (!draining) begin(duration)
+        }
+
+        private fun begin(duration: Long) {
+            animator?.cancel(); animator = null
+            val resource = wanted
+            var selected = slots.firstOrNull { it.resource == resource }
+            if (resource != null && selected == null && slots.size == 2) {
+                draining = true
+                val bridge = slots.maxByOrNull { it.gain }
+                animate(bridge, 320L) {
+                    draining = false
+                    if (running && !released) begin(fadeMs)
+                }
+                return
+            }
+            if (resource != null && selected == null) {
+                create(resource)?.let { player ->
+                    selected = Slot(resource, player).also { slots += it }
+                }
+            }
+            animate(selected, duration)
+        }
+
+        private fun animate(selected: Slot?, duration: Long, after: (() -> Unit)? = null) {
+            val players = slots.toList()
+            val from = players.associateWith { it.gain }
+            if (selected != null && !selected.player.isPlaying) selected.player.start()
+            animator = ValueAnimator.ofFloat(0f, 1f).apply {
+                this.duration = duration
+                interpolator = LinearInterpolator()
+                addUpdateListener { frame ->
+                    val t = frame.animatedValue as Float
+                    players.forEach { slot ->
+                        val start = from[slot] ?: 0f
+                        val end = if (slot === selected) fullVolume else 0f
+                        gain(slot, sqrt(start * start * (1f - t) + end * end * t))
+                    }
+                }
+                addListener(object : AnimatorListenerAdapter() {
+                    private var cancelled = false
+                    override fun onAnimationCancel(animation: Animator) { cancelled = true }
+                    override fun onAnimationEnd(animation: Animator) {
+                        if (cancelled || released) return
+                        players.filter { it !== selected }.forEach { remove(it) }
+                        animator = null
+                        after?.invoke()
+                    }
+                })
+                start()
+            }
+        }
+
+        fun pause() {
+            animator?.cancel(); animator = null
+            draining = false
+            slots.toList().forEach { slot ->
+                if (slot.resource != wanted) remove(slot)
+                else {
+                    if (slot.player.isPlaying) slot.player.pause()
+                    gain(slot, 0f)
+                }
+            }
+        }
+
+        fun release() {
+            animator?.cancel(); animator = null
+            draining = false
+            slots.toList().forEach { remove(it) }
+        }
+    }
+
+    private val music = Mixer(volume, 2600L)
+    private val atmosphere = Mixer(layerVolume, 1800L)
+
+    private fun track(world: String): Int? = when (world) {
+        DreamJourney.DARK -> R.raw.music_dark_fantasy_15
+        DreamWorlds.STATION -> R.raw.music_station_14
+        DreamWorlds.POOLS -> R.raw.music_pools_14
+        DreamWorlds.CRATER -> R.raw.music_crater_14
+        DreamWorlds.GARDEN -> R.raw.music_garden_14
+        DreamWorlds.MEADOW -> R.raw.music_meadow_14
+        DreamWorlds.AQUARIUM -> R.raw.music_aquarium_14
+        DreamWorlds.HOUSE_MEADOW -> R.raw.music_house_meadow_14
+        DreamWorlds.HOUSE_CRATER -> R.raw.music_house_crater_14
+        "dream_09" -> R.raw.music_chess_14
+        "dream_10" -> R.raw.music_tunnels_14
+        "dream_11" -> R.raw.music_cloud_hotel_14
+        "dream_12" -> R.raw.music_road_14
+        else -> null
+    }
+
+    private fun layerFor(value: String): Int? = when (value) {
+        "CASA" -> R.raw.layer_inside
+        "PROFUNDO" -> if (activeWorld == DreamWorlds.CRATER) R.raw.layer_abyss_13 else R.raw.layer_threshold
+        "UMBRAL" -> R.raw.layer_threshold
+        "ANOMALIA" -> R.raw.layer_anomaly
+        else -> null
+    }
+
+    fun resume() {
+        if (released || running) return
+        running = true
+        music.select(track(activeWorld), 900L)
+        atmosphere.select(layerFor(zone), 1100L)
+    }
+
+    fun pause() {
+        if (released) return
+        running = false
+        music.pause()
+        atmosphere.pause()
+    }
+
+    fun changeWorld(world: String) {
+        if (released || world == activeWorld) return
+        val previousLayer = layerFor(zone)
+        activeWorld = world
+        music.select(track(world))
+        if (previousLayer != layerFor(zone)) atmosphere.select(layerFor(zone))
+    }
+
+    fun setZone(nextZone: String) {
+        if (released || nextZone == zone) return
+        val previous = layerFor(zone)
+        zone = nextZone
+        if (previous != layerFor(zone)) atmosphere.select(layerFor(zone))
+    }
+
+    fun release() {
+        if (released) return
+        released = true
+        running = false
+        music.release()
+        atmosphere.release()
+    }
+}
