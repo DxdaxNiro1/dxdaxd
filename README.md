@@ -1,35 +1,35 @@
-# DreamCore 1.8 — Ecos del sueño
+# DreamCore 1.9 — Horizontes imposibles
 
-[**Descargar actualización 1.8 para tu juego actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_8_Ecos.zip)
+[**Descargar actualización 1.9 para tu juego actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_9_Horizontes.zip)
 
-[**Descargar proyecto completo 1.8 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_8_Proyecto_Completo.zip)
+[**Descargar proyecto completo 1.9 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_9_Proyecto_Completo.zip)
 
-Guardado automático de mapa, posición, recuerdos, decisiones y descubrimientos; objetos interactivos con consecuencias entre mundos; tres sueños secretos con retorno; tres epílogos; figuras con comportamientos distintos; fenómenos espaciados y ajustes de sensibilidad, música, ambiente y calidad.
+Planetas con océanos, continentes, hielo y bandas de gas; atmósfera, rotación, eclipses suaves y constelaciones. Tres mundos principales nuevos: tobogán entre nubes, ciudad del último recreo (escuela, centro comercial, cancha y fiesta vacíos) y jardín de las coronas de Dark Fantasy. Dos sueños secretos nuevos: cama cósmica y torre alcanzable mediante cuatro pistas fotográficas.
 
-El nuevo parque de las lágrimas se inspira en las pasarelas, mosaicos, grandes rostros y pato del vídeo. La ruta Dreamcore tiene doce etapas y mantiene piscina y abismo al principio. Dark Fantasy conserva su portal aparte. Se añaden cuatro músicas originales distintas, ambiente interior hueco, radio y cuatro notas de un misterio compartido.
+Cámara con fotos reales del renderizado, figuras que aparecen en las fotos y álbum interno de doce imágenes. Compañero invisible, segunda taza, puerta que se abre, piano en una habitación vacía y encuentro de una figura que sube al autobús. Presencias modeladas con más detalle, que observan y mantienen distancia.
 
-Materiales más detallados, relieve de iluminación, rugosidad, sombras direccionales en calidad media/alta y nueva luna de roca esculpida que conserva su animación y el evento de dos minutos. El motor sigue siendo GLES2 y la geometría es estilizada; no se promete fotorrealismo completo.
+Parque de tuberías ampliado a unos 610 m, cabezas con relieve esculpido continuo y agua desde los ojos. Mar del cielo con olas amplias, arcos, peces, medusas y jardines. Los interiores repetidos se reúnen en una estación final con cúpula, reloj, llave y recuerdos; permanece un único tren sumergido secreto. Se conserva piscina y abismo primero. Trece etapas principales y dos de Dark Fantasy, más cinco sueños secretos.
 
-**Para actualizar:** extrae todo el ZIP y ejecuta `Instalar_Windows.cmd`; crea respaldo antes de copiar. **Proyecto completo:** abre la carpeta `DreamCore` en Android Studio. [Instalación y cambios detallados](DreamCore_1_8_Ecos/LEEME.md) · [Recorrido con spoilers](DreamCore_1_8_Ecos/RECORRIDO_CON_SECRETOS.md).
+Cinco músicas originales nuevas, piano ambiental, nieve interior, lluvia localizada y nube en el centro comercial. Las partidas de la 1.8 se conservan con migración segura de los espacios remodelados. Sigue el evento lunar de los 120 segundos. El motor permanece en GLES2 y la geometría es estilizada; no se promete fotorrealismo ni FPS de un móvil.
 
-APK Android 1.8 compilado y verificado; **1.847 comprobaciones** y diez enlaces de shaders GLES2 normales/mediump. Diez OGG nuevos decodificados sin clipping. Fuentes cotejadas con la compilación. Falta probar ejecución, controles y rendimiento en un teléfono y ejecutar el instalador en Windows. [Validación](DreamCore_1_8_Ecos/VALIDACION.json).
+**Actualizar:** extrae todo y ejecuta Instalar_Windows.cmd, que crea respaldo antes de copiar. **Proyecto completo:** abre DreamCore en Android Studio. Conserva tu identificador y firma para actualizar la app sin perder datos. [Instalación y cambios](DreamCore_1_9_Horizontes/LEEME.md) · [Recorrido y spoilers](DreamCore_1_9_Horizontes/RECORRIDO_CON_SECRETOS.md).
 
-## Comparación de la luna
+APK 1.9 real compilado y verificado, **2.927 comprobaciones**, diez enlaces GLES2 normales/mediump, seis OGG nuevos decodificados sin clipping y fuentes cotejadas con la compilación. Las vistas son del GLSL y geometría reales en Mesa/GLES2, sin HUD. Falta probar ejecución, controles, cámara/álbum, sonido y rendimiento en teléfono, además del instalador en Windows. [Validación](DreamCore_1_9_Horizontes/VALIDACION.json).
 
-Mismo ángulo y estado de observación, renderizados con el código de cada versión en la nube. Son vistas GLES2 sin HUD, no capturas de un teléfono.
+## Vistas renderizadas en la nube
 
-| 1.7 | 1.8 |
+![Tobogán de planetas](DreamCore_1_9_Horizontes/vistas/planetas.png)
+
+![Rostro esculpido del parque](DreamCore_1_9_Horizontes/vistas/rostro.png)
+
+![Cama al borde del universo](DreamCore_1_9_Horizontes/vistas/cama.png)
+
+![Mar del cielo](DreamCore_1_9_Horizontes/vistas/mar.png)
+
+![Nueva presencia](DreamCore_1_9_Horizontes/vistas/presencia.png)
+
+| Vista normal | Fotografía con señal oculta |
 | --- | --- |
-| ![Luna anterior](DreamCore_1_8_Ecos/vistas/luna_17_comparacion.png) | ![Luna nueva](DreamCore_1_8_Ecos/vistas/luna_18.png) |
+| ![Normal](DreamCore_1_9_Horizontes/vistas/foto_normal.png) | ![Foto](DreamCore_1_9_Horizontes/vistas/foto_revelada.png) |
 
-## Vistas de la 1.8
-
-![Parque de las lágrimas](DreamCore_1_8_Ecos/vistas/parque.png)
-
-![Luna gigante](DreamCore_1_8_Ecos/vistas/luna_gigante_18.png)
-
-![Tren sumergido](DreamCore_1_8_Ecos/vistas/tren_sumergido.png)
-
-![Amanecer](DreamCore_1_8_Ecos/vistas/amanecer.png)
-
-La [versión 1.7 anterior](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_7_Proyecto_Completo.zip) sigue disponible.
+[Versión 1.8 anterior](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_8_Proyecto_Completo.zip).

@@ -1,0 +1,228 @@
+{
+  "version": "1.9",
+  "version_code": 19,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_bytes": 28927722,
+  "apk_sha256": "3e35455bf9c3edd1fef358ae4325b28af33b975e8e0483cb6d65ccce371ba1f8",
+  "compiler": "Kotlin 1.9.24 / AGP 8.5.2 / Gradle 8.7 / SDK 34",
+  "checks": {
+    "Journey19Check": 698,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "total": 2927
+  },
+  "source_and_changed_assets_identical_to_build": true,
+  "shaders": [
+    {
+      "pair": "DreamShaders.kt:scene:normal",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:sky:normal",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:shadow:normal",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:scene:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:sky:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:shadow:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:scene:normal",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:sky:normal",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:scene:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:sky:mediump",
+      "linked": true,
+      "log": ""
+    }
+  ],
+  "render_backend": "OpenGL ES 2.0 Mesa 25.0.7 llvmpipe",
+  "rendered_views": 14,
+  "photographic_ghost_changed_pixels": 1180,
+  "photo_actual_render_capture_implemented": true,
+  "photo_jpeg_album_capacity": 12,
+  "photo_clues": 4,
+  "photo_real_triangle_occlusion_tests": true,
+  "photo_android_execution_tested": false,
+  "new_worlds": [
+    "dream_14",
+    "dream_15",
+    "dark_02",
+    "pocket_tower",
+    "pocket_cloudbed"
+  ],
+  "main_route_stages": 13,
+  "dark_branch_stages": 2,
+  "optional_secret_worlds": 5,
+  "retired_main_route_world": "dream_07",
+  "legacy_interior_migrates_to": "dream_08",
+  "old_waterpark_spawn_migration": true,
+  "save_schema": 19,
+  "reads_schema_18": true,
+  "uses_same_save_storage_as_1_8": true,
+  "planet_seed_persisted": true,
+  "new_material_art": [
+    "dream_planets_19.png",
+    "dream_weeping_face_19.png"
+  ],
+  "waterpark_path_length_m_approx": 610,
+  "celestial_path_length_m_approx": 600,
+  "crying_faces": "UV-mapped continuous sculpted relief with smooth normals; generated limestone texture; curved tear streams",
+  "nonaggressive_presences": true,
+  "new_audio": {
+    "celestial": {
+      "description": "Original glass/choir; distinct phrase [0, 9, 7, 14, 4, 12, 2]; 67s",
+      "seconds": 67.0,
+      "peak": 0.3721899390220642,
+      "rms": 0.07545950263738632,
+      "seam": 2.2874388605487184e-08,
+      "clipped": 0,
+      "sha256": "13b06760757fcc77e144b90c21313a9bc2c399d278cf13979a2c888f43d79a27",
+      "bytes": 395071
+    },
+    "city": {
+      "description": "Original piano/flute; distinct phrase [0, 3, 10, 7, 2]; 63s",
+      "seconds": 63.0,
+      "peak": 0.41654327511787415,
+      "rms": 0.0755012035369873,
+      "seam": 1.9507724573486485e-06,
+      "clipped": 0,
+      "sha256": "5896f1dc08501aa14b6f204f453fac4fca1212ded9ef2636b41bebe2f2fc52fb",
+      "bytes": 433761
+    },
+    "dark_garden": {
+      "description": "Original organ/glass; distinct phrase [0, 1, 7, 6, -5]; 73s",
+      "seconds": 73.0,
+      "peak": 0.35250070691108704,
+      "rms": 0.06518244743347168,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "b113d95d54825c386d8b5682b4577332231e30192efbf78338521c5e5b776c56",
+      "bytes": 427909
+    },
+    "tower": {
+      "description": "Original harp/piano; distinct phrase [0, 3, 7, 10, 12, 2]; 59s",
+      "seconds": 59.0,
+      "peak": 0.4291861355304718,
+      "rms": 0.07543803006410599,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "df17b4dca65f2512c2a062277615173a178b01126fd02ea187220d66aac4a18c",
+      "bytes": 440973
+    },
+    "cloudbed": {
+      "description": "Original choir/harp; distinct phrase [0, 7, 14, 9, 4]; 71s",
+      "seconds": 71.0,
+      "peak": 0.41081345081329346,
+      "rms": 0.0754443034529686,
+      "seam": 7.346327492996352e-06,
+      "clipped": 0,
+      "sha256": "5ceae7684deb74f488bcbca80b4b9e98a346ec260b49c7249ead99f6abf0ed63",
+      "bytes": 499742
+    },
+    "piano": {
+      "description": "Empty-room piano phrase",
+      "seconds": 5.0,
+      "peak": 0.3454124629497528,
+      "rms": 0.07723979651927948,
+      "seam": 2.1987505078868708e-06,
+      "clipped": 0,
+      "sha256": "1808df4c828133961f08abe195b6fd39c51982709b2ad5c6eedadb9bf9ca7b88",
+      "bytes": 29012
+    }
+  },
+  "lunar_event_seconds": 120,
+  "lunar_look_away_grace_seconds": 2,
+  "lunar_pause_or_occlusion_counts": false,
+  "device_execution_tested": false,
+  "phone_fps_measured": false,
+  "windows_installer_executed": false,
+  "limitations": [
+    "GLES2 and stylized geometry; no exact reproduction of references or full photorealism promised",
+    "No physical Android execution: photo/JPEG album, controls and performance still need device verification",
+    "Scripted nonaggressive encounters; bus and pipes are not rideable",
+    "Room expansion is visual; cloud-edged walking area remains bounded",
+    "Directional shadow maps, local lighting, echoes and atmospheric effects are approximations"
+  ],
+  "source_sha256": {
+    "DreamActors.kt": "cfb9133e3db8b7290412b15271d25ec315e4f5cb46a0f4c8caab3c48e20c41d7",
+    "DreamArtTextures.kt": "ae2380067306e01e65c4ec8f7bbb897b986b428e229b38eb96769a58a4fcdc5b",
+    "DreamAtmosphere.kt": "cd1622f869e0000b9d89de9a89609534947a23143af1630d349386686ab22350",
+    "DreamAudio.kt": "ebdd8119284dc416b05835a5bd18723cb1dc5f4f9e44359899df9369be0bd546",
+    "DreamChessMap.kt": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2",
+    "DreamChronicle.kt": "9e544fe9c88c365715da29b833dbd5f77ba2703551ebd1f49aafab7809db2d25",
+    "DreamChunks.kt": "69b746a34ba4cfdafc87dcce66b2d8d8d7ffcba6b50d51d5c8441ca2a8b63c94",
+    "DreamCloudMap.kt": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65",
+    "DreamCloudTexture.kt": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2",
+    "DreamCraterPhysics.kt": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb",
+    "DreamDarkMap.kt": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb",
+    "DreamEglConfigChooser.kt": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b",
+    "DreamEvents.kt": "cc797fb9a3d60eacfb8cb831c7e036fce2cc5e609be9d32d1b9d3899f6fbce1f",
+    "DreamExpansion.kt": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962",
+    "DreamExploration.kt": "3c3a6878b4a580dda1ac65c0af86b04d367d3602a0a0702a0fb8ce7eefffa972",
+    "DreamFootsteps.kt": "cffc0b52c083ff4e805201bf7491d8dc02353159029f2880c381d3e37ea28514",
+    "DreamHorizons.kt": "a67905bead8fea64327b1d7d076cbb5f137e4b0a442bba74b6aadd3ec775c2b9",
+    "DreamJourney.kt": "be410c3ecedaae26316592cbbd47d77b1c37c052d556b1d5ea072ddea6410e33",
+    "DreamLands.kt": "3e6dd67ac88279775a18cca1fcd4de545d025495d2e219ae6451a9aa26129842",
+    "DreamLegacyShaders.kt": "c563f977ad5abe8ed33211c8c1ef0e4d1fac89a57e2cf6b0f8e44d1a50294cf4",
+    "DreamMemories.kt": "5ea3d4743642fb302c0dce213fda9c71d682ff3bd0b98f39d66ba3ad8a8fcf13",
+    "DreamMesh.kt": "d45694793c2f3d7f1afd6754e1031d571707af139636460d2958eb02f03c58d7",
+    "DreamMoonLife.kt": "9a0da6a5f8b7cafb1ec8d8cfd9d5e138ace86fbf41d02dd70896a7aa8693ab5f",
+    "DreamMoonTexture.kt": "86751cdae7ed9727254c37e50b734be4d3e3d1bdf945f03023436c47728cf616",
+    "DreamObjects.kt": "7251499156e2559931e418e4e408535d71c9c5a629f21e98796ee0dc0a7c385b",
+    "DreamOptions.kt": "c7b8e662f00f52b058665e377f654566963bb0d6d1d2503e0a9c64e6169e86f3",
+    "DreamPhotoStore.kt": "a0bd9d6c0c53b8d3c7a8fd8a1a086cef6045f60eb19e3bc17a7404037fd64ff8",
+    "DreamPhotography.kt": "3e3386fbeb8f4e73d7982da2d4d487ce5354c8da41eb8db7c1ab6381fe1edd88",
+    "DreamPocket.kt": "a1a1ab5c2bd2d85b1b57ab4afd4de0c66bcd7f01e85bce66a54b39f111093dfd",
+    "DreamRenderer.kt": "228a0aed4c4251c0e0d4db9fe3246cf62cbf7a6d6039aea9c9af980c792c544a",
+    "DreamRoadMap.kt": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f",
+    "DreamSaveStore.kt": "72aec8447207b5dfc74a2035670fdcc50bcf526d39a40f9b67a9d147be86a3c2",
+    "DreamShaders.kt": "9ce55fafa076681c8527256016fb9f6197545a064bc16546e618de6816f845c1",
+    "DreamShadowMap.kt": "f4dbb0acf8573a366c9257abcc486765ffcd4210135edc39e2608ef040a6c931",
+    "DreamShapes.kt": "e4187cd1b8ea07d0b69229dc6f781c8fb2a6ee6593e3cb262448b4fdf3d10c7e",
+    "DreamSkySight.kt": "352d613a1d83729e114599f9cae5ae1c9431946edc3a97863acbc32425272215",
+    "DreamSurfaceTextures.kt": "ef320a5b612fa274fccc24a138bd64d54cc1024cb8ffd7a29321f87f6b0532e1",
+    "DreamTextures.kt": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e",
+    "DreamTravel.kt": "aa480d50a600d96d409c3f0b61d1feb4e08f3f452e2485a31655b83eb0959cf6",
+    "DreamTunnelMap.kt": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424",
+    "DreamWaterpark.kt": "80119d78b4d889dca74e6bfae2ddc051022bde3e8123f80eabda6da0fd676785",
+    "DreamWorlds.kt": "2723280f50162c018a4e12bc970f7802f2bfebafcf1112f82fa11b202401e047",
+    "MainActivity.kt": "7b49fab92f3989b577419d2bc2c4477e3cf9430a43931c5c58dc0a97bda60d28"
+  },
+  "generated_art_sha256": {
+    "dream_planets_19.png": "17e236beaf571810910a40dec4e2b74ba73cde7a2dcd72e1d8410170aa8f075f",
+    "dream_weeping_face_19.png": "06db86ae1795b5cc2e821fe81c41d8a678f80cb7605d683847e3abe01c687254"
+  }
+}
