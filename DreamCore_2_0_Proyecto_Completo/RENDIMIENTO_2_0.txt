@@ -1,0 +1,5 @@
+Resident world batches: 94, visible submissions: 50.
+Real triangle-ray comparisons: BVH=12364, previous linear scan=31359446; saved 99.96057328308669%.
+Frame scheduling tested at 24, 30 and 60 FPS. No device FPS/temperature measurements.
+
+Phone reported: Infinix NOTE 50s. Device execution and temperature not tested.

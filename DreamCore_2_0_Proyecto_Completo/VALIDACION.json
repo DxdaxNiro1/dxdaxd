@@ -1,0 +1,303 @@
+{
+  "version": "2.0",
+  "version_code": 20,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_bytes": 31911111,
+  "apk_sha256": "b07b96a1d4c243ed288ec48731229b6848ae9daca473f98dbf704361111b2c49",
+  "compiler": "Kotlin 1.9.24 / AGP 8.5.2 / Gradle 8.7 / compile SDK 34 / JDK 21 (JVM target 17)",
+  "min_sdk": 21,
+  "checks": {
+    "Journey19Check": 703,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5305,
+    "total": 8237
+  },
+  "source_and_changed_assets_identical_to_build": true,
+  "shaders": [
+    {
+      "pair": "scene",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "sky",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "shadow",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-scene",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-sky",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "scene-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "sky-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "shadow-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-scene-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-sky-mediump",
+      "linked": true,
+      "log": ""
+    }
+  ],
+  "render_backend": "OpenGL ES 2.0 Mesa 25.0.7 llvmpipe",
+  "actual_rendered_views": 13,
+  "late_sky_equivalence": {
+    "changed_pixels": 0,
+    "pixels": 518400,
+    "actual_GLES2_render": true
+  },
+  "phone_model_reported_by_user": "Infinix NOTE 50s",
+  "default_fps_target": 30,
+  "user_fps_options": [
+    30,
+    60
+  ],
+  "os_thermal_severe_cap": 24,
+  "thermal_api_minimum": 29,
+  "performance_reference": {
+    "world": "dream_05",
+    "resident_batches_before": 94,
+    "visible_submissions_after": 50,
+    "ray_queries": 1200,
+    "linear_triangle_tests": 31359446,
+    "bvh_triangle_tests": 12364,
+    "identical_visibility_results": true,
+    "frame_scheduling_targets_tested": [
+      24,
+      30,
+      60
+    ]
+  },
+  "optimization_measures": [
+    "Choreographer-driven dirty rendering",
+    "No world frames while menus open or app in background",
+    "Conservative frustum culling in main/reflected/shadow passes",
+    "Opaque geometry before far-depth sky",
+    "Separate transparent geometry pass",
+    "Reuse stationary static shadow maps",
+    "Slower mirror refresh while stationary",
+    "Median BVH for visibility queries"
+  ],
+  "new_destinations": [
+    "pocket_refuge",
+    "photo_house",
+    "photo_sea",
+    "photo_window",
+    "photo_planet",
+    "pocket_letter",
+    "pocket_gravity"
+  ],
+  "main_route_stages": 13,
+  "dark_branch_stages": 2,
+  "optional_secret_destinations": 12,
+  "photo_album_capacity": 12,
+  "persistent_pinned_frames": 4,
+  "photo_enterable_source_worlds": [
+    "dream_05",
+    "dream_06",
+    "dream_11",
+    "dream_14"
+  ],
+  "legacy_photos_remain_viewable_and_pinnable": true,
+  "save_schema": 20,
+  "reads_schemas": [
+    18,
+    19,
+    20
+  ],
+  "same_preference_storage_as_1_8_and_1_9": true,
+  "nested_return_capacity": 8,
+  "tools": [
+    "lantern",
+    "compass",
+    "prism"
+  ],
+  "letters": 3,
+  "wall_gravity_degrees": 90,
+  "gravity_surface_and_camera_both_transform": true,
+  "suspended_sea_creature_nonaggressive": true,
+  "abyss_layout_seed_persisted": true,
+  "abyss_exit_and_collision_terraces_retained": true,
+  "constellation_removed": true,
+  "lunar_event_effective_seconds": 120,
+  "new_audio": {
+    "refuge": {
+      "description": "Original piano, phrase [0, 7, 9, 4], 59s",
+      "seconds": 59.0,
+      "peak": 0.44574466347694397,
+      "rms": 0.0654330924153328,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "9d252a62bc266a37d4ce38c006c84f4d01ad52e470d1ddef146cdb44747497c6",
+      "bytes": 362741
+    },
+    "gravity": {
+      "description": "Original glass, phrase [0, 2, 7, 1, 12], 67s",
+      "seconds": 67.0,
+      "peak": 0.344607949256897,
+      "rms": 0.06535740196704865,
+      "seam": 1.618369424249977e-05,
+      "clipped": 0,
+      "sha256": "459eb17d7e044704fdab58e5d286f8c97bc329945a9b2232ca2cbacbfa41137d",
+      "bytes": 491787
+    },
+    "letter": {
+      "description": "Original harp, phrase [0, 3, 10, 7], 61s",
+      "seconds": 61.0,
+      "peak": 0.5133100152015686,
+      "rms": 0.06538539379835129,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "bbe583d8fceeb6c2c653a4b7d3ddd622110bb5d882a1779a750590db40753ca9",
+      "bytes": 391137
+    },
+    "photo_house": {
+      "description": "Original choir, phrase [0, 4, 11, 7], 57s",
+      "seconds": 57.0,
+      "peak": 0.2857242226600647,
+      "rms": 0.06539303809404373,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "d2b539d3c9221299d3ee207517ce839a208c301c5ffbfef2e8a5a6ecae5f4b01",
+      "bytes": 370139
+    },
+    "photo_sea": {
+      "description": "Original glass, phrase [0, 7, 2, 9], 69s",
+      "seconds": 69.0,
+      "peak": 0.44073331356048584,
+      "rms": 0.065330371260643,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "19ed87ad67a130b4a37a90f72972047929120cdfa06c6ff467ea387fb88a4562",
+      "bytes": 437008
+    },
+    "photo_window": {
+      "description": "Original piano, phrase [0, 1, 8, 5], 63s",
+      "seconds": 63.0,
+      "peak": 0.44541677832603455,
+      "rms": 0.06540828198194504,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "b986f4046d987683c3378a1b0ac405faa853269ac54512ac2f50db4861f259a7",
+      "bytes": 463890
+    },
+    "photo_planet": {
+      "description": "Original flute, phrase [0, 9, 14, 7], 71s",
+      "seconds": 71.0,
+      "peak": 0.3080606758594513,
+      "rms": 0.06540472060441971,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "0633d5238cbf36dcf93dd9720488220bb38586dc1d33f3ab396e3de35b498011",
+      "bytes": 369137
+    },
+    "whale": {
+      "description": "Original low suspended-sea creature call",
+      "seconds": 4.0,
+      "peak": 0.26228567957878113,
+      "rms": 0.08010146766901016,
+      "seam": 1.2438897101674229e-05,
+      "clipped": 0,
+      "sha256": "886312dff45e152519612aae20684a33d53a71a78f382a7d08ffb3ee7bfb16ad",
+      "bytes": 19951
+    }
+  },
+  "device_execution_tested": false,
+  "phone_fps_measured": false,
+  "phone_temperature_measured": false,
+  "windows_installer_executed": false,
+  "limitations": [
+    "No physical Android execution: UI, photo storage, sound and thermal behavior still need device verification",
+    "FPS values are scheduling targets, not measured phone performance",
+    "Photo visits are four authored still variants of their source world, not image-to-3D reconstruction",
+    "Only the special gravity path changes the walkable surface orientation; ordinary moving world elements are noncolliding overhead decoration",
+    "GLES2 stylized geometry and approximate directional/local light; not photorealism or ray tracing"
+  ],
+  "source_sha256": {
+    "DreamActors.kt": "8507aebe4ee72f9f53b99c748b973aadee9a2a0b7be3c6b876e829e0d5437ea7",
+    "DreamArtTextures.kt": "ae2380067306e01e65c4ec8f7bbb897b986b428e229b38eb96769a58a4fcdc5b",
+    "DreamAtmosphere.kt": "cd1622f869e0000b9d89de9a89609534947a23143af1630d349386686ab22350",
+    "DreamAudio.kt": "02957a4b6107e5dea2f6392c044ec215c553b8d336a53ba9728c93346a7dc4b3",
+    "DreamChessMap.kt": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2",
+    "DreamChronicle.kt": "d25c9b5c593792eb014bb8acb0ffccd1ba56c88edef64f51951740aa81a5933c",
+    "DreamChunks.kt": "69b746a34ba4cfdafc87dcce66b2d8d8d7ffcba6b50d51d5c8441ca2a8b63c94",
+    "DreamCloudMap.kt": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65",
+    "DreamCloudTexture.kt": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2",
+    "DreamCraterLayout.kt": "09f8cc68120a4f6f577225165dad85b2d7e394cee52f7cc339fc0a54109a7413",
+    "DreamCraterPhysics.kt": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb",
+    "DreamCreature.kt": "309b3c870b6bb6f7de49d2e12b2e3eaba4c3a1d52a319e5242647b1a5403224c",
+    "DreamDarkMap.kt": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb",
+    "DreamEglConfigChooser.kt": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b",
+    "DreamEvents.kt": "cc797fb9a3d60eacfb8cb831c7e036fce2cc5e609be9d32d1b9d3899f6fbce1f",
+    "DreamExpansion.kt": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962",
+    "DreamExploration.kt": "3c3a6878b4a580dda1ac65c0af86b04d367d3602a0a0702a0fb8ce7eefffa972",
+    "DreamFootsteps.kt": "e3cf308482359c1fe514a8b5db6c0d38768dc4313869bc182f17a3ffc1cb1b56",
+    "DreamGravity.kt": "53a3630438e58bf46e81c7ec4696c2db4c4707e2ce8740f4730546c3b1cb08e7",
+    "DreamHorizons.kt": "a67905bead8fea64327b1d7d076cbb5f137e4b0a442bba74b6aadd3ec775c2b9",
+    "DreamJourney.kt": "1ad52bb5b1a8f07bd1107330f27869359f3404a5d38a33002740122595688fd2",
+    "DreamLands.kt": "3e6dd67ac88279775a18cca1fcd4de545d025495d2e219ae6451a9aa26129842",
+    "DreamLegacyShaders.kt": "b1f140b575f0d2a5a38dfc38113e8252c21bbc0241ed1b23c4ed51bf684bb09a",
+    "DreamMail.kt": "c87179c3c5a339ebcbc8c59b620708ad35df6e1482b6497ec16acea85998d6e1",
+    "DreamMemories.kt": "5ea3d4743642fb302c0dce213fda9c71d682ff3bd0b98f39d66ba3ad8a8fcf13",
+    "DreamMesh.kt": "d45694793c2f3d7f1afd6754e1031d571707af139636460d2958eb02f03c58d7",
+    "DreamMoonLife.kt": "9a0da6a5f8b7cafb1ec8d8cfd9d5e138ace86fbf41d02dd70896a7aa8693ab5f",
+    "DreamMoonTexture.kt": "86751cdae7ed9727254c37e50b734be4d3e3d1bdf945f03023436c47728cf616",
+    "DreamObjects.kt": "23345a0194ec834688ace23b5b075f4ef93fa779ee7daca02a447e8705207bb6",
+    "DreamOptions.kt": "95c0b6e8c0031cfda53f9cd587e9a357af797ca43c1a1ee192bae48344cfbc97",
+    "DreamPerformance.kt": "b1a6bdd6fb165ee81e2830ad3cebbfadb81aa3f8a874a6348ec41e4505b67814",
+    "DreamPhotoFrames.kt": "172c2419b504a149c77d856eeb0279ef2a38d2d55695ba2661d7677b0069db76",
+    "DreamPhotoStore.kt": "9430cf3743961c9d5ad9f534254a9687e8b9d6a0881ad46c39faf625fb42ec7e",
+    "DreamPhotography.kt": "3e3386fbeb8f4e73d7982da2d4d487ce5354c8da41eb8db7c1ab6381fe1edd88",
+    "DreamPocket.kt": "84d86713b654061210d6aeeb0f68b54f39eaa199b47da9bf7fc29dca1fb2d732",
+    "DreamPoolsDetails.kt": "795991fc2467c9584ff1207624ade11cfaead5fa9549ff42615bb7100b735d3b",
+    "DreamRenderer.kt": "461ca59a1c81d487348adbd364694f4c0e7c03f0295c3b27e23ea438a17600c6",
+    "DreamRoadMap.kt": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f",
+    "DreamSaveStore.kt": "72aec8447207b5dfc74a2035670fdcc50bcf526d39a40f9b67a9d147be86a3c2",
+    "DreamShaders.kt": "93a1e330150912e637b18e49d59a1ad64ae914ef2ba9a5f2f8493fa581982c9c",
+    "DreamShadowMap.kt": "63b97e66df6538be4b3ed4266dc8f0689c6af5920203bf7de798ae146151bf28",
+    "DreamShapes.kt": "3eaa6b8ecd96ebbbb4e7b358314830f303f4b3d4b04738c60fdfccc1aeede63e",
+    "DreamSkySight.kt": "985cc7594426c8419e260fdbfeadf0bb91adc31df5c4f2868f53f7156ad88d67",
+    "DreamSurfaceTextures.kt": "ef320a5b612fa274fccc24a138bd64d54cc1024cb8ffd7a29321f87f6b0532e1",
+    "DreamTextures.kt": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e",
+    "DreamThermalMonitor.kt": "ae6f16be94ed1290fce801f947cc24f979ff665f81242c66b5ddaf7bcc582138",
+    "DreamTools.kt": "f547ed7c3c4943abc0ee7da833564c0edee0c53ba4fe53bf697c86e3abb0c305",
+    "DreamTravel.kt": "aa480d50a600d96d409c3f0b61d1feb4e08f3f452e2485a31655b83eb0959cf6",
+    "DreamTunnelMap.kt": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424",
+    "DreamVoyage.kt": "7e8ce9d7a1a08720200160b443a620a88e65ea2c0694bdf66dcf14690399072b",
+    "DreamWaterpark.kt": "80119d78b4d889dca74e6bfae2ddc051022bde3e8123f80eabda6da0fd676785",
+    "DreamWorldMotion.kt": "929d010c710730d3aacc5803487fc3619a108d165acddcc98c92ce6afcd80a03",
+    "DreamWorlds.kt": "2e22ee851a7a3c34e2f393478dab41fab013c88836a56eb2d07f56caaa4f9f50",
+    "MainActivity.kt": "4a55ebfb951a9cd27834f29f11640135aa60d2715e365c41ea3ae95ce8de47a7"
+  }
+}

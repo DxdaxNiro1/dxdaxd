@@ -1,35 +1,25 @@
-# DreamCore 1.9 — Horizontes imposibles
+# DreamCore 2.0 — Los lugares que te recuerdan
 
-[**Descargar actualización 1.9 para tu juego actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_9_Horizontes.zip)
+[**Descargar actualización 2.0 para tu juego actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_0_Recuerdos.zip)
 
-[**Descargar proyecto completo 1.9 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_9_Proyecto_Completo.zip)
+[**Descargar proyecto completo 2.0 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_0_Proyecto_Completo.zip)
 
-Planetas con océanos, continentes, hielo y bandas de gas; atmósfera, rotación, eclipses suaves y constelaciones. Tres mundos principales nuevos: tobogán entre nubes, ciudad del último recreo (escuela, centro comercial, cancha y fiesta vacíos) y jardín de las coronas de Dark Fantasy. Dos sueños secretos nuevos: cama cósmica y torre alcanzable mediante cuatro pistas fotográficas.
+Refugio con cuatro marcos para tus fotografías; entrada a cuatro recuerdos quietos desde el álbum; linterna, brújula y prisma; cartero sin rostro con tres cartas; camino que se curva hasta una pared vertical y criatura enorme bajo el mar del cielo. Piscina con arcos y ventanas, abismo con distribución de casas según la semilla guardada, móviles elevados diferentes y constelación retirada. Siete músicas originales nuevas y voz grave de la criatura.
 
-Cámara con fotos reales del renderizado, figuras que aparecen en las fotos y álbum interno de doce imágenes. Compañero invisible, segunda taza, puerta que se abre, piano en una habitación vacía y encuentro de una figura que sube al autobús. Presencias modeladas con más detalle, que observan y mantienen distancia.
+Modo inicial a 30 FPS, opción de 60 y límite térmico de 24 cuando Android avisa de calor elevado. Menús detienen el renderizado, bloques fuera de cámara se descartan, sombras estáticas se reutilizan, reflejos adaptan su frecuencia y el cielo se calcula tras los sólidos. Se mantienen los mapas, texturas e iluminación de la calidad elegida. El calentamiento real y los FPS requieren comprobarse en tu Infinix NOTE 50s.
 
-Parque de tuberías ampliado a unos 610 m, cabezas con relieve esculpido continuo y agua desde los ojos. Mar del cielo con olas amplias, arcos, peces, medusas y jardines. Los interiores repetidos se reúnen en una estación final con cúpula, reloj, llave y recuerdos; permanece un único tren sumergido secreto. Se conserva piscina y abismo primero. Trece etapas principales y dos de Dark Fantasy, más cinco sueños secretos.
+**Actualizar:** extrae todo y ejecuta Instalar_Windows.cmd, que crea respaldo. **Proyecto completo:** abre la carpeta DreamCore en Android Studio. Conserva tu identificador y clave de firma, sin desinstalar la app. Lee guardados 1.8/1.9 y conserva los progresos. [Instalación y novedades](DreamCore_2_0_Recuerdos/LEEME.md) · [Ubicaciones y secretos](DreamCore_2_0_Recuerdos/RECORRIDO_CON_SECRETOS.md) · [Validación](DreamCore_2_0_Recuerdos/VALIDACION.json).
 
-Cinco músicas originales nuevas, piano ambiental, nieve interior, lluvia localizada y nube en el centro comercial. Las partidas de la 1.8 se conservan con migración segura de los espacios remodelados. Sigue el evento lunar de los 120 segundos. El motor permanece en GLES2 y la geometría es estilizada; no se promete fotorrealismo ni FPS de un móvil.
+APK 2.0 compilado y firma verificada; **8.237 comprobaciones**, diez enlaces de shaders y ocho OGG nuevos validados sin clipping. En la comparación del cielo antes/después se conservaron los 518.400 píxeles; el descarte de bloques y la búsqueda BVH tienen pruebas contra referencias.
 
-**Actualizar:** extrae todo y ejecuta Instalar_Windows.cmd, que crea respaldo antes de copiar. **Proyecto completo:** abre DreamCore en Android Studio. Conserva tu identificador y firma para actualizar la app sin perder datos. [Instalación y cambios](DreamCore_1_9_Horizontes/LEEME.md) · [Recorrido y spoilers](DreamCore_1_9_Horizontes/RECORRIDO_CON_SECRETOS.md).
+Las vistas son renders de geometría y GLSL reales en GLES2/Mesa, sin HUD. La compilación y pruebas se ejecutan en nube; queda probar ejecución, álbum, controles, sonido y temperatura en teléfono e instalador en Windows.
 
-APK 1.9 real compilado y verificado, **2.927 comprobaciones**, diez enlaces GLES2 normales/mediump, seis OGG nuevos decodificados sin clipping y fuentes cotejadas con la compilación. Las vistas son del GLSL y geometría reales en Mesa/GLES2, sin HUD. Falta probar ejecución, controles, cámara/álbum, sonido y rendimiento en teléfono, además del instalador en Windows. [Validación](DreamCore_1_9_Horizontes/VALIDACION.json).
+![Piscina renovada](DreamCore_2_0_Recuerdos/vistas/piscina.png)
 
-## Vistas renderizadas en la nube
+![Abismo variable](DreamCore_2_0_Recuerdos/vistas/abismo.png)
 
-![Tobogán de planetas](DreamCore_1_9_Horizontes/vistas/planetas.png)
+![Criatura bajo el mar suspendido](DreamCore_2_0_Recuerdos/vistas/criatura.png)
 
-![Rostro esculpido del parque](DreamCore_1_9_Horizontes/vistas/rostro.png)
+![Tu refugio](DreamCore_2_0_Recuerdos/vistas/refugio.png)
 
-![Cama al borde del universo](DreamCore_1_9_Horizontes/vistas/cama.png)
-
-![Mar del cielo](DreamCore_1_9_Horizontes/vistas/mar.png)
-
-![Nueva presencia](DreamCore_1_9_Horizontes/vistas/presencia.png)
-
-| Vista normal | Fotografía con señal oculta |
-| --- | --- |
-| ![Normal](DreamCore_1_9_Horizontes/vistas/foto_normal.png) | ![Foto](DreamCore_1_9_Horizontes/vistas/foto_revelada.png) |
-
-[Versión 1.8 anterior](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_8_Proyecto_Completo.zip).
+[Proyecto completo 1.9 anterior](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_9_Proyecto_Completo.zip).
