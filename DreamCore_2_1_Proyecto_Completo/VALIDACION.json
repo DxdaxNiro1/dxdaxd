@@ -1,0 +1,418 @@
+{
+  "version": "2.1",
+  "version_code": 21,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_bytes": 40245497,
+  "apk_sha256": "54e3681369c8e64e72a244fb3315297466f34808d0c16c32cc6c59a447ec7e18",
+  "compiler": "Kotlin 1.9.24 / AGP 8.5.2 / Gradle 8.7 / compile SDK 34 / JDK 21 (JVM target 17)",
+  "min_sdk": 21,
+  "checks": {
+    "Journey19Check": 703,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5308,
+    "References21Check": 858,
+    "total": 9098
+  },
+  "source_and_changed_assets_identical_to_build": true,
+  "shaders": [
+    {
+      "pair": "scene",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "sky",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "shadow",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-scene",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-sky",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "scene-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "sky-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "shadow-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-scene-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-sky-mediump",
+      "linked": true,
+      "log": ""
+    }
+  ],
+  "render_backend": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1 llvmpipe",
+  "actual_rendered_views": 20,
+  "render_comparisons": {
+    "water_planar_reflection_changed_pixels": 22936,
+    "office_animation_changed_pixels": 12196,
+    "actual_GLES2_render": true
+  },
+  "new_destinations": [
+    "echo_01",
+    "echo_02",
+    "echo_03",
+    "echo_04",
+    "echo_05",
+    "echo_06",
+    "echo_07",
+    "echo_08",
+    "echo_09",
+    "echo_10",
+    "echo_11"
+  ],
+  "new_route_order": [
+    "barrio inclinado",
+    "cine orbital",
+    "valle de duchas",
+    "casa del lago",
+    "canal de hongos",
+    "colina",
+    "gasolinera",
+    "suburbio",
+    "pasillo",
+    "atrio",
+    "oficina"
+  ],
+  "reference_coverage": {
+    "video_15_48_33": [
+      "echo_01"
+    ],
+    "video_15_49_41_1": [
+      "echo_02"
+    ],
+    "video_15_49_40": [
+      "echo_03"
+    ],
+    "video_15_49_41": [
+      "echo_04",
+      "echo_05",
+      "echo_06",
+      "echo_07",
+      "echo_08"
+    ],
+    "three_still_images": [
+      "echo_09",
+      "echo_10",
+      "echo_11"
+    ],
+    "video_15_49_41_2": "Existing game footage, used to review meadow/sea materials and vegetation"
+  },
+  "new_geometry_statistics": [
+    "echo_01 El barrio que se inclinó: 18098 triangles, 36 chunks",
+    "echo_02 El cine sobre la Tierra: 65172 triangles, 8 chunks",
+    "echo_03 Las duchas del valle infinito: 21704 triangles, 18 chunks",
+    "echo_04 La casa reflejada entre nubes: 3872 triangles, 23 chunks",
+    "echo_05 El canal de los hongos dormidos: 43692 triangles, 12 chunks",
+    "echo_06 La colina de la nube inmensa: 16224 triangles, 36 chunks",
+    "echo_07 La última gasolinera del atardecer: 6804 triangles, 36 chunks",
+    "echo_08 El barrio de las sombras de colores: 28632 triangles, 36 chunks",
+    "echo_09 El pasillo de las sillas vacías: 30000 triangles, 8 chunks",
+    "echo_10 El edificio de los pisos sin nadie: 26364 triangles, 10 chunks",
+    "echo_11 La oficina dentro de las nubes: 14240 triangles, 6 chunks"
+  ],
+  "new_route_all_forward_and_backward_arrivals_safe": true,
+  "new_route_walkable_between_all_gates": true,
+  "new_route_entries": [
+    "settings",
+    "hub centre gate",
+    "refuge left door"
+  ],
+  "returns_to_original_entry_after_route": true,
+  "old_main_route_stages": 13,
+  "dark_branch_stages": 2,
+  "old_optional_destinations": 12,
+  "new_models": [
+    "beveled boxes with smooth independent normals",
+    "bowed upholstered chairs",
+    "cylindrical posts and mouldings",
+    "glass/brass pendants",
+    "CRT computers, keyboards and mice",
+    "fuel pumps with curved hoses",
+    "continuous moss cliff surfaces",
+    "mushrooms with modeled caps and spots",
+    "lake island and wooden bridge",
+    "orbital gallery and cinema support pillar"
+  ],
+  "new_material_atlas": "dream_materials_21.png",
+  "material_atlas_sha256": "b4b377fa6ed4dd83387124d28e75f8aa8fb5178d130191ca01d32ebd55df4aba",
+  "atlas_tiles": 16,
+  "gpu_atlas_dimension_by_quality": [
+    512,
+    1024,
+    1024
+  ],
+  "lighting": "Existing outdoor directional shadow maps; new interior local light and floor contact darkening baked into vertex colours; not per-lamp dynamic shadow maps",
+  "lake_reflection": "512 px RGB planar reflection, Y mirror camera, above-water clip, visible/near/quality gated, reduced update frequency when stationary",
+  "soft_cloud_layers_animated": true,
+  "water_streams_translucent": true,
+  "mirrored_texture_repetition_avoids_fract_mipmap_seams": true,
+  "higher_precision_texture_coordinates_when_supported": true,
+  "phone_model_reported_by_user": "Infinix NOTE 50s",
+  "default_fps_target": 30,
+  "user_fps_options": [
+    30,
+    60
+  ],
+  "os_thermal_severe_cap": 24,
+  "thermal_api_minimum": 29,
+  "performance_reference": [
+    "Resident world batches: 94, visible submissions: 50.",
+    "Real triangle-ray comparisons: BVH=7608, previous linear scan=76809181; saved 99.99009493409388%.",
+    "Frame scheduling tested at 24, 30 and 60 FPS. No device FPS/temperature measurements."
+  ],
+  "optimization_measures_retained": [
+    "Dirty rendering driven by Choreographer",
+    "Menus and background stop scene frames",
+    "Conservative frustum culling in main/reflected/shadow passes",
+    "Opaque geometry before sky, separate translucent batch",
+    "Stationary shadow map reuse",
+    "Adaptive mirror refresh",
+    "BVH visibility queries",
+    "Only one of the eleven new scenes in its cache"
+  ],
+  "save_schema": 21,
+  "reads_schemas": [
+    18,
+    19,
+    20,
+    21
+  ],
+  "same_preference_storage_as_previous_versions": true,
+  "nested_return_capacity": 8,
+  "lunar_event_effective_seconds": 120,
+  "new_audio": {
+    "echo_01": {
+      "description": "Original piano, phrase [0, 7, 4, 9], world 1, 51s",
+      "seconds": 51.0,
+      "peak": 0.39515650272369385,
+      "rms": 0.06139617785811424,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "1ba0b5b590c978c91a1b5fa1eb5aae99621a00e2919ac66da189025204fa10a0",
+      "bytes": 281973
+    },
+    "echo_02": {
+      "description": "Original choir, phrase [0, 9, 14, 7], world 2, 53s",
+      "seconds": 53.0,
+      "peak": 0.2268974781036377,
+      "rms": 0.06131146475672722,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "06d02e7e320124d2711c0464bb3dba83eae804f3ae5d0eedfb396127052c8270",
+      "bytes": 277030
+    },
+    "echo_03": {
+      "description": "Original glass, phrase [0, 2, 7, 10], world 3, 55s",
+      "seconds": 55.0,
+      "peak": 0.39132124185562134,
+      "rms": 0.061316899955272675,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "8ef2bbdec150ff2dba9e23d11d05405582362b17770cff317e7c622955a2476d",
+      "bytes": 326634
+    },
+    "echo_04": {
+      "description": "Original harp, phrase [0, 7, 11, 4], world 4, 57s",
+      "seconds": 57.0,
+      "peak": 0.38522011041641235,
+      "rms": 0.061369094997644424,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "25a2c276566313507751416253bf8315a1d5d00730b77aae26320499375c7438",
+      "bytes": 470610
+    },
+    "echo_05": {
+      "description": "Original flute, phrase [0, 9, 7, 2], world 5, 59s",
+      "seconds": 59.0,
+      "peak": 0.28176212310791016,
+      "rms": 0.06139769405126572,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "098b9ba8644d0f94589e252c8a56a8d1a8c46a453070c5e84986d4e598955416",
+      "bytes": 365207
+    },
+    "echo_06": {
+      "description": "Original choir, phrase [0, 4, 12, 7], world 6, 61s",
+      "seconds": 61.0,
+      "peak": 0.2262512892484665,
+      "rms": 0.061346765607595444,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "4430762a52ae6314a8ef4c908b4408411bb274671ac32aa518069444338a7253",
+      "bytes": 384989
+    },
+    "echo_07": {
+      "description": "Original piano, phrase [0, 3, 10, 7], world 7, 63s",
+      "seconds": 63.0,
+      "peak": 0.36812707781791687,
+      "rms": 0.061330173164606094,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "242586fa95e57098581023719e05abd4170611b86e0391a6c85ef28eb1b6312b",
+      "bytes": 488404
+    },
+    "echo_08": {
+      "description": "Original harp, phrase [0, 7, 14, 9], world 8, 65s",
+      "seconds": 65.0,
+      "peak": 0.39276957511901855,
+      "rms": 0.06137457117438316,
+      "seam": 1.922216142702382e-06,
+      "clipped": 0,
+      "sha256": "14929ed3ee3e1134b5724e28a2323834dedbbffef14b71b6e53b9279f8933fa6",
+      "bytes": 558510
+    },
+    "echo_09": {
+      "description": "Original piano, phrase [0, 1, 8, 5], world 9, 67s",
+      "seconds": 67.0,
+      "peak": 0.3528352677822113,
+      "rms": 0.06130765751004219,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "ee8e06ef07a19099da89fd966ab80557ff1b7c3fe1d3222e58078011c93d6f0e",
+      "bytes": 409610
+    },
+    "echo_10": {
+      "description": "Original organ, phrase [0, 6, 7, 1], world 10, 69s",
+      "seconds": 69.0,
+      "peak": 0.25902777910232544,
+      "rms": 0.06116729602217674,
+      "seam": 0.0,
+      "clipped": 0,
+      "sha256": "17a53bdca44688f17ee6ca018761f728e33ff4a320d08419dda8fac0778240cc",
+      "bytes": 377936
+    },
+    "echo_11": {
+      "description": "Original glass, phrase [0, 2, 10, 7], world 11, 71s",
+      "seconds": 71.0,
+      "peak": 0.31356698274612427,
+      "rms": 0.06136094406247139,
+      "seam": 3.7492280113848864e-11,
+      "clipped": 0,
+      "sha256": "cba34a1c45c4c9e575faf49d8179d3d77c4153bac7b92d0fda5ad2d3dc328f24",
+      "bytes": 493815
+    }
+  },
+  "device_execution_tested": false,
+  "phone_fps_measured": false,
+  "phone_temperature_measured": false,
+  "windows_installer_executed": false,
+  "limitations": [
+    "Recreations are authored playable adaptations of the references; not identical photorealistic reconstructions",
+    "Lighting, local occlusion, water and layered clouds are GLES2 approximations",
+    "Menus, controls, audio perception, thermal behavior and execution need physical phone verification",
+    "Frame caps are scheduling targets, not measured phone performance",
+    "Only the existing gravity path rotates the walkable orientation; the new atrium uses normal ramps and protected bridges",
+    "No original uploaded videos, photographs or extracted audio are included in the release"
+  ],
+  "source_sha256": {
+    "DreamActors.kt": "8507aebe4ee72f9f53b99c748b973aadee9a2a0b7be3c6b876e829e0d5437ea7",
+    "DreamArtTextures.kt": "ae2380067306e01e65c4ec8f7bbb897b986b428e229b38eb96769a58a4fcdc5b",
+    "DreamAtmosphere.kt": "cd1622f869e0000b9d89de9a89609534947a23143af1630d349386686ab22350",
+    "DreamAudio.kt": "c7f550501d4ae191664b0a7e702a03e1138e43714afa6ef7e15c471c5ebec2bb",
+    "DreamChessMap.kt": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2",
+    "DreamChronicle.kt": "efe9aafc4393774473268df6377d5556657b28d3d1ebd5e87fcf641ed5ba5db1",
+    "DreamChunks.kt": "69b746a34ba4cfdafc87dcce66b2d8d8d7ffcba6b50d51d5c8441ca2a8b63c94",
+    "DreamCloudMap.kt": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65",
+    "DreamCloudTexture.kt": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2",
+    "DreamCraterLayout.kt": "09f8cc68120a4f6f577225165dad85b2d7e394cee52f7cc339fc0a54109a7413",
+    "DreamCraterPhysics.kt": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb",
+    "DreamCreature.kt": "309b3c870b6bb6f7de49d2e12b2e3eaba4c3a1d52a319e5242647b1a5403224c",
+    "DreamDarkMap.kt": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb",
+    "DreamEglConfigChooser.kt": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b",
+    "DreamEvents.kt": "cc797fb9a3d60eacfb8cb831c7e036fce2cc5e609be9d32d1b9d3899f6fbce1f",
+    "DreamExpansion.kt": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962",
+    "DreamExploration.kt": "3c3a6878b4a580dda1ac65c0af86b04d367d3602a0a0702a0fb8ce7eefffa972",
+    "DreamFootsteps.kt": "e3cf308482359c1fe514a8b5db6c0d38768dc4313869bc182f17a3ffc1cb1b56",
+    "DreamGravity.kt": "53a3630438e58bf46e81c7ec4696c2db4c4707e2ce8740f4730546c3b1cb08e7",
+    "DreamHorizons.kt": "a67905bead8fea64327b1d7d076cbb5f137e4b0a442bba74b6aadd3ec775c2b9",
+    "DreamJourney.kt": "95e8d3fd7de244128bbbd9e065783640e735b536de9cb946b7ad57f41eca3d11",
+    "DreamLands.kt": "4c9b2a508b0631194a633c481fd4d2090a7d0a869d5c6b9cbcaf13f23f441932",
+    "DreamLegacyShaders.kt": "e97af98467d471e52171f253dce9585f8cc36b96e3022d5c2fb968fe5e803baf",
+    "DreamMail.kt": "c87179c3c5a339ebcbc8c59b620708ad35df6e1482b6497ec16acea85998d6e1",
+    "DreamMemories.kt": "5ea3d4743642fb302c0dce213fda9c71d682ff3bd0b98f39d66ba3ad8a8fcf13",
+    "DreamMesh.kt": "d45694793c2f3d7f1afd6754e1031d571707af139636460d2958eb02f03c58d7",
+    "DreamMoonLife.kt": "9a0da6a5f8b7cafb1ec8d8cfd9d5e138ace86fbf41d02dd70896a7aa8693ab5f",
+    "DreamMoonTexture.kt": "86751cdae7ed9727254c37e50b734be4d3e3d1bdf945f03023436c47728cf616",
+    "DreamObjects.kt": "345a4b9d20acef5c5a64c5a1c40d01426bfb5930a574c1a5c5548b0e0af151d0",
+    "DreamOptions.kt": "95c0b6e8c0031cfda53f9cd587e9a357af797ca43c1a1ee192bae48344cfbc97",
+    "DreamPerformance.kt": "f16f3e2bcddfcf87478d7f9a65bf8404f63ec5e13587f64cf323a283e07f6102",
+    "DreamPhotoFrames.kt": "172c2419b504a149c77d856eeb0279ef2a38d2d55695ba2661d7677b0069db76",
+    "DreamPhotoStore.kt": "9430cf3743961c9d5ad9f534254a9687e8b9d6a0881ad46c39faf625fb42ec7e",
+    "DreamPhotography.kt": "3e3386fbeb8f4e73d7982da2d4d487ce5354c8da41eb8db7c1ab6381fe1edd88",
+    "DreamPocket.kt": "e366f2e9922970a8bc1347fadc43b787b2a82b56838596f09f1fd9ebc4466c57",
+    "DreamPoolsDetails.kt": "795991fc2467c9584ff1207624ade11cfaead5fa9549ff42615bb7100b735d3b",
+    "DreamReferences.kt": "b413ed692f52124a2d94da90cc4dd9e8be6b07de3eebd54ac615cd6e3bcd876b",
+    "DreamRenderer.kt": "8bbfac409597ffed553818f10ac423ada6d0de36499bd07f48e1367f752e84f5",
+    "DreamRoadMap.kt": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f",
+    "DreamSaveStore.kt": "72aec8447207b5dfc74a2035670fdcc50bcf526d39a40f9b67a9d147be86a3c2",
+    "DreamSculpt.kt": "823db3a869a6bd8c4534ed636326196b3ff409f66a9ab669bc65187364022bb4",
+    "DreamShaders.kt": "b942bacf7baa20ee14b1c093153673db0077af498baf1b6869bc40d35ca5f7af",
+    "DreamShadowMap.kt": "63b97e66df6538be4b3ed4266dc8f0689c6af5920203bf7de798ae146151bf28",
+    "DreamShapes.kt": "27a12ab2d151f16ab801243746bb1802972a6050fc7bf6af812a2b02662ea3ab",
+    "DreamSkySight.kt": "985cc7594426c8419e260fdbfeadf0bb91adc31df5c4f2868f53f7156ad88d67",
+    "DreamSurfaceTextures.kt": "1642a416660d267624e4f222ad6669fddb6db599bafd780e6d0f7357334d0e4e",
+    "DreamTextures.kt": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e",
+    "DreamThermalMonitor.kt": "ae6f16be94ed1290fce801f947cc24f979ff665f81242c66b5ddaf7bcc582138",
+    "DreamTools.kt": "d7da311149e10b7350fd9669a7d527b0bba6f19d0b76ea3fcd0918c9bf5cef95",
+    "DreamTravel.kt": "aa480d50a600d96d409c3f0b61d1feb4e08f3f452e2485a31655b83eb0959cf6",
+    "DreamTunnelMap.kt": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424",
+    "DreamVoyage.kt": "be441d82138f11671264f457bbc8dbfd61048884a4004f7dec6128d321ba0f92",
+    "DreamWaterpark.kt": "80119d78b4d889dca74e6bfae2ddc051022bde3e8123f80eabda6da0fd676785",
+    "DreamWorldMotion.kt": "929d010c710730d3aacc5803487fc3619a108d165acddcc98c92ce6afcd80a03",
+    "DreamWorlds.kt": "55210a1802196b05424e3d0b3b821886c6e73ab09ffde6377a568dfdbf31b62e",
+    "MainActivity.kt": "179942cb8b277ad0053fd5e91c7c982779b265a78d8052cd88595ebb57e8f189"
+  },
+  "render_sha256": {
+    "barrio.png": "dfcff48c923a9d85816380b9c465921d06ec9abbca154b570bd83e3c5f350365",
+    "cine.png": "e3ee605fbc0190dd5a7e4d12c8ecbeea5064afc0262733eb982b646a7bf655fd",
+    "galeria_orbital.png": "e802fa63a7598f1404bb3a9a570f95300455fa29589dfabb5ae583c4ae3e86d0",
+    "valle.png": "1c9843fdb53d89a6cacc6dabea66c38a624fe3615f7143180ae5fb8c242e769c",
+    "gruta.png": "14805f37d4b3eaaa901a9744831daf11291195e551db949da26f2d102c05be3e",
+    "lago.png": "4b364e394cc15cfed3e7fea8d3722765c8aa3f94c01d4fc8d523a70f2baee401",
+    "canal.png": "b31f12ab55bbd2f07346892074b44f27ef0b959a3e9fd584305a03c393182455",
+    "colina.png": "7be3e66708a106aaa0d247af163ab2a8ed1ffe1491176db13e9a9ae11f7fdbb4",
+    "gasolinera.png": "cb9f477bc2f78637676db558425b37e8f886154e229c78ca9553d08e7fd89c51",
+    "suburbio.png": "756ad82f3c653f3d49e6dd4ecf28a4f8eabc2eb39148c04d4a376401ea9641b7",
+    "pasillo.png": "6cbc231bc1b5a3b6457f4819d7969b1ed028fc73814c45bad794e4f425061cc3",
+    "atrio.png": "b3008e0feb11743038b11738d008d08d925e737cd9fb19c4b92192a1dc8bf114",
+    "oficina.png": "551117278bd34e2ba85ce2be43e47809414729a54ce2c5fb345258b5b0f3c883",
+    "pradera.png": "28576c0295e314d53e159482334147c9feee9edbc7eea9d5266fdadb0af298d4",
+    "mar.png": "1257bdd4b67720bfd9f372fee0ef1424b66befd64db4435979c6593a5064fc92",
+    "oficina_detalle.png": "ece10d08bf46d6575544acde6ee786991f009d377c78639e744cf41b813c3e7d",
+    "silla_curva.png": "c6eb060dbafed6c953ea73a3e4fd727b712e716182b3d95529a9b434a6c475c3",
+    "atrio_vacio.png": "957204cc24286147c79169c359a2b92709eb964ac38de0e157b27d0760870d92",
+    "lago_sin_reflejo.png": "92a4bf4d32967a9eaa1c984f863f3219ca496f83eff881ecc09126274563e833",
+    "oficina_movimiento.png": "96d2ccea727c761979e683630b7dd41f46e3154c436850dc57def326e91a0d0e"
+  }
+}

@@ -1,25 +1,29 @@
-# DreamCore 2.0 — Los lugares que te recuerdan
+# DreamCore 2.1 — Los lugares imposibles
 
-[**Descargar actualización 2.0 para tu juego actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_0_Recuerdos.zip)
+[**Descargar actualización 2.1 para tu juego actual**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_1_Arquitecturas.zip)
 
-[**Descargar proyecto completo 2.0 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_0_Proyecto_Completo.zip)
+[**Descargar proyecto completo 2.1 para Android Studio**](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_1_Proyecto_Completo.zip)
 
-Refugio con cuatro marcos para tus fotografías; entrada a cuatro recuerdos quietos desde el álbum; linterna, brújula y prisma; cartero sin rostro con tres cartas; camino que se curva hasta una pared vertical y criatura enorme bajo el mar del cielo. Piscina con arcos y ventanas, abismo con distribución de casas según la semilla guardada, móviles elevados diferentes y constelación retirada. Siete músicas originales nuevas y voz grave de la criatura.
+Once mundos nuevos conectados: barrio inclinado, cine sobre la Tierra, valle de duchas y piscinas, casa reflejada en un lago entre nubes, canal de hongos, colina con casa rosa, gasolinera aislada, suburbio pastel, pasillo de sillas, atrio blanco y oficina entre nubes.
 
-Modo inicial a 30 FPS, opción de 60 y límite térmico de 24 cuando Android avisa de calor elevado. Menús detienen el renderizado, bloques fuera de cámara se descartan, sombras estáticas se reutilizan, reflejos adaptan su frecuencia y el cielo se calcula tras los sólidos. Se mantienen los mapas, texturas e iluminación de la calidad elegida. El calentamiento real y los FPS requieren comprobarse en tu Infinix NOTE 50s.
+Sillas curvas, biseles, lámparas, computadoras CRT, surtidores con mangueras y roca modelada como una superficie continua. Nueva lámina de materiales con relieve/rugosidad derivada, coordenadas de textura continuas, iluminación local calculada al construir interiores, reflejo plano del lago y nubes suaves. Once músicas originales nuevas. También cambian los materiales globales, varias sillas antiguas y la vegetación del pueblo.
 
-**Actualizar:** extrae todo y ejecuta Instalar_Windows.cmd, que crea respaldo. **Proyecto completo:** abre la carpeta DreamCore en Android Studio. Conserva tu identificador y clave de firma, sin desinstalar la app. Lee guardados 1.8/1.9 y conserva los progresos. [Instalación y novedades](DreamCore_2_0_Recuerdos/LEEME.md) · [Ubicaciones y secretos](DreamCore_2_0_Recuerdos/RECORRIDO_CON_SECRETOS.md) · [Validación](DreamCore_2_0_Recuerdos/VALIDACION.json).
+**Entrada:** Ajustes → Los lugares imposibles · 11 mundos; también por la puerta central del fondo del Umbral o desde el refugio. Puedes volver por las puertas y al terminar regresas al punto de entrada. Conserva la ruta Dreamcore y Dark Fantasy anterior, herramientas, álbum y progreso.
 
-APK 2.0 compilado y firma verificada; **8.237 comprobaciones**, diez enlaces de shaders y ocho OGG nuevos validados sin clipping. En la comparación del cielo antes/después se conservaron los 518.400 píxeles; el descarte de bloques y la búsqueda BVH tienen pruebas contra referencias.
+**Instalar:** extrae el ZIP de actualización y ejecuta Instalar_Windows.cmd en tu PC; crea respaldo. Para el proyecto completo abre DreamCore en Android Studio. Conserva tu identificador y clave de firma sin desinstalar la aplicación. [Instalación y novedades](DreamCore_2_1_Arquitecturas/LEEME.md) · [Recorrido](DreamCore_2_1_Arquitecturas/RECORRIDO_CON_SECRETOS.md) · [Validación](DreamCore_2_1_Arquitecturas/VALIDACION.json).
 
-Las vistas son renders de geometría y GLSL reales en GLES2/Mesa, sin HUD. La compilación y pruebas se ejecutan en nube; queda probar ejecución, álbum, controles, sonido y temperatura en teléfono e instalador en Windows.
+APK 2.1 compilado y firma verificada; **9.098 comprobaciones**, diez enlaces GLES2, once OGG nuevos decodificados sin clipping y veinte vistas del motor. Se comprobaron recorridos, alturas, guardados, modelos y los cambios de imagen al activar el reflejo del lago y avanzar la animación de la oficina.
 
-![Piscina renovada](DreamCore_2_0_Recuerdos/vistas/piscina.png)
+Mantiene 30 FPS como objetivo inicial, opción de 60, control térmico y descarte de geometría fuera de cámara. Las vistas son renders reales de geometría y GLSL en Mesa/GLES2. La geometría sigue siendo estilizada; FPS, temperatura, sonido y ejecución deben verificarse en el teléfono, y el instalador en Windows.
 
-![Abismo variable](DreamCore_2_0_Recuerdos/vistas/abismo.png)
+![Pasillo con sillas curvas](DreamCore_2_1_Arquitecturas/vistas/pasillo.png)
 
-![Criatura bajo el mar suspendido](DreamCore_2_0_Recuerdos/vistas/criatura.png)
+![Cine sobre la Tierra](DreamCore_2_1_Arquitecturas/vistas/cine.png)
 
-![Tu refugio](DreamCore_2_0_Recuerdos/vistas/refugio.png)
+![Valle de duchas](DreamCore_2_1_Arquitecturas/vistas/valle.png)
 
-[Proyecto completo 1.9 anterior](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_1_9_Proyecto_Completo.zip).
+![Casa con reflejo en el lago](DreamCore_2_1_Arquitecturas/vistas/lago.png)
+
+![Oficina entre nubes](DreamCore_2_1_Arquitecturas/vistas/oficina.png)
+
+[Proyecto completo 2.0 anterior](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_0_Proyecto_Completo.zip).

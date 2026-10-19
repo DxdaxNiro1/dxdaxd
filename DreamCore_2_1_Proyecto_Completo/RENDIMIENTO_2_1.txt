@@ -1,0 +1,17 @@
+Resident world batches: 94, visible submissions: 50.
+Real triangle-ray comparisons: BVH=7608, previous linear scan=76809181; saved 99.99009493409388%.
+Frame scheduling tested at 24, 30 and 60 FPS. No device FPS/temperature measurements.
+
+echo_01 El barrio que se inclinó: 18098 triangles, 36 chunks
+echo_02 El cine sobre la Tierra: 65172 triangles, 8 chunks
+echo_03 Las duchas del valle infinito: 21704 triangles, 18 chunks
+echo_04 La casa reflejada entre nubes: 3872 triangles, 23 chunks
+echo_05 El canal de los hongos dormidos: 43692 triangles, 12 chunks
+echo_06 La colina de la nube inmensa: 16224 triangles, 36 chunks
+echo_07 La última gasolinera del atardecer: 6804 triangles, 36 chunks
+echo_08 El barrio de las sombras de colores: 28632 triangles, 36 chunks
+echo_09 El pasillo de las sillas vacías: 30000 triangles, 8 chunks
+echo_10 El edificio de los pisos sin nadie: 26364 triangles, 10 chunks
+echo_11 La oficina dentro de las nubes: 14240 triangles, 6 chunks
+
+Phone execution/temperature/FPS not measured.

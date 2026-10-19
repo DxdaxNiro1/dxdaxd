@@ -1,0 +1,157 @@
+{
+  "fx_grass_0_17": {
+    "peak": 0.2412755936384201,
+    "rms": 0.044623956084251404,
+    "seconds": 0.4505215419501134,
+    "spectral_centroid_hz": 383.0078523054651,
+    "clipped": 0,
+    "bytes": 7450,
+    "sha256": "1967db9ac5e56d0ab7157a8aaa8d371bbd0010d780f8d48402e9c427450d9a0c"
+  },
+  "fx_grass_1_17": {
+    "peak": 0.25792551040649414,
+    "rms": 0.0446506068110466,
+    "seconds": 0.45920634920634923,
+    "spectral_centroid_hz": 397.0016625243232,
+    "clipped": 0,
+    "bytes": 7488,
+    "sha256": "2a5453de2ddfbc0c6eb1edd7c0bdb89c2fee6258e7ee357c5191565346274fa4"
+  },
+  "fx_grass_2_17": {
+    "peak": 0.2905729115009308,
+    "rms": 0.041733838617801666,
+    "seconds": 0.47487528344671204,
+    "spectral_centroid_hz": 376.12485894614025,
+    "clipped": 0,
+    "bytes": 7622,
+    "sha256": "dadbbba2ad681945d1a9044052969b0d6beea2529a98f1a5d0ffe98dbc639cdb"
+  },
+  "fx_stone_0_17": {
+    "peak": 0.2898158133029938,
+    "rms": 0.035238008946180344,
+    "seconds": 0.4539229024943311,
+    "spectral_centroid_hz": 178.29398365413388,
+    "clipped": 0,
+    "bytes": 7551,
+    "sha256": "f581049110b1da66a003826ccc02d3e4eb9cd5a150972b47580c1ae9e1e31e07"
+  },
+  "fx_stone_1_17": {
+    "peak": 0.2863854467868805,
+    "rms": 0.04028059169650078,
+    "seconds": 0.4572108843537415,
+    "spectral_centroid_hz": 190.88864046828218,
+    "clipped": 0,
+    "bytes": 7423,
+    "sha256": "fa836750bf6333a13167eaa03bfbab3442677b4a6fa0df28ea40504535d73204"
+  },
+  "fx_stone_2_17": {
+    "peak": 0.29128867387771606,
+    "rms": 0.038969554007053375,
+    "seconds": 0.4890702947845805,
+    "spectral_centroid_hz": 182.18277000450658,
+    "clipped": 0,
+    "bytes": 7549,
+    "sha256": "50392562379a2c8e7bd93fda6272ef00a41474a31851d08c80e44dde340cc40b"
+  },
+  "fx_tile_0_17": {
+    "peak": 0.28934618830680847,
+    "rms": 0.02735469490289688,
+    "seconds": 0.45700680272108846,
+    "spectral_centroid_hz": 194.17884128994442,
+    "clipped": 0,
+    "bytes": 7634,
+    "sha256": "0c43d43a341d0caae9c354b4f64ffb4b85845ddc205fe33fa43729d1727e648c"
+  },
+  "fx_tile_1_17": {
+    "peak": 0.2836408019065857,
+    "rms": 0.03456130623817444,
+    "seconds": 0.44820861678004537,
+    "spectral_centroid_hz": 171.36250000321746,
+    "clipped": 0,
+    "bytes": 7506,
+    "sha256": "9ead2524bf1f934334a9425e2644d2f9e5159a08aacf32fedc90c49ba2806559"
+  },
+  "fx_tile_2_17": {
+    "peak": 0.29162484407424927,
+    "rms": 0.03456849977374077,
+    "seconds": 0.4890702947845805,
+    "spectral_centroid_hz": 183.32208644849797,
+    "clipped": 0,
+    "bytes": 7591,
+    "sha256": "b8ad76ec9845d1bdf4fbf9eeb6a79360a818de78aa96cfa68bd40f2d7142e567"
+  },
+  "fx_wood_0_17": {
+    "peak": 0.29050925374031067,
+    "rms": 0.040010206401348114,
+    "seconds": 0.4811791383219955,
+    "spectral_centroid_hz": 165.393433656108,
+    "clipped": 0,
+    "bytes": 7623,
+    "sha256": "99cba2cfd34cb73f4f9f2ccc5bc485ed9cb2f9c9781bf138cf05397ca57cce3c"
+  },
+  "fx_wood_1_17": {
+    "peak": 0.28813064098358154,
+    "rms": 0.02592192217707634,
+    "seconds": 0.4692517006802721,
+    "spectral_centroid_hz": 175.9027250813276,
+    "clipped": 0,
+    "bytes": 7612,
+    "sha256": "ab1ca26df87771578b63a60c8809ebead8435a48c822262fbe3322920e6c46f9"
+  },
+  "fx_wood_2_17": {
+    "peak": 0.269639253616333,
+    "rms": 0.04447082057595253,
+    "seconds": 0.4658503401360544,
+    "spectral_centroid_hz": 169.46475179067113,
+    "clipped": 0,
+    "bytes": 7316,
+    "sha256": "793a3a95ae96743c711fa73ec7e24ec46bfec63a71dd10395ae5647b7e1ef5de"
+  },
+  "fx_water_0_17": {
+    "peak": 0.28279513120651245,
+    "rms": 0.03473760932683945,
+    "seconds": 0.4753061224489796,
+    "spectral_centroid_hz": 594.0985665696777,
+    "clipped": 0,
+    "bytes": 7723,
+    "sha256": "bdbfaf057827dedf0812b65df475e2af95de8b76ae54a8058c215aa69993733e"
+  },
+  "fx_water_1_17": {
+    "peak": 0.2738065719604492,
+    "rms": 0.04446793720126152,
+    "seconds": 0.4458503401360544,
+    "spectral_centroid_hz": 597.885441254117,
+    "clipped": 0,
+    "bytes": 7413,
+    "sha256": "18ca4cdfba828218fccd6e8846f5d2301e92d4101073071844262655edd227d1"
+  },
+  "fx_water_2_17": {
+    "peak": 0.2969138026237488,
+    "rms": 0.03834613412618637,
+    "seconds": 0.47337868480725626,
+    "spectral_centroid_hz": 680.9329649574524,
+    "clipped": 0,
+    "bytes": 7658,
+    "sha256": "82b50d7f9c8a096e25190a1487131ffe38a48fbc49ebfe4e7368ecf746a2f4c8"
+  },
+  "air_moon_17": {
+    "description": "Original quiet lunar layer; no loud transient",
+    "seconds": 32.0,
+    "peak": 0.23545899987220764,
+    "rms": 0.044138118624687195,
+    "seam": 5.703096394427121e-05,
+    "clipped": 0,
+    "sha256": "c5cfb039d5ca94bb02963b4e8e13f0730d743b1d057ba98462ffaec502ad937c",
+    "bytes": 245684
+  },
+  "air_eclipse_17": {
+    "description": "Original quiet lunar layer; no loud transient",
+    "seconds": 32.0,
+    "peak": 0.24996627867221832,
+    "rms": 0.049125365912914276,
+    "seam": 0.00018046954937744886,
+    "clipped": 0,
+    "sha256": "a8efe78754b4c6667f7a3d4e23aed647b35044c9f27a58ea9b81bf0da132a917",
+    "bytes": 237292
+  }
+}
