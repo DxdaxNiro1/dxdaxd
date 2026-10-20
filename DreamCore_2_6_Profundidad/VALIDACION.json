@@ -1,0 +1,87 @@
+{
+  "version": "2.6",
+  "version_code": 26,
+  "save_schema": 23,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_sha256": "35978656963447b137a39b20e5aabca546cf3ea8f45a6126c467dc5c2a0b497b",
+  "apk_bytes": 63540935,
+  "source_and_resources_identical_to_build": true,
+  "registered_worlds": 48,
+  "compositions_retained": 49,
+  "music_changed": false,
+  "interaction_rule_sources_changed": false,
+  "modified_sources": [
+    "app/src/main/java/com/dreamcore/game/DreamShaders.kt",
+    "app/src/main/java/com/dreamcore/game/DreamPerformance.kt",
+    "app/src/main/java/com/dreamcore/game/DreamSurfaceTextures.kt",
+    "app/src/main/java/com/dreamcore/game/DreamLegacyShaders.kt",
+    "app/src/main/java/com/dreamcore/game/DreamRenderer.kt",
+    "app/src/main/java/com/dreamcore/game/MainActivity.kt",
+    "app/src/main/java/com/dreamcore/game/DreamSculpt.kt",
+    "app/src/main/java/com/dreamcore/game/DreamLands.kt",
+    "app/src/main/java/com/dreamcore/game/DreamWorlds.kt",
+    "app/src/main/java/com/dreamcore/game/DreamCloudTexture.kt"
+  ],
+  "new_sources_and_assets": [
+    "app/src/main/res/drawable-nodpi/dream_botany_26.png",
+    "app/src/main/res/drawable-nodpi/dream_cloud_volume_26.png",
+    "app/src/main/java/com/dreamcore/game/DreamPools26.kt",
+    "app/src/main/java/com/dreamcore/game/DreamPost26.kt",
+    "app/src/main/java/com/dreamcore/game/DreamBotany26.kt",
+    "app/src/main/java/com/dreamcore/game/DreamSky26.kt",
+    "app/src/main/java/com/dreamcore/game/DreamGraphics26.kt"
+  ],
+  "checks": {
+    "Journey19Check": 711,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5314,
+    "References21Check": 858,
+    "Miradas22Check": 6296,
+    "Desvios23Check": 63733,
+    "Resonancias24Check": 395,
+    "Graphics26Check": 496
+  },
+  "total_checks": 80032,
+  "graphics": {
+    "balanced_views": 49,
+    "low_mediump_views": 9,
+    "high_views": 2,
+    "real_renderbuffer_fallback_view": 1,
+    "detail_views": 3,
+    "legacy_fallback_view": true,
+    "shader_pairs": 13,
+    "backend": "OpenGL ES 2.0 Mesa llvmpipe",
+    "phone_captures": false
+  },
+  "contact_ao_checks": {
+    "flat": {
+      "minimum": 255,
+      "mean": 255.0,
+      "fraction_below_250": 0.0
+    },
+    "contact": {
+      "minimum": 186,
+      "mean": 254.9701909722222,
+      "fraction_below_250": 0.00140625
+    }
+  },
+  "scene_fragment_samplers": 8,
+  "sky_fragment_samplers": 5,
+  "cloud_steps": {
+    "low": 0,
+    "medium": 16,
+    "high": 24
+  },
+  "cloud_buffer_scale": 0.5,
+  "ambient_occlusion_scale": 0.5,
+  "contact_ao_requires_optional_depth_texture_and_highp": true,
+  "physical_android_test": false,
+  "phone_temperature_measured": false,
+  "phone_fps_measured": false,
+  "illustration_quality_achieved": false
+}

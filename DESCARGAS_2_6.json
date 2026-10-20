@@ -1,0 +1,16 @@
+{
+  "version": "2.6",
+  "packages": [
+    {
+      "file": "DreamCore_2_6_Profundidad.zip",
+      "bytes": 74129500,
+      "sha256": "1507e9455eb39419d4af5fca19e55a539940b249b256435e73dc9c9224d48068"
+    },
+    {
+      "file": "DreamCore_2_6_Proyecto_Completo.zip",
+      "bytes": 74892079,
+      "sha256": "903a032550d6ddb70e72b8fc85cf4f63ebea19525a92465f4264dfb4746f07d9"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

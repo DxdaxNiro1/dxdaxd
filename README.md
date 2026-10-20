@@ -1,22 +1,23 @@
-# DreamCore · 2.5 Luz de los sueños
+# DreamCore · 2.6 Profundidad
 
-Juego Android Kotlin / GLES2. Primera revisión visual inspirada en las portadas: materiales, luz por superficie, interiores iluminados y agua más tranquila. Se mantienen el recorrido, el guardado y las 49 composiciones de 2.4. [Comparar vistas reales del motor](DreamCore_2_5_Luz_de_los_Suenos/VISTAS.md).
+Juego Android Kotlin / GLES2. Revisión del motor compartido inspirada en las portadas: oclusión de contacto, suavizado, nubes con volumen, vegetación recortada y agua transparente con reflejos de la sala. Se remodelan especialmente las piscinas, el pueblo y las casas compartidas. [Comparar vistas reales del motor](DreamCore_2_6_Profundidad/VISTAS.md).
 
-- [Descargar actualización 2.5](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_5_Luz_de_los_Suenos.zip)
-- [Descargar álbum MP3, nombres y miniaturas](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_4_Banda_Sonora.zip)
-- [Proyecto completo 2.5](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_5_Proyecto_Completo.zip)
-- [Catálogo: escuchar o descargar cada MP3](DreamCore_2_4_Resonancias/Banda_sonora/CATALOGO.md)
-- [Instalación, novedades y verificación](DreamCore_2_5_Luz_de_los_Suenos/LEEME.md)
-- [49 portadas ilustradas con los títulos de las músicas](DreamCore_2_4_Portadas/GALERIA.md)
-- [Kit Dreamcore de NiroDxdax para YouTube: perfil, banner, miniaturas y marcas de agua](NiroDxdax_Kit_YouTube_Dreamcore/GALERIA.md)
-- [49 videos musicales a 1080p con sus portadas y marca de agua NiroDxdax](NiroDxdax_Videos_Dreamcore/DESCARGAR.md)
+- [Descargar actualización 2.6](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_6_Profundidad.zip)
+- [Proyecto completo 2.6 para Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_6_Proyecto_Completo.zip)
+- [Instalación y cambios](DreamCore_2_6_Profundidad/LEEME.md)
+- [Presupuesto gráfico y alternativas por calor/capacidad](DreamCore_2_6_Profundidad/RENDIMIENTO_2_6.txt)
+- [Informe de validación](DreamCore_2_6_Profundidad/VALIDACION.json)
+- [Álbum MP3: nombres, miniaturas y reproductor](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_4_Banda_Sonora.zip)
+- [Catálogo individual de las 49 músicas](DreamCore_2_4_Resonancias/Banda_sonora/CATALOGO.md)
+- [49 portadas ilustradas con sus títulos](DreamCore_2_4_Portadas/GALERIA.md)
+- [Kit Dreamcore de NiroDxdax para YouTube](NiroDxdax_Kit_YouTube_Dreamcore/GALERIA.md)
+- [49 videos musicales a 1080p con marca de agua NiroDxdax](NiroDxdax_Videos_Dreamcore/DESCARGAR.md)
 - [Plan del juego](PLAN_DEL_JUEGO.md)
-- [Informe de validación](DreamCore_2_5_Luz_de_los_Suenos/VALIDACION.json)
 
-En el juego: **Sala de escucha**, desde el inicio o Ajustes. Para el álbum independiente, extrae todo su ZIP y abre **ESCUCHAR.html**, los MP3 o la lista M3U8 en un reproductor compatible. Los MP3 llevan las portadas incrustadas.
+Extrae TODO el ZIP de actualización y ejecuta **Instalar_Windows.cmd** sobre tu proyecto. Crea una copia de seguridad antes de copiar. Compila e instala con tu mismo identificador y firma para conservar la partida. El proyecto completo se abre por la carpeta con `settings.gradle.kts`. SDK 34 / JDK 17 compatible / minSdk 21.
 
-Extrae la actualización y ejecuta Instalar_Windows.cmd sobre tu proyecto; crea una copia de seguridad antes de copiar. Compila e instala el APK con tu misma firma e identificador para conservar la partida, sin desinstalar. El proyecto completo se abre por la carpeta con settings.gradle.kts en Android Studio. SDK 34 / JDK 17 compatible / minSdk 21.
+Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado de esquema 23. Las músicas conservan exactamente los archivos anteriores. En el juego: **Sala de escucha**, desde el inicio o Ajustes. El álbum y los videos se descargan por separado.
 
-El MP3 de referencia supera el límite de transferencia de 32 MB y no pudo analizarse. La colección son composiciones originales que interpretan el ambiente pedido. No hay medición física de temperatura, batería o FPS ni prueba de interacción Android; se mantienen los modos de energía existentes.
+Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
-Verificación 2.5: APK compilado y firma comprobada; 79,536 comprobaciones de lógica; 49 vistas del catálogo en GLES2, ocho casos mediump/calidad baja y un caso en calidad alta. Los audios conservan exactamente los archivos de 2.4. Las ilustraciones del álbum son la dirección artística; el motor todavía requiere más modelado y trabajo visual para acercarse a su acabado.
+**Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.

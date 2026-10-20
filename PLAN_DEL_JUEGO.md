@@ -31,7 +31,7 @@ Decisiones del usuario, conversación del 19 de octubre de 2026 (America/La_Paz)
 - Algunas salidas pueden ser viajes, trenes o cambios del entorno, además de puertas.
 - Ninguna idea pendiente se considera implementada por estar en este documento.
 
-El último mensaje autoriza implementar las cinco mecánicas y nuevos escenarios basados en los cuatro videos y cinco imágenes adjuntos.
+La petición de 2.3 autorizó implementar las cinco mecánicas y nuevos escenarios basados en los cuatro videos y cinco imágenes adjuntos.
 
 ## Cobertura de referencias 2.3
 
@@ -59,3 +59,9 @@ El usuario quiere llevar al juego el acabado de las portadas ilustradas: materia
 Primera implementación: atlas renovado, escala de fibras y mosaicos, relieve por superficie, rugosidad, iluminación de materiales en espacio aproximadamente lineal y curva de blancos; luz de lámparas y ventanas en pasillo, atrio, oficina y Backrooms; agua de las piscinas con reflejo del cielo y nubes con sombreado más profundo. Se conservan geometrías, recorrido, guardado y músicas. La remodelación completa y un acabado equivalente a las portadas quedan pendientes de más trabajo y revisión del resultado real.
 
 Presupuesto: bajo 512 y equilibrado 1024 para los atlas, como en 2.4; alta opta por 2048. Se mantienen el límite de FPS, protección térmica y frecuencia de reflejos/sombras. Las vistas se verifican en GLES2/Mesa; no hay medición de temperatura, batería o FPS en el NOTE 50s.
+
+## Revisión 2.6 Profundidad · 20 de octubre de 2026
+
+El usuario autoriza una revisión prolongada del motor para acercarlo a las portadas. Se desarrolla una base compartida con oclusión de contacto, FXAA, resplandor Alto, nube volumétrica a media resolución, reflejo plano y transparencia de piscinas. Se remodelan piscinas, casas compartidas y vegetación del pueblo. El rendimiento sigue siendo un criterio de diseño: calidad efectiva según calor/ahorro, geometría botánica reducida, límites de FPS conservados y capacidades opcionales con alternativas.
+
+Las 48 escenas, 49 músicas, guardado y comportamiento de la luna se mantienen. Este trabajo no equivale todavía a una reproducción de las ilustraciones. La revisión visual se demuestra con vistas del motor; la temperatura, autonomía y fluidez reales deben medirse en el NOTE 50s.
