@@ -1,0 +1,85 @@
+{
+  "channel": "NiroDxdax",
+  "style": "Dreamcore: green meadow, pink house, cream doorway, turquoise water, pastel clouds and hidden eye",
+  "assets": [
+    {
+      "key": "profile",
+      "file": "01_Perfil_800.png",
+      "title": "Foto de perfil",
+      "use": "Sube esta imagen como foto del canal. El monograma ND queda en el centro del recorte circular.",
+      "width": 800,
+      "height": 800,
+      "bytes": 1464825,
+      "sha256": "839c44043c7e4710051863104230d2c997a9010cd6aac54257e0f24ac06e7941",
+      "transparent_pixel_fraction": null
+    },
+    {
+      "key": "banner",
+      "file": "02_Banner_2560x1440.jpg",
+      "title": "Banner del canal",
+      "use": "Sube como banner del canal. El nombre está centrado para mantenerse visible en el recorte de móvil.",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 961294,
+      "sha256": "85d91d42b024022701e2a05be2e444dfb2716e37c20a21e962321188499a92cd",
+      "transparent_pixel_fraction": null
+    },
+    {
+      "key": "thumbnail",
+      "file": "03_Miniatura_1280x720.jpg",
+      "title": "Miniatura de video",
+      "use": "Miniatura horizontal para videos de Dreamcore. Lleva el nombre completo NiroDxdax.",
+      "width": 1280,
+      "height": 720,
+      "bytes": 394681,
+      "sha256": "2a82bc0d77112bba7863fd5ca7e0cacb283c1cb239ab4f391d2c2dcaa5f89ab4",
+      "transparent_pixel_fraction": null
+    },
+    {
+      "key": "watermark",
+      "file": "04_Marca_YouTube_150.png",
+      "title": "Marca de agua de YouTube",
+      "use": "PNG transparente para el apartado de marca de agua en Personalización de YouTube Studio. Elige mostrarla durante todo el video si lo prefieres.",
+      "width": 150,
+      "height": 150,
+      "bytes": 25341,
+      "sha256": "189b11a56a96bc79bf85745e67c3d505c8dfa9a7924627c7ee0af401f8d35488",
+      "transparent_pixel_fraction": 0.5615111111111111
+    },
+    {
+      "key": "wordmark",
+      "file": "05_Marca_para_videos_1200x400.png",
+      "title": "Marca de agua para edición",
+      "use": "PNG transparente con NiroDxdax. En CapCut u otro editor, añádelo como superposición sobre tu video, reduce su tamaño y ajusta la opacidad aproximadamente al 35–60%.",
+      "width": 1200,
+      "height": 400,
+      "bytes": 543560,
+      "sha256": "52c6694e4edbf9c495c77a3dee4d9c2feb576e76c88eca5b17b1cef27326a322",
+      "transparent_pixel_fraction": 0.5876
+    },
+    {
+      "key": "endcard",
+      "file": "06_Pantalla_final_1920x1080.jpg",
+      "title": "Pantalla final",
+      "use": "Pon esta imagen al final de tu edición. Los marcos son espacios para ubicar las tarjetas de videos y el círculo de suscripción con las herramientas de pantalla final de YouTube Studio.",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 485276,
+      "sha256": "dc5d17262fac20f1283415a37dff4168532614b84d713dc44dc57789a9ebe20c",
+      "transparent_pixel_fraction": null
+    },
+    {
+      "key": "shorts",
+      "file": "07_Portada_Shorts_1080x1920.jpg",
+      "title": "Portada vertical para Shorts",
+      "use": "Imagen vertical para usar como portada o fotograma dentro de tu edición de Shorts. La forma de elegir la miniatura depende de las opciones que muestre YouTube en tu dispositivo.",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 708737,
+      "sha256": "7fb4f16eb901e98831334e8480af1bac137725a29cf14b68ca4fafd4c071fee6",
+      "transparent_pixel_fraction": null
+    }
+  ],
+  "artwork_created_with": "imagegen",
+  "technical_export": "FFmpeg dimension and format export; original PNG files retained"
+}
