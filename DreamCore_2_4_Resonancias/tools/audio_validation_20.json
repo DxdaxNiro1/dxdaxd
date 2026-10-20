@@ -1,0 +1,82 @@
+{
+  "refuge": {
+    "description": "Original piano, phrase [0, 7, 9, 4], 59s",
+    "seconds": 59.0,
+    "peak": 0.44574466347694397,
+    "rms": 0.0654330924153328,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "9d252a62bc266a37d4ce38c006c84f4d01ad52e470d1ddef146cdb44747497c6",
+    "bytes": 362741
+  },
+  "gravity": {
+    "description": "Original glass, phrase [0, 2, 7, 1, 12], 67s",
+    "seconds": 67.0,
+    "peak": 0.344607949256897,
+    "rms": 0.06535740196704865,
+    "seam": 1.618369424249977e-05,
+    "clipped": 0,
+    "sha256": "459eb17d7e044704fdab58e5d286f8c97bc329945a9b2232ca2cbacbfa41137d",
+    "bytes": 491787
+  },
+  "letter": {
+    "description": "Original harp, phrase [0, 3, 10, 7], 61s",
+    "seconds": 61.0,
+    "peak": 0.5133100152015686,
+    "rms": 0.06538539379835129,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "bbe583d8fceeb6c2c653a4b7d3ddd622110bb5d882a1779a750590db40753ca9",
+    "bytes": 391137
+  },
+  "photo_house": {
+    "description": "Original choir, phrase [0, 4, 11, 7], 57s",
+    "seconds": 57.0,
+    "peak": 0.2857242226600647,
+    "rms": 0.06539303809404373,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "d2b539d3c9221299d3ee207517ce839a208c301c5ffbfef2e8a5a6ecae5f4b01",
+    "bytes": 370139
+  },
+  "photo_sea": {
+    "description": "Original glass, phrase [0, 7, 2, 9], 69s",
+    "seconds": 69.0,
+    "peak": 0.44073331356048584,
+    "rms": 0.065330371260643,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "19ed87ad67a130b4a37a90f72972047929120cdfa06c6ff467ea387fb88a4562",
+    "bytes": 437008
+  },
+  "photo_window": {
+    "description": "Original piano, phrase [0, 1, 8, 5], 63s",
+    "seconds": 63.0,
+    "peak": 0.44541677832603455,
+    "rms": 0.06540828198194504,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "b986f4046d987683c3378a1b0ac405faa853269ac54512ac2f50db4861f259a7",
+    "bytes": 463890
+  },
+  "photo_planet": {
+    "description": "Original flute, phrase [0, 9, 14, 7], 71s",
+    "seconds": 71.0,
+    "peak": 0.3080606758594513,
+    "rms": 0.06540472060441971,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "0633d5238cbf36dcf93dd9720488220bb38586dc1d33f3ab396e3de35b498011",
+    "bytes": 369137
+  },
+  "whale": {
+    "description": "Original low suspended-sea creature call",
+    "seconds": 4.0,
+    "peak": 0.26228567957878113,
+    "rms": 0.08010146766901016,
+    "seam": 1.2438897101674229e-05,
+    "clipped": 0,
+    "sha256": "886312dff45e152519612aae20684a33d53a71a78f382a7d08ffb3ee7bfb16ad",
+    "bytes": 19951
+  }
+}

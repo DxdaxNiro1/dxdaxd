@@ -1,0 +1,102 @@
+{
+  "waterpark": {
+    "description": "Original waterpark: glass, 52s, independent phrase and timing",
+    "seconds": 52.0,
+    "peak": 0.30511894822120667,
+    "rms": 0.07541405409574509,
+    "seam": 1.484467793488875e-05,
+    "clipped": 0,
+    "sha256": "20306b0fd5980c397142bc50fc2e232c8d3aa4b1886d3b778e958ddec7e6bf4f",
+    "bytes": 308958
+  },
+  "laundry": {
+    "description": "Original laundry: piano, 46s, independent phrase and timing",
+    "seconds": 46.0,
+    "peak": 0.4470979571342468,
+    "rms": 0.07552025467157364,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "1b99a10ffbc197e0c90d0ad16345f8670a140830d746d1ec2104ed66f9750c2a",
+    "bytes": 301108
+  },
+  "train": {
+    "description": "Original train: organ, 58s, independent phrase and timing",
+    "seconds": 58.0,
+    "peak": 0.42192110419273376,
+    "rms": 0.0752168595790863,
+    "seam": 9.280061021854635e-06,
+    "clipped": 0,
+    "sha256": "97ef4fa4695f46049fed8639e9c50ff6a5a0fbb0083f722b7fe85aa4cb4d4c46",
+    "bytes": 337511
+  },
+  "dawn": {
+    "description": "Original dawn: harp, 61s, independent phrase and timing",
+    "seconds": 61.0,
+    "peak": 0.46024981141090393,
+    "rms": 0.07546418905258179,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "4057b79dc0ea8c4afa58ac55e7ef02202c0533852803488fd9c8448f4086faf9",
+    "bytes": 510872
+  },
+  "hollow": {
+    "description": "Diffuse hollow indoor air",
+    "seconds": 28.0,
+    "peak": 0.20264358818531036,
+    "rms": 0.03408639132976532,
+    "seam": 8.169184002326801e-05,
+    "clipped": 0,
+    "sha256": "7c04314a24d72a16fdebb2ad421e6722a4ec3cf1ffd05e1ee542d982521c6798",
+    "bytes": 248093
+  },
+  "radio": {
+    "description": "Four mystery notes, distant radio",
+    "seconds": 32.0,
+    "peak": 0.2413177639245987,
+    "rms": 0.04527082294225693,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "b106ca42c736d739f368450c73cf6f4e718db9a0e309c0a1cba3e35d72bf12d0",
+    "bytes": 176709
+  },
+  "tone0": {
+    "description": "Mystery motif note 1",
+    "seconds": 3.5,
+    "peak": 0.19920432567596436,
+    "rms": 0.07748647034168243,
+    "seam": 4.762320259033004e-06,
+    "clipped": 0,
+    "sha256": "54881da098b24843b8d6c31fdddf05660ec21fdb8af84403fa2b37d4b53a4b27",
+    "bytes": 22532
+  },
+  "tone1": {
+    "description": "Mystery motif note 2",
+    "seconds": 3.5,
+    "peak": 0.23139621317386627,
+    "rms": 0.0759679451584816,
+    "seam": 5.848470209457446e-06,
+    "clipped": 0,
+    "sha256": "892479eb23bad26ed1150aea6d0ceb279255b183b5eac07893517cad9f73c8d9",
+    "bytes": 23712
+  },
+  "tone2": {
+    "description": "Mystery motif note 3",
+    "seconds": 3.5,
+    "peak": 0.20713657140731812,
+    "rms": 0.07664675265550613,
+    "seam": 3.2172260944207665e-06,
+    "clipped": 0,
+    "sha256": "ae60cd3653552198118bafd9f11da2f31817b299881cb26a8bb288464b504dae",
+    "bytes": 22729
+  },
+  "tone3": {
+    "description": "Mystery motif note 4",
+    "seconds": 3.5,
+    "peak": 0.20200753211975098,
+    "rms": 0.07645319402217865,
+    "seam": 1.9881229036400327e-06,
+    "clipped": 0,
+    "sha256": "7b759db4b89ae1ea2d13d70b886ea69a49a218e5bdf270b99d5855c207399e5f",
+    "bytes": 23296
+  }
+}

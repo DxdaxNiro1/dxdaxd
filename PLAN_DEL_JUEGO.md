@@ -41,3 +41,13 @@ El último mensaje autoriza implementar las cinco mecánicas y nuevos escenarios
 - 22.27.06: ciudad de flores, arco, piscina y tren.
 - Imágenes: arco/campo/ciudad integrados en la ciudad; sendero, sonrisa y casa junto a grietas integrados en la pradera; el abismo de casas existente se conserva.
 - Conservar futuras decisiones: combate y multijugador no forman parte de esta entrega.
+
+## 2.4 Resonancias · 20 de octubre de 2026
+
+- Petición: una música única y tranquila a la vez que inquietante para cada escenario y el inicio; entregar las pistas con nombres y miniaturas de los mapas.
+- 49 composiciones originales de síntesis, 103:36 en total: 48 escenarios registrados, incluido el interior antiguo de archivo, más el título. Catálogo exacto con los nombres actuales de los mapas, también refugios y fotografías visitables.
+- Sala de escucha Android con miniatura de escenario, selección, anterior, siguiente y pausa; restaura la música al cerrar. Música de inicio distinta del Umbral.
+- Álbum MP3 independiente con portadas incrustadas, catálogo, M3U8 y reproductor HTML local, sin dependencias externas. Los MP3 no se duplican dentro del APK.
+- Ayuda opcional en Ajustes para las reglas de los cinco escenarios nuevos; las preguntas del jugador revelaron que el círculo activo y la parada no estaban suficientemente claros.
+- La referencia musical subida no pudo descargarse: supera el límite de transferencia de 32 MB. El usuario ya fue avisado para enviar fragmentos; no afirmar que se escuchó o analizó. Las piezas interpretan la dirección estética pedida, sin extraer muestras.
+- Se conserva el guardado 23, los mapas, la vista previa sin combate y las protecciones de energía. No hay mediciones térmicas ni prueba física Android de esta versión.

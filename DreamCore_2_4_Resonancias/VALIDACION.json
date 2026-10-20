@@ -1,0 +1,5002 @@
+{
+  "version": "2.4",
+  "version_code": 24,
+  "save_schema": 23,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_bytes": 54694372,
+  "apk_sha256": "3340a8f41b6e624452aefbee50fdb695971bb37adf4ef2baed07b27bdfaa6d9b",
+  "source_and_resources_identical_to_build": true,
+  "checks": {
+    "Journey19Check": 711,
+    "CraterPhysicsCheck": 20,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5314,
+    "References21Check": 858,
+    "Miradas22Check": 6296,
+    "Desvios23Check": 63733,
+    "Resonancias24Check": 395,
+    "AudioLifecycle24Check": 123,
+    "browser": 74,
+    "total": 79717
+  },
+  "registered_worlds": 48,
+  "title_scores": 1,
+  "compositions": 49,
+  "unique_authored_motifs": 49,
+  "unique_authored_pulses": 49,
+  "lead_instrument_families": 12,
+  "total_seconds": 6216,
+  "audio": {
+    "music_score_01_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.4706145226955414,
+        "rms": 0.07704780250787735,
+        "clipped": 0,
+        "seam": 2.0915969798807055e-05,
+        "section_rms": [
+          0.07488565891981125,
+          0.06692696362733841,
+          0.10527198016643524,
+          0.0837237611413002,
+          0.06649688631296158,
+          0.047791529446840286,
+          0.089676633477211,
+          0.06755894422531128
+        ],
+        "sha256": "21bd2513b6ac47041be29391373d2c3d8ba587f6fb5c739d51e00c253a3cdc8f",
+        "bytes": 392307
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.47748520970344543,
+        "rms": 0.07734370976686478,
+        "clipped": 0,
+        "seam": 3.061633469769731e-05,
+        "section_rms": [
+          0.07536493986845016,
+          0.06711792200803757,
+          0.10561995953321457,
+          0.08395262062549591,
+          0.06714396178722382,
+          0.04798796772956848,
+          0.09003304690122604,
+          0.06746093183755875
+        ],
+        "sha256": "9e1c56c13b19dfb90901adcfc46c3886e380b502e0bf33636c922951365d9a98",
+        "bytes": 542148,
+        "embedded_cover": true
+      },
+      "world": "title",
+      "title": "Antes de recordar",
+      "authored_brief": {
+        "number": 1,
+        "world": "title",
+        "title": "Antes de recordar",
+        "map": "Inicio",
+        "lead": "felt",
+        "root": 57,
+        "motif": [
+          0,
+          7,
+          11,
+          14,
+          9,
+          4,
+          2
+        ],
+        "harmony": [
+          0,
+          -5,
+          -2,
+          5
+        ],
+        "pulse": 7.1,
+        "seconds": 112,
+        "description": "piano de fieltro, cinta suave y acordes suspendidos",
+        "resource": "music_score_01_24",
+        "cover": "music_cover_01_24",
+        "file": "01 - Antes de recordar.mp3",
+        "seed": 24113
+      }
+    },
+    "music_score_02_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.3999098241329193,
+        "rms": 0.0765097588300705,
+        "clipped": 0,
+        "seam": 7.840814942028373e-05,
+        "section_rms": [
+          0.0930241122841835,
+          0.056087687611579895,
+          0.09638886898756027,
+          0.06912790238857269,
+          0.06851786375045776,
+          0.055178940296173096,
+          0.09933635592460632,
+          0.05791400000452995
+        ],
+        "sha256": "a223f52282b17a038a15ce9c1b1a01a37765db35e4ad43044d6c02c488c965ad",
+        "bytes": 496894
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.3975267708301544,
+        "rms": 0.07665173709392548,
+        "clipped": 0,
+        "seam": 4.851533594774082e-05,
+        "section_rms": [
+          0.09319742023944855,
+          0.05614689365029335,
+          0.09643058478832245,
+          0.06911472976207733,
+          0.068954698741436,
+          0.055321529507637024,
+          0.09957480430603027,
+          0.057962171733379364
+        ],
+        "sha256": "c48f47699097ee1d4cfa119b66d9585105dfe7fc5028fed3769d86650946310d",
+        "bytes": 755093,
+        "embedded_cover": true
+      },
+      "world": "dream_01",
+      "title": "Cinco puertas al atardecer",
+      "authored_brief": {
+        "number": 2,
+        "world": "dream_01",
+        "title": "Cinco puertas al atardecer",
+        "map": "El Umbral: Dreamcore y Dark Fantasy",
+        "lead": "glass",
+        "root": 60,
+        "motif": [
+          7,
+          12,
+          4,
+          11,
+          2,
+          9
+        ],
+        "harmony": [
+          0,
+          5,
+          2,
+          -3
+        ],
+        "pulse": 9.3,
+        "seconds": 128,
+        "description": "cristal suave, resonancias y voces lejanas",
+        "resource": "music_score_02_24",
+        "cover": "music_cover_02_24",
+        "file": "02 - Cinco puertas al atardecer.mp3",
+        "seed": 24226
+      }
+    },
+    "music_score_03_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.42839890718460083,
+        "rms": 0.07765977829694748,
+        "clipped": 0,
+        "seam": 4.4773249101126567e-05,
+        "section_rms": [
+          0.07642793655395508,
+          0.09018554538488388,
+          0.10043671727180481,
+          0.07755108922719955,
+          0.06613308191299438,
+          0.045277006924152374,
+          0.07866207510232925,
+          0.07456976920366287
+        ],
+        "sha256": "3aedba621fe3cdff4f4a95c82247d3bcc191890ebf2e61c213e12d70da01dcd4",
+        "bytes": 448959
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.436358243227005,
+        "rms": 0.07779870927333832,
+        "clipped": 0,
+        "seam": 2.901922198361717e-05,
+        "section_rms": [
+          0.07671960443258286,
+          0.09013984352350235,
+          0.10064970701932907,
+          0.07763301581144333,
+          0.06641445308923721,
+          0.045340199023485184,
+          0.07905048877000809,
+          0.07441221177577972
+        ],
+        "sha256": "7de40d527b96006a70b06e2b6093fcebc34c7d486b4e83478c6f7b3a076150c0",
+        "bytes": 786970,
+        "embedded_cover": true
+      },
+      "world": "dream_02",
+      "title": "El agua conserva las voces",
+      "authored_brief": {
+        "number": 3,
+        "world": "dream_02",
+        "title": "El agua conserva las voces",
+        "map": "Piscinas del recuerdo",
+        "lead": "water",
+        "root": 62,
+        "motif": [
+          0,
+          2,
+          9,
+          7,
+          14,
+          4,
+          11
+        ],
+        "harmony": [
+          0,
+          -2,
+          5,
+          0
+        ],
+        "pulse": 5.6,
+        "seconds": 120,
+        "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+        "resource": "music_score_03_24",
+        "cover": "music_cover_03_24",
+        "file": "03 - El agua conserva las voces.mp3",
+        "seed": 24339
+      }
+    },
+    "music_score_04_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.382868230342865,
+        "rms": 0.07770072668790817,
+        "clipped": 0,
+        "seam": 4.535086191026494e-05,
+        "section_rms": [
+          0.07530274987220764,
+          0.07073619961738586,
+          0.11188992112874985,
+          0.07393226772546768,
+          0.09371251612901688,
+          0.04297754168510437,
+          0.07182855159044266,
+          0.062059130519628525
+        ],
+        "sha256": "5358fe9886cd260c3e7f43f1e879da498b2df4f4850d01df85826c963de638db",
+        "bytes": 438338
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.36460044980049133,
+        "rms": 0.07830926775932312,
+        "clipped": 0,
+        "seam": 4.841263216803782e-05,
+        "section_rms": [
+          0.07575279474258423,
+          0.07086735963821411,
+          0.11301865428686142,
+          0.0746348574757576,
+          0.0945224016904831,
+          0.04331435263156891,
+          0.07261857390403748,
+          0.06221260502934456
+        ],
+        "sha256": "a52a9cbe98edcd0149ae88680018bc9acb88a92b2ac3e2f8c08da10f51a19912",
+        "bytes": 780392,
+        "embedded_cover": true
+      },
+      "world": "dream_03",
+      "title": "Casas que caen despacio",
+      "authored_brief": {
+        "number": 4,
+        "world": "dream_03",
+        "title": "Casas que caen despacio",
+        "map": "El abismo de las casas perdidas",
+        "lead": "bow",
+        "root": 43,
+        "motif": [
+          12,
+          7,
+          3,
+          10,
+          2,
+          0
+        ],
+        "harmony": [
+          0,
+          1,
+          -5,
+          -2
+        ],
+        "pulse": 12.7,
+        "seconds": 144,
+        "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+        "resource": "music_score_04_24",
+        "cover": "music_cover_04_24",
+        "file": "04 - Casas que caen despacio.mp3",
+        "seed": 24452
+      }
+    },
+    "music_score_05_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.4470280408859253,
+        "rms": 0.0781954899430275,
+        "clipped": 0,
+        "seam": 3.336068766657263e-05,
+        "section_rms": [
+          0.08524779230356216,
+          0.07787498831748962,
+          0.09869304299354553,
+          0.07243773341178894,
+          0.0618884302675724,
+          0.03662390634417534,
+          0.09627360105514526,
+          0.07846622169017792
+        ],
+        "sha256": "7499da9ba8cc8d944d2368169495d334784208e45c08362848d3f3c66a57705e",
+        "bytes": 503176
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.45873376727104187,
+        "rms": 0.0782109946012497,
+        "clipped": 0,
+        "seam": 5.717114618164487e-06,
+        "section_rms": [
+          0.08527595549821854,
+          0.07783243805170059,
+          0.09860730171203613,
+          0.07262010872364044,
+          0.061988480389118195,
+          0.03674078732728958,
+          0.0963294580578804,
+          0.07833841443061829
+        ],
+        "sha256": "bf27de85d55af0db8819e81000ce33b3082f28acb74c4ccecd2a959a74268d13",
+        "bytes": 811464,
+        "embedded_cover": true
+      },
+      "world": "dream_04",
+      "title": "La lluvia olvidó el suelo",
+      "authored_brief": {
+        "number": 5,
+        "world": "dream_04",
+        "title": "La lluvia olvidó el suelo",
+        "map": "Los jardines de cristal dormido",
+        "lead": "harp",
+        "root": 64,
+        "motif": [
+          4,
+          11,
+          7,
+          14,
+          9,
+          2,
+          0
+        ],
+        "harmony": [
+          0,
+          -3,
+          5,
+          2
+        ],
+        "pulse": 4.9,
+        "seconds": 136,
+        "description": "arpa de nylon, aire y notas que quedan suspendidas",
+        "resource": "music_score_05_24",
+        "cover": "music_cover_05_24",
+        "file": "05 - La lluvia olvidó el suelo.mp3",
+        "seed": 24565
+      }
+    },
+    "music_score_06_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.41849207878112793,
+        "rms": 0.07674702256917953,
+        "clipped": 0,
+        "seam": 4.299502325011417e-05,
+        "section_rms": [
+          0.08347666263580322,
+          0.06122893840074539,
+          0.09255138784646988,
+          0.08397405594587326,
+          0.07329092919826508,
+          0.0558030940592289,
+          0.09479977190494537,
+          0.057563573122024536
+        ],
+        "sha256": "6bc6163f38e59a12bc129c0d046eb4f5d3fccd48a85f1023bb182d77a0ee3b12",
+        "bytes": 382421
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.41308218240737915,
+        "rms": 0.07718271017074585,
+        "clipped": 0,
+        "seam": 5.869129381608218e-06,
+        "section_rms": [
+          0.08407875895500183,
+          0.06136263906955719,
+          0.09290913492441177,
+          0.08414743095636368,
+          0.07425768673419952,
+          0.05623577907681465,
+          0.09536706656217575,
+          0.057778093963861465
+        ],
+        "sha256": "d533b200be94eca55f431b25483e9a8bd7a46ab9d13b9e85fe50af9490c81a99",
+        "bytes": 567003,
+        "embedded_cover": true
+      },
+      "world": "dream_05",
+      "title": "Alguien dejó la luz",
+      "authored_brief": {
+        "number": 6,
+        "world": "dream_05",
+        "title": "Alguien dejó la luz",
+        "map": "El pueblo de las ventanas despiertas",
+        "lead": "felt",
+        "root": 55,
+        "motif": [
+          0,
+          4,
+          7,
+          11,
+          9,
+          2,
+          7,
+          4
+        ],
+        "harmony": [
+          0,
+          5,
+          -3,
+          -5
+        ],
+        "pulse": 6.4,
+        "seconds": 116,
+        "description": "piano de fieltro, cinta suave y acordes suspendidos",
+        "resource": "music_score_06_24",
+        "cover": "music_cover_06_24",
+        "file": "06 - Alguien dejó la luz.mp3",
+        "seed": 24678
+      }
+    },
+    "music_score_07_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.3878103494644165,
+        "rms": 0.07779320329427719,
+        "clipped": 0,
+        "seam": 8.899693784769624e-05,
+        "section_rms": [
+          0.06111259013414383,
+          0.06973519921302795,
+          0.09894581139087677,
+          0.076850026845932,
+          0.07163261622190475,
+          0.0642482340335846,
+          0.09860232472419739,
+          0.07168563455343246
+        ],
+        "sha256": "ebc6b00aad35d45667f7116cd128ed9da8401d4fa917f9c1b6f346b83be5d71f",
+        "bytes": 447663
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.4076826870441437,
+        "rms": 0.07810735702514648,
+        "clipped": 0,
+        "seam": 2.2981652364251204e-05,
+        "section_rms": [
+          0.06139634922146797,
+          0.06986266374588013,
+          0.09969504177570343,
+          0.07703343033790588,
+          0.07231110334396362,
+          0.06435206532478333,
+          0.09893184900283813,
+          0.07158856838941574
+        ],
+        "sha256": "2c452a79ea477be22c3f41b1d55ef4ffe7bcb1ba78d3f511d337dda370d3b19b",
+        "bytes": 700545,
+        "embedded_cover": true
+      },
+      "world": "dream_06",
+      "title": "Mareas sobre las ventanas",
+      "authored_brief": {
+        "number": 7,
+        "world": "dream_06",
+        "title": "Mareas sobre las ventanas",
+        "map": "El mar dentro del cielo",
+        "lead": "flute",
+        "root": 58,
+        "motif": [
+          7,
+          2,
+          10,
+          5,
+          12,
+          9
+        ],
+        "harmony": [
+          0,
+          -2,
+          -5,
+          3
+        ],
+        "pulse": 10.8,
+        "seconds": 132,
+        "description": "flauta de aire, graves aterciopelados y silencios amplios",
+        "resource": "music_score_07_24",
+        "cover": "music_cover_07_24",
+        "file": "07 - Mareas sobre las ventanas.mp3",
+        "seed": 24791
+      }
+    },
+    "music_score_08_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.40077918767929077,
+        "rms": 0.07779688388109207,
+        "clipped": 0,
+        "seam": 5.131042416905984e-05,
+        "section_rms": [
+          0.07098795473575592,
+          0.0745738223195076,
+          0.07597904652357101,
+          0.06800168007612228,
+          0.08481066673994064,
+          0.07217925786972046,
+          0.10851475596427917,
+          0.05694826692342758
+        ],
+        "sha256": "d57ffc603be578e10dd7daf1f5c4e12f83451b63240fc07136edda549987216b",
+        "bytes": 380050
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.4094083905220032,
+        "rms": 0.07818924635648727,
+        "clipped": 0,
+        "seam": 1.818927557906136e-05,
+        "section_rms": [
+          0.07177739590406418,
+          0.07467324286699295,
+          0.07646327465772629,
+          0.06815925985574722,
+          0.08554835617542267,
+          0.07241347432136536,
+          0.10896711051464081,
+          0.05702630430459976
+        ],
+        "sha256": "23bf2538dffdfe185bc74098a9042422867f2907f98430d942ab0a134c9d0744",
+        "bytes": 635966,
+        "embedded_cover": true
+      },
+      "world": "dream_07",
+      "title": "La puerta del fondo respira",
+      "authored_brief": {
+        "number": 8,
+        "world": "dream_07",
+        "title": "La puerta del fondo respira",
+        "map": "La casa que recuerda otra puerta",
+        "lead": "tape",
+        "root": 53,
+        "motif": [
+          0,
+          1,
+          7,
+          8,
+          3,
+          10
+        ],
+        "harmony": [
+          0,
+          1,
+          -2,
+          -5
+        ],
+        "pulse": 13.1,
+        "seconds": 112,
+        "description": "teclado de cinta, reversos y un pulso que se desvanece",
+        "resource": "music_score_08_24",
+        "cover": "music_cover_08_24",
+        "file": "08 - La puerta del fondo respira.mp3",
+        "seed": 24904
+      }
+    },
+    "music_score_09_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.5163365602493286,
+        "rms": 0.07741362601518631,
+        "clipped": 0,
+        "seam": 4.630404873751104e-05,
+        "section_rms": [
+          0.09095393866300583,
+          0.06602078676223755,
+          0.10503241419792175,
+          0.07229916006326675,
+          0.0693243071436882,
+          0.046439774334430695,
+          0.09169770777225494,
+          0.060676511377096176
+        ],
+        "sha256": "2d95a6cbab0cf7a3ad681aa31d5fc0adf49e8d629c4a18a38dc3f6f91383c01e",
+        "bytes": 464291
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.5210611820220947,
+        "rms": 0.0776914432644844,
+        "clipped": 0,
+        "seam": 7.89007026469335e-05,
+        "section_rms": [
+          0.09131212532520294,
+          0.06614533811807632,
+          0.10537396371364594,
+          0.07256978005170822,
+          0.06962787359952927,
+          0.04653482511639595,
+          0.0921773761510849,
+          0.06078099459409714
+        ],
+        "sha256": "42c9184afcc46e65949c279d2f70d15b57316fb7fc1a90c8a5128c95573f7b00",
+        "bytes": 673946,
+        "embedded_cover": true
+      },
+      "world": "dream_08",
+      "title": "Una lámpara en el abismo",
+      "authored_brief": {
+        "number": 9,
+        "world": "dream_08",
+        "title": "Una lámpara en el abismo",
+        "map": "La estación del último sueño",
+        "lead": "felt",
+        "root": 59,
+        "motif": [
+          11,
+          7,
+          2,
+          0,
+          9,
+          4
+        ],
+        "harmony": [
+          0,
+          -5,
+          2,
+          -2
+        ],
+        "pulse": 8.9,
+        "seconds": 128,
+        "description": "piano de fieltro, cinta suave y acordes suspendidos",
+        "resource": "music_score_09_24",
+        "cover": "music_cover_09_24",
+        "file": "09 - Una lámpara en el abismo.mp3",
+        "seed": 25017
+      }
+    },
+    "music_score_10_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.44452881813049316,
+        "rms": 0.0779937207698822,
+        "clipped": 0,
+        "seam": 9.683601092547178e-05,
+        "section_rms": [
+          0.09310498833656311,
+          0.07594171911478043,
+          0.0946834608912468,
+          0.06811640411615372,
+          0.07313449680805206,
+          0.04520247131586075,
+          0.0926360934972763,
+          0.06819315999746323
+        ],
+        "sha256": "822f0f9adb04ca6308b77cb7aa7ab88e42bc9f77c616dada09b98943a02ca798",
+        "bytes": 440754
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.45643651485443115,
+        "rms": 0.07830289751291275,
+        "clipped": 0,
+        "seam": 4.9184789531864226e-05,
+        "section_rms": [
+          0.09341791272163391,
+          0.07598751783370972,
+          0.09511580318212509,
+          0.06835700571537018,
+          0.07384948432445526,
+          0.04548032954335213,
+          0.09304406493902206,
+          0.06819557398557663
+        ],
+        "sha256": "4e78a4a632ca86844fb28ba073836ab6376ee02625cf4c88797fd9ce53c402a3",
+        "bytes": 650578,
+        "embedded_cover": true
+      },
+      "world": "dream_09",
+      "title": "La partida sin contrincante",
+      "authored_brief": {
+        "number": 10,
+        "world": "dream_09",
+        "title": "La partida sin contrincante",
+        "map": "La llanura de los reyes dormidos",
+        "lead": "marimba",
+        "root": 61,
+        "motif": [
+          0,
+          7,
+          2,
+          8,
+          5,
+          11,
+          3
+        ],
+        "harmony": [
+          0,
+          -4,
+          1,
+          5
+        ],
+        "pulse": 3.7,
+        "seconds": 120,
+        "description": "marimba apagada, madera y respuestas desiguales",
+        "resource": "music_score_10_24",
+        "cover": "music_cover_10_24",
+        "file": "10 - La partida sin contrincante.mp3",
+        "seed": 25130
+      }
+    },
+    "music_score_11_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.4121992290019989,
+        "rms": 0.07764886319637299,
+        "clipped": 0,
+        "seam": 0.00012098180741304532,
+        "section_rms": [
+          0.08693179488182068,
+          0.07578601688146591,
+          0.07364772260189056,
+          0.08547598868608475,
+          0.06902892887592316,
+          0.04178232699632645,
+          0.09519769251346588,
+          0.0814286395907402
+        ],
+        "sha256": "1db3d714a0a1bf3124e422d45d1db9daff5ca78858030f4507d280887fa51e80",
+        "bytes": 486636
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.3991653323173523,
+        "rms": 0.07799829542636871,
+        "clipped": 0,
+        "seam": 8.462319965474308e-05,
+        "section_rms": [
+          0.08770007640123367,
+          0.07585351169109344,
+          0.07396019250154495,
+          0.08571675419807434,
+          0.06972446292638779,
+          0.04202943295240402,
+          0.09565531462430954,
+          0.08142131567001343
+        ],
+        "sha256": "150e9bf4bc64a78cf92da5acc583ab29040887f9c149562bbfca8b082a80908c",
+        "bytes": 676023,
+        "embedded_cover": true
+      },
+      "world": "dream_10",
+      "title": "Porcelana que llora",
+      "authored_brief": {
+        "number": 11,
+        "world": "dream_10",
+        "title": "Porcelana que llora",
+        "map": "El valle de las cúpulas de agua",
+        "lead": "water",
+        "root": 56,
+        "motif": [
+          0,
+          3,
+          8,
+          7,
+          2,
+          10,
+          5
+        ],
+        "harmony": [
+          0,
+          -2,
+          1,
+          -5
+        ],
+        "pulse": 8.1,
+        "seconds": 144,
+        "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+        "resource": "music_score_11_24",
+        "cover": "music_cover_11_24",
+        "file": "11 - Porcelana que llora.mp3",
+        "seed": 25243
+      }
+    },
+    "music_score_12_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.4065715968608856,
+        "rms": 0.07846996188163757,
+        "clipped": 0,
+        "seam": 5.783991946373135e-05,
+        "section_rms": [
+          0.07516619563102722,
+          0.06677098572254181,
+          0.09131598472595215,
+          0.09730029106140137,
+          0.06773992627859116,
+          0.06059582158923149,
+          0.09232129901647568,
+          0.06754428893327713
+        ],
+        "sha256": "2adc9783344c9fa4cb2a543750cde410ef43647ba6d711f476a7c4c094b38793",
+        "bytes": 569929
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.39974790811538696,
+        "rms": 0.0784870907664299,
+        "clipped": 0,
+        "seam": 1.1011328751919791e-05,
+        "section_rms": [
+          0.0752723291516304,
+          0.06667256355285645,
+          0.09141534566879272,
+          0.09715735912322998,
+          0.06811515241861343,
+          0.060633447021245956,
+          0.09228724241256714,
+          0.0673890933394432
+        ],
+        "sha256": "070c246fd7b35cefa474fd27d34259bf02986d2bd9cd03bd70baa62d6f73dd7f",
+        "bytes": 969437,
+        "embedded_cover": true
+      },
+      "world": "dream_11",
+      "title": "Habitaciones a la deriva",
+      "authored_brief": {
+        "number": 12,
+        "world": "dream_11",
+        "title": "Habitaciones a la deriva",
+        "map": "El hotel de los horizontes",
+        "lead": "glass",
+        "root": 65,
+        "motif": [
+          7,
+          11,
+          14,
+          4,
+          9,
+          2
+        ],
+        "harmony": [
+          0,
+          2,
+          -3,
+          5
+        ],
+        "pulse": 11.3,
+        "seconds": 136,
+        "description": "cristal suave, resonancias y voces lejanas",
+        "resource": "music_score_12_24",
+        "cover": "music_cover_12_24",
+        "file": "12 - Habitaciones a la deriva.mp3",
+        "seed": 25356
+      }
+    },
+    "music_score_13_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.5039469599723816,
+        "rms": 0.07707319408655167,
+        "clipped": 0,
+        "seam": 3.89825836464297e-05,
+        "section_rms": [
+          0.08431640267372131,
+          0.06564004719257355,
+          0.10760262608528137,
+          0.07019766420125961,
+          0.06984896957874298,
+          0.05440821498632431,
+          0.08760189265012741,
+          0.0639146938920021
+        ],
+        "sha256": "28f42b39cea6e1329ccf3e84f45df182763ddb479277eeede603ad2b3417880f",
+        "bytes": 361999
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.5099691152572632,
+        "rms": 0.0775400921702385,
+        "clipped": 0,
+        "seam": 4.7726229240652174e-05,
+        "section_rms": [
+          0.08493918180465698,
+          0.06594794243574142,
+          0.10827531665563583,
+          0.07051684707403183,
+          0.07060160487890244,
+          0.0547165647149086,
+          0.08806952089071274,
+          0.06407047808170319
+        ],
+        "sha256": "6794e9cd63aad1fe662f505a451f813a12d998d690fca228a797986323041547",
+        "bytes": 582580,
+        "embedded_cover": true
+      },
+      "world": "dream_12",
+      "title": "La curva que nadie recuerda",
+      "authored_brief": {
+        "number": 13,
+        "world": "dream_12",
+        "title": "La curva que nadie recuerda",
+        "map": "La carretera donde caen estrellas",
+        "lead": "guitar",
+        "root": 50,
+        "motif": [
+          0,
+          7,
+          10,
+          5,
+          3,
+          12,
+          2
+        ],
+        "harmony": [
+          0,
+          3,
+          -5,
+          -2
+        ],
+        "pulse": 7.7,
+        "seconds": 116,
+        "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+        "resource": "music_score_13_24",
+        "cover": "music_cover_13_24",
+        "file": "13 - La curva que nadie recuerda.mp3",
+        "seed": 25469
+      }
+    },
+    "music_score_14_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.37732812762260437,
+        "rms": 0.07668133080005646,
+        "clipped": 0,
+        "seam": 0.00018287483544554561,
+        "section_rms": [
+          0.08132634311914444,
+          0.06385488063097,
+          0.07858556509017944,
+          0.10544063150882721,
+          0.0670081228017807,
+          0.04967491701245308,
+          0.09194275736808777,
+          0.060367316007614136
+        ],
+        "sha256": "6dfe4a514cd3e94965799efde8621d27dccb770a675ce70ea62a0f701ff76374",
+        "bytes": 485039
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.371196448802948,
+        "rms": 0.0769994780421257,
+        "clipped": 0,
+        "seam": 5.7171018852386624e-05,
+        "section_rms": [
+          0.08165409415960312,
+          0.06392142176628113,
+          0.07902908325195312,
+          0.10566192865371704,
+          0.06777021288871765,
+          0.049961574375629425,
+          0.09237612783908844,
+          0.060379330068826675
+        ],
+        "sha256": "f9895f59bdfb31d660da973bc074c0f0fd64f0849fdc4e149b374c366e844c9d",
+        "bytes": 748798,
+        "embedded_cover": true
+      },
+      "world": "dream_13",
+      "title": "Lágrimas que sostienen el cielo",
+      "authored_brief": {
+        "number": 14,
+        "world": "dream_13",
+        "title": "Lágrimas que sostienen el cielo",
+        "map": "El parque de las lágrimas suspendidas",
+        "lead": "choir",
+        "root": 54,
+        "motif": [
+          7,
+          3,
+          10,
+          2,
+          8,
+          0
+        ],
+        "harmony": [
+          0,
+          1,
+          -5,
+          3
+        ],
+        "pulse": 9.7,
+        "seconds": 132,
+        "description": "coro sin palabras, campanas lejanas y respiración armónica",
+        "resource": "music_score_14_24",
+        "cover": "music_cover_14_24",
+        "file": "14 - Lágrimas que sostienen el cielo.mp3",
+        "seed": 25582
+      }
+    },
+    "music_score_15_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.4771147668361664,
+        "rms": 0.0775809958577156,
+        "clipped": 0,
+        "seam": 6.233427848201245e-05,
+        "section_rms": [
+          0.07620637863874435,
+          0.07322072982788086,
+          0.10400401055812836,
+          0.08710984140634537,
+          0.06585525721311569,
+          0.04096916317939758,
+          0.08844628185033798,
+          0.06883826106786728
+        ],
+        "sha256": "60564eb193d535c9782ee96be63d43256bbea4cbefaa471686deffc6fdc5496f",
+        "bytes": 491063
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.486095666885376,
+        "rms": 0.07772982865571976,
+        "clipped": 0,
+        "seam": 1.8255137547384948e-05,
+        "section_rms": [
+          0.07643615454435349,
+          0.07331770658493042,
+          0.1042046844959259,
+          0.08704528212547302,
+          0.06615403294563293,
+          0.041053686290979385,
+          0.08866678923368454,
+          0.06898105144500732
+        ],
+        "sha256": "f03cadc1aa3467e276e3a17e1e8223c6d54a2d42a5f3d31a9ee7680845ac0438",
+        "bytes": 927191,
+        "embedded_cover": true
+      },
+      "world": "dream_14",
+      "title": "Órbitas de infancia",
+      "authored_brief": {
+        "number": 15,
+        "world": "dream_14",
+        "title": "Órbitas de infancia",
+        "map": "El tobogán de los planetas",
+        "lead": "musicbox",
+        "root": 67,
+        "motif": [
+          0,
+          4,
+          11,
+          7,
+          14,
+          9,
+          2,
+          12
+        ],
+        "harmony": [
+          0,
+          -3,
+          2,
+          5
+        ],
+        "pulse": 4.3,
+        "seconds": 112,
+        "description": "caja de música amortiguada, ecos y cielo abierto",
+        "resource": "music_score_15_24",
+        "cover": "music_cover_15_24",
+        "file": "15 - Órbitas de infancia.mp3",
+        "seed": 25695
+      }
+    },
+    "music_score_16_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.4586472809314728,
+        "rms": 0.0769055113196373,
+        "clipped": 0,
+        "seam": 3.9598849980393425e-05,
+        "section_rms": [
+          0.08846600353717804,
+          0.06531278789043427,
+          0.09194757044315338,
+          0.08899886906147003,
+          0.06850467622280121,
+          0.04390445724129677,
+          0.08717860281467438,
+          0.0680287778377533
+        ],
+        "sha256": "fa4f634cc953d0e6066143eb0c9aec3aff894b691eae96a520c7e38f59fa3804",
+        "bytes": 464854
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.4539186358451843,
+        "rms": 0.07720968127250671,
+        "clipped": 0,
+        "seam": 6.622084038099274e-05,
+        "section_rms": [
+          0.08895377069711685,
+          0.06548070907592773,
+          0.09230358153581619,
+          0.08898646384477615,
+          0.06926939636468887,
+          0.04417615383863449,
+          0.08747230470180511,
+          0.06819421052932739
+        ],
+        "sha256": "ac49f4bb34ec4d81e154bb782e3efea65dddea6b54165bc4f17d68f73e71a822",
+        "bytes": 724757,
+        "embedded_cover": true
+      },
+      "world": "dream_15",
+      "title": "El recreo después del fin",
+      "authored_brief": {
+        "number": 16,
+        "world": "dream_15",
+        "title": "El recreo después del fin",
+        "map": "La ciudad del último recreo",
+        "lead": "guitar",
+        "root": 59,
+        "motif": [
+          4,
+          2,
+          9,
+          7,
+          0,
+          11,
+          5
+        ],
+        "harmony": [
+          0,
+          5,
+          -2,
+          -5
+        ],
+        "pulse": 5.9,
+        "seconds": 128,
+        "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+        "resource": "music_score_16_24",
+        "cover": "music_cover_16_24",
+        "file": "16 - El recreo después del fin.mp3",
+        "seed": 25808
+      }
+    },
+    "music_score_17_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.3442883789539337,
+        "rms": 0.07742354273796082,
+        "clipped": 0,
+        "seam": 3.432641096878797e-05,
+        "section_rms": [
+          0.09230373799800873,
+          0.04355960339307785,
+          0.08198827505111694,
+          0.08398864418268204,
+          0.08453355729579926,
+          0.054927222430706024,
+          0.09195124357938766,
+          0.07171957939863205
+        ],
+        "sha256": "03165a09506ae9fb9e58be66ac81e2399553d56d46900567ffba117550580787",
+        "bytes": 318169
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.3644450306892395,
+        "rms": 0.07788118720054626,
+        "clipped": 0,
+        "seam": 1.4120687410468236e-05,
+        "section_rms": [
+          0.09270347654819489,
+          0.04374575987458229,
+          0.08276773989200592,
+          0.08424437791109085,
+          0.08552318066358566,
+          0.05517168715596199,
+          0.0924956426024437,
+          0.07179845869541168
+        ],
+        "sha256": "4b8bad58deb82fe2cf43d5c98c9072d595d78fc846bf22ea6cffe3bf69a2a56f",
+        "bytes": 609726,
+        "embedded_cover": true
+      },
+      "world": "dark_01",
+      "title": "Sonríe cuando no miras",
+      "authored_brief": {
+        "number": 17,
+        "world": "dark_01",
+        "title": "Sonríe cuando no miras",
+        "map": "El reino de las lunas dormidas",
+        "lead": "organ",
+        "root": 42,
+        "motif": [
+          0,
+          1,
+          7,
+          3,
+          8,
+          2
+        ],
+        "harmony": [
+          0,
+          1,
+          -5,
+          -1
+        ],
+        "pulse": 14.3,
+        "seconds": 120,
+        "description": "órgano cálido, tonos graves y intervalos inciertos",
+        "resource": "music_score_17_24",
+        "cover": "music_cover_17_24",
+        "file": "17 - Sonríe cuando no miras.mp3",
+        "seed": 25921
+      }
+    },
+    "music_score_18_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.32929638028144836,
+        "rms": 0.07797911018133163,
+        "clipped": 0,
+        "seam": 0.00016208022134378552,
+        "section_rms": [
+          0.0800836831331253,
+          0.08935215324163437,
+          0.10037234425544739,
+          0.06402226537466049,
+          0.0656653493642807,
+          0.0541822724044323,
+          0.10350563377141953,
+          0.04598038271069527
+        ],
+        "sha256": "e149643a24f0bccf8c33ba29b8c1ffe97a2ff92c678e8eee7d76c15b5fd2849a",
+        "bytes": 464816
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.3235582113265991,
+        "rms": 0.07837391644716263,
+        "clipped": 0,
+        "seam": 1.3674693036591634e-05,
+        "section_rms": [
+          0.08038803935050964,
+          0.08942271769046783,
+          0.10102033615112305,
+          0.06441517919301987,
+          0.06639738380908966,
+          0.05449040234088898,
+          0.10400542616844177,
+          0.04617074504494667
+        ],
+        "sha256": "2dbccf0c7903036bfe41bb15b420723dae5219899e4e9ade36866648b2e7cd8e",
+        "bytes": 742982,
+        "embedded_cover": true
+      },
+      "world": "dark_02",
+      "title": "Flores para un trono vacío",
+      "authored_brief": {
+        "number": 18,
+        "world": "dark_02",
+        "title": "Flores para un trono vacío",
+        "map": "El jardín de las coronas vacías",
+        "lead": "bow",
+        "root": 48,
+        "motif": [
+          0,
+          3,
+          2,
+          8,
+          7,
+          10,
+          5
+        ],
+        "harmony": [
+          0,
+          -2,
+          1,
+          3
+        ],
+        "pulse": 11.9,
+        "seconds": 144,
+        "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+        "resource": "music_score_18_24",
+        "cover": "music_cover_18_24",
+        "file": "18 - Flores para un trono vacío.mp3",
+        "seed": 26034
+      }
+    },
+    "music_score_19_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.48046058416366577,
+        "rms": 0.07789624482393265,
+        "clipped": 0,
+        "seam": 4.0937538869911805e-05,
+        "section_rms": [
+          0.08801579475402832,
+          0.058245766907930374,
+          0.10352016240358353,
+          0.08135206997394562,
+          0.07550691813230515,
+          0.045190684497356415,
+          0.09046513587236404,
+          0.06435240060091019
+        ],
+        "sha256": "3999e15b9132a246eaa8e138da958e504ad8ee276d390938044105f1c5656a51",
+        "bytes": 489717
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.48301732540130615,
+        "rms": 0.07826955616474152,
+        "clipped": 0,
+        "seam": 0.00010241406562272459,
+        "section_rms": [
+          0.0883551761507988,
+          0.05855335295200348,
+          0.10404689610004425,
+          0.08134666085243225,
+          0.07631153613328934,
+          0.04570557922124863,
+          0.0909603014588356,
+          0.06437844783067703
+        ],
+        "sha256": "a242f2d849f6deeba5bef7d880755f71be61d2ea329986e23e9266f526e7f9f1",
+        "bytes": 753225,
+        "embedded_cover": true
+      },
+      "world": "pocket_laundry",
+      "title": "La ropa de otra vida",
+      "authored_brief": {
+        "number": 19,
+        "world": "pocket_laundry",
+        "title": "La ropa de otra vida",
+        "map": "Lavandería entre nubes",
+        "lead": "marimba",
+        "root": 58,
+        "motif": [
+          0,
+          9,
+          4,
+          7,
+          2,
+          11
+        ],
+        "harmony": [
+          0,
+          5,
+          -3,
+          2
+        ],
+        "pulse": 6.7,
+        "seconds": 136,
+        "description": "marimba apagada, madera y respuestas desiguales",
+        "resource": "music_score_19_24",
+        "cover": "music_cover_19_24",
+        "file": "19 - La ropa de otra vida.mp3",
+        "seed": 26147
+      }
+    },
+    "music_score_20_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.4493815302848816,
+        "rms": 0.07769819349050522,
+        "clipped": 0,
+        "seam": 8.605843322584406e-05,
+        "section_rms": [
+          0.06093569099903107,
+          0.08128903061151505,
+          0.09272722154855728,
+          0.10438217967748642,
+          0.06837821751832962,
+          0.058070819824934006,
+          0.07785570621490479,
+          0.066118985414505
+        ],
+        "sha256": "b45ef07895179ab45c1ae344390d177ff7aceba1a858e8cbd4461258ac51510d",
+        "bytes": 341290
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.4264024496078491,
+        "rms": 0.0781361386179924,
+        "clipped": 0,
+        "seam": 4.602592525770888e-05,
+        "section_rms": [
+          0.061505675315856934,
+          0.0813683569431305,
+          0.09357365220785141,
+          0.10463020205497742,
+          0.06906261295080185,
+          0.05837373062968254,
+          0.07852383702993393,
+          0.06626957654953003
+        ],
+        "sha256": "8707d537f8416eaf0e4b14c253fa08131026e0b956a2673c10d79e24b246f52b",
+        "bytes": 627815,
+        "embedded_cover": true
+      },
+      "world": "pocket_train",
+      "title": "El último vagón sumergido",
+      "authored_brief": {
+        "number": 20,
+        "world": "pocket_train",
+        "title": "El último vagón sumergido",
+        "map": "El tren bajo el agua",
+        "lead": "tape",
+        "root": 49,
+        "motif": [
+          0,
+          5,
+          7,
+          10,
+          2,
+          3
+        ],
+        "harmony": [
+          0,
+          -5,
+          -2,
+          3
+        ],
+        "pulse": 9.1,
+        "seconds": 116,
+        "description": "teclado de cinta, reversos y un pulso que se desvanece",
+        "resource": "music_score_20_24",
+        "cover": "music_cover_20_24",
+        "file": "20 - El último vagón sumergido.mp3",
+        "seed": 26260
+      }
+    },
+    "music_score_21_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.4555673897266388,
+        "rms": 0.07723978161811829,
+        "clipped": 0,
+        "seam": 5.1004524721065536e-05,
+        "section_rms": [
+          0.08306409418582916,
+          0.08419699221849442,
+          0.09616893529891968,
+          0.07970014959573746,
+          0.07207772135734558,
+          0.051494404673576355,
+          0.07664542645215988,
+          0.0664614737033844
+        ],
+        "sha256": "2db6c8391554cdbae13d90eae388d606c73602903ee89080b54caba82d39bb25",
+        "bytes": 493403
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.4583865702152252,
+        "rms": 0.07742148637771606,
+        "clipped": 0,
+        "seam": 8.564082236262038e-05,
+        "section_rms": [
+          0.08334200084209442,
+          0.08411706238985062,
+          0.09633448719978333,
+          0.07985752820968628,
+          0.07259634137153625,
+          0.0516396090388298,
+          0.07701323926448822,
+          0.06637507677078247
+        ],
+        "sha256": "a5e6419f0ad33819071aec6975551b44c1078705c96a12d8d26d6d085c347f5e",
+        "bytes": 785537,
+        "embedded_cover": true
+      },
+      "world": "pocket_dawn",
+      "title": "Las seis y nunca más",
+      "authored_brief": {
+        "number": 21,
+        "world": "pocket_dawn",
+        "title": "Las seis y nunca más",
+        "map": "El amanecer que no termina",
+        "lead": "harp",
+        "root": 63,
+        "motif": [
+          4,
+          7,
+          14,
+          11,
+          2,
+          9,
+          0
+        ],
+        "harmony": [
+          0,
+          -3,
+          5,
+          -5
+        ],
+        "pulse": 8.3,
+        "seconds": 132,
+        "description": "arpa de nylon, aire y notas que quedan suspendidas",
+        "resource": "music_score_21_24",
+        "cover": "music_cover_21_24",
+        "file": "21 - Las seis y nunca más.mp3",
+        "seed": 26373
+      }
+    },
+    "music_score_22_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.3811122477054596,
+        "rms": 0.07722406089305878,
+        "clipped": 0,
+        "seam": 0.00015057041309773922,
+        "section_rms": [
+          0.09873803704977036,
+          0.0996013879776001,
+          0.10572025924921036,
+          0.07636673748493195,
+          0.05624102056026459,
+          0.030007770285010338,
+          0.06494156271219254,
+          0.0524330697953701
+        ],
+        "sha256": "1ea0137519c0e72ce71256cd30d189a42f9cc95fe9c02924baefc457035027c2",
+        "bytes": 352565
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.37717539072036743,
+        "rms": 0.07751757651567459,
+        "clipped": 0,
+        "seam": 5.530990893021226e-05,
+        "section_rms": [
+          0.09914392232894897,
+          0.09965542703866959,
+          0.1060364618897438,
+          0.07666945457458496,
+          0.05673941224813461,
+          0.0302840955555439,
+          0.06554106622934341,
+          0.05250740423798561
+        ],
+        "sha256": "c90ca5dbe3a2bc1e69b411b1024ba09055575644079fb19b3a24ec6e0eadf390",
+        "bytes": 646917,
+        "embedded_cover": true
+      },
+      "world": "pocket_tower",
+      "title": "El horizonte tenía una escalera",
+      "authored_brief": {
+        "number": 22,
+        "world": "pocket_tower",
+        "title": "El horizonte tenía una escalera",
+        "map": "La torre que viste desde lejos",
+        "lead": "organ",
+        "root": 51,
+        "motif": [
+          0,
+          7,
+          12,
+          14,
+          10,
+          5,
+          3
+        ],
+        "harmony": [
+          0,
+          5,
+          3,
+          -2
+        ],
+        "pulse": 10.1,
+        "seconds": 112,
+        "description": "órgano cálido, tonos graves y intervalos inciertos",
+        "resource": "music_score_22_24",
+        "cover": "music_cover_22_24",
+        "file": "22 - El horizonte tenía una escalera.mp3",
+        "seed": 26486
+      }
+    },
+    "music_score_23_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.46829789876937866,
+        "rms": 0.07789293676614761,
+        "clipped": 0,
+        "seam": 0.00012078094732714817,
+        "section_rms": [
+          0.08799780160188675,
+          0.05560432747006416,
+          0.08394190669059753,
+          0.10511603951454163,
+          0.0929880142211914,
+          0.041873689740896225,
+          0.08235041797161102,
+          0.049250684678554535
+        ],
+        "sha256": "1818432d086f8a3b8705977c8e39b7d64754bbe2283f7df779a5bbb4b6660b36",
+        "bytes": 493787
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.45900028944015503,
+        "rms": 0.0781712532043457,
+        "clipped": 0,
+        "seam": 2.9296064894879237e-05,
+        "section_rms": [
+          0.08809665590524673,
+          0.0557209737598896,
+          0.08476286381483078,
+          0.1054476946592331,
+          0.09345274418592453,
+          0.04215046390891075,
+          0.0823361724615097,
+          0.04926279932260513
+        ],
+        "sha256": "e359516c258eed6c8fa43e46e79485f592c3a59a8b303c521786daff3bcbe952",
+        "bytes": 729036,
+        "embedded_cover": true
+      },
+      "world": "pocket_cloudbed",
+      "title": "El peso azul del sueño",
+      "authored_brief": {
+        "number": 23,
+        "world": "pocket_cloudbed",
+        "title": "El peso azul del sueño",
+        "map": "Una cama al borde del universo",
+        "lead": "choir",
+        "root": 61,
+        "motif": [
+          11,
+          9,
+          4,
+          2,
+          7,
+          0
+        ],
+        "harmony": [
+          0,
+          -5,
+          2,
+          -3
+        ],
+        "pulse": 15.1,
+        "seconds": 128,
+        "description": "coro sin palabras, campanas lejanas y respiración armónica",
+        "resource": "music_score_23_24",
+        "cover": "music_cover_23_24",
+        "file": "23 - El peso azul del sueño.mp3",
+        "seed": 26599
+      }
+    },
+    "music_score_24_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.4328729510307312,
+        "rms": 0.07734527438879013,
+        "clipped": 0,
+        "seam": 9.14728589123115e-05,
+        "section_rms": [
+          0.08824639022350311,
+          0.06511259824037552,
+          0.08489261567592621,
+          0.08521466702222824,
+          0.0733538419008255,
+          0.05777828022837639,
+          0.09455669671297073,
+          0.06085127964615822
+        ],
+        "sha256": "125858e28c2631e4312cf0aab4ce890f3798cbd1f5e26799e83cc5aa35487eb5",
+        "bytes": 445984
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.42183151841163635,
+        "rms": 0.07758384197950363,
+        "clipped": 0,
+        "seam": 3.278168151155114e-05,
+        "section_rms": [
+          0.08878153562545776,
+          0.0651121437549591,
+          0.08506589382886887,
+          0.08505088090896606,
+          0.0740424245595932,
+          0.05810613930225372,
+          0.09492435306310654,
+          0.06077145040035248
+        ],
+        "sha256": "869f1a2cf5524966fd730dcc0d32ae4843fe43ca3b539c2b02be41e2135c1a52",
+        "bytes": 684839,
+        "embedded_cover": true
+      },
+      "world": "pocket_refuge",
+      "title": "También pusieron tu taza",
+      "authored_brief": {
+        "number": 24,
+        "world": "pocket_refuge",
+        "title": "También pusieron tu taza",
+        "map": "La habitación que te espera",
+        "lead": "felt",
+        "root": 60,
+        "motif": [
+          0,
+          4,
+          9,
+          7,
+          2,
+          11,
+          12
+        ],
+        "harmony": [
+          0,
+          5,
+          -5,
+          2
+        ],
+        "pulse": 7.3,
+        "seconds": 120,
+        "description": "piano de fieltro, cinta suave y acordes suspendidos",
+        "resource": "music_score_24_24",
+        "cover": "music_cover_24_24",
+        "file": "24 - También pusieron tu taza.mp3",
+        "seed": 26712
+      }
+    },
+    "music_score_25_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.4674930274486542,
+        "rms": 0.07649068534374237,
+        "clipped": 0,
+        "seam": 6.705652049276978e-05,
+        "section_rms": [
+          0.09650477766990662,
+          0.05165540426969528,
+          0.08738073706626892,
+          0.08643622696399689,
+          0.07718558609485626,
+          0.04373013973236084,
+          0.08971623331308365,
+          0.061640821397304535
+        ],
+        "sha256": "b53a4b174361b4408bd9bf4b081667ec5b50afc2176e866bc7c8d14a6b7c3b07",
+        "bytes": 527832
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.4651249349117279,
+        "rms": 0.07682088017463684,
+        "clipped": 0,
+        "seam": 5.985264579067007e-05,
+        "section_rms": [
+          0.09686680138111115,
+          0.0518319271504879,
+          0.08778166770935059,
+          0.08650613576173782,
+          0.07784923166036606,
+          0.044024690985679626,
+          0.09027411043643951,
+          0.06168334558606148
+        ],
+        "sha256": "847d4b2b2bc5c16b846da17ff035474bf7ec760044d99a542ed91305e8b71c6a",
+        "bytes": 751818,
+        "embedded_cover": true
+      },
+      "world": "photo_house",
+      "title": "La casa antes de tu llegada",
+      "authored_brief": {
+        "number": 25,
+        "world": "photo_house",
+        "title": "La casa antes de tu llegada",
+        "map": "Fotografía: la casa sin nadie",
+        "lead": "guitar",
+        "root": 57,
+        "motif": [
+          0,
+          2,
+          7,
+          4,
+          11,
+          9
+        ],
+        "harmony": [
+          0,
+          -3,
+          5,
+          0
+        ],
+        "pulse": 8.7,
+        "seconds": 144,
+        "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+        "resource": "music_score_25_24",
+        "cover": "music_cover_25_24",
+        "file": "25 - La casa antes de tu llegada.mp3",
+        "seed": 26825
+      }
+    },
+    "music_score_26_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.4236937165260315,
+        "rms": 0.07718995958566666,
+        "clipped": 0,
+        "seam": 9.58086020546034e-05,
+        "section_rms": [
+          0.08996941149234772,
+          0.05842939764261246,
+          0.08312737196683884,
+          0.06885973364114761,
+          0.07939357310533524,
+          0.056573521345853806,
+          0.10544481128454208,
+          0.06231766939163208
+        ],
+        "sha256": "4449b08e07c464f0fdae3dca70dcf3dc7bc4a40ae8b6363f578c6d541af97a64",
+        "bytes": 459178
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.4247722625732422,
+        "rms": 0.07760144025087357,
+        "clipped": 0,
+        "seam": 3.1840849260333925e-05,
+        "section_rms": [
+          0.09032583981752396,
+          0.05880707874894142,
+          0.08368124067783356,
+          0.06904202699661255,
+          0.08034869283437729,
+          0.05696704983711243,
+          0.10580665618181229,
+          0.06239613890647888
+        ],
+        "sha256": "e159ab032dd530ef1c8b6ea71974ec7cd89848fab788c683fe7825b117b38cee",
+        "bytes": 689347,
+        "embedded_cover": true
+      },
+      "world": "photo_sea",
+      "title": "Una marea detenida en papel",
+      "authored_brief": {
+        "number": 26,
+        "world": "photo_sea",
+        "title": "Una marea detenida en papel",
+        "map": "Fotografía: el mar inmóvil",
+        "lead": "water",
+        "root": 52,
+        "motif": [
+          12,
+          10,
+          5,
+          7,
+          2,
+          9
+        ],
+        "harmony": [
+          0,
+          3,
+          -2,
+          -5
+        ],
+        "pulse": 12.1,
+        "seconds": 136,
+        "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+        "resource": "music_score_26_24",
+        "cover": "music_cover_26_24",
+        "file": "26 - Una marea detenida en papel.mp3",
+        "seed": 26938
+      }
+    },
+    "music_score_27_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.38266241550445557,
+        "rms": 0.07796209305524826,
+        "clipped": 0,
+        "seam": 9.294052142649889e-05,
+        "section_rms": [
+          0.06495214253664017,
+          0.0809805765748024,
+          0.09284643828868866,
+          0.09266732633113861,
+          0.07010115683078766,
+          0.048068802803754807,
+          0.09110823273658752,
+          0.07151840627193451
+        ],
+        "sha256": "7da35a6f13a5538bd87e5f597e173e7f5206216a183622c72d225bb6c2f60e4b",
+        "bytes": 459769
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.37780219316482544,
+        "rms": 0.07811664044857025,
+        "clipped": 0,
+        "seam": 8.634495316073298e-06,
+        "section_rms": [
+          0.06534934788942337,
+          0.08089617639780045,
+          0.09309034794569016,
+          0.09257367253303528,
+          0.0703301951289177,
+          0.04819217324256897,
+          0.09157385677099228,
+          0.07150281220674515
+        ],
+        "sha256": "0a500ee3ab8c6f3c40e35f770146027c36569a81273d7ddee64a73b246036bee",
+        "bytes": 757537,
+        "embedded_cover": true
+      },
+      "world": "photo_window",
+      "title": "El cielo detrás del cristal",
+      "authored_brief": {
+        "number": 27,
+        "world": "photo_window",
+        "title": "El cielo detrás del cristal",
+        "map": "Fotografía: las ventanas de ayer",
+        "lead": "glass",
+        "root": 62,
+        "motif": [
+          0,
+          11,
+          7,
+          2,
+          14,
+          5,
+          9
+        ],
+        "harmony": [
+          0,
+          2,
+          5,
+          -3
+        ],
+        "pulse": 10.7,
+        "seconds": 116,
+        "description": "cristal suave, resonancias y voces lejanas",
+        "resource": "music_score_27_24",
+        "cover": "music_cover_27_24",
+        "file": "27 - El cielo detrás del cristal.mp3",
+        "seed": 27051
+      }
+    },
+    "music_score_28_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.42412880063056946,
+        "rms": 0.07775519043207169,
+        "clipped": 0,
+        "seam": 5.852108370163478e-05,
+        "section_rms": [
+          0.08115173876285553,
+          0.0796477347612381,
+          0.09916917979717255,
+          0.08262880891561508,
+          0.05967368930578232,
+          0.03956986963748932,
+          0.08772039413452148,
+          0.07716185599565506
+        ],
+        "sha256": "9ac3b8431ae4affe006098db44bcc34185c3875e57d4b923f05652a9baaf69a4",
+        "bytes": 529356
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.43809372186660767,
+        "rms": 0.07791171967983246,
+        "clipped": 0,
+        "seam": 0.0001285207981709391,
+        "section_rms": [
+          0.08133795112371445,
+          0.07970087975263596,
+          0.0994994193315506,
+          0.08265114575624466,
+          0.05999399721622467,
+          0.03976600989699364,
+          0.08789316564798355,
+          0.07717917114496231
+        ],
+        "sha256": "4d5802bfb5fd3dd0ffa4205fa722b38cd6944d1ffce393517bc094ac493d7287",
+        "bytes": 938871,
+        "embedded_cover": true
+      },
+      "world": "photo_planet",
+      "title": "Una órbita en el álbum",
+      "authored_brief": {
+        "number": 28,
+        "world": "photo_planet",
+        "title": "Una órbita en el álbum",
+        "map": "Fotografía: el planeta detenido",
+        "lead": "musicbox",
+        "root": 64,
+        "motif": [
+          7,
+          4,
+          12,
+          2,
+          9,
+          11,
+          0
+        ],
+        "harmony": [
+          0,
+          -5,
+          -3,
+          2
+        ],
+        "pulse": 5.3,
+        "seconds": 132,
+        "description": "caja de música amortiguada, ecos y cielo abierto",
+        "resource": "music_score_28_24",
+        "cover": "music_cover_28_24",
+        "file": "28 - Una órbita en el álbum.mp3",
+        "seed": 27164
+      }
+    },
+    "music_score_29_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.41119688749313354,
+        "rms": 0.07746486365795135,
+        "clipped": 0,
+        "seam": 0.0001329583756159991,
+        "section_rms": [
+          0.08618918806314468,
+          0.05420193076133728,
+          0.11532781273126602,
+          0.08923278748989105,
+          0.07496781647205353,
+          0.04801896959543228,
+          0.07762790471315384,
+          0.04924359172582626
+        ],
+        "sha256": "150467dbb36dbc3f66a9c253a0aadbd5d81bad7488b617b29bc7133b40c64295",
+        "bytes": 382697
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.42054855823516846,
+        "rms": 0.07789239287376404,
+        "clipped": 0,
+        "seam": 2.27709133469034e-05,
+        "section_rms": [
+          0.08670151978731155,
+          0.054487552493810654,
+          0.11592771857976913,
+          0.08933814615011215,
+          0.07580308616161346,
+          0.048461269587278366,
+          0.07814939320087433,
+          0.04928778484463692
+        ],
+        "sha256": "126c0289d2b2a5668b6edae1f712ba2d8f4121e92177574a55f29bb2c4213f7a",
+        "bytes": 605834,
+        "embedded_cover": true
+      },
+      "world": "pocket_letter",
+      "title": "Dirección: nadie, nunca",
+      "authored_brief": {
+        "number": 29,
+        "world": "pocket_letter",
+        "title": "Dirección: nadie, nunca",
+        "map": "La casa del destinatario ausente",
+        "lead": "flute",
+        "root": 55,
+        "motif": [
+          0,
+          5,
+          2,
+          8,
+          7,
+          3
+        ],
+        "harmony": [
+          0,
+          1,
+          -2,
+          5
+        ],
+        "pulse": 11.1,
+        "seconds": 112,
+        "description": "flauta de aire, graves aterciopelados y silencios amplios",
+        "resource": "music_score_29_24",
+        "cover": "music_cover_29_24",
+        "file": "29 - Dirección - nadie, nunca.mp3",
+        "seed": 27277
+      }
+    },
+    "music_score_30_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.3568401634693146,
+        "rms": 0.0777362808585167,
+        "clipped": 0,
+        "seam": 5.450046592159197e-05,
+        "section_rms": [
+          0.07143010944128036,
+          0.06759539991617203,
+          0.09334814548492432,
+          0.08925788104534149,
+          0.06633289158344269,
+          0.04458102956414223,
+          0.10568317025899887,
+          0.06659377366304398
+        ],
+        "sha256": "df9887b199d72b8edbc266341bdc23053bcf14608a75a21a6b492bc5130cbda9",
+        "bytes": 449766
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.345924973487854,
+        "rms": 0.07817091047763824,
+        "clipped": 0,
+        "seam": 3.230252332286909e-05,
+        "section_rms": [
+          0.07205788046121597,
+          0.06780582666397095,
+          0.09402734041213989,
+          0.08956450968980789,
+          0.06689643859863281,
+          0.044790707528591156,
+          0.10628016293048859,
+          0.06675181537866592
+        ],
+        "sha256": "8f98a1b8cc777bde289af31a63447685c39e026e052b4e401e4823edbd2c6913",
+        "bytes": 662759,
+        "embedded_cover": true
+      },
+      "world": "pocket_gravity",
+      "title": "El techo aprende tus pasos",
+      "authored_brief": {
+        "number": 30,
+        "world": "pocket_gravity",
+        "title": "El techo aprende tus pasos",
+        "map": "El suelo que se volvió cielo",
+        "lead": "bow",
+        "root": 50,
+        "motif": [
+          0,
+          6,
+          7,
+          2,
+          10,
+          5,
+          12
+        ],
+        "harmony": [
+          0,
+          -2,
+          4,
+          -5
+        ],
+        "pulse": 9.9,
+        "seconds": 128,
+        "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+        "resource": "music_score_30_24",
+        "cover": "music_cover_30_24",
+        "file": "30 - El techo aprende tus pasos.mp3",
+        "seed": 27390
+      }
+    },
+    "music_score_31_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.39473897218704224,
+        "rms": 0.07749930769205093,
+        "clipped": 0,
+        "seam": 0.00010423576895846054,
+        "section_rms": [
+          0.08469689637422562,
+          0.07274967432022095,
+          0.08212605118751526,
+          0.09236811846494675,
+          0.07328370958566666,
+          0.04706507548689842,
+          0.08297114819288254,
+          0.0763980895280838
+        ],
+        "sha256": "425a22922f1b18988905c93f7304a17c366188bd704078b9ca0ed36d088b66e0",
+        "bytes": 438896
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.377877801656723,
+        "rms": 0.07789797335863113,
+        "clipped": 0,
+        "seam": 5.969780613668263e-05,
+        "section_rms": [
+          0.08548992872238159,
+          0.07301924377679825,
+          0.08228127658367157,
+          0.09273045510053635,
+          0.07399340718984604,
+          0.04727523401379585,
+          0.0833345353603363,
+          0.07668540626764297
+        ],
+        "sha256": "3156104034c151b55947ab231d5e7f5d57152ec8f17273a8a7b4c8c09fb69a68",
+        "bytes": 654141,
+        "embedded_cover": true
+      },
+      "world": "echo_01",
+      "title": "Calles que se doblan al dormir",
+      "authored_brief": {
+        "number": 31,
+        "world": "echo_01",
+        "title": "Calles que se doblan al dormir",
+        "map": "El barrio que se inclinó",
+        "lead": "tape",
+        "root": 56,
+        "motif": [
+          0,
+          4,
+          11,
+          6,
+          9,
+          2,
+          7
+        ],
+        "harmony": [
+          0,
+          2,
+          -3,
+          -5
+        ],
+        "pulse": 6.1,
+        "seconds": 120,
+        "description": "teclado de cinta, reversos y un pulso que se desvanece",
+        "resource": "music_score_31_24",
+        "cover": "music_cover_31_24",
+        "file": "31 - Calles que se doblan al dormir.mp3",
+        "seed": 27503
+      }
+    },
+    "music_score_32_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.4440517723560333,
+        "rms": 0.07667680829763412,
+        "clipped": 0,
+        "seam": 7.371122046606615e-05,
+        "section_rms": [
+          0.10142062604427338,
+          0.0628507137298584,
+          0.07959462702274323,
+          0.08535005897283554,
+          0.07529040426015854,
+          0.057571183890104294,
+          0.08765386790037155,
+          0.05012068897485733
+        ],
+        "sha256": "d94fb33d99a9cb53d8c55195ccb68ac28e4b5e0c813f20fc38bea94f7cb4f802",
+        "bytes": 421350
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.4578712582588196,
+        "rms": 0.07722000777721405,
+        "clipped": 0,
+        "seam": 0.00014582413132302463,
+        "section_rms": [
+          0.10186474025249481,
+          0.06334438920021057,
+          0.08051779121160507,
+          0.08568163216114044,
+          0.07614125311374664,
+          0.05790574848651886,
+          0.08835528790950775,
+          0.0503271222114563
+        ],
+        "sha256": "bdf90de7184799cbb5c31d5edb51fd5a0ce2f4adda969ece761f2720c1397d91",
+        "bytes": 739941,
+        "embedded_cover": true
+      },
+      "world": "echo_02",
+      "title": "La película que mira la Tierra",
+      "authored_brief": {
+        "number": 32,
+        "world": "echo_02",
+        "title": "La película que mira la Tierra",
+        "map": "El cine sobre la Tierra",
+        "lead": "organ",
+        "root": 47,
+        "motif": [
+          12,
+          7,
+          2,
+          10,
+          3,
+          5,
+          0
+        ],
+        "harmony": [
+          0,
+          3,
+          -2,
+          -5
+        ],
+        "pulse": 13.7,
+        "seconds": 144,
+        "description": "órgano cálido, tonos graves y intervalos inciertos",
+        "resource": "music_score_32_24",
+        "cover": "music_cover_32_24",
+        "file": "32 - La película que mira la Tierra.mp3",
+        "seed": 27616
+      }
+    },
+    "music_score_33_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.40702828764915466,
+        "rms": 0.07715413719415665,
+        "clipped": 0,
+        "seam": 4.457034810911864e-05,
+        "section_rms": [
+          0.0790865495800972,
+          0.07996955513954163,
+          0.10794568806886673,
+          0.06937707215547562,
+          0.06978499889373779,
+          0.03808056190609932,
+          0.08817083388566971,
+          0.06642775982618332
+        ],
+        "sha256": "6e1b948b33c254953200fb599e75e5ab6256a178b1f30e16de50b8b5d1dc6762",
+        "bytes": 515687
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.406855970621109,
+        "rms": 0.07737721502780914,
+        "clipped": 0,
+        "seam": 4.911343057756312e-05,
+        "section_rms": [
+          0.07951215654611588,
+          0.0800156518816948,
+          0.10812664031982422,
+          0.06943613290786743,
+          0.07012105733156204,
+          0.03832067921757698,
+          0.08857231587171555,
+          0.06655780225992203
+        ],
+        "sha256": "06667ca2d5aebb483b2a405550e33acf1c8470e554c15f8f8a4989142976df21",
+        "bytes": 829977,
+        "embedded_cover": true
+      },
+      "world": "echo_03",
+      "title": "Duchas para un valle vacío",
+      "authored_brief": {
+        "number": 33,
+        "world": "echo_03",
+        "title": "Duchas para un valle vacío",
+        "map": "Las duchas del valle infinito",
+        "lead": "water",
+        "root": 60,
+        "motif": [
+          2,
+          0,
+          9,
+          5,
+          7,
+          14
+        ],
+        "harmony": [
+          0,
+          5,
+          2,
+          -3
+        ],
+        "pulse": 7.9,
+        "seconds": 136,
+        "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+        "resource": "music_score_33_24",
+        "cover": "music_cover_33_24",
+        "file": "33 - Duchas para un valle vacío.mp3",
+        "seed": 27729
+      }
+    },
+    "music_score_34_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.43274930119514465,
+        "rms": 0.0776013731956482,
+        "clipped": 0,
+        "seam": 1.3273837794258725e-05,
+        "section_rms": [
+          0.08842765539884567,
+          0.07579080015420914,
+          0.09856770187616348,
+          0.076497383415699,
+          0.07321514189243317,
+          0.046407248824834824,
+          0.07640612870454788,
+          0.07544975727796555
+        ],
+        "sha256": "6ba3c7565fce963501c20fb09c6d5c425d84e59a56de5e689178fd4a7ea45d9d",
+        "bytes": 431688
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.4366101026535034,
+        "rms": 0.07774651050567627,
+        "clipped": 0,
+        "seam": 6.276621570577845e-05,
+        "section_rms": [
+          0.08856471627950668,
+          0.07584063708782196,
+          0.0989544615149498,
+          0.07644522190093994,
+          0.07341235131025314,
+          0.046522170305252075,
+          0.07681095600128174,
+          0.07530725747346878
+        ],
+        "sha256": "c0a440bcef54b2046bf29d722ed1d64577a4effed50b4e65fb93472ac305fe1d",
+        "bytes": 753596,
+        "embedded_cover": true
+      },
+      "world": "echo_04",
+      "title": "El reflejo llegó primero",
+      "authored_brief": {
+        "number": 34,
+        "world": "echo_04",
+        "title": "El reflejo llegó primero",
+        "map": "La casa reflejada entre nubes",
+        "lead": "harp",
+        "root": 66,
+        "motif": [
+          0,
+          7,
+          11,
+          2,
+          9,
+          4,
+          14
+        ],
+        "harmony": [
+          0,
+          -3,
+          -5,
+          2
+        ],
+        "pulse": 6.9,
+        "seconds": 116,
+        "description": "arpa de nylon, aire y notas que quedan suspendidas",
+        "resource": "music_score_34_24",
+        "cover": "music_cover_34_24",
+        "file": "34 - El reflejo llegó primero.mp3",
+        "seed": 27842
+      }
+    },
+    "music_score_35_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.46031031012535095,
+        "rms": 0.07708403468132019,
+        "clipped": 0,
+        "seam": 0.00010111018491443247,
+        "section_rms": [
+          0.08300471305847168,
+          0.08473123610019684,
+          0.10107068717479706,
+          0.06963959336280823,
+          0.07564321905374527,
+          0.04105788469314575,
+          0.0829978734254837,
+          0.06407159566879272
+        ],
+        "sha256": "a35e969c8466dde1828d271fba77c18cc32edb788d47da6a3276a9543d7ef940",
+        "bytes": 432192
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.4666624367237091,
+        "rms": 0.07750927656888962,
+        "clipped": 0,
+        "seam": 7.684071897529066e-05,
+        "section_rms": [
+          0.08364908397197723,
+          0.08489978313446045,
+          0.10193589329719543,
+          0.06997598707675934,
+          0.07619637250900269,
+          0.041296739131212234,
+          0.0832601934671402,
+          0.06422794610261917
+        ],
+        "sha256": "92ae9d8c6b09fad5d3efbbc3e8f39a32fd8db135e8ff07e7a886c103e86310df",
+        "bytes": 690938,
+        "embedded_cover": true
+      },
+      "world": "echo_05",
+      "title": "Los hongos sueñan bajo el canal",
+      "authored_brief": {
+        "number": 35,
+        "world": "echo_05",
+        "title": "Los hongos sueñan bajo el canal",
+        "map": "El canal de los hongos dormidos",
+        "lead": "marimba",
+        "root": 53,
+        "motif": [
+          0,
+          3,
+          7,
+          9,
+          2,
+          10,
+          5
+        ],
+        "harmony": [
+          0,
+          3,
+          -2,
+          5
+        ],
+        "pulse": 4.1,
+        "seconds": 132,
+        "description": "marimba apagada, madera y respuestas desiguales",
+        "resource": "music_score_35_24",
+        "cover": "music_cover_35_24",
+        "file": "35 - Los hongos sueñan bajo el canal.mp3",
+        "seed": 27955
+      }
+    },
+    "music_score_36_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.37317371368408203,
+        "rms": 0.07606905698776245,
+        "clipped": 0,
+        "seam": 6.012938683852553e-06,
+        "section_rms": [
+          0.08387166261672974,
+          0.06173287704586983,
+          0.09891361743211746,
+          0.05851227045059204,
+          0.08429140597581863,
+          0.04462296888232231,
+          0.09674762189388275,
+          0.06150338798761368
+        ],
+        "sha256": "878de68481c79afa5b548c116daeadfb6ec218b88184a5253fcae8f69c6eea20",
+        "bytes": 446660
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.37369847297668457,
+        "rms": 0.07626482099294662,
+        "clipped": 0,
+        "seam": 7.356308196904138e-05,
+        "section_rms": [
+          0.08415278792381287,
+          0.06186504289507866,
+          0.0991033986210823,
+          0.05852803587913513,
+          0.08487264066934586,
+          0.04496578872203827,
+          0.09688939154148102,
+          0.06133316829800606
+        ],
+        "sha256": "74e3d643490d2ae2ec913fe7359ad1cddfd092f3e6778aa852dbefb3e12e3f4a",
+        "bytes": 675639,
+        "embedded_cover": true
+      },
+      "world": "echo_06",
+      "title": "Una nube ocupa todo el día",
+      "authored_brief": {
+        "number": 36,
+        "world": "echo_06",
+        "title": "Una nube ocupa todo el día",
+        "map": "La colina de la nube inmensa",
+        "lead": "choir",
+        "root": 59,
+        "motif": [
+          7,
+          14,
+          11,
+          4,
+          2,
+          9,
+          0
+        ],
+        "harmony": [
+          0,
+          5,
+          -3,
+          2
+        ],
+        "pulse": 14.9,
+        "seconds": 112,
+        "description": "coro sin palabras, campanas lejanas y respiración armónica",
+        "resource": "music_score_36_24",
+        "cover": "music_cover_36_24",
+        "file": "36 - Una nube ocupa todo el día.mp3",
+        "seed": 28068
+      }
+    },
+    "music_score_37_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.45244860649108887,
+        "rms": 0.07730310410261154,
+        "clipped": 0,
+        "seam": 4.412600537762046e-05,
+        "section_rms": [
+          0.07419665157794952,
+          0.07096438854932785,
+          0.09787532687187195,
+          0.08186953514814377,
+          0.07145148515701294,
+          0.04802112281322479,
+          0.10046157985925674,
+          0.05898307263851166
+        ],
+        "sha256": "0a6a7a59f841488fcd7fe5c01a13c32c4527b2ca9aa513080883d181cca84d7c",
+        "bytes": 427994
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.44676899909973145,
+        "rms": 0.07780608534812927,
+        "clipped": 0,
+        "seam": 4.7324949264293537e-05,
+        "section_rms": [
+          0.07478554546833038,
+          0.07107359170913696,
+          0.09846971929073334,
+          0.08202822506427765,
+          0.07227380573749542,
+          0.048347510397434235,
+          0.10140272229909897,
+          0.05930894985795021
+        ],
+        "sha256": "b5cfa289733ca199c7958fa08a1fb3e58ecfaeec69a850a6245e58e661b52dd6",
+        "bytes": 660816,
+        "embedded_cover": true
+      },
+      "world": "echo_07",
+      "title": "Nadie viene a repostar",
+      "authored_brief": {
+        "number": 37,
+        "world": "echo_07",
+        "title": "Nadie viene a repostar",
+        "map": "La última gasolinera del atardecer",
+        "lead": "guitar",
+        "root": 54,
+        "motif": [
+          0,
+          7,
+          4,
+          2,
+          10,
+          5,
+          9
+        ],
+        "harmony": [
+          0,
+          -5,
+          3,
+          -2
+        ],
+        "pulse": 8.5,
+        "seconds": 128,
+        "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+        "resource": "music_score_37_24",
+        "cover": "music_cover_37_24",
+        "file": "37 - Nadie viene a repostar.mp3",
+        "seed": 28181
+      }
+    },
+    "music_score_38_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.41473960876464844,
+        "rms": 0.07782884687185287,
+        "clipped": 0,
+        "seam": 5.922652235312853e-06,
+        "section_rms": [
+          0.08322210609912872,
+          0.07456646859645844,
+          0.08637578785419464,
+          0.09030456840991974,
+          0.07020507007837296,
+          0.050617750734090805,
+          0.0721588134765625,
+          0.08751603960990906
+        ],
+        "sha256": "17cf517e952e5bce397be6c72d426a57728a73233e716a0226d0dcd8d0cd79fc",
+        "bytes": 459125
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.4121971130371094,
+        "rms": 0.07809073477983475,
+        "clipped": 0,
+        "seam": 5.965727541479282e-05,
+        "section_rms": [
+          0.0837097093462944,
+          0.07472085952758789,
+          0.08676673471927643,
+          0.09041266143321991,
+          0.07069096714258194,
+          0.05077390745282173,
+          0.07253144681453705,
+          0.08749773353338242
+        ],
+        "sha256": "2e7fe6928380a72316294982b630b0f527c1551abaa29395bd88f5a2d9c0fd66",
+        "bytes": 709770,
+        "embedded_cover": true
+      },
+      "world": "echo_08",
+      "title": "Sombras que eligieron otro color",
+      "authored_brief": {
+        "number": 38,
+        "world": "echo_08",
+        "title": "Sombras que eligieron otro color",
+        "map": "El barrio de las sombras de colores",
+        "lead": "tape",
+        "root": 60,
+        "motif": [
+          4,
+          6,
+          11,
+          7,
+          2,
+          9,
+          0
+        ],
+        "harmony": [
+          0,
+          2,
+          -5,
+          -3
+        ],
+        "pulse": 5.7,
+        "seconds": 120,
+        "description": "teclado de cinta, reversos y un pulso que se desvanece",
+        "resource": "music_score_38_24",
+        "cover": "music_cover_38_24",
+        "file": "38 - Sombras que eligieron otro color.mp3",
+        "seed": 28294
+      }
+    },
+    "music_score_39_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.5269696712493896,
+        "rms": 0.07738485932350159,
+        "clipped": 0,
+        "seam": 7.467783143511042e-05,
+        "section_rms": [
+          0.07889553904533386,
+          0.06104722619056702,
+          0.10355640202760696,
+          0.06540657579898834,
+          0.0787460207939148,
+          0.04816660284996033,
+          0.10489821434020996,
+          0.05856214836239815
+        ],
+        "sha256": "0a127a14115e4b42a2780a8c744c25f644b183ef25ad9ab8a34e0cd2ae4d311f",
+        "bytes": 465807
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.5289372205734253,
+        "rms": 0.0778554230928421,
+        "clipped": 0,
+        "seam": 2.4998633307404816e-05,
+        "section_rms": [
+          0.07970693707466125,
+          0.06128573790192604,
+          0.10413873940706253,
+          0.06574361026287079,
+          0.07939267158508301,
+          0.04851025342941284,
+          0.10536912083625793,
+          0.05879117548465729
+        ],
+        "sha256": "5d8d3192387476b00446ba4a44b0929cfe0662a7c9829728b1548c1242102675",
+        "bytes": 757095,
+        "embedded_cover": true
+      },
+      "world": "echo_09",
+      "title": "Reservamos una silla para ti",
+      "authored_brief": {
+        "number": 39,
+        "world": "echo_09",
+        "title": "Reservamos una silla para ti",
+        "map": "El pasillo de las sillas vacías",
+        "lead": "felt",
+        "root": 52,
+        "motif": [
+          0,
+          1,
+          8,
+          5,
+          7,
+          3,
+          10
+        ],
+        "harmony": [
+          0,
+          -2,
+          1,
+          -5
+        ],
+        "pulse": 12.3,
+        "seconds": 144,
+        "description": "piano de fieltro, cinta suave y acordes suspendidos",
+        "resource": "music_score_39_24",
+        "cover": "music_cover_39_24",
+        "file": "39 - Reservamos una silla para ti.mp3",
+        "seed": 28407
+      }
+    },
+    "music_score_40_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.40022045373916626,
+        "rms": 0.07679826766252518,
+        "clipped": 0,
+        "seam": 0.0002563052112236619,
+        "section_rms": [
+          0.06734593957662582,
+          0.06947996467351913,
+          0.10677960515022278,
+          0.05906972661614418,
+          0.08086051046848297,
+          0.03492625430226326,
+          0.09480694681406021,
+          0.07863277196884155
+        ],
+        "sha256": "f628128e333cf88e9f4921ef384dc4a8b7790fc3dbb91f2137155074e6852acf",
+        "bytes": 450066
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.3916570544242859,
+        "rms": 0.077374666929245,
+        "clipped": 0,
+        "seam": 6.851505168015137e-05,
+        "section_rms": [
+          0.06809795647859573,
+          0.06973300874233246,
+          0.1077776849269867,
+          0.05959787964820862,
+          0.08154760301113129,
+          0.035214319825172424,
+          0.0956559106707573,
+          0.0786551833152771
+        ],
+        "sha256": "121f5c5bea5cb8951712a764e3c0414ad2ebc4f84e247ec30fe3e792fc782cba",
+        "bytes": 702071,
+        "embedded_cover": true
+      },
+      "world": "echo_10",
+      "title": "Entre los pisos falta un nombre",
+      "authored_brief": {
+        "number": 40,
+        "world": "echo_10",
+        "title": "Entre los pisos falta un nombre",
+        "map": "El edificio de los pisos sin nadie",
+        "lead": "bow",
+        "root": 46,
+        "motif": [
+          0,
+          7,
+          1,
+          8,
+          2,
+          10
+        ],
+        "harmony": [
+          0,
+          1,
+          3,
+          -2
+        ],
+        "pulse": 13.3,
+        "seconds": 136,
+        "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+        "resource": "music_score_40_24",
+        "cover": "music_cover_40_24",
+        "file": "40 - Entre los pisos falta un nombre.mp3",
+        "seed": 28520
+      }
+    },
+    "music_score_41_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.5141401886940002,
+        "rms": 0.07745952159166336,
+        "clipped": 0,
+        "seam": 3.123046553810127e-05,
+        "section_rms": [
+          0.10198798030614853,
+          0.06447798758745193,
+          0.09636858105659485,
+          0.07860903441905975,
+          0.06395077705383301,
+          0.04929637163877487,
+          0.08798196166753769,
+          0.06094196438789368
+        ],
+        "sha256": "6243b713c084e3dba6b816cd27b006d059288022f632acd40f149ccac48f1377",
+        "bytes": 457088
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.5247055888175964,
+        "rms": 0.07758849859237671,
+        "clipped": 0,
+        "seam": 2.707719977479428e-05,
+        "section_rms": [
+          0.10223281383514404,
+          0.06459404528141022,
+          0.09658841043710709,
+          0.07856503129005432,
+          0.06429140269756317,
+          0.049452926963567734,
+          0.08803865313529968,
+          0.0608629435300827
+        ],
+        "sha256": "0d6a8163901c62d53e708d0be7baf719f54b3d28f8315cf175ad6f08be3336e3",
+        "bytes": 838153,
+        "embedded_cover": true
+      },
+      "world": "echo_11",
+      "title": "El archivo de las nubes",
+      "authored_brief": {
+        "number": 41,
+        "world": "echo_11",
+        "title": "El archivo de las nubes",
+        "map": "La oficina dentro de las nubes",
+        "lead": "musicbox",
+        "root": 63,
+        "motif": [
+          0,
+          9,
+          11,
+          4,
+          7,
+          2,
+          14
+        ],
+        "harmony": [
+          0,
+          -3,
+          2,
+          -5
+        ],
+        "pulse": 6.3,
+        "seconds": 116,
+        "description": "caja de música amortiguada, ecos y cielo abierto",
+        "resource": "music_score_41_24",
+        "cover": "music_cover_41_24",
+        "file": "41 - El archivo de las nubes.mp3",
+        "seed": 28633
+      }
+    },
+    "music_score_42_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.38880982995033264,
+        "rms": 0.07719828933477402,
+        "clipped": 0,
+        "seam": 0.0001239536504726857,
+        "section_rms": [
+          0.08628768473863602,
+          0.056069958955049515,
+          0.09606792777776718,
+          0.050646957010030746,
+          0.08154542744159698,
+          0.05244803428649902,
+          0.11247426271438599,
+          0.056939639151096344
+        ],
+        "sha256": "7d3b2e04219cfcc2cec5e7ece76865741aa6e364d4da6cb98bc19b8eef0cf82a",
+        "bytes": 394918
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.37352946400642395,
+        "rms": 0.07769910246133804,
+        "clipped": 0,
+        "seam": 5.6909142585936934e-05,
+        "section_rms": [
+          0.08727294206619263,
+          0.05622609704732895,
+          0.09673696011304855,
+          0.050934262573719025,
+          0.08244668692350388,
+          0.052757855504751205,
+          0.11283671855926514,
+          0.05704337731003761
+        ],
+        "sha256": "627e0a21183a223b4d83ce53a1c3819dcf6fe9da12f87d3d4d8b6dc6ad10276f",
+        "bytes": 627360,
+        "embedded_cover": true
+      },
+      "world": "preview_eyes",
+      "title": "El campo sabe que estás aquí",
+      "authored_brief": {
+        "number": 42,
+        "world": "preview_eyes",
+        "title": "El campo sabe que estás aquí",
+        "map": "Vista previa: la pradera que te mira",
+        "lead": "choir",
+        "root": 45,
+        "motif": [
+          0,
+          1,
+          8,
+          7,
+          3,
+          2
+        ],
+        "harmony": [
+          0,
+          1,
+          -5,
+          3
+        ],
+        "pulse": 15.7,
+        "seconds": 132,
+        "description": "coro sin palabras, campanas lejanas y respiración armónica",
+        "resource": "music_score_42_24",
+        "cover": "music_cover_42_24",
+        "file": "42 - El campo sabe que estás aquí.mp3",
+        "seed": 28746
+      }
+    },
+    "music_score_43_24": {
+      "ogg": {
+        "seconds": 112.0,
+        "peak": 0.3938116431236267,
+        "rms": 0.07787816971540451,
+        "clipped": 0,
+        "seam": 3.7562283978331834e-05,
+        "section_rms": [
+          0.08210603892803192,
+          0.07770024985074997,
+          0.08392536640167236,
+          0.09565547108650208,
+          0.06882115453481674,
+          0.05286901444196701,
+          0.07680807262659073,
+          0.07821090519428253
+        ],
+        "sha256": "3b2abcb7f6661901ac281fea5da3b5ed7ce7ff3d10177d3aceeb1fcb61973662",
+        "bytes": 393934
+      },
+      "mp3": {
+        "seconds": 112.0,
+        "peak": 0.3882424831390381,
+        "rms": 0.07801061868667603,
+        "clipped": 0,
+        "seam": 3.888873470714316e-05,
+        "section_rms": [
+          0.08236852288246155,
+          0.07764418423175812,
+          0.08403859287500381,
+          0.09566027671098709,
+          0.06931906938552856,
+          0.05308551713824272,
+          0.07721730321645737,
+          0.07792922109365463
+        ],
+        "sha256": "d0940f61219f9c7fd7f6a6051ddce39bbca17f1e5bd303aa5b1ff70664f79101",
+        "bytes": 606989,
+        "embedded_cover": true
+      },
+      "world": "dream_rose_island",
+      "title": "La casa rosa al final del aire",
+      "authored_brief": {
+        "number": 43,
+        "world": "dream_rose_island",
+        "title": "La casa rosa al final del aire",
+        "map": "La casa rosa sobre el océano",
+        "lead": "harp",
+        "root": 62,
+        "motif": [
+          0,
+          4,
+          7,
+          14,
+          11,
+          9,
+          2
+        ],
+        "harmony": [
+          0,
+          5,
+          -3,
+          -5
+        ],
+        "pulse": 5.1,
+        "seconds": 112,
+        "description": "arpa de nylon, aire y notas que quedan suspendidas",
+        "resource": "music_score_43_24",
+        "cover": "music_cover_43_24",
+        "file": "43 - La casa rosa al final del aire.mp3",
+        "seed": 28859
+      }
+    },
+    "music_score_44_24": {
+      "ogg": {
+        "seconds": 128.0,
+        "peak": 0.3945702314376831,
+        "rms": 0.07746114581823349,
+        "clipped": 0,
+        "seam": 0.00010623885464156047,
+        "section_rms": [
+          0.09013048559427261,
+          0.069534070789814,
+          0.09136456996202469,
+          0.08324608206748962,
+          0.07033894956111908,
+          0.06001405045390129,
+          0.0965401902794838,
+          0.043551042675971985
+        ],
+        "sha256": "751a8c457df92dcb7277b41a0e1d8578722475f75013a2052a3a229162cc81e7",
+        "bytes": 348879
+      },
+      "mp3": {
+        "seconds": 128.0,
+        "peak": 0.3851190209388733,
+        "rms": 0.07801704853773117,
+        "clipped": 0,
+        "seam": 3.258129800087772e-05,
+        "section_rms": [
+          0.09106159210205078,
+          0.06996539235115051,
+          0.09225425124168396,
+          0.08346754312515259,
+          0.07095147669315338,
+          0.06029779091477394,
+          0.0971485823392868,
+          0.04382287338376045
+        ],
+        "sha256": "f8499fcda709acaa0ae0ebdd6276247321429a4143c5c5584001ca80aab740af",
+        "bytes": 663147,
+        "embedded_cover": true
+      },
+      "world": "backrooms_01",
+      "title": "Cuarenta y nueve habitaciones despiertas",
+      "authored_brief": {
+        "number": 44,
+        "world": "backrooms_01",
+        "title": "Cuarenta y nueve habitaciones despiertas",
+        "map": "Backrooms: las luces que no descansan",
+        "lead": "organ",
+        "root": 44,
+        "motif": [
+          0,
+          1,
+          5,
+          7,
+          2,
+          8
+        ],
+        "harmony": [
+          0,
+          1,
+          -2,
+          -1
+        ],
+        "pulse": 16.3,
+        "seconds": 128,
+        "description": "órgano cálido, tonos graves y intervalos inciertos",
+        "resource": "music_score_44_24",
+        "cover": "music_cover_44_24",
+        "file": "44 - Cuarenta y nueve habitaciones despiertas.mp3",
+        "seed": 28972
+      }
+    },
+    "music_score_45_24": {
+      "ogg": {
+        "seconds": 120.0,
+        "peak": 0.4425959885120392,
+        "rms": 0.07823324203491211,
+        "clipped": 0,
+        "seam": 4.386744330986403e-05,
+        "section_rms": [
+          0.0705043375492096,
+          0.06809211522340775,
+          0.08557020872831345,
+          0.08761188387870789,
+          0.06453603506088257,
+          0.05148579925298691,
+          0.11385325342416763,
+          0.06767406314611435
+        ],
+        "sha256": "4a03245a425268b31f433cef2a052e432b1895e60331556c3e4faad9ea09ec1b",
+        "bytes": 450188
+      },
+      "mp3": {
+        "seconds": 120.0,
+        "peak": 0.43360239267349243,
+        "rms": 0.07842785865068436,
+        "clipped": 0,
+        "seam": 6.806719284213614e-06,
+        "section_rms": [
+          0.07086247205734253,
+          0.06803670525550842,
+          0.08579790592193604,
+          0.0876537412405014,
+          0.06499097496271133,
+          0.0515994094312191,
+          0.11424928903579712,
+          0.06762592494487762
+        ],
+        "sha256": "8b7ef77ba3bdbf53390728548dac70aad457ed902c5ee7e29acbceec4714ee01",
+        "bytes": 745135,
+        "embedded_cover": true
+      },
+      "world": "dream_sky_openings",
+      "title": "Donde el cielo dejó una abertura",
+      "authored_brief": {
+        "number": 45,
+        "world": "dream_sky_openings",
+        "title": "Donde el cielo dejó una abertura",
+        "map": "Las aberturas del cielo",
+        "lead": "glass",
+        "root": 58,
+        "motif": [
+          0,
+          7,
+          14,
+          6,
+          11,
+          2,
+          9
+        ],
+        "harmony": [
+          0,
+          2,
+          -3,
+          5
+        ],
+        "pulse": 10.3,
+        "seconds": 120,
+        "description": "cristal suave, resonancias y voces lejanas",
+        "resource": "music_score_45_24",
+        "cover": "music_cover_45_24",
+        "file": "45 - Donde el cielo dejó una abertura.mp3",
+        "seed": 29085
+      }
+    },
+    "music_score_46_24": {
+      "ogg": {
+        "seconds": 144.0,
+        "peak": 0.400375097990036,
+        "rms": 0.07808609306812286,
+        "clipped": 0,
+        "seam": 3.8783473428338766e-05,
+        "section_rms": [
+          0.08028747141361237,
+          0.08288880437612534,
+          0.09376959502696991,
+          0.0769512727856636,
+          0.08767442405223846,
+          0.0401681549847126,
+          0.08423785865306854,
+          0.0659722313284874
+        ],
+        "sha256": "41efefda27f38634b78d7dbfae7273c92d17f42af5a53a1b0f6ff3f641a82839",
+        "bytes": 606827
+      },
+      "mp3": {
+        "seconds": 144.0,
+        "peak": 0.4011431336402893,
+        "rms": 0.07819872349500656,
+        "clipped": 0,
+        "seam": 7.370387174887583e-05,
+        "section_rms": [
+          0.08037690818309784,
+          0.08274385333061218,
+          0.09411738812923431,
+          0.07690683007240295,
+          0.08787231892347336,
+          0.040324367582798004,
+          0.084600530564785,
+          0.065846286714077
+        ],
+        "sha256": "ec56d493736b0477a3a9ced02e90b353c22894afeb73a694fe2550c7eadadc49",
+        "bytes": 921380,
+        "embedded_cover": true
+      },
+      "world": "dream_cloud_castle",
+      "title": "Un castillo en el aliento",
+      "authored_brief": {
+        "number": 46,
+        "world": "dream_cloud_castle",
+        "title": "Un castillo en el aliento",
+        "map": "Los corredores del castillo de nubes",
+        "lead": "choir",
+        "root": 65,
+        "motif": [
+          4,
+          11,
+          7,
+          14,
+          2,
+          9
+        ],
+        "harmony": [
+          0,
+          -5,
+          2,
+          -3
+        ],
+        "pulse": 12.9,
+        "seconds": 144,
+        "description": "coro sin palabras, campanas lejanas y respiración armónica",
+        "resource": "music_score_46_24",
+        "cover": "music_cover_46_24",
+        "file": "46 - Un castillo en el aliento.mp3",
+        "seed": 29198
+      }
+    },
+    "music_score_47_24": {
+      "ogg": {
+        "seconds": 136.0,
+        "peak": 0.42434829473495483,
+        "rms": 0.07752123475074768,
+        "clipped": 0,
+        "seam": 5.896905713598244e-05,
+        "section_rms": [
+          0.0793343260884285,
+          0.08075115829706192,
+          0.09473907947540283,
+          0.06539952009916306,
+          0.06512086093425751,
+          0.045225922018289566,
+          0.10270268470048904,
+          0.07193822413682938
+        ],
+        "sha256": "4b5a0e3738b243351ff0d3b06aac2358bcea2c1ce299d8dea3671c4a4bdafb81",
+        "bytes": 473836
+      },
+      "mp3": {
+        "seconds": 136.0,
+        "peak": 0.42365503311157227,
+        "rms": 0.07787706702947617,
+        "clipped": 0,
+        "seam": 2.6966967197949998e-05,
+        "section_rms": [
+          0.07995931059122086,
+          0.08087054640054703,
+          0.09499823302030563,
+          0.06557229161262512,
+          0.06560982763767242,
+          0.0455782413482666,
+          0.10328354686498642,
+          0.07218904793262482
+        ],
+        "sha256": "fa5a301d7e88ef9201af8f6a715b5c421c9151bb83902a5bc5bc95001c28aa56",
+        "bytes": 776909,
+        "embedded_cover": true
+      },
+      "world": "dream_flower_city",
+      "title": "El tren cruza las flores",
+      "authored_brief": {
+        "number": 47,
+        "world": "dream_flower_city",
+        "title": "El tren cruza las flores",
+        "map": "La ciudad al otro lado de las flores",
+        "lead": "marimba",
+        "root": 57,
+        "motif": [
+          0,
+          4,
+          9,
+          2,
+          7,
+          11,
+          5
+        ],
+        "harmony": [
+          0,
+          5,
+          -3,
+          2
+        ],
+        "pulse": 4.7,
+        "seconds": 136,
+        "description": "marimba apagada, madera y respuestas desiguales",
+        "resource": "music_score_47_24",
+        "cover": "music_cover_47_24",
+        "file": "47 - El tren cruza las flores.mp3",
+        "seed": 29311
+      }
+    },
+    "music_score_48_24": {
+      "ogg": {
+        "seconds": 116.0,
+        "peak": 0.37952035665512085,
+        "rms": 0.07772599160671234,
+        "clipped": 0,
+        "seam": 6.402700091712177e-05,
+        "section_rms": [
+          0.06447163224220276,
+          0.07416633516550064,
+          0.09610576927661896,
+          0.1021609678864479,
+          0.05645722523331642,
+          0.05864259600639343,
+          0.09106232225894928,
+          0.0638865977525711
+        ],
+        "sha256": "6644238ed390eb87726253c653de090c24e865f9adbcaf2f521578903994f557",
+        "bytes": 363674
+      },
+      "mp3": {
+        "seconds": 116.0,
+        "peak": 0.3713816702365875,
+        "rms": 0.07803554832935333,
+        "clipped": 0,
+        "seam": 4.981408710591495e-05,
+        "section_rms": [
+          0.0646418109536171,
+          0.07442069053649902,
+          0.09668846428394318,
+          0.10231031477451324,
+          0.05680745840072632,
+          0.058772582560777664,
+          0.09171997755765915,
+          0.06394880264997482
+        ],
+        "sha256": "32c76e0f6796103694f3ffd33dd221374a1d81fed240482d341dfd3ca21da661",
+        "bytes": 542398,
+        "embedded_cover": true
+      },
+      "world": "dream_grass_fissures",
+      "title": "Un puente entre dos silencios",
+      "authored_brief": {
+        "number": 48,
+        "world": "dream_grass_fissures",
+        "title": "Un puente entre dos silencios",
+        "map": "La pradera de las grietas",
+        "lead": "flute",
+        "root": 55,
+        "motif": [
+          7,
+          0,
+          2,
+          8,
+          5,
+          10,
+          3
+        ],
+        "harmony": [
+          0,
+          -2,
+          3,
+          -5
+        ],
+        "pulse": 9.5,
+        "seconds": 116,
+        "description": "flauta de aire, graves aterciopelados y silencios amplios",
+        "resource": "music_score_48_24",
+        "cover": "music_cover_48_24",
+        "file": "48 - Un puente entre dos silencios.mp3",
+        "seed": 29424
+      }
+    },
+    "music_score_49_24": {
+      "ogg": {
+        "seconds": 132.0,
+        "peak": 0.5037885308265686,
+        "rms": 0.07751403003931046,
+        "clipped": 0,
+        "seam": 5.7611709053162485e-05,
+        "section_rms": [
+          0.09631085395812988,
+          0.09090834110975266,
+          0.09878753870725632,
+          0.07245659083127975,
+          0.06645110994577408,
+          0.03887440636754036,
+          0.09038170427083969,
+          0.037716593593358994
+        ],
+        "sha256": "3e3bdcf10efa2f350623d9ce4cb8edc73f60e4f18299c9d997cc30b57a53afd6",
+        "bytes": 446660
+      },
+      "mp3": {
+        "seconds": 132.0,
+        "peak": 0.5076749324798584,
+        "rms": 0.07785957306623459,
+        "clipped": 0,
+        "seam": 2.3386957764159888e-05,
+        "section_rms": [
+          0.09670151025056839,
+          0.09078110754489899,
+          0.09952021390199661,
+          0.07262353599071503,
+          0.06705016642808914,
+          0.039168428629636765,
+          0.09086670726537704,
+          0.0379396416246891
+        ],
+        "sha256": "af9b7cc8439fee51b1e690d3727ebe7baaa3d6d98544e22a2cd9a3dc8c548558",
+        "bytes": 694617,
+        "embedded_cover": true
+      },
+      "world": "pocket_call_house",
+      "title": "La llamada venía de adentro",
+      "authored_brief": {
+        "number": 49,
+        "world": "pocket_call_house",
+        "title": "La llamada venía de adentro",
+        "map": "La casa del teléfono desconectado",
+        "lead": "felt",
+        "root": 51,
+        "motif": [
+          0,
+          1,
+          7,
+          10,
+          3,
+          8
+        ],
+        "harmony": [
+          0,
+          1,
+          -5,
+          -2
+        ],
+        "pulse": 14.1,
+        "seconds": 132,
+        "description": "piano de fieltro, cinta suave y acordes suspendidos",
+        "resource": "music_score_49_24",
+        "cover": "music_cover_49_24",
+        "file": "49 - La llamada venía de adentro.mp3",
+        "seed": 29537
+      }
+    }
+  },
+  "album": [
+    {
+      "world": "title",
+      "file": "01 - Antes de recordar.mp3",
+      "sha256": "9e1c56c13b19dfb90901adcfc46c3886e380b502e0bf33636c922951365d9a98",
+      "bytes": 542148,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_01",
+      "file": "02 - Cinco puertas al atardecer.mp3",
+      "sha256": "c48f47699097ee1d4cfa119b66d9585105dfe7fc5028fed3769d86650946310d",
+      "bytes": 755093,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_02",
+      "file": "03 - El agua conserva las voces.mp3",
+      "sha256": "7de40d527b96006a70b06e2b6093fcebc34c7d486b4e83478c6f7b3a076150c0",
+      "bytes": 786970,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_03",
+      "file": "04 - Casas que caen despacio.mp3",
+      "sha256": "a52a9cbe98edcd0149ae88680018bc9acb88a92b2ac3e2f8c08da10f51a19912",
+      "bytes": 780392,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_04",
+      "file": "05 - La lluvia olvidó el suelo.mp3",
+      "sha256": "bf27de85d55af0db8819e81000ce33b3082f28acb74c4ccecd2a959a74268d13",
+      "bytes": 811464,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_05",
+      "file": "06 - Alguien dejó la luz.mp3",
+      "sha256": "d533b200be94eca55f431b25483e9a8bd7a46ab9d13b9e85fe50af9490c81a99",
+      "bytes": 567003,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_06",
+      "file": "07 - Mareas sobre las ventanas.mp3",
+      "sha256": "2c452a79ea477be22c3f41b1d55ef4ffe7bcb1ba78d3f511d337dda370d3b19b",
+      "bytes": 700545,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_07",
+      "file": "08 - La puerta del fondo respira.mp3",
+      "sha256": "23bf2538dffdfe185bc74098a9042422867f2907f98430d942ab0a134c9d0744",
+      "bytes": 635966,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_08",
+      "file": "09 - Una lámpara en el abismo.mp3",
+      "sha256": "42c9184afcc46e65949c279d2f70d15b57316fb7fc1a90c8a5128c95573f7b00",
+      "bytes": 673946,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_09",
+      "file": "10 - La partida sin contrincante.mp3",
+      "sha256": "4e78a4a632ca86844fb28ba073836ab6376ee02625cf4c88797fd9ce53c402a3",
+      "bytes": 650578,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_10",
+      "file": "11 - Porcelana que llora.mp3",
+      "sha256": "150e9bf4bc64a78cf92da5acc583ab29040887f9c149562bbfca8b082a80908c",
+      "bytes": 676023,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_11",
+      "file": "12 - Habitaciones a la deriva.mp3",
+      "sha256": "070c246fd7b35cefa474fd27d34259bf02986d2bd9cd03bd70baa62d6f73dd7f",
+      "bytes": 969437,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_12",
+      "file": "13 - La curva que nadie recuerda.mp3",
+      "sha256": "6794e9cd63aad1fe662f505a451f813a12d998d690fca228a797986323041547",
+      "bytes": 582580,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_13",
+      "file": "14 - Lágrimas que sostienen el cielo.mp3",
+      "sha256": "f9895f59bdfb31d660da973bc074c0f0fd64f0849fdc4e149b374c366e844c9d",
+      "bytes": 748798,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_14",
+      "file": "15 - Órbitas de infancia.mp3",
+      "sha256": "f03cadc1aa3467e276e3a17e1e8223c6d54a2d42a5f3d31a9ee7680845ac0438",
+      "bytes": 927191,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_15",
+      "file": "16 - El recreo después del fin.mp3",
+      "sha256": "ac49f4bb34ec4d81e154bb782e3efea65dddea6b54165bc4f17d68f73e71a822",
+      "bytes": 724757,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dark_01",
+      "file": "17 - Sonríe cuando no miras.mp3",
+      "sha256": "4b8bad58deb82fe2cf43d5c98c9072d595d78fc846bf22ea6cffe3bf69a2a56f",
+      "bytes": 609726,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dark_02",
+      "file": "18 - Flores para un trono vacío.mp3",
+      "sha256": "2dbccf0c7903036bfe41bb15b420723dae5219899e4e9ade36866648b2e7cd8e",
+      "bytes": 742982,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_laundry",
+      "file": "19 - La ropa de otra vida.mp3",
+      "sha256": "a242f2d849f6deeba5bef7d880755f71be61d2ea329986e23e9266f526e7f9f1",
+      "bytes": 753225,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_train",
+      "file": "20 - El último vagón sumergido.mp3",
+      "sha256": "8707d537f8416eaf0e4b14c253fa08131026e0b956a2673c10d79e24b246f52b",
+      "bytes": 627815,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_dawn",
+      "file": "21 - Las seis y nunca más.mp3",
+      "sha256": "a5e6419f0ad33819071aec6975551b44c1078705c96a12d8d26d6d085c347f5e",
+      "bytes": 785537,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_tower",
+      "file": "22 - El horizonte tenía una escalera.mp3",
+      "sha256": "c90ca5dbe3a2bc1e69b411b1024ba09055575644079fb19b3a24ec6e0eadf390",
+      "bytes": 646917,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_cloudbed",
+      "file": "23 - El peso azul del sueño.mp3",
+      "sha256": "e359516c258eed6c8fa43e46e79485f592c3a59a8b303c521786daff3bcbe952",
+      "bytes": 729036,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_refuge",
+      "file": "24 - También pusieron tu taza.mp3",
+      "sha256": "869f1a2cf5524966fd730dcc0d32ae4843fe43ca3b539c2b02be41e2135c1a52",
+      "bytes": 684839,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "photo_house",
+      "file": "25 - La casa antes de tu llegada.mp3",
+      "sha256": "847d4b2b2bc5c16b846da17ff035474bf7ec760044d99a542ed91305e8b71c6a",
+      "bytes": 751818,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "photo_sea",
+      "file": "26 - Una marea detenida en papel.mp3",
+      "sha256": "e159ab032dd530ef1c8b6ea71974ec7cd89848fab788c683fe7825b117b38cee",
+      "bytes": 689347,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "photo_window",
+      "file": "27 - El cielo detrás del cristal.mp3",
+      "sha256": "0a500ee3ab8c6f3c40e35f770146027c36569a81273d7ddee64a73b246036bee",
+      "bytes": 757537,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "photo_planet",
+      "file": "28 - Una órbita en el álbum.mp3",
+      "sha256": "4d5802bfb5fd3dd0ffa4205fa722b38cd6944d1ffce393517bc094ac493d7287",
+      "bytes": 938871,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_letter",
+      "file": "29 - Dirección - nadie, nunca.mp3",
+      "sha256": "126c0289d2b2a5668b6edae1f712ba2d8f4121e92177574a55f29bb2c4213f7a",
+      "bytes": 605834,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_gravity",
+      "file": "30 - El techo aprende tus pasos.mp3",
+      "sha256": "8f98a1b8cc777bde289af31a63447685c39e026e052b4e401e4823edbd2c6913",
+      "bytes": 662759,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_01",
+      "file": "31 - Calles que se doblan al dormir.mp3",
+      "sha256": "3156104034c151b55947ab231d5e7f5d57152ec8f17273a8a7b4c8c09fb69a68",
+      "bytes": 654141,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_02",
+      "file": "32 - La película que mira la Tierra.mp3",
+      "sha256": "bdf90de7184799cbb5c31d5edb51fd5a0ce2f4adda969ece761f2720c1397d91",
+      "bytes": 739941,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_03",
+      "file": "33 - Duchas para un valle vacío.mp3",
+      "sha256": "06667ca2d5aebb483b2a405550e33acf1c8470e554c15f8f8a4989142976df21",
+      "bytes": 829977,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_04",
+      "file": "34 - El reflejo llegó primero.mp3",
+      "sha256": "c0a440bcef54b2046bf29d722ed1d64577a4effed50b4e65fb93472ac305fe1d",
+      "bytes": 753596,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_05",
+      "file": "35 - Los hongos sueñan bajo el canal.mp3",
+      "sha256": "92ae9d8c6b09fad5d3efbbc3e8f39a32fd8db135e8ff07e7a886c103e86310df",
+      "bytes": 690938,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_06",
+      "file": "36 - Una nube ocupa todo el día.mp3",
+      "sha256": "74e3d643490d2ae2ec913fe7359ad1cddfd092f3e6778aa852dbefb3e12e3f4a",
+      "bytes": 675639,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_07",
+      "file": "37 - Nadie viene a repostar.mp3",
+      "sha256": "b5cfa289733ca199c7958fa08a1fb3e58ecfaeec69a850a6245e58e661b52dd6",
+      "bytes": 660816,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_08",
+      "file": "38 - Sombras que eligieron otro color.mp3",
+      "sha256": "2e7fe6928380a72316294982b630b0f527c1551abaa29395bd88f5a2d9c0fd66",
+      "bytes": 709770,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_09",
+      "file": "39 - Reservamos una silla para ti.mp3",
+      "sha256": "5d8d3192387476b00446ba4a44b0929cfe0662a7c9829728b1548c1242102675",
+      "bytes": 757095,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_10",
+      "file": "40 - Entre los pisos falta un nombre.mp3",
+      "sha256": "121f5c5bea5cb8951712a764e3c0414ad2ebc4f84e247ec30fe3e792fc782cba",
+      "bytes": 702071,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "echo_11",
+      "file": "41 - El archivo de las nubes.mp3",
+      "sha256": "0d6a8163901c62d53e708d0be7baf719f54b3d28f8315cf175ad6f08be3336e3",
+      "bytes": 838153,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "preview_eyes",
+      "file": "42 - El campo sabe que estás aquí.mp3",
+      "sha256": "627e0a21183a223b4d83ce53a1c3819dcf6fe9da12f87d3d4d8b6dc6ad10276f",
+      "bytes": 627360,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_rose_island",
+      "file": "43 - La casa rosa al final del aire.mp3",
+      "sha256": "d0940f61219f9c7fd7f6a6051ddce39bbca17f1e5bd303aa5b1ff70664f79101",
+      "bytes": 606989,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "backrooms_01",
+      "file": "44 - Cuarenta y nueve habitaciones despiertas.mp3",
+      "sha256": "f8499fcda709acaa0ae0ebdd6276247321429a4143c5c5584001ca80aab740af",
+      "bytes": 663147,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_sky_openings",
+      "file": "45 - Donde el cielo dejó una abertura.mp3",
+      "sha256": "8b7ef77ba3bdbf53390728548dac70aad457ed902c5ee7e29acbceec4714ee01",
+      "bytes": 745135,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_cloud_castle",
+      "file": "46 - Un castillo en el aliento.mp3",
+      "sha256": "ec56d493736b0477a3a9ced02e90b353c22894afeb73a694fe2550c7eadadc49",
+      "bytes": 921380,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_flower_city",
+      "file": "47 - El tren cruza las flores.mp3",
+      "sha256": "fa5a301d7e88ef9201af8f6a715b5c421c9151bb83902a5bc5bc95001c28aa56",
+      "bytes": 776909,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "dream_grass_fissures",
+      "file": "48 - Un puente entre dos silencios.mp3",
+      "sha256": "32c76e0f6796103694f3ffd33dd221374a1d81fed240482d341dfd3ca21da661",
+      "bytes": 542398,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    },
+    {
+      "world": "pocket_call_house",
+      "file": "49 - La llamada venía de adentro.mp3",
+      "sha256": "af9b7cc8439fee51b1e690d3727ebe7baaa3d6d98544e22a2cd9a3dc8c548558",
+      "bytes": 694617,
+      "audio_identical_after_cover": true,
+      "embedded_cover": true
+    }
+  ],
+  "album_mp3_cover_remux_audio_unchanged": true,
+  "ogg_media_resources_uncompressed_in_apk": true,
+  "sample_rate": 32000,
+  "channels": 2,
+  "mixer_maximum_music_decoders": 2,
+  "mixer_maximum_atmosphere_decoders": 2,
+  "audio_lifecycle_test": "actual DreamAudio with deterministic Android stubs, not physical Android execution",
+  "browser": {
+    "checks": 74,
+    "browser": "Chromium headless",
+    "opened_via": "localhost HTTP; file:// navigation blocked by managed Chromium policy",
+    "file_scheme_execution_verified": false,
+    "desktop": [
+      1280,
+      800
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "external_requests": [],
+    "errors": []
+  },
+  "map_covers": [
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_01_24.png",
+      "vertices": 7176,
+      "eye": [
+        0.0,
+        4.0,
+        16.0
+      ],
+      "target": [
+        0.0,
+        4.0,
+        -16.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "title",
+      "number": 1,
+      "map": "Inicio"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_02_24.png",
+      "vertices": 7176,
+      "eye": [
+        -10.0,
+        1.65,
+        7.0
+      ],
+      "target": [
+        7.0,
+        5.0,
+        -18.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_01",
+      "number": 2,
+      "map": "El Umbral: Dreamcore y Dark Fantasy"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_03_24.png",
+      "vertices": 21300,
+      "eye": [
+        0.0,
+        1.65,
+        1.0
+      ],
+      "target": [
+        0.0,
+        5.0,
+        -20.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_02",
+      "number": 3,
+      "map": "Piscinas del recuerdo"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_04_24.png",
+      "vertices": 118644,
+      "eye": [
+        8.0,
+        1.65,
+        -10.0
+      ],
+      "target": [
+        0.0,
+        -140.0,
+        -100.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_03",
+      "number": 4,
+      "map": "El abismo de las casas perdidas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_05_24.png",
+      "vertices": 450162,
+      "eye": [
+        12.0,
+        1.65,
+        -115.0
+      ],
+      "target": [
+        80.0,
+        12.0,
+        -240.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_04",
+      "number": 5,
+      "map": "Los jardines de cristal dormido"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_06_24.png",
+      "vertices": 269958,
+      "eye": [
+        0.0,
+        1.65,
+        35.0
+      ],
+      "target": [
+        25.0,
+        5.0,
+        -100.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_05",
+      "number": 6,
+      "map": "El pueblo de las ventanas despiertas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_07_24.png",
+      "vertices": 791082,
+      "eye": [
+        0.0,
+        1.65,
+        -70.0
+      ],
+      "target": [
+        40.0,
+        25.0,
+        -175.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_06",
+      "number": 7,
+      "map": "El mar dentro del cielo"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_08_24.png",
+      "vertices": 11676,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        3.0,
+        -80.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_07",
+      "number": 8,
+      "map": "La casa que recuerda otra puerta"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_09_24.png",
+      "vertices": 64044,
+      "eye": [
+        0.0,
+        1.65,
+        -110.0
+      ],
+      "target": [
+        0.0,
+        18.0,
+        -220.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_08",
+      "number": 9,
+      "map": "La estación del último sueño"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_10_24.png",
+      "vertices": 355302,
+      "eye": [
+        8.0,
+        1.65,
+        -180.0
+      ],
+      "target": [
+        28.0,
+        12.0,
+        -210.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_09",
+      "number": 10,
+      "map": "La llanura de los reyes dormidos"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_11_24.png",
+      "vertices": 46974,
+      "eye": [
+        0.0,
+        1.65,
+        20.0
+      ],
+      "target": [
+        30.0,
+        13.0,
+        -100.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_10",
+      "number": 11,
+      "map": "El valle de las cúpulas de agua"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_12_24.png",
+      "vertices": 170958,
+      "eye": [
+        0.0,
+        1.65,
+        40.0
+      ],
+      "target": [
+        8.0,
+        8.0,
+        -180.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_11",
+      "number": 12,
+      "map": "El hotel de los horizontes"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_13_24.png",
+      "vertices": 136890,
+      "eye": [
+        0.0,
+        1.65,
+        15.0
+      ],
+      "target": [
+        0.0,
+        6.0,
+        -180.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_12",
+      "number": 13,
+      "map": "La carretera donde caen estrellas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_14_24.png",
+      "vertices": 259284,
+      "eye": [
+        0.0,
+        9.0,
+        84.0
+      ],
+      "target": [
+        30.0,
+        28.0,
+        -130.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_13",
+      "number": 14,
+      "map": "El parque de las lágrimas suspendidas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_15_24.png",
+      "vertices": 95082,
+      "eye": [
+        2.9,
+        11.3,
+        84.0
+      ],
+      "target": [
+        0.0,
+        35.0,
+        -70.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_14",
+      "number": 15,
+      "map": "El tobogán de los planetas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_16_24.png",
+      "vertices": 78912,
+      "eye": [
+        0.0,
+        1.65,
+        35.0
+      ],
+      "target": [
+        0.0,
+        6.0,
+        -170.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_15",
+      "number": 16,
+      "map": "La ciudad del último recreo"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_17_24.png",
+      "vertices": 40056,
+      "eye": [
+        0.0,
+        1.65,
+        36.0
+      ],
+      "target": [
+        8.0,
+        51.0,
+        -50.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dark_01",
+      "number": 17,
+      "map": "El reino de las lunas dormidas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_18_24.png",
+      "vertices": 284406,
+      "eye": [
+        0.0,
+        1.65,
+        20.0
+      ],
+      "target": [
+        18.0,
+        12.0,
+        -130.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dark_02",
+      "number": 18,
+      "map": "El jardín de las coronas vacías"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_19_24.png",
+      "vertices": 11844,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        -9.0,
+        3.1,
+        -30.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_laundry",
+      "number": 19,
+      "map": "Lavandería entre nubes"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_20_24.png",
+      "vertices": 2796,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        1.5,
+        2.0,
+        -50.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_train",
+      "number": 20,
+      "map": "El tren bajo el agua"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_21_24.png",
+      "vertices": 5184,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        3.4,
+        -54.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_dawn",
+      "number": 21,
+      "map": "El amanecer que no termina"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_22_24.png",
+      "vertices": 14337,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        13.0,
+        -100.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_tower",
+      "number": 22,
+      "map": "La torre que viste desde lejos"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_23_24.png",
+      "vertices": 43296,
+      "eye": [
+        5.0,
+        1.65,
+        1.0
+      ],
+      "target": [
+        -3.0,
+        3.0,
+        -16.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_cloudbed",
+      "number": 23,
+      "map": "Una cama al borde del universo"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_24_24.png",
+      "vertices": 15126,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        3.5,
+        -20.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_refuge",
+      "number": 24,
+      "map": "La habitación que te espera"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_25_24.png",
+      "vertices": 266604,
+      "eye": [
+        24.0,
+        2.0,
+        -120.0
+      ],
+      "target": [
+        30.0,
+        4.0,
+        -135.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "photo_house",
+      "number": 25,
+      "map": "Fotografía: la casa sin nadie"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_26_24.png",
+      "vertices": 789672,
+      "eye": [
+        8.0,
+        1.65,
+        -160.0
+      ],
+      "target": [
+        40.0,
+        20.0,
+        -220.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "photo_sea",
+      "number": 26,
+      "map": "Fotografía: el mar inmóvil"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_27_24.png",
+      "vertices": 164652,
+      "eye": [
+        0.0,
+        1.65,
+        -328.0
+      ],
+      "target": [
+        12.0,
+        6.0,
+        -390.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "photo_window",
+      "number": 27,
+      "map": "Fotografía: las ventanas de ayer"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_28_24.png",
+      "vertices": 95280,
+      "eye": [
+        0.0,
+        3.0,
+        -282.0
+      ],
+      "target": [
+        0.0,
+        42.0,
+        -450.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "photo_planet",
+      "number": 28,
+      "map": "Fotografía: el planeta detenido"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_29_24.png",
+      "vertices": 17268,
+      "eye": [
+        7.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        3.0,
+        -30.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_letter",
+      "number": 29,
+      "map": "La casa del destinatario ausente"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_30_24.png",
+      "vertices": 11604,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        12.0,
+        -42.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_gravity",
+      "number": 30,
+      "map": "El suelo que se volvió cielo"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_31_24.png",
+      "vertices": 54294,
+      "eye": [
+        0.0,
+        1.65,
+        3.0
+      ],
+      "target": [
+        14.0,
+        4.0,
+        -70.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_01",
+      "number": 31,
+      "map": "El barrio que se inclinó"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_32_24.png",
+      "vertices": 195516,
+      "eye": [
+        0.0,
+        1.65,
+        -20.0
+      ],
+      "target": [
+        0.0,
+        8.0,
+        -110.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_02",
+      "number": 32,
+      "map": "El cine sobre la Tierra"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_33_24.png",
+      "vertices": 65112,
+      "eye": [
+        0.0,
+        1.65,
+        -14.0
+      ],
+      "target": [
+        -2.0,
+        6.0,
+        -90.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_03",
+      "number": 33,
+      "map": "Las duchas del valle infinito"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_34_24.png",
+      "vertices": 11616,
+      "eye": [
+        17.0,
+        1.65,
+        -88.0
+      ],
+      "target": [
+        0.0,
+        3.0,
+        -130.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_04",
+      "number": 34,
+      "map": "La casa reflejada entre nubes"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_35_24.png",
+      "vertices": 131076,
+      "eye": [
+        20.0,
+        1.65,
+        0.0
+      ],
+      "target": [
+        0.0,
+        5.0,
+        -80.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_05",
+      "number": 35,
+      "map": "El canal de los hongos dormidos"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_36_24.png",
+      "vertices": 48672,
+      "eye": [
+        14.0,
+        2.6,
+        -70.0
+      ],
+      "target": [
+        0.0,
+        40.0,
+        -170.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_06",
+      "number": 36,
+      "map": "La colina de la nube inmensa"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_37_24.png",
+      "vertices": 20412,
+      "eye": [
+        0.0,
+        1.65,
+        -30.0
+      ],
+      "target": [
+        0.0,
+        3.0,
+        -85.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_07",
+      "number": 37,
+      "map": "La última gasolinera del atardecer"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_38_24.png",
+      "vertices": 85896,
+      "eye": [
+        0.0,
+        1.65,
+        0.0
+      ],
+      "target": [
+        17.0,
+        3.0,
+        -65.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_08",
+      "number": 38,
+      "map": "El barrio de las sombras de colores"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_39_24.png",
+      "vertices": 90000,
+      "eye": [
+        1.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        2.0,
+        -80.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_09",
+      "number": 39,
+      "map": "El pasillo de las sillas vacías"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_40_24.png",
+      "vertices": 79092,
+      "eye": [
+        12.0,
+        9.65,
+        -140.0
+      ],
+      "target": [
+        0.0,
+        6.0,
+        -100.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_10",
+      "number": 40,
+      "map": "El edificio de los pisos sin nadie"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_41_24.png",
+      "vertices": 42720,
+      "eye": [
+        0.0,
+        1.65,
+        -3.0
+      ],
+      "target": [
+        1.0,
+        3.0,
+        -48.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "echo_11",
+      "number": 41,
+      "map": "La oficina dentro de las nubes"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_42_24.png",
+      "vertices": 44100,
+      "eye": [
+        0.0,
+        3.0,
+        -5.0
+      ],
+      "target": [
+        0.0,
+        14.0,
+        -55.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "preview_eyes",
+      "number": 42,
+      "map": "Vista previa: la pradera que te mira"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_43_24.png",
+      "vertices": 54966,
+      "eye": [
+        78.0,
+        88.0,
+        73.0
+      ],
+      "target": [
+        0.0,
+        45.0,
+        -20.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_rose_island",
+      "number": 43,
+      "map": "La casa rosa sobre el océano"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_44_24.png",
+      "vertices": 29421,
+      "eye": [
+        0.0,
+        1.65,
+        1.0
+      ],
+      "target": [
+        0.0,
+        1.8,
+        -20.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "backrooms_01",
+      "number": 44,
+      "map": "Backrooms: las luces que no descansan"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_45_24.png",
+      "vertices": 13107,
+      "eye": [
+        0.0,
+        1.65,
+        -12.0
+      ],
+      "target": [
+        18.0,
+        55.0,
+        -135.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_sky_openings",
+      "number": 45,
+      "map": "Las aberturas del cielo"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_46_24.png",
+      "vertices": 23667,
+      "eye": [
+        0.0,
+        1.65,
+        1.0
+      ],
+      "target": [
+        0.0,
+        2.0,
+        -100.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_cloud_castle",
+      "number": 46,
+      "map": "Los corredores del castillo de nubes"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_47_24.png",
+      "vertices": 199590,
+      "eye": [
+        0.0,
+        1.65,
+        2.0
+      ],
+      "target": [
+        0.0,
+        20.0,
+        -110.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_flower_city",
+      "number": 47,
+      "map": "La ciudad al otro lado de las flores"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_48_24.png",
+      "vertices": 36519,
+      "eye": [
+        55.0,
+        70.0,
+        35.0
+      ],
+      "target": [
+        -15.0,
+        -35.0,
+        -125.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "dream_grass_fissures",
+      "number": 48,
+      "map": "La pradera de las grietas"
+    },
+    {
+      "image": "app/src/main/res/drawable-nodpi/music_cover_49_24.png",
+      "vertices": 3024,
+      "eye": [
+        0.0,
+        1.65,
+        -5.0
+      ],
+      "target": [
+        0.0,
+        2.0,
+        -17.0
+      ],
+      "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+      "world": "pocket_call_house",
+      "number": 49,
+      "map": "La casa del teléfono desconectado"
+    }
+  ],
+  "covers_dimensions": [
+    480,
+    270
+  ],
+  "covers_unique": 49,
+  "render_backend": "OpenGL ES 2.0 Mesa llvmpipe",
+  "miniatures_are_engine_renders_not_android_screenshots": true,
+  "reference_audio_analysis_completed": false,
+  "reference_audio_blocker": "Uploaded MP3 exceeds download_file transfer limit of 32 MiB; user notified; no samples extracted or recording analyzed",
+  "new_features": [
+    "one score for every registered map and the title",
+    "foreground title music distinct from hub",
+    "in-app listening room with scene preview and pause/previous/next",
+    "standalone MP3 album with embedded map covers, M3U8 and offline HTML player",
+    "optional explicit route help for the five new puzzle worlds"
+  ],
+  "unchanged_verified_by_sha256": [
+    "DreamShaders.kt",
+    "DreamRules23.kt",
+    "DreamChronicle.kt",
+    "DreamPower.kt",
+    "DreamThermalMonitor.kt"
+  ],
+  "source_sha256": {
+    "DreamActors.kt": "d00d4918c6f76f3aaff531d1410734f047cec20965fc4edd95d6b7344d495ef5",
+    "DreamArtTextures.kt": "ae2380067306e01e65c4ec8f7bbb897b986b428e229b38eb96769a58a4fcdc5b",
+    "DreamAtmosphere.kt": "cd1622f869e0000b9d89de9a89609534947a23143af1630d349386686ab22350",
+    "DreamAudio.kt": "5305a58329e8d4ac2d59052e571a40fd95c250dcc8cee6645dc7414754371036",
+    "DreamBackrooms.kt": "050eb5c18e6ec9927963e745234ab392eb0a8649c338666ca961b236cdf496a6",
+    "DreamChessMap.kt": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2",
+    "DreamChronicle.kt": "77414c362ca0967355ee1b1e31cd6c400414735ada107c4104336f4a9785e646",
+    "DreamChunks.kt": "69b746a34ba4cfdafc87dcce66b2d8d8d7ffcba6b50d51d5c8441ca2a8b63c94",
+    "DreamCloudMap.kt": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65",
+    "DreamCloudTexture.kt": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2",
+    "DreamCraterLayout.kt": "09f8cc68120a4f6f577225165dad85b2d7e394cee52f7cc339fc0a54109a7413",
+    "DreamCraterPhysics.kt": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb",
+    "DreamCreature.kt": "309b3c870b6bb6f7de49d2e12b2e3eaba4c3a1d52a319e5242647b1a5403224c",
+    "DreamDarkMap.kt": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb",
+    "DreamEglConfigChooser.kt": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b",
+    "DreamEvents.kt": "cc797fb9a3d60eacfb8cb831c7e036fce2cc5e609be9d32d1b9d3899f6fbce1f",
+    "DreamExpansion.kt": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962",
+    "DreamExploration.kt": "c07f5f6fbc5f1c0b65f2b6a0a543534050a6fda61515cb75455eab9c041553eb",
+    "DreamFootsteps.kt": "56bc81d6097cfa74b3fdf448cc867ff70b0c27591a5ec0ce10d6610983404856",
+    "DreamGravity.kt": "53a3630438e58bf46e81c7ec4696c2db4c4707e2ce8740f4730546c3b1cb08e7",
+    "DreamHorizons.kt": "a67905bead8fea64327b1d7d076cbb5f137e4b0a442bba74b6aadd3ec775c2b9",
+    "DreamJourney.kt": "aa608c07fe3d18a834c6219c53ef51fac5de0c80efd70ad2ac6dcfeb57b6c90d",
+    "DreamLands.kt": "f4f5d9800f74af2260602c055915697f7b007800d4af5c6c6e7782e59cc37f43",
+    "DreamLegacyShaders.kt": "872fa0b17d4ea993774ef404bcb84769e8c3c5407fb615672c6682ba8018c29f",
+    "DreamMail.kt": "c87179c3c5a339ebcbc8c59b620708ad35df6e1482b6497ec16acea85998d6e1",
+    "DreamMemories.kt": "5ea3d4743642fb302c0dce213fda9c71d682ff3bd0b98f39d66ba3ad8a8fcf13",
+    "DreamMesh.kt": "d45694793c2f3d7f1afd6754e1031d571707af139636460d2958eb02f03c58d7",
+    "DreamMoonLife.kt": "9a0da6a5f8b7cafb1ec8d8cfd9d5e138ace86fbf41d02dd70896a7aa8693ab5f",
+    "DreamMoonTexture.kt": "41d10a23c2e99b7e89198da72fce536acdcb420250ae1dfaf391b1612cad6ada",
+    "DreamMusic24.kt": "c24ae5d0cecc3d903a7918a4fbc97056c95b2d66100760540cb6878be1b4d281",
+    "DreamMystery.kt": "8dd6efdf69d53b8dd0a73d9f9799aed3defbcdc42f57365230972983cf2c00af",
+    "DreamNewDreams.kt": "31e25b05bd964d8243b2847a5ed19d9baf7c626cf76888ea7899996b1461053a",
+    "DreamObjects.kt": "5de07dc830259d5c02e9494472031e1106469b71b0d9b3c256ec911fb4fdb2e3",
+    "DreamOptions.kt": "c5e97e273d6b3bad4b7a755d8a18a2bb632cf29db158c3abe477fb0e661cbc3c",
+    "DreamPerformance.kt": "6af34945578a29ed6485e8b4be431c781a46fee0ab9135d961e267a49981cb4c",
+    "DreamPhotoFrames.kt": "83291a528af7e539a689d9a307bd9dd5bc049741a47248eb7235583cdf7709ee",
+    "DreamPhotoStore.kt": "9430cf3743961c9d5ad9f534254a9687e8b9d6a0881ad46c39faf625fb42ec7e",
+    "DreamPhotography.kt": "2d6481dc453f44d9a58b57f77dbd6b336eeb225fab581d2cfd83dd126f1d37d8",
+    "DreamPocket.kt": "e5c39c4e4412a0113a167a027af2db6b24403557b2fa7db97e66398a9b6c51ea",
+    "DreamPoolsDetails.kt": "795991fc2467c9584ff1207624ade11cfaead5fa9549ff42615bb7100b735d3b",
+    "DreamPortalNames.kt": "3669b0fc9746ee2c1650b24f49bd17e993169f851511cbd0f659ca093c39f42c",
+    "DreamPower.kt": "cebe3acbed4ed0c8d701e3a97e9f8edf4ed65ddc3123ebd21c8c8d3dc243587e",
+    "DreamPresences.kt": "7ce24e2115e3b75b361c733d99cfddc56edb06c7f50e075bafb4b06c29d722d8",
+    "DreamReferences.kt": "b413ed692f52124a2d94da90cc4dd9e8be6b07de3eebd54ac615cd6e3bcd876b",
+    "DreamRenderer.kt": "b6dc2df0235550d218a09d77343bf19248c991852eaecff2cde09c39fe86ce80",
+    "DreamRenewal.kt": "a14d2e0f707c4bd338e23f084e867da51525f1483ee2465ea5977549f8eb5d41",
+    "DreamRestore.kt": "68b224de8e7cf4fcd39e889ac672d72672e4b813c4f0d081146ac510c91d9380",
+    "DreamRoadMap.kt": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f",
+    "DreamRouteHelp24.kt": "e25a27103f3f8fe4885f4dd24bf62a7deddf2fb0aa26de3a10931af24d88f8db",
+    "DreamRoutes23.kt": "5193bd6139b807a276714d53daa58eba67f1b2564fab1480e1b135b2fde337aa",
+    "DreamRules23.kt": "8519d2f65fc9191f207574fffb893d1a7e13a10d78756110fed92767d191b9af",
+    "DreamSaveStore.kt": "cafe64a324cc5e99fd1c2a98dc8468d7495fb4097b2e365e53171f6f85823816",
+    "DreamSculpt.kt": "823db3a869a6bd8c4534ed636326196b3ff409f66a9ab669bc65187364022bb4",
+    "DreamSession.kt": "9fac70208d70679dd673f06ac326e008ca97832b9d4bc018be883d785e24417c",
+    "DreamShaders.kt": "5fe9a81979909e570cd2c703e7a6f4eacaa0f8356f2cf0659f5c8e16dd356812",
+    "DreamShadowMap.kt": "63b97e66df6538be4b3ed4266dc8f0689c6af5920203bf7de798ae146151bf28",
+    "DreamShapes.kt": "269654f753a146a734a9819d26879624284e0886d0ce310b3c49956178d6dbec",
+    "DreamSkySight.kt": "985cc7594426c8419e260fdbfeadf0bb91adc31df5c4f2868f53f7156ad88d67",
+    "DreamSurfaceTextures.kt": "1642a416660d267624e4f222ad6669fddb6db599bafd780e6d0f7357334d0e4e",
+    "DreamTextures.kt": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e",
+    "DreamThermalMonitor.kt": "3657d6ab3fc45295f28e7b8bced6eb305540c6d501d4a592430f7ec3768d2363",
+    "DreamTools.kt": "d7da311149e10b7350fd9669a7d527b0bba6f19d0b76ea3fcd0918c9bf5cef95",
+    "DreamTravel.kt": "aa480d50a600d96d409c3f0b61d1feb4e08f3f452e2485a31655b83eb0959cf6",
+    "DreamTunnelMap.kt": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424",
+    "DreamVoyage.kt": "6cc6f6b032def1a16808053f4c5f8e5db728ef99a23b38237912234c8d6ae9ca",
+    "DreamWaterpark.kt": "80119d78b4d889dca74e6bfae2ddc051022bde3e8123f80eabda6da0fd676785",
+    "DreamWorldMotion.kt": "929d010c710730d3aacc5803487fc3619a108d165acddcc98c92ce6afcd80a03",
+    "DreamWorlds.kt": "4d4169c27f844534dd1df8f9df3fa5aa8aeaaad65fc0693a62422453ed83dac7",
+    "MainActivity.kt": "7b1d160a5ddbc95109808a27b213f946b77cb6bc823914f22e3a587e2e3e4ea4"
+  },
+  "device_execution_tested": false,
+  "windows_installer_executed": false,
+  "phone_temperature_measured": false,
+  "phone_fps_measured": false,
+  "power_draw_measured": false,
+  "limits": [
+    "Original synthesized ambient interpretation; uploaded reference could not be analyzed",
+    "48 registered scenes includes the archived old-house interior, whose existing save migration remains consolidated into the station",
+    "Physical Android UI/MediaPlayer behavior needs device validation",
+    "Album was tested in Chromium through localhost; managed browser blocks file:// navigation",
+    "No new graphical renderer or combat changes; existing energy modes retained",
+    "App menu pauses world frames but audio still has decoder cost; no measured thermal improvement is claimed"
+  ]
+}
