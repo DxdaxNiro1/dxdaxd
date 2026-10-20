@@ -1,0 +1,937 @@
+[
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/title.png",
+    "vertices": 7176,
+    "eye": [
+      0.0,
+      4.0,
+      16.0
+    ],
+    "target": [
+      0.0,
+      4.0,
+      -16.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "title",
+    "map": "Inicio",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_01.png",
+    "vertices": 7176,
+    "eye": [
+      -10.0,
+      1.65,
+      7.0
+    ],
+    "target": [
+      7.0,
+      5.0,
+      -18.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_01",
+    "map": "El Umbral: Dreamcore y Dark Fantasy",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_02.png",
+    "vertices": 21300,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      5.0,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_02",
+    "map": "Piscinas del recuerdo",
+    "quality": 1
+  },
+  {
+    "world": "dream_02",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "world": "dream_02",
+    "quality": 2,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_03.png",
+    "vertices": 118644,
+    "eye": [
+      8.0,
+      1.65,
+      -10.0
+    ],
+    "target": [
+      0.0,
+      -140.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_03",
+    "map": "El abismo de las casas perdidas",
+    "quality": 1
+  },
+  {
+    "world": "dream_03",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_04.png",
+    "vertices": 450162,
+    "eye": [
+      12.0,
+      1.65,
+      -115.0
+    ],
+    "target": [
+      80.0,
+      12.0,
+      -240.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_04",
+    "map": "Los jardines de cristal dormido",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_05.png",
+    "vertices": 269958,
+    "eye": [
+      0.0,
+      1.65,
+      35.0
+    ],
+    "target": [
+      25.0,
+      5.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_05",
+    "map": "El pueblo de las ventanas despiertas",
+    "quality": 1
+  },
+  {
+    "world": "dream_05",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_06.png",
+    "vertices": 791082,
+    "eye": [
+      0.0,
+      1.65,
+      -70.0
+    ],
+    "target": [
+      40.0,
+      25.0,
+      -175.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_06",
+    "map": "El mar dentro del cielo",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_07.png",
+    "vertices": 11676,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_07",
+    "map": "La casa que recuerda otra puerta",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_08.png",
+    "vertices": 64044,
+    "eye": [
+      0.0,
+      1.65,
+      -110.0
+    ],
+    "target": [
+      0.0,
+      18.0,
+      -220.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_08",
+    "map": "La estación del último sueño",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_09.png",
+    "vertices": 355302,
+    "eye": [
+      8.0,
+      1.65,
+      -180.0
+    ],
+    "target": [
+      28.0,
+      12.0,
+      -210.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_09",
+    "map": "La llanura de los reyes dormidos",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_10.png",
+    "vertices": 46974,
+    "eye": [
+      0.0,
+      1.65,
+      20.0
+    ],
+    "target": [
+      30.0,
+      13.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_10",
+    "map": "El valle de las cúpulas de agua",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_11.png",
+    "vertices": 170958,
+    "eye": [
+      0.0,
+      1.65,
+      40.0
+    ],
+    "target": [
+      8.0,
+      8.0,
+      -180.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_11",
+    "map": "El hotel de los horizontes",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_12.png",
+    "vertices": 136890,
+    "eye": [
+      0.0,
+      1.65,
+      15.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -180.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_12",
+    "map": "La carretera donde caen estrellas",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_13.png",
+    "vertices": 259284,
+    "eye": [
+      0.0,
+      9.0,
+      84.0
+    ],
+    "target": [
+      30.0,
+      28.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_13",
+    "map": "El parque de las lágrimas suspendidas",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_14.png",
+    "vertices": 95082,
+    "eye": [
+      2.9,
+      11.3,
+      84.0
+    ],
+    "target": [
+      0.0,
+      35.0,
+      -70.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_14",
+    "map": "El tobogán de los planetas",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_15.png",
+    "vertices": 78912,
+    "eye": [
+      0.0,
+      1.65,
+      35.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -170.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_15",
+    "map": "La ciudad del último recreo",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dark_01.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      36.0
+    ],
+    "target": [
+      8.0,
+      51.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "map": "El reino de las lunas dormidas",
+    "quality": 1
+  },
+  {
+    "world": "dark_01",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dark_02.png",
+    "vertices": 284406,
+    "eye": [
+      0.0,
+      1.65,
+      20.0
+    ],
+    "target": [
+      18.0,
+      12.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_02",
+    "map": "El jardín de las coronas vacías",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_laundry.png",
+    "vertices": 11844,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      -9.0,
+      3.1,
+      -30.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_laundry",
+    "map": "Lavandería entre nubes",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_train.png",
+    "vertices": 2796,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      1.5,
+      2.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_train",
+    "map": "El tren bajo el agua",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_dawn.png",
+    "vertices": 5184,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.4,
+      -54.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_dawn",
+    "map": "El amanecer que no termina",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_tower.png",
+    "vertices": 14337,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      13.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_tower",
+    "map": "La torre que viste desde lejos",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_cloudbed.png",
+    "vertices": 43296,
+    "eye": [
+      5.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      -3.0,
+      3.0,
+      -16.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_cloudbed",
+    "map": "Una cama al borde del universo",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_refuge.png",
+    "vertices": 15126,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.5,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_refuge",
+    "map": "La habitación que te espera",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/photo_house.png",
+    "vertices": 266604,
+    "eye": [
+      24.0,
+      2.0,
+      -120.0
+    ],
+    "target": [
+      30.0,
+      4.0,
+      -135.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_house",
+    "map": "Fotografía: la casa sin nadie",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/photo_sea.png",
+    "vertices": 789672,
+    "eye": [
+      8.0,
+      1.65,
+      -160.0
+    ],
+    "target": [
+      40.0,
+      20.0,
+      -220.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_sea",
+    "map": "Fotografía: el mar inmóvil",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/photo_window.png",
+    "vertices": 164652,
+    "eye": [
+      0.0,
+      1.65,
+      -328.0
+    ],
+    "target": [
+      12.0,
+      6.0,
+      -390.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_window",
+    "map": "Fotografía: las ventanas de ayer",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/photo_planet.png",
+    "vertices": 95280,
+    "eye": [
+      0.0,
+      3.0,
+      -282.0
+    ],
+    "target": [
+      0.0,
+      42.0,
+      -450.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_planet",
+    "map": "Fotografía: el planeta detenido",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_letter.png",
+    "vertices": 17268,
+    "eye": [
+      7.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -30.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_letter",
+    "map": "La casa del destinatario ausente",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_gravity.png",
+    "vertices": 11604,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      12.0,
+      -42.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_gravity",
+    "map": "El suelo que se volvió cielo",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_01.png",
+    "vertices": 54294,
+    "eye": [
+      0.0,
+      1.65,
+      3.0
+    ],
+    "target": [
+      14.0,
+      4.0,
+      -70.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_01",
+    "map": "El barrio que se inclinó",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_02.png",
+    "vertices": 195516,
+    "eye": [
+      0.0,
+      1.65,
+      -20.0
+    ],
+    "target": [
+      0.0,
+      8.0,
+      -110.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_02",
+    "map": "El cine sobre la Tierra",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_03.png",
+    "vertices": 65112,
+    "eye": [
+      0.0,
+      1.65,
+      -14.0
+    ],
+    "target": [
+      -2.0,
+      6.0,
+      -90.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_03",
+    "map": "Las duchas del valle infinito",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_04.png",
+    "vertices": 11616,
+    "eye": [
+      17.0,
+      1.65,
+      -88.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_04",
+    "map": "La casa reflejada entre nubes",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_05.png",
+    "vertices": 131076,
+    "eye": [
+      20.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      0.0,
+      5.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_05",
+    "map": "El canal de los hongos dormidos",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_06.png",
+    "vertices": 48672,
+    "eye": [
+      14.0,
+      2.6,
+      -70.0
+    ],
+    "target": [
+      0.0,
+      40.0,
+      -170.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_06",
+    "map": "La colina de la nube inmensa",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_07.png",
+    "vertices": 20412,
+    "eye": [
+      0.0,
+      1.65,
+      -30.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -85.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_07",
+    "map": "La última gasolinera del atardecer",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_08.png",
+    "vertices": 85896,
+    "eye": [
+      0.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      17.0,
+      3.0,
+      -65.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_08",
+    "map": "El barrio de las sombras de colores",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_09.png",
+    "vertices": 90000,
+    "eye": [
+      1.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_09",
+    "map": "El pasillo de las sillas vacías",
+    "quality": 1
+  },
+  {
+    "world": "echo_09",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_10.png",
+    "vertices": 79092,
+    "eye": [
+      12.0,
+      9.65,
+      -140.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_10",
+    "map": "El edificio de los pisos sin nadie",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/echo_11.png",
+    "vertices": 42720,
+    "eye": [
+      0.0,
+      1.65,
+      -3.0
+    ],
+    "target": [
+      1.0,
+      3.0,
+      -48.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_11",
+    "map": "La oficina dentro de las nubes",
+    "quality": 1
+  },
+  {
+    "world": "echo_11",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/preview_eyes.png",
+    "vertices": 44100,
+    "eye": [
+      0.0,
+      3.0,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      14.0,
+      -55.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "map": "Vista previa: la pradera que te mira",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_rose_island.png",
+    "vertices": 54966,
+    "eye": [
+      78.0,
+      88.0,
+      73.0
+    ],
+    "target": [
+      0.0,
+      45.0,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_rose_island",
+    "map": "La casa rosa sobre el océano",
+    "quality": 1
+  },
+  {
+    "world": "dream_rose_island",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/backrooms_01.png",
+    "vertices": 29421,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      1.8,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "backrooms_01",
+    "map": "Backrooms: las luces que no descansan",
+    "quality": 1
+  },
+  {
+    "world": "backrooms_01",
+    "quality": 0,
+    "mediump": true,
+    "rendered": true
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_sky_openings.png",
+    "vertices": 13107,
+    "eye": [
+      0.0,
+      1.65,
+      -12.0
+    ],
+    "target": [
+      18.0,
+      55.0,
+      -135.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sky_openings",
+    "map": "Las aberturas del cielo",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_cloud_castle.png",
+    "vertices": 23667,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_cloud_castle",
+    "map": "Los corredores del castillo de nubes",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_flower_city.png",
+    "vertices": 199590,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      20.0,
+      -110.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_flower_city",
+    "map": "La ciudad al otro lado de las flores",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/dream_grass_fissures.png",
+    "vertices": 36519,
+    "eye": [
+      55.0,
+      70.0,
+      35.0
+    ],
+    "target": [
+      -15.0,
+      -35.0,
+      -125.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_grass_fissures",
+    "map": "La pradera de las grietas",
+    "quality": 1
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/25/renders/pocket_call_house.png",
+    "vertices": 3024,
+    "eye": [
+      0.0,
+      1.65,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -17.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_call_house",
+    "map": "La casa del teléfono desconectado",
+    "quality": 1
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "celestial": {
+    "description": "Original glass/choir; distinct phrase [0, 9, 7, 14, 4, 12, 2]; 67s",
+    "seconds": 67.0,
+    "peak": 0.3721899390220642,
+    "rms": 0.07545950263738632,
+    "seam": 2.2874388605487184e-08,
+    "clipped": 0,
+    "sha256": "13b06760757fcc77e144b90c21313a9bc2c399d278cf13979a2c888f43d79a27",
+    "bytes": 395071
+  },
+  "city": {
+    "description": "Original piano/flute; distinct phrase [0, 3, 10, 7, 2]; 63s",
+    "seconds": 63.0,
+    "peak": 0.41654327511787415,
+    "rms": 0.0755012035369873,
+    "seam": 1.9507724573486485e-06,
+    "clipped": 0,
+    "sha256": "5896f1dc08501aa14b6f204f453fac4fca1212ded9ef2636b41bebe2f2fc52fb",
+    "bytes": 433761
+  },
+  "dark_garden": {
+    "description": "Original organ/glass; distinct phrase [0, 1, 7, 6, -5]; 73s",
+    "seconds": 73.0,
+    "peak": 0.35250070691108704,
+    "rms": 0.06518244743347168,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "b113d95d54825c386d8b5682b4577332231e30192efbf78338521c5e5b776c56",
+    "bytes": 427909
+  },
+  "tower": {
+    "description": "Original harp/piano; distinct phrase [0, 3, 7, 10, 12, 2]; 59s",
+    "seconds": 59.0,
+    "peak": 0.4291861355304718,
+    "rms": 0.07543803006410599,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "df17b4dca65f2512c2a062277615173a178b01126fd02ea187220d66aac4a18c",
+    "bytes": 440973
+  },
+  "cloudbed": {
+    "description": "Original choir/harp; distinct phrase [0, 7, 14, 9, 4]; 71s",
+    "seconds": 71.0,
+    "peak": 0.41081345081329346,
+    "rms": 0.0754443034529686,
+    "seam": 7.346327492996352e-06,
+    "clipped": 0,
+    "sha256": "5ceae7684deb74f488bcbca80b4b9e98a346ec260b49c7249ead99f6abf0ed63",
+    "bytes": 499742
+  },
+  "piano": {
+    "description": "Empty-room piano phrase",
+    "seconds": 5.0,
+    "peak": 0.3454124629497528,
+    "rms": 0.07723979651927948,
+    "seam": 2.1987505078868708e-06,
+    "clipped": 0,
+    "sha256": "1808df4c828133961f08abe195b6fd39c51982709b2ad5c6eedadb9bf9ca7b88",
+    "bytes": 29012
+  }
+}

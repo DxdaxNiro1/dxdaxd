@@ -1,0 +1,13 @@
+DreamCore 2.5 · Presupuesto visual
+
+- GLES2, ocho samplers de fragmento como en 2.4; sin nuevas extensiones obligatorias.
+- Dos uniformes adicionales para luz y color medio de tela; sin nuevas pasadas de pantalla.
+- Cielo: dos capas, cuatro consultas de densidad por fragmento, con distinto sombreado. Sin ray marching volumétrico.
+- Agua de piscinas: usa la textura de cielo existente. No añade una cámara de reflejo por piscina.
+- Texturas albedo y relieve: bajo 512², equilibrado 1024² (presupuestos anteriores). Alta: 2048², con mayor memoria.
+- Atlas RGBA con mipmaps: aproximadamente 2.7, 10.7 y 42.7 MiB entre las dos texturas. Son presupuestos de datos, no medidas del consumo total de la app.
+- La alfombra lejana reduce muestras y relieve de alta frecuencia al aproximarse al color medio de su material.
+- La iluminación local se evalúa solo en los cuatro interiores que tienen el patrón definido. No lanza una pasada de sombras por lámpara.
+- Se conservan culling, residencia de escenas, pausa, límite de FPS, modos de energía, control térmico y cadencia de reflejos/sombras.
+
+No hay pruebas físicas de FPS, batería ni temperatura del Infinix NOTE 50s. Mantener los presupuestos de texturas y pasadas no implica un coste idéntico: el cálculo por píxel cambia. Probar equilibrado en el teléfono y ajustar a partir de mediciones reales.

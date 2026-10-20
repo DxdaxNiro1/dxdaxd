@@ -1,0 +1,45 @@
+{
+  "version": "2.5",
+  "version_code": 25,
+  "save_schema": 23,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_sha256": "320247b897d250ae3b64ea6d4b90d29efea71089f7f200a6ce652fa48a07de93",
+  "apk_bytes": 58579943,
+  "source_and_resources_identical_to_build": true,
+  "registered_worlds": 48,
+  "compositions_retained": 49,
+  "music_changed": false,
+  "gameplay_sources_changed": false,
+  "checks": {
+    "Journey19Check": 711,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5314,
+    "References21Check": 858,
+    "Miradas22Check": 6296,
+    "Desvios23Check": 63733,
+    "Resonancias24Check": 395
+  },
+  "logic_checks": 79536,
+  "graphics": {
+    "balanced_views": 49,
+    "low_mediump_views": 8,
+    "high_view": 1,
+    "backend": "OpenGL ES 2.0 Mesa llvmpipe",
+    "phone_captures": false
+  },
+  "atlas_sizes": {
+    "low": 512,
+    "balanced": 1024,
+    "high": 2048
+  },
+  "samplers": 8,
+  "additional_render_passes": 0,
+  "physical_android_test": false,
+  "phone_temperature_measured": false,
+  "illustration_quality_achieved": false
+}

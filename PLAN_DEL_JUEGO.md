@@ -51,3 +51,11 @@ El último mensaje autoriza implementar las cinco mecánicas y nuevos escenarios
 - Ayuda opcional en Ajustes para las reglas de los cinco escenarios nuevos; las preguntas del jugador revelaron que el círculo activo y la parada no estaban suficientemente claros.
 - La referencia musical subida no pudo descargarse: supera el límite de transferencia de 32 MB. El usuario ya fue avisado para enviar fragmentos; no afirmar que se escuchó o analizó. Las piezas interpretan la dirección estética pedida, sin extraer muestras.
 - Se conserva el guardado 23, los mapas, la vista previa sin combate y las protecciones de energía. No hay mediciones térmicas ni prueba física Android de esta versión.
+
+## Dirección visual 2.5 · 20 de octubre de 2026
+
+El usuario quiere llevar al juego el acabado de las portadas ilustradas: materiales creíbles, texturas con detalle, nubes con profundidad, agua que refleje el cielo y luz suave. Es la referencia artística para las siguientes mejoras. Las ilustraciones no prueban el aspecto que alcanza el motor en tiempo real.
+
+Primera implementación: atlas renovado, escala de fibras y mosaicos, relieve por superficie, rugosidad, iluminación de materiales en espacio aproximadamente lineal y curva de blancos; luz de lámparas y ventanas en pasillo, atrio, oficina y Backrooms; agua de las piscinas con reflejo del cielo y nubes con sombreado más profundo. Se conservan geometrías, recorrido, guardado y músicas. La remodelación completa y un acabado equivalente a las portadas quedan pendientes de más trabajo y revisión del resultado real.
+
+Presupuesto: bajo 512 y equilibrado 1024 para los atlas, como en 2.4; alta opta por 2048. Se mantienen el límite de FPS, protección térmica y frecuencia de reflejos/sombras. Las vistas se verifican en GLES2/Mesa; no hay medición de temperatura, batería o FPS en el NOTE 50s.

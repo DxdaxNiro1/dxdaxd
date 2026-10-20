@@ -1,0 +1,72 @@
+{
+  "music_backrooms_23": {
+    "description": "Original organ phrase for backrooms",
+    "seconds": 59.0,
+    "peak": 0.1713198721408844,
+    "rms": 0.032100990414619446,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "0419504499534aa840a1be8ffd42450550135d54c54a739afa511eac8f70b489",
+    "bytes": 313256
+  },
+  "music_sky_23": {
+    "description": "Original choir phrase for sky",
+    "seconds": 73.0,
+    "peak": 0.23514583706855774,
+    "rms": 0.0502997450530529,
+    "seam": 7.964847100083716e-06,
+    "clipped": 0,
+    "sha256": "1410199871284067dd173d7b0d913b1929532ffbd5efd73a3e6ce5c9cae18345",
+    "bytes": 600856
+  },
+  "music_cloud_23": {
+    "description": "Original harp phrase for cloud",
+    "seconds": 67.0,
+    "peak": 0.4053340256214142,
+    "rms": 0.05031716823577881,
+    "seam": 4.182484190096147e-06,
+    "clipped": 0,
+    "sha256": "96492db1db6f0b5151863b858b308f6f3145f293355dd1777657395bff6ab7d3",
+    "bytes": 633822
+  },
+  "music_city_23": {
+    "description": "Original piano phrase for city",
+    "seconds": 71.0,
+    "peak": 0.3624812662601471,
+    "rms": 0.05030505731701851,
+    "seam": 4.135053586651338e-06,
+    "clipped": 0,
+    "sha256": "b352d9eb8f41b2cbe015bbd42977a81e221848b7489016761c2a883aac9204ea",
+    "bytes": 519278
+  },
+  "music_edge_23": {
+    "description": "Original glass phrase for edge",
+    "seconds": 79.0,
+    "peak": 0.28474190831184387,
+    "rms": 0.04424600675702095,
+    "seam": 9.1813694780285e-07,
+    "clipped": 0,
+    "sha256": "08f824f75bda3685993adeb5355b028226b863e8a6da6892ae5e9ca85a22582a",
+    "bytes": 677993
+  },
+  "music_call_house_23": {
+    "description": "Original piano phrase for call_house",
+    "seconds": 61.0,
+    "peak": 0.26727667450904846,
+    "rms": 0.03719741478562355,
+    "seam": 1.629924554436002e-05,
+    "clipped": 0,
+    "sha256": "98e155970e9f45b8826105d12f6542977a97e92cbf981f10a788619006ceb773",
+    "bytes": 529460
+  },
+  "air_backrooms_23": {
+    "description": "Original soft electrical hum",
+    "seconds": 32.0,
+    "peak": 0.02720540761947632,
+    "rms": 0.011872946284711361,
+    "seam": 2.336874240427278e-05,
+    "clipped": 0,
+    "sha256": "a47aee5655dc8d30df937e571883215827194a0f2bb4f16f2e8a1e5ba9a1beec",
+    "bytes": 327647
+  }
+}

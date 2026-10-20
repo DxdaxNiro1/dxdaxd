@@ -1,0 +1,25 @@
+{
+  "resource": "dream_materials_25.png",
+  "sha256": "48301be2749fd1b297e0c9c823ae1af9c9386d9cee62ab8b8b206f04a8a3410b",
+  "source_width": 1254,
+  "source_height": 1254,
+  "origin": "Generated with image_gen from the preceding dream_materials_21 atlas; sixteen material assignments preserved",
+  "mapping": [
+    "grass",
+    "ivory plaster",
+    "mossy stone",
+    "asphalt",
+    "oak",
+    "turquoise mosaic",
+    "ivory ceramic",
+    "white marble",
+    "walnut",
+    "teal carpet",
+    "concrete",
+    "pink plaster",
+    "pebbles",
+    "soil",
+    "lunar limestone",
+    "brushed metal"
+  ]
+}
