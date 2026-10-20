@@ -1,0 +1,282 @@
+{
+  "version": "2.2",
+  "version_code": 22,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_bytes": 43902934,
+  "apk_sha256": "914859296cd0877f2e09f9b5c75a3d618376f8545220d9dbe4b3395fd99b2f11",
+  "compiler": "Kotlin 1.9.24 / AGP 8.5.2 / Gradle 8.7 / compile SDK 34 / JDK 21 (JVM target 17)",
+  "min_sdk": 21,
+  "checks": {
+    "Journey19Check": 703,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5312,
+    "References21Check": 858,
+    "Miradas22Check": 6296,
+    "total": 15398
+  },
+  "sources_and_changed_resources_identical_to_build": true,
+  "shaders": [
+    {
+      "pair": "scene",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "sky",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "shadow",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-scene",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-sky",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "scene-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "sky-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "shadow-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-scene-mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "legacy-sky-mediump",
+      "linked": true,
+      "log": ""
+    }
+  ],
+  "render_backend": "OpenGL ES 2.0 Mesa llvmpipe",
+  "actual_rendered_views": 16,
+  "render_comparisons": {
+    "sky_blink_changed_pixels": 16679,
+    "entity_blink_changed_pixels": 28245
+  },
+  "new_destinations": [
+    "preview_eyes",
+    "dream_rose_island"
+  ],
+  "new_destinations_optional": true,
+  "preview_combat": false,
+  "new_damage_system": false,
+  "eyes_sky_count": 9,
+  "friendly_preview_entity_count": 1,
+  "friendly_minimum_distance_metres": 9,
+  "island_top_metres": 72,
+  "slide_projected_length_metres": 200,
+  "slide_collision_and_support_checks": true,
+  "main_menu": [
+    "Continuar partida",
+    "Nueva partida",
+    "Ajustes"
+  ],
+  "new_game_confirmation_when_progress_exists": true,
+  "title_screen_simulation_and_save_before_start": false,
+  "new_game_retains_personal_album_and_options": true,
+  "old_saved_position_relocated_if_new_prop_blocks_it": true,
+  "portal_names_projected_and_wall_occluded": true,
+  "route_selector": true,
+  "new_entities": [
+    "winged central eye with pleated dress and sleeve eyes",
+    "tall weeping observer",
+    "floral eye guide",
+    "friendly red textured head and tapered tail"
+  ],
+  "remodelled_old_worlds": [
+    "dream_04 garden",
+    "dream_09 chess",
+    "dream_10 domes",
+    "dream_12 road"
+  ],
+  "geometry_report": [
+    "preview_eyes: 14700 triangles; 64 chunks",
+    "dream_rose_island: 18322 triangles; 324 chunks",
+    "entity_curious: 5530 triangles; 4 chunks",
+    "entity_mourner: 5586 triangles; 4 chunks",
+    "entity_guide: 4878 triangles; 4 chunks",
+    "entity_postman: 2084 triangles; 4 chunks",
+    "entity_friendly: 2098 triangles; 4 chunks",
+    "dream_04: 147834 triangles; 182 chunks",
+    "dream_09: 117798 triangles; 182 chunks",
+    "dream_10: 15022 triangles; 182 chunks",
+    "dream_12: 44502 triangles; 182 chunks",
+    "PASS 6296 checks"
+  ],
+  "previous_main_route_stages": 13,
+  "previous_dark_stages": 2,
+  "previous_reference_route_worlds": 11,
+  "save_schema": 22,
+  "reads_schemas": [
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "same_preference_storage": true,
+  "nested_return_capacity": 8,
+  "lunar_event_effective_seconds": 120,
+  "new_audio": {
+    "eyes": {
+      "description": "Original choir with widely spaced notes, eyes",
+      "seconds": 76.0,
+      "peak": 0.19785591959953308,
+      "rms": 0.04818751662969589,
+      "seam": 2.2256253942032345e-05,
+      "clipped": 0,
+      "sha256": "6c839d69ae02102ca31e513766248bf48b109ed34fa4b27616851a8b38d7c8b9",
+      "bytes": 621857
+    },
+    "island": {
+      "description": "Original harp with widely spaced notes, island",
+      "seconds": 63.0,
+      "peak": 0.3716168999671936,
+      "rms": 0.057346902787685394,
+      "seam": 2.859982032532571e-06,
+      "clipped": 0,
+      "sha256": "2c653699c7ecaff0e8e07116e89d2834d57f4b8f2bbaa5b3dc01e2eb7e79b810",
+      "bytes": 511401
+    }
+  },
+  "new_art_asset": "dream_entities_22.png",
+  "new_art_sha256": "4b167bedf889f8bef1f3b74b2542eff1a0464126dd17ee29619fc2c7c3be499b",
+  "phone_model_reported_by_user": "Infinix NOTE 50s",
+  "default_fps_target": 30,
+  "user_fps_options": [
+    30,
+    60
+  ],
+  "os_thermal_severe_cap": 24,
+  "thermal_api_minimum": 29,
+  "optimizations": [
+    "Title and modal menus stop world frame scheduling",
+    "Conservative frustum culling for new entity submissions",
+    "Three or fewer projected portal name cards, no new texture unit",
+    "New entity atlas reuses moon sampler during actor drawing",
+    "One new optional scene cached at a time",
+    "Grass distant detail filtering",
+    "Previous opaque/translucent batching, frustum/BVH queries, shadow reuse and mirror refresh retained"
+  ],
+  "maximum_simultaneously_bound_fragment_texture_units": 8,
+  "shadows": "Existing directional shadow maps plus new soft contact cards for the new presences; no per-lamp dynamic shadows",
+  "reflections": "Previous Y-planar lake and vertical mirrors retained; ocean reflects an approximate sky, not a full scene reflection",
+  "device_execution_tested": false,
+  "phone_fps_measured": false,
+  "phone_temperature_measured": false,
+  "windows_installer_executed": false,
+  "limitations": [
+    "Maps and models are stylized authored adaptations, not identical photorealistic recreations",
+    "UI lifecycle and controls compiled but need physical Android interaction verification",
+    "Slide is traversed with existing first-person walking/running, not a dedicated seated sliding animation",
+    "Water, material relief, cloud layers and contact shadows are GLES2 approximations",
+    "Reference uploads and extracted reference audio are not included"
+  ],
+  "source_sha256": {
+    "DreamActors.kt": "1c69e05052af463940e1eab68ccdff9ac9b86a9ef7b1c4a7991ee8114c68f750",
+    "DreamArtTextures.kt": "ae2380067306e01e65c4ec8f7bbb897b986b428e229b38eb96769a58a4fcdc5b",
+    "DreamAtmosphere.kt": "cd1622f869e0000b9d89de9a89609534947a23143af1630d349386686ab22350",
+    "DreamAudio.kt": "7a56330598bac6b81dcc7a0664245c033f1cacbc4035ba742391eec996c9c164",
+    "DreamChessMap.kt": "49964c57f23f0387a576137e8397554d6d2f26b1b4b1c37fafa0bce8742acca2",
+    "DreamChronicle.kt": "9b2a72cc5a728799c4dbcf8bb7c5e0410344526f4f446c80294c3257bfa874b8",
+    "DreamChunks.kt": "69b746a34ba4cfdafc87dcce66b2d8d8d7ffcba6b50d51d5c8441ca2a8b63c94",
+    "DreamCloudMap.kt": "94498d59287a7c16fd17ebea5e8d71bac38998c65c86973c2279e4b954411c65",
+    "DreamCloudTexture.kt": "2d3d43623d502ad1f85a3f7992b95a8809187bfccedf4e15172f5613e3c016b2",
+    "DreamCraterLayout.kt": "09f8cc68120a4f6f577225165dad85b2d7e394cee52f7cc339fc0a54109a7413",
+    "DreamCraterPhysics.kt": "d5d3b384f51c6d84902e1fdddb9f72ced44df7742449164807d553c37d2a32cb",
+    "DreamCreature.kt": "309b3c870b6bb6f7de49d2e12b2e3eaba4c3a1d52a319e5242647b1a5403224c",
+    "DreamDarkMap.kt": "be91af408555c7a02752067b6fabc7aec839dc5f0f65e0206195b689c641c7fb",
+    "DreamEglConfigChooser.kt": "f0b2af9db68634928c2126212b82e8df2f4f7a9cb33abbbb48215534e0d9b66b",
+    "DreamEvents.kt": "cc797fb9a3d60eacfb8cb831c7e036fce2cc5e609be9d32d1b9d3899f6fbce1f",
+    "DreamExpansion.kt": "a4abfef05e9f86128147b81ea3ac7cb2880e919a69b88e1def82df0fab322962",
+    "DreamExploration.kt": "c07f5f6fbc5f1c0b65f2b6a0a543534050a6fda61515cb75455eab9c041553eb",
+    "DreamFootsteps.kt": "e3cf308482359c1fe514a8b5db6c0d38768dc4313869bc182f17a3ffc1cb1b56",
+    "DreamGravity.kt": "53a3630438e58bf46e81c7ec4696c2db4c4707e2ce8740f4730546c3b1cb08e7",
+    "DreamHorizons.kt": "a67905bead8fea64327b1d7d076cbb5f137e4b0a442bba74b6aadd3ec775c2b9",
+    "DreamJourney.kt": "a4d8ba2d975b90ce44c6e83cd42d9d6a585fc9d0c765bb04ba0b7abf18e784c3",
+    "DreamLands.kt": "f4f5d9800f74af2260602c055915697f7b007800d4af5c6c6e7782e59cc37f43",
+    "DreamLegacyShaders.kt": "ddb289bd6ae113647fe1c2f08597d66d486e55c9fc4c05c5bb14162c013f862d",
+    "DreamMail.kt": "c87179c3c5a339ebcbc8c59b620708ad35df6e1482b6497ec16acea85998d6e1",
+    "DreamMemories.kt": "5ea3d4743642fb302c0dce213fda9c71d682ff3bd0b98f39d66ba3ad8a8fcf13",
+    "DreamMesh.kt": "d45694793c2f3d7f1afd6754e1031d571707af139636460d2958eb02f03c58d7",
+    "DreamMoonLife.kt": "9a0da6a5f8b7cafb1ec8d8cfd9d5e138ace86fbf41d02dd70896a7aa8693ab5f",
+    "DreamMoonTexture.kt": "41d10a23c2e99b7e89198da72fce536acdcb420250ae1dfaf391b1612cad6ada",
+    "DreamNewDreams.kt": "31e25b05bd964d8243b2847a5ed19d9baf7c626cf76888ea7899996b1461053a",
+    "DreamObjects.kt": "60efcdca12a251e448eb4759912cd24fee6652cd87c2457c3316552cafb18390",
+    "DreamOptions.kt": "95c0b6e8c0031cfda53f9cd587e9a357af797ca43c1a1ee192bae48344cfbc97",
+    "DreamPerformance.kt": "f16f3e2bcddfcf87478d7f9a65bf8404f63ec5e13587f64cf323a283e07f6102",
+    "DreamPhotoFrames.kt": "83291a528af7e539a689d9a307bd9dd5bc049741a47248eb7235583cdf7709ee",
+    "DreamPhotoStore.kt": "9430cf3743961c9d5ad9f534254a9687e8b9d6a0881ad46c39faf625fb42ec7e",
+    "DreamPhotography.kt": "3e3386fbeb8f4e73d7982da2d4d487ce5354c8da41eb8db7c1ab6381fe1edd88",
+    "DreamPocket.kt": "042bf9587b8f0e4f3dc401cd9c8949b22eb7a290eb9b213e3bf352cc2e370b26",
+    "DreamPoolsDetails.kt": "795991fc2467c9584ff1207624ade11cfaead5fa9549ff42615bb7100b735d3b",
+    "DreamPortalNames.kt": "9ea0b30e83b3e41248fd38a1992b88adaa0f097f1b7d0e17d9a215f072fda6c3",
+    "DreamPresences.kt": "7ce24e2115e3b75b361c733d99cfddc56edb06c7f50e075bafb4b06c29d722d8",
+    "DreamReferences.kt": "b413ed692f52124a2d94da90cc4dd9e8be6b07de3eebd54ac615cd6e3bcd876b",
+    "DreamRenderer.kt": "7f88890ce2c37083949f681f76aefe9bbdf87c3da76a6329eb73cbb3bb59c9ee",
+    "DreamRenewal.kt": "a14d2e0f707c4bd338e23f084e867da51525f1483ee2465ea5977549f8eb5d41",
+    "DreamRestore.kt": "8f0bf8a5a6375877226aba42bd80e8569f4aad1f5d884d2ec8eabaa611c9a5ac",
+    "DreamRoadMap.kt": "ef575d9e2d89e54771beb6ee61707548dd814dd04340c38e566bd4716326ed1f",
+    "DreamSaveStore.kt": "cafe64a324cc5e99fd1c2a98dc8468d7495fb4097b2e365e53171f6f85823816",
+    "DreamSculpt.kt": "823db3a869a6bd8c4534ed636326196b3ff409f66a9ab669bc65187364022bb4",
+    "DreamSession.kt": "9fac70208d70679dd673f06ac326e008ca97832b9d4bc018be883d785e24417c",
+    "DreamShaders.kt": "f684698f8577186ed4afc5aa028546a2471f026e332aafc41e251ba5cf2a561e",
+    "DreamShadowMap.kt": "63b97e66df6538be4b3ed4266dc8f0689c6af5920203bf7de798ae146151bf28",
+    "DreamShapes.kt": "269654f753a146a734a9819d26879624284e0886d0ce310b3c49956178d6dbec",
+    "DreamSkySight.kt": "985cc7594426c8419e260fdbfeadf0bb91adc31df5c4f2868f53f7156ad88d67",
+    "DreamSurfaceTextures.kt": "1642a416660d267624e4f222ad6669fddb6db599bafd780e6d0f7357334d0e4e",
+    "DreamTextures.kt": "fc0bbd74955a93bac3d641fdd99ffef3d8b3a73caf44e6d72620819cd434f73e",
+    "DreamThermalMonitor.kt": "ae6f16be94ed1290fce801f947cc24f979ff665f81242c66b5ddaf7bcc582138",
+    "DreamTools.kt": "d7da311149e10b7350fd9669a7d527b0bba6f19d0b76ea3fcd0918c9bf5cef95",
+    "DreamTravel.kt": "aa480d50a600d96d409c3f0b61d1feb4e08f3f452e2485a31655b83eb0959cf6",
+    "DreamTunnelMap.kt": "86819efa51ee8eb0f085ea36306e1b5e6119e8d4889843264d784351f1e46424",
+    "DreamVoyage.kt": "be441d82138f11671264f457bbc8dbfd61048884a4004f7dec6128d321ba0f92",
+    "DreamWaterpark.kt": "80119d78b4d889dca74e6bfae2ddc051022bde3e8123f80eabda6da0fd676785",
+    "DreamWorldMotion.kt": "929d010c710730d3aacc5803487fc3619a108d165acddcc98c92ce6afcd80a03",
+    "DreamWorlds.kt": "ac074030a8a457c3ac44cd10c111b10a51ec55fc75f45afdc7531e8fd0b7a4a3",
+    "MainActivity.kt": "a14e9afb3c6f8e472265bff5c7065c2e4bb78ad05f1b268d25b2789a6ad3404b"
+  },
+  "render_sha256": {
+    "isla_panorama.png": "77a2bbcac59972f435a2a702a1f7467d8e37f6de8bd1480862fe24d4d068e0ac",
+    "isla_casa.png": "74a42e0e4b73e43d910d6576ce229e15249c7aed21afbb05581997261b912c9b",
+    "isla_tobogan.png": "7ec585ba147ceefe6a4fe33e5c763d53489a1908ac89bc4a658ea98d48288c9e",
+    "isla_desde_mar.png": "b90fae0eb8c0cfd1c706b0f355e55683073ca0079f429df5f01987f45a29b8c1",
+    "pradera_ojos.png": "796c450a06e68d4409ba4ac511d7878085321dc23fb841965b59fb66b568bc09",
+    "observadora.png": "d36521957b72ac45cd016c657d575c4958de3b855b5af055240053b728189eb5",
+    "flor_del_valle.png": "f7a37d2bbfcfce5f87257b0a512bef15f066f6fa37c3d09e5f3de0575c1fb6e3",
+    "doliente.png": "af678affc9f5c257b4f3921bb57c75c06935816c0053ca0e503b1e1cd3a2432c",
+    "cabeza_roja.png": "735756b301c98dea0b30160c7e0b7645f7db90c079254c28a95e0d730c2b4362",
+    "jardines_remodelados.png": "b3a913eab3675297498ec42d121c63718cee5a6166105e52249489b36e73631f",
+    "ajedrez_remodelado.png": "908baf561b070f47f8a89f4c82cc53c2203a499fb079a09492bdb28099f0642b",
+    "cupulas_remodeladas.png": "75c849cb1a4c536d8cb74ecdf3a843ea9d7fecb242a1e4e0bfb00a3adc9b6fbc",
+    "carretera_remodelada.png": "47f6b5e0c291f7159e1da0d92dedd100bfceb2452668e5c94cc20478b14bee7e",
+    "pradera_con_cabeza.png": "613844d8862b541f9c491d9aaa8dd41e8c0caa4c7f7d72a2389478b77b8db765",
+    "pradera_parpadeo.png": "1804ff747e711635c0ad1866a1b73d3ff6ec7d95a1ff984b0739c54829d3f026",
+    "ojo_cerrado.png": "8719c449a556e89e310ca08a047a5d4907bf92808350b899c5b6cdba435c8689"
+  }
+}

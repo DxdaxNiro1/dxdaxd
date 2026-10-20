@@ -1,0 +1,18 @@
+DreamCore 2.2: source and resources match the assembled APK.
+Default scheduling target 30 FPS; optional 60. API 29+ thermal severe cap 24.
+The title and modal menus stop world frame requests. New labels reuse Canvas and entity art reuses an existing sampler.
+Figures outside the current view are culled. Only one new optional scene is cached at once.
+Shadow maps, reflection visibility/update gating, opaque/translucent batching and chunk/BVH culling remain.
+No physical phone FPS, temperature or power measurements. No guarantee of identical performance on all settings.
+preview_eyes: 14700 triangles; 64 chunks
+dream_rose_island: 18322 triangles; 324 chunks
+entity_curious: 5530 triangles; 4 chunks
+entity_mourner: 5586 triangles; 4 chunks
+entity_guide: 4878 triangles; 4 chunks
+entity_postman: 2084 triangles; 4 chunks
+entity_friendly: 2098 triangles; 4 chunks
+dream_04: 147834 triangles; 182 chunks
+dream_09: 117798 triangles; 182 chunks
+dream_10: 15022 triangles; 182 chunks
+dream_12: 44502 triangles; 182 chunks
+PASS 6296 checks
