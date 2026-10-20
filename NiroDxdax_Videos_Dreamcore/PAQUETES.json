@@ -1,0 +1,29 @@
+[
+  {
+    "part": 1,
+    "first": 1,
+    "last": 18,
+    "count": 18,
+    "file": "NiroDxdax_Videos_Parte_1.zip",
+    "bytes": 77176083,
+    "sha256": "af290dcad729aaa76061b3c374b3d485eb8ebf3be0933459680e325141d8a5f4"
+  },
+  {
+    "part": 2,
+    "first": 19,
+    "last": 37,
+    "count": 19,
+    "file": "NiroDxdax_Videos_Parte_2.zip",
+    "bytes": 79733040,
+    "sha256": "6eaaeb27d2014bd5c1a318216a09702b72acaf8aca7b357be346d97476ec700b"
+  },
+  {
+    "part": 3,
+    "first": 38,
+    "last": 49,
+    "count": 12,
+    "file": "NiroDxdax_Videos_Parte_3.zip",
+    "bytes": 49720031,
+    "sha256": "a3a6f31a472a4bb522a59c5c5556cecbe2a09de8d95c5b4819be18050549364b"
+  }
+]

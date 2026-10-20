@@ -1,0 +1,33 @@
+{
+  "cards": 49,
+  "cover_images_loaded": 49,
+  "playback_test_passed": true,
+  "sample_tracks": [
+    {
+      "number": 1,
+      "duration": 112,
+      "playable": true,
+      "download_matches": true
+    },
+    {
+      "number": 17,
+      "duration": 120.083333,
+      "playable": true,
+      "download_matches": true
+    },
+    {
+      "number": 29,
+      "duration": 112.083333,
+      "playable": true,
+      "download_matches": true
+    },
+    {
+      "number": 49,
+      "duration": 132.083333,
+      "playable": true,
+      "download_matches": true
+    }
+  ],
+  "mobile_no_overflow": true,
+  "javascript_errors": []
+}
