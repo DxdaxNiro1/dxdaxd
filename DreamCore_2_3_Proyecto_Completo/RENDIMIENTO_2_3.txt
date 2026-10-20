@@ -1,0 +1,15 @@
+DreamCore 2.3: current source and assets match the assembled APK.
+Normal frame target 30; optional request 60; Fresh target 24.
+Automatic resolution: native when cool, 88% per side on moderate OS heat signal, 75% on severe heat. Fresh starts at 85%.
+The rendered Fresh comparison uses 72.25% as many pixels with identical geometry; this is a buffer-size comparison, not a measured phone speedup.
+No physical phone FPS, heat, wattage or battery measurements.
+Indoor shadow passes are omitted where their texture is not used; distant matte slope lookups omitted; mirror refresh reduced under heat.
+Object picking avoids temporary filtered lists and square roots; non-solid kinds reuse one set. Menus stop world frames and repeated control redraws.
+backrooms_01 9807 triangles 6 chunks
+dream_sky_openings 4369 triangles 36 chunks
+dream_cloud_castle 7889 triangles 16 chunks
+dream_flower_city 66530 triangles 64 chunks
+dream_grass_fissures 12173 triangles 23 chunks
+pocket_call_house 1008 triangles 4 chunks
+village_investigation 88130 triangles 194 chunks
+PASS 63733 checks
