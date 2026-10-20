@@ -7,6 +7,7 @@ Juego Android Kotlin / GLES2. Banda sonora original completa: **49 composiciones
 - [Proyecto completo 2.4](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_4_Proyecto_Completo.zip)
 - [Catálogo: escuchar o descargar cada MP3](DreamCore_2_4_Resonancias/Banda_sonora/CATALOGO.md)
 - [Instalación, novedades y verificación](DreamCore_2_4_Resonancias/LEEME.md)
+- [49 portadas ilustradas con los títulos de las músicas](DreamCore_2_4_Portadas/GALERIA.md)
 - [Plan del juego](PLAN_DEL_JUEGO.md)
 - [Informe de validación](DreamCore_2_4_Resonancias/VALIDACION.json)
 

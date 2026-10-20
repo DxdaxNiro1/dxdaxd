@@ -1,0 +1,296 @@
+[
+  {
+    "number": 1,
+    "title": "Antes de recordar",
+    "map": "Inicio",
+    "file": "01 - Antes de recordar.jpg"
+  },
+  {
+    "number": 2,
+    "title": "Cinco puertas al atardecer",
+    "map": "El Umbral: Dreamcore y Dark Fantasy",
+    "file": "02 - Cinco puertas al atardecer.jpg"
+  },
+  {
+    "number": 3,
+    "title": "El agua conserva las voces",
+    "map": "Piscinas del recuerdo",
+    "file": "03 - El agua conserva las voces.jpg"
+  },
+  {
+    "number": 4,
+    "title": "Casas que caen despacio",
+    "map": "El abismo de las casas perdidas",
+    "file": "04 - Casas que caen despacio.jpg"
+  },
+  {
+    "number": 5,
+    "title": "La lluvia olvidó el suelo",
+    "map": "Los jardines de cristal dormido",
+    "file": "05 - La lluvia olvidó el suelo.jpg"
+  },
+  {
+    "number": 6,
+    "title": "Alguien dejó la luz",
+    "map": "El pueblo de las ventanas despiertas",
+    "file": "06 - Alguien dejó la luz.jpg"
+  },
+  {
+    "number": 7,
+    "title": "Mareas sobre las ventanas",
+    "map": "El mar dentro del cielo",
+    "file": "07 - Mareas sobre las ventanas.jpg"
+  },
+  {
+    "number": 8,
+    "title": "La puerta del fondo respira",
+    "map": "La casa que recuerda otra puerta",
+    "file": "08 - La puerta del fondo respira.jpg"
+  },
+  {
+    "number": 9,
+    "title": "Una lámpara en el abismo",
+    "map": "La estación del último sueño",
+    "file": "09 - Una lámpara en el abismo.jpg"
+  },
+  {
+    "number": 10,
+    "title": "La partida sin contrincante",
+    "map": "La llanura de los reyes dormidos",
+    "file": "10 - La partida sin contrincante.jpg"
+  },
+  {
+    "number": 11,
+    "title": "Porcelana que llora",
+    "map": "El valle de las cúpulas de agua",
+    "file": "11 - Porcelana que llora.jpg"
+  },
+  {
+    "number": 12,
+    "title": "Habitaciones a la deriva",
+    "map": "El hotel de los horizontes",
+    "file": "12 - Habitaciones a la deriva.jpg"
+  },
+  {
+    "number": 13,
+    "title": "La curva que nadie recuerda",
+    "map": "La carretera donde caen estrellas",
+    "file": "13 - La curva que nadie recuerda.jpg"
+  },
+  {
+    "number": 14,
+    "title": "Lágrimas que sostienen el cielo",
+    "map": "El parque de las lágrimas suspendidas",
+    "file": "14 - Lágrimas que sostienen el cielo.jpg"
+  },
+  {
+    "number": 15,
+    "title": "Órbitas de infancia",
+    "map": "El tobogán de los planetas",
+    "file": "15 - Órbitas de infancia.jpg"
+  },
+  {
+    "number": 16,
+    "title": "El recreo después del fin",
+    "map": "La ciudad del último recreo",
+    "file": "16 - El recreo después del fin.jpg"
+  },
+  {
+    "number": 17,
+    "title": "Sonríe cuando no miras",
+    "map": "El reino de las lunas dormidas",
+    "file": "17 - Sonríe cuando no miras.jpg"
+  },
+  {
+    "number": 18,
+    "title": "Flores para un trono vacío",
+    "map": "El jardín de las coronas vacías",
+    "file": "18 - Flores para un trono vacío.jpg"
+  },
+  {
+    "number": 19,
+    "title": "La ropa de otra vida",
+    "map": "Lavandería entre nubes",
+    "file": "19 - La ropa de otra vida.jpg"
+  },
+  {
+    "number": 20,
+    "title": "El último vagón sumergido",
+    "map": "El tren bajo el agua",
+    "file": "20 - El último vagón sumergido.jpg"
+  },
+  {
+    "number": 21,
+    "title": "Las seis y nunca más",
+    "map": "El amanecer que no termina",
+    "file": "21 - Las seis y nunca más.jpg"
+  },
+  {
+    "number": 22,
+    "title": "El horizonte tenía una escalera",
+    "map": "La torre que viste desde lejos",
+    "file": "22 - El horizonte tenía una escalera.jpg"
+  },
+  {
+    "number": 23,
+    "title": "El peso azul del sueño",
+    "map": "Una cama al borde del universo",
+    "file": "23 - El peso azul del sueño.jpg"
+  },
+  {
+    "number": 24,
+    "title": "También pusieron tu taza",
+    "map": "La habitación que te espera",
+    "file": "24 - También pusieron tu taza.jpg"
+  },
+  {
+    "number": 25,
+    "title": "La casa antes de tu llegada",
+    "map": "Fotografía: la casa sin nadie",
+    "file": "25 - La casa antes de tu llegada.jpg"
+  },
+  {
+    "number": 26,
+    "title": "Una marea detenida en papel",
+    "map": "Fotografía: el mar inmóvil",
+    "file": "26 - Una marea detenida en papel.jpg"
+  },
+  {
+    "number": 27,
+    "title": "El cielo detrás del cristal",
+    "map": "Fotografía: las ventanas de ayer",
+    "file": "27 - El cielo detrás del cristal.jpg"
+  },
+  {
+    "number": 28,
+    "title": "Una órbita en el álbum",
+    "map": "Fotografía: el planeta detenido",
+    "file": "28 - Una órbita en el álbum.jpg"
+  },
+  {
+    "number": 29,
+    "title": "Dirección: nadie, nunca",
+    "map": "La casa del destinatario ausente",
+    "file": "29 - Dirección - nadie, nunca.jpg"
+  },
+  {
+    "number": 30,
+    "title": "El techo aprende tus pasos",
+    "map": "El suelo que se volvió cielo",
+    "file": "30 - El techo aprende tus pasos.jpg"
+  },
+  {
+    "number": 31,
+    "title": "Calles que se doblan al dormir",
+    "map": "El barrio que se inclinó",
+    "file": "31 - Calles que se doblan al dormir.jpg"
+  },
+  {
+    "number": 32,
+    "title": "La película que mira la Tierra",
+    "map": "El cine sobre la Tierra",
+    "file": "32 - La película que mira la Tierra.jpg"
+  },
+  {
+    "number": 33,
+    "title": "Duchas para un valle vacío",
+    "map": "Las duchas del valle infinito",
+    "file": "33 - Duchas para un valle vacío.jpg"
+  },
+  {
+    "number": 34,
+    "title": "El reflejo llegó primero",
+    "map": "La casa reflejada entre nubes",
+    "file": "34 - El reflejo llegó primero.jpg"
+  },
+  {
+    "number": 35,
+    "title": "Los hongos sueñan bajo el canal",
+    "map": "El canal de los hongos dormidos",
+    "file": "35 - Los hongos sueñan bajo el canal.jpg"
+  },
+  {
+    "number": 36,
+    "title": "Una nube ocupa todo el día",
+    "map": "La colina de la nube inmensa",
+    "file": "36 - Una nube ocupa todo el día.jpg"
+  },
+  {
+    "number": 37,
+    "title": "Nadie viene a repostar",
+    "map": "La última gasolinera del atardecer",
+    "file": "37 - Nadie viene a repostar.jpg"
+  },
+  {
+    "number": 38,
+    "title": "Sombras que eligieron otro color",
+    "map": "El barrio de las sombras de colores",
+    "file": "38 - Sombras que eligieron otro color.jpg"
+  },
+  {
+    "number": 39,
+    "title": "Reservamos una silla para ti",
+    "map": "El pasillo de las sillas vacías",
+    "file": "39 - Reservamos una silla para ti.jpg"
+  },
+  {
+    "number": 40,
+    "title": "Entre los pisos falta un nombre",
+    "map": "El edificio de los pisos sin nadie",
+    "file": "40 - Entre los pisos falta un nombre.jpg"
+  },
+  {
+    "number": 41,
+    "title": "El archivo de las nubes",
+    "map": "La oficina dentro de las nubes",
+    "file": "41 - El archivo de las nubes.jpg"
+  },
+  {
+    "number": 42,
+    "title": "El campo sabe que estás aquí",
+    "map": "Vista previa: la pradera que te mira",
+    "file": "42 - El campo sabe que estás aquí.jpg"
+  },
+  {
+    "number": 43,
+    "title": "La casa rosa al final del aire",
+    "map": "La casa rosa sobre el océano",
+    "file": "43 - La casa rosa al final del aire.jpg"
+  },
+  {
+    "number": 44,
+    "title": "Cuarenta y nueve habitaciones despiertas",
+    "map": "Backrooms: las luces que no descansan",
+    "file": "44 - Cuarenta y nueve habitaciones despiertas.jpg"
+  },
+  {
+    "number": 45,
+    "title": "Donde el cielo dejó una abertura",
+    "map": "Las aberturas del cielo",
+    "file": "45 - Donde el cielo dejó una abertura.jpg"
+  },
+  {
+    "number": 46,
+    "title": "Un castillo en el aliento",
+    "map": "Los corredores del castillo de nubes",
+    "file": "46 - Un castillo en el aliento.jpg"
+  },
+  {
+    "number": 47,
+    "title": "El tren cruza las flores",
+    "map": "La ciudad al otro lado de las flores",
+    "file": "47 - El tren cruza las flores.jpg"
+  },
+  {
+    "number": 48,
+    "title": "Un puente entre dos silencios",
+    "map": "La pradera de las grietas",
+    "file": "48 - Un puente entre dos silencios.jpg"
+  },
+  {
+    "number": 49,
+    "title": "La llamada venía de adentro",
+    "map": "La casa del teléfono desconectado",
+    "file": "49 - La llamada venía de adentro.jpg"
+  }
+]

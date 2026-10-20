@@ -1,0 +1,447 @@
+{
+  "images": [
+    {
+      "number": 1,
+      "title": "Antes de recordar",
+      "map": "Inicio",
+      "file": "01 - Antes de recordar.jpg",
+      "sha256": "88af67d6efd00b75f21f52f277f04ca70f260343703243243a124d80e55d9a17",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 2,
+      "title": "Cinco puertas al atardecer",
+      "map": "El Umbral: Dreamcore y Dark Fantasy",
+      "file": "02 - Cinco puertas al atardecer.jpg",
+      "sha256": "9d6b932e83423b24ce325892ae210880a5ed456fa184513881b948024b85c98b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 3,
+      "title": "El agua conserva las voces",
+      "map": "Piscinas del recuerdo",
+      "file": "03 - El agua conserva las voces.jpg",
+      "sha256": "6e0c680cb79641c7383eb7d390063ceef9930be8efee68fda1f4d9666f17799a",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 4,
+      "title": "Casas que caen despacio",
+      "map": "El abismo de las casas perdidas",
+      "file": "04 - Casas que caen despacio.jpg",
+      "sha256": "aae8b8b3a87dc76b2271b263c23b8bae24d465912caa0e1ad234e6a47331d3e8",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 5,
+      "title": "La lluvia olvidó el suelo",
+      "map": "Los jardines de cristal dormido",
+      "file": "05 - La lluvia olvidó el suelo.jpg",
+      "sha256": "e9d07b135b068f82d82e04ed725193222b71cbf0c07277e63d653e2fa717b590",
+      "width": 1672,
+      "height": 940
+    },
+    {
+      "number": 6,
+      "title": "Alguien dejó la luz",
+      "map": "El pueblo de las ventanas despiertas",
+      "file": "06 - Alguien dejó la luz.jpg",
+      "sha256": "5c3193bb37c71e620570c0d09e91b84c149b67894c8f10638268222630748451",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 7,
+      "title": "Mareas sobre las ventanas",
+      "map": "El mar dentro del cielo",
+      "file": "07 - Mareas sobre las ventanas.jpg",
+      "sha256": "28b6572e703dbff140cf7300f97cf504221fc796d7cc174041a5aa10983356fe",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 8,
+      "title": "La puerta del fondo respira",
+      "map": "La casa que recuerda otra puerta",
+      "file": "08 - La puerta del fondo respira.jpg",
+      "sha256": "3af63d756ad34cd210ebf222eaa154fc657b8bee6f55cc6d7936bde17dd29771",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 9,
+      "title": "Una lámpara en el abismo",
+      "map": "La estación del último sueño",
+      "file": "09 - Una lámpara en el abismo.jpg",
+      "sha256": "cad3ef3ea207d9963f4e0d3e3421ca8503437caf7fb0d0b3973c661be52df40b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 10,
+      "title": "La partida sin contrincante",
+      "map": "La llanura de los reyes dormidos",
+      "file": "10 - La partida sin contrincante.jpg",
+      "sha256": "b8baf94cb4109fdf439bed11391a1efc07a6b6f611a210fcc9a9f42231ab74b7",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 11,
+      "title": "Porcelana que llora",
+      "map": "El valle de las cúpulas de agua",
+      "file": "11 - Porcelana que llora.jpg",
+      "sha256": "0fbeddec4ee10355077db304f0a136a9c17e2229b9fd454d31f80c0d934119d7",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 12,
+      "title": "Habitaciones a la deriva",
+      "map": "El hotel de los horizontes",
+      "file": "12 - Habitaciones a la deriva.jpg",
+      "sha256": "37790d2a5763bef965b5ebfc9b63b704d8781d24f6518e576a0c36f40ebb570f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 13,
+      "title": "La curva que nadie recuerda",
+      "map": "La carretera donde caen estrellas",
+      "file": "13 - La curva que nadie recuerda.jpg",
+      "sha256": "608285e8299c0a91731770d23773f731c419aad677a8a90d8368dba5ad79cc94",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 14,
+      "title": "Lágrimas que sostienen el cielo",
+      "map": "El parque de las lágrimas suspendidas",
+      "file": "14 - Lágrimas que sostienen el cielo.jpg",
+      "sha256": "6ece31e24664dc8b34e4444062fa56305946a1d4ec32dbdd0b5f7ca9b0735340",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 15,
+      "title": "Órbitas de infancia",
+      "map": "El tobogán de los planetas",
+      "file": "15 - Órbitas de infancia.jpg",
+      "sha256": "0e2b4ff6ce9e6f5a89cf86f06113b7e0f14de096076ccec8133c7dd928bdaac9",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 16,
+      "title": "El recreo después del fin",
+      "map": "La ciudad del último recreo",
+      "file": "16 - El recreo después del fin.jpg",
+      "sha256": "ae1f9490579b4a6c9f51aebd7dc5f0e19c65ab87f123985111deb7734f55cc8b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 17,
+      "title": "Sonríe cuando no miras",
+      "map": "El reino de las lunas dormidas",
+      "file": "17 - Sonríe cuando no miras.jpg",
+      "sha256": "6e097820673f7bb8fdfd02f82d8dd9a9c7d4b5d60b1b46e9b75d9daccba152b3",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 18,
+      "title": "Flores para un trono vacío",
+      "map": "El jardín de las coronas vacías",
+      "file": "18 - Flores para un trono vacío.jpg",
+      "sha256": "4d04af9d4bd2a4ac8b25e1f6be7e7e2cae67ccd44dfd068fec011a3568f9af7d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 19,
+      "title": "La ropa de otra vida",
+      "map": "Lavandería entre nubes",
+      "file": "19 - La ropa de otra vida.jpg",
+      "sha256": "79f7a1cc2322a0b2b9f8ed3df5ca8be593f8f088728c59e4487a825ea3cbde14",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 20,
+      "title": "El último vagón sumergido",
+      "map": "El tren bajo el agua",
+      "file": "20 - El último vagón sumergido.jpg",
+      "sha256": "535c9856eb76684468f3ab0b4cda2c0f5235b7fc96334dd28ee46eadf0bc99fb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 21,
+      "title": "Las seis y nunca más",
+      "map": "El amanecer que no termina",
+      "file": "21 - Las seis y nunca más.jpg",
+      "sha256": "d3b2dac8d36c1cd1c519fad7036f96433fd30db6f3d1021b96e7b4f03e2ebb5f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 22,
+      "title": "El horizonte tenía una escalera",
+      "map": "La torre que viste desde lejos",
+      "file": "22 - El horizonte tenía una escalera.jpg",
+      "sha256": "af743b305832374fd461b04160969e3b31db751b03f7d5148e19987a48177a86",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 23,
+      "title": "El peso azul del sueño",
+      "map": "Una cama al borde del universo",
+      "file": "23 - El peso azul del sueño.jpg",
+      "sha256": "2f604f2763dc2f73ae3def53c454558c0c646bd04a068fea6c0347b4fc0aee1d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 24,
+      "title": "También pusieron tu taza",
+      "map": "La habitación que te espera",
+      "file": "24 - También pusieron tu taza.jpg",
+      "sha256": "141812f4876054f3ad66ce03810f3a5eec02d1fe2a50414343f657e15f9a289b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 25,
+      "title": "La casa antes de tu llegada",
+      "map": "Fotografía: la casa sin nadie",
+      "file": "25 - La casa antes de tu llegada.jpg",
+      "sha256": "b355f0ec403793724f8e1cc140c0e27dbd699b765ece9ce2923ef1abfb359dbc",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 26,
+      "title": "Una marea detenida en papel",
+      "map": "Fotografía: el mar inmóvil",
+      "file": "26 - Una marea detenida en papel.jpg",
+      "sha256": "ee8463b7b9a4f962b3c99bd9df1305f43682848a2ad5a24f3b7bb0b8d9f5e24a",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 27,
+      "title": "El cielo detrás del cristal",
+      "map": "Fotografía: las ventanas de ayer",
+      "file": "27 - El cielo detrás del cristal.jpg",
+      "sha256": "16cdbe1a89eb8ba58475f91b79fce629d91337ca01c63323f0dcfd3f31028af4",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 28,
+      "title": "Una órbita en el álbum",
+      "map": "Fotografía: el planeta detenido",
+      "file": "28 - Una órbita en el álbum.jpg",
+      "sha256": "db373c8c3063908e552b67a9ad79e9182866409f7160f1ec6bd98d10017356ae",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 29,
+      "title": "Dirección: nadie, nunca",
+      "map": "La casa del destinatario ausente",
+      "file": "29 - Dirección - nadie, nunca.jpg",
+      "sha256": "7c760e5299d3c6dcdf40f869ff32e5803165dec48c3a9fb70acba796ec75f810",
+      "width": 1672,
+      "height": 940
+    },
+    {
+      "number": 30,
+      "title": "El techo aprende tus pasos",
+      "map": "El suelo que se volvió cielo",
+      "file": "30 - El techo aprende tus pasos.jpg",
+      "sha256": "f438b352c4f29f41b088bdb400cb4125b0008c6bf089df8522b2fdf3dff2a0ee",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 31,
+      "title": "Calles que se doblan al dormir",
+      "map": "El barrio que se inclinó",
+      "file": "31 - Calles que se doblan al dormir.jpg",
+      "sha256": "534a6a080a58a3ace0034fd3f08e526be04914c8921deebf144b2bdca1c4d120",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 32,
+      "title": "La película que mira la Tierra",
+      "map": "El cine sobre la Tierra",
+      "file": "32 - La película que mira la Tierra.jpg",
+      "sha256": "eb5bb00da75992d049740659990d0a365c86ca642665beb980257662b0c64cf9",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 33,
+      "title": "Duchas para un valle vacío",
+      "map": "Las duchas del valle infinito",
+      "file": "33 - Duchas para un valle vacío.jpg",
+      "sha256": "26c60fc00df64f6a7b97f02547bf4fc29f84d817040fc445470fee63c64cbd98",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 34,
+      "title": "El reflejo llegó primero",
+      "map": "La casa reflejada entre nubes",
+      "file": "34 - El reflejo llegó primero.jpg",
+      "sha256": "55835f2a81000157d0ea8568158a3f47530953fec709d3fd62e1c13c7629c3f3",
+      "width": 1672,
+      "height": 940
+    },
+    {
+      "number": 35,
+      "title": "Los hongos sueñan bajo el canal",
+      "map": "El canal de los hongos dormidos",
+      "file": "35 - Los hongos sueñan bajo el canal.jpg",
+      "sha256": "e77733d69cc5befddb56a870fd143ad67c81f8ece6bc8402d44f07f827441f32",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 36,
+      "title": "Una nube ocupa todo el día",
+      "map": "La colina de la nube inmensa",
+      "file": "36 - Una nube ocupa todo el día.jpg",
+      "sha256": "da211bfd13b9cd1a087d3e6b097a5842409a4aa6e8a06793492a819f4c398b49",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 37,
+      "title": "Nadie viene a repostar",
+      "map": "La última gasolinera del atardecer",
+      "file": "37 - Nadie viene a repostar.jpg",
+      "sha256": "dd868393124a2e3b63f4c1fab2a2050dcb516ff81ae4d355e9a6e4e717c5e3e3",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 38,
+      "title": "Sombras que eligieron otro color",
+      "map": "El barrio de las sombras de colores",
+      "file": "38 - Sombras que eligieron otro color.jpg",
+      "sha256": "c3e72985fd19865750f169ca8b5af72a3d8a0ab3cd6784911a5ba83128374ebb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 39,
+      "title": "Reservamos una silla para ti",
+      "map": "El pasillo de las sillas vacías",
+      "file": "39 - Reservamos una silla para ti.jpg",
+      "sha256": "04b30ea834e96538ebb5327e4f3fef63a9241741f0b70b64e99e8314b8126b93",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 40,
+      "title": "Entre los pisos falta un nombre",
+      "map": "El edificio de los pisos sin nadie",
+      "file": "40 - Entre los pisos falta un nombre.jpg",
+      "sha256": "b3c0b12c4b131502577602b310968acd04335c55663078bb2d60b2280f796af1",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 41,
+      "title": "El archivo de las nubes",
+      "map": "La oficina dentro de las nubes",
+      "file": "41 - El archivo de las nubes.jpg",
+      "sha256": "2d26806af2d575fc1cc2ef50616c31567565b5fd01ca40079ccae0d09857f563",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 42,
+      "title": "El campo sabe que estás aquí",
+      "map": "Vista previa: la pradera que te mira",
+      "file": "42 - El campo sabe que estás aquí.jpg",
+      "sha256": "e51adadb0b2e3885306b20148b7aa10d17d46412bb6328bcef48b352e93b992f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 43,
+      "title": "La casa rosa al final del aire",
+      "map": "La casa rosa sobre el océano",
+      "file": "43 - La casa rosa al final del aire.jpg",
+      "sha256": "c53e521eee26a270e9f2d6067f4941eab7faba234bf513d074317ff93eea7e10",
+      "width": 1672,
+      "height": 940
+    },
+    {
+      "number": 44,
+      "title": "Cuarenta y nueve habitaciones despiertas",
+      "map": "Backrooms: las luces que no descansan",
+      "file": "44 - Cuarenta y nueve habitaciones despiertas.jpg",
+      "sha256": "fa39183b3ad0cf647236274897776f4e03a5b5049774012f33f20cfc87b47ceb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 45,
+      "title": "Donde el cielo dejó una abertura",
+      "map": "Las aberturas del cielo",
+      "file": "45 - Donde el cielo dejó una abertura.jpg",
+      "sha256": "6f8bc656f51985bfc461f27fbff014870eef9551894a27db9549c2318cdc1c3b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 46,
+      "title": "Un castillo en el aliento",
+      "map": "Los corredores del castillo de nubes",
+      "file": "46 - Un castillo en el aliento.jpg",
+      "sha256": "61e551d8ee3a49dc88735ab7798ecb21753d185efcff24e2bbf4d3279179b455",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 47,
+      "title": "El tren cruza las flores",
+      "map": "La ciudad al otro lado de las flores",
+      "file": "47 - El tren cruza las flores.jpg",
+      "sha256": "cecb0c48361689d09fa9b33ab7c04ea3bf75ffba027dc5a5d892636d463a7ac8",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 48,
+      "title": "Un puente entre dos silencios",
+      "map": "La pradera de las grietas",
+      "file": "48 - Un puente entre dos silencios.jpg",
+      "sha256": "2d359696395538af69b2f442a7490ebcef84f553a550e64f5411af74112e9dab",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "number": 49,
+      "title": "La llamada venía de adentro",
+      "map": "La casa del teléfono desconectado",
+      "file": "49 - La llamada venía de adentro.jpg",
+      "sha256": "0c1248cb405bd067eb408d84ad5005eda38fd3da2fe612f102ade7b1d71036fc",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "kind": "Illustrated song covers generated from actual game-map renders",
+  "audio_files_included": 0
+}
