@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "resource": "dream_botany_26.png",
+      "sha256": "c9d0262f04e4d707bd1c15093b5e272a5b52da5d84efb832733184cabadbce9a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "apk_pixels_identical": true
+    },
+    {
+      "resource": "dream_cloud_volume_26.png",
+      "sha256": "23b8da9decaa8e0ad14dfe7376fd02febae9cc1505b9a060fab86529dd3dc005",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "apk_pixels_identical": true
+    }
+  ],
+  "botanical_art_origin": "Generated with image_gen for this update",
+  "numerical_cloud_origin": "Offline periodic 128x64x128 density field; packed by tools/generate_cloud_volume26.py",
+  "gpu_layout": "4 columns x 8 rows; original 16 materials + 4 architecture materials + 12 cutout plants",
+  "new_materials": [
+    "pink terracotta shingles",
+    "slate shingles",
+    "ivory limestone",
+    "painted timber"
+  ],
+  "foliage": [
+    "oak",
+    "eucalyptus",
+    "birch",
+    "ivy",
+    "fern",
+    "broadleaf",
+    "light branch",
+    "flowering branch",
+    "grass",
+    "clover",
+    "daisies",
+    "lavender"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "assets": [
+    {
+      "resource": "dream_lunar_faces_27.png",
+      "sha256": "3fd9d76a41ac46310d7ec260dfd162f9e0679f4d731bf4ec8c8db76c777baafc",
+      "dimensions": [
+        887,
+        1774
+      ],
+      "apk_pixels_identical": true
+    },
+    {
+      "resource": "dream_guardians_27.png",
+      "sha256": "a61b1c0b882288d62952c902c47e9dac8480f02adb3dfe1dcba2a9cc3a7328bf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "apk_pixels_identical": true
+    },
+    {
+      "resource": "dream_botany_26.png",
+      "sha256": "c9d0262f04e4d707bd1c15093b5e272a5b52da5d84efb832733184cabadbce9a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "apk_pixels_identical": true
+    },
+    {
+      "resource": "dream_cloud_volume_26.png",
+      "sha256": "23b8da9decaa8e0ad14dfe7376fd02febae9cc1505b9a060fab86529dd3dc005",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "apk_pixels_identical": true
+    }
+  ],
+  "new_art_origin": "Original atlas art generated with image_gen for this update; model meshes authored in Kotlin",
+  "moon_layout": "2 columns x 4 rows",
+  "guardian_layout": "2 columns x 2 rows: iris, bark, feathers, ivory skin"
+}

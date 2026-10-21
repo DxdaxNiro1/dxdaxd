@@ -1,0 +1,51 @@
+package com.dreamcore.game
+
+import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.opengl.GLES20
+import kotlin.math.*
+
+/** Two atlases, 4x8 cells: original materials, roof/stone materials and cutout foliage. */
+object DreamSurfaceTextures {
+    val carpetMean=floatArrayOf(.16f,.27f,.29f)
+    fun load(context:Context,quality:Int):Pair<Int,Int> {
+        val maximum=IntArray(1);GLES20.glGetIntegerv(GLES20.GL_MAX_TEXTURE_SIZE,maximum,0)
+        val size=min(DreamLook25.atlasSize(quality),maximum[0]/2).coerceAtLeast(256)
+        val height=size*2
+        val pixels=IntArray(size*height)
+        fun read(resource:Int,offset:Int){
+            val source=checkNotNull(BitmapFactory.decodeResource(context.resources,resource,BitmapFactory.Options().apply{inScaled=false;inPreferredConfig=Bitmap.Config.ARGB_8888}))
+            val image=if(source.width!=size||source.height!=size)Bitmap.createScaledBitmap(source,size,size,true)else source
+            if(image!==source)source.recycle()
+            image.getPixels(pixels,offset,size,0,0,size,size);image.recycle()
+        }
+        read(R.drawable.dream_materials_25,0)
+        read(R.drawable.dream_botany_26,size*size)
+        val tile=size/4;val sums=IntArray(3)
+        for(y in tile*2 until tile*3)for(x in tile until tile*2){val c=pixels[y*size+x];sums[0]+=(c shr 16)and 255;sums[1]+=(c shr 8)and 255;sums[2]+=c and 255}
+        for(channel in 0..2)carpetMean[channel]=sums[channel]/(tile.toFloat()*tile*255f)
+        val bytes=java.nio.ByteBuffer.allocateDirect(size*height*4)
+        fun upload():Int {
+            bytes.position(0);val id=IntArray(1);GLES20.glGenTextures(1,id,0);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,id[0])
+            GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_MIN_FILTER,GLES20.GL_LINEAR_MIPMAP_LINEAR)
+            GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_MAG_FILTER,GLES20.GL_LINEAR)
+            for(axis in intArrayOf(GLES20.GL_TEXTURE_WRAP_S,GLES20.GL_TEXTURE_WRAP_T))GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,axis,GLES20.GL_CLAMP_TO_EDGE)
+            GLES20.glTexImage2D(GLES20.GL_TEXTURE_2D,0,GLES20.GL_RGBA,size,height,0,GLES20.GL_RGBA,GLES20.GL_UNSIGNED_BYTE,bytes)
+            GLES20.glGenerateMipmap(GLES20.GL_TEXTURE_2D);return id[0]
+        }
+        // Raw RGBA preserves straight alpha and the numerical normal-map channels.
+        for(c in pixels){bytes.put((c shr 16).toByte());bytes.put((c shr 8).toByte());bytes.put(c.toByte());bytes.put((c ushr 24).toByte())}
+        val albedo=upload();bytes.clear()
+        val rough=floatArrayOf(.95f,.86f,.90f,.89f,.83f,.27f,.31f,.20f,.72f,.98f,.68f,.82f,.92f,.95f,.88f,.32f,.72f,.86f,.88f,.80f)
+        for(y in 0 until height)for(x in 0 until size){
+            val tx=x/tile;val ty=y/tile
+            fun h(dx:Int,dy:Int):Float{val xx=tx*tile+((x%tile+dx+tile)%tile);val yy=ty*tile+((y%tile+dy+tile)%tile);val c=pixels[yy*size+xx];return (((c shr 16)and 255)*.2126f+((c shr 8)and 255)*.7152f+(c and 255)*.0722f)/255f}
+            val gx=((h(1,0)-h(-1,0))*2f).coerceIn(-1f,1f);val gy=((h(0,1)-h(0,-1))*2f).coerceIn(-1f,1f)
+            bytes.put(((gx*.5f+.5f)*255).toInt().toByte());bytes.put(((gy*.5f+.5f)*255).toInt().toByte())
+            bytes.put(((rough.getOrNull(ty*4+tx)?:.95f)*255).toInt().toByte());bytes.put((h(0,0)*255).toInt().toByte())
+        }
+        val normal=upload();GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,0)
+        return albedo to normal
+    }
+}

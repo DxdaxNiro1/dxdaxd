@@ -1,3 +1,12 @@
+# DreamCore 2.7 · Vigilia
+
+[Descargar actualización para tu proyecto](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_7_Vigilia.zip) · [Proyecto completo para Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_7_Proyecto_Completo.zip) · [Ver imágenes reales del motor](DreamCore_2_7_Vigilia/VISTAS.md)
+
+Lunas modeladas con parpadeo y mirada: las azules se vuelven rojas al minuto y la luna gigante sigue apareciendo a los dos minutos. Dos mundos nuevos de Dark Fantasy, cuatro criaturas en reposo y una isla entre nubes sin tobogán, observada por una figura alada gigantesca. 51 escenarios y 52 músicas. [Instalación y cambios](DreamCore_2_7_Vigilia/LEEME.md).
+
+<details>
+<summary>Versiones anteriores</summary>
+
 # DreamCore · 2.6 Profundidad
 
 Juego Android Kotlin / GLES2. Revisión del motor compartido inspirada en las portadas: oclusión de contacto, suavizado, nubes con volumen, vegetación recortada y agua transparente con reflejos de la sala. Se remodelan especialmente las piscinas, el pueblo y las casas compartidas. [Comparar vistas reales del motor](DreamCore_2_6_Profundidad/VISTAS.md).
@@ -21,3 +30,5 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>

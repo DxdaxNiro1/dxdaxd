@@ -1,0 +1,16 @@
+{
+  "version": "2.7",
+  "packages": [
+    {
+      "file": "DreamCore_2_7_Vigilia.zip",
+      "bytes": 71311760,
+      "sha256": "fe513843367dcddc7c927013ced69a8ae4b1c6552bf89571914c4ef67424b917"
+    },
+    {
+      "file": "DreamCore_2_7_Proyecto_Completo.zip",
+      "bytes": 72077943,
+      "sha256": "e3a4b2614d07db1e73cd504962a0a9a874ea8ffc1139634b98669ef111c31c31"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}
