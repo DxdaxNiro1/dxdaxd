@@ -1,0 +1,184 @@
+[
+  {
+    "case": "dream_02_q0",
+    "world": "dream_02",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_02_q2",
+    "world": "dream_02",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_05_q0",
+    "world": "dream_05",
+    "mean_absolute_error": 0.006497395833333333,
+    "maximum": 4.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_05_q2",
+    "world": "dream_05",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dark_01_q0",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dark_01_q2",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0017086226851851852,
+    "maximum": 4.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_sanctuary_clouds_q0",
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_sanctuary_clouds_q2",
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "preview_eyes_q0",
+    "world": "preview_eyes",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "preview_eyes_q2",
+    "world": "preview_eyes",
+    "mean_absolute_error": 0.0057942708333333336,
+    "maximum": 3.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "backrooms_01_q0",
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "backrooms_01_q2",
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_02_odd",
+    "world": "dream_02",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_05_odd",
+    "world": "dream_05",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_sanctuary_clouds_odd",
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "pool_depth_buffer",
+    "world": "dream_02",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_red",
+    "world": "dark_01",
+    "mean_absolute_error": 0.001730324074074074,
+    "maximum": 10.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_giant",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0009143518518518518,
+    "maximum": 4.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_blink",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0016970486111111112,
+    "maximum": 4.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_back",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0014829282407407408,
+    "maximum": 5.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "backrooms_breaker",
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "refuge_photo",
+    "world": "pocket_refuge",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "hidden_door_lantern",
+    "world": "dream_05",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "windows_prism",
+    "world": "echo_11",
+    "mean_absolute_error": 7.2337962962962966e-06,
+    "maximum": 1.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "pool_legacy",
+    "world": "dream_02",
+    "mean_absolute_error": 0.001166087962962963,
+    "maximum": 1.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_legacy",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0016825810185185186,
+    "maximum": 1.0,
+    "fraction_changed_more_than_16": 0.0
+  }
+]

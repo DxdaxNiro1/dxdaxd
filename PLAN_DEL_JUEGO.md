@@ -65,3 +65,23 @@ Presupuesto: bajo 512 y equilibrado 1024 para los atlas, como en 2.4; alta opta 
 El usuario autoriza una revisión prolongada del motor para acercarlo a las portadas. Se desarrolla una base compartida con oclusión de contacto, FXAA, resplandor Alto, nube volumétrica a media resolución, reflejo plano y transparencia de piscinas. Se remodelan piscinas, casas compartidas y vegetación del pueblo. El rendimiento sigue siendo un criterio de diseño: calidad efectiva según calor/ahorro, geometría botánica reducida, límites de FPS conservados y capacidades opcionales con alternativas.
 
 Las 48 escenas, 49 músicas, guardado y comportamiento de la luna se mantienen. Este trabajo no equivale todavía a una reproducción de las ilustraciones. La revisión visual se demuestra con vistas del motor; la temperatura, autonomía y fluidez reales deben medirse en el NOTE 50s.
+
+## Actualización 2.7 · Vigilia · 21 de octubre de 2026
+
+Entregado: 51 escenarios registrados, cuatro mundos de Dark Fantasy, isla celeste sin tobogán, lunas modeladas con cambio rojo al minuto y aparición gigante a los dos minutos, cuatro criaturas nuevas en reposo en la pradera de ojos, guardado de esquema 23 y 52 composiciones en la sala de escucha.
+
+Se conservan los recorridos Dreamcore, Backrooms, fotografías, refugio, diario, secretos, reglas por mundo, consecuencias y personajes de las versiones anteriores. Los cuatro mundos oscuros están conectados por portales; el último vuelve al Umbral.
+
+Pendiente para una futura actualización: decidir comportamiento de las cuatro criaturas con el usuario después de que vea los modelos. No se activaron ataques. La posibilidad de multijugador requiere trabajo específico de red, sincronización y sesiones; esta actualización no lo incorpora.
+
+Validación física pendiente: sesiones prolongadas en el Infinix NOTE 50s y una selección de otros dispositivos antes de ampliar la distribución.
+
+## 2.8 · Fluidez · 21 de octubre de 2026
+
+Petición del usuario: dedicar la actualización a optimizar el motor y todos los escenarios para reducir la carga y el calentamiento en su Infinix NOTE 50s, conservando calidad y contenido. Se mantiene el alcance de 51 mundos y 52 músicas.
+
+Trabajo: geometría indexada exacta, listas de sombras, programas especializados por mundo, descarte de pasadas de nubes vacías u ocultas, visibilidad compartida entre fases, menos consultas y subidas de parámetros, carga de materiales especiales por necesidad, liberación de cachés al viajar y un bloque de transferencia nativo reutilizable. Las fotografías y partidas conservan sus datos.
+
+Validación: comparación de geometrías y recursos, cuadros equivalentes y alternativas gráficas, pruebas de rangos GLES2 y liberación de búferes, compilación de variantes y diagnóstico de cachés. Las mediciones de referencia no sustituyen una prueba de temperatura/FPS en el teléfono físico. Esa prueba sigue pendiente antes de afirmar compatibilidad o mejoras térmicas universales.
+
+Las entidades del campo de ojos siguen en reposo; combate y multijugador quedan para decisiones posteriores. Esta actualización no añade mapas, entidades ni músicas.

@@ -1,0 +1,1 @@
+Informes ejecutados en esta entrega. Mesa/llvmpipe y JVM de escritorio; no son mediciones del teléfono. Ver ../../RENDIMIENTO_2_8.txt y ../../VALIDACION.json. Los bytes de mallas incluyen índices y listas de sombra. Las mediciones de tiempo separan geometría/nubes y no equivalen a FPS del juego completo.

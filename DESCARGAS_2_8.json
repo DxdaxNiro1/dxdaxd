@@ -1,0 +1,16 @@
+{
+  "version": "2.8",
+  "packages": [
+    {
+      "file": "DreamCore_2_8_Fluidez.zip",
+      "bytes": 76223765,
+      "sha256": "4e3193d2d696b562f6d028a98e102ebede8780a9f636e1e912bafebf741aa22d"
+    },
+    {
+      "file": "DreamCore_2_8_Proyecto_Completo.zip",
+      "bytes": 76990599,
+      "sha256": "00de7220ebe920fb48161e53224139351bd0db78f7bd68908440b0e6e7684ab4"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

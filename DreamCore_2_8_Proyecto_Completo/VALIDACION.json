@@ -1,0 +1,104 @@
+{
+  "version": "2.8",
+  "version_code": 28,
+  "save_schema": 23,
+  "apk_assembled": true,
+  "apk_signature_verified": true,
+  "apk_sha256": "b0f219aa369bf41ba619ba275df41e5d220c352bb88fcfa17b3c28f112fff293",
+  "apk_bytes": 71735666,
+  "source_and_resources_identical_to_build": true,
+  "android_lint": {
+    "errors": 0,
+    "warnings": 154
+  },
+  "registered_worlds": 51,
+  "dark_fantasy_worlds": 4,
+  "total_compositions": 52,
+  "resource_files_preserved_byte_for_byte": 148,
+  "scene_geometries_identical_to_27": 51,
+  "quality_options_preserved": true,
+  "blue_to_red_seconds": 60,
+  "giant_reveal_seconds": 120,
+  "creatures_attack": false,
+  "checks": {
+    "Journey19Check": 711,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5314,
+    "References21Check": 858,
+    "Miradas22Check": 6296,
+    "Desvios23Check": 63733,
+    "Resonancias24Check": 419,
+    "Graphics26Check": 496,
+    "Vigilia27Check": 64180,
+    "Fluidez28Check": 49353,
+    "GpuTrace28Check": 12
+  },
+  "total_checks": 193601,
+  "mesh_buffers": {
+    "before_bytes": 267258000,
+    "after_bytes": 152687186,
+    "reduction_percent": 42.868993257451606,
+    "scope": "Sum of separately measured actual chunk buffers for 51 worlds, including indices and required shadow streams; not total app RAM or simultaneous residency"
+  },
+  "memory_diagnostic": {
+    "transitions": 153,
+    "before_retained_factory_heap_bytes": 30483088,
+    "after_retained_factory_heap_bytes": 10737944,
+    "scope": "Separate desktop JVM processes, not Android app RAM"
+  },
+  "graphics": {
+    "catalog_frame_pairs": 52,
+    "quality_state_frame_pairs": 26,
+    "shader_pairs": 416,
+    "maximum_mean_absolute_rgb_error_255": 0.006980452674897119,
+    "maximum_fraction_rgb_error_over_16": 0.0,
+    "backend": "OpenGL ES 2.0 Mesa llvmpipe",
+    "gallery": "12 direct engine images at 1280x720, six before/after pairs",
+    "phone_captures": false
+  },
+  "reference_timing": {
+    "worlds": 14,
+    "frames_per_stage": 24,
+    "resolution": [
+      640,
+      360
+    ],
+    "software_threads": 4,
+    "geometry_median_reduction_percent_range": [
+      14.417967974696044,
+      48.04841056408752
+    ],
+    "scope": "Isolated geometry and cloud passes; compilation and I/O excluded. Software reference, not whole game FPS or phone performance."
+  },
+  "modified_sources": [
+    "app/src/main/java/com/dreamcore/game/DreamPost26.kt",
+    "app/src/main/java/com/dreamcore/game/DreamNewDreams.kt",
+    "app/src/main/java/com/dreamcore/game/DreamRoutes23.kt",
+    "app/src/main/java/com/dreamcore/game/DreamVigilia27.kt",
+    "app/src/main/java/com/dreamcore/game/DreamShaders.kt",
+    "app/src/main/java/com/dreamcore/game/DreamPerformance.kt",
+    "app/src/main/java/com/dreamcore/game/DreamLunarRenderer27.kt",
+    "app/src/main/java/com/dreamcore/game/DreamHorizons.kt",
+    "app/src/main/java/com/dreamcore/game/DreamRenderer.kt",
+    "app/src/main/java/com/dreamcore/game/DreamReferences.kt",
+    "app/src/main/java/com/dreamcore/game/MainActivity.kt",
+    "app/src/main/java/com/dreamcore/game/DreamLands.kt",
+    "app/src/main/java/com/dreamcore/game/DreamSky26.kt",
+    "app/src/main/java/com/dreamcore/game/DreamPhotoFrames.kt"
+  ],
+  "new_sources": [
+    "app/src/main/java/com/dreamcore/game/DreamGpuMesh28.kt",
+    "app/src/main/java/com/dreamcore/game/DreamCache28.kt",
+    "app/src/main/java/com/dreamcore/game/DreamShader28.kt",
+    "app/src/main/java/com/dreamcore/game/DreamIndexed28.kt",
+    "app/src/main/java/com/dreamcore/game/DreamPrograms28.kt",
+    "app/src/main/java/com/dreamcore/game/DreamVisibility28.kt"
+  ],
+  "physical_android_test": false,
+  "phone_temperature_measured": false,
+  "phone_fps_measured": false
+}

@@ -1,0 +1,418 @@
+[
+  {
+    "world": "title",
+    "mean_absolute_error": 5.1440329218107e-06,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999845679012346
+  },
+  {
+    "world": "dream_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_02",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_03",
+    "mean_absolute_error": 2.57201646090535e-06,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999922839506172
+  },
+  {
+    "world": "dream_04",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_05",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_06",
+    "mean_absolute_error": 2.57201646090535e-06,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999922839506172
+  },
+  {
+    "world": "dream_07",
+    "mean_absolute_error": 3.3436213991769545e-05,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999074074074074
+  },
+  {
+    "world": "dream_08",
+    "mean_absolute_error": 0.0001286008230452675,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9996141975308642
+  },
+  {
+    "world": "dream_09",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_10",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_11",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_12",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_13",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_14",
+    "mean_absolute_error": 5.1440329218107e-06,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999845679012346
+  },
+  {
+    "world": "dream_15",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dark_01",
+    "mean_absolute_error": 0.0015946502057613168,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 7.71604938271605e-06,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9964660493827161
+  },
+  {
+    "world": "dark_02",
+    "mean_absolute_error": 0.0022145061728395064,
+    "maximum": 12.0,
+    "fraction_changed_more_than_2": 6.17283950617284e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9951311728395061
+  },
+  {
+    "world": "pocket_laundry",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_train",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_dawn",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_tower",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_cloudbed",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_refuge",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "photo_house",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "photo_sea",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "photo_window",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "photo_planet",
+    "mean_absolute_error": 5.1440329218107e-06,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999845679012346
+  },
+  {
+    "world": "pocket_letter",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_gravity",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_02",
+    "mean_absolute_error": 0.006054526748971193,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 7.716049382716049e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9848070987654322
+  },
+  {
+    "world": "echo_03",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_04",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_05",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_06",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_07",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_08",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_09",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "echo_10",
+    "mean_absolute_error": 0.00010545267489711934,
+    "maximum": 2.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9998148148148148
+  },
+  {
+    "world": "echo_11",
+    "mean_absolute_error": 3.08641975308642e-05,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9999074074074074
+  },
+  {
+    "world": "preview_eyes",
+    "mean_absolute_error": 0.005645576131687243,
+    "maximum": 3.0,
+    "fraction_changed_more_than_2": 1.54320987654321e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9880401234567902
+  },
+  {
+    "world": "dream_rose_island",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_sky_openings",
+    "mean_absolute_error": 0.006980452674897119,
+    "maximum": 4.0,
+    "fraction_changed_more_than_2": 1.54320987654321e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9801697530864197
+  },
+  {
+    "world": "dream_cloud_castle",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_flower_city",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dream_grass_fissures",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "pocket_call_house",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  },
+  {
+    "world": "dark_03",
+    "mean_absolute_error": 0.0023431069958847737,
+    "maximum": 2.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9942283950617284
+  },
+  {
+    "world": "dark_04",
+    "mean_absolute_error": 0.002685185185185185,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 3.8580246913580246e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.993641975308642
+  },
+  {
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.0,
+    "maximum": 0.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 1.0
+  }
+]

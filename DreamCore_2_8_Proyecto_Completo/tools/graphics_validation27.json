@@ -1,0 +1,1548 @@
+[
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/title.png",
+    "vertices": 7392,
+    "eye": [
+      0.0,
+      4.0,
+      16.0
+    ],
+    "target": [
+      0.0,
+      4.0,
+      -16.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "title",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_01.png",
+    "vertices": 7392,
+    "eye": [
+      -10.0,
+      1.65,
+      7.0
+    ],
+    "target": [
+      7.0,
+      5.0,
+      -18.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_01",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_02.png",
+    "vertices": 27684,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      5.0,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_02",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_03.png",
+    "vertices": 118644,
+    "eye": [
+      8.0,
+      1.65,
+      -10.0
+    ],
+    "target": [
+      0.0,
+      -140.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_03",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_04.png",
+    "vertices": 353394,
+    "eye": [
+      12.0,
+      1.65,
+      -115.0
+    ],
+    "target": [
+      80.0,
+      12.0,
+      -240.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_04",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_05.png",
+    "vertices": 278622,
+    "eye": [
+      0.0,
+      1.65,
+      35.0
+    ],
+    "target": [
+      25.0,
+      5.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_05",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_06.png",
+    "vertices": 791514,
+    "eye": [
+      0.0,
+      1.65,
+      -70.0
+    ],
+    "target": [
+      40.0,
+      25.0,
+      -175.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_06",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_07.png",
+    "vertices": 13836,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_07",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_08.png",
+    "vertices": 64044,
+    "eye": [
+      0.0,
+      1.65,
+      -110.0
+    ],
+    "target": [
+      0.0,
+      18.0,
+      -220.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_08",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_09.png",
+    "vertices": 355734,
+    "eye": [
+      8.0,
+      1.65,
+      -180.0
+    ],
+    "target": [
+      28.0,
+      12.0,
+      -210.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_09",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_10.png",
+    "vertices": 85422,
+    "eye": [
+      0.0,
+      1.65,
+      20.0
+    ],
+    "target": [
+      30.0,
+      13.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_10",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_11.png",
+    "vertices": 275070,
+    "eye": [
+      0.0,
+      1.65,
+      40.0
+    ],
+    "target": [
+      8.0,
+      8.0,
+      -180.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_11",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_12.png",
+    "vertices": 135810,
+    "eye": [
+      0.0,
+      1.65,
+      15.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -180.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_12",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_13.png",
+    "vertices": 259284,
+    "eye": [
+      0.0,
+      9.0,
+      84.0
+    ],
+    "target": [
+      30.0,
+      28.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_13",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_14.png",
+    "vertices": 95082,
+    "eye": [
+      2.9,
+      11.3,
+      84.0
+    ],
+    "target": [
+      0.0,
+      35.0,
+      -70.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_14",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_15.png",
+    "vertices": 78912,
+    "eye": [
+      0.0,
+      1.65,
+      35.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -170.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_15",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_01.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      36.0
+    ],
+    "target": [
+      8.0,
+      51.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_02.png",
+    "vertices": 284406,
+    "eye": [
+      0.0,
+      1.65,
+      20.0
+    ],
+    "target": [
+      18.0,
+      12.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_02",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_laundry.png",
+    "vertices": 11844,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      -9.0,
+      3.1,
+      -30.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_laundry",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_train.png",
+    "vertices": 2796,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      1.5,
+      2.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_train",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_dawn.png",
+    "vertices": 5184,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.4,
+      -54.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_dawn",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_tower.png",
+    "vertices": 14337,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      13.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_tower",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_cloudbed.png",
+    "vertices": 43296,
+    "eye": [
+      5.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      -3.0,
+      3.0,
+      -16.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_cloudbed",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_refuge.png",
+    "vertices": 15126,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.5,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_refuge",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/photo_house.png",
+    "vertices": 275268,
+    "eye": [
+      24.0,
+      2.0,
+      -120.0
+    ],
+    "target": [
+      30.0,
+      4.0,
+      -135.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_house",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/photo_sea.png",
+    "vertices": 790104,
+    "eye": [
+      8.0,
+      1.65,
+      -160.0
+    ],
+    "target": [
+      40.0,
+      20.0,
+      -220.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_sea",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/photo_window.png",
+    "vertices": 268764,
+    "eye": [
+      0.0,
+      1.65,
+      -328.0
+    ],
+    "target": [
+      12.0,
+      6.0,
+      -390.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_window",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/photo_planet.png",
+    "vertices": 95280,
+    "eye": [
+      0.0,
+      3.0,
+      -282.0
+    ],
+    "target": [
+      0.0,
+      42.0,
+      -450.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_planet",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_letter.png",
+    "vertices": 17268,
+    "eye": [
+      7.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -30.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_letter",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_gravity.png",
+    "vertices": 11604,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      12.0,
+      -42.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_gravity",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_01.png",
+    "vertices": 70026,
+    "eye": [
+      0.0,
+      1.65,
+      3.0
+    ],
+    "target": [
+      14.0,
+      4.0,
+      -70.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_01",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_02.png",
+    "vertices": 195516,
+    "eye": [
+      0.0,
+      1.65,
+      -20.0
+    ],
+    "target": [
+      0.0,
+      8.0,
+      -110.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_02",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_03.png",
+    "vertices": 65112,
+    "eye": [
+      0.0,
+      1.65,
+      -14.0
+    ],
+    "target": [
+      -2.0,
+      6.0,
+      -90.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_03",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_04.png",
+    "vertices": 12444,
+    "eye": [
+      17.0,
+      1.65,
+      -88.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_04",
+    "quality": 1,
+    "extra": [
+      "--mirror-y",
+      ".05"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_05.png",
+    "vertices": 131076,
+    "eye": [
+      20.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      0.0,
+      5.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_05",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_06.png",
+    "vertices": 49500,
+    "eye": [
+      14.0,
+      2.6,
+      -70.0
+    ],
+    "target": [
+      0.0,
+      40.0,
+      -170.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_06",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_07.png",
+    "vertices": 21240,
+    "eye": [
+      0.0,
+      1.65,
+      -30.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -85.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_07",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_08.png",
+    "vertices": 99144,
+    "eye": [
+      0.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      17.0,
+      3.0,
+      -65.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_08",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_09.png",
+    "vertices": 90000,
+    "eye": [
+      1.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_09",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_10.png",
+    "vertices": 79092,
+    "eye": [
+      12.0,
+      9.65,
+      -140.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_10",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/echo_11.png",
+    "vertices": 42720,
+    "eye": [
+      0.0,
+      1.65,
+      -3.0
+    ],
+    "target": [
+      1.0,
+      3.0,
+      -48.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_11",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/preview_eyes.png",
+    "vertices": 164067,
+    "eye": [
+      0.0,
+      3.0,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      14.0,
+      -55.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_rose_island.png",
+    "vertices": 55794,
+    "eye": [
+      78.0,
+      88.0,
+      73.0
+    ],
+    "target": [
+      0.0,
+      45.0,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_rose_island",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/backrooms_01.png",
+    "vertices": 29421,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      1.8,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "backrooms_01",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_sky_openings.png",
+    "vertices": 13107,
+    "eye": [
+      0.0,
+      1.65,
+      -12.0
+    ],
+    "target": [
+      18.0,
+      55.0,
+      -135.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sky_openings",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_cloud_castle.png",
+    "vertices": 23667,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_cloud_castle",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_flower_city.png",
+    "vertices": 199590,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      20.0,
+      -110.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_flower_city",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_grass_fissures.png",
+    "vertices": 37347,
+    "eye": [
+      55.0,
+      70.0,
+      35.0
+    ],
+    "target": [
+      -15.0,
+      -35.0,
+      -125.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_grass_fissures",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pocket_call_house.png",
+    "vertices": 3024,
+    "eye": [
+      0.0,
+      1.65,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -17.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_call_house",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_03.png",
+    "vertices": 212463,
+    "eye": [
+      0.0,
+      1.65,
+      19.0
+    ],
+    "target": [
+      8.0,
+      46.0,
+      -85.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_03",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_04.png",
+    "vertices": 70389,
+    "eye": [
+      0.0,
+      1.65,
+      -150.0
+    ],
+    "target": [
+      4.0,
+      34.0,
+      -260.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_04",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_sanctuary_clouds.png",
+    "vertices": 203958,
+    "eye": [
+      20.0,
+      74.0,
+      -20.0
+    ],
+    "target": [
+      30.0,
+      133.0,
+      -200.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sanctuary_clouds",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/luna_azul.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/luna_roja_60s.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--vigil",
+      "60"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/luna_parpadeo.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--blink",
+      "1"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/luna_gigante_120s.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--vigil",
+      "120"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/pueblo_escarlata.png",
+    "vertices": 212463,
+    "eye": [
+      0.0,
+      1.65,
+      -80.0
+    ],
+    "target": [
+      9.0,
+      43.0,
+      -190.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_03",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/castillo_palido.png",
+    "vertices": 70389,
+    "eye": [
+      0.0,
+      1.65,
+      -150.0
+    ],
+    "target": [
+      4.0,
+      34.0,
+      -260.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_04",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/isla_y_observador.png",
+    "vertices": 203958,
+    "eye": [
+      20.0,
+      74.0,
+      -20.0
+    ],
+    "target": [
+      30.0,
+      133.0,
+      -200.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sanctuary_clouds",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/isla_flotante.png",
+    "vertices": 203958,
+    "eye": [
+      100.0,
+      132.0,
+      40.0
+    ],
+    "target": [
+      0.0,
+      92.0,
+      -58.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sanctuary_clouds",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/angel_distante.png",
+    "vertices": 203958,
+    "eye": [
+      -20.0,
+      74.0,
+      -20.0
+    ],
+    "target": [
+      52.0,
+      228.0,
+      -245.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sanctuary_clouds",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/los_cuatro.png",
+    "vertices": 164067,
+    "eye": [
+      -8.0,
+      4.0,
+      -12.0
+    ],
+    "target": [
+      0.0,
+      4.0,
+      -43.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/observador_sentado.png",
+    "vertices": 164067,
+    "eye": [
+      -11.0,
+      3.0,
+      -22.0
+    ],
+    "target": [
+      -16.0,
+      3.5,
+      -31.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/caballero_del_ojo.png",
+    "vertices": 164067,
+    "eye": [
+      15.0,
+      3.0,
+      -30.0
+    ],
+    "target": [
+      13.0,
+      3.1,
+      -39.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/arbol_que_mira.png",
+    "vertices": 164067,
+    "eye": [
+      26.0,
+      5.0,
+      -72.0
+    ],
+    "target": [
+      26.0,
+      9.0,
+      -92.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/alas_en_reposo.png",
+    "vertices": 164067,
+    "eye": [
+      -34.0,
+      3.0,
+      -53.0
+    ],
+    "target": [
+      -34.0,
+      4.0,
+      -65.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 1,
+    "extra": []
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_0.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "0",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_1.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "1",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_2.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "2",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_3.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "3",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_4.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "4",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_5.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "5",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_6.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "6",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/lunar_variant_7.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--moon-variant",
+      "7",
+      "--only-main-moon"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_01_low.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      36.0
+    ],
+    "target": [
+      8.0,
+      51.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 0,
+    "extra": [
+      "--quality",
+      "0",
+      "--mediump"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_03_low.png",
+    "vertices": 212463,
+    "eye": [
+      0.0,
+      1.65,
+      19.0
+    ],
+    "target": [
+      8.0,
+      46.0,
+      -85.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_03",
+    "quality": 0,
+    "extra": [
+      "--quality",
+      "0",
+      "--mediump"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dark_04_low.png",
+    "vertices": 70389,
+    "eye": [
+      0.0,
+      1.65,
+      -150.0
+    ],
+    "target": [
+      4.0,
+      34.0,
+      -260.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_04",
+    "quality": 0,
+    "extra": [
+      "--quality",
+      "0",
+      "--mediump"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/dream_sanctuary_clouds_low.png",
+    "vertices": 203958,
+    "eye": [
+      20.0,
+      74.0,
+      -20.0
+    ],
+    "target": [
+      30.0,
+      133.0,
+      -200.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sanctuary_clouds",
+    "quality": 0,
+    "extra": [
+      "--quality",
+      "0",
+      "--mediump"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/preview_eyes_low.png",
+    "vertices": 164067,
+    "eye": [
+      0.0,
+      3.0,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      14.0,
+      -55.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "quality": 0,
+    "extra": [
+      "--quality",
+      "0",
+      "--mediump"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/moon_legacy_fallback.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      12.0
+    ],
+    "target": [
+      8.0,
+      53.0,
+      -74.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "quality": 1,
+    "extra": [
+      "--legacy"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/legacy_interior.png",
+    "vertices": 90000,
+    "eye": [
+      0.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      0.0,
+      1.8,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_09",
+    "quality": 1,
+    "extra": [
+      "--legacy"
+    ]
+  },
+  {
+    "image": "/workspace/dreamcore-validation/build/27/renders/no_depth_pool.png",
+    "vertices": 27684,
+    "eye": [
+      0.0,
+      1.65,
+      -15.0
+    ],
+    "target": [
+      5.45,
+      -0.8,
+      -21.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_02",
+    "quality": 1,
+    "extra": [
+      "--no-depth"
+    ]
+  }
+]
