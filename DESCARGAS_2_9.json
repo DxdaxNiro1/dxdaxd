@@ -3,13 +3,13 @@
   "packages": [
     {
       "file": "DreamCore_2_9_Compatibilidad.zip",
-      "bytes": 73743385,
-      "sha256": "b2f1c30e2307a3b6bfa8378e79e6b999c2000ccde55615ac5da95bc23a93753c"
+      "bytes": 73743370,
+      "sha256": "e98875b27e406b50f3a36beeba4e2d20fb3723a355be2a2712aab30e748f2ec7"
     },
     {
       "file": "DreamCore_2_9_Proyecto_Completo.zip",
-      "bytes": 74505253,
-      "sha256": "2c0d504cddd9b635ad3d3f084aac0dd11f89c7c03307125e0da6a8de68ad1599"
+      "bytes": 74505238,
+      "sha256": "de27adef358e6b764e82b8faa23e430ab315fe9bf620d69c230a6d7eb86fd924"
     }
   ],
   "alias": "DreamCore_actualizacion.zip"

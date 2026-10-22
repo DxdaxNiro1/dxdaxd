@@ -7,7 +7,7 @@ object DreamLunarShaders27 {
         uniform mat4 uVP;uniform vec3 uCamera;uniform vec3 uDirection;uniform float uDistance;uniform float uRadius;
         uniform vec2 uMood;uniform vec2 uEyeAim;uniform mediump float uRed;uniform mediump float uVariant;
         varying mediump vec3 vNormal;varying mediump vec3 vColor;varying mediump vec3 vLocal;varying mediump float vKind;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -56,7 +56,7 @@ object DreamLunarShaders27 {
         precision mediump float;
         uniform mediump sampler2D uAtlas;uniform mediump float uVariant;uniform mediump float uRed;
         varying mediump vec3 vNormal;varying mediump vec3 vColor;varying mediump vec3 vLocal;varying mediump float vKind;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){

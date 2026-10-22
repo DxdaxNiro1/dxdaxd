@@ -35,7 +35,7 @@ object DreamLegacyShaders {
         varying mediump float vFog;
         varying mediump float vKind;
         varying mediump vec3 vReflection;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -215,7 +215,7 @@ object DreamLegacyShaders {
         varying mediump vec3 vReflection;
 
         // Animated stone face in lunar coordinates: eyelids, tracking irises and a widening grin.
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -639,7 +639,7 @@ object DreamLegacyShaders {
         uniform mediump vec3 uUp;
         uniform mediump float uAspect;
         varying mediump vec3 vRay;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -677,7 +677,7 @@ object DreamLegacyShaders {
         uniform mediump float uTime;
         varying mediump vec3 vRay;
 
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){

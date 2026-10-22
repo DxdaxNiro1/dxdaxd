@@ -52,7 +52,7 @@ object DreamShaders {
         #else
         varying mediump vec4 vShadow;
         #endif
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -296,7 +296,7 @@ object DreamShaders {
         varying mediump vec4 vShadow;
         #endif
 
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -943,7 +943,7 @@ object DreamShaders {
         uniform mediump vec3 uUp;
         uniform mediump float uAspect;
         varying mediump vec3 vRay;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -999,7 +999,7 @@ object DreamShaders {
         uniform mediump float uTime;
         varying mediump vec3 vRay;
 
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -1353,7 +1353,7 @@ object DreamShaders {
         attribute vec3 aPos;
         attribute float aKind;
         varying mediump float vKind;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
@@ -1374,7 +1374,7 @@ object DreamShaders {
         precision mediump float;
         #endif
         varying mediump float vKind;
-        
+
         // GLSL ES defines pow(x,y) only for nonnegative x. Squared signed
         // distances are common in eyelids/lights; mobile log2 lowering can produce NaN.
         float dreamPow(float x,float y){
