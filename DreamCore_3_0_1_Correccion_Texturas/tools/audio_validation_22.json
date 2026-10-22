@@ -1,0 +1,22 @@
+{
+  "eyes": {
+    "description": "Original choir with widely spaced notes, eyes",
+    "seconds": 76.0,
+    "peak": 0.19785591959953308,
+    "rms": 0.04818751662969589,
+    "seam": 2.2256253942032345e-05,
+    "clipped": 0,
+    "sha256": "6c839d69ae02102ca31e513766248bf48b109ed34fa4b27616851a8b38d7c8b9",
+    "bytes": 621857
+  },
+  "island": {
+    "description": "Original harp with widely spaced notes, island",
+    "seconds": 63.0,
+    "peak": 0.3716168999671936,
+    "rms": 0.057346902787685394,
+    "seam": 2.859982032532571e-06,
+    "clipped": 0,
+    "sha256": "2c653699c7ecaff0e8e07116e89d2834d57f4b8f2bbaa5b3dc01e2eb7e79b810",
+    "bytes": 511401
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "3.0.1",
+  "packages": [
+    {
+      "file": "DreamCore_3_0_1_Correccion_Texturas.zip",
+      "bytes": 71742036,
+      "sha256": "37128cf7c50a182da327933a765e782c63360ea44fc6ed555796afae49b81854"
+    },
+    {
+      "file": "DreamCore_3_0_1_Proyecto_Completo.zip",
+      "bytes": 72496091,
+      "sha256": "3000f5c8474476654d72ef5a4c8ca08eb979bb0f3f50800fe389f8df76ced5f7"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

@@ -1,3 +1,14 @@
+# DreamCore 3.0.1 · Corrección del inicio gráfico
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_1_Correccion_Texturas.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_1_Proyecto_Completo.zip)
+
+Corrige **“Canvas: trying to use a non-premultiplied bitmap”** al redimensionar los atlas. El cargador filtra RGBA sin dibujar los datos con Canvas; conserva imágenes, shaders, mundos, músicas y guardado de 3.0. [Instalación y explicación](DreamCore_3_0_1_Correccion_Texturas/LEEME.md) · [Pruebas de la corrección](DreamCore_3_0_1_Correccion_Texturas/VALIDACION_3_0_1.json).
+
+Compilación Android y Android Lint sin errores; pruebas del cargador con los atlas reales y fronteras Android/GL registradas. Falta confirmación física en el teléfono de la captura.
+
+<details>
+<summary>Versiones anteriores</summary>
+
 # DreamCore 3.0 · El último tren
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_El_Ultimo_Tren.zip) · [Proyecto completo para Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_Proyecto_Completo.zip) · [Ver las lunas y nuevos lugares](DreamCore_3_0_El_Ultimo_Tren/VISTAS.md)
@@ -59,6 +70,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 

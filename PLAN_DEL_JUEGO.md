@@ -2,6 +2,10 @@
 
 Decisiones del usuario, conversación del 19 de octubre de 2026 (America/La_Paz).
 
+## Corrección 3.0.1
+
+Se atiende la captura con error Canvas al iniciar en 2.9: el cargador conservaba bitmaps sin premultiplicar y los escalaba mediante Canvas. Se sustituyó ese escalado por lectura e interpolación numérica de canales. Las 172 imágenes, audios y recursos de 3.0 y sus shaders se conservan byte por byte. Pruebas de canales y del cargador en tres calidades, compilación y Lint pasan; falta confirmación física en el teléfono del usuario.
+
 ## Implementado en 3.0 · El último tren
 
 Se integran las 24 propuestas y cerrar los ojos: tren con destinos, billetes alternativos, dormir, imitador distante, muebles móviles, tiza, grabadora de eventos del juego, proyector, piano, sombra independiente, huellas, válvulas, telescopio, maqueta, biblioteca, feria, intercambio, perspectiva, ventanas, diario visual, telas/vegetación, adaptación de vista, controles ajustables y preparación gradual de lotes. Tres destinos registrados nuevos, 54 mundos en total y 55 músicas.
