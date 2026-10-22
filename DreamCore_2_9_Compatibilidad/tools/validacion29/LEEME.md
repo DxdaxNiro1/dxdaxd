@@ -1,0 +1,1 @@
+Resultados ejecutados de 2.9: Kotlin/JVM, GLES2 Mesa/llvmpipe y compilación/Lint API19. runtime-trace registra llamadas de los métodos Kotlin contra fallos GL simulados. No son pruebas físicas de POCO/Redmi/Android4.4 ni mediciones de temperatura o FPS. Ver ../../VALIDACION.json y ../../RENDIMIENTO_2_9.txt.

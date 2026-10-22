@@ -85,3 +85,11 @@ Trabajo: geometría indexada exacta, listas de sombras, programas especializados
 Validación: comparación de geometrías y recursos, cuadros equivalentes y alternativas gráficas, pruebas de rangos GLES2 y liberación de búferes, compilación de variantes y diagnóstico de cachés. Las mediciones de referencia no sustituyen una prueba de temperatura/FPS en el teléfono físico. Esa prueba sigue pendiente antes de afirmar compatibilidad o mejoras térmicas universales.
 
 Las entidades del campo de ojos siguen en reposo; combate y multijugador quedan para decisiones posteriores. Esta actualización no añade mapas, entidades ni músicas.
+
+## 2.9 · Compatibilidad · 22 de octubre de 2026
+
+El usuario reporta colores verdes en POCO X4 Pro 5G y colores/rendimiento incorrectos en un Redmi sin modelo identificado. Se priorizan correcciones GLSL, formatos de textura definidos, comprobación de capacidades y profundidad, alternativas estable/esencial, selección EGL y adaptación de carga. Se conserva el contenido de 2.8.
+
+El mínimo de Android baja de API 21 a API 19 con recursos de tema alternativos y protección de APIs. La ruta automática trata conservadoramente Adreno 619; no se presupone una GPU para todos los Redmi. Se añade recuperación desde Ajustes sin cambiar el guardado.
+
+Pendiente: verificar físicamente el color y sesiones largas en POCO, identificar el Redmi exacto, y probar una selección de versiones de Android. Las pruebas de escritorio y Lint no equivalen a certificar todos los teléfonos. Combate, multijugador y contenido nuevo siguen fuera de esta corrección.

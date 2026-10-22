@@ -1,0 +1,184 @@
+[
+  {
+    "case": "dream_02_q0",
+    "world": "dream_02",
+    "mean_absolute_error": 0.014082754629629629,
+    "maximum": 33.0,
+    "fraction_changed_more_than_16": 1.3020833333333334e-05
+  },
+  {
+    "case": "dream_02_q2",
+    "world": "dream_02",
+    "mean_absolute_error": 0.005758101851851852,
+    "maximum": 10.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_05_q0",
+    "world": "dream_05",
+    "mean_absolute_error": 0.08992476851851852,
+    "maximum": 98.0,
+    "fraction_changed_more_than_16": 0.0005251736111111111
+  },
+  {
+    "case": "dream_05_q2",
+    "world": "dream_05",
+    "mean_absolute_error": 0.04252748842592593,
+    "maximum": 63.0,
+    "fraction_changed_more_than_16": 2.604166666666667e-05
+  },
+  {
+    "case": "dark_01_q0",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0258203125,
+    "maximum": 128.0,
+    "fraction_changed_more_than_16": 4.774305555555556e-05
+  },
+  {
+    "case": "dark_01_q2",
+    "world": "dark_01",
+    "mean_absolute_error": 0.02991898148148148,
+    "maximum": 137.0,
+    "fraction_changed_more_than_16": 0.00020833333333333335
+  },
+  {
+    "case": "dream_sanctuary_clouds_q0",
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.06758101851851851,
+    "maximum": 32.0,
+    "fraction_changed_more_than_16": 1.3020833333333334e-05
+  },
+  {
+    "case": "dream_sanctuary_clouds_q2",
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.032769097222222224,
+    "maximum": 17.0,
+    "fraction_changed_more_than_16": 4.340277777777778e-06
+  },
+  {
+    "case": "preview_eyes_q0",
+    "world": "preview_eyes",
+    "mean_absolute_error": 0.07090711805555555,
+    "maximum": 20.0,
+    "fraction_changed_more_than_16": 4.340277777777778e-06
+  },
+  {
+    "case": "preview_eyes_q2",
+    "world": "preview_eyes",
+    "mean_absolute_error": 0.048548900462962966,
+    "maximum": 9.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "backrooms_01_q0",
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0006495949074074074,
+    "maximum": 1.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "backrooms_01_q2",
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0004890046296296296,
+    "maximum": 2.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_02_odd",
+    "world": "dream_02",
+    "mean_absolute_error": 0.005669308252334083,
+    "maximum": 8.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "dream_05_odd",
+    "world": "dream_05",
+    "mean_absolute_error": 0.04868138078470182,
+    "maximum": 30.0,
+    "fraction_changed_more_than_16": 4.6029566324769275e-05
+  },
+  {
+    "case": "dream_sanctuary_clouds_odd",
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.03235111353192534,
+    "maximum": 21.0,
+    "fraction_changed_more_than_16": 7.671594387461545e-06
+  },
+  {
+    "case": "pool_depth_buffer",
+    "world": "dream_02",
+    "mean_absolute_error": 0.005520833333333333,
+    "maximum": 7.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_red",
+    "world": "dark_01",
+    "mean_absolute_error": 0.0300390625,
+    "maximum": 137.0,
+    "fraction_changed_more_than_16": 0.0002560763888888889
+  },
+  {
+    "case": "moon_giant",
+    "world": "dark_01",
+    "mean_absolute_error": 0.02230902777777778,
+    "maximum": 137.0,
+    "fraction_changed_more_than_16": 0.00015190972222222222
+  },
+  {
+    "case": "moon_blink",
+    "world": "dark_01",
+    "mean_absolute_error": 0.03029513888888889,
+    "maximum": 137.0,
+    "fraction_changed_more_than_16": 0.00020833333333333335
+  },
+  {
+    "case": "moon_back",
+    "world": "dark_01",
+    "mean_absolute_error": 0.018605324074074073,
+    "maximum": 113.0,
+    "fraction_changed_more_than_16": 0.00014322916666666667
+  },
+  {
+    "case": "backrooms_breaker",
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0005381944444444444,
+    "maximum": 3.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "refuge_photo",
+    "world": "pocket_refuge",
+    "mean_absolute_error": 0.0007146990740740741,
+    "maximum": 3.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "hidden_door_lantern",
+    "world": "dream_05",
+    "mean_absolute_error": 0.055795717592592595,
+    "maximum": 63.0,
+    "fraction_changed_more_than_16": 3.90625e-05
+  },
+  {
+    "case": "windows_prism",
+    "world": "echo_11",
+    "mean_absolute_error": 0.0003978587962962963,
+    "maximum": 4.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "pool_legacy",
+    "world": "dream_02",
+    "mean_absolute_error": 0.0039800347222222225,
+    "maximum": 3.0,
+    "fraction_changed_more_than_16": 0.0
+  },
+  {
+    "case": "moon_legacy",
+    "world": "dark_01",
+    "mean_absolute_error": 0.026848958333333332,
+    "maximum": 143.0,
+    "fraction_changed_more_than_16": 0.00026041666666666666
+  }
+]

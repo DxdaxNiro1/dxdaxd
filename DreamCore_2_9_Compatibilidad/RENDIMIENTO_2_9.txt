@@ -1,0 +1,52 @@
+DREAMCORE 2.9 · COMPATIBILIDAD
+
+Se conservan las mallas indexadas exactas, páginas ushort, índices de sombras,
+cachés limitadas y carga por mundo de 2.8. No se simplifica la geometría ni
+se eliminan texturas, mapas, músicas o comportamientos.
+
+CORRECCIÓN DE CÁLCULOS
+GLSL ES deja indefinido pow con base negativa. Se usaba con exponente 2 en
+párpados, ojos y luces. Se reemplaza por un cuadrado acotado multiplicado;
+el resto de potencias usa una base no negativa. La normalización escala el
+vector antes de elevarlo al cuadrado y protege entradas nulas.
+
+RUTAS
+Completa: capacidades suficientes y lectura de profundidad comprobada.
+Estable: materiales y luz principal mejorada, sin profundidad muestreada.
+Esencial: programas compatibles, sin postprocesado de la escena, con
+iluminación simplificada y los mismos mundos, modelos y recursos.
+
+Adreno 619 selecciona Estable automáticamente. No se atribuye una GPU única a
+la marca Redmi. La interfaz permite cambiar de ruta y ver la GPU detectada.
+La pérdida de AO de contacto en Estable es una diferencia visual deliberada;
+no se promete que Esencial tenga los mismos efectos que Completa.
+
+CARGA Y FORMATOS
+RGBA8 explícito para imágenes y fotografías; sRGB en Android 8 o posterior.
+Un bloque nativo reutilizado evita múltiples bloques directos al cargar arte.
+Si falla el mipmap, se mantiene el nivel base con filtrado lineal.
+La consulta y el ensayo de color/profundidad se realizan al crear el contexto,
+no en cada cuadro. Las alternativas usan profundidad de renderbuffer.
+
+CADENCIA
+Una solicitud pendiente limita la acumulación de solicitudes desde la UI.
+Automática adapta la escala interna entre .80 y 1 ante retrasos sostenidos:
+requiere más de 2.5 s de presión acumulada y recupera .025 después de 12 s
+estables. Se ignoran pausas y construcciones de mapas mayores a .25 s.
+No usa glFinish, consultas bloqueantes de tiempo ni System.gc en el juego.
+La medida incluye duración CPU y separación de cuadros; no es un temporizador
+GPU y puede responder también a carga externa del sistema.
+Resolución completa respeta el tamaño nativo, dentro del máximo del hardware.
+Las protecciones de temperatura y la opción Fresco existentes se conservan.
+
+ANDROID
+Mínimo API 19 / Android 4.4. Tema alternativo Holo en API 19/20 y Material en
+API 21 o posterior. Espaciado de letras protegido desde API 21; color sRGB
+protegido desde API 26; frecuencia de superficie protegida desde API 30.
+Sin librerías nativas ni filtros ABI específicos. SDK 34 para compilar.
+
+ALCANCE DE LAS PRUEBAS
+Lógica Kotlin/JVM, variantes GLSL y capturas directas con GLES2 Mesa/llvmpipe.
+No son FPS, autonomía ni temperaturas de POCO, Redmi o Infinix físicos.
+El mínimo de Android se comprueba por compilación y Lint; no por un teléfono
+real con KitKat. Falta confirmar el arreglo y las sesiones largas en equipos.

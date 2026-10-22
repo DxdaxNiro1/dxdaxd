@@ -1,0 +1,16 @@
+{
+  "version": "2.9",
+  "packages": [
+    {
+      "file": "DreamCore_2_9_Compatibilidad.zip",
+      "bytes": 73743385,
+      "sha256": "b2f1c30e2307a3b6bfa8378e79e6b999c2000ccde55615ac5da95bc23a93753c"
+    },
+    {
+      "file": "DreamCore_2_9_Proyecto_Completo.zip",
+      "bytes": 74505253,
+      "sha256": "2c0d504cddd9b635ad3d3f084aac0dd11f89c7c03307125e0da6a8de68ad1599"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

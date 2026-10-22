@@ -1,0 +1,418 @@
+[
+  {
+    "world": "title",
+    "mean_absolute_error": 0.05165637860082305,
+    "maximum": 17.0,
+    "fraction_changed_more_than_2": 0.0021373456790123456,
+    "fraction_changed_more_than_16": 7.71604938271605e-06,
+    "exact_pixels": 0.9035956790123457
+  },
+  {
+    "world": "dream_01",
+    "mean_absolute_error": 0.06067644032921811,
+    "maximum": 16.0,
+    "fraction_changed_more_than_2": 0.0022145061728395064,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.8842824074074074
+  },
+  {
+    "world": "dream_02",
+    "mean_absolute_error": 0.005805041152263374,
+    "maximum": 5.0,
+    "fraction_changed_more_than_2": 9.259259259259259e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.986358024691358
+  },
+  {
+    "world": "dream_03",
+    "mean_absolute_error": 0.004601337448559671,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 0.00022376543209876544,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9897376543209877
+  },
+  {
+    "world": "dream_04",
+    "mean_absolute_error": 0.048654835390946505,
+    "maximum": 84.0,
+    "fraction_changed_more_than_2": 0.0013425925925925925,
+    "fraction_changed_more_than_16": 0.0002469135802469136,
+    "exact_pixels": 0.9119135802469136
+  },
+  {
+    "world": "dream_05",
+    "mean_absolute_error": 0.04426440329218107,
+    "maximum": 36.0,
+    "fraction_changed_more_than_2": 0.0013194444444444445,
+    "fraction_changed_more_than_16": 4.6296296296296294e-05,
+    "exact_pixels": 0.9114506172839506
+  },
+  {
+    "world": "dream_06",
+    "mean_absolute_error": 0.013724279835390946,
+    "maximum": 6.0,
+    "fraction_changed_more_than_2": 2.3148148148148147e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9632175925925925
+  },
+  {
+    "world": "dream_07",
+    "mean_absolute_error": 0.006460905349794239,
+    "maximum": 5.0,
+    "fraction_changed_more_than_2": 5.401234567901235e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9831481481481481
+  },
+  {
+    "world": "dream_08",
+    "mean_absolute_error": 0.0057304526748971196,
+    "maximum": 31.0,
+    "fraction_changed_more_than_2": 2.3148148148148147e-05,
+    "fraction_changed_more_than_16": 7.71604938271605e-06,
+    "exact_pixels": 0.9860030864197531
+  },
+  {
+    "world": "dream_09",
+    "mean_absolute_error": 0.059251543209876543,
+    "maximum": 21.0,
+    "fraction_changed_more_than_2": 0.0015895061728395062,
+    "fraction_changed_more_than_16": 2.3148148148148147e-05,
+    "exact_pixels": 0.8790432098765432
+  },
+  {
+    "world": "dream_10",
+    "mean_absolute_error": 0.03775977366255144,
+    "maximum": 15.0,
+    "fraction_changed_more_than_2": 0.0015123456790123457,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9280092592592593
+  },
+  {
+    "world": "dream_11",
+    "mean_absolute_error": 0.04869855967078189,
+    "maximum": 25.0,
+    "fraction_changed_more_than_2": 0.002191358024691358,
+    "fraction_changed_more_than_16": 2.3148148148148147e-05,
+    "exact_pixels": 0.9153472222222222
+  },
+  {
+    "world": "dream_12",
+    "mean_absolute_error": 0.045218621399176956,
+    "maximum": 61.0,
+    "fraction_changed_more_than_2": 0.001535493827160494,
+    "fraction_changed_more_than_16": 0.00016203703703703703,
+    "exact_pixels": 0.9092283950617284
+  },
+  {
+    "world": "dream_13",
+    "mean_absolute_error": 0.06368055555555556,
+    "maximum": 14.0,
+    "fraction_changed_more_than_2": 0.0019212962962962964,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.8757098765432099
+  },
+  {
+    "world": "dream_14",
+    "mean_absolute_error": 0.11299897119341563,
+    "maximum": 80.0,
+    "fraction_changed_more_than_2": 0.005300925925925926,
+    "fraction_changed_more_than_16": 0.00016975308641975308,
+    "exact_pixels": 0.8137037037037037
+  },
+  {
+    "world": "dream_15",
+    "mean_absolute_error": 0.07051440329218107,
+    "maximum": 98.0,
+    "fraction_changed_more_than_2": 0.003279320987654321,
+    "fraction_changed_more_than_16": 0.00014660493827160494,
+    "exact_pixels": 0.8865509259259259
+  },
+  {
+    "world": "dark_01",
+    "mean_absolute_error": 0.033037551440329216,
+    "maximum": 61.0,
+    "fraction_changed_more_than_2": 0.001566358024691358,
+    "fraction_changed_more_than_16": 0.00034722222222222224,
+    "exact_pixels": 0.9578858024691358
+  },
+  {
+    "world": "dark_02",
+    "mean_absolute_error": 0.024547325102880657,
+    "maximum": 100.0,
+    "fraction_changed_more_than_2": 0.001095679012345679,
+    "fraction_changed_more_than_16": 0.00016203703703703703,
+    "exact_pixels": 0.962229938271605
+  },
+  {
+    "world": "pocket_laundry",
+    "mean_absolute_error": 0.002646604938271605,
+    "maximum": 4.0,
+    "fraction_changed_more_than_2": 5.401234567901235e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9937422839506173
+  },
+  {
+    "world": "pocket_train",
+    "mean_absolute_error": 0.002880658436213992,
+    "maximum": 5.0,
+    "fraction_changed_more_than_2": 3.08641975308642e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9927391975308641
+  },
+  {
+    "world": "pocket_dawn",
+    "mean_absolute_error": 0.0024176954732510287,
+    "maximum": 4.0,
+    "fraction_changed_more_than_2": 5.401234567901235e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9940586419753087
+  },
+  {
+    "world": "pocket_tower",
+    "mean_absolute_error": 0.01330761316872428,
+    "maximum": 16.0,
+    "fraction_changed_more_than_2": 0.00033950617283950616,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9717978395061728
+  },
+  {
+    "world": "pocket_cloudbed",
+    "mean_absolute_error": 0.007175925925925926,
+    "maximum": 34.0,
+    "fraction_changed_more_than_2": 0.00016975308641975308,
+    "fraction_changed_more_than_16": 7.71604938271605e-06,
+    "exact_pixels": 0.9857716049382717
+  },
+  {
+    "world": "pocket_refuge",
+    "mean_absolute_error": 0.0008204732510288066,
+    "maximum": 6.0,
+    "fraction_changed_more_than_2": 3.08641975308642e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9980324074074074
+  },
+  {
+    "world": "photo_house",
+    "mean_absolute_error": 0.05004115226337449,
+    "maximum": 15.0,
+    "fraction_changed_more_than_2": 0.0014506172839506173,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.8965046296296296
+  },
+  {
+    "world": "photo_sea",
+    "mean_absolute_error": 0.010246913580246913,
+    "maximum": 14.0,
+    "fraction_changed_more_than_2": 6.17283950617284e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9732021604938271
+  },
+  {
+    "world": "photo_window",
+    "mean_absolute_error": 0.041430041152263376,
+    "maximum": 39.0,
+    "fraction_changed_more_than_2": 0.0016975308641975309,
+    "fraction_changed_more_than_16": 4.6296296296296294e-05,
+    "exact_pixels": 0.9230401234567901
+  },
+  {
+    "world": "photo_planet",
+    "mean_absolute_error": 0.12526748971193416,
+    "maximum": 75.0,
+    "fraction_changed_more_than_2": 0.008287037037037037,
+    "fraction_changed_more_than_16": 0.00030092592592592595,
+    "exact_pixels": 0.8149228395061728
+  },
+  {
+    "world": "pocket_letter",
+    "mean_absolute_error": 0.0007587448559670781,
+    "maximum": 4.0,
+    "fraction_changed_more_than_2": 7.71604938271605e-06,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9979475308641975
+  },
+  {
+    "world": "pocket_gravity",
+    "mean_absolute_error": 0.06330761316872428,
+    "maximum": 59.0,
+    "fraction_changed_more_than_2": 0.0019598765432098765,
+    "fraction_changed_more_than_16": 0.00023919753086419754,
+    "exact_pixels": 0.883070987654321
+  },
+  {
+    "world": "echo_01",
+    "mean_absolute_error": 0.012659465020576131,
+    "maximum": 10.0,
+    "fraction_changed_more_than_2": 6.17283950617284e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9649151234567901
+  },
+  {
+    "world": "echo_02",
+    "mean_absolute_error": 0.06438528806584362,
+    "maximum": 77.0,
+    "fraction_changed_more_than_2": 0.0019830246913580245,
+    "fraction_changed_more_than_16": 0.0002160493827160494,
+    "exact_pixels": 0.891712962962963
+  },
+  {
+    "world": "echo_03",
+    "mean_absolute_error": 0.00628858024691358,
+    "maximum": 10.0,
+    "fraction_changed_more_than_2": 0.000470679012345679,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.987337962962963
+  },
+  {
+    "world": "echo_04",
+    "mean_absolute_error": 0.030151748971193416,
+    "maximum": 10.0,
+    "fraction_changed_more_than_2": 0.0004089506172839506,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9297453703703704
+  },
+  {
+    "world": "echo_05",
+    "mean_absolute_error": 0.022597736625514404,
+    "maximum": 10.0,
+    "fraction_changed_more_than_2": 0.00036265432098765433,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9483487654320988
+  },
+  {
+    "world": "echo_06",
+    "mean_absolute_error": 0.03577417695473251,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 0.00018518518518518518,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9129243827160494
+  },
+  {
+    "world": "echo_07",
+    "mean_absolute_error": 0.032476851851851854,
+    "maximum": 11.0,
+    "fraction_changed_more_than_2": 0.0005478395061728395,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9322530864197531
+  },
+  {
+    "world": "echo_08",
+    "mean_absolute_error": 0.03589506172839506,
+    "maximum": 12.0,
+    "fraction_changed_more_than_2": 0.0006327160493827161,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9199074074074074
+  },
+  {
+    "world": "echo_09",
+    "mean_absolute_error": 0.0010905349794238684,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 3.08641975308642e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9971604938271605
+  },
+  {
+    "world": "echo_10",
+    "mean_absolute_error": 0.0022968106995884773,
+    "maximum": 10.0,
+    "fraction_changed_more_than_2": 1.54320987654321e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9954783950617284
+  },
+  {
+    "world": "echo_11",
+    "mean_absolute_error": 0.0004603909465020576,
+    "maximum": 4.0,
+    "fraction_changed_more_than_2": 1.54320987654321e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9988503086419753
+  },
+  {
+    "world": "preview_eyes",
+    "mean_absolute_error": 0.037690329218107,
+    "maximum": 5.0,
+    "fraction_changed_more_than_2": 0.00032407407407407406,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9276851851851852
+  },
+  {
+    "world": "dream_rose_island",
+    "mean_absolute_error": 0.009886831275720164,
+    "maximum": 8.0,
+    "fraction_changed_more_than_2": 4.6296296296296294e-05,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9743364197530864
+  },
+  {
+    "world": "backrooms_01",
+    "mean_absolute_error": 0.0005015432098765432,
+    "maximum": 2.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9985416666666667
+  },
+  {
+    "world": "dream_sky_openings",
+    "mean_absolute_error": 0.06144032921810699,
+    "maximum": 20.0,
+    "fraction_changed_more_than_2": 0.0005015432098765432,
+    "fraction_changed_more_than_16": 7.71604938271605e-06,
+    "exact_pixels": 0.8770833333333333
+  },
+  {
+    "world": "dream_cloud_castle",
+    "mean_absolute_error": 0.027996399176954734,
+    "maximum": 9.0,
+    "fraction_changed_more_than_2": 0.0003935185185185185,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9324151234567901
+  },
+  {
+    "world": "dream_flower_city",
+    "mean_absolute_error": 0.015689300411522635,
+    "maximum": 28.0,
+    "fraction_changed_more_than_2": 0.00036265432098765433,
+    "fraction_changed_more_than_16": 7.71604938271605e-06,
+    "exact_pixels": 0.9636265432098765
+  },
+  {
+    "world": "dream_grass_fissures",
+    "mean_absolute_error": 0.015300925925925926,
+    "maximum": 7.0,
+    "fraction_changed_more_than_2": 0.00015432098765432098,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.964837962962963
+  },
+  {
+    "world": "pocket_call_house",
+    "mean_absolute_error": 0.002021604938271605,
+    "maximum": 1.0,
+    "fraction_changed_more_than_2": 0.0,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9940509259259259
+  },
+  {
+    "world": "dark_03",
+    "mean_absolute_error": 0.034585905349794235,
+    "maximum": 109.0,
+    "fraction_changed_more_than_2": 0.0016280864197530864,
+    "fraction_changed_more_than_16": 0.00028549382716049385,
+    "exact_pixels": 0.9516512345679012
+  },
+  {
+    "world": "dark_04",
+    "mean_absolute_error": 0.038917181069958846,
+    "maximum": 117.0,
+    "fraction_changed_more_than_2": 0.0016666666666666668,
+    "fraction_changed_more_than_16": 0.0002160493827160494,
+    "exact_pixels": 0.9424382716049383
+  },
+  {
+    "world": "dream_sanctuary_clouds",
+    "mean_absolute_error": 0.03270576131687243,
+    "maximum": 10.0,
+    "fraction_changed_more_than_2": 0.00016975308641975308,
+    "fraction_changed_more_than_16": 0.0,
+    "exact_pixels": 0.9173070987654321
+  }
+]

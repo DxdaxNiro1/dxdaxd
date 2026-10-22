@@ -1,3 +1,12 @@
+# DreamCore 2.9 · Compatibilidad
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_9_Compatibilidad.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_9_Proyecto_Completo.zip) · [Ver perfiles gráficos](DreamCore_2_9_Compatibilidad/VISTAS.md)
+
+Correcciones de cálculos GLSL y formatos de textura, capacidades comprobadas al iniciar, ruta estable automática para Adreno 619, alternativa esencial y adaptación de carga. Mínimo ampliado a Android 4.4 / API 19 con GLES2. Conserva 51 escenarios, 52 músicas y guardado. [Instalación, diferencias visuales y límites](DreamCore_2_9_Compatibilidad/LEEME.md). Falta verificar físicamente el arreglo del color y la fluidez en POCO y el Redmi reportado.
+
+<details>
+<summary>Versiones anteriores</summary>
+
 # DreamCore 2.8 · Fluidez
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_8_Fluidez.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_8_Proyecto_Completo.zip) · [Comparación visual](DreamCore_2_8_Fluidez/VISTAS.md)
@@ -39,6 +48,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 
