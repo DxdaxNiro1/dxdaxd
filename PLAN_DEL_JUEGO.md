@@ -2,6 +2,14 @@
 
 Decisiones del usuario, conversación del 19 de octubre de 2026 (America/La_Paz).
 
+## Implementado en 3.0 · El último tren
+
+Se integran las 24 propuestas y cerrar los ojos: tren con destinos, billetes alternativos, dormir, imitador distante, muebles móviles, tiza, grabadora de eventos del juego, proyector, piano, sombra independiente, huellas, válvulas, telescopio, maqueta, biblioteca, feria, intercambio, perspectiva, ventanas, diario visual, telas/vegetación, adaptación de vista, controles ajustables y preparación gradual de lotes. Tres destinos registrados nuevos, 54 mundos en total y 55 músicas.
+
+Las lunas se remodelan y reciben otro atlas según las referencias del usuario; conservan mirada, parpadeos, sonrisa, rojo a 60 s y gigante a 120 s. La pradera de ojos sigue sin ataques. Se conservan las rutas estable y esencial de 2.9 y el mínimo API 19.
+
+Se prueban las interacciones, guardado y accesos por programa; compila Android y se renderiza en GLES2 de escritorio. Sigue pendiente medir FPS/calor en teléfonos reales. La construcción procedural inicial continúa síncrona, aunque indexación y subidas se reparten entre cuadros. [Detalle de la actualización](DreamCore_3_0_El_Ultimo_Tren/DETALLES_3_0.md).
+
 ## Implementado y verificado por programa en 2.3 · prueba física pendiente
 
 - Convertir el pueblo en una aventura con decisiones y varias formas de investigar. Su problema actual es que caminar hasta el siguiente portal resulta lineal y predecible.

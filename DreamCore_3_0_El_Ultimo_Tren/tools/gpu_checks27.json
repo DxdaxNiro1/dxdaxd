@@ -1,0 +1,94 @@
+{
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "programs": [
+    {
+      "pair": "DreamShaders.kt:fragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:fragmentShader:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:skyFragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:skyFragmentShader:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:shadowFragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamShaders.kt:shadowFragmentShader:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:fragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:fragmentShader:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:skyFragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLegacyShaders.kt:skyFragmentShader:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLunarShaders27.kt:fragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamLunarShaders27.kt:fragmentShader:mediump",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamPost26.kt:aoFragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamPost26.kt:compositeFragmentShader",
+      "linked": true,
+      "log": ""
+    },
+    {
+      "pair": "DreamPost26.kt:bloomFragmentShader",
+      "linked": true,
+      "log": ""
+    }
+  ],
+  "ao": {
+    "flat": {
+      "minimum": 255,
+      "mean": 255.0,
+      "fraction_below_250": 0.0
+    },
+    "contact": {
+      "minimum": 186,
+      "mean": 254.9701909722222,
+      "fraction_below_250": 0.00140625
+    }
+  },
+  "depth_type": "GL_UNSIGNED_INT; highp sampler; texel-centered reconstruction",
+  "phone_test": false
+}

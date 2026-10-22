@@ -1,3 +1,14 @@
+# DreamCore 3.0 · El último tren
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_El_Ultimo_Tren.zip) · [Proyecto completo para Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_Proyecto_Completo.zip) · [Ver las lunas y nuevos lugares](DreamCore_3_0_El_Ultimo_Tren/VISTAS.md)
+
+Tren con destinos, objetos que se pueden mover, tiza, grabadora, piano, proyector, nuevas decisiones y secretos, diario visual y controles ajustables. Biblioteca, feria y parada secreta: **54 escenarios y 55 músicas**. Lunas remodeladas, conservando parpadeo, mirada, cambio a rojo al minuto y aparición gigante a los dos minutos. [Instalación y límites](DreamCore_3_0_El_Ultimo_Tren/LEEME.md) · [Funciones y lugares](DreamCore_3_0_El_Ultimo_Tren/DETALLES_3_0.md) · [Validación](DreamCore_3_0_El_Ultimo_Tren/VALIDACION.json).
+
+Se conservan los perfiles compatibles de 2.9 y API 19. Modelos reutilizados y preparación gradual de lotes; falta medir fluidez y temperatura en teléfonos físicos.
+
+<details>
+<summary>Versiones anteriores</summary>
+
 # DreamCore 2.9 · Compatibilidad
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_9_Compatibilidad.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_2_9_Proyecto_Completo.zip) · [Ver perfiles gráficos](DreamCore_2_9_Compatibilidad/VISTAS.md)
@@ -48,6 +59,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 

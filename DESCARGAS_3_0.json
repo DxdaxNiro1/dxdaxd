@@ -1,0 +1,18 @@
+{
+  "version": "3.0",
+  "packages": [
+    {
+      "file": "DreamCore_3_0_El_Ultimo_Tren.zip",
+      "bytes": 71716793,
+      "sha256": "8ca7f633ec83f024b71fcd1c2553294dc854d73c9d7df11d6ef0aeaac1231748",
+      "files": 423
+    },
+    {
+      "file": "DreamCore_3_0_Proyecto_Completo.zip",
+      "bytes": 72478487,
+      "sha256": "e1b4a6b83091091c429c6aab57d47403c801269572e3b2a29a153f3b36da640e",
+      "files": 442
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

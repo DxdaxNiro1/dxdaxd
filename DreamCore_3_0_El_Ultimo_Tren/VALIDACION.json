@@ -1,0 +1,84 @@
+{
+  "version": "3.0",
+  "android": {
+    "build": "assembleDebug passed",
+    "lint": "lintDebug passed; no errors",
+    "min_sdk": 19,
+    "compile_sdk": 34,
+    "target_sdk": 34,
+    "version_code": 30,
+    "signatures": [
+      "v1",
+      "v2"
+    ],
+    "phone_test": false
+  },
+  "jvm_checks": {
+    "checks": {
+      "Journey19Check": 711,
+      "CraterPhysicsCheck": 36,
+      "RadialFallCheck": 480,
+      "MoonTravel17Check": 81,
+      "Ecos18Check": 847,
+      "Horizons19Check": 785,
+      "Voyage20Check": 5314,
+      "References21Check": 858,
+      "Miradas22Check": 6296,
+      "Desvios23Check": 63733,
+      "Resonancias24Check": 443,
+      "Graphics26Check": 496,
+      "Vigilia27Check": 64180,
+      "Fluidez28Check": 49425,
+      "Compatibility29Check": 1472,
+      "UltimoTren30Check": 114
+    },
+    "total": 195271
+  },
+  "gl_capability_trace_checks": 22,
+  "gpu_lifecycle_checks": 12,
+  "specialized_shader_programs": 440,
+  "compatibility_frames": 108,
+  "gameplay_and_lunar_frames": 44,
+  "resources": {
+    "preserved_resource_files": 145,
+    "changed_resource_files": [
+      "drawable-nodpi/music_cover_18_24.png",
+      "drawable-nodpi/music_cover_50_27.png",
+      "drawable-nodpi/music_cover_17_24.png",
+      "drawable-nodpi/dream_lunar_faces_27.png",
+      "drawable-nodpi/music_cover_51_27.png"
+    ],
+    "new_resource_files": [
+      "drawable-nodpi/music_cover_55_30.png",
+      "drawable-nodpi/music_cover_54_30.png",
+      "drawable-nodpi/music_cover_53_30.png",
+      "raw/fx_piano0_30.ogg",
+      "raw/fx_train30.ogg",
+      "raw/fx_projector30.ogg",
+      "raw/fx_room30.ogg",
+      "raw/fx_chalk30.ogg",
+      "raw/fx_valve30.ogg",
+      "raw/fx_piano4_30.ogg",
+      "raw/fx_tape30.ogg",
+      "raw/fx_paper30.ogg",
+      "raw/music_score_54_30.ogg",
+      "raw/fx_wind30.ogg",
+      "raw/music_score_53_30.ogg",
+      "raw/fx_piano5_30.ogg",
+      "raw/fx_piano6_30.ogg",
+      "raw/fx_piano1_30.ogg",
+      "raw/music_score_55_30.ogg",
+      "raw/fx_piano3_30.ogg",
+      "raw/fx_carousel30.ogg",
+      "raw/fx_piano2_30.ogg"
+    ],
+    "previous_world_geometry_unchanged": 51,
+    "maps": 54,
+    "scores": 55
+  },
+  "remaining_limits": [
+    "No physical phone FPS/temperature measurement",
+    "First procedural scene construction remains synchronous",
+    "Windows installer reviewed, not run on Windows"
+  ]
+}
