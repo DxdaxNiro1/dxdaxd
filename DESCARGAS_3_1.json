@@ -1,0 +1,16 @@
+{
+  "version": "3.1",
+  "packages": [
+    {
+      "file": "DreamCore_3_1_Terror.zip",
+      "bytes": 87922673,
+      "sha256": "56b621e6c29826e4c8edab4b0167acb632763c5598672ee2526c326f0ac53315"
+    },
+    {
+      "file": "DreamCore_3_1_Proyecto_Completo.zip",
+      "bytes": 88693202,
+      "sha256": "030094463fabf85644fdb9327855bbd72e6ade88079f0b34488993a3457d9ee9"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

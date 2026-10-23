@@ -1,0 +1,198 @@
+[
+  {
+    "number": 56,
+    "world": "horror_atrium32",
+    "title": "El coro detrás de la puerta",
+    "map": "El coro de las puertas torcidas",
+    "lead": "choir",
+    "root": 46,
+    "motif": [
+      0,
+      1,
+      7,
+      3,
+      10,
+      5
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 9.0,
+    "seconds": 112,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_56_32",
+    "cover": "music_cover_56_32",
+    "seed": 32000
+  },
+  {
+    "number": 57,
+    "world": "horror_garden32",
+    "title": "Las antenas saben tu nombre",
+    "map": "El jardín de las antenas",
+    "lead": "glass",
+    "root": 49,
+    "motif": [
+      0,
+      7,
+      1,
+      8,
+      3,
+      12
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 9.33,
+    "seconds": 116,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_57_32",
+    "cover": "music_cover_57_32",
+    "seed": 32137
+  },
+  {
+    "number": 58,
+    "world": "horror_road32",
+    "title": "El farol que queda encendido",
+    "map": "El camino de los testigos",
+    "lead": "tape",
+    "root": 42,
+    "motif": [
+      0,
+      6,
+      1,
+      9,
+      2,
+      7
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 9.66,
+    "seconds": 120,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_58_32",
+    "cover": "music_cover_58_32",
+    "seed": 32274
+  },
+  {
+    "number": 59,
+    "world": "horror_forest32",
+    "title": "Un sol que no calienta",
+    "map": "El bosque del sol vacío",
+    "lead": "bow",
+    "root": 41,
+    "motif": [
+      0,
+      1,
+      8,
+      5,
+      11,
+      3
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 9.99,
+    "seconds": 124,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_59_32",
+    "cover": "music_cover_59_32",
+    "seed": 32411
+  },
+  {
+    "number": 60,
+    "world": "horror_screens32",
+    "title": "Flores en una señal vacía",
+    "map": "El herbario de las pantallas",
+    "lead": "musicbox",
+    "root": 51,
+    "motif": [
+      0,
+      3,
+      1,
+      7,
+      10,
+      6
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 10.32,
+    "seconds": 128,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_60_32",
+    "cover": "music_cover_60_32",
+    "seed": 32548
+  },
+  {
+    "number": 61,
+    "world": "horror_house32",
+    "title": "Lo que sostiene una casa",
+    "map": "La casa del hilo",
+    "lead": "felt",
+    "root": 54,
+    "motif": [
+      0,
+      7,
+      2,
+      9,
+      1,
+      5
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 10.65,
+    "seconds": 132,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_61_32",
+    "cover": "music_cover_61_32",
+    "seed": 32685
+  },
+  {
+    "number": 62,
+    "world": "horror_pool32",
+    "title": "El mar escucha desde abajo",
+    "map": "La piscina del horizonte",
+    "lead": "water",
+    "root": 45,
+    "motif": [
+      0,
+      5,
+      1,
+      8,
+      3,
+      10
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 10.98,
+    "seconds": 136,
+    "description": "composición original: silencio, resonancias y tensión lenta",
+    "resource": "music_score_62_32",
+    "cover": "music_cover_62_32",
+    "seed": 32822
+  }
+]

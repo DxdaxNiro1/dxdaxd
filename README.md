@@ -1,3 +1,16 @@
+# DreamCore 3.1 · Los testigos
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_1_Terror.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_1_Proyecto_Completo.zip) · [Ver imágenes del motor](DreamCore_3_1_Terror/VISTAS.md)
+
+Optimización interna de carga y dibujo, materiales compartidos nuevos y encuentros de terror inspirados en los nueve videos accesibles: siete escenarios, diez modelos y siete músicas adicionales. **61 escenarios y 62 composiciones**. Se conservan el guardado, las interacciones anteriores, las lunas vivas y la pradera de ojos sin ataques.
+
+[Instalación](DreamCore_3_1_Terror/LEEME.md) · [Lugares y referencias](DreamCore_3_1_Terror/REFERENCIAS_3_1.md) · [Mediciones y límites](DreamCore_3_1_Terror/RENDIMIENTO_3_1.md) · [Validación](DreamCore_3_1_Terror/VALIDACION_3_1.json).
+
+Las pruebas de rendimiento corresponden a GLES2/Mesa; falta medir FPS y temperatura en teléfonos físicos. El archivo de video dañado se omitió según la indicación del usuario.
+
+<details>
+<summary>Versiones anteriores</summary>
+
 # DreamCore 3.0.1 · Corrección del inicio gráfico
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_1_Correccion_Texturas.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_0_1_Proyecto_Completo.zip)
@@ -70,6 +83,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 

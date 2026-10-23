@@ -1,0 +1,404 @@
+{
+  "backend": "GLES2 Mesa llvmpipe",
+  "phone_test": false,
+  "views": [
+    {
+      "name": "biblioteca_completo",
+      "world": "dream_library30",
+      "colors": 12259,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "biblioteca_estable",
+      "world": "dream_library30",
+      "colors": 11716,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "biblioteca_esencial",
+      "world": "dream_library30",
+      "colors": 1358,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "piano_completo",
+      "world": "dream_library30",
+      "colors": 13319,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "piano_estable",
+      "world": "dream_library30",
+      "colors": 12417,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "piano_esencial",
+      "world": "dream_library30",
+      "colors": 2340,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "proyeccion_completo",
+      "world": "dream_library30",
+      "colors": 11187,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "proyeccion_estable",
+      "world": "dream_library30",
+      "colors": 9784,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "proyeccion_esencial",
+      "world": "dream_library30",
+      "colors": 1217,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "maqueta_completo",
+      "world": "dream_library30",
+      "colors": 13556,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "maqueta_estable",
+      "world": "dream_library30",
+      "colors": 12749,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "maqueta_esencial",
+      "world": "dream_library30",
+      "colors": 1635,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "marco_completo",
+      "world": "dream_library30",
+      "colors": 6183,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "marco_estable",
+      "world": "dream_library30",
+      "colors": 5797,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "marco_esencial",
+      "world": "dream_library30",
+      "colors": 1360,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "feria_completo",
+      "world": "dream_fair30",
+      "colors": 28146,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "feria_estable",
+      "world": "dream_fair30",
+      "colors": 28118,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "feria_esencial",
+      "world": "dream_fair30",
+      "colors": 3654,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "deposito_completo",
+      "world": "dream_fair30",
+      "colors": 48143,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "deposito_estable",
+      "world": "dream_fair30",
+      "colors": 47335,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "deposito_esencial",
+      "world": "dream_fair30",
+      "colors": 2232,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "telescopio_completo",
+      "world": "dream_fair30",
+      "colors": 27715,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "telescopio_estable",
+      "world": "dream_fair30",
+      "colors": 27651,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "telescopio_esencial",
+      "world": "dream_fair30",
+      "colors": 2372,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "anden_secreto_completo",
+      "world": "dream_station30",
+      "colors": 28256,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "anden_secreto_estable",
+      "world": "dream_station30",
+      "colors": 27346,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "anden_secreto_esencial",
+      "world": "dream_station30",
+      "colors": 4676,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "refugio_completo",
+      "world": "pocket_refuge",
+      "colors": 11876,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "refugio_estable",
+      "world": "pocket_refuge",
+      "colors": 10286,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "refugio_esencial",
+      "world": "pocket_refuge",
+      "colors": 1632,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "tren_completo",
+      "world": "pocket_train",
+      "colors": 12583,
+      "options": [],
+      "real_gles": true
+    },
+    {
+      "name": "tren_estable",
+      "world": "pocket_train",
+      "colors": 11359,
+      "options": [
+        "--no-depth"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "tren_esencial",
+      "world": "pocket_train",
+      "colors": 1517,
+      "options": [
+        "--legacy",
+        "--mediump"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "luna_azul",
+      "world": "dark_01",
+      "colors": 18434,
+      "options": [
+        "--lunar-models"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "luna_roja_60s",
+      "world": "dark_01",
+      "colors": 18440,
+      "options": [
+        "--lunar-models",
+        "--vigil",
+        "60"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "luna_parpadeo",
+      "world": "dark_01",
+      "colors": 18369,
+      "options": [
+        "--lunar-models",
+        "--blink",
+        "1"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "luna_gigante_120s",
+      "world": "dark_01",
+      "colors": 55284,
+      "options": [
+        "--lunar-models",
+        "--vigil",
+        "120"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "luna_cercana",
+      "world": "dark_01",
+      "colors": 25860,
+      "options": [
+        "--lunar-models",
+        "--fov",
+        "36",
+        "--sky-only",
+        "--only-main-moon"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "luna_creciente",
+      "world": "dark_01",
+      "colors": 15635,
+      "options": [
+        "--lunar-models",
+        "--moon-variant",
+        "6",
+        "--only-main-moon",
+        "--sky-only",
+        "--fov",
+        "36"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "dark_cover_17",
+      "world": "dark_01",
+      "colors": 18434,
+      "options": [
+        "--lunar-models"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "dark_cover_18",
+      "world": "dark_02",
+      "colors": 21536,
+      "options": [
+        "--lunar-models"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "dark_cover_50",
+      "world": "dark_03",
+      "colors": 29029,
+      "options": [
+        "--lunar-models"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "dark_cover_51",
+      "world": "dark_04",
+      "colors": 21071,
+      "options": [
+        "--lunar-models"
+      ],
+      "real_gles": true
+    },
+    {
+      "name": "estacion_palida",
+      "world": "dream_station30",
+      "variant": 2,
+      "real_gles": true
+    }
+  ]
+}

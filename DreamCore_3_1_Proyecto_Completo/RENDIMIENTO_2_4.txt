@@ -1,0 +1,7 @@
+DreamCore 2.4: source/resources match the assembled and signature-verified APK.
+49 new prerecorded stereo Vorbis resources, 32 kHz. No runtime synthesis.
+Music room uses existing bounded mixer: maximum two music and two ambience players during transitions; only current thumbnail loaded.
+The simulated lifecycle test covers all world selections, rapid previews, title/scene restoration, pause, background, mute and release.
+Album uses one HTML audio element and no external requests in the desktop/mobile browser test.
+All existing 2.3 thermal/frame/culling/reflection settings are retained byte-for-byte where checked.
+No physical phone FPS, temperature, battery or power measurements, and no Android UI/device execution.

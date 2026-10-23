@@ -1,0 +1,394 @@
+[
+  {
+    "world": "title",
+    "file": "01 - Antes de recordar.mp3",
+    "sha256": "9e1c56c13b19dfb90901adcfc46c3886e380b502e0bf33636c922951365d9a98",
+    "bytes": 542148,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_01",
+    "file": "02 - Cinco puertas al atardecer.mp3",
+    "sha256": "c48f47699097ee1d4cfa119b66d9585105dfe7fc5028fed3769d86650946310d",
+    "bytes": 755093,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_02",
+    "file": "03 - El agua conserva las voces.mp3",
+    "sha256": "7de40d527b96006a70b06e2b6093fcebc34c7d486b4e83478c6f7b3a076150c0",
+    "bytes": 786970,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_03",
+    "file": "04 - Casas que caen despacio.mp3",
+    "sha256": "a52a9cbe98edcd0149ae88680018bc9acb88a92b2ac3e2f8c08da10f51a19912",
+    "bytes": 780392,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_04",
+    "file": "05 - La lluvia olvidó el suelo.mp3",
+    "sha256": "bf27de85d55af0db8819e81000ce33b3082f28acb74c4ccecd2a959a74268d13",
+    "bytes": 811464,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_05",
+    "file": "06 - Alguien dejó la luz.mp3",
+    "sha256": "d533b200be94eca55f431b25483e9a8bd7a46ab9d13b9e85fe50af9490c81a99",
+    "bytes": 567003,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_06",
+    "file": "07 - Mareas sobre las ventanas.mp3",
+    "sha256": "2c452a79ea477be22c3f41b1d55ef4ffe7bcb1ba78d3f511d337dda370d3b19b",
+    "bytes": 700545,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_07",
+    "file": "08 - La puerta del fondo respira.mp3",
+    "sha256": "23bf2538dffdfe185bc74098a9042422867f2907f98430d942ab0a134c9d0744",
+    "bytes": 635966,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_08",
+    "file": "09 - Una lámpara en el abismo.mp3",
+    "sha256": "42c9184afcc46e65949c279d2f70d15b57316fb7fc1a90c8a5128c95573f7b00",
+    "bytes": 673946,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_09",
+    "file": "10 - La partida sin contrincante.mp3",
+    "sha256": "4e78a4a632ca86844fb28ba073836ab6376ee02625cf4c88797fd9ce53c402a3",
+    "bytes": 650578,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_10",
+    "file": "11 - Porcelana que llora.mp3",
+    "sha256": "150e9bf4bc64a78cf92da5acc583ab29040887f9c149562bbfca8b082a80908c",
+    "bytes": 676023,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_11",
+    "file": "12 - Habitaciones a la deriva.mp3",
+    "sha256": "070c246fd7b35cefa474fd27d34259bf02986d2bd9cd03bd70baa62d6f73dd7f",
+    "bytes": 969437,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_12",
+    "file": "13 - La curva que nadie recuerda.mp3",
+    "sha256": "6794e9cd63aad1fe662f505a451f813a12d998d690fca228a797986323041547",
+    "bytes": 582580,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_13",
+    "file": "14 - Lágrimas que sostienen el cielo.mp3",
+    "sha256": "f9895f59bdfb31d660da973bc074c0f0fd64f0849fdc4e149b374c366e844c9d",
+    "bytes": 748798,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_14",
+    "file": "15 - Órbitas de infancia.mp3",
+    "sha256": "f03cadc1aa3467e276e3a17e1e8223c6d54a2d42a5f3d31a9ee7680845ac0438",
+    "bytes": 927191,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_15",
+    "file": "16 - El recreo después del fin.mp3",
+    "sha256": "ac49f4bb34ec4d81e154bb782e3efea65dddea6b54165bc4f17d68f73e71a822",
+    "bytes": 724757,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dark_01",
+    "file": "17 - Sonríe cuando no miras.mp3",
+    "sha256": "4b8bad58deb82fe2cf43d5c98c9072d595d78fc846bf22ea6cffe3bf69a2a56f",
+    "bytes": 609726,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dark_02",
+    "file": "18 - Flores para un trono vacío.mp3",
+    "sha256": "2dbccf0c7903036bfe41bb15b420723dae5219899e4e9ade36866648b2e7cd8e",
+    "bytes": 742982,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_laundry",
+    "file": "19 - La ropa de otra vida.mp3",
+    "sha256": "a242f2d849f6deeba5bef7d880755f71be61d2ea329986e23e9266f526e7f9f1",
+    "bytes": 753225,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_train",
+    "file": "20 - El último vagón sumergido.mp3",
+    "sha256": "8707d537f8416eaf0e4b14c253fa08131026e0b956a2673c10d79e24b246f52b",
+    "bytes": 627815,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_dawn",
+    "file": "21 - Las seis y nunca más.mp3",
+    "sha256": "a5e6419f0ad33819071aec6975551b44c1078705c96a12d8d26d6d085c347f5e",
+    "bytes": 785537,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_tower",
+    "file": "22 - El horizonte tenía una escalera.mp3",
+    "sha256": "c90ca5dbe3a2bc1e69b411b1024ba09055575644079fb19b3a24ec6e0eadf390",
+    "bytes": 646917,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_cloudbed",
+    "file": "23 - El peso azul del sueño.mp3",
+    "sha256": "e359516c258eed6c8fa43e46e79485f592c3a59a8b303c521786daff3bcbe952",
+    "bytes": 729036,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_refuge",
+    "file": "24 - También pusieron tu taza.mp3",
+    "sha256": "869f1a2cf5524966fd730dcc0d32ae4843fe43ca3b539c2b02be41e2135c1a52",
+    "bytes": 684839,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "photo_house",
+    "file": "25 - La casa antes de tu llegada.mp3",
+    "sha256": "847d4b2b2bc5c16b846da17ff035474bf7ec760044d99a542ed91305e8b71c6a",
+    "bytes": 751818,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "photo_sea",
+    "file": "26 - Una marea detenida en papel.mp3",
+    "sha256": "e159ab032dd530ef1c8b6ea71974ec7cd89848fab788c683fe7825b117b38cee",
+    "bytes": 689347,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "photo_window",
+    "file": "27 - El cielo detrás del cristal.mp3",
+    "sha256": "0a500ee3ab8c6f3c40e35f770146027c36569a81273d7ddee64a73b246036bee",
+    "bytes": 757537,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "photo_planet",
+    "file": "28 - Una órbita en el álbum.mp3",
+    "sha256": "4d5802bfb5fd3dd0ffa4205fa722b38cd6944d1ffce393517bc094ac493d7287",
+    "bytes": 938871,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_letter",
+    "file": "29 - Dirección - nadie, nunca.mp3",
+    "sha256": "126c0289d2b2a5668b6edae1f712ba2d8f4121e92177574a55f29bb2c4213f7a",
+    "bytes": 605834,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_gravity",
+    "file": "30 - El techo aprende tus pasos.mp3",
+    "sha256": "8f98a1b8cc777bde289af31a63447685c39e026e052b4e401e4823edbd2c6913",
+    "bytes": 662759,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_01",
+    "file": "31 - Calles que se doblan al dormir.mp3",
+    "sha256": "3156104034c151b55947ab231d5e7f5d57152ec8f17273a8a7b4c8c09fb69a68",
+    "bytes": 654141,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_02",
+    "file": "32 - La película que mira la Tierra.mp3",
+    "sha256": "bdf90de7184799cbb5c31d5edb51fd5a0ce2f4adda969ece761f2720c1397d91",
+    "bytes": 739941,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_03",
+    "file": "33 - Duchas para un valle vacío.mp3",
+    "sha256": "06667ca2d5aebb483b2a405550e33acf1c8470e554c15f8f8a4989142976df21",
+    "bytes": 829977,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_04",
+    "file": "34 - El reflejo llegó primero.mp3",
+    "sha256": "c0a440bcef54b2046bf29d722ed1d64577a4effed50b4e65fb93472ac305fe1d",
+    "bytes": 753596,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_05",
+    "file": "35 - Los hongos sueñan bajo el canal.mp3",
+    "sha256": "92ae9d8c6b09fad5d3efbbc3e8f39a32fd8db135e8ff07e7a886c103e86310df",
+    "bytes": 690938,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_06",
+    "file": "36 - Una nube ocupa todo el día.mp3",
+    "sha256": "74e3d643490d2ae2ec913fe7359ad1cddfd092f3e6778aa852dbefb3e12e3f4a",
+    "bytes": 675639,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_07",
+    "file": "37 - Nadie viene a repostar.mp3",
+    "sha256": "b5cfa289733ca199c7958fa08a1fb3e58ecfaeec69a850a6245e58e661b52dd6",
+    "bytes": 660816,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_08",
+    "file": "38 - Sombras que eligieron otro color.mp3",
+    "sha256": "2e7fe6928380a72316294982b630b0f527c1551abaa29395bd88f5a2d9c0fd66",
+    "bytes": 709770,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_09",
+    "file": "39 - Reservamos una silla para ti.mp3",
+    "sha256": "5d8d3192387476b00446ba4a44b0929cfe0662a7c9829728b1548c1242102675",
+    "bytes": 757095,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_10",
+    "file": "40 - Entre los pisos falta un nombre.mp3",
+    "sha256": "121f5c5bea5cb8951712a764e3c0414ad2ebc4f84e247ec30fe3e792fc782cba",
+    "bytes": 702071,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "echo_11",
+    "file": "41 - El archivo de las nubes.mp3",
+    "sha256": "0d6a8163901c62d53e708d0be7baf719f54b3d28f8315cf175ad6f08be3336e3",
+    "bytes": 838153,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "preview_eyes",
+    "file": "42 - El campo sabe que estás aquí.mp3",
+    "sha256": "627e0a21183a223b4d83ce53a1c3819dcf6fe9da12f87d3d4d8b6dc6ad10276f",
+    "bytes": 627360,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_rose_island",
+    "file": "43 - La casa rosa al final del aire.mp3",
+    "sha256": "d0940f61219f9c7fd7f6a6051ddce39bbca17f1e5bd303aa5b1ff70664f79101",
+    "bytes": 606989,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "backrooms_01",
+    "file": "44 - Cuarenta y nueve habitaciones despiertas.mp3",
+    "sha256": "f8499fcda709acaa0ae0ebdd6276247321429a4143c5c5584001ca80aab740af",
+    "bytes": 663147,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_sky_openings",
+    "file": "45 - Donde el cielo dejó una abertura.mp3",
+    "sha256": "8b7ef77ba3bdbf53390728548dac70aad457ed902c5ee7e29acbceec4714ee01",
+    "bytes": 745135,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_cloud_castle",
+    "file": "46 - Un castillo en el aliento.mp3",
+    "sha256": "ec56d493736b0477a3a9ced02e90b353c22894afeb73a694fe2550c7eadadc49",
+    "bytes": 921380,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_flower_city",
+    "file": "47 - El tren cruza las flores.mp3",
+    "sha256": "fa5a301d7e88ef9201af8f6a715b5c421c9151bb83902a5bc5bc95001c28aa56",
+    "bytes": 776909,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "dream_grass_fissures",
+    "file": "48 - Un puente entre dos silencios.mp3",
+    "sha256": "32c76e0f6796103694f3ffd33dd221374a1d81fed240482d341dfd3ca21da661",
+    "bytes": 542398,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  },
+  {
+    "world": "pocket_call_house",
+    "file": "49 - La llamada venía de adentro.mp3",
+    "sha256": "af9b7cc8439fee51b1e690d3727ebe7baaa3d6d98544e22a2cd9a3dc8c548558",
+    "bytes": 694617,
+    "audio_identical_after_cover": true,
+    "embedded_cover": true
+  }
+]

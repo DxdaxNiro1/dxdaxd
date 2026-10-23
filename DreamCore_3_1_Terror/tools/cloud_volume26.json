@@ -1,0 +1,15 @@
+{
+  "dimensions": [
+    128,
+    64,
+    128
+  ],
+  "atlas": [
+    1024,
+    1024
+  ],
+  "slices": 64,
+  "coverage": 0.4168062210083008,
+  "occupied_voxels": 0.1704397201538086,
+  "rgba_channels": "R=column density; GB=column derivatives; A=8x8 slices, straight numerical data"
+}

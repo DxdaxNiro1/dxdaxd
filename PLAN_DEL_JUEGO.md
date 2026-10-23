@@ -1,3 +1,9 @@
+## Actualización 3.1 · Los testigos (2026-10-23 UTC)
+
+Implementado: motor de superficies compactas, preparación asíncrona de mallas, carga cercana sin bloquear por celdas lejanas, nuevos materiales compartidos y follaje con recorte; nueve videos accesibles interpretados en siete lugares nuevos, diez modelos, siete composiciones y colocaciones escasas en mundos anteriores. Portales nombrados y conectados en ambos sentidos, regreso inicial al lugar guardado, encuentros registrados en el diario. La pradera de ojos conserva su vista previa sin ataques. Total: 61 escenarios y 62 temas.
+
+El archivo `19.12.04.mp4` se omite por indicación expresa del usuario. Pendiente: validación física de FPS, pausas y temperatura en Infinix NOTE 50s, POCO X4 Pro 5G y el Redmi; no hay resultados físicos que permitan prometer ausencia de calentamiento. Los informes GLES2/Mesa y compilación se entregan con la versión.
+
 # Rumbo de DreamCore
 
 Decisiones del usuario, conversación del 19 de octubre de 2026 (America/La_Paz).
