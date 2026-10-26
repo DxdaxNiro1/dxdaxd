@@ -1,0 +1,92 @@
+[
+  {
+    "number": 50,
+    "world": "dark_03",
+    "title": "La nieve recuerda su sonrisa",
+    "map": "El pueblo de la luna escarlata",
+    "lead": "organ",
+    "root": 47,
+    "motif": [
+      0,
+      7,
+      3,
+      13,
+      8,
+      2,
+      0
+    ],
+    "harmony": [
+      0,
+      -2,
+      -5,
+      1
+    ],
+    "pulse": 8.3,
+    "seconds": 128,
+    "description": "armonías lentas, respiración y ecos inquietantes",
+    "resource": "music_score_50_27",
+    "cover": "music_cover_50_27",
+    "file": "50 - La nieve recuerda su sonrisa.mp3",
+    "seed": 33850
+  },
+  {
+    "number": 51,
+    "world": "dark_04",
+    "title": "Las torres no cierran los ojos",
+    "map": "El castillo de la sonrisa pálida",
+    "lead": "bow",
+    "root": 50,
+    "motif": [
+      0,
+      1,
+      7,
+      10,
+      3,
+      8,
+      2
+    ],
+    "harmony": [
+      0,
+      -5,
+      1,
+      -2
+    ],
+    "pulse": 9.7,
+    "seconds": 144,
+    "description": "armonías lentas, respiración y ecos inquietantes",
+    "resource": "music_score_51_27",
+    "cover": "music_cover_51_27",
+    "file": "51 - Las torres no cierran los ojos.mp3",
+    "seed": 33987
+  },
+  {
+    "number": 52,
+    "world": "dream_sanctuary_clouds",
+    "title": "Alguien descansa sobre el cielo",
+    "map": "El santuario del ojo entre nubes",
+    "lead": "harp",
+    "root": 58,
+    "motif": [
+      0,
+      9,
+      4,
+      11,
+      7,
+      14,
+      2
+    ],
+    "harmony": [
+      0,
+      5,
+      -2,
+      2
+    ],
+    "pulse": 8.9,
+    "seconds": 136,
+    "description": "armonías lentas, respiración y ecos inquietantes",
+    "resource": "music_score_52_27",
+    "cover": "music_cover_52_27",
+    "file": "52 - Alguien descansa sobre el cielo.mp3",
+    "seed": 34124
+  }
+]

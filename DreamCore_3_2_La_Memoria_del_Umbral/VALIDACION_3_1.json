@@ -1,0 +1,95 @@
+{
+  "version": "3.1",
+  "version_code": 32,
+  "min_sdk": 19,
+  "worlds": 61,
+  "original_tracks": 62,
+  "accessible_reference_videos": 9,
+  "excluded_video": "WhatsApp Video 2026-10-22 at 19.12.04.mp4 (omitted by user)",
+  "new_entity_models": 10,
+  "new_worlds": 7,
+  "core_checks": {
+    "checks": {
+      "Journey19Check": 711,
+      "CraterPhysicsCheck": 36,
+      "RadialFallCheck": 480,
+      "MoonTravel17Check": 81,
+      "Ecos18Check": 847,
+      "Horizons19Check": 785,
+      "Voyage20Check": 5314,
+      "References21Check": 858,
+      "Miradas22Check": 6296,
+      "Desvios23Check": 63733,
+      "Resonancias24Check": 499,
+      "Graphics26Check": 496,
+      "Vigilia27Check": 64180,
+      "Fluidez28Check": 49864,
+      "Compatibility29Check": 1472,
+      "UltimoTren30Check": 114,
+      "Terror32Check": 245
+    },
+    "total": 196011
+  },
+  "bitmap_loader_checks": {
+    "checks": {
+      "BitmapPixels301CheckKt": 79008,
+      "TextureRuntime301CheckKt": 12458
+    },
+    "total": 91466,
+    "phone_test": false,
+    "boundary": "Canvas/Bitmap and GL contracts simulated; production loader and real PNGs executed"
+  },
+  "gpu_lifecycle_checks": 15,
+  "linked_gles2_programs": 621,
+  "real_gles_views": 142,
+  "special_surface_pixel_checks": {
+    "backend": "actual GLES2 Mesa",
+    "fixtures": [
+      {
+        "kind": 91,
+        "mean_absolute_error_8bit": 0.0,
+        "p99_absolute_error_8bit": 0.0
+      },
+      {
+        "kind": 93,
+        "mean_absolute_error_8bit": 0.0,
+        "p99_absolute_error_8bit": 0.0
+      },
+      {
+        "kind": 108,
+        "mean_absolute_error_8bit": 0.0,
+        "p99_absolute_error_8bit": 0.0
+      },
+      {
+        "kind": 110,
+        "mean_absolute_error_8bit": 0.0,
+        "p99_absolute_error_8bit": 0.0
+      }
+    ],
+    "threshold_mean_8bit": 3,
+    "threshold_p99_8bit": 16,
+    "phone_test": false
+  },
+  "android_build": "assembleDebug passed",
+  "android_lint": "passed; no errors",
+  "preservation": {
+    "existing_audio_files_byte_identical": 103,
+    "critical_sources_byte_identical": [
+      "DreamPixels301.kt",
+      "DreamTexture29.kt",
+      "DreamSurfaceTextures.kt",
+      "DreamCompatibility29.kt",
+      "DreamMoonLife.kt",
+      "DreamMoonMesh27.kt"
+    ],
+    "lunar_atlases_byte_identical": true
+  },
+  "phone_fps_measured": false,
+  "phone_temperature_measured": false,
+  "limitations": [
+    "Initial scene factory and GL program linking remain synchronous.",
+    "Mesa geometry timings do not predict phone frame rate, battery use or temperature.",
+    "Bitmap/Canvas and GL upload contracts are simulated in the loader regression; native Android was built but not run on a physical phone.",
+    "Models are original recreations inspired by references, not extracted meshes or video frames."
+  ]
+}

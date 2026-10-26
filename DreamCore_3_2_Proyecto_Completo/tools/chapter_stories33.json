@@ -1,0 +1,612 @@
+[
+  {
+    "world": "dream_01",
+    "title": "Un reloj sin constructor",
+    "situation": "El reloj del Umbral tiene una firma borrada.",
+    "clue": "La carta llama Alma a la persona que guardaba las llaves.",
+    "request": "Encaja la llave que alguien dejó junto al reloj.",
+    "answer": "El reloj recupera un latido. Un nombre vuelve al archivo.",
+    "keep": "Conservas la llave; el reloj aprende tu silencio.",
+    "rule": "read"
+  },
+  {
+    "world": "dream_02",
+    "title": "La toalla que nunca se seca",
+    "situation": "Una toalla conserva agua aunque la piscina esté quieta.",
+    "clue": "Su etiqueta dibuja una biblioteca bajo tres ondas.",
+    "request": "Escucha el agua y deja la toalla junto a su marca.",
+    "answer": "Las ondas revelan el sello del plano de la biblioteca.",
+    "keep": "La tela gotea dentro de tu equipaje.",
+    "rule": "sound"
+  },
+  {
+    "world": "dream_03",
+    "title": "Correo hacia abajo",
+    "situation": "Una carta está dirigida al fondo del abismo.",
+    "clue": "La dirección coincide con una casa que todavía no ha caído.",
+    "request": "Devuelve la carta a la pequeña ranura.",
+    "answer": "Una ventana del fondo permanece encendida.",
+    "keep": "La carta conserva el olor de una casa cerrada.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_04",
+    "title": "El jardinero ausente",
+    "situation": "Una maceta recibe lluvia desde una ventana cerrada.",
+    "clue": "Hay dos sombras donde solo queda una planta.",
+    "request": "Compara el jardín con su recuerdo.",
+    "answer": "Reconoces dónde estuvo la segunda maceta.",
+    "keep": "Conservas una hoja que no proyecta sombra.",
+    "rule": "memory"
+  },
+  {
+    "world": "dream_05",
+    "title": "La lámpara prestada",
+    "situation": "Una casa espera la lámpara que alguien retiró.",
+    "clue": "La etiqueta dice: «Para que encuentre el camino de vuelta».",
+    "request": "Devuelve la lámpara al alféizar.",
+    "answer": "La casa vuelve a iluminarse y su visitante cambia de lugar.",
+    "keep": "La luz te acompaña; la casa queda esperando.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_06",
+    "title": "La voz bajo la marea",
+    "situation": "Una caracola vibra cuando la criatura se aproxima.",
+    "clue": "La voz dice que el cielo también tiene un suelo.",
+    "request": "Escucha su respuesta sin mover la caracola.",
+    "answer": "La marea conserva un nuevo intervalo en la grabación.",
+    "keep": "El mar repite tu último paso.",
+    "rule": "sound"
+  },
+  {
+    "world": "dream_07",
+    "title": "La silla del otro lado",
+    "situation": "Una silla ocupa dos posiciones en dos recuerdos.",
+    "clue": "En uno de ellos hay una taza todavía caliente.",
+    "request": "Reconoce qué lado de la puerta está habitado.",
+    "answer": "Dejas sitio para quien falta.",
+    "keep": "La silla conserva tu forma.",
+    "rule": "memory"
+  },
+  {
+    "world": "dream_08",
+    "title": "El billete de llegada",
+    "situation": "El andén guarda un billete que nunca se perforó.",
+    "clue": "La estación solo anota las llegadas, no las partidas.",
+    "request": "Coloca el billete junto al reloj.",
+    "answer": "El horario incorpora un nombre que reconoces.",
+    "keep": "El tren conserva un asiento vacío.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_09",
+    "title": "Las piezas del huésped",
+    "situation": "Falta una pieza blanca en una partida detenida.",
+    "clue": "El tablero repite la distribución de las ventanas del pueblo.",
+    "request": "Devuelve la pieza al lugar de la casa apagada.",
+    "answer": "El tablero deja una casilla libre para otro viajero.",
+    "keep": "La pieza pesa más al alejarte.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_10",
+    "title": "La tubería que canta",
+    "situation": "Una tubería devuelve tres gotas desiguales.",
+    "clue": "Un golpe, dos golpes y una pausa: el ritmo de una puerta.",
+    "request": "Observa la lámpara antes de responder.",
+    "answer": "Una ducha deja de llorar cuando reconoces su ritmo.",
+    "keep": "La tubería aprende un silencio distinto.",
+    "rule": "rhythm"
+  },
+  {
+    "world": "dream_11",
+    "title": "El turno que falta",
+    "situation": "Una llave de hotel marca el turno de una oficina.",
+    "clue": "Detrás de la puerta de servicio se oye un teclado.",
+    "request": "Escucha y devuelve la llave del turno ausente.",
+    "answer": "Hotel y oficina reconocen la misma puerta.",
+    "keep": "La oficina sigue trabajando para una habitación vacía.",
+    "rule": "sound"
+  },
+  {
+    "world": "dream_12",
+    "title": "La última curva",
+    "situation": "Una señal conserva la sombra de un automóvil ausente.",
+    "clue": "El conductor dibujó una salida que solo existía al amanecer.",
+    "request": "Compara la señal con la carretera recordada.",
+    "answer": "El dibujo recupera una curva que habías pasado por alto.",
+    "keep": "La flecha vuelve a señalar tu llegada.",
+    "rule": "memory"
+  },
+  {
+    "world": "dream_13",
+    "title": "Una entrada bajo las lágrimas",
+    "situation": "La taquilla guarda una pulsera de otro verano.",
+    "clue": "Su color coincide con una puerta que nunca se abre al público.",
+    "request": "Devuelve la pulsera a la taquilla.",
+    "answer": "Una lágrima deja de caer durante un instante.",
+    "keep": "La pulsera conserva el calor de otra mano.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_14",
+    "title": "La órbita del recreo",
+    "situation": "Un planeta pequeño repite el movimiento de una canica.",
+    "clue": "La canica tiene dibujado un anillo que no se ve a simple vista.",
+    "request": "Observa el ritmo de su pequeño reloj.",
+    "answer": "La órbita deja un espacio para la canica perdida.",
+    "keep": "El anillo desaparece cuando intentas guardarlo.",
+    "rule": "rhythm"
+  },
+  {
+    "world": "dream_15",
+    "title": "El último nombre del recreo",
+    "situation": "Una lista de asistencia tiene una línea borrada.",
+    "clue": "Alma figura como encargada de devolver los objetos olvidados.",
+    "request": "Reconstruye el nombre con las marcas del recuerdo.",
+    "answer": "La lista deja de pasar páginas sola.",
+    "keep": "Una silla queda orientada hacia la puerta.",
+    "rule": "memory"
+  },
+  {
+    "world": "dark_01",
+    "title": "La corona del durmiente",
+    "situation": "Una corona fue dejada de espaldas a las lunas.",
+    "clue": "Su interior muestra el mismo sello del Umbral.",
+    "request": "Gira la corona hacia quien la dejó.",
+    "answer": "Las ruinas reconocen una antigua promesa.",
+    "keep": "La corona enfría la piedra donde estuvo.",
+    "rule": "return"
+  },
+  {
+    "world": "dark_02",
+    "title": "El herbario de la reina",
+    "situation": "Una flor seca conserva polen azul bajo la nieve.",
+    "clue": "El dibujo de la flor cambia en cada época de la ruina.",
+    "request": "Compara el herbario con su recuerdo.",
+    "answer": "Encuentras el jardín que había antes del trono.",
+    "keep": "La flor se cierra sobre el nombre borrado.",
+    "rule": "memory"
+  },
+  {
+    "world": "pocket_laundry",
+    "title": "Lavado de recuerdos",
+    "situation": "Una lavadora sigue girando con una camisa dentro.",
+    "clue": "La etiqueta lleva la misma marca de agua de las piscinas.",
+    "request": "Escucha el tambor antes de abrir la pequeña compuerta.",
+    "answer": "Una camisa seca vuelve al estante de su dueña.",
+    "keep": "El tambor continúa su turno sin ropa.",
+    "rule": "sound"
+  },
+  {
+    "world": "pocket_train",
+    "title": "El asiento reservado",
+    "situation": "Un boleto reserva un asiento de otro vagón.",
+    "clue": "El número coincide con el reloj del refugio.",
+    "request": "Devuelve el boleto al bolsillo del asiento.",
+    "answer": "Una pasajera reconoce la reserva durante el túnel.",
+    "keep": "El asiento permanece vacío a tu lado.",
+    "rule": "return"
+  },
+  {
+    "world": "pocket_dawn",
+    "title": "La persiana de las seis",
+    "situation": "Un reloj no alcanza a terminar su última vuelta.",
+    "clue": "Una raya de luz marca dónde estuvo antes una ventana.",
+    "request": "Compara la habitación con su amanecer anterior.",
+    "answer": "La persiana deja entrar un minuto que faltaba.",
+    "keep": "El minuto queda guardado en tu reloj.",
+    "rule": "memory"
+  },
+  {
+    "world": "pocket_tower",
+    "title": "El telescopio de la torre",
+    "situation": "Una lente mira hacia una escalera que nadie ve.",
+    "clue": "Su funda muestra dos escalones borrados por la lluvia.",
+    "request": "Escucha el eco que vuelve desde lo alto.",
+    "answer": "La torre devuelve un paso que no era el tuyo.",
+    "keep": "La lente guarda una escalera más larga.",
+    "rule": "sound"
+  },
+  {
+    "world": "pocket_cloudbed",
+    "title": "El peso de una noche",
+    "situation": "Una almohada conserva una hendidura reciente.",
+    "clue": "El bordado muestra una casa que no aparece en el cielo.",
+    "request": "Reconoce la casa al superponer su recuerdo.",
+    "answer": "La cama deja de hundirse en el lado vacío.",
+    "keep": "La hendidura conserva tu respiración.",
+    "rule": "memory"
+  },
+  {
+    "world": "pocket_refuge",
+    "title": "La taza junto a la puerta",
+    "situation": "Alguien utiliza una taza que no habías dejado servida.",
+    "clue": "Una costura blanca y un broche de reloj identifican a la visitante.",
+    "request": "Decide qué lugar dejas para quien regresa.",
+    "answer": "El refugio aprende a recibir una visita.",
+    "keep": "La visitante espera al otro lado de la puerta.",
+    "rule": "read"
+  },
+  {
+    "world": "photo_house",
+    "title": "Antes de que se cerrara la casa",
+    "situation": "La fotografía conserva una ventana que ya no existe.",
+    "clue": "Dos épocas comparten la marca de un marco.",
+    "request": "Superpón el recuerdo y reconoce la abertura.",
+    "answer": "La casa devuelve una habitación que faltaba.",
+    "keep": "El marco conserva una pared donde hubo una puerta.",
+    "rule": "memory"
+  },
+  {
+    "world": "photo_sea",
+    "title": "La marea detenida",
+    "situation": "Una fotografía conserva una ola que todavía no cayó.",
+    "clue": "En la espuma aparece la marca de la caracola.",
+    "request": "Compara la orilla con su recuerdo.",
+    "answer": "La ola recupera el sonido que le faltaba.",
+    "keep": "La espuma conserva el borde de una carta.",
+    "rule": "memory"
+  },
+  {
+    "world": "photo_window",
+    "title": "La sombra del cristal",
+    "situation": "El cristal refleja una lámpara encendida en otro año.",
+    "clue": "Su interruptor está en una pared que cambió de sitio.",
+    "request": "Reconoce la pared de la lámpara en el recuerdo.",
+    "answer": "El cristal deja pasar una luz antigua.",
+    "keep": "La lámpara queda encendida dentro de la imagen.",
+    "rule": "memory"
+  },
+  {
+    "world": "photo_planet",
+    "title": "El anillo sin planeta",
+    "situation": "Una fotografía conserva un anillo y ningún centro.",
+    "clue": "El telescopio dibuja el mismo círculo incompleto.",
+    "request": "Superpón ambas épocas para reconocer su órbita.",
+    "answer": "El anillo recupera una sombra que lo acompañaba.",
+    "keep": "El centro queda vacío al cerrar el álbum.",
+    "rule": "memory"
+  },
+  {
+    "world": "pocket_letter",
+    "title": "El destinatario del cartero",
+    "situation": "Una carta no tiene nombre, solo la forma de una casa.",
+    "clue": "La firma está en la parte interior del sobre.",
+    "request": "Devuelve el sobre a la dirección que reconoce.",
+    "answer": "El cartero deja una carta más pequeña junto al marco.",
+    "keep": "La casa cambia de número en tu recuerdo.",
+    "rule": "return"
+  },
+  {
+    "world": "pocket_gravity",
+    "title": "La habitación girada",
+    "situation": "Una mesa dejó sus marcas en la pared.",
+    "clue": "Las cuatro marcas siguen perteneciendo al mismo suelo.",
+    "request": "Compara las dos posiciones de la habitación.",
+    "answer": "Reconoces qué pared sostuvo la primera taza.",
+    "keep": "Las marcas permanecen orientadas hacia ti.",
+    "rule": "memory"
+  },
+  {
+    "world": "echo_01",
+    "title": "La casa que perdió su vertical",
+    "situation": "Una puerta conserva la inclinación de un día anterior.",
+    "clue": "La sombra está derecha aunque el marco se haya inclinado.",
+    "request": "Superpón el recuerdo de su umbral.",
+    "answer": "La puerta conserva sitio para una sombra distinta.",
+    "keep": "El marco continúa su inclinación hacia el vacío.",
+    "rule": "memory"
+  },
+  {
+    "world": "echo_02",
+    "title": "La última proyección",
+    "situation": "Una entrada de cine tiene impreso el nombre de una calle.",
+    "clue": "La pantalla conserva una avenida que aparece en las antenas.",
+    "request": "Devuelve la entrada a su butaca.",
+    "answer": "La proyección reconoce una puerta fuera de la sala.",
+    "keep": "La butaca reserva otra función para ti.",
+    "rule": "return"
+  },
+  {
+    "world": "echo_03",
+    "title": "El turno del agua",
+    "situation": "Una ducha funciona para un huésped que no está.",
+    "clue": "Su tubería lleva el sello del hotel de las nubes.",
+    "request": "Escucha a quién le corresponde el siguiente turno.",
+    "answer": "La ducha devuelve una voz desde el valle.",
+    "keep": "El agua continúa cayendo para nadie.",
+    "rule": "sound"
+  },
+  {
+    "world": "echo_04",
+    "title": "La casa que llegó al reflejo",
+    "situation": "El agua muestra una ventana más que la casa.",
+    "clue": "La ventana adicional tiene la lámpara del pueblo.",
+    "request": "Compara la casa y su época reflejada.",
+    "answer": "Reconoces una habitación que la casa había olvidado.",
+    "keep": "El agua conserva la habitación para otra visita.",
+    "rule": "memory"
+  },
+  {
+    "world": "echo_05",
+    "title": "La espora del canal",
+    "situation": "Un hongo conserva el dibujo de una llave.",
+    "clue": "La llave se reconoce por el ojo grabado en su arco.",
+    "request": "Devuelve la espora a la grieta de donde salió.",
+    "answer": "Un ojo del canal deja de seguir tus pasos.",
+    "keep": "La espora dibuja una grieta dentro del bolsillo.",
+    "rule": "return"
+  },
+  {
+    "world": "echo_06",
+    "title": "La nube que esperó",
+    "situation": "Una libreta registra el paso de una única nube.",
+    "clue": "El último dibujo termina con el nombre de Alma.",
+    "request": "Escucha el aire mientras la nube cubre la señal.",
+    "answer": "La libreta registra un paso que faltaba.",
+    "keep": "La página conserva una sombra quieta.",
+    "rule": "sound"
+  },
+  {
+    "world": "echo_07",
+    "title": "La cuenta del último cliente",
+    "situation": "Una gasolinera dejó una cuenta sin cobrar.",
+    "clue": "El recibo tiene la hora de una estación apagada.",
+    "request": "Devuelve el recibo al cajón del mostrador.",
+    "answer": "La luz del mostrador vuelve a responder.",
+    "keep": "La cuenta queda abierta a tu nombre.",
+    "rule": "return"
+  },
+  {
+    "world": "echo_08",
+    "title": "El color del vecino",
+    "situation": "Una casa proyecta el color que corresponde a otra.",
+    "clue": "El dibujo del barrio conserva la distribución antigua.",
+    "request": "Reconoce los dos colores en el recuerdo.",
+    "answer": "Las sombras recuperan un patio compartido.",
+    "keep": "Tu sombra conserva un color prestado.",
+    "rule": "memory"
+  },
+  {
+    "world": "echo_09",
+    "title": "La silla que se reservó",
+    "situation": "Una silla conserva polvo salvo en uno de sus brazos.",
+    "clue": "El respaldo lleva cosida una inicial y un pequeño reloj.",
+    "request": "Escucha quién vuelve a ocuparla.",
+    "answer": "El pasillo devuelve un roce de tela desde el fondo.",
+    "keep": "La silla queda orientada hacia tu partida.",
+    "rule": "sound"
+  },
+  {
+    "world": "echo_10",
+    "title": "El piso que no se anotó",
+    "situation": "Un plano cuenta un piso menos que el edificio.",
+    "clue": "El número ausente aparece en el bolsillo de una túnica.",
+    "request": "Compara las dos versiones del plano.",
+    "answer": "Encuentras el corredor que unió ambos pisos.",
+    "keep": "El plano conserva una escalera sin nombre.",
+    "rule": "memory"
+  },
+  {
+    "world": "echo_11",
+    "title": "El turno de los monitores",
+    "situation": "Un monitor permanece tibio mientras los demás están apagados.",
+    "clue": "Su horario coincide con la llave del hotel.",
+    "request": "Escucha el teclado del turno ausente.",
+    "answer": "Una mesa deja de esperar al mismo empleado.",
+    "keep": "El monitor guarda un escritorio dentro de la pantalla.",
+    "rule": "sound"
+  },
+  {
+    "world": "preview_eyes",
+    "title": "La mirada que descansa",
+    "situation": "Un ojo del campo conserva una pestaña distinta.",
+    "clue": "La pestaña señala un lugar donde la hierba sigue intacta.",
+    "request": "Reconoce el campo antes de que aprendiera a mirar.",
+    "answer": "El ojo descansa mientras conservas su historia.",
+    "keep": "La hierba aprende la forma de tu paso.",
+    "rule": "memory"
+  },
+  {
+    "world": "dream_rose_island",
+    "title": "La casa sobre el océano",
+    "situation": "Una postal muestra la casa antes de que el mar la rodeara.",
+    "clue": "La línea del horizonte coincide con una marca en su puerta.",
+    "request": "Devuelve la postal a la caja del jardín.",
+    "answer": "La casa conserva una dirección para quien vuelve.",
+    "keep": "El océano guarda la dirección en su reflejo.",
+    "rule": "return"
+  },
+  {
+    "world": "backrooms_01",
+    "title": "El turno del fluorescente",
+    "situation": "Una placa de mantenimiento tiene un nombre tachado.",
+    "clue": "La lámpara estable marca uno, dos y silencio.",
+    "request": "Observa su ritmo antes de registrar el turno.",
+    "answer": "Una sala deja de repetir su número.",
+    "keep": "El zumbido añade una sílaba a tu nombre.",
+    "rule": "rhythm"
+  },
+  {
+    "world": "dream_sky_openings",
+    "title": "La abertura equivocada",
+    "situation": "Una señal dibuja una ventana que parece cielo.",
+    "clue": "El marco correcto conserva el sello de las cartas.",
+    "request": "Compara el dibujo con la abertura recordada.",
+    "answer": "La señal vuelve a orientar a otro viajero.",
+    "keep": "El cielo conserva una abertura más pequeña.",
+    "rule": "memory"
+  },
+  {
+    "world": "dream_cloud_castle",
+    "title": "El ascensor sin destino",
+    "situation": "Un botón del castillo está gastado por una sola mano.",
+    "clue": "La mano dejó una marca de polen junto al botón.",
+    "request": "Escucha la respuesta del ascensor vacío.",
+    "answer": "El botón reconoce el camino hacia las flores.",
+    "keep": "El ascensor conserva el ruido de tu llegada.",
+    "rule": "sound"
+  },
+  {
+    "world": "dream_flower_city",
+    "title": "La flor del andén",
+    "situation": "Una flor crece entre dos rieles.",
+    "clue": "El billete tiene dibujada esa flor en lugar de un número.",
+    "request": "Devuelve el billete a la pequeña marquesina.",
+    "answer": "El andén conserva un destino para la próxima partida.",
+    "keep": "La flor sigue esperando su tren.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_grass_fissures",
+    "title": "El puente de la grieta",
+    "situation": "Una tabla muestra huellas que terminan antes de la casa.",
+    "clue": "Las marcas antiguas continúan en otra época del puente.",
+    "request": "Superpón las dos orillas.",
+    "answer": "Reconoces quién cruzó antes que tú.",
+    "keep": "La grieta conserva el final de las huellas.",
+    "rule": "memory"
+  },
+  {
+    "world": "pocket_call_house",
+    "title": "La llamada archivada",
+    "situation": "Un teléfono conserva una llamada sin duración.",
+    "clue": "La voz dice que Alma nunca dejó de ordenar las cartas.",
+    "request": "Escucha la segunda mitad de la llamada.",
+    "answer": "El teléfono devuelve una despedida que faltaba.",
+    "keep": "La llamada queda esperando tu nombre.",
+    "rule": "sound"
+  },
+  {
+    "world": "dark_03",
+    "title": "El nombre bajo la nieve",
+    "situation": "Una señal conserva letras bajo la escarcha.",
+    "clue": "La nieve repite el sello de la corona del durmiente.",
+    "request": "Devuelve la insignia a la señal.",
+    "answer": "Una ventana roja conserva un nombre humano.",
+    "keep": "La señal conserva la silueta de tu mano.",
+    "rule": "return"
+  },
+  {
+    "world": "dark_04",
+    "title": "La piedra del castillo pálido",
+    "situation": "Una piedra fue retirada para escuchar el exterior.",
+    "clue": "La marca de la piedra aparece en un plano del archivo.",
+    "request": "Reconoce el muro en su época anterior.",
+    "answer": "El castillo recupera una abertura que respiraba.",
+    "keep": "El muro conserva el hueco de una pregunta.",
+    "rule": "memory"
+  },
+  {
+    "world": "dream_sanctuary_clouds",
+    "title": "El testigo entre nubes",
+    "situation": "Una pluma permanece quieta cuando el cielo se mueve.",
+    "clue": "La pluma tiene la misma costura que la túnica de la visitante.",
+    "request": "Escucha lo que vibra durante el paso del gigante.",
+    "answer": "La pluma vuelve a acompañar a su sombra.",
+    "keep": "La nube conserva un pequeño espacio vacío.",
+    "rule": "sound"
+  },
+  {
+    "world": "dream_library30",
+    "title": "El índice del constructor",
+    "situation": "Un libro no contiene planos de edificios, sino decisiones.",
+    "clue": "La marca de agua de las piscinas permite leer la firma de Alma.",
+    "request": "Relaciona la marca de agua con el plano.",
+    "answer": "Reconoces a la archivista y la puerta del depósito.",
+    "keep": "El plano conserva la marca que falta en las piscinas.",
+    "rule": "read"
+  },
+  {
+    "world": "dream_fair30",
+    "title": "La vuelta del carrusel",
+    "situation": "Una montura conserva un boleto bajo la pintura.",
+    "clue": "El boleto fue emitido para dos personas y una sola vuelta.",
+    "request": "Devuelve el boleto a la caja de la feria.",
+    "answer": "El carrusel conserva un asiento para la visitante.",
+    "keep": "El motor sigue contando una vuelta pendiente.",
+    "rule": "return"
+  },
+  {
+    "world": "dream_station30",
+    "title": "La llegada sin cartel",
+    "situation": "El reloj de una estación no tiene agujas.",
+    "clue": "El nombre borrado está escrito en la parte de atrás del horario.",
+    "request": "Compara el horario con su recuerdo.",
+    "answer": "La estación registra una llegada de Alma.",
+    "keep": "El andén conserva el horario sin destino.",
+    "rule": "memory"
+  },
+  {
+    "world": "horror_atrium32",
+    "title": "La voz del coro",
+    "situation": "Una túnica conserva una costura que no pertenece al coro.",
+    "clue": "Entre dos notas se escucha el ritmo del archivo.",
+    "request": "Escucha la nota que responde desde el pasillo.",
+    "answer": "El coro devuelve una voz a la visitante.",
+    "keep": "La nota permanece guardada en la piedra.",
+    "rule": "sound"
+  },
+  {
+    "world": "horror_garden32",
+    "title": "El registro de las antenas",
+    "situation": "La estructura del ojo registra direcciones, no imágenes.",
+    "clue": "Una antena apunta a la butaca del último cine.",
+    "request": "Observa el ritmo de su pequeño reloj.",
+    "answer": "El registro reconoce una proyección que estuvo mirando.",
+    "keep": "Una antena conserva la dirección de tu espalda.",
+    "rule": "rhythm"
+  },
+  {
+    "world": "horror_road32",
+    "title": "El farol del testigo",
+    "situation": "Un farol ilumina una huella que no avanza.",
+    "clue": "La huella tiene la misma forma que un ala plegada.",
+    "request": "Compara la avenida antes de la llegada de la figura.",
+    "answer": "La huella deja sitio para un paso distinto.",
+    "keep": "El farol conserva una sombra más alta.",
+    "rule": "memory"
+  },
+  {
+    "world": "horror_forest32",
+    "title": "La hora del sol vacío",
+    "situation": "Un cuadrante registra una hora sin luz.",
+    "clue": "Las astas de la figura repiten el dibujo de las ramas del plano.",
+    "request": "Devuelve el pequeño disco al cuadrante.",
+    "answer": "El bosque conserva una hora para la mañana.",
+    "keep": "El sol guarda el hueco de tu reflejo.",
+    "rule": "return"
+  },
+  {
+    "world": "horror_screens32",
+    "title": "Una señal entre flores",
+    "situation": "Un monitor muestra una flor que crece a su espalda.",
+    "clue": "El vagón conserva el mismo sonido que las tuberías del valle.",
+    "request": "Escucha la señal que vuelve desde el vagón.",
+    "answer": "La pantalla deja una flor fuera de su marco.",
+    "keep": "La señal conserva un jardín que no has visitado.",
+    "rule": "sound"
+  },
+  {
+    "world": "horror_house32",
+    "title": "El hilo de la casa",
+    "situation": "El cable vibra con el peso de un objeto ausente.",
+    "clue": "La caja del jardín conserva el dibujo de una llave del refugio.",
+    "request": "Devuelve el contrapeso a la caja.",
+    "answer": "La isla conserva un lugar para otra visita.",
+    "keep": "El hilo aprende el peso de tu secreto.",
+    "rule": "return"
+  },
+  {
+    "world": "horror_pool32",
+    "title": "El ojo de la orilla",
+    "situation": "Un ojo del agua mira hacia una escalera vacía.",
+    "clue": "En su reflejo, alguien acaba de salir de la piscina.",
+    "request": "Compara las dos orillas del recuerdo.",
+    "answer": "La escalera recupera una huella húmeda.",
+    "keep": "El agua conserva la mirada de quien salió.",
+    "rule": "memory"
+  }
+]

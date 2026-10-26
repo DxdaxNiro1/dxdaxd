@@ -1,0 +1,46 @@
+DreamCore 2.6 · Presupuesto de renderizado (estimaciones de datos, no medidas de FPS)
+
+BASE
+GLES2; ocho samplers de fragmento en la escena. El cielo usa cinco.
+No se añade una dependencia obligatoria de GLES3, Vulkan ni HDR.
+Conserva streaming de zonas, descarte de frustum, límites de FPS y control térmico.
+La geometría y el audio se conservan al reducir efectos.
+
+CALIDAD / EFECTOS
+Baja: cielo de dos capas; sin nuevos destinos de postprocesado; pasto pequeño oculto por distancia/calidad.
+Media: nubes volumétricas a media resolución (16 pasos), oclusión a media resolución (4 muestras), FXAA.
+Alta: nubes 24 pasos, oclusión 8 muestras, dos pasadas de bloom a un cuarto de resolución por dimensión.
+La sala se renderiza una vez para la imagen principal. Nubes, AO y composición son tres pasadas de pantalla adicionales; Alta añade dos de bloom.
+Los cielos especiales conservan su tratamiento. Se omite la pasada volumétrica en interiores cerrados.
+Ninguna pasada dibuja el menú o los controles táctiles: los presenta Android por separado.
+
+MEMORIA DE TEXTURAS
+Atlas albedo + normales/rugosidad: ancho x doble alto, 4 x 8 celdas, RGBA con mipmaps.
+Baja: 512 x 1024 cada uno, aproximadamente 5.3 MiB entre ambos.
+Media: 1024 x 2048, aproximadamente 21.3 MiB entre ambos.
+Alta: 2048 x 4096, aproximadamente 85.3 MiB entre ambos, si GL_MAX_TEXTURE_SIZE lo permite.
+El ancho se limita a la mitad del máximo de textura informado por la GPU. Alta puede quedar limitado a 1024 x 2048 en equipos con máximo 2048.
+Estos atlas ocupan el doble que los cuadrados de 2.5. Los materiales originales y botánicos fuente son de 1254 x 1254; subirlos de tamaño no inventa detalle.
+El cargador reutiliza un único buffer de subida y calcula pendientes desde los píxeles, evitando un volumen temporal de alturas adicional.
+Volumen numérico de nubes: RGBA 1024 x 1024, 4 MiB, sin mipmaps. Alfa contiene 64 rebanadas; no se premultiplica ni se mezclan sus rebanadas mediante mipmaps.
+
+DESTINOS DE PANTALLA
+Cuando se dispone de profundidad legible de 32 bits: escena RGBA+profundidad, AO RGBA a media resolución y nube RGBA a media resolución suman aproximadamente 10 bytes por píxel de pantalla. Ejemplo: 8.8 MiB a 1280x720, 19.8 MiB a 1920x1080. Son presupuestos de datos; el controlador puede reservar más.
+Bloom Alto añade aproximadamente 0.5 bytes por píxel entre sus dos destinos reducidos.
+Si falta GL_OES_depth_texture o highp suficiente, se omite AO y se usa un renderbuffer de profundidad. FXAA sigue disponible.
+Si falla la creación del destino de postprocesado, se dibuja directamente. Si falla el destino de nube, se vuelve al cielo de dos capas.
+Los destinos se recrean al cambiar de tamaño/contexto; no se reconstruyen por cada variación térmica.
+
+SOMBRAS Y REFLEJOS
+Sombras direccionales cacheadas, con recorte alfa en hojas; conservan 512/1024 y actualización según movimiento.
+El modo efectivo bajo omite su actualización y muestreo.
+Piscinas y lago reutilizan el destino plano existente de 512x512. Los dos canales no crean dos cámaras.
+Reflejos solo cerca y visibles; conservan la cadencia existente: hasta 0.25 s en 30 FPS en condiciones normales, más espaciada con calor o cámara quieta.
+El agua de piscina se dibuja después del mosaico, sin escribir profundidad, con Fresnel y transparencia. No se añade una simulación de fluidos.
+
+CALOR / BATERÍA
+No se eleva el límite de FPS. El perfil equilibrado conserva 30 FPS.
+Con límite térmico de 30: efectos como máximo en Media.
+Con límite <=24 o modo Ahorro: efectos nuevos desactivados, sin reflejos de cámara ni actualización/muestreo de sombra direccional.
+Se mantienen el escalado de resolución y la pausa de audio/renderizado de la aplicación.
+No se ha medido calor, batería o FPS en un Infinix NOTE 50s ni se promete compatibilidad universal.

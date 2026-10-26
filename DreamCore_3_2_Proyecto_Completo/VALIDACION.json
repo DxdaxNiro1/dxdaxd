@@ -1,0 +1,92 @@
+{
+  "version": "3.2",
+  "version_code": 33,
+  "date": "2026-10-26",
+  "date_zone": "America/La_Paz",
+  "worlds": 62,
+  "compositions": 63,
+  "chapter_goals": 3,
+  "authored_inherited_world_stories": 61,
+  "new_world": "dream_archive33",
+  "automated_assertions": {
+    "checks": {
+      "Journey19Check": 711,
+      "CraterPhysicsCheck": 36,
+      "RadialFallCheck": 480,
+      "MoonTravel17Check": 81,
+      "Ecos18Check": 847,
+      "Horizons19Check": 785,
+      "Voyage20Check": 5314,
+      "References21Check": 858,
+      "Miradas22Check": 6296,
+      "Desvios23Check": 63733,
+      "Resonancias24Check": 507,
+      "Graphics26Check": 496,
+      "Vigilia27Check": 64180,
+      "Fluidez28Check": 49889,
+      "Compatibility29Check": 1472,
+      "UltimoTren30Check": 114,
+      "Terror32Check": 257,
+      "Memoria33Check": 1270,
+      "Walking33Check": 139,
+      "ChapterVisual33Check": 82
+    },
+    "total": 197547
+  },
+  "texture_and_photo_boundaries": {
+    "checks": {
+      "BitmapPixels301CheckKt": 79008,
+      "PhotoMemory33CheckKt": 5,
+      "TextureRuntime301CheckKt": 12458,
+      "TextureStream33CheckKt": 4469
+    },
+    "total": 95940,
+    "phone_test": false,
+    "boundary": "Canvas/Bitmap and GL contracts simulated; production loader and real PNGs executed"
+  },
+  "linked_gles2_programs": 631,
+  "mesa_rendered_views": 154,
+  "worlds_rendered_in_stable_and_essential": 62,
+  "gpu_lifecycle_assertions": 15,
+  "android": {
+    "assembleDebug": "PASS",
+    "lintDebug": "PASS",
+    "lint_errors": 0,
+    "min_sdk": 19,
+    "target_sdk": 34,
+    "gles": "2.0",
+    "apk_sha256": "3491aa9531dc4b34ae63fe89b4ccadcc1f88be780922d970d69330177bae9f10"
+  },
+  "post_navigation_adjustments": {
+    "chapter_assertions": 1270,
+    "reachable_chapter_approaches": 139,
+    "visual_save_assertions": 82
+  },
+  "physical_phone_measurements": {
+    "executed": false,
+    "devices_pending": [
+      "Infinix NOTE 50s",
+      "POCO X4 Pro 5G",
+      "Redmi (modelo no especificado)"
+    ],
+    "reason": "No physical devices connected; in-game diagnostic and explicit-serial ADB collector included.",
+    "guaranteed_phone_fps": false,
+    "guaranteed_phone_temperature": false
+  },
+  "preserved_resources": {
+    "inherited_resource_files": 187,
+    "missing": [],
+    "modified": []
+  },
+  "source_manifest_sha256": "632c6065e83bfd5d3dbfa59a9f667c0b2d9967c891ce4f568a6a20267819cf0c",
+  "windows_installer": {
+    "static_validation": "PASS",
+    "executed_on_windows": false
+  },
+  "limitations": [
+    "Initial procedural scene construction remains synchronous; repeated model tessellation is cached, while indexing and tile preparation run on workers.",
+    "Desktop Mesa renders and JVM boundary tests do not measure physical-phone performance or native Android UI behavior.",
+    "The photo/texture boundary tests simulate the Android/GL contracts using production code and real PNG data.",
+    "No automated suite can guarantee zero bugs or universal device support."
+  ]
+}

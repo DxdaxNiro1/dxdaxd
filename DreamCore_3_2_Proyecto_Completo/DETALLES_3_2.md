@@ -1,0 +1,38 @@
+# Las 30 propuestas en 3.2
+
+“Implementado” describe código y contenido incluidos; las comprobaciones de escritorio no sustituyen jugar en un teléfono físico. La primera propuesta queda explícitamente pendiente de medición real.
+
+| Nº | Propuesta | Estado y acceso |
+| --- | --- | --- |
+| 1 | Pruebas reales en celulares | **Preparado para medir; pendiente de hardware físico.** Ajustes → Diagnóstico y tools/probar_telefono33.py. No se inventaron mediciones del Infinix, POCO o Redmi. |
+| 2 | Diagnóstico compartible | **Implementado.** FPS recientes, tirones por zona, histograma p95, máximo, tiempo CPU de envío, memoria Java/nativa, estado térmico del sistema y temperatura de batería cuando Android la informa. Compartir abre el selector de Android; no envía automáticamente. |
+| 3 | Reutilización de objetos | **Implementado.** Caché acotada de geometría de sillas, lámparas, computadoras, casas, plantas y ocho variantes de árbol. Se conserva el dibujo agrupado por celdas; los objetos interactivos comparten mallas GPU. |
+| 4 | Texturas progresivas | **Implementado.** Atlas inicial completo de 512 o el límite del equipo; refinamiento en trabajador, cuatro pares de tiles como máximo pendientes. Se priorizan los materiales de la geometría cercana al jugador; los límites de cada material se preparan junto a la indexación, fuera del hilo GL. El atlas nuevo solo se publica al tener sus 32 tiles inicializados. No es streaming de archivos por objeto. |
+| 5 | Colisiones | **Revisadas por programa en todos los mundos.** Cápsula contra triángulos físicos del BVH existente, colisiones de los nuevos muebles y reparación local de una llegada solapada. Accesos del capítulo comprobados; cráter y gravedad conservan sus solucionadores y regresiones específicas. |
+| 6 | Dirección artística | **Implementada sobre los materiales existentes.** Perfiles calibrados de interiores, agua, noche y archivo en los programas comunes y compatibles. Escala coherente de modelos reutilizados; no se sustituyen las portadas ilustradas por una promesa de gráficos idénticos. |
+| 7 | Rostros y articulaciones | **Implementado.** Párpados, mandíbula y cuello con deformación moderada, ojos volumétricos, manos y broche de la archivista. Los modelos anteriores conservan sus alas, ropa y siluetas. |
+| 8 | Animaciones propias | **Implementado.** Tiempos diferentes por presencia, respiración, movimiento de alas, giro de cabeza amortiguado y respuesta manual de Alma al ritmo. |
+| 9 | Sonido a través del espacio | **Implementado para los encuentros del capítulo.** Posición 3D, izquierda/derecha, amortiguación por muros reales y avisos arriba/abajo. Variantes filtradas conservan las notas del piano y de los acertijos; la grabadora continúa funcionando. |
+| 10 | Reflejos discrepantes | **Implementado.** Historial acotado de poses: las entidades reflejadas muestran su posición y orientación con 0,65 s de retraso. Se mantienen los reflejos de agua/salas y su calidad compatible. |
+| 11 | Recorridos cruzados | **Implementado.** Hotel ↔ oficina; pasillo de sillas ↔ pueblo; piscinas ↔ lavandería; jardín de antenas ↔ cine; refugio ↔ biblioteca; biblioteca ↔ depósito. Cada puerta tiene un nombre y destino; el depósito exige primero interpretar el plano. |
+| 12 | Misterio principal | **Implementado.** El reloj del Umbral, las voces archivadas y Alma enlazan siete testimonios. Se revela la relación entre los lugares y las decisiones de sus visitantes. |
+| 13 | Propósitos elegibles | **Implementado.** Buscar a Alma, reconstruir un recuerdo o encontrar una salida: orden de pistas diferente, textos personales y accesos propios del recuerdo/plano. Cambiar de propósito conserva los hallazgos. |
+| 14 | Historias por escenario | **Implementado.** 61 situaciones escritas individualmente para los mundos heredados y una situación propia para el depósito. Hay testimonio, pista, respuesta y consecuencia que permanece en el diario. |
+| 15 | Secretos entre mundos | **Implementado.** La marca del agua permite interpretar la biblioteca; su plano abre el depósito. Las conexiones y los recuerdos relacionan objetos y lugares. |
+| 16 | Decisiones que cambian lugares | **Implementado.** Devolver la lámpara en el pueblo enciende una ventana física y lleva a la visitante a la biblioteca. Tras salir del depósito, Alma puede volver al refugio. Las decisiones sobreviven al guardado. |
+| 17 | Encuentros que evolucionan | **Implementado.** La visitante reconoce la acogida inicial, la lámpara devuelta, las visitas al refugio y la voz recuperada. Repetir el saludo no aumenta artificialmente la relación. |
+| 18 | Investigación de rastros | **Implementado.** Un observador distante del pueblo/barrio busca la última tiza, huella o reproducción de la grabadora y mantiene distancia del jugador. No se añade una persecución al campo de ojos. |
+| 19 | Persecución preparada | **Implementado en El depósito de las voces.** Aviso previo obligatorio, 10 s de preparación, estanterías que cortan la visión, dos corredores, rutas del custodio y regreso permanente. Si te alcanza, vuelves al vestíbulo conservando objetos. |
+| 20 | Escondites distintos | **Implementado.** Mesa: cámara agachada y pasos próximos; armario: interior hueco, cámara fija y rendija física. OBJETOS permite salir. Ambos bloquean la detección del custodio. |
+| 21 | Puertas de observación | **Implementado.** Escuchar junto a la respuesta, comparar épocas u observar el ritmo de lámparas/relojes según la historia. La salida del depósito exige el cilindro y la respuesta compartida. |
+| 22 | Fotografías que envejecen | **Implementado.** Al volver a un lugar fotografiado, el álbum muestra desgaste y una silueta en su presentación. Comparar original conserva la imagen sin filtro; el JPEG original no se modifica. |
+| 23 | Recuerdos superpuestos | **Implementado.** OBJETOS → Superponer el recuerdo, con tratamiento de época y restos físicos de una puerta/huellas en el mundo. Entrar en una fotografía activa la comparación; el propósito del recuerdo descubre otra puerta. |
+| 24 | Visitante del refugio | **Implementado.** Taza, broche, pequeño reloj, presencia reconocible y notas que responden a tus decisiones. La taza cambia de lado al rechazar su visita. |
+| 25 | Horarios con consecuencias | **Implementado.** Los servicios a biblioteca y ciudad compiten durante un ciclo de 128 s de juego. Elegir uno bloquea temporalmente el otro, persiste al continuar y se renueva al dormir o al siguiente ciclo. |
+| 26 | Acontecimientos del tren | **Implementado.** Entrada en túnel y paso cerrado, nueva pasajera y representación invertida de una estación. Los sucesos siguen el progreso del viaje real. |
+| 27 | Gigantes y entorno | **Implementado.** Un paso limitado en mar, isla celeste y costa oscurece la luz, desplaza nubes y hace vibrar objetos próximos. La vibración de cámara respeta Reducir movimiento. |
+| 28 | Cooperación con una presencia | **Implementado.** Alma responde al patrón uno, dos, silencio. Debes esperar a que termine su gesto antes de responder; ambas participaciones desbloquean la salida. |
+| 29 | Finales por descubrimientos | **Implementado.** Alma recuerda, La casa que elegiste, La mañana compartida o El archivo abierto, según propósito, decisiones, relación, cooperación y comparación de recuerdos. Los finales antiguos permanecen. |
+| 30 | Capítulo completo | **Implementado y recorrido por pruebas de estado.** Carta inicial → propósito → testimonios → biblioteca → depósito con tensión → recuperación de la voz → regreso al refugio → resolución en el reloj del Umbral. Después puedes continuar explorando. |
+
+[Cómo jugar el capítulo](RECORRIDO_3_2.md) · [Mediciones y límites](RENDIMIENTO_3_2.md).

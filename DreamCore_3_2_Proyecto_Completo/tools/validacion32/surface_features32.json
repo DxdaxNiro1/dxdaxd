@@ -1,0 +1,28 @@
+{
+  "backend": "actual GLES2 Mesa",
+  "fixtures": [
+    {
+      "kind": 91,
+      "mean_absolute_error_8bit": 0.0,
+      "p99_absolute_error_8bit": 0.0
+    },
+    {
+      "kind": 93,
+      "mean_absolute_error_8bit": 0.0,
+      "p99_absolute_error_8bit": 0.0
+    },
+    {
+      "kind": 108,
+      "mean_absolute_error_8bit": 0.0,
+      "p99_absolute_error_8bit": 0.0
+    },
+    {
+      "kind": 110,
+      "mean_absolute_error_8bit": 0.0,
+      "p99_absolute_error_8bit": 0.0
+    }
+  ],
+  "threshold_mean_8bit": 3,
+  "threshold_p99_8bit": 16,
+  "phone_test": false
+}

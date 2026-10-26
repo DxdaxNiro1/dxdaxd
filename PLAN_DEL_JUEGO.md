@@ -1,3 +1,9 @@
+## Actualización 3.2 · La memoria del Umbral (2026-10-26, America/La_Paz)
+
+Autorizada la integración de las 30 propuestas: capítulo con tres propósitos y finales, 61 historias heredadas más el depósito, conexiones cruzadas, Alma y relaciones persistentes, rastreador de marcas, persecución acotada con mesa y armario, puertas de observación/cooperación, fotografías que envejecen sin modificar originales, recuerdos físicos, visitante del refugio, tren con servicios rivales y acontecimientos, gigantes que alteran el entorno. Se mantienen lunas vivas, mecánicas previas y campo de ojos sin ataques. Total: 62 mundos y 63 músicas.
+
+Optimización interna: plantillas de modelos repetidos, atlas progresivo de tiles completos y colas acotadas, BVH para colisiones/sonido, guardado sin escrituras por cada paso. Diagnóstico dentro del juego y recolector ADB disponibles. **La propuesta de medir en Infinix, POCO y Redmi sigue pendiente de acceso físico a esos equipos**; no se registran como ejecutadas pruebas físicas ni se promete ausencia universal de calentamiento/fallos. Véanse DreamCore_3_2_La_Memoria_del_Umbral/DETALLES_3_2.md, DreamCore_3_2_La_Memoria_del_Umbral/RECORRIDO_3_2.md y DreamCore_3_2_La_Memoria_del_Umbral/RENDIMIENTO_3_2.md.
+
 ## Actualización 3.1 · Los testigos (2026-10-23 UTC)
 
 Implementado: motor de superficies compactas, preparación asíncrona de mallas, carga cercana sin bloquear por celdas lejanas, nuevos materiales compartidos y follaje con recorte; nueve videos accesibles interpretados en siete lugares nuevos, diez modelos, siete composiciones y colocaciones escasas en mundos anteriores. Portales nombrados y conectados en ambos sentidos, regreso inicial al lugar guardado, encuentros registrados en el diario. La pradera de ojos conserva su vista previa sin ataques. Total: 61 escenarios y 62 temas.

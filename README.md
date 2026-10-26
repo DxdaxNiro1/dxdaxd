@@ -1,3 +1,16 @@
+# DreamCore 3.2 · La memoria del Umbral
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_2_La_Memoria_del_Umbral.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_2_Proyecto_Completo.zip) · [Ver el capítulo en el motor](DreamCore_3_2_La_Memoria_del_Umbral/VISTAS.md)
+
+Capítulo con tres propósitos, Alma y finales por tus decisiones; historias para los mundos anteriores, puertas cruzadas, rastros, recuerdos, fotografías que cambian al regresar, tren con acontecimientos y un depósito con persecución y escondites. **62 mundos y 63 composiciones.** Conserva la partida y las mecánicas anteriores.
+
+Optimización de objetos repetidos y texturas progresivas, revisión de colisiones y diagnóstico compartible de FPS, tirones, memoria y batería. **Falta medir físicamente Infinix, POCO y Redmi**; no hay promesa de temperatura ni FPS universales.
+
+Para comenzar: **Ajustes → Capítulo** o el reloj de la carta en el Umbral. [Instalación](DreamCore_3_2_La_Memoria_del_Umbral/LEEME.md) · [Estado de las 30 propuestas](DreamCore_3_2_La_Memoria_del_Umbral/DETALLES_3_2.md) · [Guía](DreamCore_3_2_La_Memoria_del_Umbral/RECORRIDO_3_2.md) · [Pruebas y límites](DreamCore_3_2_La_Memoria_del_Umbral/RENDIMIENTO_3_2.md) · [Validación](DreamCore_3_2_La_Memoria_del_Umbral/VALIDACION_3_2.json).
+
+<details>
+<summary>Versiones anteriores</summary>
+
 # DreamCore 3.1 · Los testigos
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_1_Terror.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_1_Proyecto_Completo.zip) · [Ver imágenes del motor](DreamCore_3_1_Terror/VISTAS.md)
@@ -83,6 +96,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 

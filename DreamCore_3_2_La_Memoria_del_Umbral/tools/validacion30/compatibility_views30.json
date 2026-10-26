@@ -1,0 +1,655 @@
+{
+  "backend": "GLES2 Mesa llvmpipe",
+  "phone_test": false,
+  "views": [
+    {
+      "world": "dream_01",
+      "profile": "stable",
+      "unique_colors": 19124,
+      "rendered": true
+    },
+    {
+      "world": "dream_02",
+      "profile": "stable",
+      "unique_colors": 18454,
+      "rendered": true
+    },
+    {
+      "world": "dream_03",
+      "profile": "stable",
+      "unique_colors": 45300,
+      "rendered": true
+    },
+    {
+      "world": "dream_04",
+      "profile": "stable",
+      "unique_colors": 13243,
+      "rendered": true
+    },
+    {
+      "world": "dream_05",
+      "profile": "stable",
+      "unique_colors": 30974,
+      "rendered": true
+    },
+    {
+      "world": "dream_06",
+      "profile": "stable",
+      "unique_colors": 10638,
+      "rendered": true
+    },
+    {
+      "world": "dream_07",
+      "profile": "stable",
+      "unique_colors": 7912,
+      "rendered": true
+    },
+    {
+      "world": "dream_08",
+      "profile": "stable",
+      "unique_colors": 16483,
+      "rendered": true
+    },
+    {
+      "world": "dream_09",
+      "profile": "stable",
+      "unique_colors": 16340,
+      "rendered": true
+    },
+    {
+      "world": "dream_10",
+      "profile": "stable",
+      "unique_colors": 14351,
+      "rendered": true
+    },
+    {
+      "world": "dream_11",
+      "profile": "stable",
+      "unique_colors": 23378,
+      "rendered": true
+    },
+    {
+      "world": "dream_12",
+      "profile": "stable",
+      "unique_colors": 21149,
+      "rendered": true
+    },
+    {
+      "world": "dream_13",
+      "profile": "stable",
+      "unique_colors": 36160,
+      "rendered": true
+    },
+    {
+      "world": "dream_14",
+      "profile": "stable",
+      "unique_colors": 32652,
+      "rendered": true
+    },
+    {
+      "world": "dream_15",
+      "profile": "stable",
+      "unique_colors": 39243,
+      "rendered": true
+    },
+    {
+      "world": "dark_01",
+      "profile": "stable",
+      "unique_colors": 14117,
+      "rendered": true
+    },
+    {
+      "world": "dark_02",
+      "profile": "stable",
+      "unique_colors": 12979,
+      "rendered": true
+    },
+    {
+      "world": "pocket_laundry",
+      "profile": "stable",
+      "unique_colors": 5278,
+      "rendered": true
+    },
+    {
+      "world": "pocket_train",
+      "profile": "stable",
+      "unique_colors": 9031,
+      "rendered": true
+    },
+    {
+      "world": "pocket_dawn",
+      "profile": "stable",
+      "unique_colors": 6945,
+      "rendered": true
+    },
+    {
+      "world": "pocket_tower",
+      "profile": "stable",
+      "unique_colors": 15788,
+      "rendered": true
+    },
+    {
+      "world": "pocket_cloudbed",
+      "profile": "stable",
+      "unique_colors": 7556,
+      "rendered": true
+    },
+    {
+      "world": "pocket_refuge",
+      "profile": "stable",
+      "unique_colors": 5843,
+      "rendered": true
+    },
+    {
+      "world": "photo_house",
+      "profile": "stable",
+      "unique_colors": 35466,
+      "rendered": true
+    },
+    {
+      "world": "photo_sea",
+      "profile": "stable",
+      "unique_colors": 10287,
+      "rendered": true
+    },
+    {
+      "world": "photo_window",
+      "profile": "stable",
+      "unique_colors": 22173,
+      "rendered": true
+    },
+    {
+      "world": "photo_planet",
+      "profile": "stable",
+      "unique_colors": 37037,
+      "rendered": true
+    },
+    {
+      "world": "pocket_letter",
+      "profile": "stable",
+      "unique_colors": 6982,
+      "rendered": true
+    },
+    {
+      "world": "pocket_gravity",
+      "profile": "stable",
+      "unique_colors": 21226,
+      "rendered": true
+    },
+    {
+      "world": "echo_01",
+      "profile": "stable",
+      "unique_colors": 9750,
+      "rendered": true
+    },
+    {
+      "world": "echo_02",
+      "profile": "stable",
+      "unique_colors": 28770,
+      "rendered": true
+    },
+    {
+      "world": "echo_03",
+      "profile": "stable",
+      "unique_colors": 17559,
+      "rendered": true
+    },
+    {
+      "world": "echo_04",
+      "profile": "stable",
+      "unique_colors": 31379,
+      "rendered": true
+    },
+    {
+      "world": "echo_05",
+      "profile": "stable",
+      "unique_colors": 20238,
+      "rendered": true
+    },
+    {
+      "world": "echo_06",
+      "profile": "stable",
+      "unique_colors": 20867,
+      "rendered": true
+    },
+    {
+      "world": "echo_07",
+      "profile": "stable",
+      "unique_colors": 27143,
+      "rendered": true
+    },
+    {
+      "world": "echo_08",
+      "profile": "stable",
+      "unique_colors": 31050,
+      "rendered": true
+    },
+    {
+      "world": "echo_09",
+      "profile": "stable",
+      "unique_colors": 8429,
+      "rendered": true
+    },
+    {
+      "world": "echo_10",
+      "profile": "stable",
+      "unique_colors": 7941,
+      "rendered": true
+    },
+    {
+      "world": "echo_11",
+      "profile": "stable",
+      "unique_colors": 9048,
+      "rendered": true
+    },
+    {
+      "world": "preview_eyes",
+      "profile": "stable",
+      "unique_colors": 9209,
+      "rendered": true
+    },
+    {
+      "world": "dream_rose_island",
+      "profile": "stable",
+      "unique_colors": 9068,
+      "rendered": true
+    },
+    {
+      "world": "backrooms_01",
+      "profile": "stable",
+      "unique_colors": 3638,
+      "rendered": true
+    },
+    {
+      "world": "dream_sky_openings",
+      "profile": "stable",
+      "unique_colors": 25142,
+      "rendered": true
+    },
+    {
+      "world": "dream_cloud_castle",
+      "profile": "stable",
+      "unique_colors": 19433,
+      "rendered": true
+    },
+    {
+      "world": "dream_flower_city",
+      "profile": "stable",
+      "unique_colors": 28311,
+      "rendered": true
+    },
+    {
+      "world": "dream_grass_fissures",
+      "profile": "stable",
+      "unique_colors": 18041,
+      "rendered": true
+    },
+    {
+      "world": "pocket_call_house",
+      "profile": "stable",
+      "unique_colors": 4926,
+      "rendered": true
+    },
+    {
+      "world": "dark_03",
+      "profile": "stable",
+      "unique_colors": 18588,
+      "rendered": true
+    },
+    {
+      "world": "dark_04",
+      "profile": "stable",
+      "unique_colors": 15545,
+      "rendered": true
+    },
+    {
+      "world": "dream_sanctuary_clouds",
+      "profile": "stable",
+      "unique_colors": 22853,
+      "rendered": true
+    },
+    {
+      "world": "dream_library30",
+      "profile": "stable",
+      "unique_colors": 9516,
+      "rendered": true
+    },
+    {
+      "world": "dream_fair30",
+      "profile": "stable",
+      "unique_colors": 20778,
+      "rendered": true
+    },
+    {
+      "world": "dream_station30",
+      "profile": "stable",
+      "unique_colors": 20524,
+      "rendered": true
+    },
+    {
+      "world": "dream_01",
+      "profile": "essential",
+      "unique_colors": 5316,
+      "rendered": true
+    },
+    {
+      "world": "dream_02",
+      "profile": "essential",
+      "unique_colors": 6569,
+      "rendered": true
+    },
+    {
+      "world": "dream_03",
+      "profile": "essential",
+      "unique_colors": 5543,
+      "rendered": true
+    },
+    {
+      "world": "dream_04",
+      "profile": "essential",
+      "unique_colors": 5457,
+      "rendered": true
+    },
+    {
+      "world": "dream_05",
+      "profile": "essential",
+      "unique_colors": 7618,
+      "rendered": true
+    },
+    {
+      "world": "dream_06",
+      "profile": "essential",
+      "unique_colors": 2406,
+      "rendered": true
+    },
+    {
+      "world": "dream_07",
+      "profile": "essential",
+      "unique_colors": 2056,
+      "rendered": true
+    },
+    {
+      "world": "dream_08",
+      "profile": "essential",
+      "unique_colors": 7042,
+      "rendered": true
+    },
+    {
+      "world": "dream_09",
+      "profile": "essential",
+      "unique_colors": 7789,
+      "rendered": true
+    },
+    {
+      "world": "dream_10",
+      "profile": "essential",
+      "unique_colors": 3506,
+      "rendered": true
+    },
+    {
+      "world": "dream_11",
+      "profile": "essential",
+      "unique_colors": 3654,
+      "rendered": true
+    },
+    {
+      "world": "dream_12",
+      "profile": "essential",
+      "unique_colors": 6289,
+      "rendered": true
+    },
+    {
+      "world": "dream_13",
+      "profile": "essential",
+      "unique_colors": 5182,
+      "rendered": true
+    },
+    {
+      "world": "dream_14",
+      "profile": "essential",
+      "unique_colors": 6525,
+      "rendered": true
+    },
+    {
+      "world": "dream_15",
+      "profile": "essential",
+      "unique_colors": 7820,
+      "rendered": true
+    },
+    {
+      "world": "dark_01",
+      "profile": "essential",
+      "unique_colors": 8787,
+      "rendered": true
+    },
+    {
+      "world": "dark_02",
+      "profile": "essential",
+      "unique_colors": 13586,
+      "rendered": true
+    },
+    {
+      "world": "pocket_laundry",
+      "profile": "essential",
+      "unique_colors": 2035,
+      "rendered": true
+    },
+    {
+      "world": "pocket_train",
+      "profile": "essential",
+      "unique_colors": 1653,
+      "rendered": true
+    },
+    {
+      "world": "pocket_dawn",
+      "profile": "essential",
+      "unique_colors": 1186,
+      "rendered": true
+    },
+    {
+      "world": "pocket_tower",
+      "profile": "essential",
+      "unique_colors": 3114,
+      "rendered": true
+    },
+    {
+      "world": "pocket_cloudbed",
+      "profile": "essential",
+      "unique_colors": 1709,
+      "rendered": true
+    },
+    {
+      "world": "pocket_refuge",
+      "profile": "essential",
+      "unique_colors": 941,
+      "rendered": true
+    },
+    {
+      "world": "photo_house",
+      "profile": "essential",
+      "unique_colors": 4940,
+      "rendered": true
+    },
+    {
+      "world": "photo_sea",
+      "profile": "essential",
+      "unique_colors": 2254,
+      "rendered": true
+    },
+    {
+      "world": "photo_window",
+      "profile": "essential",
+      "unique_colors": 3985,
+      "rendered": true
+    },
+    {
+      "world": "photo_planet",
+      "profile": "essential",
+      "unique_colors": 7974,
+      "rendered": true
+    },
+    {
+      "world": "pocket_letter",
+      "profile": "essential",
+      "unique_colors": 512,
+      "rendered": true
+    },
+    {
+      "world": "pocket_gravity",
+      "profile": "essential",
+      "unique_colors": 3208,
+      "rendered": true
+    },
+    {
+      "world": "echo_01",
+      "profile": "essential",
+      "unique_colors": 5871,
+      "rendered": true
+    },
+    {
+      "world": "echo_02",
+      "profile": "essential",
+      "unique_colors": 9083,
+      "rendered": true
+    },
+    {
+      "world": "echo_03",
+      "profile": "essential",
+      "unique_colors": 2670,
+      "rendered": true
+    },
+    {
+      "world": "echo_04",
+      "profile": "essential",
+      "unique_colors": 7873,
+      "rendered": true
+    },
+    {
+      "world": "echo_05",
+      "profile": "essential",
+      "unique_colors": 6472,
+      "rendered": true
+    },
+    {
+      "world": "echo_06",
+      "profile": "essential",
+      "unique_colors": 9564,
+      "rendered": true
+    },
+    {
+      "world": "echo_07",
+      "profile": "essential",
+      "unique_colors": 5291,
+      "rendered": true
+    },
+    {
+      "world": "echo_08",
+      "profile": "essential",
+      "unique_colors": 6087,
+      "rendered": true
+    },
+    {
+      "world": "echo_09",
+      "profile": "essential",
+      "unique_colors": 1636,
+      "rendered": true
+    },
+    {
+      "world": "echo_10",
+      "profile": "essential",
+      "unique_colors": 1464,
+      "rendered": true
+    },
+    {
+      "world": "echo_11",
+      "profile": "essential",
+      "unique_colors": 1983,
+      "rendered": true
+    },
+    {
+      "world": "preview_eyes",
+      "profile": "essential",
+      "unique_colors": 3665,
+      "rendered": true
+    },
+    {
+      "world": "dream_rose_island",
+      "profile": "essential",
+      "unique_colors": 6543,
+      "rendered": true
+    },
+    {
+      "world": "backrooms_01",
+      "profile": "essential",
+      "unique_colors": 99,
+      "rendered": true
+    },
+    {
+      "world": "dream_sky_openings",
+      "profile": "essential",
+      "unique_colors": 19445,
+      "rendered": true
+    },
+    {
+      "world": "dream_cloud_castle",
+      "profile": "essential",
+      "unique_colors": 6869,
+      "rendered": true
+    },
+    {
+      "world": "dream_flower_city",
+      "profile": "essential",
+      "unique_colors": 4797,
+      "rendered": true
+    },
+    {
+      "world": "dream_grass_fissures",
+      "profile": "essential",
+      "unique_colors": 558,
+      "rendered": true
+    },
+    {
+      "world": "pocket_call_house",
+      "profile": "essential",
+      "unique_colors": 398,
+      "rendered": true
+    },
+    {
+      "world": "dark_03",
+      "profile": "essential",
+      "unique_colors": 14868,
+      "rendered": true
+    },
+    {
+      "world": "dark_04",
+      "profile": "essential",
+      "unique_colors": 15314,
+      "rendered": true
+    },
+    {
+      "world": "dream_sanctuary_clouds",
+      "profile": "essential",
+      "unique_colors": 11315,
+      "rendered": true
+    },
+    {
+      "world": "dream_library30",
+      "profile": "essential",
+      "unique_colors": 1117,
+      "rendered": true
+    },
+    {
+      "world": "dream_fair30",
+      "profile": "essential",
+      "unique_colors": 3025,
+      "rendered": true
+    },
+    {
+      "world": "dream_station30",
+      "profile": "essential",
+      "unique_colors": 4076,
+      "rendered": true
+    }
+  ],
+  "all_rendered": true
+}

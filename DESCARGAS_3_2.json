@@ -1,0 +1,16 @@
+{
+  "version": "3.2",
+  "packages": [
+    {
+      "file": "DreamCore_3_2_La_Memoria_del_Umbral.zip",
+      "bytes": 92884516,
+      "sha256": "353d738b11b0e7f09b78d13d26e34a819d59bba15a63348b84322923a790686e"
+    },
+    {
+      "file": "DreamCore_3_2_Proyecto_Completo.zip",
+      "bytes": 93638911,
+      "sha256": "aa34fce9a0965058d51884515e7a60dee28a85b7cc272fb5c4aadbbf5eaa7c2c"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}
