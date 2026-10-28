@@ -1,0 +1,112 @@
+{
+  "echo_01": {
+    "description": "Original piano, phrase [0, 7, 4, 9], world 1, 51s",
+    "seconds": 51.0,
+    "peak": 0.39515650272369385,
+    "rms": 0.06139617785811424,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "1ba0b5b590c978c91a1b5fa1eb5aae99621a00e2919ac66da189025204fa10a0",
+    "bytes": 281973
+  },
+  "echo_02": {
+    "description": "Original choir, phrase [0, 9, 14, 7], world 2, 53s",
+    "seconds": 53.0,
+    "peak": 0.2268974781036377,
+    "rms": 0.06131146475672722,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "06d02e7e320124d2711c0464bb3dba83eae804f3ae5d0eedfb396127052c8270",
+    "bytes": 277030
+  },
+  "echo_03": {
+    "description": "Original glass, phrase [0, 2, 7, 10], world 3, 55s",
+    "seconds": 55.0,
+    "peak": 0.39132124185562134,
+    "rms": 0.061316899955272675,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "8ef2bbdec150ff2dba9e23d11d05405582362b17770cff317e7c622955a2476d",
+    "bytes": 326634
+  },
+  "echo_04": {
+    "description": "Original harp, phrase [0, 7, 11, 4], world 4, 57s",
+    "seconds": 57.0,
+    "peak": 0.38522011041641235,
+    "rms": 0.061369094997644424,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "25a2c276566313507751416253bf8315a1d5d00730b77aae26320499375c7438",
+    "bytes": 470610
+  },
+  "echo_05": {
+    "description": "Original flute, phrase [0, 9, 7, 2], world 5, 59s",
+    "seconds": 59.0,
+    "peak": 0.28176212310791016,
+    "rms": 0.06139769405126572,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "098b9ba8644d0f94589e252c8a56a8d1a8c46a453070c5e84986d4e598955416",
+    "bytes": 365207
+  },
+  "echo_06": {
+    "description": "Original choir, phrase [0, 4, 12, 7], world 6, 61s",
+    "seconds": 61.0,
+    "peak": 0.2262512892484665,
+    "rms": 0.061346765607595444,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "4430762a52ae6314a8ef4c908b4408411bb274671ac32aa518069444338a7253",
+    "bytes": 384989
+  },
+  "echo_07": {
+    "description": "Original piano, phrase [0, 3, 10, 7], world 7, 63s",
+    "seconds": 63.0,
+    "peak": 0.36812707781791687,
+    "rms": 0.061330173164606094,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "242586fa95e57098581023719e05abd4170611b86e0391a6c85ef28eb1b6312b",
+    "bytes": 488404
+  },
+  "echo_08": {
+    "description": "Original harp, phrase [0, 7, 14, 9], world 8, 65s",
+    "seconds": 65.0,
+    "peak": 0.39276957511901855,
+    "rms": 0.06137457117438316,
+    "seam": 1.922216142702382e-06,
+    "clipped": 0,
+    "sha256": "14929ed3ee3e1134b5724e28a2323834dedbbffef14b71b6e53b9279f8933fa6",
+    "bytes": 558510
+  },
+  "echo_09": {
+    "description": "Original piano, phrase [0, 1, 8, 5], world 9, 67s",
+    "seconds": 67.0,
+    "peak": 0.3528352677822113,
+    "rms": 0.06130765751004219,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "ee8e06ef07a19099da89fd966ab80557ff1b7c3fe1d3222e58078011c93d6f0e",
+    "bytes": 409610
+  },
+  "echo_10": {
+    "description": "Original organ, phrase [0, 6, 7, 1], world 10, 69s",
+    "seconds": 69.0,
+    "peak": 0.25902777910232544,
+    "rms": 0.06116729602217674,
+    "seam": 0.0,
+    "clipped": 0,
+    "sha256": "17a53bdca44688f17ee6ca018761f728e33ff4a320d08419dda8fac0778240cc",
+    "bytes": 377936
+  },
+  "echo_11": {
+    "description": "Original glass, phrase [0, 2, 10, 7], world 11, 71s",
+    "seconds": 71.0,
+    "peak": 0.31356698274612427,
+    "rms": 0.06136094406247139,
+    "seam": 3.7492280113848864e-11,
+    "clipped": 0,
+    "sha256": "cba34a1c45c4c9e575faf49d8179d3d77c4153bac7b92d0fda5ad2d3dc328f24",
+    "bytes": 493815
+  }
+}

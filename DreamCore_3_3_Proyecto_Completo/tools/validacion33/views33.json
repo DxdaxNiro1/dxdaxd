@@ -1,0 +1,2470 @@
+{
+  "backend": "OpenGL ES2 / Mesa llvmpipe",
+  "phone_test": false,
+  "views": [
+    {
+      "world": "dream_01",
+      "name": "umbral",
+      "mode": "completo",
+      "eye": [
+        0,
+        2,
+        7
+      ],
+      "target": [
+        -4,
+        1.8,
+        1
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_01",
+      "name": "umbral",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        7
+      ],
+      "target": [
+        -4,
+        1.8,
+        1
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_01",
+      "name": "umbral",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        7
+      ],
+      "target": [
+        -4,
+        1.8,
+        1
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "archivo",
+      "mode": "completo",
+      "eye": [
+        -12,
+        2,
+        -58
+      ],
+      "target": [
+        0,
+        3,
+        -70
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "archivo",
+      "mode": "estable",
+      "eye": [
+        -12,
+        2,
+        -58
+      ],
+      "target": [
+        0,
+        3,
+        -70
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "archivo",
+      "mode": "esencial",
+      "eye": [
+        -12,
+        2,
+        -58
+      ],
+      "target": [
+        0,
+        3,
+        -70
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "archivista",
+      "mode": "completo",
+      "eye": [
+        0,
+        2,
+        -100
+      ],
+      "target": [
+        -5,
+        2,
+        -109
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "archivista",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        -100
+      ],
+      "target": [
+        -5,
+        2,
+        -109
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "archivista",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        -100
+      ],
+      "target": [
+        -5,
+        2,
+        -109
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "mesa",
+      "mode": "completo",
+      "eye": [
+        -9,
+        0.55,
+        -30
+      ],
+      "target": [
+        0,
+        0.7,
+        -36
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "mesa",
+      "mode": "estable",
+      "eye": [
+        -9,
+        0.55,
+        -30
+      ],
+      "target": [
+        0,
+        0.7,
+        -36
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "mesa",
+      "mode": "esencial",
+      "eye": [
+        -9,
+        0.55,
+        -30
+      ],
+      "target": [
+        0,
+        0.7,
+        -36
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "armario",
+      "mode": "completo",
+      "eye": [
+        9,
+        1.87,
+        -48
+      ],
+      "target": [
+        9,
+        1.87,
+        -37
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "armario",
+      "mode": "estable",
+      "eye": [
+        9,
+        1.87,
+        -48
+      ],
+      "target": [
+        9,
+        1.87,
+        -37
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "armario",
+      "mode": "esencial",
+      "eye": [
+        9,
+        1.87,
+        -48
+      ],
+      "target": [
+        9,
+        1.87,
+        -37
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_refuge",
+      "name": "recuerdo",
+      "mode": "completo",
+      "eye": [
+        0,
+        2,
+        0
+      ],
+      "target": [
+        3,
+        1.7,
+        -16
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_refuge",
+      "name": "recuerdo",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        0
+      ],
+      "target": [
+        3,
+        1.7,
+        -16
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_refuge",
+      "name": "recuerdo",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        0
+      ],
+      "target": [
+        3,
+        1.7,
+        -16
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_05",
+      "name": "ventana",
+      "mode": "completo",
+      "eye": [
+        66,
+        4,
+        -49
+      ],
+      "target": [
+        66.4,
+        3.3,
+        -63
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_05",
+      "name": "ventana",
+      "mode": "estable",
+      "eye": [
+        66,
+        4,
+        -49
+      ],
+      "target": [
+        66.4,
+        3.3,
+        -63
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_05",
+      "name": "ventana",
+      "mode": "esencial",
+      "eye": [
+        66,
+        4,
+        -49
+      ],
+      "target": [
+        66.4,
+        3.3,
+        -63
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_library30",
+      "name": "biblioteca",
+      "mode": "completo",
+      "eye": [
+        3,
+        2,
+        -29
+      ],
+      "target": [
+        9,
+        2.5,
+        -38
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_library30",
+      "name": "biblioteca",
+      "mode": "estable",
+      "eye": [
+        3,
+        2,
+        -29
+      ],
+      "target": [
+        9,
+        2.5,
+        -38
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_library30",
+      "name": "biblioteca",
+      "mode": "esencial",
+      "eye": [
+        3,
+        2,
+        -29
+      ],
+      "target": [
+        9,
+        2.5,
+        -38
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_train",
+      "name": "tren",
+      "mode": "completo",
+      "eye": [
+        0,
+        1.7,
+        -10
+      ],
+      "target": [
+        -2.5,
+        1.3,
+        -20
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_train",
+      "name": "tren",
+      "mode": "estable",
+      "eye": [
+        0,
+        1.7,
+        -10
+      ],
+      "target": [
+        -2.5,
+        1.3,
+        -20
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_train",
+      "name": "tren",
+      "mode": "esencial",
+      "eye": [
+        0,
+        1.7,
+        -10
+      ],
+      "target": [
+        -2.5,
+        1.3,
+        -20
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_06",
+      "name": "gigante",
+      "mode": "completo",
+      "eye": [
+        0,
+        3,
+        -75
+      ],
+      "target": [
+        40,
+        38,
+        -190
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_06",
+      "name": "gigante",
+      "mode": "estable",
+      "eye": [
+        0,
+        3,
+        -75
+      ],
+      "target": [
+        40,
+        38,
+        -190
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_06",
+      "name": "gigante",
+      "mode": "esencial",
+      "eye": [
+        0,
+        3,
+        -75
+      ],
+      "target": [
+        40,
+        38,
+        -190
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_01",
+      "name": "map_dream_01",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_01",
+      "name": "map_dream_01",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_02",
+      "name": "map_dream_02",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_02",
+      "name": "map_dream_02",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_03",
+      "name": "map_dream_03",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_03",
+      "name": "map_dream_03",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_04",
+      "name": "map_dream_04",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_04",
+      "name": "map_dream_04",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_05",
+      "name": "map_dream_05",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_05",
+      "name": "map_dream_05",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_06",
+      "name": "map_dream_06",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_06",
+      "name": "map_dream_06",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_07",
+      "name": "map_dream_07",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_07",
+      "name": "map_dream_07",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_08",
+      "name": "map_dream_08",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_08",
+      "name": "map_dream_08",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_09",
+      "name": "map_dream_09",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_09",
+      "name": "map_dream_09",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_10",
+      "name": "map_dream_10",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_10",
+      "name": "map_dream_10",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_11",
+      "name": "map_dream_11",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_11",
+      "name": "map_dream_11",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_12",
+      "name": "map_dream_12",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_12",
+      "name": "map_dream_12",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_13",
+      "name": "map_dream_13",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_13",
+      "name": "map_dream_13",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_14",
+      "name": "map_dream_14",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_14",
+      "name": "map_dream_14",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_15",
+      "name": "map_dream_15",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_15",
+      "name": "map_dream_15",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_01",
+      "name": "map_dark_01",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_01",
+      "name": "map_dark_01",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_02",
+      "name": "map_dark_02",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_02",
+      "name": "map_dark_02",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_laundry",
+      "name": "map_pocket_laundry",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_laundry",
+      "name": "map_pocket_laundry",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_train",
+      "name": "map_pocket_train",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_train",
+      "name": "map_pocket_train",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_dawn",
+      "name": "map_pocket_dawn",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_dawn",
+      "name": "map_pocket_dawn",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_tower",
+      "name": "map_pocket_tower",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_tower",
+      "name": "map_pocket_tower",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_cloudbed",
+      "name": "map_pocket_cloudbed",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_cloudbed",
+      "name": "map_pocket_cloudbed",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_refuge",
+      "name": "map_pocket_refuge",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_refuge",
+      "name": "map_pocket_refuge",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_house",
+      "name": "map_photo_house",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_house",
+      "name": "map_photo_house",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_sea",
+      "name": "map_photo_sea",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_sea",
+      "name": "map_photo_sea",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_window",
+      "name": "map_photo_window",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_window",
+      "name": "map_photo_window",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_planet",
+      "name": "map_photo_planet",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "photo_planet",
+      "name": "map_photo_planet",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_letter",
+      "name": "map_pocket_letter",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_letter",
+      "name": "map_pocket_letter",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_gravity",
+      "name": "map_pocket_gravity",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_gravity",
+      "name": "map_pocket_gravity",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_01",
+      "name": "map_echo_01",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_01",
+      "name": "map_echo_01",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_02",
+      "name": "map_echo_02",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_02",
+      "name": "map_echo_02",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_03",
+      "name": "map_echo_03",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_03",
+      "name": "map_echo_03",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_04",
+      "name": "map_echo_04",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_04",
+      "name": "map_echo_04",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_05",
+      "name": "map_echo_05",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_05",
+      "name": "map_echo_05",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_06",
+      "name": "map_echo_06",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_06",
+      "name": "map_echo_06",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_07",
+      "name": "map_echo_07",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_07",
+      "name": "map_echo_07",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_08",
+      "name": "map_echo_08",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_08",
+      "name": "map_echo_08",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_09",
+      "name": "map_echo_09",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_09",
+      "name": "map_echo_09",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_10",
+      "name": "map_echo_10",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_10",
+      "name": "map_echo_10",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_11",
+      "name": "map_echo_11",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "echo_11",
+      "name": "map_echo_11",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "preview_eyes",
+      "name": "map_preview_eyes",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "preview_eyes",
+      "name": "map_preview_eyes",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_rose_island",
+      "name": "map_dream_rose_island",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_rose_island",
+      "name": "map_dream_rose_island",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "backrooms_01",
+      "name": "map_backrooms_01",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "backrooms_01",
+      "name": "map_backrooms_01",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_sky_openings",
+      "name": "map_dream_sky_openings",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_sky_openings",
+      "name": "map_dream_sky_openings",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_cloud_castle",
+      "name": "map_dream_cloud_castle",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_cloud_castle",
+      "name": "map_dream_cloud_castle",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_flower_city",
+      "name": "map_dream_flower_city",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_flower_city",
+      "name": "map_dream_flower_city",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_grass_fissures",
+      "name": "map_dream_grass_fissures",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_grass_fissures",
+      "name": "map_dream_grass_fissures",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_call_house",
+      "name": "map_pocket_call_house",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "pocket_call_house",
+      "name": "map_pocket_call_house",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_03",
+      "name": "map_dark_03",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_03",
+      "name": "map_dark_03",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_04",
+      "name": "map_dark_04",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dark_04",
+      "name": "map_dark_04",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_sanctuary_clouds",
+      "name": "map_dream_sanctuary_clouds",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_sanctuary_clouds",
+      "name": "map_dream_sanctuary_clouds",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_library30",
+      "name": "map_dream_library30",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_library30",
+      "name": "map_dream_library30",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_fair30",
+      "name": "map_dream_fair30",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_fair30",
+      "name": "map_dream_fair30",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_station30",
+      "name": "map_dream_station30",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_station30",
+      "name": "map_dream_station30",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_atrium32",
+      "name": "map_horror_atrium32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_atrium32",
+      "name": "map_horror_atrium32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_garden32",
+      "name": "map_horror_garden32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_garden32",
+      "name": "map_horror_garden32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_road32",
+      "name": "map_horror_road32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_road32",
+      "name": "map_horror_road32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_forest32",
+      "name": "map_horror_forest32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_forest32",
+      "name": "map_horror_forest32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_screens32",
+      "name": "map_horror_screens32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_screens32",
+      "name": "map_horror_screens32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_house32",
+      "name": "map_horror_house32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_house32",
+      "name": "map_horror_house32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_pool32",
+      "name": "map_horror_pool32",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "horror_pool32",
+      "name": "map_horror_pool32",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "map_dream_archive33",
+      "mode": "estable",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    },
+    {
+      "world": "dream_archive33",
+      "name": "map_dream_archive33",
+      "mode": "esencial",
+      "eye": [
+        0,
+        2,
+        2
+      ],
+      "target": [
+        0,
+        2,
+        -30
+      ],
+      "real_gles": true
+    }
+  ]
+}

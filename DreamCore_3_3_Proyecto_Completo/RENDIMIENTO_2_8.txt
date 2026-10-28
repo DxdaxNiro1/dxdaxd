@@ -1,0 +1,60 @@
+DREAMCORE 2.8 · FLUIDEZ
+
+ALCANCE
+51 escenarios y 52 composiciones conservados. Geometrías generadas idénticas a
+2.7. Recursos conservados byte por byte. Ajustes y formato de guardado intactos.
+No hay mediciones de FPS, batería o temperatura del Infinix NOTE 50s físico.
+
+ALMACENAMIENTO DE MALLAS
+Se reutilizan vértices con los diez float originales, comparados por sus bits.
+Se conservan aristas de normales, coordenadas UV, materiales y ceros con signo.
+Las páginas quedan dentro del rango ushort de GLES2. No se requiere uint indices.
+La secuencia de triángulos y la frontera opaco/transparente se conservan.
+
+Suma de los búferes al medir cada mundo por separado:
+2.7: 267.258.000 bytes.
+2.8: 152.687.186 bytes, incluidas las listas de índices y sombras necesarias.
+Reducción: 42,87 %. No representa la RAM total ni 51 mundos cargados juntos.
+
+TRANSFERENCIAS
+Un bloque directo compartido crece hasta un máximo de 4 MiB y se reutiliza para
+los VBO/EBO. La copia queda consumida por glBufferData antes de reutilizarlo.
+La sincronización protege contextos concurrentes. Los índices de sombras solo
+se guardan cuando ese mundo puede usarlos; los actores y lunas no los necesitan.
+
+TRABAJO DE GPU
+Las sombras reciben únicamente las superficies que el shader anterior no
+iba a descartar. Las nubes evitan cámaras sin intersección con sus capas,
+cielos especiales que no usan esa pasada y volumen completamente oculto.
+El test de profundidad usa sampler de alta precisión; en la alternativa sin
+profundidad legible queda disponible el renderizado anterior.
+Las nubes visibles mantienen 16/24 muestras de Media/Alta y el mismo volumen.
+Las sombras, reflejos, AO, suavizado, texturas y distancias conservan sus ajustes.
+
+CPU Y RESIDENCIA
+La visibilidad se reutiliza entre las fases opaca/transparente y vistas quietas.
+Los parámetros de escena se conservan entre esas fases, restaurando las ocho
+texturas que comparten estado global. Se eliminan claves Pair temporales y
+consultas repetidas de parámetros al controlador. Se mantienen dos parejas
+recientes de programas especializados y una alternativa general compatible.
+
+Al cambiar de mapa, se liberan los búferes, consultas y cachés inactivas antes
+de construir el siguiente. Las lunas y materiales especiales son residentes
+solo donde hacen falta. Las fotografías del refugio siguen guardadas en disco.
+
+PRUEBAS DE REFERENCIA
+Ver tools/validacion28: métricas por mundo, 52 pares visuales, 26 estados de
+calidad, 416 parejas de shaders y pruebas de ciclos de caché. Los tiempos usan
+Mesa/llvmpipe con 4 hilos, 640x360 y mediana de 24 cuadros después del calentamiento.
+Separan geometría y pasada de nubes; excluyen compilación y escritura de imágenes.
+No representan FPS del juego completo ni rendimiento de un teléfono.
+
+El ensayo de cachés recorre 153 transiciones por proceso: retención final de
+30.483.088 a 10.737.944 bytes en las cachés de las fábricas. No es RAM total del APK.
+No se introduce System.gc en la aplicación; se usa solo en ese diagnóstico JVM.
+
+DISPOSITIVO
+Se conservan los límites, calidad seleccionada y protecciones térmicas existentes.
+Desde Android 11 se sugiere una frecuencia de superficie acorde al FPS existente;
+el sistema puede ignorarla. Deben medirse sesiones prolongadas en el NOTE 50s
+antes de cuantificar temperatura, autonomía o fluidez física.

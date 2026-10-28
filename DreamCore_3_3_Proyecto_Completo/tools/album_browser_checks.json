@@ -1,0 +1,16 @@
+{
+  "checks": 74,
+  "browser": "Chromium headless",
+  "opened_via": "localhost HTTP; file:// navigation blocked by managed Chromium policy",
+  "file_scheme_execution_verified": false,
+  "desktop": [
+    1280,
+    800
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "external_requests": [],
+  "errors": []
+}

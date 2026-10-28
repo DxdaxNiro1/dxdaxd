@@ -1,0 +1,13 @@
+DreamCore 3.0 · Cambios internos y límites
+
+Se conservan la indexación exacta en páginas ushort, los programas especializados por mundo con caché de dos entradas, el descarte espacial y las rutas estable/esencial de 2.9.
+
+Los muebles, carrusel y tren usan modelos locales en buffers reutilizados. Se aplican transformaciones de objeto: no se reconstruye un escenario al arrastrar una silla. Las marcas se reconstruyen solo al cambiar su revisión; como máximo hay 72 huellas y flechas guardadas. La cinta conserva hasta 32 eventos sonoros, no audio del micrófono. El imitador conserva 18 poses.
+
+Al cambiar de mapa, los lotes se ordenan por distancia al jugador. Se preparan hasta dos por cuadro con un presupuesto blando de 3 ms y se suben hasta dos buffers por cuadro. Un lote individual puede superar ese presupuesto. La geometría cercana tiene prioridad y el movimiento espera mientras se prepara. La fábrica procedural inicial de cada escenario sigue siendo síncrona: aún puede existir un tirón al visitar por primera vez un mundo grande.
+
+Las lunas usan dos mallas indexadas en caché y un atlas compartido. Su relieve es más detallado; se mantienen el descarte fuera de cámara y la liberación al salir de Dark Fantasy. Las nuevas interacciones no añaden un noveno sampler a la escena ni requieren extensiones GLES3.
+
+Objetivo: reducir picos de carga y evitar reconstrucciones continuas, conservando el contenido. No se afirma una reducción térmica o un número de FPS sin medirlo físicamente. El mínimo Android/API y las alternativas no garantizan fluidez universal. La prueba pendiente sigue siendo Infinix NOTE 50s, POCO X4 Pro 5G y el modelo concreto del Redmi.
+
+Las comprobaciones GL de escritorio usan GLES2 Mesa/llvmpipe; los ensayos de ciclo de vida de buffers y capacidades usan fronteras GL registradas. Ninguno sustituye una prueba en la GPU de un teléfono.

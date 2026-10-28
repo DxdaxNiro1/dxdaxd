@@ -1,0 +1,16 @@
+{
+  "version": "3.3",
+  "packages": [
+    {
+      "file": "DreamCore_3_3_Ecos_y_Bruma.zip",
+      "bytes": 103072264,
+      "sha256": "259b7855442df9e203bc61acc1ad175e92d2010a1485a66b86982994fc18126d"
+    },
+    {
+      "file": "DreamCore_3_3_Proyecto_Completo.zip",
+      "bytes": 103837897,
+      "sha256": "b793b89aa53709fd204a22287a2392e190e3f8730789cdd77be1900ac707edc4"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

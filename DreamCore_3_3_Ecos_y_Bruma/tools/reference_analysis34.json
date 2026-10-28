@@ -1,0 +1,61 @@
+{
+  "purpose": "High-level atmosphere references only; no reference waveforms, motifs or recordings are embedded in the game.",
+  "references": [
+    {
+      "file": "Anxiety - Andreas Rönnberg.mp3",
+      "seconds": 125.616,
+      "reference_sha256": "27daa463ba9708a376b80b73f8a6fcc34e862ed51c77485aafbb05c6b94b8d62",
+      "excerpt_rms": 0.37321069836616516,
+      "excerpt_centroid_hz": 891.9440175543037,
+      "used_in_game": false
+    },
+    {
+      "file": "Crow - Andreas Rönnberg.mp3",
+      "seconds": 254.712,
+      "reference_sha256": "dbb33f9c2950e8da47d7c416eb04d5a0759e4e225a70b2878649056e17b9c8f7",
+      "excerpt_rms": 0.08120882511138916,
+      "excerpt_centroid_hz": 650.7365175394182,
+      "used_in_game": false
+    },
+    {
+      "file": "Death - Andreas Rönnberg.mp3",
+      "seconds": 126.864,
+      "reference_sha256": "bb53e5204c88f3380b0159207c9b1c229822d277201e2b8920f07edb1d0d24fa",
+      "excerpt_rms": 0.11217253655195236,
+      "excerpt_centroid_hz": 632.678545974882,
+      "used_in_game": false
+    },
+    {
+      "file": "Twisted Mind - Andreas Rönnberg.mp3",
+      "seconds": 101.544,
+      "reference_sha256": "26dde03df927cae24a2d0d613df62d0151e4c130bb01c69b94eb45fc20e13b52",
+      "excerpt_rms": 0.10361975431442261,
+      "excerpt_centroid_hz": 956.1266912060211,
+      "used_in_game": false
+    },
+    {
+      "file": "Chased - Andreas Rönnberg.mp3",
+      "seconds": 108.168,
+      "reference_sha256": "b38db89950880c02402d11024810d258c576da26d5df877e96a21bb467c76a56",
+      "excerpt_rms": 0.11923862993717194,
+      "excerpt_centroid_hz": 611.5043691567589,
+      "used_in_game": false
+    },
+    {
+      "file": "Horror Inside - Andreas Rönnberg.mp3",
+      "seconds": 173.088,
+      "reference_sha256": "e1c8e8c2576f9885ebe082d3e6e8a2550bce5d4f4dba746057c27ea5995a7678",
+      "excerpt_rms": 0.27837738394737244,
+      "excerpt_centroid_hz": 736.3255597936893,
+      "used_in_game": false
+    },
+    {
+      "file": "Chainsaw Reaction - Muddasheep.mp3",
+      "seconds": 190.176,
+      "reference_sha256": "2373d510f75d63a7fbf28dd7d787060da462350a90f2c55ae9574036e0d5134d",
+      "excerpt_rms": 0.1581728607416153,
+      "excerpt_centroid_hz": 413.9671335767824,
+      "used_in_game": false
+    }
+  ]
+}

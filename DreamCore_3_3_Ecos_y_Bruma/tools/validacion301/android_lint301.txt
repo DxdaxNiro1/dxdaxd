@@ -1,0 +1,345 @@
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/AndroidManifest.xml:13: Warning: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed. [DiscouragedApi]
+            android:screenOrientation="landscape"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamAudio.kt:25: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+    private val resources = DreamMusic24.tracks.associate { it.world to context.resources.getIdentifier(it.resource,"raw",context.packageName) }
+                                                                                          ~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:278: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+            val resource=resources.getIdentifier(track.cover,"drawable",packageName)
+                                   ~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/AndroidManifest.xml:5: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+        android:allowBackup="false"
+                             ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:628: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+                canvas.drawRoundRect(RectF(px-half,py-17f*d,px+half,py+8f*d),7f*d,7f*d,paint)
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:637: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+            canvas.drawRoundRect(RectF(width-145f*d,8f*d,width-10f*d,42f*d),9f*d,9f*d,paint)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:640: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+            canvas.drawRoundRect(RectF(width-245f*d,8f*d,width-153f*d,42f*d),9f*d,9f*d,paint)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:647: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+                val lines=ArrayList<String>();var line=""
+                          ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DrawAllocation":
+   You should avoid allocating objects during a drawing or layout operation.
+   These are called frequently, so a smooth UI can be interrupted by garbage
+   collection pauses caused by the object allocations.
+
+   The way this is generally handled is to allocate the needed objects up
+   front and to reuse them for each drawing operation.
+
+   Some methods allocate memory on your behalf (such as Bitmap.create), and
+   these should be handled in the same way.
+
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/air_room_16.ogg: Warning: The resource R.raw.air_room_16 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/dream_cloud_density.png: Warning: The resource R.drawable.dream_cloud_density appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/dream_materials_18.png: Warning: The resource R.drawable.dream_materials_18 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/dream_materials_21.png: Warning: The resource R.drawable.dream_materials_21 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_01_24.png: Warning: The resource R.drawable.music_cover_01_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_02_24.png: Warning: The resource R.drawable.music_cover_02_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_03_24.png: Warning: The resource R.drawable.music_cover_03_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_04_24.png: Warning: The resource R.drawable.music_cover_04_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_05_24.png: Warning: The resource R.drawable.music_cover_05_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_06_24.png: Warning: The resource R.drawable.music_cover_06_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_07_24.png: Warning: The resource R.drawable.music_cover_07_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_08_24.png: Warning: The resource R.drawable.music_cover_08_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_09_24.png: Warning: The resource R.drawable.music_cover_09_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_10_24.png: Warning: The resource R.drawable.music_cover_10_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_11_24.png: Warning: The resource R.drawable.music_cover_11_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_12_24.png: Warning: The resource R.drawable.music_cover_12_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_13_24.png: Warning: The resource R.drawable.music_cover_13_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_14_24.png: Warning: The resource R.drawable.music_cover_14_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_15_24.png: Warning: The resource R.drawable.music_cover_15_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_16_24.png: Warning: The resource R.drawable.music_cover_16_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_17_24.png: Warning: The resource R.drawable.music_cover_17_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_18_24.png: Warning: The resource R.drawable.music_cover_18_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_19_24.png: Warning: The resource R.drawable.music_cover_19_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_20_24.png: Warning: The resource R.drawable.music_cover_20_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_21_24.png: Warning: The resource R.drawable.music_cover_21_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_22_24.png: Warning: The resource R.drawable.music_cover_22_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_23_24.png: Warning: The resource R.drawable.music_cover_23_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_24_24.png: Warning: The resource R.drawable.music_cover_24_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_25_24.png: Warning: The resource R.drawable.music_cover_25_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_26_24.png: Warning: The resource R.drawable.music_cover_26_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_27_24.png: Warning: The resource R.drawable.music_cover_27_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_28_24.png: Warning: The resource R.drawable.music_cover_28_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_29_24.png: Warning: The resource R.drawable.music_cover_29_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_30_24.png: Warning: The resource R.drawable.music_cover_30_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_31_24.png: Warning: The resource R.drawable.music_cover_31_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_32_24.png: Warning: The resource R.drawable.music_cover_32_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_33_24.png: Warning: The resource R.drawable.music_cover_33_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_34_24.png: Warning: The resource R.drawable.music_cover_34_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_35_24.png: Warning: The resource R.drawable.music_cover_35_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_36_24.png: Warning: The resource R.drawable.music_cover_36_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_37_24.png: Warning: The resource R.drawable.music_cover_37_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_38_24.png: Warning: The resource R.drawable.music_cover_38_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_39_24.png: Warning: The resource R.drawable.music_cover_39_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_40_24.png: Warning: The resource R.drawable.music_cover_40_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_41_24.png: Warning: The resource R.drawable.music_cover_41_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_42_24.png: Warning: The resource R.drawable.music_cover_42_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_43_24.png: Warning: The resource R.drawable.music_cover_43_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_44_24.png: Warning: The resource R.drawable.music_cover_44_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_45_24.png: Warning: The resource R.drawable.music_cover_45_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_46_24.png: Warning: The resource R.drawable.music_cover_46_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_47_24.png: Warning: The resource R.drawable.music_cover_47_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_48_24.png: Warning: The resource R.drawable.music_cover_48_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_49_24.png: Warning: The resource R.drawable.music_cover_49_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_50_27.png: Warning: The resource R.drawable.music_cover_50_27 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_51_27.png: Warning: The resource R.drawable.music_cover_51_27 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_52_27.png: Warning: The resource R.drawable.music_cover_52_27 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_53_30.png: Warning: The resource R.drawable.music_cover_53_30 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_54_30.png: Warning: The resource R.drawable.music_cover_54_30 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/drawable-nodpi/music_cover_55_30.png: Warning: The resource R.drawable.music_cover_55_30 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_01_24.ogg: Warning: The resource R.raw.music_score_01_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_02_24.ogg: Warning: The resource R.raw.music_score_02_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_03_24.ogg: Warning: The resource R.raw.music_score_03_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_04_24.ogg: Warning: The resource R.raw.music_score_04_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_05_24.ogg: Warning: The resource R.raw.music_score_05_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_06_24.ogg: Warning: The resource R.raw.music_score_06_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_07_24.ogg: Warning: The resource R.raw.music_score_07_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_08_24.ogg: Warning: The resource R.raw.music_score_08_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_09_24.ogg: Warning: The resource R.raw.music_score_09_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_10_24.ogg: Warning: The resource R.raw.music_score_10_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_11_24.ogg: Warning: The resource R.raw.music_score_11_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_12_24.ogg: Warning: The resource R.raw.music_score_12_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_13_24.ogg: Warning: The resource R.raw.music_score_13_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_14_24.ogg: Warning: The resource R.raw.music_score_14_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_15_24.ogg: Warning: The resource R.raw.music_score_15_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_16_24.ogg: Warning: The resource R.raw.music_score_16_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_17_24.ogg: Warning: The resource R.raw.music_score_17_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_18_24.ogg: Warning: The resource R.raw.music_score_18_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_19_24.ogg: Warning: The resource R.raw.music_score_19_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_20_24.ogg: Warning: The resource R.raw.music_score_20_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_21_24.ogg: Warning: The resource R.raw.music_score_21_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_22_24.ogg: Warning: The resource R.raw.music_score_22_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_23_24.ogg: Warning: The resource R.raw.music_score_23_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_24_24.ogg: Warning: The resource R.raw.music_score_24_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_25_24.ogg: Warning: The resource R.raw.music_score_25_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_26_24.ogg: Warning: The resource R.raw.music_score_26_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_27_24.ogg: Warning: The resource R.raw.music_score_27_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_28_24.ogg: Warning: The resource R.raw.music_score_28_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_29_24.ogg: Warning: The resource R.raw.music_score_29_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_30_24.ogg: Warning: The resource R.raw.music_score_30_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_31_24.ogg: Warning: The resource R.raw.music_score_31_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_32_24.ogg: Warning: The resource R.raw.music_score_32_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_33_24.ogg: Warning: The resource R.raw.music_score_33_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_34_24.ogg: Warning: The resource R.raw.music_score_34_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_35_24.ogg: Warning: The resource R.raw.music_score_35_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_36_24.ogg: Warning: The resource R.raw.music_score_36_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_37_24.ogg: Warning: The resource R.raw.music_score_37_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_38_24.ogg: Warning: The resource R.raw.music_score_38_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_39_24.ogg: Warning: The resource R.raw.music_score_39_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_40_24.ogg: Warning: The resource R.raw.music_score_40_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_41_24.ogg: Warning: The resource R.raw.music_score_41_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_42_24.ogg: Warning: The resource R.raw.music_score_42_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_43_24.ogg: Warning: The resource R.raw.music_score_43_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_44_24.ogg: Warning: The resource R.raw.music_score_44_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_45_24.ogg: Warning: The resource R.raw.music_score_45_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_46_24.ogg: Warning: The resource R.raw.music_score_46_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_47_24.ogg: Warning: The resource R.raw.music_score_47_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_48_24.ogg: Warning: The resource R.raw.music_score_48_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_49_24.ogg: Warning: The resource R.raw.music_score_49_24 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_50_27.ogg: Warning: The resource R.raw.music_score_50_27 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_51_27.ogg: Warning: The resource R.raw.music_score_51_27 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_52_27.ogg: Warning: The resource R.raw.music_score_52_27 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_53_30.ogg: Warning: The resource R.raw.music_score_53_30 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_54_30.ogg: Warning: The resource R.raw.music_score_54_30 appears to be unused [UnusedResources]
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/res/raw/music_score_55_30.ogg: Warning: The resource R.raw.music_score_55_30 appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:320: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(e:MotionEvent):Boolean{if(e.action==MotionEvent.ACTION_DOWN){down=SystemClock.uptimeMillis();return true};if(e.action==MotionEvent.ACTION_UP){val i=nodes.indices.minByOrNull{val q=point(it);hypot(e.x-q.first,e.y-q.second)}?:return true
+                         ~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:543: Warning: Custom view ControlsView overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+        override fun onTouchEvent(event: MotionEvent): Boolean {
+                     ~~~~~~~~~~~~
+
+   Explanation for issues of type "ClickableViewAccessibility":
+   If a View that overrides onTouchEvent or uses an OnTouchListener does not
+   also implement performClick and call it when clicks are detected, the View
+   may not handle accessibility actions properly. Logic handling the click
+   actions should ideally be placed in View#performClick as some accessibility
+   services invoke performClick when a click action should occur.
+
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:223: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        intro.addView(android.widget.TextView(this).apply{text="DREAM CORE";textSize=30f;setTextColor(Color.rgb(236,235,218));if(android.os.Build.VERSION.SDK_INT>=21)letterSpacing=.14f})
+                                                                ~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:224: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        intro.addView(android.widget.TextView(this).apply{text="LUZ DE LOS SUEÑOS  ·  2.9\n\nCada puerta recuerda un lugar.\nTómate tu tiempo para encontrarlo.";textSize=16f;setTextColor(Color.rgb(186,208,207))})
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:224: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        intro.addView(android.widget.TextView(this).apply{text="LUZ DE LOS SUEÑOS  ·  2.9\n\nCada puerta recuerda un lugar.\nTómate tu tiempo para encontrarlo.";textSize=16f;setTextColor(Color.rgb(186,208,207))})
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:224: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        intro.addView(android.widget.TextView(this).apply{text="LUZ DE LOS SUEÑOS  ·  2.9\n\nCada puerta recuerda un lugar.\nTómate tu tiempo para encontrarlo.";textSize=16f;setTextColor(Color.rgb(186,208,207))})
+                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:224: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        intro.addView(android.widget.TextView(this).apply{text="LUZ DE LOS SUEÑOS  ·  2.9\n\nCada puerta recuerda un lugar.\nTómate tu tiempo para encontrarlo.";textSize=16f;setTextColor(Color.rgb(186,208,207))})
+                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:273: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        val toggle=android.widget.Button(this).apply{text="Pausa";isAllCaps=false}
+                                                           ~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:275: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            val track=tracks[index];playing=true;toggle.text="Pausa"
+                                                              ~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:276: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            heading.text="${track.title}\n${track.map}"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:277: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            description.text="${track.seconds/60}:${"%02d".format(track.seconds%60)} · ${track.description}\nVista del escenario renderizada con el motor del juego."
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:277: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            description.text="${track.seconds/60}:${"%02d".format(track.seconds%60)} · ${track.description}\nVista del escenario renderizada con el motor del juego."
+                                                     ~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:277: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            description.text="${track.seconds/60}:${"%02d".format(track.seconds%60)} · ${track.description}\nVista del escenario renderizada con el motor del juego."
+                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:284: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        val previous=android.widget.Button(this).apply{text="Anterior";isAllCaps=false;setOnClickListener{navigate(-1)}}
+                                                             ~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:285: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        val next=android.widget.Button(this).apply{text="Siguiente";isAllCaps=false;setOnClickListener{navigate(1)}}
+                                                         ~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:312: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        val label=android.widget.TextView(this).apply{text="Toca dos símbolos para unir tus propias pistas. Mantén uno pulsado para escribir una nota.";textSize=15f};box.addView(label)
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:326: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        box.addView(android.widget.TextView(this).apply{text=(renderer.journalNotes30+renderer.clueDiary).joinToString("\n\n");textSize=16f;setPadding(8,16,8,16)})
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:377: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Sala de escucha · 55 composiciones";setOnClickListener{showMusicRoom()}})
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:380: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text="Calidad: "+listOf("Baja","Media","Alta")[options.quality]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:380: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Calidad: "+listOf("Baja","Media","Alta")[options.quality]
+                  ~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:381: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            setOnClickListener{options.quality=(options.quality+1)%3;text="Calidad: "+listOf("Baja","Media","Alta")[options.quality];persist()}
+                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:381: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            setOnClickListener{options.quality=(options.quality+1)%3;text="Calidad: "+listOf("Baja","Media","Alta")[options.quality];persist()}
+                                                                           ~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:384: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text="Pasos: "+listOf("Silencio","Suaves","Normales")[footstepMode]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:384: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Pasos: "+listOf("Silencio","Suaves","Normales")[footstepMode]
+                  ~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:385: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            setOnClickListener{footstepMode=(footstepMode+1)%3;text="Pasos: "+listOf("Silencio","Suaves","Normales")[footstepMode];footsteps?.userGain=when(footstepMode){0->0f;2->1.65f;else->1f};persist()}
+                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:385: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            setOnClickListener{footstepMode=(footstepMode+1)%3;text="Pasos: "+listOf("Silencio","Suaves","Normales")[footstepMode];footsteps?.userGain=when(footstepMode){0->0f;2->1.65f;else->1f};persist()}
+                                                                     ~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:388: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text="Fluidez: ${options.fps} FPS";setOnClickListener{options.fps=if(options.fps==30)60 else 30;text="Fluidez: ${options.fps} FPS";persist()}
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:388: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text="Fluidez: ${options.fps} FPS";setOnClickListener{options.fps=if(options.fps==30)60 else 30;text="Fluidez: ${options.fps} FPS";persist()}
+                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:388: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Fluidez: ${options.fps} FPS";setOnClickListener{options.fps=if(options.fps==30)60 else 30;text="Fluidez: ${options.fps} FPS";persist()}
+                  ~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:388: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Fluidez: ${options.fps} FPS";setOnClickListener{options.fps=if(options.fps==30)60 else 30;text="Fluidez: ${options.fps} FPS";persist()}
+                                         ~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:388: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Fluidez: ${options.fps} FPS";setOnClickListener{options.fps=if(options.fps==30)60 else 30;text="Fluidez: ${options.fps} FPS";persist()}
+                                                                                                                  ~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:388: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Fluidez: ${options.fps} FPS";setOnClickListener{options.fps=if(options.fps==30)60 else 30;text="Fluidez: ${options.fps} FPS";persist()}
+                                                                                                                                         ~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:394: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.TextView(this).apply{text="Automática conserva modelos y texturas y adapta la resolución si el renderizado se atrasa o Android informa calor. Resolución completa mantiene el tamaño nativo; Fresco limita la carga."})
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:396: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text="Compatibilidad: "+listOf("Automática","Estable","Esencial")[options.compatibility]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:396: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text="Compatibilidad: "+listOf("Automática","Estable","Esencial")[options.compatibility]
+                  ~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:407: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.TextView(this).apply{text="Estable evita la lectura de profundidad que puede fallar en algunas GPU. Esencial conserva mundos y texturas con iluminación simplificada. El cambio guarda la partida y reinicia el juego."})
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:408: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Información gráfica";setOnClickListener{showPaused(android.app.AlertDialog.Builder(this@MainActivity).setTitle("Gráficos del dispositivo").setMessage(renderer.graphicsInfo).setPositiveButton("Volver",null).create())}})
+                                                            ~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:411: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Pista del lugar";setOnClickListener{showPaused(android.app.AlertDialog.Builder(this@MainActivity).setTitle(DreamJourney.title(renderer.currentWorld)).setMessage(DreamRouteHelp24.hint(renderer.currentWorld)).setPositiveButton("Seguir explorando",null).create())}})
+                                                            ~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:412: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Ir a mi refugio";setOnClickListener{gameView.queueEvent{renderer.goRefuge()};settingsDialog?.dismiss()}})
+                                                            ~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:413: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Los lugares imposibles · 11 mundos";setOnClickListener{gameView.queueEvent{renderer.goReferences()};settingsDialog?.dismiss()}})
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:414: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Diario de pistas";setOnClickListener{showClues()}})
+                                                            ~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:415: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Objetos";setOnClickListener{showTools()}})
+                                                            ~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:416: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Rutas y destinos";setOnClickListener{settingsDialog?.dismiss();showRoutes()}})
+                                                            ~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:417: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.Button(this).apply{text="Guardar y volver al inicio";setOnClickListener{settingsDialog?.dismiss();gameView.queueEvent{renderer.save(true)};showHome()}})
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:419: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        box.addView(android.widget.TextView(this).apply{text="Equilibrado: 30 FPS. Si el teléfono se calienta, el juego reduce efectos y resolución para aliviar la carga. Los escenarios y la partida se conservan."})
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+0 errors, 167 warnings

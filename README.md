@@ -1,3 +1,15 @@
+# DreamCore 3.3 · Ecos y bruma
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_3_Ecos_y_Bruma.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_3_Proyecto_Completo.zip) · [Ver el lugar nuevo](DreamCore_3_3_Ecos_y_Bruma/VISTAS.md)
+
+Mundos y música en cinco categorías, búsqueda de destinos, ajustes separados, archivo de presencias, sonidos por proximidad, respiración y clima. Una ciudad de terror urbano une calle lluviosa, corredor rojo y plaza imposible. **63 mundos y 64 temas**; se mantienen 55 composiciones anteriores y se renuevan ocho temas de terror. Conserva partida, capítulo y lunas.
+
+Acceso: **Inicio/PAUSA → Mundos → Terror y pesadillas → La ciudad que escucha llover**. [Instalación](DreamCore_3_3_Ecos_y_Bruma/LEEME.md) · [Contenido y sonido](DreamCore_3_3_Ecos_y_Bruma/ECOS_Y_BRUMA_3_3.md) · [Validación](DreamCore_3_3_Ecos_y_Bruma/VALIDACION_3_3.json).
+
+Los audios comerciales subidos se utilizan como referencia general de ambiente; no se incluyen sus grabaciones. Las músicas y efectos nuevos se sintetizan desde arreglos propios. Las pruebas de escritorio no miden FPS, temperatura ni reproducción real en un teléfono físico.
+
+<details><summary>Versiones anteriores</summary>
+
 # DreamCore 3.2 · La memoria del Umbral
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_2_La_Memoria_del_Umbral.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_2_Proyecto_Completo.zip) · [Ver el capítulo en el motor](DreamCore_3_2_La_Memoria_del_Umbral/VISTAS.md)
@@ -96,6 +108,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 

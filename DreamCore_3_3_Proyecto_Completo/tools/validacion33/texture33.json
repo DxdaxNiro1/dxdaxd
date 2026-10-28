@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "BitmapPixels301CheckKt": 79008,
+    "PhotoMemory33CheckKt": 5,
+    "TextureRuntime301CheckKt": 12458,
+    "TextureStream33CheckKt": 4469
+  },
+  "total": 95940,
+  "phone_test": false,
+  "boundary": "Canvas/Bitmap and GL contracts simulated; production loader and real PNGs executed"
+}

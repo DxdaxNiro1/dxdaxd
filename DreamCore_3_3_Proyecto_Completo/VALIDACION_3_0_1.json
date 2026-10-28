@@ -1,0 +1,33 @@
+{
+  "version": "3.0.1",
+  "version_code": 31,
+  "bug": "Canvas: trying to use a non-premultiplied bitmap",
+  "fix": "Read straight-alpha pixels and resample channels without Canvas",
+  "android_build": "assembleDebug passed",
+  "android_lint_errors": 0,
+  "min_sdk": 19,
+  "signatures": [
+    "v1",
+    "v2"
+  ],
+  "changed_source_files": [
+    "main/java/com/dreamcore/game/DreamSurfaceTextures.kt",
+    "main/java/com/dreamcore/game/MainActivity.kt"
+  ],
+  "added_source_files": [
+    "main/java/com/dreamcore/game/DreamPixels301.kt"
+  ],
+  "unchanged_resource_files": 172,
+  "shaders_unchanged": true,
+  "gameplay_save_schema_unchanged": true,
+  "tests": {
+    "checks": {
+      "BitmapPixels301CheckKt": 79008,
+      "TextureRuntime301CheckKt": 12458
+    },
+    "total": 91466,
+    "phone_test": false,
+    "boundary": "Canvas/Bitmap and GL contracts simulated; production loader and real PNGs executed"
+  },
+  "phone_test": false
+}

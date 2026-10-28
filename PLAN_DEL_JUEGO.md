@@ -1,3 +1,11 @@
+## Actualización 3.3 · Ecos y bruma (2026-10-28, America/La_Paz)
+
+El usuario pidió volver al trabajo del juego: menús y mundos ordenados, voces de entidades, respiración por proximidad, brisa y lluvia, músicas de terror nuevas a partir de referencias de ambiente y un lugar original de terror urbano mezclado con Dreamcore.
+
+Implementado: cinco categorías compartidas por mundos y música, búsqueda por nombre, ajustes separados, diagnóstico opcional, catálogo de presencias actuales y anteriores, retorno seguro del selector, seis timbres de presencia, respiración gradual y música que cede espacio a los sonidos próximos. Tres bucles de entorno/cuerpo como máximo, intervención de una sola presencia, pausa y liberación comprobadas por programa. Ciudad nueva con calle húmeda, corredor rojo, plaza suspendida y el inquilino. 63 mundos y 64 temas; 55 temas anteriores intactos, ocho temas de terror reestructurados y uno nuevo. Los MP3 de referencia no forman parte de la aplicación.
+
+Se conserva el capítulo 3.2, sus decisiones, la partida, las lunas vivas y el campo de ojos sin ataques. Validación física de sonido, fluidez y temperatura en Infinix, POCO y Redmi sigue pendiente; las pruebas de escritorio no sustituyen esa medición. Detalle: ECOS_Y_BRUMA_3_3.md.
+
 ## Actualización 3.2 · La memoria del Umbral (2026-10-26, America/La_Paz)
 
 Autorizada la integración de las 30 propuestas: capítulo con tres propósitos y finales, 61 historias heredadas más el depósito, conexiones cruzadas, Alma y relaciones persistentes, rastreador de marcas, persecución acotada con mesa y armario, puertas de observación/cooperación, fotografías que envejecen sin modificar originales, recuerdos físicos, visitante del refugio, tren con servicios rivales y acontecimientos, gigantes que alteran el entorno. Se mantienen lunas vivas, mecánicas previas y campo de ojos sin ataques. Total: 62 mundos y 63 músicas.

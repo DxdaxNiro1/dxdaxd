@@ -1,0 +1,254 @@
+[
+  {
+    "number": 56,
+    "world": "horror_atrium32",
+    "title": "El coro detrás de la puerta",
+    "map": "El coro de las puertas torcidas",
+    "lead": "felt",
+    "root": 42,
+    "motif": [
+      0,
+      1,
+      5,
+      11,
+      6,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 8.2,
+    "seconds": 112,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_56_32",
+    "cover": "music_cover_56_32",
+    "seed": 34056
+  },
+  {
+    "number": 57,
+    "world": "horror_garden32",
+    "title": "Las antenas saben tu nombre",
+    "map": "El jardín de las antenas",
+    "lead": "tape",
+    "root": 43,
+    "motif": [
+      0,
+      1,
+      7,
+      6,
+      2,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 8.799999999999999,
+    "seconds": 116,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_57_32",
+    "cover": "music_cover_57_32",
+    "seed": 34057
+  },
+  {
+    "number": 58,
+    "world": "horror_road32",
+    "title": "El farol que queda encendido",
+    "map": "El camino de los testigos",
+    "lead": "felt",
+    "root": 44,
+    "motif": [
+      0,
+      6,
+      3,
+      1,
+      8,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 9.399999999999999,
+    "seconds": 120,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_58_32",
+    "cover": "music_cover_58_32",
+    "seed": 34058
+  },
+  {
+    "number": 59,
+    "world": "horror_forest32",
+    "title": "Un sol que no calienta",
+    "map": "El bosque del sol vacío",
+    "lead": "tape",
+    "root": 45,
+    "motif": [
+      0,
+      1,
+      5,
+      11,
+      6,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 10.0,
+    "seconds": 124,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_59_32",
+    "cover": "music_cover_59_32",
+    "seed": 34059
+  },
+  {
+    "number": 60,
+    "world": "horror_screens32",
+    "title": "Flores en una señal vacía",
+    "map": "El herbario de las pantallas",
+    "lead": "felt",
+    "root": 40,
+    "motif": [
+      0,
+      1,
+      7,
+      6,
+      2,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 8.2,
+    "seconds": 128,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_60_32",
+    "cover": "music_cover_60_32",
+    "seed": 34060
+  },
+  {
+    "number": 61,
+    "world": "horror_house32",
+    "title": "Lo que sostiene una casa",
+    "map": "La casa del hilo",
+    "lead": "tape",
+    "root": 41,
+    "motif": [
+      0,
+      6,
+      3,
+      1,
+      8,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 8.799999999999999,
+    "seconds": 132,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_61_32",
+    "cover": "music_cover_61_32",
+    "seed": 34061
+  },
+  {
+    "number": 62,
+    "world": "horror_pool32",
+    "title": "El mar escucha desde abajo",
+    "map": "La piscina del horizonte",
+    "lead": "felt",
+    "root": 42,
+    "motif": [
+      0,
+      1,
+      5,
+      11,
+      6,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 9.399999999999999,
+    "seconds": 136,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_62_32",
+    "cover": "music_cover_62_32",
+    "seed": 34062
+  },
+  {
+    "number": 63,
+    "world": "dream_archive33",
+    "title": "La voz que no dejamos salir",
+    "map": "El depósito de las voces",
+    "lead": "tape",
+    "root": 43,
+    "motif": [
+      0,
+      1,
+      7,
+      6,
+      2,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 10.0,
+    "seconds": 128,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias",
+    "resource": "music_score_63_33",
+    "cover": "music_cover_63_33",
+    "seed": 34063
+  },
+  {
+    "number": 64,
+    "world": "dream_rainward34",
+    "title": "Todavía hay alguien en el turno",
+    "map": "La ciudad que escucha llover",
+    "seconds": 132,
+    "resource": "music_score_64_34",
+    "cover": "music_cover_64_34",
+    "seed": 34064,
+    "root": 44,
+    "lead": "felt",
+    "motif": [
+      0,
+      6,
+      3,
+      1,
+      8,
+      0
+    ],
+    "harmony": [
+      0,
+      -1,
+      -5,
+      1
+    ],
+    "pulse": 8.2,
+    "description": "composición original: voces sintetizadas sin palabras, viento, cinta y resonancias"
+  }
+]
