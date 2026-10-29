@@ -1,0 +1,31 @@
+DREAMCORE 2.7 · VIGILIA
+
+Se conserva el perfil de Media a 30 FPS para Infinix NOTE 50s, los avisos térmicos
+reales de Android, el modo ahorro, los bloques de 64m y el descarte por cámara.
+No se midieron FPS, batería ni temperatura en un teléfono físico.
+
+LUNAS
+Dos VBO estáticos compartidos: redonda esculpida y creciente con borde interior.
+Un atlas de caras de 1024x2048 con mipmaps (~10.7 MiB GPU). Uno a tres dibujos
+según las lunas visibles: dos normales y la gigante cuando corresponde.
+Los cambios de mirada, párpados, sonrisa y color se hacen por uniformes.
+Los modelos no añaden luces dinámicas ni capturas de sombras adicionales.
+
+CRIATURAS
+Atlas compartido de 1024x1024 con mipmaps (~5.3 MiB GPU). Reutiliza la unidad 7
+del programa de escena en los dos escenarios que lo necesitan. El programa
+principal conserva ocho samplers, dentro del mínimo de OpenGL ES 2.0.
+La geometría descansa en los bloques del campo/isla; no hay IA de combate ni
+navegación de multitudes. El seguimiento visual y los parpadeos usan el shader.
+Las plumas tienen sección curvada y movimiento leve, sin simulación física.
+
+MUNDOS Y AUDIO
+Solo se sube a la GPU el mundo actual y sus bloques cercanos. Se conservan
+las 49 grabaciones anteriores y se añaden tres audios OGG estéreo comprimidos.
+No hay síntesis musical ni generación de texturas en tiempo de juego.
+
+Se conservan nubes a media resolución, sombras direccionales espaciadas,
+reflejos planos espaciados y AO condicionado a capacidades. Baja y ahorro
+reducen efectos; los modelos y funciones solicitados siguen presentes.
+El contenido extra consume memoria y trabajo gráfico: se recomienda validar
+sesiones largas en el equipo físico antes de publicar para otros dispositivos.

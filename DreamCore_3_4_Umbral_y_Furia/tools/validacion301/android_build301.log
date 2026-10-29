@@ -1,0 +1,95 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+
+> Configure project :app
+Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+WARNING: platform-tools package is not installed.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:mergeDebugResources
+> Task :app:processDebugManifest
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:processDebugManifestForPackage
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:mergeDebugStartupProfile
+> Task :app:checkDebugDuplicateClasses
+> Task :app:processDebugResources
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResValues
+> Task :app:extractProguardFiles
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:mergeExtDexDebug
+
+> Task :app:compileDebugKotlin
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:15:64 Unsafe use of a nullable receiver of type Int?
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:15:74 Unsafe use of a nullable receiver of type Int?
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:16:32 Unsafe use of a nullable receiver of type Int?
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:16:36 Unsafe use of a nullable receiver of type Int?
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:16:40 Unsafe use of a nullable receiver of type Int?
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:16:44 Unsafe use of a nullable receiver of type Int?
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:17:104 Type mismatch: inferred type is Int? but Int was expected
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamBackrooms.kt:17:127 Type mismatch: inferred type is Int? but Int was expected
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamHorizons.kt:20:26 Parameter 'x' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamPlay30.kt:100:25 Parameter 'id' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamReferences.kt:106:42 Name shadowed: a
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamReferences.kt:106:70 Name shadowed: d
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamReferences.kt:112:86 Name shadowed: a
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamRenderer.kt:630:21 Variable 'floor' initializer is redundant
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamRoutes23.kt:48:22 Variable 'i' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamVigilia27.kt:79:40 Name shadowed: a
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamWaterpark.kt:9:16 Parameter 'x' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamWorlds.kt:227:17 Name shadowed: x
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamWorlds.kt:741:13 Variable 'aqua' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamWorlds.kt:957:13 Variable 'dark' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/DreamWorlds.kt:1069:13 Variable 'dark' is never used
+w: file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/src/main/java/com/dreamcore/game/MainActivity.kt:260:59 'onBackPressed(): Unit' is deprecated. Deprecated in Java
+
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:mergeDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+> Task :app:lintAnalyzeDebugAndroidTest
+Warning: Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///workspace/dxdaxd/DreamCore_3_0_1_Proyecto_Completo/app/build/reports/lint-results-debug.html
+
+> Task :app:lintDebug
+
+BUILD SUCCESSFUL in 48s
+44 actionable tasks: 44 executed

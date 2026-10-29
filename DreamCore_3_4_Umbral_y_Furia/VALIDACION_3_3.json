@@ -1,0 +1,105 @@
+{
+  "version": "3.3",
+  "version_code": 34,
+  "date": "2026-10-28",
+  "date_zone": "America/La_Paz",
+  "worlds": 63,
+  "compositions": 64,
+  "world_categories": 5,
+  "presence_catalogue_entries": 19,
+  "new_entity": "tenant",
+  "new_world": "dream_rainward34",
+  "core_assertions": {
+    "checks": {
+      "Journey19Check": 711,
+      "CraterPhysicsCheck": 36,
+      "RadialFallCheck": 480,
+      "MoonTravel17Check": 81,
+      "Ecos18Check": 847,
+      "Horizons19Check": 785,
+      "Voyage20Check": 5314,
+      "References21Check": 858,
+      "Miradas22Check": 6296,
+      "Desvios23Check": 63733,
+      "Resonancias24Check": 515,
+      "Graphics26Check": 496,
+      "Vigilia27Check": 64180,
+      "Fluidez28Check": 49913,
+      "Compatibility29Check": 1472,
+      "UltimoTren30Check": 114,
+      "Terror32Check": 269,
+      "Memoria33Check": 1270,
+      "Walking33Check": 141,
+      "ChapterVisual33Check": 83,
+      "Ecos34Check": 274
+    },
+    "total": 197868
+  },
+  "post_integration_ecos_assertions": 274,
+  "sound_pool_lifecycle": {
+    "assertions": 11,
+    "boundary": "Production SoundPool owner executed with recorded Android boundary; not a physical-device playback test"
+  },
+  "music_lifecycle": {
+    "assertions": 161,
+    "max_simultaneous_media_decoders": 4,
+    "physical_device": false
+  },
+  "original_audio": {
+    "new_effects": 9,
+    "rearranged_horror_compositions": 8,
+    "new_world_compositions": 1,
+    "decoded_files": 18,
+    "clipped_samples": 0,
+    "reference_recordings_bundled": false
+  },
+  "inherited_resources": {
+    "preserved": 197,
+    "rearranged_horror_tracks": [
+      "raw/music_score_56_32.ogg",
+      "raw/music_score_57_32.ogg",
+      "raw/music_score_62_32.ogg",
+      "raw/music_score_58_32.ogg",
+      "raw/music_score_59_32.ogg",
+      "raw/music_score_63_33.ogg",
+      "raw/music_score_61_32.ogg",
+      "raw/music_score_60_32.ogg"
+    ],
+    "peaceful_and_other_themes_preserved": 55,
+    "missing": []
+  },
+  "linked_gles2_programs": 641,
+  "mesa_rendered_views": 144,
+  "all_worlds_stable_and_essential": true,
+  "android": {
+    "assembleDebug": "PASS",
+    "lintDebug": "PASS",
+    "lint_errors": 0,
+    "min_sdk": 19,
+    "target_sdk": 34,
+    "gles": "2.0",
+    "apk_sha256": "ac742b9e8d91922f3e79d3f0ef2c0a07f314d530cdfcf6929575e7c20d39ac69"
+  },
+  "source_manifest_sha256": "7e54cf57ea4dbaa2c1f2da14d2cb33f4c1df59e751503b30f60d0f37009128c3",
+  "physical_phone_tests": {
+    "executed": false,
+    "pending": [
+      "Infinix NOTE 50s",
+      "POCO X4 Pro 5G",
+      "Redmi"
+    ],
+    "phone_fps_measured": false,
+    "phone_temperature_measured": false,
+    "phone_audio_playback_measured": false
+  },
+  "windows_installer": {
+    "static_checks": "PASS",
+    "executed": false
+  },
+  "limitations": [
+    "Android menus compiled and reviewed in source; no native UI/device execution is claimed.",
+    "GLES2 screenshots use Mesa software rendering and production meshes/shaders, not a physical phone.",
+    "Audio lifecycle uses production owners with recorded Android boundaries; decoded OGG validation does not prove loudspeaker/headphone performance.",
+    "The original application ID, save schema, calm/other 55 scores, lunar behavior and peaceful eye-field are retained."
+  ]
+}

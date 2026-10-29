@@ -1,0 +1,16 @@
+{
+  "version": "3.4",
+  "packages": [
+    {
+      "file": "DreamCore_3_4_Umbral_y_Furia.zip",
+      "bytes": 102600717,
+      "sha256": "5b48e93e66acba53d7ef4d89acefd982c8e668e508e2d9f0b1587335d43a61e6"
+    },
+    {
+      "file": "DreamCore_3_4_Proyecto_Completo.zip",
+      "bytes": 103363926,
+      "sha256": "9c4782e8923347d8afe86b79d35468000c52be6aecb3e7c81f16bb02bcbb02f2"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

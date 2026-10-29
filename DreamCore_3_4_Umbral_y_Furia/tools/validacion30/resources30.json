@@ -1,0 +1,37 @@
+{
+  "preserved_resource_files": 145,
+  "changed_resource_files": [
+    "drawable-nodpi/music_cover_18_24.png",
+    "drawable-nodpi/music_cover_50_27.png",
+    "drawable-nodpi/music_cover_17_24.png",
+    "drawable-nodpi/dream_lunar_faces_27.png",
+    "drawable-nodpi/music_cover_51_27.png"
+  ],
+  "new_resource_files": [
+    "drawable-nodpi/music_cover_55_30.png",
+    "drawable-nodpi/music_cover_54_30.png",
+    "drawable-nodpi/music_cover_53_30.png",
+    "raw/fx_piano0_30.ogg",
+    "raw/fx_train30.ogg",
+    "raw/fx_projector30.ogg",
+    "raw/fx_room30.ogg",
+    "raw/fx_chalk30.ogg",
+    "raw/fx_valve30.ogg",
+    "raw/fx_piano4_30.ogg",
+    "raw/fx_tape30.ogg",
+    "raw/fx_paper30.ogg",
+    "raw/music_score_54_30.ogg",
+    "raw/fx_wind30.ogg",
+    "raw/music_score_53_30.ogg",
+    "raw/fx_piano5_30.ogg",
+    "raw/fx_piano6_30.ogg",
+    "raw/fx_piano1_30.ogg",
+    "raw/music_score_55_30.ogg",
+    "raw/fx_piano3_30.ogg",
+    "raw/fx_carousel30.ogg",
+    "raw/fx_piano2_30.ogg"
+  ],
+  "previous_world_geometry_unchanged": 51,
+  "maps": 54,
+  "scores": 55
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "number": 63,
+    "world": "dream_archive33",
+    "title": "La voz que no dejamos salir",
+    "map": "El depósito de las voces",
+    "lead": "organ",
+    "root": 42,
+    "motif": [
+      0,
+      1,
+      7,
+      2,
+      10,
+      5,
+      0
+    ],
+    "harmony": [
+      0,
+      -5,
+      1,
+      3
+    ],
+    "pulse": 9.7,
+    "seconds": 128,
+    "description": "composición original: órgano, cinta y resonancias del archivo",
+    "resource": "music_score_63_33",
+    "cover": "music_cover_63_33",
+    "seed": 33063
+  }
+]

@@ -1,3 +1,11 @@
+## Actualización 3.4 · Umbral y furia (2026-10-28, America/La_Paz)
+
+Petición: reorganizar mapa y accesos por colores y mejores posiciones, mejorar criaturas y añadir agarre, mirada, furia, grito, muerte y sangre con una secuencia diferente por espectro.
+
+Implementado: registro único de diez accesos físicos y cinco sectores numerados/coloreados, plano en Pausa, catálogos y señales coherentes. Dieciocho perfiles de encuentros hostiles con advertencia evitable, articulaciones y gritos originales; cuatro guardianes del campo convertidos en modelos dinámicos. Muerte con elección de despertar/Umbral, protección al reaparecer y preservación de pistas, inventario y decisiones. Sangre y ataques configurables, voces independientes, pausa y escondites respetados.
+
+La solicitud actual cambia el reposo sin ataques de las cuatro figuras de la pradera: ahora reaccionan al invadir su espacio, sin persecución libre. Acompañantes, Alma y refugio siguen siendo seguros. Las lunas conservan su comportamiento y el ángel distante permanece en el paisaje; no se añaden ataques a distancia arbitrarios. 63 mundos y 64 temas conservados. No hay prueba física de rendimiento, temperatura o audio en los teléfonos del usuario.
+
 ## Actualización 3.3 · Ecos y bruma (2026-10-28, America/La_Paz)
 
 El usuario pidió volver al trabajo del juego: menús y mundos ordenados, voces de entidades, respiración por proximidad, brisa y lluvia, músicas de terror nuevas a partir de referencias de ambiente y un lugar original de terror urbano mezclado con Dreamcore.
