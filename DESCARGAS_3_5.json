@@ -1,0 +1,16 @@
+{
+  "version": "3.5",
+  "packages": [
+    {
+      "file": "DreamCore_3_5_Los_Tres_Horizontes.zip",
+      "bytes": 93987325,
+      "sha256": "ace3462dfa270b52fb67ecc9c1e2cff973db55f2c9de6be582cea691cf69eec4"
+    },
+    {
+      "file": "DreamCore_3_5_Proyecto_Completo.zip",
+      "bytes": 94743806,
+      "sha256": "eeef34f451190e9248125da65c550ae2a2560707b88191ab7ee0dfa5cee99124"
+    }
+  ],
+  "alias": "DreamCore_actualizacion.zip"
+}

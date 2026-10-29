@@ -1,0 +1,1454 @@
+[
+  {
+    "number": 1,
+    "world": "title",
+    "title": "Antes de recordar",
+    "map": "Inicio",
+    "lead": "felt",
+    "root": 57,
+    "motif": [
+      0,
+      7,
+      11,
+      14,
+      9,
+      4,
+      2
+    ],
+    "harmony": [
+      0,
+      -5,
+      -2,
+      5
+    ],
+    "pulse": 7.1,
+    "seconds": 112,
+    "description": "piano de fieltro, cinta suave y acordes suspendidos",
+    "resource": "music_score_01_24",
+    "cover": "music_cover_01_24",
+    "file": "01 - Antes de recordar.mp3",
+    "seed": 24113
+  },
+  {
+    "number": 2,
+    "world": "dream_01",
+    "title": "Cinco puertas al atardecer",
+    "map": "El Umbral: Dreamcore y Dark Fantasy",
+    "lead": "glass",
+    "root": 60,
+    "motif": [
+      7,
+      12,
+      4,
+      11,
+      2,
+      9
+    ],
+    "harmony": [
+      0,
+      5,
+      2,
+      -3
+    ],
+    "pulse": 9.3,
+    "seconds": 128,
+    "description": "cristal suave, resonancias y voces lejanas",
+    "resource": "music_score_02_24",
+    "cover": "music_cover_02_24",
+    "file": "02 - Cinco puertas al atardecer.mp3",
+    "seed": 24226
+  },
+  {
+    "number": 3,
+    "world": "dream_02",
+    "title": "El agua conserva las voces",
+    "map": "Piscinas del recuerdo",
+    "lead": "water",
+    "root": 62,
+    "motif": [
+      0,
+      2,
+      9,
+      7,
+      14,
+      4,
+      11
+    ],
+    "harmony": [
+      0,
+      -2,
+      5,
+      0
+    ],
+    "pulse": 5.6,
+    "seconds": 120,
+    "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+    "resource": "music_score_03_24",
+    "cover": "music_cover_03_24",
+    "file": "03 - El agua conserva las voces.mp3",
+    "seed": 24339
+  },
+  {
+    "number": 4,
+    "world": "dream_03",
+    "title": "Casas que caen despacio",
+    "map": "El abismo de las casas perdidas",
+    "lead": "bow",
+    "root": 43,
+    "motif": [
+      12,
+      7,
+      3,
+      10,
+      2,
+      0
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      -2
+    ],
+    "pulse": 12.7,
+    "seconds": 144,
+    "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+    "resource": "music_score_04_24",
+    "cover": "music_cover_04_24",
+    "file": "04 - Casas que caen despacio.mp3",
+    "seed": 24452
+  },
+  {
+    "number": 5,
+    "world": "dream_04",
+    "title": "La lluvia olvidó el suelo",
+    "map": "Los jardines de cristal dormido",
+    "lead": "harp",
+    "root": 64,
+    "motif": [
+      4,
+      11,
+      7,
+      14,
+      9,
+      2,
+      0
+    ],
+    "harmony": [
+      0,
+      -3,
+      5,
+      2
+    ],
+    "pulse": 4.9,
+    "seconds": 136,
+    "description": "arpa de nylon, aire y notas que quedan suspendidas",
+    "resource": "music_score_05_24",
+    "cover": "music_cover_05_24",
+    "file": "05 - La lluvia olvidó el suelo.mp3",
+    "seed": 24565
+  },
+  {
+    "number": 6,
+    "world": "dream_05",
+    "title": "Alguien dejó la luz",
+    "map": "El pueblo de las ventanas despiertas",
+    "lead": "felt",
+    "root": 55,
+    "motif": [
+      0,
+      4,
+      7,
+      11,
+      9,
+      2,
+      7,
+      4
+    ],
+    "harmony": [
+      0,
+      5,
+      -3,
+      -5
+    ],
+    "pulse": 6.4,
+    "seconds": 116,
+    "description": "piano de fieltro, cinta suave y acordes suspendidos",
+    "resource": "music_score_06_24",
+    "cover": "music_cover_06_24",
+    "file": "06 - Alguien dejó la luz.mp3",
+    "seed": 24678
+  },
+  {
+    "number": 7,
+    "world": "dream_06",
+    "title": "Mareas sobre las ventanas",
+    "map": "El mar dentro del cielo",
+    "lead": "flute",
+    "root": 58,
+    "motif": [
+      7,
+      2,
+      10,
+      5,
+      12,
+      9
+    ],
+    "harmony": [
+      0,
+      -2,
+      -5,
+      3
+    ],
+    "pulse": 10.8,
+    "seconds": 132,
+    "description": "flauta de aire, graves aterciopelados y silencios amplios",
+    "resource": "music_score_07_24",
+    "cover": "music_cover_07_24",
+    "file": "07 - Mareas sobre las ventanas.mp3",
+    "seed": 24791
+  },
+  {
+    "number": 8,
+    "world": "dream_07",
+    "title": "La puerta del fondo respira",
+    "map": "La casa que recuerda otra puerta",
+    "lead": "tape",
+    "root": 53,
+    "motif": [
+      0,
+      1,
+      7,
+      8,
+      3,
+      10
+    ],
+    "harmony": [
+      0,
+      1,
+      -2,
+      -5
+    ],
+    "pulse": 13.1,
+    "seconds": 112,
+    "description": "teclado de cinta, reversos y un pulso que se desvanece",
+    "resource": "music_score_08_24",
+    "cover": "music_cover_08_24",
+    "file": "08 - La puerta del fondo respira.mp3",
+    "seed": 24904
+  },
+  {
+    "number": 9,
+    "world": "dream_08",
+    "title": "Una lámpara en el abismo",
+    "map": "La estación del último sueño",
+    "lead": "felt",
+    "root": 59,
+    "motif": [
+      11,
+      7,
+      2,
+      0,
+      9,
+      4
+    ],
+    "harmony": [
+      0,
+      -5,
+      2,
+      -2
+    ],
+    "pulse": 8.9,
+    "seconds": 128,
+    "description": "piano de fieltro, cinta suave y acordes suspendidos",
+    "resource": "music_score_09_24",
+    "cover": "music_cover_09_24",
+    "file": "09 - Una lámpara en el abismo.mp3",
+    "seed": 25017
+  },
+  {
+    "number": 10,
+    "world": "dream_09",
+    "title": "La partida sin contrincante",
+    "map": "La llanura de los reyes dormidos",
+    "lead": "marimba",
+    "root": 61,
+    "motif": [
+      0,
+      7,
+      2,
+      8,
+      5,
+      11,
+      3
+    ],
+    "harmony": [
+      0,
+      -4,
+      1,
+      5
+    ],
+    "pulse": 3.7,
+    "seconds": 120,
+    "description": "marimba apagada, madera y respuestas desiguales",
+    "resource": "music_score_10_24",
+    "cover": "music_cover_10_24",
+    "file": "10 - La partida sin contrincante.mp3",
+    "seed": 25130
+  },
+  {
+    "number": 11,
+    "world": "dream_10",
+    "title": "Porcelana que llora",
+    "map": "El valle de las cúpulas de agua",
+    "lead": "water",
+    "root": 56,
+    "motif": [
+      0,
+      3,
+      8,
+      7,
+      2,
+      10,
+      5
+    ],
+    "harmony": [
+      0,
+      -2,
+      1,
+      -5
+    ],
+    "pulse": 8.1,
+    "seconds": 144,
+    "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+    "resource": "music_score_11_24",
+    "cover": "music_cover_11_24",
+    "file": "11 - Porcelana que llora.mp3",
+    "seed": 25243
+  },
+  {
+    "number": 12,
+    "world": "dream_11",
+    "title": "Habitaciones a la deriva",
+    "map": "El hotel de los horizontes",
+    "lead": "glass",
+    "root": 65,
+    "motif": [
+      7,
+      11,
+      14,
+      4,
+      9,
+      2
+    ],
+    "harmony": [
+      0,
+      2,
+      -3,
+      5
+    ],
+    "pulse": 11.3,
+    "seconds": 136,
+    "description": "cristal suave, resonancias y voces lejanas",
+    "resource": "music_score_12_24",
+    "cover": "music_cover_12_24",
+    "file": "12 - Habitaciones a la deriva.mp3",
+    "seed": 25356
+  },
+  {
+    "number": 13,
+    "world": "dream_12",
+    "title": "La curva que nadie recuerda",
+    "map": "La carretera donde caen estrellas",
+    "lead": "guitar",
+    "root": 50,
+    "motif": [
+      0,
+      7,
+      10,
+      5,
+      3,
+      12,
+      2
+    ],
+    "harmony": [
+      0,
+      3,
+      -5,
+      -2
+    ],
+    "pulse": 7.7,
+    "seconds": 116,
+    "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+    "resource": "music_score_13_24",
+    "cover": "music_cover_13_24",
+    "file": "13 - La curva que nadie recuerda.mp3",
+    "seed": 25469
+  },
+  {
+    "number": 14,
+    "world": "dream_13",
+    "title": "Lágrimas que sostienen el cielo",
+    "map": "El parque de las lágrimas suspendidas",
+    "lead": "choir",
+    "root": 54,
+    "motif": [
+      7,
+      3,
+      10,
+      2,
+      8,
+      0
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 9.7,
+    "seconds": 132,
+    "description": "coro sin palabras, campanas lejanas y respiración armónica",
+    "resource": "music_score_14_24",
+    "cover": "music_cover_14_24",
+    "file": "14 - Lágrimas que sostienen el cielo.mp3",
+    "seed": 25582
+  },
+  {
+    "number": 15,
+    "world": "dream_14",
+    "title": "Órbitas de infancia",
+    "map": "El tobogán de los planetas",
+    "lead": "musicbox",
+    "root": 67,
+    "motif": [
+      0,
+      4,
+      11,
+      7,
+      14,
+      9,
+      2,
+      12
+    ],
+    "harmony": [
+      0,
+      -3,
+      2,
+      5
+    ],
+    "pulse": 4.3,
+    "seconds": 112,
+    "description": "caja de música amortiguada, ecos y cielo abierto",
+    "resource": "music_score_15_24",
+    "cover": "music_cover_15_24",
+    "file": "15 - Órbitas de infancia.mp3",
+    "seed": 25695
+  },
+  {
+    "number": 16,
+    "world": "dream_15",
+    "title": "El recreo después del fin",
+    "map": "La ciudad del último recreo",
+    "lead": "guitar",
+    "root": 59,
+    "motif": [
+      4,
+      2,
+      9,
+      7,
+      0,
+      11,
+      5
+    ],
+    "harmony": [
+      0,
+      5,
+      -2,
+      -5
+    ],
+    "pulse": 5.9,
+    "seconds": 128,
+    "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+    "resource": "music_score_16_24",
+    "cover": "music_cover_16_24",
+    "file": "16 - El recreo después del fin.mp3",
+    "seed": 25808
+  },
+  {
+    "number": 17,
+    "world": "dark_01",
+    "title": "Sonríe cuando no miras",
+    "map": "El reino de las lunas dormidas",
+    "lead": "organ",
+    "root": 42,
+    "motif": [
+      0,
+      1,
+      7,
+      3,
+      8,
+      2
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      -1
+    ],
+    "pulse": 14.3,
+    "seconds": 120,
+    "description": "órgano cálido, tonos graves y intervalos inciertos",
+    "resource": "music_score_17_24",
+    "cover": "music_cover_17_24",
+    "file": "17 - Sonríe cuando no miras.mp3",
+    "seed": 25921
+  },
+  {
+    "number": 18,
+    "world": "dark_02",
+    "title": "Flores para un trono vacío",
+    "map": "El jardín de las coronas vacías",
+    "lead": "bow",
+    "root": 48,
+    "motif": [
+      0,
+      3,
+      2,
+      8,
+      7,
+      10,
+      5
+    ],
+    "harmony": [
+      0,
+      -2,
+      1,
+      3
+    ],
+    "pulse": 11.9,
+    "seconds": 144,
+    "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+    "resource": "music_score_18_24",
+    "cover": "music_cover_18_24",
+    "file": "18 - Flores para un trono vacío.mp3",
+    "seed": 26034
+  },
+  {
+    "number": 19,
+    "world": "pocket_laundry",
+    "title": "La ropa de otra vida",
+    "map": "Lavandería entre nubes",
+    "lead": "marimba",
+    "root": 58,
+    "motif": [
+      0,
+      9,
+      4,
+      7,
+      2,
+      11
+    ],
+    "harmony": [
+      0,
+      5,
+      -3,
+      2
+    ],
+    "pulse": 6.7,
+    "seconds": 136,
+    "description": "marimba apagada, madera y respuestas desiguales",
+    "resource": "music_score_19_24",
+    "cover": "music_cover_19_24",
+    "file": "19 - La ropa de otra vida.mp3",
+    "seed": 26147
+  },
+  {
+    "number": 20,
+    "world": "pocket_train",
+    "title": "El último vagón sumergido",
+    "map": "El tren bajo el agua",
+    "lead": "tape",
+    "root": 49,
+    "motif": [
+      0,
+      5,
+      7,
+      10,
+      2,
+      3
+    ],
+    "harmony": [
+      0,
+      -5,
+      -2,
+      3
+    ],
+    "pulse": 9.1,
+    "seconds": 116,
+    "description": "teclado de cinta, reversos y un pulso que se desvanece",
+    "resource": "music_score_20_24",
+    "cover": "music_cover_20_24",
+    "file": "20 - El último vagón sumergido.mp3",
+    "seed": 26260
+  },
+  {
+    "number": 21,
+    "world": "pocket_dawn",
+    "title": "Las seis y nunca más",
+    "map": "El amanecer que no termina",
+    "lead": "harp",
+    "root": 63,
+    "motif": [
+      4,
+      7,
+      14,
+      11,
+      2,
+      9,
+      0
+    ],
+    "harmony": [
+      0,
+      -3,
+      5,
+      -5
+    ],
+    "pulse": 8.3,
+    "seconds": 132,
+    "description": "arpa de nylon, aire y notas que quedan suspendidas",
+    "resource": "music_score_21_24",
+    "cover": "music_cover_21_24",
+    "file": "21 - Las seis y nunca más.mp3",
+    "seed": 26373
+  },
+  {
+    "number": 22,
+    "world": "pocket_tower",
+    "title": "El horizonte tenía una escalera",
+    "map": "La torre que viste desde lejos",
+    "lead": "organ",
+    "root": 51,
+    "motif": [
+      0,
+      7,
+      12,
+      14,
+      10,
+      5,
+      3
+    ],
+    "harmony": [
+      0,
+      5,
+      3,
+      -2
+    ],
+    "pulse": 10.1,
+    "seconds": 112,
+    "description": "órgano cálido, tonos graves y intervalos inciertos",
+    "resource": "music_score_22_24",
+    "cover": "music_cover_22_24",
+    "file": "22 - El horizonte tenía una escalera.mp3",
+    "seed": 26486
+  },
+  {
+    "number": 23,
+    "world": "pocket_cloudbed",
+    "title": "El peso azul del sueño",
+    "map": "Una cama al borde del universo",
+    "lead": "choir",
+    "root": 61,
+    "motif": [
+      11,
+      9,
+      4,
+      2,
+      7,
+      0
+    ],
+    "harmony": [
+      0,
+      -5,
+      2,
+      -3
+    ],
+    "pulse": 15.1,
+    "seconds": 128,
+    "description": "coro sin palabras, campanas lejanas y respiración armónica",
+    "resource": "music_score_23_24",
+    "cover": "music_cover_23_24",
+    "file": "23 - El peso azul del sueño.mp3",
+    "seed": 26599
+  },
+  {
+    "number": 24,
+    "world": "pocket_refuge",
+    "title": "También pusieron tu taza",
+    "map": "La habitación que te espera",
+    "lead": "felt",
+    "root": 60,
+    "motif": [
+      0,
+      4,
+      9,
+      7,
+      2,
+      11,
+      12
+    ],
+    "harmony": [
+      0,
+      5,
+      -5,
+      2
+    ],
+    "pulse": 7.3,
+    "seconds": 120,
+    "description": "piano de fieltro, cinta suave y acordes suspendidos",
+    "resource": "music_score_24_24",
+    "cover": "music_cover_24_24",
+    "file": "24 - También pusieron tu taza.mp3",
+    "seed": 26712
+  },
+  {
+    "number": 25,
+    "world": "photo_house",
+    "title": "La casa antes de tu llegada",
+    "map": "Fotografía: la casa sin nadie",
+    "lead": "guitar",
+    "root": 57,
+    "motif": [
+      0,
+      2,
+      7,
+      4,
+      11,
+      9
+    ],
+    "harmony": [
+      0,
+      -3,
+      5,
+      0
+    ],
+    "pulse": 8.7,
+    "seconds": 144,
+    "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+    "resource": "music_score_25_24",
+    "cover": "music_cover_25_24",
+    "file": "25 - La casa antes de tu llegada.mp3",
+    "seed": 26825
+  },
+  {
+    "number": 26,
+    "world": "photo_sea",
+    "title": "Una marea detenida en papel",
+    "map": "Fotografía: el mar inmóvil",
+    "lead": "water",
+    "root": 52,
+    "motif": [
+      12,
+      10,
+      5,
+      7,
+      2,
+      9
+    ],
+    "harmony": [
+      0,
+      3,
+      -2,
+      -5
+    ],
+    "pulse": 12.1,
+    "seconds": 136,
+    "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+    "resource": "music_score_26_24",
+    "cover": "music_cover_26_24",
+    "file": "26 - Una marea detenida en papel.mp3",
+    "seed": 26938
+  },
+  {
+    "number": 27,
+    "world": "photo_window",
+    "title": "El cielo detrás del cristal",
+    "map": "Fotografía: las ventanas de ayer",
+    "lead": "glass",
+    "root": 62,
+    "motif": [
+      0,
+      11,
+      7,
+      2,
+      14,
+      5,
+      9
+    ],
+    "harmony": [
+      0,
+      2,
+      5,
+      -3
+    ],
+    "pulse": 10.7,
+    "seconds": 116,
+    "description": "cristal suave, resonancias y voces lejanas",
+    "resource": "music_score_27_24",
+    "cover": "music_cover_27_24",
+    "file": "27 - El cielo detrás del cristal.mp3",
+    "seed": 27051
+  },
+  {
+    "number": 28,
+    "world": "photo_planet",
+    "title": "Una órbita en el álbum",
+    "map": "Fotografía: el planeta detenido",
+    "lead": "musicbox",
+    "root": 64,
+    "motif": [
+      7,
+      4,
+      12,
+      2,
+      9,
+      11,
+      0
+    ],
+    "harmony": [
+      0,
+      -5,
+      -3,
+      2
+    ],
+    "pulse": 5.3,
+    "seconds": 132,
+    "description": "caja de música amortiguada, ecos y cielo abierto",
+    "resource": "music_score_28_24",
+    "cover": "music_cover_28_24",
+    "file": "28 - Una órbita en el álbum.mp3",
+    "seed": 27164
+  },
+  {
+    "number": 29,
+    "world": "pocket_letter",
+    "title": "Dirección: nadie, nunca",
+    "map": "La casa del destinatario ausente",
+    "lead": "flute",
+    "root": 55,
+    "motif": [
+      0,
+      5,
+      2,
+      8,
+      7,
+      3
+    ],
+    "harmony": [
+      0,
+      1,
+      -2,
+      5
+    ],
+    "pulse": 11.1,
+    "seconds": 112,
+    "description": "flauta de aire, graves aterciopelados y silencios amplios",
+    "resource": "music_score_29_24",
+    "cover": "music_cover_29_24",
+    "file": "29 - Dirección - nadie, nunca.mp3",
+    "seed": 27277
+  },
+  {
+    "number": 30,
+    "world": "pocket_gravity",
+    "title": "El techo aprende tus pasos",
+    "map": "El suelo que se volvió cielo",
+    "lead": "bow",
+    "root": 50,
+    "motif": [
+      0,
+      6,
+      7,
+      2,
+      10,
+      5,
+      12
+    ],
+    "harmony": [
+      0,
+      -2,
+      4,
+      -5
+    ],
+    "pulse": 9.9,
+    "seconds": 128,
+    "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+    "resource": "music_score_30_24",
+    "cover": "music_cover_30_24",
+    "file": "30 - El techo aprende tus pasos.mp3",
+    "seed": 27390
+  },
+  {
+    "number": 31,
+    "world": "echo_01",
+    "title": "Calles que se doblan al dormir",
+    "map": "El barrio que se inclinó",
+    "lead": "tape",
+    "root": 56,
+    "motif": [
+      0,
+      4,
+      11,
+      6,
+      9,
+      2,
+      7
+    ],
+    "harmony": [
+      0,
+      2,
+      -3,
+      -5
+    ],
+    "pulse": 6.1,
+    "seconds": 120,
+    "description": "teclado de cinta, reversos y un pulso que se desvanece",
+    "resource": "music_score_31_24",
+    "cover": "music_cover_31_24",
+    "file": "31 - Calles que se doblan al dormir.mp3",
+    "seed": 27503
+  },
+  {
+    "number": 32,
+    "world": "echo_02",
+    "title": "La película que mira la Tierra",
+    "map": "El cine sobre la Tierra",
+    "lead": "organ",
+    "root": 47,
+    "motif": [
+      12,
+      7,
+      2,
+      10,
+      3,
+      5,
+      0
+    ],
+    "harmony": [
+      0,
+      3,
+      -2,
+      -5
+    ],
+    "pulse": 13.7,
+    "seconds": 144,
+    "description": "órgano cálido, tonos graves y intervalos inciertos",
+    "resource": "music_score_32_24",
+    "cover": "music_cover_32_24",
+    "file": "32 - La película que mira la Tierra.mp3",
+    "seed": 27616
+  },
+  {
+    "number": 33,
+    "world": "echo_03",
+    "title": "Duchas para un valle vacío",
+    "map": "Las duchas del valle infinito",
+    "lead": "water",
+    "root": 60,
+    "motif": [
+      2,
+      0,
+      9,
+      5,
+      7,
+      14
+    ],
+    "harmony": [
+      0,
+      5,
+      2,
+      -3
+    ],
+    "pulse": 7.9,
+    "seconds": 136,
+    "description": "piano acuoso, ecos asimétricos y armónicos líquidos",
+    "resource": "music_score_33_24",
+    "cover": "music_cover_33_24",
+    "file": "33 - Duchas para un valle vacío.mp3",
+    "seed": 27729
+  },
+  {
+    "number": 34,
+    "world": "echo_04",
+    "title": "El reflejo llegó primero",
+    "map": "La casa reflejada entre nubes",
+    "lead": "harp",
+    "root": 66,
+    "motif": [
+      0,
+      7,
+      11,
+      2,
+      9,
+      4,
+      14
+    ],
+    "harmony": [
+      0,
+      -3,
+      -5,
+      2
+    ],
+    "pulse": 6.9,
+    "seconds": 116,
+    "description": "arpa de nylon, aire y notas que quedan suspendidas",
+    "resource": "music_score_34_24",
+    "cover": "music_cover_34_24",
+    "file": "34 - El reflejo llegó primero.mp3",
+    "seed": 27842
+  },
+  {
+    "number": 35,
+    "world": "echo_05",
+    "title": "Los hongos sueñan bajo el canal",
+    "map": "El canal de los hongos dormidos",
+    "lead": "marimba",
+    "root": 53,
+    "motif": [
+      0,
+      3,
+      7,
+      9,
+      2,
+      10,
+      5
+    ],
+    "harmony": [
+      0,
+      3,
+      -2,
+      5
+    ],
+    "pulse": 4.1,
+    "seconds": 132,
+    "description": "marimba apagada, madera y respuestas desiguales",
+    "resource": "music_score_35_24",
+    "cover": "music_cover_35_24",
+    "file": "35 - Los hongos sueñan bajo el canal.mp3",
+    "seed": 27955
+  },
+  {
+    "number": 36,
+    "world": "echo_06",
+    "title": "Una nube ocupa todo el día",
+    "map": "La colina de la nube inmensa",
+    "lead": "choir",
+    "root": 59,
+    "motif": [
+      7,
+      14,
+      11,
+      4,
+      2,
+      9,
+      0
+    ],
+    "harmony": [
+      0,
+      5,
+      -3,
+      2
+    ],
+    "pulse": 14.9,
+    "seconds": 112,
+    "description": "coro sin palabras, campanas lejanas y respiración armónica",
+    "resource": "music_score_36_24",
+    "cover": "music_cover_36_24",
+    "file": "36 - Una nube ocupa todo el día.mp3",
+    "seed": 28068
+  },
+  {
+    "number": 37,
+    "world": "echo_07",
+    "title": "Nadie viene a repostar",
+    "map": "La última gasolinera del atardecer",
+    "lead": "guitar",
+    "root": 54,
+    "motif": [
+      0,
+      7,
+      4,
+      2,
+      10,
+      5,
+      9
+    ],
+    "harmony": [
+      0,
+      -5,
+      3,
+      -2
+    ],
+    "pulse": 8.5,
+    "seconds": 128,
+    "description": "guitarra de nylon, fieltro y recuerdos desenfocados",
+    "resource": "music_score_37_24",
+    "cover": "music_cover_37_24",
+    "file": "37 - Nadie viene a repostar.mp3",
+    "seed": 28181
+  },
+  {
+    "number": 38,
+    "world": "echo_08",
+    "title": "Sombras que eligieron otro color",
+    "map": "El barrio de las sombras de colores",
+    "lead": "tape",
+    "root": 60,
+    "motif": [
+      4,
+      6,
+      11,
+      7,
+      2,
+      9,
+      0
+    ],
+    "harmony": [
+      0,
+      2,
+      -5,
+      -3
+    ],
+    "pulse": 5.7,
+    "seconds": 120,
+    "description": "teclado de cinta, reversos y un pulso que se desvanece",
+    "resource": "music_score_38_24",
+    "cover": "music_cover_38_24",
+    "file": "38 - Sombras que eligieron otro color.mp3",
+    "seed": 28294
+  },
+  {
+    "number": 39,
+    "world": "echo_09",
+    "title": "Reservamos una silla para ti",
+    "map": "El pasillo de las sillas vacías",
+    "lead": "felt",
+    "root": 52,
+    "motif": [
+      0,
+      1,
+      8,
+      5,
+      7,
+      3,
+      10
+    ],
+    "harmony": [
+      0,
+      -2,
+      1,
+      -5
+    ],
+    "pulse": 12.3,
+    "seconds": 144,
+    "description": "piano de fieltro, cinta suave y acordes suspendidos",
+    "resource": "music_score_39_24",
+    "cover": "music_cover_39_24",
+    "file": "39 - Reservamos una silla para ti.mp3",
+    "seed": 28407
+  },
+  {
+    "number": 40,
+    "world": "echo_10",
+    "title": "Entre los pisos falta un nombre",
+    "map": "El edificio de los pisos sin nadie",
+    "lead": "bow",
+    "root": 46,
+    "motif": [
+      0,
+      7,
+      1,
+      8,
+      2,
+      10
+    ],
+    "harmony": [
+      0,
+      1,
+      3,
+      -2
+    ],
+    "pulse": 13.3,
+    "seconds": 136,
+    "description": "cuerdas lentas, armónicos oscuros y campanas remotas",
+    "resource": "music_score_40_24",
+    "cover": "music_cover_40_24",
+    "file": "40 - Entre los pisos falta un nombre.mp3",
+    "seed": 28520
+  },
+  {
+    "number": 41,
+    "world": "echo_11",
+    "title": "El archivo de las nubes",
+    "map": "La oficina dentro de las nubes",
+    "lead": "musicbox",
+    "root": 63,
+    "motif": [
+      0,
+      9,
+      11,
+      4,
+      7,
+      2,
+      14
+    ],
+    "harmony": [
+      0,
+      -3,
+      2,
+      -5
+    ],
+    "pulse": 6.3,
+    "seconds": 116,
+    "description": "caja de música amortiguada, ecos y cielo abierto",
+    "resource": "music_score_41_24",
+    "cover": "music_cover_41_24",
+    "file": "41 - El archivo de las nubes.mp3",
+    "seed": 28633
+  },
+  {
+    "number": 42,
+    "world": "preview_eyes",
+    "title": "El campo sabe que estás aquí",
+    "map": "Vista previa: la pradera que te mira",
+    "lead": "choir",
+    "root": 45,
+    "motif": [
+      0,
+      1,
+      8,
+      7,
+      3,
+      2
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      3
+    ],
+    "pulse": 15.7,
+    "seconds": 132,
+    "description": "coro sin palabras, campanas lejanas y respiración armónica",
+    "resource": "music_score_42_24",
+    "cover": "music_cover_42_24",
+    "file": "42 - El campo sabe que estás aquí.mp3",
+    "seed": 28746
+  },
+  {
+    "number": 43,
+    "world": "dream_rose_island",
+    "title": "La casa rosa al final del aire",
+    "map": "La casa rosa sobre el océano",
+    "lead": "harp",
+    "root": 62,
+    "motif": [
+      0,
+      4,
+      7,
+      14,
+      11,
+      9,
+      2
+    ],
+    "harmony": [
+      0,
+      5,
+      -3,
+      -5
+    ],
+    "pulse": 5.1,
+    "seconds": 112,
+    "description": "arpa de nylon, aire y notas que quedan suspendidas",
+    "resource": "music_score_43_24",
+    "cover": "music_cover_43_24",
+    "file": "43 - La casa rosa al final del aire.mp3",
+    "seed": 28859
+  },
+  {
+    "number": 44,
+    "world": "backrooms_01",
+    "title": "Cuarenta y nueve habitaciones despiertas",
+    "map": "Backrooms: las luces que no descansan",
+    "lead": "organ",
+    "root": 44,
+    "motif": [
+      0,
+      1,
+      5,
+      7,
+      2,
+      8
+    ],
+    "harmony": [
+      0,
+      1,
+      -2,
+      -1
+    ],
+    "pulse": 16.3,
+    "seconds": 128,
+    "description": "órgano cálido, tonos graves y intervalos inciertos",
+    "resource": "music_score_44_24",
+    "cover": "music_cover_44_24",
+    "file": "44 - Cuarenta y nueve habitaciones despiertas.mp3",
+    "seed": 28972
+  },
+  {
+    "number": 45,
+    "world": "dream_sky_openings",
+    "title": "Donde el cielo dejó una abertura",
+    "map": "Las aberturas del cielo",
+    "lead": "glass",
+    "root": 58,
+    "motif": [
+      0,
+      7,
+      14,
+      6,
+      11,
+      2,
+      9
+    ],
+    "harmony": [
+      0,
+      2,
+      -3,
+      5
+    ],
+    "pulse": 10.3,
+    "seconds": 120,
+    "description": "cristal suave, resonancias y voces lejanas",
+    "resource": "music_score_45_24",
+    "cover": "music_cover_45_24",
+    "file": "45 - Donde el cielo dejó una abertura.mp3",
+    "seed": 29085
+  },
+  {
+    "number": 46,
+    "world": "dream_cloud_castle",
+    "title": "Un castillo en el aliento",
+    "map": "Los corredores del castillo de nubes",
+    "lead": "choir",
+    "root": 65,
+    "motif": [
+      4,
+      11,
+      7,
+      14,
+      2,
+      9
+    ],
+    "harmony": [
+      0,
+      -5,
+      2,
+      -3
+    ],
+    "pulse": 12.9,
+    "seconds": 144,
+    "description": "coro sin palabras, campanas lejanas y respiración armónica",
+    "resource": "music_score_46_24",
+    "cover": "music_cover_46_24",
+    "file": "46 - Un castillo en el aliento.mp3",
+    "seed": 29198
+  },
+  {
+    "number": 47,
+    "world": "dream_flower_city",
+    "title": "El tren cruza las flores",
+    "map": "La ciudad al otro lado de las flores",
+    "lead": "marimba",
+    "root": 57,
+    "motif": [
+      0,
+      4,
+      9,
+      2,
+      7,
+      11,
+      5
+    ],
+    "harmony": [
+      0,
+      5,
+      -3,
+      2
+    ],
+    "pulse": 4.7,
+    "seconds": 136,
+    "description": "marimba apagada, madera y respuestas desiguales",
+    "resource": "music_score_47_24",
+    "cover": "music_cover_47_24",
+    "file": "47 - El tren cruza las flores.mp3",
+    "seed": 29311
+  },
+  {
+    "number": 48,
+    "world": "dream_grass_fissures",
+    "title": "Un puente entre dos silencios",
+    "map": "La pradera de las grietas",
+    "lead": "flute",
+    "root": 55,
+    "motif": [
+      7,
+      0,
+      2,
+      8,
+      5,
+      10,
+      3
+    ],
+    "harmony": [
+      0,
+      -2,
+      3,
+      -5
+    ],
+    "pulse": 9.5,
+    "seconds": 116,
+    "description": "flauta de aire, graves aterciopelados y silencios amplios",
+    "resource": "music_score_48_24",
+    "cover": "music_cover_48_24",
+    "file": "48 - Un puente entre dos silencios.mp3",
+    "seed": 29424
+  },
+  {
+    "number": 49,
+    "world": "pocket_call_house",
+    "title": "La llamada venía de adentro",
+    "map": "La casa del teléfono desconectado",
+    "lead": "felt",
+    "root": 51,
+    "motif": [
+      0,
+      1,
+      7,
+      10,
+      3,
+      8
+    ],
+    "harmony": [
+      0,
+      1,
+      -5,
+      -2
+    ],
+    "pulse": 14.1,
+    "seconds": 132,
+    "description": "piano de fieltro, cinta suave y acordes suspendidos",
+    "resource": "music_score_49_24",
+    "cover": "music_cover_49_24",
+    "file": "49 - La llamada venía de adentro.mp3",
+    "seed": 29537
+  }
+]

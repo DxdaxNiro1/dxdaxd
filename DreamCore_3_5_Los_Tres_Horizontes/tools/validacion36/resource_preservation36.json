@@ -1,0 +1,16 @@
+{
+  "inherited_resources_unchanged": 234,
+  "old_64_scores_unchanged": true,
+  "new_resources": [
+    "drawable-nodpi/music_cover_67_36.png",
+    "drawable-nodpi/horizon_sky_0_36.jpg",
+    "drawable-nodpi/horizon_sky_1_36.jpg",
+    "drawable-nodpi/music_cover_65_36.png",
+    "drawable-nodpi/music_cover_66_36.png",
+    "drawable-nodpi/horizon_sky_2_36.jpg",
+    "raw/music_score_65_36.ogg",
+    "raw/music_score_66_36.ogg",
+    "raw/fx_fall_wind36.ogg",
+    "raw/music_score_67_36.ogg"
+  ]
+}

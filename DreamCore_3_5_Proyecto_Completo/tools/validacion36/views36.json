@@ -1,0 +1,414 @@
+{
+  "backend": "GLES2 / Mesa llvmpipe",
+  "phone_tested": false,
+  "views": [
+    {
+      "world": "horizon_doors36",
+      "name": "puertas",
+      "mode": "completo",
+      "eye": [
+        0,
+        6.8,
+        10
+      ],
+      "target": [
+        0,
+        8,
+        -100
+      ],
+      "file": "puertas_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "puertas",
+      "mode": "estable",
+      "eye": [
+        0,
+        6.8,
+        10
+      ],
+      "target": [
+        0,
+        8,
+        -100
+      ],
+      "file": "puertas_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "puertas",
+      "mode": "esencial",
+      "eye": [
+        0,
+        6.8,
+        10
+      ],
+      "target": [
+        0,
+        8,
+        -100
+      ],
+      "file": "puertas_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "escaleras",
+      "mode": "completo",
+      "eye": [
+        18,
+        6,
+        -4
+      ],
+      "target": [
+        25,
+        16,
+        -38
+      ],
+      "file": "escaleras_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "escaleras",
+      "mode": "estable",
+      "eye": [
+        18,
+        6,
+        -4
+      ],
+      "target": [
+        25,
+        16,
+        -38
+      ],
+      "file": "escaleras_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "escaleras",
+      "mode": "esencial",
+      "eye": [
+        18,
+        6,
+        -4
+      ],
+      "target": [
+        25,
+        16,
+        -38
+      ],
+      "file": "escaleras_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "orilla",
+      "mode": "completo",
+      "eye": [
+        26,
+        2,
+        -5
+      ],
+      "target": [
+        45,
+        -8,
+        -25
+      ],
+      "file": "orilla_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "orilla",
+      "mode": "estable",
+      "eye": [
+        26,
+        2,
+        -5
+      ],
+      "target": [
+        45,
+        -8,
+        -25
+      ],
+      "file": "orilla_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_doors36",
+      "name": "orilla",
+      "mode": "esencial",
+      "eye": [
+        26,
+        2,
+        -5
+      ],
+      "target": [
+        45,
+        -8,
+        -25
+      ],
+      "file": "orilla_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_crimson36",
+      "name": "gigante",
+      "mode": "completo",
+      "eye": [
+        0,
+        33,
+        12
+      ],
+      "target": [
+        0,
+        65,
+        -95
+      ],
+      "file": "gigante_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_crimson36",
+      "name": "gigante",
+      "mode": "estable",
+      "eye": [
+        0,
+        33,
+        12
+      ],
+      "target": [
+        0,
+        65,
+        -95
+      ],
+      "file": "gigante_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_crimson36",
+      "name": "gigante",
+      "mode": "esencial",
+      "eye": [
+        0,
+        33,
+        12
+      ],
+      "target": [
+        0,
+        65,
+        -95
+      ],
+      "file": "gigante_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_crimson36",
+      "name": "valle",
+      "mode": "completo",
+      "eye": [
+        18,
+        48,
+        -20
+      ],
+      "target": [
+        -9,
+        44,
+        -125
+      ],
+      "file": "valle_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_crimson36",
+      "name": "valle",
+      "mode": "estable",
+      "eye": [
+        18,
+        48,
+        -20
+      ],
+      "target": [
+        -9,
+        44,
+        -125
+      ],
+      "file": "valle_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_crimson36",
+      "name": "valle",
+      "mode": "esencial",
+      "eye": [
+        18,
+        48,
+        -20
+      ],
+      "target": [
+        -9,
+        44,
+        -125
+      ],
+      "file": "valle_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "oceano",
+      "mode": "completo",
+      "eye": [
+        0,
+        78,
+        2
+      ],
+      "target": [
+        0,
+        84,
+        -110
+      ],
+      "file": "oceano_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "oceano",
+      "mode": "estable",
+      "eye": [
+        0,
+        78,
+        2
+      ],
+      "target": [
+        0,
+        84,
+        -110
+      ],
+      "file": "oceano_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "oceano",
+      "mode": "esencial",
+      "eye": [
+        0,
+        78,
+        2
+      ],
+      "target": [
+        0,
+        84,
+        -110
+      ],
+      "file": "oceano_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "roca",
+      "mode": "completo",
+      "eye": [
+        38,
+        106,
+        45
+      ],
+      "target": [
+        0,
+        62,
+        -8
+      ],
+      "file": "roca_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "roca",
+      "mode": "estable",
+      "eye": [
+        38,
+        106,
+        45
+      ],
+      "target": [
+        0,
+        62,
+        -8
+      ],
+      "file": "roca_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "roca",
+      "mode": "esencial",
+      "eye": [
+        38,
+        106,
+        45
+      ],
+      "target": [
+        0,
+        62,
+        -8
+      ],
+      "file": "roca_esencial.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "abajo",
+      "mode": "completo",
+      "eye": [
+        10,
+        78,
+        -8
+      ],
+      "target": [
+        8,
+        6,
+        -9
+      ],
+      "file": "abajo_completo.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "abajo",
+      "mode": "estable",
+      "eye": [
+        10,
+        78,
+        -8
+      ],
+      "target": [
+        8,
+        6,
+        -9
+      ],
+      "file": "abajo_estable.png",
+      "actual_gles": true
+    },
+    {
+      "world": "horizon_blue36",
+      "name": "abajo",
+      "mode": "esencial",
+      "eye": [
+        10,
+        78,
+        -8
+      ],
+      "target": [
+        8,
+        6,
+        -9
+      ],
+      "file": "abajo_esencial.png",
+      "actual_gles": true
+    }
+  ]
+}

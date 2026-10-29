@@ -1,0 +1,181 @@
+tests/trace29/GLES20.kt:47:33: warning: parameter 'type' is never used
+ fun glGetShaderPrecisionFormat(type:Int,kind:Int,range:IntArray,offset:Int,p:IntArray,po:Int){p[po]=23}
+                                ^
+tests/trace29/GLES20.kt:47:42: warning: parameter 'kind' is never used
+ fun glGetShaderPrecisionFormat(type:Int,kind:Int,range:IntArray,offset:Int,p:IntArray,po:Int){p[po]=23}
+                                         ^
+tests/trace29/GLES20.kt:47:51: warning: parameter 'range' is never used
+ fun glGetShaderPrecisionFormat(type:Int,kind:Int,range:IntArray,offset:Int,p:IntArray,po:Int){p[po]=23}
+                                                  ^
+tests/trace29/GLES20.kt:47:66: warning: parameter 'offset' is never used
+ fun glGetShaderPrecisionFormat(type:Int,kind:Int,range:IntArray,offset:Int,p:IntArray,po:Int){p[po]=23}
+                                                                 ^
+tests/trace29/GLES20.kt:51:24: warning: parameter 'target' is never used
+ fun glBindFramebuffer(target:Int,id:Int){if(id==0)restored=true else check(id in liveFrames)}
+                       ^
+tests/trace29/GLES20.kt:53:20: warning: parameter 'target' is never used
+ fun glBindTexture(target:Int,id:Int){check(id==0||id in liveTextures);sampled=id}
+                   ^
+tests/trace29/GLES20.kt:54:22: warning: parameter 'target' is never used
+ fun glTexParameteri(target:Int,name:Int,value:Int){}
+                     ^
+tests/trace29/GLES20.kt:54:33: warning: parameter 'name' is never used
+ fun glTexParameteri(target:Int,name:Int,value:Int){}
+                                ^
+tests/trace29/GLES20.kt:54:42: warning: parameter 'value' is never used
+ fun glTexParameteri(target:Int,name:Int,value:Int){}
+                                         ^
+tests/trace29/GLES20.kt:55:19: warning: parameter 'target' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                  ^
+tests/trace29/GLES20.kt:55:30: warning: parameter 'level' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                             ^
+tests/trace29/GLES20.kt:55:40: warning: parameter 'internal' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                                       ^
+tests/trace29/GLES20.kt:55:53: warning: parameter 'w' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                                                    ^
+tests/trace29/GLES20.kt:55:59: warning: parameter 'h' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                                                          ^
+tests/trace29/GLES20.kt:55:65: warning: parameter 'border' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                                                                ^
+tests/trace29/GLES20.kt:55:87: warning: parameter 'type' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                                                                                      ^
+tests/trace29/GLES20.kt:55:96: warning: parameter 'p' is never used
+ fun glTexImage2D(target:Int,level:Int,internal:Int,w:Int,h:Int,border:Int,format:Int,type:Int,p:Buffer?){if(format==GL_DEPTH_COMPONENT&&!depthSupported)error=1280}
+                                                                                               ^
+tests/trace29/GLES20.kt:56:29: warning: parameter 'target' is never used
+ fun glFramebufferTexture2D(target:Int,attachment:Int,textureTarget:Int,id:Int,level:Int){if(attachment==GL_DEPTH_ATTACHMENT)depthAttached=id else colorAttached=id}
+                            ^
+tests/trace29/GLES20.kt:56:55: warning: parameter 'textureTarget' is never used
+ fun glFramebufferTexture2D(target:Int,attachment:Int,textureTarget:Int,id:Int,level:Int){if(attachment==GL_DEPTH_ATTACHMENT)depthAttached=id else colorAttached=id}
+                                                      ^
+tests/trace29/GLES20.kt:56:80: warning: parameter 'level' is never used
+ fun glFramebufferTexture2D(target:Int,attachment:Int,textureTarget:Int,id:Int,level:Int){if(attachment==GL_DEPTH_ATTACHMENT)depthAttached=id else colorAttached=id}
+                                                                               ^
+tests/trace29/GLES20.kt:57:31: warning: parameter 'target' is never used
+ fun glCheckFramebufferStatus(target:Int)=if(depthAttached!=0&&!depthSupported)36061 else GL_FRAMEBUFFER_COMPLETE
+                              ^
+tests/trace29/GLES20.kt:58:17: warning: parameter 'x' is never used
+ fun glViewport(x:Int,y:Int,w:Int,h:Int){}
+                ^
+tests/trace29/GLES20.kt:58:23: warning: parameter 'y' is never used
+ fun glViewport(x:Int,y:Int,w:Int,h:Int){}
+                      ^
+tests/trace29/GLES20.kt:58:29: warning: parameter 'w' is never used
+ fun glViewport(x:Int,y:Int,w:Int,h:Int){}
+                            ^
+tests/trace29/GLES20.kt:58:35: warning: parameter 'h' is never used
+ fun glViewport(x:Int,y:Int,w:Int,h:Int){}
+                                  ^
+tests/trace29/GLES20.kt:59:16: warning: parameter 'name' is never used
+ fun glDisable(name:Int){};fun glEnable(name:Int){}
+               ^
+tests/trace29/GLES20.kt:59:41: warning: parameter 'name' is never used
+ fun glDisable(name:Int){};fun glEnable(name:Int){}
+                                        ^
+tests/trace29/GLES20.kt:60:19: warning: parameter 'r' is never used
+ fun glClearColor(r:Float,g:Float,b:Float,a:Float){};fun glClear(mask:Int){}
+                  ^
+tests/trace29/GLES20.kt:60:27: warning: parameter 'g' is never used
+ fun glClearColor(r:Float,g:Float,b:Float,a:Float){};fun glClear(mask:Int){}
+                          ^
+tests/trace29/GLES20.kt:60:35: warning: parameter 'b' is never used
+ fun glClearColor(r:Float,g:Float,b:Float,a:Float){};fun glClear(mask:Int){}
+                                  ^
+tests/trace29/GLES20.kt:60:43: warning: parameter 'a' is never used
+ fun glClearColor(r:Float,g:Float,b:Float,a:Float){};fun glClear(mask:Int){}
+                                          ^
+tests/trace29/GLES20.kt:60:66: warning: parameter 'mask' is never used
+ fun glClearColor(r:Float,g:Float,b:Float,a:Float){};fun glClear(mask:Int){}
+                                                                 ^
+tests/trace29/GLES20.kt:61:19: warning: parameter 'x' is never used
+ fun glReadPixels(x:Int,y:Int,w:Int,h:Int,format:Int,type:Int,p:Buffer){
+                  ^
+tests/trace29/GLES20.kt:61:25: warning: parameter 'y' is never used
+ fun glReadPixels(x:Int,y:Int,w:Int,h:Int,format:Int,type:Int,p:Buffer){
+                        ^
+tests/trace29/GLES20.kt:61:43: warning: parameter 'format' is never used
+ fun glReadPixels(x:Int,y:Int,w:Int,h:Int,format:Int,type:Int,p:Buffer){
+                                          ^
+tests/trace29/GLES20.kt:61:54: warning: parameter 'type' is never used
+ fun glReadPixels(x:Int,y:Int,w:Int,h:Int,format:Int,type:Int,p:Buffer){
+                                                     ^
+tests/trace29/GLES20.kt:65:18: warning: parameter 'value' is never used
+ fun glDepthMask(value:Boolean){};fun glClearDepthf(value:Float){depthClear=value}
+                 ^
+tests/trace29/GLES20.kt:66:62: warning: parameter 'location' is never used
+ fun glUseProgram(id:Int){currentProgram=id};fun glUniform1i(location:Int,value:Int){}
+                                                             ^
+tests/trace29/GLES20.kt:66:75: warning: parameter 'value' is never used
+ fun glUseProgram(id:Int){currentProgram=id};fun glUniform1i(location:Int,value:Int){}
+                                                                          ^
+tests/trace29/GLES20.kt:67:27: warning: parameter 'id' is never used
+ fun glGetUniformLocation(id:Int,name:String)=0;fun glGetAttribLocation(id:Int,name:String)=0
+                          ^
+tests/trace29/GLES20.kt:67:34: warning: parameter 'name' is never used
+ fun glGetUniformLocation(id:Int,name:String)=0;fun glGetAttribLocation(id:Int,name:String)=0
+                                 ^
+tests/trace29/GLES20.kt:67:73: warning: parameter 'id' is never used
+ fun glGetUniformLocation(id:Int,name:String)=0;fun glGetAttribLocation(id:Int,name:String)=0
+                                                                        ^
+tests/trace29/GLES20.kt:67:80: warning: parameter 'name' is never used
+ fun glGetUniformLocation(id:Int,name:String)=0;fun glGetAttribLocation(id:Int,name:String)=0
+                                                                               ^
+tests/trace29/GLES20.kt:68:19: warning: parameter 'target' is never used
+ fun glBindBuffer(target:Int,id:Int){};fun glEnableVertexAttribArray(a:Int){}
+                  ^
+tests/trace29/GLES20.kt:68:30: warning: parameter 'id' is never used
+ fun glBindBuffer(target:Int,id:Int){};fun glEnableVertexAttribArray(a:Int){}
+                             ^
+tests/trace29/GLES20.kt:68:70: warning: parameter 'a' is never used
+ fun glBindBuffer(target:Int,id:Int){};fun glEnableVertexAttribArray(a:Int){}
+                                                                     ^
+tests/trace29/GLES20.kt:69:28: warning: parameter 'a' is never used
+ fun glVertexAttribPointer(a:Int,size:Int,type:Int,normalized:Boolean,stride:Int,p:Buffer){}
+                           ^
+tests/trace29/GLES20.kt:69:34: warning: parameter 'size' is never used
+ fun glVertexAttribPointer(a:Int,size:Int,type:Int,normalized:Boolean,stride:Int,p:Buffer){}
+                                 ^
+tests/trace29/GLES20.kt:69:43: warning: parameter 'type' is never used
+ fun glVertexAttribPointer(a:Int,size:Int,type:Int,normalized:Boolean,stride:Int,p:Buffer){}
+                                          ^
+tests/trace29/GLES20.kt:69:52: warning: parameter 'normalized' is never used
+ fun glVertexAttribPointer(a:Int,size:Int,type:Int,normalized:Boolean,stride:Int,p:Buffer){}
+                                                   ^
+tests/trace29/GLES20.kt:69:71: warning: parameter 'stride' is never used
+ fun glVertexAttribPointer(a:Int,size:Int,type:Int,normalized:Boolean,stride:Int,p:Buffer){}
+                                                                      ^
+tests/trace29/GLES20.kt:69:82: warning: parameter 'p' is never used
+ fun glVertexAttribPointer(a:Int,size:Int,type:Int,normalized:Boolean,stride:Int,p:Buffer){}
+                                                                                 ^
+tests/trace29/GLES20.kt:70:19: warning: parameter 'mode' is never used
+ fun glDrawArrays(mode:Int,first:Int,count:Int){check(depthAttached==0&&sampled!=colorAttached){"depth or color framebuffer feedback"};depthDraws++}
+                  ^
+tests/trace29/GLES20.kt:70:28: warning: parameter 'first' is never used
+ fun glDrawArrays(mode:Int,first:Int,count:Int){check(depthAttached==0&&sampled!=colorAttached){"depth or color framebuffer feedback"};depthDraws++}
+                           ^
+tests/trace29/GLES20.kt:70:38: warning: parameter 'count' is never used
+ fun glDrawArrays(mode:Int,first:Int,count:Int){check(depthAttached==0&&sampled!=colorAttached){"depth or color framebuffer feedback"};depthDraws++}
+                                     ^
+tests/trace29/GLES20.kt:71:33: warning: parameter 'a' is never used
+ fun glDisableVertexAttribArray(a:Int){};fun glDeleteProgram(id:Int){}
+                                ^
+tests/trace29/GLES20.kt:71:62: warning: parameter 'id' is never used
+ fun glDisableVertexAttribArray(a:Int){};fun glDeleteProgram(id:Int){}
+                                                             ^
+tests/trace29/Log.kt:2:19: warning: parameter 'tag' is never used
+object Log {fun w(tag:String,message:String,e:Throwable)=0}
+                  ^
+tests/trace29/Log.kt:2:30: warning: parameter 'message' is never used
+object Log {fun w(tag:String,message:String,e:Throwable)=0}
+                             ^
+tests/trace29/Log.kt:2:45: warning: parameter 'e' is never used
+object Log {fun w(tag:String,message:String,e:Throwable)=0}
+                                            ^
+PASS 22 runtime capability checks

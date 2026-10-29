@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "Journey19Check": 711,
+    "CraterPhysicsCheck": 36,
+    "RadialFallCheck": 480,
+    "MoonTravel17Check": 81,
+    "Ecos18Check": 847,
+    "Horizons19Check": 785,
+    "Voyage20Check": 5314,
+    "References21Check": 858,
+    "Miradas22Check": 6296,
+    "Desvios23Check": 63733,
+    "Resonancias24Check": 499,
+    "Graphics26Check": 496,
+    "Vigilia27Check": 64180,
+    "Fluidez28Check": 49864,
+    "Compatibility29Check": 1472,
+    "UltimoTren30Check": 114,
+    "Terror32Check": 245
+  },
+  "total": 196011
+}

@@ -1,0 +1,350 @@
+{
+  "backend": "OpenGL ES2 / Mesa llvmpipe",
+  "physical_phone": false,
+  "views": [
+    {
+      "name": "choir",
+      "progress": 0.0,
+      "file": "choir_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "choir",
+      "progress": 0.62,
+      "file": "choir_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "mask",
+      "progress": 0.0,
+      "file": "mask_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "mask",
+      "progress": 0.62,
+      "file": "mask_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "witness",
+      "progress": 0.0,
+      "file": "witness_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "witness",
+      "progress": 0.62,
+      "file": "witness_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "crimson",
+      "progress": 0.0,
+      "file": "crimson_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "crimson",
+      "progress": 0.62,
+      "file": "crimson_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "antler",
+      "progress": 0.0,
+      "file": "antler_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "antler",
+      "progress": 0.62,
+      "file": "antler_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "gold",
+      "progress": 0.0,
+      "file": "gold_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "gold",
+      "progress": 0.62,
+      "file": "gold_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "star",
+      "progress": 0.0,
+      "file": "star_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "star",
+      "progress": 0.62,
+      "file": "star_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "observatory",
+      "progress": 0.0,
+      "file": "observatory_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "observatory",
+      "progress": 0.62,
+      "file": "observatory_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "mushroom",
+      "progress": 0.0,
+      "file": "mushroom_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "mushroom",
+      "progress": 0.62,
+      "file": "mushroom_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "water-eye",
+      "progress": 0.0,
+      "file": "water-eye_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "water-eye",
+      "progress": 0.62,
+      "file": "water-eye_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "tenant",
+      "progress": 0.0,
+      "file": "tenant_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "tenant",
+      "progress": 0.62,
+      "file": "tenant_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "curious",
+      "progress": 0.0,
+      "file": "curious_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "curious",
+      "progress": 0.62,
+      "file": "curious_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "mourner",
+      "progress": 0.0,
+      "file": "mourner_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "mourner",
+      "progress": 0.62,
+      "file": "mourner_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "window",
+      "progress": 0.0,
+      "file": "window_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "window",
+      "progress": 0.62,
+      "file": "window_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "cone",
+      "progress": 0.0,
+      "file": "cone_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "cone",
+      "progress": 0.62,
+      "file": "cone_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "root-eye",
+      "progress": 0.0,
+      "file": "root-eye_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "root-eye",
+      "progress": 0.62,
+      "file": "root-eye_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "gentleman",
+      "progress": 0.0,
+      "file": "gentleman_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "gentleman",
+      "progress": 0.62,
+      "file": "gentleman_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "seraph",
+      "progress": 0.0,
+      "file": "seraph_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "seraph",
+      "progress": 0.62,
+      "file": "seraph_furia.png",
+      "actual_gles": true
+    },
+    {
+      "name": "umbral_plano",
+      "progress": 0,
+      "file": "umbral_plano_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "umbral_entrada",
+      "progress": 0,
+      "file": "umbral_entrada_reposo.png",
+      "actual_gles": true
+    },
+    {
+      "name": "pradera",
+      "progress": 0,
+      "file": "pradera_reposo.png",
+      "actual_gles": true
+    }
+  ],
+  "animated_profiles": [
+    {
+      "name": "choir",
+      "style": 1,
+      "duration": 4.8,
+      "changed_pixels": 159540
+    },
+    {
+      "name": "mask",
+      "style": 2,
+      "duration": 4.5,
+      "changed_pixels": 187471
+    },
+    {
+      "name": "witness",
+      "style": 3,
+      "duration": 5.0,
+      "changed_pixels": 168242
+    },
+    {
+      "name": "crimson",
+      "style": 4,
+      "duration": 4.4,
+      "changed_pixels": 139966
+    },
+    {
+      "name": "antler",
+      "style": 5,
+      "duration": 4.9,
+      "changed_pixels": 184860
+    },
+    {
+      "name": "gold",
+      "style": 6,
+      "duration": 5.2,
+      "changed_pixels": 259561
+    },
+    {
+      "name": "star",
+      "style": 7,
+      "duration": 4.6,
+      "changed_pixels": 106586
+    },
+    {
+      "name": "observatory",
+      "style": 8,
+      "duration": 5.4,
+      "changed_pixels": 259617
+    },
+    {
+      "name": "mushroom",
+      "style": 9,
+      "duration": 5.1,
+      "changed_pixels": 245179
+    },
+    {
+      "name": "water-eye",
+      "style": 10,
+      "duration": 4.7,
+      "changed_pixels": 266664
+    },
+    {
+      "name": "tenant",
+      "style": 11,
+      "duration": 4.8,
+      "changed_pixels": 89100
+    },
+    {
+      "name": "curious",
+      "style": 12,
+      "duration": 4.5,
+      "changed_pixels": 152081
+    },
+    {
+      "name": "mourner",
+      "style": 13,
+      "duration": 5.2,
+      "changed_pixels": 72864
+    },
+    {
+      "name": "window",
+      "style": 14,
+      "duration": 4.6,
+      "changed_pixels": 79456
+    },
+    {
+      "name": "cone",
+      "style": 15,
+      "duration": 5.0,
+      "changed_pixels": 97869
+    },
+    {
+      "name": "root-eye",
+      "style": 16,
+      "duration": 5.3,
+      "changed_pixels": 17089
+    },
+    {
+      "name": "gentleman",
+      "style": 17,
+      "duration": 4.9,
+      "changed_pixels": 44704
+    },
+    {
+      "name": "seraph",
+      "style": 18,
+      "duration": 5.5,
+      "changed_pixels": 270340
+    }
+  ]
+}

@@ -1,3 +1,15 @@
+# DreamCore 3.5 · Los tres horizontes
+
+[Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_5_Los_Tres_Horizontes.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_5_Proyecto_Completo.zip) · [Ver los mapas en el motor](DreamCore_3_5_Los_Tres_Horizontes/VISTAS.md)
+
+Tres mapas basados en las referencias: mar cálido con puertas y escaleras, valle rojo bajo un gigante y roca sobre océano azul. Bordes abiertos, salto y caída con viento, cierre de ojos y regreso al último terreno firme sin perder progreso. Cielos panorámicos y agua con reflejo compartido, conservando las rutas compatibles. **66 mundos y 67 músicas.**
+
+Acceso: **Umbral → sector verde → Los tres horizontes**, o **PAUSA → Mundos**. [Instalación](DreamCore_3_5_Los_Tres_Horizontes/LEEME.md) · [Contenido y límites](DreamCore_3_5_Los_Tres_Horizontes/LOS_TRES_HORIZONTES_3_5.md) · [Validación](DreamCore_3_5_Los_Tres_Horizontes/VALIDACION_3_5.json).
+
+Las vistas son renders reales GLES2/Mesa, no capturas de teléfonos. Falta probar interacción, sonido y rendimiento en Infinix, POCO y Redmi. El detalle panorámico no convierte los elementos lejanos del cielo en geometría transitable.
+
+<details><summary>Versiones anteriores</summary>
+
 # DreamCore 3.4 · Umbral y furia
 
 [Descargar actualización](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_4_Umbral_y_Furia.zip) · [Proyecto completo Android Studio](https://github.com/DxdaxNiro1/dxdaxd/raw/refs/heads/main/DreamCore_3_4_Proyecto_Completo.zip) · [Vistas del motor](DreamCore_3_4_Umbral_y_Furia/VISTAS.md)
@@ -120,6 +132,8 @@ Se mantienen los 48 escenarios, las 49 composiciones, los secretos y el guardado
 Verificación 2.6: APK compilado y firma comprobada; **80.032 comprobaciones** de lógica/geometría; trece combinaciones de shaders enlazadas en GLES2/Mesa; 49 vistas del catálogo en Media, nueve en Baja/mediump, dos en Alta y una con profundidad de renderbuffer sin AO. Las pruebas de AO comprueban que un plano no se oscurece a sí mismo y que el contacto con un objeto sí produce una sombra localizada.
 
 **Media a 30 FPS** es el punto de partida para el Infinix NOTE 50s. Los efectos nuevos tienen coste adicional y se reducen con calor o Ahorro; las nubes y la oclusión trabajan a media resolución. No se han medido temperatura, autonomía ni FPS en el teléfono físico. Las portadas son la dirección artística: las comparaciones muestran el acabado actual del motor, que todavía no es idéntico a las ilustraciones.
+
+</details>
 
 </details>
 

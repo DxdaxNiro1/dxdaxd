@@ -1,0 +1,884 @@
+[
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_01_24.png",
+    "vertices": 7176,
+    "eye": [
+      0.0,
+      4.0,
+      16.0
+    ],
+    "target": [
+      0.0,
+      4.0,
+      -16.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "title",
+    "number": 1,
+    "map": "Inicio"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_02_24.png",
+    "vertices": 7176,
+    "eye": [
+      -10.0,
+      1.65,
+      7.0
+    ],
+    "target": [
+      7.0,
+      5.0,
+      -18.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_01",
+    "number": 2,
+    "map": "El Umbral: Dreamcore y Dark Fantasy"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_03_24.png",
+    "vertices": 21300,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      5.0,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_02",
+    "number": 3,
+    "map": "Piscinas del recuerdo"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_04_24.png",
+    "vertices": 118644,
+    "eye": [
+      8.0,
+      1.65,
+      -10.0
+    ],
+    "target": [
+      0.0,
+      -140.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_03",
+    "number": 4,
+    "map": "El abismo de las casas perdidas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_05_24.png",
+    "vertices": 450162,
+    "eye": [
+      12.0,
+      1.65,
+      -115.0
+    ],
+    "target": [
+      80.0,
+      12.0,
+      -240.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_04",
+    "number": 5,
+    "map": "Los jardines de cristal dormido"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_06_24.png",
+    "vertices": 269958,
+    "eye": [
+      0.0,
+      1.65,
+      35.0
+    ],
+    "target": [
+      25.0,
+      5.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_05",
+    "number": 6,
+    "map": "El pueblo de las ventanas despiertas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_07_24.png",
+    "vertices": 791082,
+    "eye": [
+      0.0,
+      1.65,
+      -70.0
+    ],
+    "target": [
+      40.0,
+      25.0,
+      -175.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_06",
+    "number": 7,
+    "map": "El mar dentro del cielo"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_08_24.png",
+    "vertices": 11676,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_07",
+    "number": 8,
+    "map": "La casa que recuerda otra puerta"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_09_24.png",
+    "vertices": 64044,
+    "eye": [
+      0.0,
+      1.65,
+      -110.0
+    ],
+    "target": [
+      0.0,
+      18.0,
+      -220.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_08",
+    "number": 9,
+    "map": "La estación del último sueño"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_10_24.png",
+    "vertices": 355302,
+    "eye": [
+      8.0,
+      1.65,
+      -180.0
+    ],
+    "target": [
+      28.0,
+      12.0,
+      -210.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_09",
+    "number": 10,
+    "map": "La llanura de los reyes dormidos"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_11_24.png",
+    "vertices": 46974,
+    "eye": [
+      0.0,
+      1.65,
+      20.0
+    ],
+    "target": [
+      30.0,
+      13.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_10",
+    "number": 11,
+    "map": "El valle de las cúpulas de agua"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_12_24.png",
+    "vertices": 170958,
+    "eye": [
+      0.0,
+      1.65,
+      40.0
+    ],
+    "target": [
+      8.0,
+      8.0,
+      -180.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_11",
+    "number": 12,
+    "map": "El hotel de los horizontes"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_13_24.png",
+    "vertices": 136890,
+    "eye": [
+      0.0,
+      1.65,
+      15.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -180.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_12",
+    "number": 13,
+    "map": "La carretera donde caen estrellas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_14_24.png",
+    "vertices": 259284,
+    "eye": [
+      0.0,
+      9.0,
+      84.0
+    ],
+    "target": [
+      30.0,
+      28.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_13",
+    "number": 14,
+    "map": "El parque de las lágrimas suspendidas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_15_24.png",
+    "vertices": 95082,
+    "eye": [
+      2.9,
+      11.3,
+      84.0
+    ],
+    "target": [
+      0.0,
+      35.0,
+      -70.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_14",
+    "number": 15,
+    "map": "El tobogán de los planetas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_16_24.png",
+    "vertices": 78912,
+    "eye": [
+      0.0,
+      1.65,
+      35.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -170.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_15",
+    "number": 16,
+    "map": "La ciudad del último recreo"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_17_24.png",
+    "vertices": 40056,
+    "eye": [
+      0.0,
+      1.65,
+      36.0
+    ],
+    "target": [
+      8.0,
+      51.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_01",
+    "number": 17,
+    "map": "El reino de las lunas dormidas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_18_24.png",
+    "vertices": 284406,
+    "eye": [
+      0.0,
+      1.65,
+      20.0
+    ],
+    "target": [
+      18.0,
+      12.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dark_02",
+    "number": 18,
+    "map": "El jardín de las coronas vacías"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_19_24.png",
+    "vertices": 11844,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      -9.0,
+      3.1,
+      -30.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_laundry",
+    "number": 19,
+    "map": "Lavandería entre nubes"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_20_24.png",
+    "vertices": 2796,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      1.5,
+      2.0,
+      -50.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_train",
+    "number": 20,
+    "map": "El tren bajo el agua"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_21_24.png",
+    "vertices": 5184,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.4,
+      -54.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_dawn",
+    "number": 21,
+    "map": "El amanecer que no termina"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_22_24.png",
+    "vertices": 14337,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      13.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_tower",
+    "number": 22,
+    "map": "La torre que viste desde lejos"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_23_24.png",
+    "vertices": 43296,
+    "eye": [
+      5.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      -3.0,
+      3.0,
+      -16.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_cloudbed",
+    "number": 23,
+    "map": "Una cama al borde del universo"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_24_24.png",
+    "vertices": 15126,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.5,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_refuge",
+    "number": 24,
+    "map": "La habitación que te espera"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_25_24.png",
+    "vertices": 266604,
+    "eye": [
+      24.0,
+      2.0,
+      -120.0
+    ],
+    "target": [
+      30.0,
+      4.0,
+      -135.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_house",
+    "number": 25,
+    "map": "Fotografía: la casa sin nadie"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_26_24.png",
+    "vertices": 789672,
+    "eye": [
+      8.0,
+      1.65,
+      -160.0
+    ],
+    "target": [
+      40.0,
+      20.0,
+      -220.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_sea",
+    "number": 26,
+    "map": "Fotografía: el mar inmóvil"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_27_24.png",
+    "vertices": 164652,
+    "eye": [
+      0.0,
+      1.65,
+      -328.0
+    ],
+    "target": [
+      12.0,
+      6.0,
+      -390.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_window",
+    "number": 27,
+    "map": "Fotografía: las ventanas de ayer"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_28_24.png",
+    "vertices": 95280,
+    "eye": [
+      0.0,
+      3.0,
+      -282.0
+    ],
+    "target": [
+      0.0,
+      42.0,
+      -450.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "photo_planet",
+    "number": 28,
+    "map": "Fotografía: el planeta detenido"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_29_24.png",
+    "vertices": 17268,
+    "eye": [
+      7.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -30.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_letter",
+    "number": 29,
+    "map": "La casa del destinatario ausente"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_30_24.png",
+    "vertices": 11604,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      12.0,
+      -42.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_gravity",
+    "number": 30,
+    "map": "El suelo que se volvió cielo"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_31_24.png",
+    "vertices": 54294,
+    "eye": [
+      0.0,
+      1.65,
+      3.0
+    ],
+    "target": [
+      14.0,
+      4.0,
+      -70.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_01",
+    "number": 31,
+    "map": "El barrio que se inclinó"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_32_24.png",
+    "vertices": 195516,
+    "eye": [
+      0.0,
+      1.65,
+      -20.0
+    ],
+    "target": [
+      0.0,
+      8.0,
+      -110.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_02",
+    "number": 32,
+    "map": "El cine sobre la Tierra"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_33_24.png",
+    "vertices": 65112,
+    "eye": [
+      0.0,
+      1.65,
+      -14.0
+    ],
+    "target": [
+      -2.0,
+      6.0,
+      -90.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_03",
+    "number": 33,
+    "map": "Las duchas del valle infinito"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_34_24.png",
+    "vertices": 11616,
+    "eye": [
+      17.0,
+      1.65,
+      -88.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -130.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_04",
+    "number": 34,
+    "map": "La casa reflejada entre nubes"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_35_24.png",
+    "vertices": 131076,
+    "eye": [
+      20.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      0.0,
+      5.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_05",
+    "number": 35,
+    "map": "El canal de los hongos dormidos"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_36_24.png",
+    "vertices": 48672,
+    "eye": [
+      14.0,
+      2.6,
+      -70.0
+    ],
+    "target": [
+      0.0,
+      40.0,
+      -170.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_06",
+    "number": 36,
+    "map": "La colina de la nube inmensa"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_37_24.png",
+    "vertices": 20412,
+    "eye": [
+      0.0,
+      1.65,
+      -30.0
+    ],
+    "target": [
+      0.0,
+      3.0,
+      -85.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_07",
+    "number": 37,
+    "map": "La última gasolinera del atardecer"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_38_24.png",
+    "vertices": 85896,
+    "eye": [
+      0.0,
+      1.65,
+      0.0
+    ],
+    "target": [
+      17.0,
+      3.0,
+      -65.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_08",
+    "number": 38,
+    "map": "El barrio de las sombras de colores"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_39_24.png",
+    "vertices": 90000,
+    "eye": [
+      1.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -80.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_09",
+    "number": 39,
+    "map": "El pasillo de las sillas vacías"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_40_24.png",
+    "vertices": 79092,
+    "eye": [
+      12.0,
+      9.65,
+      -140.0
+    ],
+    "target": [
+      0.0,
+      6.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_10",
+    "number": 40,
+    "map": "El edificio de los pisos sin nadie"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_41_24.png",
+    "vertices": 42720,
+    "eye": [
+      0.0,
+      1.65,
+      -3.0
+    ],
+    "target": [
+      1.0,
+      3.0,
+      -48.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "echo_11",
+    "number": 41,
+    "map": "La oficina dentro de las nubes"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_42_24.png",
+    "vertices": 44100,
+    "eye": [
+      0.0,
+      3.0,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      14.0,
+      -55.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "preview_eyes",
+    "number": 42,
+    "map": "Vista previa: la pradera que te mira"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_43_24.png",
+    "vertices": 54966,
+    "eye": [
+      78.0,
+      88.0,
+      73.0
+    ],
+    "target": [
+      0.0,
+      45.0,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_rose_island",
+    "number": 43,
+    "map": "La casa rosa sobre el océano"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_44_24.png",
+    "vertices": 29421,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      1.8,
+      -20.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "backrooms_01",
+    "number": 44,
+    "map": "Backrooms: las luces que no descansan"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_45_24.png",
+    "vertices": 13107,
+    "eye": [
+      0.0,
+      1.65,
+      -12.0
+    ],
+    "target": [
+      18.0,
+      55.0,
+      -135.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_sky_openings",
+    "number": 45,
+    "map": "Las aberturas del cielo"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_46_24.png",
+    "vertices": 23667,
+    "eye": [
+      0.0,
+      1.65,
+      1.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -100.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_cloud_castle",
+    "number": 46,
+    "map": "Los corredores del castillo de nubes"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_47_24.png",
+    "vertices": 199590,
+    "eye": [
+      0.0,
+      1.65,
+      2.0
+    ],
+    "target": [
+      0.0,
+      20.0,
+      -110.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_flower_city",
+    "number": 47,
+    "map": "La ciudad al otro lado de las flores"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_48_24.png",
+    "vertices": 36519,
+    "eye": [
+      55.0,
+      70.0,
+      35.0
+    ],
+    "target": [
+      -15.0,
+      -35.0,
+      -125.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "dream_grass_fissures",
+    "number": 48,
+    "map": "La pradera de las grietas"
+  },
+  {
+    "image": "app/src/main/res/drawable-nodpi/music_cover_49_24.png",
+    "vertices": 3024,
+    "eye": [
+      0.0,
+      1.65,
+      -5.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      -17.0
+    ],
+    "GLES": "OpenGL ES 2.0 Mesa 25.0.7-2+deb13u1",
+    "world": "pocket_call_house",
+    "number": 49,
+    "map": "La casa del teléfono desconectado"
+  }
+]

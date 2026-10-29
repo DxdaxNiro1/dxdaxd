@@ -1,0 +1,31 @@
+tests/audio34/Boundary.kt:2:48: warning: parameter 'kind' is never used
+class Resources {fun getIdentifier(name:String,kind:String,pkg:String):Int=if(name=="fx_fall_wind36")999 else if(name.startsWith("fx_attack_"))1000+(name.hashCode() and 32767)else 0}
+                                               ^
+tests/audio34/Boundary.kt:2:60: warning: parameter 'pkg' is never used
+class Resources {fun getIdentifier(name:String,kind:String,pkg:String):Int=if(name=="fx_fall_wind36")999 else if(name.startsWith("fx_attack_"))1000+(name.hashCode() and 32767)else 0}
+                                                           ^
+tests/audio34/Handler.kt:3:15: warning: parameter 'looper' is never used
+class Handler(looper:Looper){fun postDelayed(f:()->Unit,delay:Long){};fun removeCallbacksAndMessages(token:Any?){} }
+              ^
+tests/audio34/Handler.kt:3:46: warning: parameter 'f' is never used
+class Handler(looper:Looper){fun postDelayed(f:()->Unit,delay:Long){};fun removeCallbacksAndMessages(token:Any?){} }
+                                             ^
+tests/audio34/Handler.kt:3:57: warning: parameter 'delay' is never used
+class Handler(looper:Looper){fun postDelayed(f:()->Unit,delay:Long){};fun removeCallbacksAndMessages(token:Any?){} }
+                                                        ^
+tests/audio34/Handler.kt:3:102: warning: parameter 'token' is never used
+class Handler(looper:Looper){fun postDelayed(f:()->Unit,delay:Long){};fun removeCallbacksAndMessages(token:Any?){} }
+                                                                                                     ^
+tests/audio34/Media.kt:4:29: warning: parameter 'type' is never used
+class SoundPool(val max:Int,type:Int,quality:Int){
+                            ^
+tests/audio34/Media.kt:4:38: warning: parameter 'quality' is never used
+class SoundPool(val max:Int,type:Int,quality:Int){
+                                     ^
+tests/audio34/Media.kt:9:11: warning: parameter 'context' is never used
+ fun load(context:Context,id:Int,priority:Int):Int{callback?.invoke(this,id,0);return id}
+          ^
+tests/audio34/Media.kt:9:34: warning: parameter 'priority' is never used
+ fun load(context:Context,id:Int,priority:Int):Int{callback?.invoke(this,id,0);return id}
+                                 ^
+PASS 32 actual SoundPool-owner lifecycle checks with recorded Android boundary

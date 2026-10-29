@@ -1,0 +1,65 @@
+app/src/main/java/com/dreamcore/game/DreamHorizons.kt:20:26: warning: parameter 'x' is never used
+    fun height(id:String,x:Float,z:Float):Float=when(id){CELESTIAL->8f+2.6f*sin(z*.008f);TOWER->if(z< -35f)min(22f,(-z-35f)*.20f)else 0f;else->0f}
+                         ^
+app/src/main/java/com/dreamcore/game/DreamHorror32.kt:14:15: warning: parameter 'id' is never used
+    fun spawn(id:String)=DreamJourney.Point(0f,7f)
+              ^
+app/src/main/java/com/dreamcore/game/DreamPlay30.kt:100:25: warning: parameter 'id' is never used
+    fun panel(node:Node,id:String):Panel?=when(node.key){
+                        ^
+app/src/main/java/com/dreamcore/game/DreamReferences.kt:108:42: warning: name shadowed: a
+                for(i in 0 until 80){val a=i*2f*PI.toFloat()/80f;val d=(i+1)*2f*PI.toFloat()/80f
+                                         ^
+app/src/main/java/com/dreamcore/game/DreamReferences.kt:108:70: warning: name shadowed: d
+                for(i in 0 until 80){val a=i*2f*PI.toFloat()/80f;val d=(i+1)*2f*PI.toFloat()/80f
+                                                                     ^
+app/src/main/java/com/dreamcore/game/DreamReferences.kt:114:86: warning: name shadowed: a
+                for(z0 in -10 downTo -130 step 20)DreamShapes.tube(b,(0..18).map{val a=it*PI.toFloat()/18;floatArrayOf(-31.7f,3f+3.6f*sin(a),z0+3.5f*cos(a))},.13f,cream,15f,8)
+                                                                                     ^
+app/src/main/java/com/dreamcore/game/DreamRoutes23.kt:48:22: warning: variable 'i' is never used
+                for((i,p)in listOf(-65f to -85f,50f to -145f,10f to -215f).withIndex()){
+                     ^
+app/src/main/java/com/dreamcore/game/DreamVigilia27.kt:79:40: warning: name shadowed: a
+                    for(k in 0..4){val a=k*2f*PI.toFloat()/5;b.ellipsoid(x+cos(a)*.15f,y+.66f,z+sin(a)*.15f,.14f,.05f,.14f,cream,4,8,26f)}
+                                       ^
+app/src/main/java/com/dreamcore/game/DreamWaterpark.kt:9:16: warning: parameter 'x' is never used
+    fun height(x:Float,z:Float)=6f+2f*sin(z*.011f)
+               ^
+app/src/main/java/com/dreamcore/game/DreamWorlds.kt:227:17: warning: name shadowed: x
+            val x=-3f-i*1.93f
+                ^
+app/src/main/java/com/dreamcore/game/DreamWorlds.kt:741:13: warning: variable 'aqua' is never used
+        val aqua = rgb(.48f,.77f,.79f)
+            ^
+app/src/main/java/com/dreamcore/game/DreamWorlds.kt:957:13: warning: variable 'dark' is never used
+        val dark=rgb(.34f,.42f,.52f)
+            ^
+app/src/main/java/com/dreamcore/game/DreamWorlds.kt:1069:13: warning: variable 'dark' is never used
+        val dark=rgb(.30f,.42f,.58f)
+            ^
+tests/Fluidez28Check.kt:69:7: warning: variable 'yaw' is never used
+  val yaw=random.nextFloat()*6.28f;val pitch=(random.nextFloat()-.5f)*3f;val roll=random.nextFloat()*6.28f;val y=random.nextFloat()*900f-300f
+      ^
+tests/UltimoTren30Check.kt:61:57: warning: name shadowed: angle
+    DreamProps30.instances(id,p,pos.x,pos.z){name,x,y,z,angle,tilt,scale->args.add("{\"name\":\"$name\",\"position\":[$x,$y,$z],\"angle\":$angle,\"tilt\":$tilt,\"scale\":$scale}")}
+                                                        ^
+tests/Voyage20Check.kt:93:119: warning: name shadowed: f
+    fun dump(id:String,data:FloatArray){val bytes=ByteBuffer.allocate(data.size*4).order(ByteOrder.LITTLE_ENDIAN);for(f in data)bytes.putFloat(f);File(output,"$id.f32").writeBytes(bytes.array())}
+                                                                                                                      ^
+Journey19Check 711
+CraterPhysicsCheck 36
+RadialFallCheck 480
+MoonTravel17Check 81
+Ecos18Check 847
+Horizons19Check 785
+Voyage20Check 5314
+References21Check 858
+Miradas22Check 6296
+Desvios23Check 63733
+Resonancias24Check 499
+Graphics26Check 496
+Vigilia27Check 64180
+Fluidez28Check 49864
+Compatibility29Check 1472
+UltimoTren30Check 114
+Terror32Check 245

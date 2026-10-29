@@ -1,0 +1,74 @@
+{
+  "version": "3.4",
+  "version_code": 35,
+  "android": {
+    "assembleDebug": "PASS",
+    "lintDebug": "PASS",
+    "lint_errors": 0,
+    "min_sdk": 19,
+    "target_sdk": 34
+  },
+  "core_checks": {
+    "checks": {
+      "Journey19Check": 711,
+      "CraterPhysicsCheck": 36,
+      "RadialFallCheck": 480,
+      "MoonTravel17Check": 81,
+      "Ecos18Check": 847,
+      "Horizons19Check": 785,
+      "Voyage20Check": 5314,
+      "References21Check": 858,
+      "Miradas22Check": 6296,
+      "Desvios23Check": 63733,
+      "Resonancias24Check": 515,
+      "Graphics26Check": 496,
+      "Vigilia27Check": 64180,
+      "Fluidez28Check": 49910,
+      "Compatibility29Check": 1472,
+      "UltimoTren30Check": 114,
+      "Terror32Check": 346,
+      "Memoria33Check": 1270,
+      "Walking33Check": 141,
+      "ChapterVisual33Check": 83,
+      "Ecos34Check": 278,
+      "Furia35Check": 204
+    },
+    "total": 198150
+  },
+  "shader_pairs": 641,
+  "actual_gles_views": 39,
+  "animated_models": 18,
+  "sound_lifecycle_checks": 30,
+  "music_lifecycle_checks": 161,
+  "resources": {
+    "inherited_unchanged": 216,
+    "all_64_music_files_unchanged": true,
+    "new_resources": [
+      "raw/fx_attack_curious35.ogg",
+      "raw/fx_attack_water_eye35.ogg",
+      "raw/fx_attack_star35.ogg",
+      "raw/fx_attack_window35.ogg",
+      "raw/fx_attack_tenant35.ogg",
+      "raw/fx_attack_cone35.ogg",
+      "raw/fx_attack_witness35.ogg",
+      "raw/fx_attack_gold35.ogg",
+      "raw/fx_attack_crimson35.ogg",
+      "raw/fx_attack_choir35.ogg",
+      "raw/fx_attack_seraph35.ogg",
+      "raw/fx_attack_mourner35.ogg",
+      "raw/fx_attack_gentleman35.ogg",
+      "raw/fx_attack_mushroom35.ogg",
+      "raw/fx_attack_antler35.ogg",
+      "raw/fx_attack_observatory35.ogg",
+      "raw/fx_attack_mask35.ogg",
+      "raw/fx_attack_root_eye35.ogg"
+    ]
+  },
+  "phone_tested": false,
+  "windows_installer": "static checks only",
+  "limits": [
+    "No physical handset interaction, audio playback, thermal or FPS certification.",
+    "Procedural authored encounters, not motion-capture clips.",
+    "Distant moons and giant cloud angel retain their existing behavior."
+  ]
+}

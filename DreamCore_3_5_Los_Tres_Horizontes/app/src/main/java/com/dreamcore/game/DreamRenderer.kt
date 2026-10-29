@@ -1,0 +1,1430 @@
+package com.dreamcore.game
+
+import android.content.Context
+import android.opengl.GLES20
+import android.opengl.GLSurfaceView
+import android.opengl.Matrix
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+import javax.microedition.khronos.egl.EGLConfig
+import javax.microedition.khronos.opengles.GL10
+import kotlin.math.abs
+import kotlin.math.cos
+import kotlin.math.hypot
+import kotlin.math.sin
+import kotlin.math.sqrt
+
+/** Dream Core 2.3: mundos por zonas, reflejos planos y exploración. */
+class DreamRenderer(
+    private val context: Context,
+    private val onWorldChanged: (String) -> Unit,
+    private val onZoneChanged: (String) -> Unit,
+    private val onDreamEvent: (String) -> Unit,
+    private val audioEvent: (String,Float,Boolean,Float) -> Unit = {_,_,_,_->},
+    private var story:DreamChronicle=DreamChronicle(),
+    private val options:DreamOptions=DreamOptions(),
+    private val onSave:(String,Boolean)->Unit={_,_->}
+) : GLSurfaceView.Renderer {
+    private val fatalController35=DreamFatal35()
+    @Volatile var fatal35=DreamFatal35.Frame();private set
+    private var heldEye35=floatArrayOf(0f,1.65f,6f)
+    private var heldDirection35=floatArrayOf(0f,0f,1f)
+    private fun dynamicBodies35()=DreamChapterProps33.presences(player.worldId,chapter33)+actors.actors.filter{it.alpha>.55f&&it.role in listOf("curious","mourner","window")}.map{DreamEntities32.Presence(it.role,it.x,if(player.worldId==DreamBackrooms.ID)-2f else if(it.role=="window"&&player.worldId==DreamExpansion.CLOUD_HOTEL)1.2f else 0f,it.z)}
+    private fun sight35(x:Float,y:Float,z:Float):Boolean{val dx=x-player.x;val dy=y-player.y;val dz=z-player.z;val len=sqrt(dx*dx+dy*dy+dz*dz).coerceAtLeast(.1f);return photoSight?.clear(player.x,player.y,player.z,dx/len,dy/len,dz/len,(len-.3f).coerceAtLeast(.1f))!=false}
+    fun wake35(hub:Boolean=false){
+        val id=if(hub)DreamWorlds.STATION else player.worldId
+        val p=DreamJourney.arrival(id,DreamWorlds.STATION)
+        warp(DreamChronicle.Checkpoint(id,p.x,DreamJourney.surface(id,p.x,p.z)+1.65f,p.z,p.yaw,0f))
+        fatalController35.reset(id,10f);fatal35=DreamFatal35.Frame()
+        onDreamEvent("Has despertado. Conservas tus objetos, pistas y decisiones.")
+    }
+    private var chapter33=DreamChapter33(story)
+    private var acousticsController34=DreamAcoustics34();private var acousticsAge34=0f
+    @Volatile var acoustics34=DreamAcoustics34.Frame();private set
+    private var chapterNode33:DreamChapter33.Node?=null
+    val metrics33=DreamMetrics33()
+    @Volatile var metricHud33="";private set
+    @Volatile var chapterHint33="";private set
+    @Volatile var hiding33="";private set
+    @Volatile var visits33=emptyMap<String,Int>();private set
+    private var metricAge33=0f
+    private var photoMemoryPending33:String?=null
+    private var textureStream33:DreamTextureStream33?=null
+    private val pendingSounds33=java.util.ArrayDeque<DreamPlay30.Sound>()
+    private var play30=DreamPlay30(story)
+    private var prop30:DreamPropRenderer30?=null
+    private var playNode30:DreamPlay30.Node?=null
+    @Volatile var playPanel30:DreamPlay30.Panel?=null
+    @Volatile var eyes30=0f;private set
+    @Volatile var loading30=0f;private set
+    @Volatile var caption30="";private set
+    private var captionAge30=0f
+    @Volatile var journalNodes30=emptyList<Pair<String,String>>();private set
+    @Volatile var journalLinks30=emptyList<String>();private set
+    @Volatile var journalNotes30=emptyList<String>();private set
+    private var raw30=ArrayDeque<Pair<DreamChunks.Key,FloatArray>>()
+    private var total30=0
+    @Volatile var suspended=true
+    @Volatile var portalLabels=emptyList<DreamPortalNames.Label>();private set
+    private var labelTimer=0f
+    private val player = PlayerState()
+    private val airfall36=DreamAirfall36()
+    @Volatile var eyelids36=0f;private set
+
+    @Volatile var moveX = 0f
+    @Volatile var moveY = 0f
+    @Volatile var sprinting = false
+    @Volatile var jumpQueued = false
+    @Volatile var nearPortal = false
+        private set
+    @Volatile var currentWorld = DreamWorlds.STATION
+        private set
+
+    private var pitch = 0f
+    private var walkVelocityX = 0f
+    private var walkVelocityY = 0f
+    private var walkTime = 0f
+    private var jumpOffset = 0f
+    private var jumpSpeed = 0f
+    private var followY = 1.65f
+    private val craterPhysics = DreamCraterPhysics()
+    private var wasFalling = false
+    private var landingNoticeCooldown = 0f
+    private var lastFrameNanos = 0L
+    private var elapsed = 0f
+    private var switchCooldown = 0f
+    private var portalTarget: String? = null
+    @Volatile var portalTitle = ""
+        private set
+    @Volatile var routeHint=""
+        private set
+    private var currentZone = "CALMA"
+    private var anomalyTimer = 0f
+    private var anomalyPower = 0f
+
+    private val projection = FloatArray(16)
+    private val view = FloatArray(16)
+    private val vp = FloatArray(16)
+    // 0.6: iluminación por hemisferios, atlas de materiales, niebla volumétrica
+    // aproximada por altura y agua animada. GLES 2.0 (no requiere GLES 3).
+    private val vertexShader = DreamShaders.vertexShader
+
+    private val fragmentShader = DreamShaders.fragmentShader
+
+    private val skyVertexShader = DreamShaders.skyVertexShader
+    private val skyFragmentShader = DreamShaders.skyFragmentShader
+
+    private val skyBuffer = ByteBuffer.allocateDirect(12 * 4)
+        .order(ByteOrder.nativeOrder()).asFloatBuffer().apply {
+            put(floatArrayOf(-1f,-1f, 1f,-1f, -1f,1f, -1f,1f, 1f,-1f, 1f,1f))
+            position(0)
+        }
+
+    private var cloudTarget:DreamSky26?=null
+    private var post:DreamPost26?=null
+    private var worldPrograms:DreamPrograms28?=null
+    private var fallbackScene=0;private var fallbackSky=0
+    private var sceneProgram = 0
+    private var skyEnhanced=true
+    private var skyProgram = 0
+    private var atlasTexture = 0
+    private var cloudTexture = 0
+    private var lunar27:DreamLunarRenderer27?=null
+    private var guardianTexture=0
+    private var lunarFailed=false
+    private var panoramaTexture36=0
+    private var panoramaWorld36=""
+    private var moonTexture = 0
+    private var entityTexture=0
+    private var friendlyBuffer=0;private var friendlyCount=0
+    private var guideBuffer=0;private var guideCount=0
+    private val chunkBounds=HashMap<DreamChunks.Key,DreamPerformance.Bounds>()
+    private val opaqueCounts=HashMap<DreamChunks.Key,Int>()
+    private val photoFrames=DreamPhotoFrames(context)
+    private var postmanBuffer=0;private var postmanCount=0
+    private var creatureBuffer=0;private var creatureCount=0
+    private var creatureSound=20f
+    private var compassTimer=4f
+    private var frameTime=0f
+    private var visualLevel=1
+    private var eye=floatArrayOf(0f,1.65f,6f)
+    private var forward=floatArrayOf(0f,0f,-1f)
+    private var cameraUp=floatArrayOf(0f,1f,0f)
+    private var cameraRight=floatArrayOf(1f,0f,0f)
+    private val chunks=LinkedHashMap<DreamChunks.Key,DreamIndexed28.Mesh>()
+    private val resident=HashMap<DreamChunks.Key,Int>()
+    private var residencyRevision=0
+    private val mainVisibility=DreamVisibility28<DreamChunks.Key>()
+    private val mirrorVisibility=DreamVisibility28<DreamChunks.Key>()
+    private var residentCell:DreamChunks.Key?=null
+    private var figureBuffer=0
+    private var figureCount=0
+    private var exploration=DreamExploration(story.found)
+    private var actors=DreamActors()
+    private var weather=DreamAtmosphere()
+    private var events=DreamEvents()
+    private val photoStore=DreamPhotoStore(context)
+    private var photoSight:DreamSkySight?=null
+    @Volatile private var photoQueued=false
+    @Volatile private var photoBusy=false
+    @Volatile private var photoComplete:Boolean?=null
+    private var pendingClues=emptyList<String>()
+    private var pendingMysteryPhoto=false
+    private var rules=DreamRules23()
+    private var humTimer=0f
+    @Volatile var clueDiary="";private set
+    private var photoFlash=0f
+    @Volatile var transitionFade=0f;private set
+    @Volatile var photoNotice="";private set
+    fun close(){photoStore.close()}
+    fun showChapter33(){playPanel30=chapter33.chapterPanel()}
+    fun diagnostic33():String{
+        val battery=context.registerReceiver(null,android.content.IntentFilter(android.content.Intent.ACTION_BATTERY_CHANGED))
+        val temp=battery?.takeIf{it.hasExtra("temperature")}?.getIntExtra("temperature",0)?.div(10f)
+        val os=if(android.os.Build.VERSION.SDK_INT>=29)(context.getSystemService(Context.POWER_SERVICE)as?android.os.PowerManager)?.currentThermalStatus?.toString()?:"unavailable" else "unavailable"
+        val runtime=Runtime.getRuntime()
+        return metrics33.json(android.os.Build.MANUFACTURER+" "+android.os.Build.MODEL+" / API "+android.os.Build.VERSION.SDK_INT,temp,os,runtime.totalMemory()-runtime.freeMemory(),android.os.Debug.getNativeHeapAllocatedSize(),graphicsInfo)
+    }
+    fun archiveDiagnostic33():String{val report=diagnostic33();java.io.File(context.filesDir,"dream_diagnostic33.json").writeText(report);return report}
+    fun photoAged33(world:String,capturedVisit:Int=1)=visits33[world]?.let{it>capturedVisit}?:false
+    fun takePhoto(){if(!photoBusy&&!fatal35.held){photoQueued=true;photoBusy=true}}
+    private var planetsTexture=0;private var faceTexture=0
+    private var mournerBuffer=0;private var mournerCount=0
+    private var busBuffer=0;private var busCount=0
+    private var eclipse=0f
+    private var objectNear:DreamObjects.Item?=null
+    private var saveTimer=0f
+    private var headBuffer=0;private var headCount=0
+    private var rainBuffer=0;private var rainCount=0
+    private var skyHouseBuffer=0;private var skyHouseCount=0
+    private var traceBuffer=0;private var traceCount=0
+    private var materialTexture=0
+    private var enhanced=true
+    private var appliedQuality=-1
+    private var shadows:DreamShadowMap?=null
+    @Volatile var journal=""
+        private set
+    init {
+        val c=story.checkpoint
+        player.worldId=c.world;player.x=c.x;player.y=c.y;player.z=c.z;player.yaw=c.yaw
+        pitch=c.pitch;followY=c.y;currentWorld=c.world
+        if(c.world==DreamWorlds.CRATER)craterPhysics.reset(c.x,c.z,c.y-1.65f)
+        if(DreamHorizons36.contains(c.world))airfall36.reset(c.world,c.x,c.z,c.y-1.65f)
+        if(story.visits.isEmpty())story.enter(c.world)
+    }
+    fun save(flush:Boolean=false) {
+        visits33=story.visits.toMap();chapterHint33=chapter33.hint();clueDiary=chapter33.diary()+"\n\n"+DreamMystery.diary(story)
+        DreamMystery.sync(story)
+        story.checkpoint=if(DreamHorizons36.contains(player.worldId)&&!airfall36.grounded)airfall36.anchor(player.worldId) else if(fatal35.held){val p=DreamJourney.arrival(player.worldId,DreamWorlds.STATION);DreamChronicle.Checkpoint(player.worldId,p.x,DreamJourney.surface(player.worldId,p.x,p.z)+1.65f,p.z,p.yaw,0f)}else DreamChronicle.Checkpoint(player.worldId,player.x,player.y,player.z,player.yaw,pitch)
+        story.moon=moonLife.snapshot()
+        onSave(DreamChronicle.encode(story),flush)
+        clueDiary=chapter33.diary()+"\n\n"+DreamMystery.diary(story)
+        journalNodes30=play30.journalNodes();journalLinks30=play30.links();journalNotes30=play30.notes()
+        journal="Recuerdos ${story.memories}/9 · Símbolos ${story.symbols.size}/4 · Llamadas ${story.calls.size}/3\n"+
+            "Sueños secretos: ${story.flags.count{it.startsWith("secret:")}} · Fotografías ${DreamPhotography.count(story)}/4\nFinales ${story.endings.joinToString()}"
+    }
+    private fun warp(c:DreamChronicle.Checkpoint,persist:Boolean=true) {
+        fatalController35.reset(c.world);fatal35=DreamFatal35.Frame()
+        player.worldId=c.world;player.x=c.x;player.y=c.y;player.z=c.z;player.yaw=c.yaw;pitch=c.pitch
+        if(DreamHorizons36.contains(c.world))airfall36.reset(c.world,c.x,c.z,c.y-1.65f)
+        eyelids36=0f
+        followY=c.y;jumpOffset=0f;jumpSpeed=0f;moveX=0f;moveY=0f;walkVelocityX=0f;walkVelocityY=0f
+        if(c.world==DreamWorlds.CRATER)craterPhysics.reset(c.x,c.z,c.y-1.65f)
+        lastStepX=c.x;lastStepZ=c.z;stepDistance=0f;switchCooldown=1.4f
+        localDoor=null;objectNear=null;playNode30=null;playPanel30=null;portalTarget=null;nearPortal=false;activeWorld=null
+        transitionFade=.65f
+        play30.enter(c.world)
+        currentWorld=c.world;currentZone="CALMA";onZoneChanged(currentZone);onWorldChanged(c.world)
+        if(persist)save()
+    }
+    private var corridorRevision=0
+    private var stepDistance=0f
+    private var lastStepX=0f
+    private var lastStepZ=6f
+    private var footPan=-.18f
+    private var distantTimer=12f
+    private var runHeld=0f
+    private var stepCooldown=0f
+    private var moonLife=DreamMoonLife()
+    private var skySight:DreamSkySight?=null
+    private var moonSightTimer=0f
+    private var moonSightClear=false
+    private var localDoor:DreamExploration.Door?=null
+    private var mirrorFbo=0
+    private var mirrorColor=0
+    private var mirrorDepth=0
+    private var mirrorValid=false
+    private var mirrorTime=-1f
+    private var mirrorCamera=floatArrayOf(Float.NaN,0f,0f,0f,0f)
+    private val mirrorVP=FloatArray(16)
+    private val mirrorView=FloatArray(16)
+    private var activeWorld: String? = null
+    private var configuredWorld:String?=null
+    private var width = 1
+    private var height = 1
+
+    // Se llama exclusivamente en el hilo OpenGL mediante GLSurfaceView.queueEvent.
+    fun turnCamera(dx: Float, dy: Float) {
+        if(fatal35.held)return
+        player.yaw += dx * 0.004f * options.sensitivity
+        pitch = (pitch - dy * 0.004f * options.sensitivity).coerceIn(-1.48f,1.35f)
+    }
+
+    fun resetFrameClock(){lastFrameNanos=0L}
+    private fun enterPocket(target:String) {
+        if(!DreamPocket.contains(target))return
+        if((DreamCrossroads33.links(player.worldId).any{it.target==target})||(DreamHorror32.contains(player.worldId)&&DreamHorror32.contains(target))||(DreamRoutes23.connected(player.worldId)&&DreamRoutes23.connected(target))){
+            val p=DreamJourney.arrival(target,player.worldId);story.enter(target);warp(DreamChronicle.Checkpoint(target,p.x,DreamJourney.surface(target,p.x,p.z)+1.65f,p.z,p.yaw,0f));return
+        }
+        if(!story.pushReturn(DreamChronicle.Checkpoint(player.worldId,player.x,player.y,player.z,player.yaw,pitch))){onDreamEvent("Vuelve por una puerta antes de entrar en otro recuerdo.");return}
+        val spawn=DreamJourney.arrival(target,player.worldId)
+        story.enter(target);story.flags.add("secret:"+target)
+        warp(DreamChronicle.Checkpoint(target,spawn.x,DreamJourney.surface(target,spawn.x,spawn.z)+1.65f,spawn.z,spawn.yaw,0f))
+    }
+    fun goReferences(){enterPocket(DreamReferences.ids.first())}
+    private var checkpointChecked=false
+    fun resumeJourney(){
+        DreamMystery.configure(story.universeSeed);DreamMystery.sync(story);DreamBackrooms.configure(story.universeSeed)
+        clueDiary=chapter33.diary()+"\n\n"+DreamMystery.diary(story)
+        if(!checkpointChecked){checkpointChecked=true
+            val c=DreamChronicle.Checkpoint(player.worldId,player.x,player.y,player.z,player.yaw,pitch)
+            val safe=DreamRestore.repair(c)
+            if(safe!=c){warp(safe);onDreamEvent("El lugar ha cambiado. Te dejamos en un espacio libre junto al punto guardado.")}
+        }
+        resetFrameClock();suspended=false;onWorldChanged(player.worldId)
+    }
+    fun goWorld34(id:String){
+        if(DreamMusic24.track(id)==null||id==DreamMusic24.TITLE)return
+        if(id==player.worldId){onDreamEvent("Ya estás en "+DreamJourney.title(id));return}
+        if(id==DreamArchive33.ID&&!chapter33.flag("evidence:${DreamWorld30.LIBRARY}")){onDreamEvent("El depósito se abre al interpretar el plano de la biblioteca.");return}
+        if(DreamPocket.contains(id)){
+            DreamCatalogue34.rememberMenuReturn(story,DreamChronicle.Checkpoint(player.worldId,player.x,player.y,player.z,player.yaw,pitch))
+            val p=DreamJourney.arrival(id,player.worldId);story.enter(id);story.flags.add("secret:"+id)
+            warp(DreamChronicle.Checkpoint(id,p.x,DreamJourney.surface(id,p.x,p.z)+1.65f,p.z,p.yaw,0f));return
+        }
+        val p=DreamJourney.arrival(id,player.worldId)
+        story.returnPoint=null;story.returnStack.clear();story.enter(id)
+        warp(DreamChronicle.Checkpoint(id,p.x,DreamJourney.surface(id,p.x,p.z)+1.65f,p.z,p.yaw,0f))
+    }
+    fun goRoute(index:Int){when(index){
+        0->{story.returnPoint=null;story.returnStack.clear();val id=DreamJourney.sequence.first();val p=DreamJourney.arrival(id,DreamWorlds.STATION);warp(DreamChronicle.Checkpoint(id,p.x,DreamJourney.surface(id,p.x,p.z)+1.65f,p.z,p.yaw,0f))}
+        1->{story.returnPoint=null;story.returnStack.clear();warp(DreamChronicle.Checkpoint(DreamJourney.DARK,0f,1.65f,36f,0f,0f))}
+        2->goReferences();3->enterPocket(DreamNewDreams.ISLAND);4->enterPocket(DreamNewDreams.EYES)
+        6->{val id=DreamWorlds.MEADOW;story.returnPoint=null;story.returnStack.clear();story.enter(id);warp(DreamChronicle.Checkpoint(id,0f,1.65f,98f,0f,0f))}
+        12,13->{val id=DreamVigilia27.ids[index-12];story.returnPoint=null;story.returnStack.clear();val p=DreamJourney.arrival(id,player.worldId);warp(DreamChronicle.Checkpoint(id,p.x,DreamJourney.surface(id,p.x,p.z)+1.65f,p.z,p.yaw,0f))}
+        14->enterPocket(DreamVigilia27.SKY_ISLAND)
+        in 18..24->enterPocket(DreamHorror32.ids[index-18])
+        15,16->enterPocket(DreamWorld30.ids[index-15])
+        25->if(chapter33.flag("evidence:${DreamWorld30.LIBRARY}"))enterPocket(DreamArchive33.ID)else onDreamEvent("Busca el plano de la biblioteca y la marca de agua de las piscinas. La puerta del depósito forma parte del capítulo.")
+        17->{enterPocket(DreamPocket.TRAIN);onDreamEvent("La tabla del vagón permite elegir estación. Los destinos sin cartel necesitan un billete del refugio.")}
+        in 7..11->enterPocket(DreamRoutes23.ids[index-7]);else->goRefuge()
+    }}
+    fun newGame(replace:(String)->Unit){
+        story=DreamChronicle();acousticsController34=DreamAcoustics34();acoustics34=DreamAcoustics34.Frame();chapter33=DreamChapter33(story);metrics33.reset();play30=DreamPlay30(story);prop30?.dispose();exploration=DreamExploration(story.found);actors=DreamActors();weather=DreamAtmosphere();events=DreamEvents();moonLife=DreamMoonLife()
+        rules=DreamRules23();pendingMysteryPhoto=false;DreamMystery.configure(story.universeSeed);DreamBackrooms.configure(story.universeSeed);checkpointChecked=true;elapsed=0f;walkTime=0f;saveTimer=0f;anomalyPower=0f;runHeld=0f;configuredWorld=null
+        // Personal album is retained; room photographs belong to the old journey.
+        photoFrames.clear();photoQueued=false;photoBusy=false;photoComplete=null;pendingClues=emptyList()
+        story.enter(DreamWorlds.STATION);warp(story.checkpoint,false);replace(DreamChronicle.encode(story));save()
+    }
+    fun goRefuge(){if(player.worldId!=DreamVoyage.REFUGE)enterPocket(DreamVoyage.REFUGE)}
+    fun enterPhotograph(source:String){DreamVoyage.photoWorld(source)?.let{photoMemoryPending33=it;enterPocket(it)}}
+    fun equipTool(name:String){if(DreamTools.equip(story,name)){save();onDreamEvent("Objeto preparado: "+when(name){"lantern"->"linterna";"compass"->"brújula";"prism"->"prisma";else->"manos libres"})}else onDreamEvent("Recoge primero ese objeto en la mesa del refugio.")}
+    fun pinPhoto(path:String,slot:Int){if(photoFrames.pin(java.io.File(path),slot)){save();onDreamEvent("Fotografía colocada en el refugio.")}else onDreamEvent("No se pudo colocar la fotografía.")}
+
+    // Las decisiones de portal viven en el motor, no en la pantalla.
+    // Más adelante los eventos de red podrán pedir estos mismos cambios.
+    fun interact() {
+        if(fatal35.held)return
+        if(switchCooldown<=0f&&chapterNode33!=null){usePlay30(chapterNode33!!.key);switchCooldown=.3f;return}
+        if(switchCooldown<=0f)playNode30?.let{usePlay30(it.key);switchCooldown=.25f;return}
+        if(!nearPortal || switchCooldown>0f)return
+        val villageBefore=DreamMystery.visual(story)
+        objectNear?.let { item ->
+            val result=DreamObjects.use(item,story)
+            onDreamEvent(result.text);onFootstep(result.sound,0f,true,.22f)
+            switchCooldown=.65f
+            result.warp?.let { point ->
+                val y=DreamJourney.surface(player.worldId,point.x,point.z)+1.65f
+                warp(DreamChronicle.Checkpoint(player.worldId,point.x,y,point.z,player.yaw,pitch))
+            }
+            result.world?.let { target ->
+                val spawn=DreamJourney.arrival(target,player.worldId)
+                story.enter(target);warp(DreamChronicle.Checkpoint(target,spawn.x,DreamJourney.surface(target,spawn.x,spawn.z)+1.65f,spawn.z,spawn.yaw,0f))
+            }
+            result.pocket?.let { target ->enterPocket(target) }
+            if(item.kind=="tool" || item.kind=="reply" || villageBefore!=DreamMystery.visual(story))activeWorld=null
+            save();return
+        }
+        if(portalTarget==DreamPocket.RETURN) {
+            val c=story.popReturn()?:DreamChronicle.Checkpoint(DreamWorlds.STATION,0f,1.65f,6f,0f,0f)
+            warp(c);onDreamEvent("Vuelves al lugar que la puerta recordaba.");return
+        }
+        localDoor?.let { door ->
+            player.x=door.toX;player.z=door.toZ;player.yaw=door.yaw
+            player.y=1.65f;followY=1.65f;jumpOffset=0f;jumpSpeed=0f;pitch=0f
+            moveX=0f;moveY=0f;walkVelocityX=0f;walkVelocityY=0f
+            lastStepX=player.x;lastStepZ=player.z;stepDistance=0f
+            switchCooldown=1.4f;localDoor=null;nearPortal=false;save()
+            onDreamEvent(when {
+                player.worldId==DreamWorlds.HOUSE_MEADOW->"El espejo era una puerta. El pasillo sigue cambiando."
+                player.x>1000f->"La casa era pequeña. La piscina no tiene sentido."
+                else->"La calle sigue aquí, como si nada hubiera pasado."
+            })
+            return
+        }
+        val target=portalTarget ?: return
+        val from=player.worldId
+        if(DreamHorizons36.contains(target)||target==DreamRainward34.ID||(DreamHorror32.contains(target)&&!DreamHorror32.contains(from)) || DreamRoutes23.contains(target) || (DreamReferences.contains(target) && !DreamReferences.contains(from))){enterPocket(target);return}
+        val completed=from==DreamJourney.sequence.last() && target==DreamWorlds.STATION
+        val darkCompleted=(from==DreamJourney.DARK || from==DreamHorizons.DARK) && target==DreamWorlds.STATION && player.z < -55f
+        transitionFade=.65f
+        story.enter(target)
+        val spawn=DreamJourney.arrival(target,from)
+        player.worldId=target;player.x=spawn.x;player.z=spawn.z;player.yaw=spawn.yaw
+        val floor=DreamJourney.surface(target,player.x,player.z)
+        if(target==DreamWorlds.CRATER)craterPhysics.reset(player.x,player.z,floor)
+        wasFalling=false;followY=floor+1.65f;player.y=followY
+        jumpSpeed=0f;jumpOffset=0f;jumpQueued=false;sprinting=false
+        pitch=0f;walkVelocityX=0f;walkVelocityY=0f;moveX=0f;moveY=0f
+        switchCooldown=1.4f;anomalyTimer=0f;anomalyPower=0f
+        runHeld=0f;stepCooldown=0f;moonSightTimer=0f;moonSightClear=false
+        currentZone=if(target==DreamWorlds.HOUSE_MEADOW || target==DreamWorlds.HOUSE_CRATER) "CASA" else "CALMA"
+        onZoneChanged(currentZone)
+        nearPortal=false;portalTarget=null;portalTitle=""
+        lastStepX=player.x;lastStepZ=player.z;stepDistance=0f
+        currentWorld=target;onWorldChanged(target)
+        if(completed) {
+            val ending=story.ending();story.endings.add(ending)
+            story.flags.removeAll{it.startsWith("ending:")};story.flags.add("ending:"+ending);activeWorld=null
+            onDreamEvent(when(ending){"DESPERTAR"->"DESPERTAR · La melodía está completa. Devuelves el billete y reconoces la mañana.";"PERMANECER"->"PERMANECER · La casa guarda tu nombre. Has elegido un lugar dentro del sueño.";else->"EL ECO · Regresas al Umbral. Todavía hay voces y recuerdos por encontrar."})
+        }
+        save()
+        if(darkCompleted)onDreamEvent("Las lunas han guardado tu recuerdo. Has vuelto al Umbral.")
+    }
+
+    private fun onFootstep(name:String,pan:Float,inside:Boolean,gain:Float){
+        if(suspended){if(pendingSounds33.size<16)pendingSounds33.add(DreamPlay30.Sound(name,pan,inside,gain));return}
+        audioEvent(name,pan,inside,gain);play30.observeSound(name,pan,inside,gain)
+        if(options.soundCaptions&&name !in listOf("wood","grass","tile","stone","carpet","water")){caption30=(if(pan<-.3f)"← " else if(pan>.3f)"→ " else "")+when{ name.startsWith("piano")->"Piano a lo lejos";name=="train30"->"Un tren se aproxima";name=="wind30"->"Brisa al otro lado";name=="valve30"->"Agua en las tuberías";else->"Un sonido cercano"};captionAge30=3f}
+    }
+    fun journalLink30(a:String,b:String){play30.toggleLink(a,b);save()}
+    fun journalNote30(key:String,text:String){play30.annotate(key,text);save()}
+    fun showPlayTools30(){val p=play30.toolsPanel();playPanel30=p.copy(choices=p.choices+listOf(DreamPlay30.Choice("c33:chapter","La memoria del Umbral"),DreamPlay30.Choice("c33:memory","Superponer el recuerdo"))+if(chapter33.hidden.isNotEmpty())listOf(DreamPlay30.Choice("c33:unhide","Salir del escondite"))else emptyList())}
+    fun choosePlay30(key:String){val panel=playPanel30?:return;if(panel.choices.none{it.key==key})return;if(!key.startsWith("piano:"))playPanel30=null;usePlay30(key)}
+    private fun usePlay30(key:String){
+        if(key.startsWith("c33:"))applyPlay30(chapter33.use(key,player.worldId,player.x,player.z,play30))
+        else {
+            if(key.startsWith("ride:")&&!chapter33.trainAllowed(key.substringAfter(':'))){onDreamEvent("Ese servicio partió al elegir el otro tren. El horario vuelve a abrirse en el próximo turno; las puertas entre mundos siguen disponibles.");return}
+            applyPlay30(play30.use(key,player.worldId,player.x,player.y,player.z,player.yaw))
+            if(key.startsWith("ride:")&&play30.trainProgress==0f)chapter33.board(key.substringAfter(':'))
+            if(key=="chalk"||key=="play")chapter33.trace(player.worldId,player.x,player.z)
+            if(key=="sleep"){chapter33.set("train-rival","")}
+        }
+        hiding33=chapter33.hidden;chapterHint33=chapter33.hint();flushPlaySounds30();save()
+    }
+    private fun applyPlay30(e:DreamPlay30.Effect){
+        if(e.text.isNotBlank())onDreamEvent(e.text)
+        if(e.sound.isNotBlank())onFootstep(e.sound,0f,DreamPower.indoor(player.worldId),.17f)
+        if(e.panel!=null)playPanel30=e.panel
+        e.target?.let{target->
+            if(player.worldId==DreamPocket.TRAIN){val p=DreamJourney.arrival(target,player.worldId);story.enter(target);warp(DreamChronicle.Checkpoint(target,p.x,DreamJourney.surface(target,p.x,p.z)+1.65f,p.z,p.yaw,0f))}
+            else if(target==DreamPocket.TRAIN){story.pushReturn(DreamChronicle.Checkpoint(player.worldId,player.x,player.y,player.z,player.yaw,pitch));val p=DreamJourney.arrival(target,player.worldId);story.enter(target);warp(DreamChronicle.Checkpoint(target,p.x,1.65f,p.z,p.yaw,0f))}else enterPocket(target)
+        }
+        if(e.refresh)save()
+    }
+    private fun flushPlaySounds30(){for(s in play30.drainSounds()){onFootstep(s.name,s.pan,s.inside,s.gain);if(options.soundCaptions){caption30=(if(s.pan<-.3f)"← " else if(s.pan>.3f)"→ " else "")+when{ s.name.startsWith("piano")->"Un piano responde";s.name=="train30"->"El tren se aproxima";else->"Un sonido cercano"};captionAge30=3f}}}
+    private fun shader(type: Int, source: String): Int {
+        val id = GLES20.glCreateShader(type)
+        GLES20.glShaderSource(id, source)
+        GLES20.glCompileShader(id)
+        val status = IntArray(1)
+        GLES20.glGetShaderiv(id,GLES20.GL_COMPILE_STATUS,status,0)
+        if (status[0] == 0) {
+            val error = GLES20.glGetShaderInfoLog(id)
+            GLES20.glDeleteShader(id)
+            error("Error del shader: $error")
+        }
+        return id
+    }
+
+    private fun program(v: String, f: String): Int {
+        val vs = shader(GLES20.GL_VERTEX_SHADER,v)
+        val fs = try{shader(GLES20.GL_FRAGMENT_SHADER,f)}catch(e:Exception){GLES20.glDeleteShader(vs);throw e}
+        val p = GLES20.glCreateProgram()
+        GLES20.glAttachShader(p,vs)
+        GLES20.glAttachShader(p,fs)
+        GLES20.glLinkProgram(p)
+        val status = IntArray(1)
+        GLES20.glGetProgramiv(p,GLES20.GL_LINK_STATUS,status,0)
+        GLES20.glDeleteShader(vs)
+        GLES20.glDeleteShader(fs)
+        if (status[0] == 0) {
+            val log = GLES20.glGetProgramInfoLog(p)
+            GLES20.glDeleteProgram(p)
+            error("Error enlazando shaders: $log")
+        }
+        return p
+    }
+
+    @Volatile var graphicsInfo="Comprobando gráficos…";private set
+    private var colorTargetsReady=true
+    private var graphicsPolicy=DreamCompatibility29.Policy(false,false,false,"Completo")
+    private val gpuMeshes=HashMap<Int,DreamGpuMesh28>()
+    private fun uploadMesh(mesh:DreamIndexed28.Mesh):Int {
+        if(mesh.originalVertices==0)return 0
+        val gpu=DreamGpuMesh28(mesh);gpuMeshes[gpu.handle]=gpu;return gpu.handle
+    }
+    private fun uploadScene(scene:DreamWorlds.Scene)=uploadMesh(DreamIndexed28.encode(scene.vertices,includeShadow=false))
+    private fun releaseMesh(handle:Int){gpuMeshes.remove(handle)?.dispose()}
+
+    override fun onSurfaceCreated(gl: GL10?, config: EGLConfig?) {
+        textureStream33?.contextLost();textureStream33=null
+        entity32=null
+        prop30=DreamPropRenderer30()
+        DreamMystery.sync(story)
+        DreamMystery.configure(story.universeSeed)
+        DreamBackrooms.configure(story.universeSeed)
+        moonLife.restore(story.moon)
+        uniformLocations.clear();attributeLocations.clear()
+        val caps=DreamGl29.capabilities();graphicsPolicy=DreamCompatibility29.policy(caps,options.compatibility)
+        options.runtimeLimit=minOf(caps.maxTexture,caps.maxTarget,caps.viewportWidth,caps.viewportHeight).coerceAtLeast(256)
+        val probe=DreamGl29.probe(::program,graphicsPolicy.depthSampling);colorTargetsReady=probe.color
+        graphicsPolicy=graphicsPolicy.copy(depthSampling=graphicsPolicy.depthSampling && probe.depth)
+        graphicsInfo="${caps.renderer}\n${caps.version}\nPerfil: ${graphicsPolicy.label} · Profundidad comprobada: ${if(graphicsPolicy.depthSampling)"sí" else "no"}"
+        android.util.Log.i("DreamCore",graphicsInfo)
+        GLES20.glEnable(GLES20.GL_DEPTH_TEST)
+        GLES20.glDisable(GLES20.GL_CULL_FACE)
+        sceneProgram = try { if(graphicsPolicy.basic)throw IllegalStateException("Iluminación esencial seleccionada");enhanced=true;program(vertexShader,fragmentShader) } catch(e:Exception) {
+            enhanced=false;android.util.Log.w("DreamCore","Iluminación compatible",e);onDreamEvent("Tu dispositivo usa iluminación compatible.")
+            program(DreamLegacyShaders.vertexShader,DreamLegacyShaders.fragmentShader)
+        }
+        skyProgram = try{if(graphicsPolicy.basic)throw IllegalStateException("Cielo esencial seleccionado");skyEnhanced=true;program(skyVertexShader,skyFragmentShader)}catch(problem:Exception){
+            skyEnhanced=false;android.util.Log.w("DreamCore","Cielo compatible",problem)
+            program(DreamLegacyShaders.skyVertexShader,DreamLegacyShaders.skyFragmentShader)
+        }
+        fallbackScene=sceneProgram;fallbackSky=skyProgram;worldPrograms=DreamPrograms28(::program).also{it.onEvict={id->uniformLocations.remove(id);attributeLocations.remove(id)}};gpuMeshes.clear()
+        cloudTarget=if(probe.color)DreamSky26()else null
+        post=if(probe.color)DreamPost26(::program,graphicsPolicy.depthSampling)else null
+        textureStream33=DreamTextureStream33(context,options.quality)
+        val maps=textureStream33!!.maps;atlasTexture=maps.first;materialTexture=maps.second
+        appliedQuality=options.quality
+        shadows=DreamShadowMap(::program).also{try{it.configure(if(enhanced && probe.color)options.quality else 0)}catch(_:Exception){it.configure(0)}}
+        cloudTexture = DreamCloudTexture.load(context)
+        moonTexture = DreamMoonTexture.load(context)
+        entityTexture=DreamMoonTexture.load(context,R.drawable.dream_entities_22)
+        val friendly=DreamPresences.friendly();friendlyBuffer=uploadScene(friendly);friendlyCount=friendly.vertices.size/10
+        planetsTexture=DreamArtTextures.load(context,R.drawable.dream_planets_19,1024,512)
+        faceTexture=DreamArtTextures.load(context,R.drawable.dream_weeping_face_19,1024,1024)
+        guardianTexture=0;lunar27=null;lunarFailed=false;panoramaTexture36=0;panoramaWorld36=""
+        photoFrames.contextLost();resident.clear();chunks.clear();residentCell=null;activeWorld=null
+        val figure=DreamShapes.presence("curious");figureBuffer=uploadScene(figure);figureCount=figure.vertices.size/10
+        mirrorFbo=0;mirrorColor=0;mirrorDepth=0;mirrorValid=false
+        if(probe.color)createMirrorTarget()
+        fun asset(scene:DreamWorlds.Scene):Pair<Int,Int> = uploadScene(scene) to scene.vertices.size/10
+        asset(DreamPresences.figure("guide")).let{guideBuffer=it.first;guideCount=it.second}
+        asset(DreamShapes.presence("postman")).let{postmanBuffer=it.first;postmanCount=it.second}
+        asset(DreamCreature.create()).let{creatureBuffer=it.first;creatureCount=it.second}
+        asset(DreamShapes.presence("mourner")).let{mournerBuffer=it.first;mournerCount=it.second}
+        asset(DreamEvents.bus()).let{busBuffer=it.first;busCount=it.second}
+        asset(DreamActors.head()).let{headBuffer=it.first;headCount=it.second}
+        asset(DreamActors.traces()).let{traceBuffer=it.first;traceCount=it.second}
+        asset(DreamAtmosphere.particles()).let{rainBuffer=it.first;rainCount=it.second}
+        asset(DreamAtmosphere.skyHouses()).let{skyHouseBuffer=it.first;skyHouseCount=it.second}
+        if(!suspended)onWorldChanged(player.worldId)
+        lastFrameNanos=0L
+    }
+
+    /** Build only the selected world; discard its GPU buffer on a world change. */
+    private fun ensureActiveScene() {
+        if(panoramaWorld36!=player.worldId){
+            if(panoramaTexture36!=0)GLES20.glDeleteTextures(1,intArrayOf(panoramaTexture36),0)
+            panoramaTexture36=0;panoramaWorld36=player.worldId
+            if(DreamHorizons36.contains(player.worldId)){val name="horizon_sky_"+DreamHorizons36.ids.indexOf(player.worldId)+"_36";val resource=context.resources.getIdentifier(name,"drawable",context.packageName);if(resource!=0)try{val size=if(options.quality<=0)1024 else minOf(2048,options.runtimeLimit);panoramaTexture36=DreamArtTextures.load(context,resource,size,size/2)}catch(e:Exception){android.util.Log.w("DreamCore","Cielo procedural de respaldo",e)}}
+        }
+        if(activeWorld==player.worldId && (chunks.isNotEmpty()||raw30.isNotEmpty()||preparing32.isNotEmpty())) return
+        // Drop the previous scene before allocating its replacement, including transition staging peaks.
+        for(buffer in resident.values)releaseMesh(buffer)
+        resident.clear();raw30.clear();residentCell=null;mirrorValid=false;chunks.clear();chunkBounds.clear();opaqueCounts.clear()
+        skySight=null;photoSight=null;materialBounds33.clear();tilePriority33=IntArray(0);priorityAge33=1f
+        if(player.worldId!=DreamVoyage.REFUGE)photoFrames.releaseGpu()
+        try {
+            val pair=worldPrograms?.world(DreamJourney.worldCode(player.worldId),if(enhanced)vertexShader else DreamLegacyShaders.vertexShader,if(enhanced)fragmentShader else DreamLegacyShaders.fragmentShader,if(skyEnhanced)skyVertexShader else DreamLegacyShaders.skyVertexShader,if(skyEnhanced)skyFragmentShader else DreamLegacyShaders.skyFragmentShader)
+            sceneProgram=pair?.scene?:fallbackScene;skyProgram=pair?.sky?:fallbackSky;surfaceProgram32=pair?.surface?:0
+        }catch(problem:Exception){surfaceProgram32=0;sceneProgram=fallbackScene;skyProgram=fallbackSky;android.util.Log.w("DreamCore","Programa general compatible",problem)}
+        uniformLocations.clear();attributeLocations.clear()
+        DreamCache28.retain(player.worldId)
+        if(DreamVigilia27.dark(player.worldId)){
+            if(lunar27==null && !lunarFailed)try{lunar27=DreamLunarRenderer27(context,::program)}catch(e:Exception){lunarFailed=true;android.util.Log.w("DreamCore","Lunas compatibles",e)}
+        }else{lunar27?.dispose();lunar27=null}
+        val needsGuardians=player.worldId==DreamNewDreams.EYES || player.worldId==DreamVigilia27.SKY_ISLAND
+        if(needsGuardians && guardianTexture==0)guardianTexture=DreamArtTextures.load(context,R.drawable.dream_guardians_27,1024,1024)
+        if(!needsGuardians && guardianTexture!=0){GLES20.glDeleteTextures(1,intArrayOf(guardianTexture),0);guardianTexture=0}
+        if(configuredWorld!=player.worldId) {
+            val toggle=if(player.worldId==DreamWorlds.HOUSE_MEADOW && "corridor:shift" in story.flags)1 else 0
+            DreamLands.configure(story.layout(player.worldId) xor toggle);configuredWorld=player.worldId
+        }
+        shadows?.invalidate()
+        DreamCraterLayout.seed=story.universeSeed
+        val scene=DreamSceneFactory33.create(player.worldId,story)
+        skySight=if(DreamVigilia27.dark(player.worldId))DreamSkySight(scene.vertices)else null
+        moonSightTimer=0f
+        val decorated=DreamJourney.decorate(player.worldId,scene)
+        val props=DreamObjects.geometry(player.worldId,story)
+        val additions=DreamEvents.geometry(player.worldId).vertices+DreamRules23.geometry(player.worldId).vertices+(if(player.worldId==DreamWorlds.MEADOW)DreamMystery.geometry(player.worldId,story).vertices else floatArrayOf())
+        photoSight=if(props.vertices.isEmpty())skySight?:DreamSkySight(scene.vertices)else DreamSkySight(scene.vertices+props.vertices)
+        val raw=DreamChunks.split(DreamWorlds.Scene(decorated.vertices+props.vertices+additions+DreamPhotography.geometry(player.worldId).vertices+DreamWorldMotion.create(player.worldId).vertices))
+        chunkBounds.clear();opaqueCounts.clear()
+        raw30.clear();raw.entries.sortedBy{(key,_)->hypot((key.x+.5f)*DreamChunks.SIZE-player.x,(key.z+.5f)*DreamChunks.SIZE-player.z)}.forEach{raw30.add(it.key to it.value)}
+        total30=raw30.size;loading30=1f;queueDirty32=true;queueCell32=null;uploadQueue32.clear();for(f in preparing32.values)f.cancel(true);preparing32.clear()
+        if(player.worldId==DreamVoyage.REFUGE)photoFrames.load()
+        activeWorld=player.worldId
+        if(player.worldId!=DreamWorlds.CRATER&&player.worldId!=DreamGravity.ID&&photoSight?.bodyClear33(player.x,player.y-1.65f,player.z)==false){
+            var repaired=false
+            for(radius in 1..10){if(repaired)break;for(i in 0..23){val a=i*kotlin.math.PI.toFloat()/12;val x=player.x+cos(a)*radius*.45f;val z=player.z+sin(a)*radius*.45f;val feet=DreamJourney.surface(player.worldId,x,z)
+                if(DreamWorlds.canWalk(player.worldId,x,z)&&photoSight?.bodyClear33(x,feet,z)==true){player.x=x;player.z=z;player.y=feet+1.65f;followY=player.y;repaired=true;break}}}
+        }
+    }
+
+    private val materialBounds33=HashMap<DreamChunks.Key,FloatArray>()
+    private var tilePriority33=IntArray(0);private var priorityAge33=1f
+    private val preparing32=LinkedHashMap<DreamChunks.Key,java.util.concurrent.Future<DreamPrepare32.Ready>>()
+    private val uploadQueue32=java.util.ArrayDeque<DreamChunks.Key>()
+    private var queueCell32:DreamChunks.Key?=null
+    private var queueDirty32=true
+    private fun updateResidency() {
+        while(raw30.isNotEmpty()&&preparing32.size<2){
+            val (key,data)=raw30.removeFirst()
+            preparing32[key]=DreamPrepare32.submit(key,data,DreamPower.shadowNeeded(player.worldId),DreamJourney.worldCode(player.worldId))
+        }
+        val completed=preparing32.entries.iterator()
+        while(completed.hasNext()){
+            val item=completed.next();if(!item.value.isDone)continue
+            val ready=item.value.get();completed.remove()
+            materialBounds33[ready.key]=ready.materials33;chunkBounds[ready.key]=ready.bounds;opaqueCounts[ready.key]=ready.opaque;chunks[ready.key]=ready.mesh;queueDirty32=true
+        }
+        val cell=DreamChunks.key(player.x,player.z)
+        if(queueDirty32||cell!=queueCell32){
+            queueDirty32=false;queueCell32=cell;uploadQueue32.clear()
+            val selected=chunks.keys.filter{DreamChunks.nearby(it,(cell.x+.5f)*DreamChunks.SIZE,(cell.z+.5f)*DreamChunks.SIZE)}
+            val keep=selected.toHashSet()
+            for(key in resident.keys.toList())if(key !in keep){releaseMesh(resident.getValue(key));resident.remove(key);residencyRevision++}
+            selected.filter{it !in resident}.sortedBy{abs(it.x-cell.x)+abs(it.z-cell.z)}.forEach{uploadQueue32.add(it)}
+        }
+        var uploads=0
+        while(uploadQueue32.isNotEmpty()&&uploads<2){val key=uploadQueue32.removeFirst();resident[key]=uploadMesh(chunks.getValue(key));uploads++;residencyRevision++}
+        residentCell=if(uploadQueue32.isEmpty())cell else null
+        // Distant residency must never freeze walking: only the actual nine neighbouring cells gate entry.
+        val nearRaw=raw30.any{abs(it.first.x-cell.x)<=1&&abs(it.first.z-cell.z)<=1}||preparing32.keys.any{abs(it.x-cell.x)<=1&&abs(it.z-cell.z)<=1}
+        val nearGpu=uploadQueue32.any{abs(it.x-cell.x)<=1&&abs(it.z-cell.z)<=1}
+        loading30=if(nearRaw||nearGpu)(raw30.size.toFloat()/total30.coerceAtLeast(1)).coerceAtLeast(.01f)else 0f
+    }
+
+    private fun createMirrorTarget() {
+        val ids=IntArray(1)
+        GLES20.glGenTextures(1,ids,0);mirrorColor=ids[0]
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,mirrorColor)
+        GLES20.glTexImage2D(GLES20.GL_TEXTURE_2D,0,GLES20.GL_RGB,512,512,0,GLES20.GL_RGB,GLES20.GL_UNSIGNED_BYTE,null)
+        GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_MIN_FILTER,GLES20.GL_LINEAR)
+        GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_MAG_FILTER,GLES20.GL_LINEAR)
+        GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_WRAP_S,GLES20.GL_CLAMP_TO_EDGE)
+        GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_WRAP_T,GLES20.GL_CLAMP_TO_EDGE)
+        GLES20.glGenRenderbuffers(1,ids,0);mirrorDepth=ids[0]
+        GLES20.glBindRenderbuffer(GLES20.GL_RENDERBUFFER,mirrorDepth)
+        GLES20.glRenderbufferStorage(GLES20.GL_RENDERBUFFER,GLES20.GL_DEPTH_COMPONENT16,512,512)
+        GLES20.glGenFramebuffers(1,ids,0);mirrorFbo=ids[0]
+        GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER,mirrorFbo)
+        GLES20.glFramebufferTexture2D(GLES20.GL_FRAMEBUFFER,GLES20.GL_COLOR_ATTACHMENT0,GLES20.GL_TEXTURE_2D,mirrorColor,0)
+        GLES20.glFramebufferRenderbuffer(GLES20.GL_FRAMEBUFFER,GLES20.GL_DEPTH_ATTACHMENT,GLES20.GL_RENDERBUFFER,mirrorDepth)
+        if(GLES20.glCheckFramebufferStatus(GLES20.GL_FRAMEBUFFER)!=GLES20.GL_FRAMEBUFFER_COMPLETE) {
+            GLES20.glDeleteFramebuffers(1,intArrayOf(mirrorFbo),0);mirrorFbo=0
+            GLES20.glDeleteTextures(1,intArrayOf(mirrorColor),0);mirrorColor=0
+            GLES20.glDeleteRenderbuffers(1,intArrayOf(mirrorDepth),0);mirrorDepth=0
+        }
+        GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER,0)
+    }
+
+    override fun onSurfaceChanged(gl: GL10?, w: Int, h: Int) {
+        if(entity32==null)entity32=try{DreamEntityRenderer32(context,::program)}catch(e:Exception){android.util.Log.e("DreamCore","Entidades 3.1",e);null}
+        width = w.coerceAtLeast(1)
+        height = h.coerceAtLeast(1)
+        GLES20.glViewport(0,0,width,height)
+        Matrix.perspectiveM(projection,0,66f,width.toFloat()/height,0.18f,520f)
+    }
+
+    private fun update(dt: Float,watchDt:Float) {
+        if(!options.fatal35){fatalController35.reset(player.worldId);fatal35=DreamFatal35.Frame()}
+        val wasHeld=fatal35.held
+        val bodies35=if(wasHeld||chapter33.hidden.isNotEmpty())emptyList()else (DreamEntities32.placements(player.worldId).map{p->if(player.worldId==DreamHorror32.WITNESSES&&p.model=="mask")p.copy(z=p.z+encounter32.approach)else p}+dynamicBodies35()).filter{entity32?.ready35(it.model)==true}
+        fatal35=if(options.fatal35&&loading30<=0f)fatalController35.step(player.worldId,player.x,player.y,player.z,dt,bodies35,::sight35)else DreamFatal35.Frame()
+        if(fatal35.held){
+            if(!wasHeld){heldEye35=floatArrayOf(player.x,player.y,player.z);val p=fatal35.target!!;val d=hypot(player.x-p.x,player.z-p.z).coerceAtLeast(.01f);heldDirection35=floatArrayOf((player.x-p.x)/d,0f,(player.z-p.z)/d);moveX=0f;moveY=0f;sprinting=false;jumpQueued=false;walkVelocityX=0f;walkVelocityY=0f;nearPortal=false;playPanel30=null;save(true)}
+            elapsed+=dt
+            if(fatal35.scream.isNotEmpty())onFootstep(fatal35.scream,0f,false,.34f)
+            acoustics34=DreamAcoustics34.Frame(player.worldId,tension=if(fatal35.dead)0f else 1f)
+            caption30=fatal35.caption;captionAge30=2f
+            if(fatal35.dead&&!wasHeld)save(true)
+            return
+        }
+        while(pendingSounds33.isNotEmpty()){val sound=pendingSounds33.removeFirst();onFootstep(sound.name,sound.pan,sound.inside,sound.gain)}
+        if(!(options.fatal35&&fatal35.warning>0f))chapter33.tick(player.worldId,player.x,player.y,player.z,player.yaw,pitch,dt,play30)?.let{event->
+            if(event.text.isNotBlank())onDreamEvent(event.text)
+            if(event.sound.isNotBlank()){
+                val mix=DreamSpatial33.mix(player.x,player.y,player.z,player.yaw,event.sourceX,event.sourceY,event.sourceZ,photoSight?.let{val dx=event.sourceX-player.x;val dy=event.sourceY-player.y;val dz=event.sourceZ-player.z;val len=kotlin.math.sqrt(dx*dx+dy*dy+dz*dz).coerceAtLeast(.1f);!it.clear(player.x,player.y,player.z,dx/len,dy/len,dz/len,len-.2f)}?:false)
+                onFootstep(DreamSpatial33.sound(event.sound,mix),mix.pan,true,mix.gain)
+                if(options.soundCaptions){caption30=mix.caption;captionAge30=3f}
+            }
+            if(chapter33.consumeCatch()){val y=DreamJourney.surface(player.worldId,0f,6f);player.x=0f;player.z=6f;player.y=y+1.65f;followY=player.y;jumpOffset=0f;moveX=0f;moveY=0f;transitionFade=.6f}
+            if(event.text.isNotBlank()||event.capture||event.target!=null)save()
+        }
+        if(photoMemoryPending33==player.worldId){chapter33.use("c33:memory",player.worldId,player.x,player.z,play30);photoMemoryPending33=null}
+        hiding33=chapter33.hidden;chapterHint33=chapter33.hint()
+        metricAge33+=watchDt;if(metricAge33>1f){metricAge33=0f;val rt=Runtime.getRuntime();metricHud33=metrics33.hud()+" · Java ${(rt.totalMemory()-rt.freeMemory())/(1024*1024)} MB / nativa ${android.os.Debug.getNativeHeapAllocatedSize()/(1024*1024)} MB"}
+
+        encounter32.tick(player.worldId,player.x,player.z,player.yaw,dt,story)?.let{onDreamEvent(it);onFootstep("room30",0f,false,.16f);clueDiary=chapter33.diary()+"\n\n"+DreamMystery.diary(story);save()}
+        captionAge30=(captionAge30-dt).coerceAtLeast(0f);if(captionAge30<=0f)caption30=""
+        play30.step(player.worldId,player.x,player.y,player.z,player.yaw,pitch,abs(moveX)+abs(moveY)>.1f,dt)?.let{applyPlay30(it)}
+        flushPlaySounds30();eyes30=play30.eyes
+        switchCooldown=(switchCooldown-dt).coerceAtLeast(0f)
+        anomalyTimer=(anomalyTimer-dt).coerceAtLeast(0f)
+        anomalyPower=(anomalyPower+(if(anomalyTimer>0f) dt*1.6f else -dt*.50f)).coerceIn(0f,1f)
+        elapsed+=dt
+        acousticsAge34+=dt
+        if(acousticsAge34>=.1f){
+            val elapsedSound=acousticsAge34;acousticsAge34=0f
+            val bodies=DreamEntities32.placements(player.worldId).map{p->if(player.worldId==DreamHorror32.WITNESSES&&p.model=="mask")p.copy(z=p.z+encounter32.approach)else p}+DreamChapterProps33.presences(player.worldId,chapter33)+actors.actors.filter{it.alpha>.25f&&it.role in listOf("curious","mourner","window")}.map{DreamEntities32.Presence(it.role,it.x,0f,it.z)}
+            acoustics34=acousticsController34.sample(player.worldId,player.x,player.y,player.z,player.yaw,elapsedSound,bodies){sx,sy,sz->val dx=sx-player.x;val dy=sy-player.y;val dz=sz-player.z;val length=sqrt(dx*dx+dy*dy+dz*dz).coerceAtLeast(.1f);photoSight?.clear(player.x,player.y,player.z,dx/length,dy/length,dz/length,length-.2f)==false}.let{if(DreamHorizons36.contains(player.worldId))it.copy(fall=airfall36.wind)else it}
+            if(acoustics34.voice.isNotEmpty()){onFootstep(acoustics34.voice,acoustics34.pan,DreamPower.indoor(player.worldId)||DreamReferences.indoor(player.worldId)||(player.worldId==DreamRainward34.ID&&DreamRainward34.indoor(player.x,player.z)),acoustics34.gain);if(options.soundCaptions){caption30=acoustics34.caption;captionAge30=3f}}
+        }
+        photoFlash=(photoFlash-dt).coerceAtLeast(0f)
+        transitionFade=(transitionFade-dt*1.2f).coerceAtLeast(0f)
+        eclipse=if(player.worldId==DreamHorizons.CELESTIAL || player.worldId==DreamHorizons.DARK){
+            val phase=elapsed%210f
+            if(phase in 140f..170f)sin((phase-140f)/30f*kotlin.math.PI.toFloat()).coerceAtLeast(0f)else 0f
+        }else 0f
+        photoComplete?.let { success ->
+            photoComplete=null;photoBusy=false
+            if(success){for(key in pendingClues)story.flags.add("photo:"+key)
+                if(pendingMysteryPhoto){DreamMystery.record(story,"photo");activeWorld=null;onDreamEvent("En la fotografía aparece una entrada en el cristal de la casa. Ya puedes visitarla; también puedes investigar las otras pistas.")}
+                else onDreamEvent(if(pendingClues.isEmpty())"Fotografía guardada en el álbum." else "La foto revela algo que no viste: ${pendingClues.joinToString()}. ${DreamPhotography.count(story)}/4.")
+                save()}
+            else onDreamEvent("No se pudo guardar la fotografía. Puedes intentarlo otra vez.")
+            pendingClues=emptyList();pendingMysteryPhoto=false
+        }
+        for(event in events.step(player.worldId,player.x,player.z,player.yaw,kotlin.math.abs(moveX)+kotlin.math.abs(moveY)>.1f,dt,story)) {
+            when(event){"@companion"->onFootstep("wood",.55f,false,.065f);"@piano"->onFootstep("piano",-.5f,true,.15f);else->onDreamEvent(event)}
+        }
+        rules.step(player.worldId,player.x,player.z,pitch,abs(moveX)+abs(moveY)>.08f,dt,story)?.let{
+            if(it.startsWith("@ring:")){val inside=it.endsWith("house");val dx=(if(inside)0f else 8f)-player.x;val dz=(if(inside)-14f else 65f)-player.z;val d=hypot(dx,dz).coerceAtLeast(1f)
+                onFootstep("tone1",((cos(player.yaw)*dx+sin(player.yaw)*dz)/d).coerceIn(-.7f,.7f),inside,(.16f*(1f-d/70f)).coerceIn(.02f,.16f))
+            }else{onDreamEvent(it);save()}
+        }
+        if(player.worldId==DreamBackrooms.ID){humTimer-=dt;if(humTimer<=0f){humTimer=9f;DreamBackrooms.guide(player.x,player.z)?.let{p->val dx=p.x-player.x;val dz=p.z-player.z;val d=hypot(dx,dz).coerceAtLeast(1f);onFootstep("tone0",((cos(player.yaw)*dx+sin(player.yaw)*dz)/d).coerceIn(-.7f,.7f),true,.10f)}}}
+        saveTimer+=dt
+        if(saveTimer>=8f){saveTimer=0f;save()}
+        weather.step(player.worldId,player.x,player.z,dt,story.visits[player.worldId]?:1)?.let{onDreamEvent(it)}
+        if(!DreamHorizons36.contains(player.worldId))for(notice in actors.step(player.worldId,player.x,player.z,player.yaw,dt,story)) {
+            if(notice=="@guide") {
+                val dx=actors.soundX-player.x;val dz=actors.soundZ-player.z
+                val distance=hypot(dx,dz).coerceAtLeast(1f)
+                onFootstep("tone0",((cos(player.yaw)*dx+sin(player.yaw)*dz)/distance).coerceIn(-.8f,.8f),false,(.3f*(1f-distance/85f)).coerceIn(.02f,.25f))
+            } else onDreamEvent(notice)
+        }
+        // Suavizado de joystick: el movimiento se acelera y frena gradualmente.
+        val smooth=(dt*10f).coerceIn(0f,1f)
+        walkVelocityX += (moveX-walkVelocityX)*smooth
+        walkVelocityY += (moveY-walkVelocityY)*smooth
+        val magnitude=hypot(walkVelocityX,walkVelocityY).coerceAtLeast(1f)
+        val inputX=walkVelocityX/magnitude
+        val inputY=walkVelocityY/magnitude
+        val fwdX=sin(player.yaw); val fwdZ=-cos(player.yaw)
+        val rightX=cos(player.yaw); val rightZ=sin(player.yaw)
+        runHeld=if(sprinting && abs(inputX)+abs(inputY)>.1f)runHeld+dt else 0f
+        stepCooldown=(stepCooldown-dt).coerceAtLeast(0f)
+        val indoors= !DreamHorizons36.contains(player.worldId)&&(DreamPower.indoor(player.worldId) || DreamReferences.indoor(player.worldId) || DreamLands.indoor(player.worldId,player.x,player.z) || player.worldId==DreamWorlds.POOLS || (DreamPocket.contains(player.worldId) && !DreamHorror32.contains(player.worldId) && !DreamWorld30.contains(player.worldId) && !DreamVoyage.contains(player.worldId) && !DreamReferences.contains(player.worldId) && !DreamNewDreams.contains(player.worldId) && !DreamRoutes23.contains(player.worldId) || DreamVoyage.indoor(player.worldId,player.x,player.z)) || DreamHorizons.indoor(player.worldId,player.x,player.z))
+        val speed=if(player.worldId==DreamGravity.ID){if(sprinting)4.2f else 2.8f}else DreamTravel.speed(sprinting,runHeld,indoors)
+        val inCrater = player.worldId == DreamWorlds.CRATER
+        val inWater = inCrater && craterPhysics.grounded && DreamWorlds.craterIsWater(player.x,player.z)
+        val movementScale = if(chapter33.hidden.isNotEmpty()||play30.closing||loading30>0f||play30.telescope)0f else if(play30.dragging!=null).36f else if (inWater) .64f else 1f
+        val vx = (rightX*inputX+fwdX*inputY)*speed*movementScale
+        val vz = (rightZ*inputX+fwdZ*inputY)*speed*movementScale
+        var floor = 0f
+        if(DreamHorizons36.contains(player.worldId)){
+            airfall36.step(player.worldId,vx,vz,dt,jumpQueued){x,y,z->photoSight?.bodyClear33(x,y,z)!=false};jumpQueued=false
+            player.x=airfall36.x;player.z=airfall36.z;player.y=airfall36.feet+1.65f;followY=player.y;jumpOffset=0f;jumpSpeed=0f
+            floor=airfall36.feet;eyelids36=airfall36.eyes
+            if(airfall36.returned){moveX=0f;moveY=0f;walkVelocityX=0f;walkVelocityY=0f;sprinting=false;save();onDreamEvent("Abres los ojos. La altura te ha devuelto al último suelo firme.")}
+            acoustics34=acoustics34.copy(world=player.worldId,fall=airfall36.wind)
+        } else if (inCrater) {
+            craterPhysics.step(dt,vx,vz,jumpQueued)
+            jumpQueued = false
+            player.x=craterPhysics.x; player.z=craterPhysics.z
+            player.y=craterPhysics.feetY+1.65f
+            followY=player.y; jumpOffset=0f; jumpSpeed=0f
+            floor=craterPhysics.feetY
+            landingNoticeCooldown=(landingNoticeCooldown-dt).coerceAtLeast(0f)
+            val falling=craterPhysics.verticalSpeed < -8f
+            if (falling && !wasFalling) onDreamEvent("El abismo te deja caer. Busca la luz de la casa.")
+            wasFalling=falling
+            if (craterPhysics.landedThisStep && craterPhysics.landingSpeed>8f && landingNoticeCooldown<=0f) {
+                landingNoticeCooldown=3f
+                onDreamEvent("Llegaste al fondo. La casa iluminada continúa el recorrido.")
+            }
+        } else {
+            val moved=DreamTravel.move(player.worldId,player.x,player.z,vx,vz,dt){x,z->play30.clearPath(player.worldId,x,z)&&chapter33.extraPath(player.worldId,x,z)&&chapter33.furnitureClear(player.worldId,x,z,jumpOffset)&&(player.worldId==DreamGravity.ID||activeWorld!=player.worldId||photoSight?.bodyClear33(x,DreamJourney.surface(player.worldId,x,z)+jumpOffset,z)!=false)}
+            player.x=moved.first;player.z=moved.second
+            floor=DreamJourney.surface(player.worldId,player.x,player.z)+play30.extraFloor(player.worldId,player.x,player.z)
+            followY += (1.65f+floor-followY)*(dt*9f).coerceIn(0f,1f)
+            if (jumpQueued && jumpOffset <= .001f) {
+                jumpSpeed=5.6f; jumpOffset=.002f
+            }
+            jumpQueued=false
+            if (jumpOffset > 0f) {
+                jumpSpeed -= 14.2f*dt
+                jumpOffset=(jumpOffset+jumpSpeed*dt).coerceAtLeast(0f)
+                if(jumpOffset<=0f) jumpSpeed=0f
+            }
+            player.y=followY+jumpOffset
+        }
+        if(abs(inputX)+abs(inputY)>.1f) walkTime+=dt*(if(sprinting)1.45f else 1f)
+        portalTarget=if(switchCooldown<=0f)
+            DreamJourney.portalAt(player.worldId,player.x,player.z,player.y-1.65f) else null
+        localDoor=if(switchCooldown<=0f)exploration.door(player.worldId,player.x,player.z)else null
+        portalTitle=portalTarget?.let{DreamJourney.gateLabel(player.worldId,it)} ?: ""
+        if(localDoor!=null)portalTitle=localDoor!!.label
+        objectNear=if(switchCooldown<=0f)DreamObjects.nearest(player.worldId,player.x,player.z,player.y-1.65f)else null
+        if(objectNear?.kind=="hidden" && DreamTools.equipped(story)!="lantern")objectNear=null
+        if(objectNear?.kind=="tool" && objectNear!!.key in story.flags)objectNear=null
+        if(objectNear!=null)portalTitle=DreamObjects.label(objectNear!!,story)
+        playNode30=if(switchCooldown<=0f)play30.nearest(player.worldId,player.x,player.z)else null
+        if(playNode30!=null)portalTitle=playNode30!!.title
+        chapterNode33=if(switchCooldown<=0f)chapter33.nearest(player.worldId,player.x,player.z)else null
+        if(chapterNode33!=null)portalTitle=chapterNode33!!.title
+        nearPortal = portalTarget != null || localDoor!=null || objectNear!=null || playNode30!=null||chapterNode33!=null
+        if(player.worldId in DreamJourney.sequence) {
+            val target=if(player.x>1000f)DreamJourney.Point(1600f,8f)else DreamJourney.exit(player.worldId)
+            val dx=target.x-player.x;val dz=target.z-player.z
+            var angle=kotlin.math.atan2(dx,-dz)-player.yaw
+            while(angle>kotlin.math.PI)angle-=(kotlin.math.PI*2).toFloat()
+            while(angle< -kotlin.math.PI)angle+=(kotlin.math.PI*2).toFloat()
+            val arrow=when {abs(angle)<.45f->"↑";abs(angle)>2.5f->"↓";angle<0f->"←";else->"→"}
+            routeHint="$arrow  ${hypot(dx,dz).toInt()} m · "+if(player.x>1000f)"La puerta del pueblo" else "Siguiente umbral"
+        } else routeHint=if(DreamReferences.contains(player.worldId)){val e=DreamReferences.exit(player.worldId);"↑ ${hypot(e.x-player.x,e.z-player.z).toInt()} m · Siguiente sueño"}else ""
+        if(DreamHorror32.contains(player.worldId))routeHint="↑ ${hypot(player.x,player.z+DreamHorror32.end(player.worldId)).toInt()} m · Siguiente umbral"
+        if(player.worldId==DreamWorlds.MEADOW)routeHint=DreamMystery.hint(story)
+        if(player.worldId==DreamBackrooms.ID)routeHint="Observa qué lámparas permanecen encendidas. El zumbido también cambia."
+        for(notice in exploration.step(player.worldId,player.x,player.z,player.yaw,pitch,dt)) {
+            onDreamEvent(notice);anomalyTimer=7f
+        }
+        if(corridorRevision!=exploration.corridorRevision) {
+            corridorRevision=exploration.corridorRevision;story.toggle("corridor:shift");activeWorld=null;save()
+        }
+        val inDark=DreamVigilia27.dark(player.worldId)
+        if(inDark) {
+            moonSightTimer-=watchDt
+            if(moonSightTimer<=0f) {
+                moonSightTimer=.25f
+                moonSightClear=skySight?.clear(player.x,player.y,player.z,
+                    sin(player.yaw)*cos(pitch),sin(pitch),-cos(player.yaw)*cos(pitch))?:false
+            }
+        }
+        val wasBlood=moonLife.bloodMoon
+        if(moonLife.step(inDark,player.x,player.y,player.z,player.yaw,pitch,watchDt,moonSightClear)) {
+            onDreamEvent("El cielo acaba de recordar tu nombre.")
+            onFootstep("chime",0f,false,.12f)
+        }
+        if(!wasBlood && moonLife.bloodMoon && player.worldId!=DreamVigilia27.DARK_FOUR)onDreamEvent("Ha pasado un minuto. La luna azul se ha vuelto roja.")
+        distantTimer-=dt
+        if(distantTimer<=0f && DreamLands.contains(player.worldId)) {
+            distantTimer=22f+(kotlin.math.sin(elapsed*.1f)+1f)*8f
+            val anchor=DreamLands.secrets(player.worldId).minByOrNull{hypot(player.x-it.x,player.z-it.z)}
+            if(anchor!=null) {
+                val dx=anchor.x-player.x;val dz=anchor.z-player.z
+                val distance=hypot(dx,dz).coerceAtLeast(1f)
+                val pan=((cos(player.yaw)*dx+sin(player.yaw)*dz)/distance).coerceIn(-.85f,.85f)
+                val level=(.28f*(1f-distance/170f)).coerceIn(0f,.28f)
+                if(level>.01f)onFootstep("chime",pan,DreamLands.indoor(player.worldId,player.x,player.z),level)
+            }
+        }
+        photoNotice=if(DreamPhotography.targets(player.worldId).any{("photo:"+it.key) !in story.flags && kotlin.math.hypot(player.x-it.x,player.z-it.z)<75f})" · Señal fotográfica cerca" else ""
+        if(DreamTools.equipped(story)=="compass") {
+            routeHint=DreamTools.bearing(player.worldId,player.x,player.z,player.yaw,story)
+            compassTimer-=dt
+            if(compassTimer<=0f){compassTimer=6f;DreamTools.target(player.worldId,player.x,player.z,story)?.let{t->val dx=t.x-player.x;val dz=t.z-player.z;val d=hypot(dx,dz).coerceAtLeast(1f);onFootstep("chime",((cos(player.yaw)*dx+sin(player.yaw)*dz)/d).coerceIn(-.8f,.8f),indoors,.07f)}}
+        }
+        if(player.worldId==DreamWorlds.AQUARIUM){creatureSound-=dt;if(creatureSound<=0f){creatureSound=44f;val c=DreamCreature.pose(elapsed);val d=hypot(c.x-player.x,c.z-player.z);if(d<170f){onFootstep("whale",((c.x-player.x)/d.coerceAtLeast(1f)).coerceIn(-.7f,.7f),false,.16f);onDreamEvent("Una sombra cruza bajo el mar. Algo enorme continúa su camino.")}}}
+        if(chapter33.active&&!chapter33.completed)routeHint=chapter33.hint()
+        if(DreamHorizons36.contains(player.worldId))routeHint=if(airfall36.grounded)"Bordes abiertos · puedes saltar y mirar hacia abajo" else "Aire en caída · cerrarás los ojos antes de llegar"
+        if(player.worldId==DreamWorlds.STATION)routeHint="Sigue los caminos numerados · PAUSA → Plano del Umbral"
+        if(fatal35.warning>0f)routeHint=fatal35.caption
+        routeHint+=photoNotice
+        if(DreamLands.contains(player.worldId))routeHint+=" · Recuerdos ${exploration.memoriesFound}/9"
+        val travelled=hypot(player.x-lastStepX,player.z-lastStepZ)
+        if(travelled<2f)stepDistance+=travelled
+        lastStepX=player.x;lastStepZ=player.z
+        val grounded=if(DreamHorizons36.contains(player.worldId))airfall36.grounded else if(inCrater)craterPhysics.grounded else jumpOffset<=.001f
+        val stride=if(sprinting)3.5f else 1.85f
+        if(grounded && stepDistance>stride && stepCooldown<=0f) {
+            stepDistance=0f;stepCooldown=.29f;footPan=-footPan
+            val surface=if(inWater)"water" else if(DreamHorror32.contains(player.worldId))when(player.worldId){DreamHorror32.ATRIUM->"carpet";DreamHorror32.GARDEN,DreamHorror32.HERBARIUM,DreamHorror32.FOREST->"grass";DreamHorror32.POOL->if(player.y-1.65f<-.2f)"water" else "tile";DreamHorror32.HOUSE->if(player.z< -74f)"grass" else "stone";else->"stone"} else if(DreamRoutes23.contains(player.worldId))when(player.worldId){DreamBackrooms.ID->"carpet";DreamMystery.HOUSE->"wood";DreamRoutes23.SKY,DreamRoutes23.CITY,DreamRoutes23.EDGE->"grass";else->"tile"} else if(player.worldId==DreamReferences.HALL||player.worldId==DreamReferences.CINEMA)"carpet" else if(player.worldId==DreamReferences.OFFICE)"tile" else if(player.worldId==DreamVoyage.REFUGE || player.worldId==DreamVoyage.LETTER)"wood" else if(player.worldId in DreamVoyage.photos)DreamLands.material(DreamVoyage.base(player.worldId),player.x,player.z) else if(DreamLands.contains(player.worldId))DreamLands.material(player.worldId,player.x,player.z) else "stone"
+            val indoor=DreamPower.indoor(player.worldId) || DreamReferences.indoor(player.worldId) || DreamLands.indoor(player.worldId,player.x,player.z) || player.worldId==DreamWorlds.POOLS || (DreamPocket.contains(player.worldId) && !DreamHorror32.contains(player.worldId) && !DreamWorld30.contains(player.worldId) && !DreamVoyage.contains(player.worldId) && !DreamReferences.contains(player.worldId)) || DreamVoyage.indoor(player.worldId,player.x,player.z)
+            onFootstep(surface,footPan,indoor,if(sprinting).24f else .19f)
+        }
+
+        val zone= when {
+            DreamWorld30.contains(player.worldId)->if(DreamPower.indoor(player.worldId))"CASA" else "VIENTO"
+            DreamHorizons.indoor(player.worldId,player.x,player.z)->"CASA"
+            DreamObjects.radioNear(player.worldId,player.x,player.z,story)->"RADIO"
+            DreamReferences.contains(player.worldId)->if(DreamReferences.indoor(player.worldId))"CASA" else if(player.worldId==DreamReferences.VALLEY||player.worldId==DreamReferences.CANAL)"PISCINA_INTERIOR" else "VIENTO"
+            DreamRoutes23.contains(player.worldId)->if(DreamVoyage.indoor(player.worldId,player.x,player.z))"CASA" else "VIENTO"
+            DreamVoyage.contains(player.worldId)->if(DreamVoyage.indoor(player.worldId,player.x,player.z))"CASA" else "VIENTO"
+            DreamPocket.contains(player.worldId)->if(player.worldId==DreamPocket.TRAIN)"PROFUNDO" else "CASA"
+            player.worldId==DreamWaterpark.ID->"PISCINA_INTERIOR"
+            inDark && moonLife.giantVisible -> "ECLIPSE"
+            inDark && moonLife.looking && moonLife.vigil>10f -> "OBSERVADO"
+            anomalyTimer>0f -> "ANOMALIA"
+            DreamLands.contains(player.worldId)->DreamLands.zone(player.worldId,player.x,player.z)
+            player.worldId==DreamWorlds.HOUSE_MEADOW || player.worldId==DreamWorlds.HOUSE_CRATER -> "CASA"
+            player.worldId==DreamWorlds.CRATER && floor < -31f -> "PROFUNDO"
+            player.worldId==DreamWorlds.AQUARIUM && player.z < -85f -> "PROFUNDO"
+            player.worldId==DreamWorlds.MEADOW && player.z < -110f -> "UMBRAL"
+            player.worldId==DreamWorlds.GARDEN && player.z < -45f -> "UMBRAL"
+            player.worldId==DreamWorlds.STATION -> story.flags.firstOrNull{it.startsWith("ending:")}?.substringAfter(':')?:"CALMA"
+            else -> "CALMA"
+        }
+        if(zone != currentZone) { currentZone=zone; onZoneChanged(zone) }
+    }
+
+    private val uniformLocations=HashMap<Int,HashMap<String,Int>>()
+    private val attributeLocations=HashMap<Int,HashMap<String,Int>>()
+    private fun location(id:Int,key:String)=uniformLocations.getOrPut(id){HashMap()}.getOrPut(key){GLES20.glGetUniformLocation(id,key)}
+    private fun attribute(id:Int,key:String)=attributeLocations.getOrPut(id){HashMap()}.getOrPut(key){GLES20.glGetAttribLocation(id,key)}
+
+    private fun artUniforms(program:Int) {
+        GLES20.glUniform1f(location(program,"uPanorama36"),if(panoramaTexture36!=0&&DreamHorizons36.contains(player.worldId))1f else 0f)
+        val art=DreamArt33.profile(player.worldId);GLES20.glUniform4f(location(program,"uArtProfile33"),art[0],art[1],art[2],art[3])
+        GLES20.glUniform4f(location(program,"uChapter33"),if(chapter33.past)1f else 0f,chapter33.giant,if(chapter33.flag("lamp-returned"))1f else 0f,if(chapter33.completed)1f else 0f)
+        GLES20.glUniform4f(location(program,"uPlay30"),player.x,player.z,play30.time,play30.trainProgress)
+        val phase30=play30.phase(player.worldId)
+        GLES20.glUniform4f(location(program,"uExposure30"),play30.darkAdapt,if(phase30==3).85f else if(phase30==1).30f else if(phase30==2).12f else 0f,play30.trainProgress,play30.time)
+        GLES20.glUniform1f(location(program,"uUseModel30"),0f)
+        val cloudTime=if(player.worldId in DreamVoyage.photos)frameTime else elapsed
+        GLES20.glUniform3f(location(program,"uCloudCamera"),eye[0],eye[1],eye[2])
+        GLES20.glUniform4f(location(program,"uCloudParams"),DreamGraphics26.cloudScale(player.worldId),85f,105f,DreamGraphics26.cloudSteps(if(DreamPower.indoor(player.worldId))0 else visualLevel))
+        GLES20.glUniform2f(location(program,"uCloudDrift"),(cloudTime*.0011f)%1f,(cloudTime*.00032f)%1f+chapter33.giant*.018f)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE1);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,cloudTexture);GLES20.glUniform1i(location(program,"uClouds"),1)
+        GLES20.glUniform1f(location(program,"uUniverse"),(story.universeSeed%89).toFloat())
+        GLES20.glUniform1f(location(program,"uEclipse"),eclipse)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE6);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,planetsTexture);GLES20.glUniform1i(location(program,"uPlanets"),6)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE7);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,if(player.worldId==DreamVoyage.REFUGE)photoFrames.texture else if(player.worldId==DreamNewDreams.EYES || player.worldId==DreamVigilia27.SKY_ISLAND)guardianTexture else faceTexture);GLES20.glUniform1i(location(program,"uWeeping"),7)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
+    }
+
+    private fun moonUniforms(program:Int) {
+        GLES20.glUniform1f(location(program,"uModeledMoons"),if(lunar27!=null)1f else 0f)
+        GLES20.glUniform1f(location(program,"uLunarBlood"),if(DreamVigilia27.dark(player.worldId))moonLife.redness else 0f)
+        GLES20.glUniform4f(location(program,"uMoonMood"),moonLife.mainBlink,moonLife.smallBlink,moonLife.mainSmile,moonLife.smallSmile)
+        GLES20.glUniform4f(location(program,"uEyeTarget"),moonLife.eyeX,moonLife.eyeY,moonLife.smallEyeX,moonLife.smallEyeY)
+        GLES20.glUniform4f(location(program,"uGiant"),moonLife.giantRadius,1f,moonLife.giantBlink,moonLife.giantReveal)
+        GLES20.glUniform3f(location(program,"uGiantDirection"),moonLife.giantX,moonLife.giantY,moonLife.giantZ)
+    }
+
+    private fun mirrorForWorld()=when(player.worldId){
+        DreamHorror32.POOL->DreamLands.Mirror(0f,-64f,-.10f,24f)
+        DreamReferences.LAKE->DreamLands.Mirror(0f,-130f,.05f,34f)
+        DreamWorlds.POOLS->DreamLands.Mirror(0f,-17f,DreamGraphics26.POOL_WATER,15f)
+        else->DreamLands.mirror(player.worldId)
+    }
+
+    private fun drawSky(mirrored:Boolean=false,late:Boolean=false,horizontal:Boolean=false) {
+        if(late){GLES20.glEnable(GLES20.GL_DEPTH_TEST);GLES20.glDepthFunc(GLES20.GL_LEQUAL);GLES20.glDepthMask(false)}else GLES20.glDisable(GLES20.GL_DEPTH_TEST)
+        GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER,0)
+        GLES20.glUseProgram(skyProgram)
+        moonUniforms(skyProgram)
+        artUniforms(skyProgram)
+        val cloudPlane=DreamGraphics26.waterPlane(player.worldId)?:.05f
+        GLES20.glUniform3f(location(skyProgram,"uCloudCamera"),eye[0],if(horizontal)2f*cloudPlane-eye[1]else eye[1],eye[2])
+        GLES20.glUniform4f(location(skyProgram,"uWeather"),weather.type.toFloat(),weather.strength,weather.anchorX,weather.anchorZ)
+        if(options.weatherVisual34&&acoustics34.rain>.01f)GLES20.glUniform4f(location(skyProgram,"uWeather"),5f,acoustics34.rain,player.x,player.z)
+        val top=location(skyProgram,"uTop")
+        val bottom=location(skyProgram,"uHorizon")
+        if(DreamLands.contains(player.worldId) && DreamLands.night(player.worldId)) {
+            GLES20.glUniform3f(top,.025f,.035f,.12f)
+            GLES20.glUniform3f(bottom,.22f,.24f,.40f)
+        } else if(player.worldId==DreamVigilia27.SKY_ISLAND) {
+            GLES20.glUniform3f(top,.13f,.49f,.83f);GLES20.glUniform3f(bottom,.80f,.90f,.96f)
+        } else if(player.worldId==DreamJourney.DARK) {
+            GLES20.glUniform3f(top,.008f,.012f,.04f)
+            GLES20.glUniform3f(bottom,.065f,.050f,.13f)
+        } else if(DreamExpansion.contains(player.worldId)) {
+            val topColor=DreamExpansion.skyTop(player.worldId)
+            val horizonColor=DreamExpansion.skyHorizon(player.worldId)
+            GLES20.glUniform3f(top,topColor[0],topColor[1],topColor[2])
+            GLES20.glUniform3f(bottom,horizonColor[0],horizonColor[1],horizonColor[2])
+        } else if(player.worldId==DreamWorlds.STATION) {
+            GLES20.glUniform3f(top,.38f,.62f,.95f)
+            GLES20.glUniform3f(bottom,.94f,.86f,.91f)
+        } else if (player.worldId == DreamWorlds.POOLS) {
+            GLES20.glUniform3f(top,.67f,.66f,.89f)
+            GLES20.glUniform3f(bottom,.95f,.82f,.93f)
+        } else if (player.worldId == DreamWorlds.CRATER) {
+            GLES20.glUniform3f(top,.34f,.46f,.75f)
+            GLES20.glUniform3f(bottom,.94f,.80f,.86f)
+        } else if(player.worldId==DreamWorlds.GARDEN) {
+            GLES20.glUniform3f(top,.61f,.64f,.86f)
+            GLES20.glUniform3f(bottom,.99f,.83f,.75f)
+        } else if(player.worldId==DreamWorlds.MEADOW) {
+            GLES20.glUniform3f(top,.15f,.48f,.94f)
+            GLES20.glUniform3f(bottom,.89f,.79f,.90f)
+        } else if(player.worldId==DreamWorlds.AQUARIUM) {
+            GLES20.glUniform3f(top,.36f,.37f,.74f)
+            GLES20.glUniform3f(bottom,.83f,.67f,.83f)
+        } else {
+            GLES20.glUniform3f(top,.30f,.39f,.55f)
+            GLES20.glUniform3f(bottom,.68f,.62f,.77f)
+        }
+        when(player.worldId) {
+            DreamRoutes23.SKY->{GLES20.glUniform3f(top,.025f,.08f,.18f);GLES20.glUniform3f(bottom,.22f,.38f,.46f)}
+            DreamRoutes23.CLOUD,DreamRoutes23.CITY,DreamRoutes23.EDGE->{GLES20.glUniform3f(top,.08f,.40f,.78f);GLES20.glUniform3f(bottom,.73f,.84f,.90f)}
+            DreamNewDreams.ISLAND->{GLES20.glUniform3f(top,.15f,.57f,.76f);GLES20.glUniform3f(bottom,.58f,.80f,.84f)}
+            DreamHorizons.CELESTIAL->{GLES20.glUniform3f(top,.04f,.31f,.70f);GLES20.glUniform3f(bottom,.66f,.80f,.94f)}
+            DreamHorizons.CITY->{GLES20.glUniform3f(top,.22f,.31f,.54f);GLES20.glUniform3f(bottom,.94f,.70f,.52f)}
+            DreamVigilia27.DARK_THREE,DreamVigilia27.DARK_FOUR,DreamHorizons.DARK,DreamHorizons.BED->{GLES20.glUniform3f(top,.008f,.018f,.055f);GLES20.glUniform3f(bottom,.08f,.13f,.25f)}
+            DreamHorizons.TOWER->{GLES20.glUniform3f(top,.08f,.15f,.30f);GLES20.glUniform3f(bottom,.55f,.57f,.65f)}
+        }
+        if(DreamReferences.contains(player.worldId)){
+            val color=when(player.worldId){DreamReferences.ATRIUM->floatArrayOf(.025f,.028f,.035f,.05f,.055f,.065f);DreamReferences.GAS->floatArrayOf(.45f,.40f,.64f,1f,.67f,.46f);DreamReferences.CINEMA->floatArrayOf(.005f,.025f,.065f,.08f,.30f,.48f);DreamReferences.VALLEY->floatArrayOf(.51f,.62f,.65f,.80f,.86f,.84f);else->floatArrayOf(.10f,.43f,.77f,.78f,.88f,.94f)}
+            GLES20.glUniform3f(top,color[0],color[1],color[2]);GLES20.glUniform3f(bottom,color[3],color[4],color[5])
+        }
+        if(player.worldId==DreamWorlds.STATION)when {
+            "ending:DESPERTAR" in story.flags->{GLES20.glUniform3f(top,.36f,.60f,.87f);GLES20.glUniform3f(bottom,1f,.79f,.49f)}
+            "ending:PERMANECER" in story.flags->{GLES20.glUniform3f(top,.012f,.025f,.09f);GLES20.glUniform3f(bottom,.24f,.26f,.42f)}
+            "ending:EL_ECO" in story.flags->{GLES20.glUniform3f(top,.26f,.27f,.48f);GLES20.glUniform3f(bottom,.74f,.66f,.79f)}
+        }
+        GLES20.glUniform1f(location(skyProgram,"uWorld"),
+            DreamJourney.worldCode(player.worldId))
+        GLES20.glUniform1f(location(skyProgram,"uTime"),frameTime)
+        if(DreamHorror32.contains(player.worldId)){
+            val night=player.worldId==DreamHorror32.WITNESSES||player.worldId==DreamHorror32.FOREST
+            GLES20.glUniform3f(top,if(night).006f else .15f,if(night).012f else .26f,if(night).035f else .31f)
+            GLES20.glUniform3f(bottom,if(night).09f else .46f,if(night).10f else .54f,if(night).16f else .55f)
+        }
+        if(player.worldId==DreamRainward34.ID){GLES20.glUniform3f(top,.008f,.013f,.023f);GLES20.glUniform3f(bottom,.065f,.075f,.10f)}
+        when(play30.phase(player.worldId)){
+            1->{GLES20.glUniform3f(top,.17f,.16f,.37f);GLES20.glUniform3f(bottom,.89f,.49f,.38f)}
+            2->{GLES20.glUniform3f(top,.23f,.29f,.49f);GLES20.glUniform3f(bottom,.80f,.63f,.68f)}
+            3->{GLES20.glUniform3f(top,.013f,.024f,.065f);GLES20.glUniform3f(bottom,.10f,.15f,.24f)}
+        }
+        GLES20.glUniform3f(location(skyProgram,"uForward"),
+            forward[0],if(horizontal)-forward[1]else forward[1],if(mirrored)-forward[2] else forward[2])
+        GLES20.glUniform3f(location(skyProgram,"uRight"),cameraRight[0],if(horizontal)-cameraRight[1]else cameraRight[1],if(mirrored)-cameraRight[2] else cameraRight[2])
+        GLES20.glUniform3f(location(skyProgram,"uUp"),
+            cameraUp[0],if(horizontal)-cameraUp[1]else cameraUp[1],if(mirrored)-cameraUp[2] else cameraUp[2])
+        GLES20.glUniform1f(location(skyProgram,"uAspect"),width.toFloat()/height)
+        GLES20.glUniform3f(location(skyProgram,"uSun"),-.34f,.82f,.46f)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE1)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,cloudTexture)
+        GLES20.glUniform1i(location(skyProgram,"uClouds"),1)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE2)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,if(panoramaTexture36!=0)panoramaTexture36 else if(player.worldId==DreamNewDreams.EYES)entityTexture else moonTexture)
+        GLES20.glUniform1i(location(skyProgram,"uMoon"),2)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
+        val xy=attribute(skyProgram,"aXY")
+        GLES20.glEnableVertexAttribArray(xy)
+        skyBuffer.position(0)
+        GLES20.glVertexAttribPointer(xy,2,GLES20.GL_FLOAT,false,0,skyBuffer)
+        GLES20.glUniform1i(location(skyProgram,"uCloudVolume"),3)
+        GLES20.glUniform1f(location(skyProgram,"uCloudReady"),0f)
+        GLES20.glUniform1f(location(skyProgram,"uCloudPass"),0f)
+        val code=DreamJourney.worldCode(player.worldId)
+        val volumeSky=DreamShader28.volumeSky(code)&&DreamShader28.cloudMayIntersect(code,eye[1],forward[1],cameraRight[1],cameraUp[1],width.toFloat()/height)
+        if(late && visualLevel>0 && skyEnhanced && volumeSky && !DreamPower.indoor(player.worldId)){
+            GLES20.glDisable(GLES20.GL_DEPTH_TEST)
+            val skyDepth=post?.depthForSky?:0
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE5);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,skyDepth)
+            GLES20.glUniform1i(location(skyProgram,"uSkyDepth"),5)
+            GLES20.glUniform1f(location(skyProgram,"uSkyDepthReady"),if(skyDepth!=0)1f else 0f)
+            GLES20.glUniform2f(location(skyProgram,"uSkyDepthTexel"),1f/width,1f/height)
+            GLES20.glUniform2f(location(skyProgram,"uCloudViewport"),(width/2).toFloat(),(height/2).toFloat())
+            GLES20.glUniform1f(location(skyProgram,"uCloudPass"),1f)
+            val ready=cloudTarget?.render(width,height,post?.targetForSky?:0){GLES20.glDrawArrays(GLES20.GL_TRIANGLES,0,6)}?:false
+            GLES20.glUniform1f(location(skyProgram,"uCloudPass"),0f)
+            GLES20.glUniform1f(location(skyProgram,"uSkyDepthReady"),0f)
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE5);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,0)
+            if(!ready)GLES20.glUniform4f(location(skyProgram,"uCloudParams"),DreamGraphics26.cloudScale(player.worldId),85f,105f,0f)
+            GLES20.glUniform1f(location(skyProgram,"uCloudReady"),if(ready)1f else 0f)
+            GLES20.glUniform2f(location(skyProgram,"uCloudViewport"),width.toFloat(),height.toFloat())
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE3);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,if(ready)cloudTarget!!.texture else 0)
+            GLES20.glEnable(GLES20.GL_DEPTH_TEST)
+        }
+        GLES20.glDrawArrays(GLES20.GL_TRIANGLES,0,6)
+        GLES20.glDisableVertexAttribArray(xy)
+        GLES20.glEnable(GLES20.GL_DEPTH_TEST)
+        if(!late)GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT)
+        GLES20.glDepthMask(true);GLES20.glDepthFunc(GLES20.GL_LESS)
+    }
+
+    private val encounter32=DreamEncounter32()
+    private var entity32:DreamEntityRenderer32?=null
+    private var surfaceProgram32=0
+    private fun drawWorld(mirrorPass:Boolean=false,phase:Int=0,surface32:Boolean=false) {
+        if(phase!=2&&!surface32&&surfaceProgram32!=0)drawWorld(mirrorPass,1,true)
+        val sceneProgram=if(surface32)surfaceProgram32 else this.sceneProgram
+        GLES20.glUseProgram(sceneProgram)
+        if(phase!=2){
+        val look=DreamLook25.light(player.worldId)
+        GLES20.glUniform4f(location(sceneProgram,"uLook"),look.ambient,look.direct,look.night,visualLevel.toFloat())
+        val cloth=DreamSurfaceTextures.carpetMean
+        GLES20.glUniform3f(location(sceneProgram,"uClothMean"),cloth[0],cloth[1],cloth[2])
+        moonUniforms(sceneProgram)
+        artUniforms(sceneProgram)
+        val tool=DreamTools.equipped(story)
+        GLES20.glUniform4f(location(sceneProgram,"uTools"),if(tool=="lantern")1f else 0f,if(tool=="prism")1f else 0f,0f,0f)
+        GLES20.glUniform3f(location(sceneProgram,"uTorchForward"),forward[0],forward[1],forward[2])
+        val creature=DreamCreature.pose(elapsed)
+        GLES20.glUniform4f(location(sceneProgram,"uCreature"),creature.x,creature.y,creature.z,creature.yaw)
+        GLES20.glUniform1f(location(sceneProgram,"uActorYaw"),0f)
+        GLES20.glUniform1f(location(sceneProgram,"uTrainOffset"),rules.trainOffset)
+        GLES20.glUniform1f(location(sceneProgram,"uCircuit"),if("rule:breaker" in story.flags)1f else 0f)
+        GLES20.glUniform1f(location(sceneProgram,"uPhoto"),if(photoQueued || photoFlash>0f)1f else 0f)
+        GLES20.glUniform4f(location(sceneProgram,"uScene"),events.transform,if("companion:door" in story.flags)1f else 0f,if("companion:cup" in story.flags)1f else 0f,0f)
+        GLES20.glUniform3f(location(sceneProgram,"uBus"),events.busX,DreamJourney.surface(player.worldId,events.busX,events.busZ),events.busZ)
+        GLES20.glUniform4f(location(sceneProgram,"uWeather"),weather.type.toFloat(),weather.strength,weather.anchorX,weather.anchorZ)
+        if(options.weatherVisual34&&acoustics34.rain>.01f)GLES20.glUniform4f(location(sceneProgram,"uWeather"),5f,acoustics34.rain,player.x,player.z)
+        GLES20.glUniform4f(location(sceneProgram,"uStory"),if("lamp:meadow" in story.flags)1f else 0f,story.layout(player.worldId).toFloat(),if(story.flags.any{it.startsWith("drawer:")})1f else 0f,if(DreamObjects.radioNear(player.worldId,player.x,player.z,story))1f else 0f)
+        val lamp=DreamObjects.lamp(player.worldId)
+        GLES20.glUniform3f(location(sceneProgram,"uLamp"),lamp.x,DreamJourney.surface(player.worldId,lamp.x,lamp.z)+2.7f,lamp.z)
+        shadows?.let { shadow ->
+            GLES20.glUniformMatrix4fv(location(sceneProgram,"uLightVP"),1,false,shadow.matrix,0)
+            GLES20.glUniform1f(location(sceneProgram,"uShadowReady"),if(visualLevel>0 && shadow.ready && DreamPower.shadowNeeded(player.worldId))1f else 0f)
+            GLES20.glUniform1f(location(sceneProgram,"uShadowTexel"),if(options.quality==2)1f/1024f else 1f/512f)
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE5);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,shadow.texture)
+            GLES20.glUniform1i(location(sceneProgram,"uShadow"),5)
+        }
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE4);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,materialTexture)
+        GLES20.glUniform1i(location(sceneProgram,"uMaterial"),4)
+        GLES20.glUniformMatrix4fv(location(sceneProgram,"uVP"),1,false,if(mirrorPass)mirrorVP else vp,0)
+        GLES20.glUniformMatrix4fv(location(sceneProgram,"uMirrorVP"),1,false,mirrorVP,0)
+        GLES20.glUniform1f(location(sceneProgram,"uMirrorPass"),if(mirrorPass)1f else 0f)
+        val mirror=mirrorForWorld()
+        val waterPlane=DreamGraphics26.waterPlane(player.worldId)
+        val horizontal=waterPlane!=null
+        GLES20.glUniform1f(location(sceneProgram,"uWaterReflection"),if(horizontal)1f else 0f)
+        GLES20.glUniform1f(location(sceneProgram,"uWaterPlane"),waterPlane?:0f)
+        GLES20.glUniform1f(location(sceneProgram,"uMirrorZ"),mirror?.z?:0f)
+        GLES20.glUniform1f(location(sceneProgram,"uMirrorReady"),if(mirrorValid && !mirrorPass && visualLevel>0)1f else 0f)
+        GLES20.glUniform3f(location(sceneProgram,"uMirrorCenter"),mirror?.x?:9999f,0f,mirror?.z?:9999f)
+        GLES20.glUniform3f(location(sceneProgram,"uEntity"),exploration.presenceX,DreamLands.height(player.worldId,exploration.presenceX,exploration.presenceZ),exploration.presenceZ)
+        GLES20.glUniform1f(location(sceneProgram,"uPresence"),exploration.presenceAlpha)
+        GLES20.glUniform3f(location(sceneProgram,"uCamera"),eye[0],if(mirrorPass && horizontal) 2f*waterPlane!!-eye[1] else eye[1],if(mirrorPass && !horizontal && mirror!=null)2f*mirror.z-eye[2] else eye[2])
+        GLES20.glUniform1f(location(sceneProgram,"uTime"),frameTime)
+        GLES20.glUniform1f(location(sceneProgram,"uAnomaly"),anomalyPower)
+        GLES20.glUniform1f(location(sceneProgram,"uWorld"),
+            DreamJourney.worldCode(player.worldId))
+        when (player.worldId) {
+            DreamWorlds.STATION -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.81f,.85f,.94f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.30f,.88f,.49f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),35f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),118f)
+            }
+            DreamWorlds.POOLS -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.87f,.79f,.91f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.42f,.92f,.19f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),24f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),80f)
+            }
+            DreamWorlds.CRATER -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.77f,.82f,.76f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.41f,.74f,.39f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),105f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),420f)
+            }
+            DreamWorlds.MEADOW -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.78f,.81f,.92f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.22f,.95f,.43f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),70f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),210f)
+            }
+            DreamWorlds.HOUSE_MEADOW, DreamWorlds.HOUSE_CRATER -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.51f,.54f,.65f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.30f,.93f,.29f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),18f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),85f)
+            }
+            DreamWorlds.AQUARIUM -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.67f,.65f,.81f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.30f,.88f,.49f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),42f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),215f)
+            }
+            else -> {
+                GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.88f,.78f,.80f)
+                GLES20.glUniform3f(location(sceneProgram,"uSun"),-.25f,.90f,.37f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogNear"),56f)
+                GLES20.glUniform1f(location(sceneProgram,"uFogFar"),240f)
+            }
+        }
+        if(DreamExpansion.contains(player.worldId)) {
+            val fog=DreamExpansion.fogColor(player.worldId)
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),fog[0],fog[1],fog[2])
+            GLES20.glUniform3f(location(sceneProgram,"uSun"),-.34f,.82f,.46f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),DreamExpansion.fogNear(player.worldId))
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),DreamExpansion.fogFar(player.worldId))
+        }
+        if(player.worldId==DreamJourney.DARK) {
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.055f,.065f,.115f)
+            GLES20.glUniform3f(location(sceneProgram,"uSun"),.10f,.56f,-.82f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),60f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),240f)
+        }
+        if(DreamLands.contains(player.worldId)) {
+            val night=DreamLands.night(player.worldId)
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(night).22f else .78f,if(night).24f else .81f,if(night).40f else .88f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(DreamLands.indoor(player.worldId,player.x,player.z))45f else 125f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),if(DreamLands.indoor(player.worldId,player.x,player.z))180f else 315f)
+        }
+        if(DreamReferences.contains(player.worldId)){
+            val indoors=DreamPower.indoor(player.worldId) || DreamReferences.indoor(player.worldId)
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(indoors).17f else .72f,if(indoors).19f else .79f,if(indoors).23f else .83f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(indoors)55f else 135f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),if(indoors)240f else 420f)
+        }
+        if(DreamNewDreams.contains(player.worldId)){
+            val eyes=player.worldId==DreamNewDreams.EYES
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(eyes).025f else .43f,if(eyes).04f else .74f,if(eyes).03f else .78f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(eyes)125f else 180f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),if(eyes)300f else 520f)
+        }
+        if(DreamRoutes23.contains(player.worldId)){
+            val interior=DreamPower.indoor(player.worldId);val back=player.worldId==DreamBackrooms.ID
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(back).38f else if(interior).20f else .69f,if(back).35f else if(interior).23f else .79f,if(back).18f else if(interior).26f else .84f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(interior)25f else 135f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),if(interior)125f else 410f)
+        }
+        if(DreamVigilia27.contains(player.worldId)){
+            val dark=DreamVigilia27.dark(player.worldId)
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(dark).055f else .69f,if(dark).065f else .82f,if(dark).11f else .91f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(dark)95f else 220f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),if(dark)380f else 520f)
+        }
+        if(DreamHorror32.contains(player.worldId)){
+            val night=player.worldId==DreamHorror32.WITNESSES||player.worldId==DreamHorror32.FOREST
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(night).045f else .30f,if(night).055f else .38f,if(night).09f else .42f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(night)65f else 100f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogFar"),if(night)270f else 420f)
+        }
+        if(player.worldId==DreamRainward34.ID){GLES20.glUniform3f(location(sceneProgram,"uFogColor"),.035f,.043f,.06f);GLES20.glUniform1f(location(sceneProgram,"uFogNear"),28f);GLES20.glUniform1f(location(sceneProgram,"uFogFar"),140f)}
+        val nightLight=player.worldId==DreamRainward34.ID||player.worldId==DreamHorror32.WITNESSES||player.worldId==DreamHorror32.FOREST||player.worldId==DreamNewDreams.EYES||DreamLands.night(player.worldId)||DreamVigilia27.dark(player.worldId)||player.worldId==DreamHorizons.BED
+        GLES20.glUniform3f(location(sceneProgram,"uSun"),if(nightLight).10f else -.40f,if(nightLight).65f else .82f,if(nightLight)-.80f else .40f)
+        if(DreamHorizons36.contains(player.worldId)){
+            val red=player.worldId==DreamHorizons36.RED;val blue=player.worldId==DreamHorizons36.BLUE
+            GLES20.glUniform3f(location(sceneProgram,"uSun"),if(blue)-.72f else -.10f,if(red).35f else .18f,-.90f)
+            GLES20.glUniform3f(location(sceneProgram,"uFogColor"),if(red).36f else .64f,if(red).035f else .74f,if(red).016f else .82f)
+            GLES20.glUniform1f(location(sceneProgram,"uFogNear"),if(red)90f else 240f);GLES20.glUniform1f(location(sceneProgram,"uFogFar"),520f)
+        }
+        if(!mirrorPass) {
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE3)
+            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,mirrorColor)
+            GLES20.glUniform1i(location(sceneProgram,"uReflection"),3)
+        } else {
+            // Never sample a texture while it is attached to the render target.
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE3)
+            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,0)
+            GLES20.glUniform1i(location(sceneProgram,"uReflection"),3)
+        }
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE1)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,cloudTexture)
+        GLES20.glUniform1i(location(sceneProgram,"uClouds"),1)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE2)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,if(panoramaTexture36!=0)panoramaTexture36 else moonTexture)
+        GLES20.glUniform1i(location(sceneProgram,"uMoon"),2)
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,atlasTexture)
+        GLES20.glUniform1i(location(sceneProgram,"uAtlas"),0)
+        }else{
+            val textures=intArrayOf(atlasTexture,cloudTexture,if(panoramaTexture36!=0)panoramaTexture36 else moonTexture,mirrorColor,materialTexture,shadows?.texture?:0,planetsTexture,if(player.worldId==DreamVoyage.REFUGE)photoFrames.texture else if(player.worldId==DreamNewDreams.EYES || player.worldId==DreamVigilia27.SKY_ISLAND)guardianTexture else faceTexture)
+            for(unit in 0..7){GLES20.glActiveTexture(GLES20.GL_TEXTURE0+unit);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,textures[unit])}
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
+        }
+        val drawAttributes=intArrayOf(attribute(sceneProgram,"aPos"),attribute(sceneProgram,"aColor"),attribute(sceneProgram,"aNormal"),attribute(sceneProgram,"aKind"))
+        for(a in drawAttributes)if(a>=0)GLES20.glEnableVertexAttribArray(a)
+        fun drawBuffer(buffer:Int,count:Int,first:Int=0) {gpuMeshes[buffer]?.draw(drawAttributes,first,count)}
+        fun finishAttributes(){for(a in drawAttributes)if(a>=0)GLES20.glDisableVertexAttribArray(a);GLES20.glBindBuffer(GLES20.GL_ELEMENT_ARRAY_BUFFER,0)}
+        val cameraMatrix=if(mirrorPass)mirrorVP else vp
+        val visible=(if(mirrorPass)mirrorVisibility else mainVisibility).select(cameraMatrix,residencyRevision,resident.keys){chunkBounds.getValue(it)}
+        if(phase!=2){
+            GLES20.glDisable(GLES20.GL_BLEND);GLES20.glDepthMask(true)
+            for(key in visible){val mesh=gpuMeshes[resident.getValue(key)]
+                if(surfaceProgram32!=0)mesh?.drawOpaque(drawAttributes,surface32)else drawBuffer(resident.getValue(key),opaqueCounts.getValue(key))}
+            if(surface32){finishAttributes();GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER,0);return}
+        }
+        if(phase!=2)prop30?.draw(sceneProgram,drawAttributes,player.worldId,play30,player.x,player.z,chapter33)
+        if(phase==1){finishAttributes();GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER,0);return}
+        GLES20.glEnable(GLES20.GL_BLEND);GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA,GLES20.GL_ONE_MINUS_SRC_ALPHA)
+        GLES20.glDepthMask(false)
+        for(key in visible){
+            val buffer=resident.getValue(key)
+            val first=opaqueCounts.getValue(key);val count=chunks.getValue(key).originalVertices-first
+            if(count>0)drawBuffer(buffer,count,first)
+        }
+        GLES20.glDepthMask(true)
+        if(player.worldId==DreamWorlds.AQUARIUM){GLES20.glDisable(GLES20.GL_BLEND);drawBuffer(creatureBuffer,creatureCount)}
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE2);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,entityTexture)
+        if(exploration.presenceAlpha>.001f) {
+            GLES20.glEnable(GLES20.GL_BLEND)
+            GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA,GLES20.GL_ONE_MINUS_SRC_ALPHA)
+            GLES20.glDepthMask(false)
+            drawBuffer(figureBuffer,figureCount)
+            GLES20.glDepthMask(true)
+            GLES20.glDisable(GLES20.GL_BLEND)
+        }
+        GLES20.glEnable(GLES20.GL_BLEND)
+        GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA,GLES20.GL_ONE_MINUS_SRC_ALPHA)
+        for(a in actors.actors)if(a.alpha>.01f&&a.role !in listOf("curious","mourner","window")) {
+            val y=DreamJourney.surface(player.worldId,a.x,a.z)+(if(player.worldId==DreamBackrooms.ID)-2f else if(a.role=="window" && player.worldId==DreamExpansion.CLOUD_HOTEL)1.2f else 0f)
+            if(!DreamPerformance.visible(DreamPerformance.Bounds(a.x-3f,y-.2f,a.z-3f,a.x+3f,y+8f,a.z+3f),cameraMatrix,1f))continue
+            GLES20.glUniform3f(location(sceneProgram,"uEntity"),a.x,y,a.z)
+            GLES20.glUniform1f(location(sceneProgram,"uPresence"),a.alpha)
+            GLES20.glUniform1f(location(sceneProgram,"uActorYaw"),-kotlin.math.atan2(player.x-a.x,player.z-a.z))
+            drawBuffer(if(a.role=="friendly")friendlyBuffer else if(a.role=="guide")guideBuffer else if(a.role=="postman")postmanBuffer else if(a.role=="mourner")mournerBuffer else if(a.role=="window")headBuffer else figureBuffer,if(a.role=="friendly")friendlyCount else if(a.role=="guide")guideCount else if(a.role=="postman")postmanCount else if(a.role=="mourner")mournerCount else if(a.role=="window")headCount else figureCount)
+        }
+        if(play30.mimicVisible){val a=play30.mimic;GLES20.glUniform3f(location(sceneProgram,"uEntity"),a.x,DreamJourney.surface(player.worldId,a.x,a.z),a.z);GLES20.glUniform1f(location(sceneProgram,"uPresence"),.63f);GLES20.glUniform1f(location(sceneProgram,"uActorYaw"),a.yaw);drawBuffer(figureBuffer,figureCount)}
+        if(player.worldId==DreamWorlds.MEADOW && events.busVisible) {
+            drawBuffer(busBuffer,busCount)
+            if(events.busAge<15f) {
+                GLES20.glUniform3f(location(sceneProgram,"uEntity"),35f-(if(events.busAge>10f)(events.busAge-10f).coerceAtMost(4f)*2.2f else 0f),DreamJourney.surface(player.worldId,35f,-250f),-250f)
+                GLES20.glUniform1f(location(sceneProgram,"uPresence"),(15f-events.busAge).coerceIn(0f,1f))
+                GLES20.glUniform1f(location(sceneProgram,"uActorYaw"),1.57f)
+                drawBuffer(figureBuffer,figureCount)
+            }
+        }
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE2);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,if(panoramaTexture36!=0)panoramaTexture36 else moonTexture)
+        if(actors.traceLife>0f) {
+            GLES20.glUniform3f(location(sceneProgram,"uEntity"),actors.traceX,DreamJourney.surface(player.worldId,actors.traceX,actors.traceZ),actors.traceZ)
+            drawBuffer(traceBuffer,traceCount)
+        }
+        if(options.weatherVisual34&&acoustics34.rain>.01f){
+            GLES20.glEnable(GLES20.GL_BLEND);GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA,GLES20.GL_ONE_MINUS_SRC_ALPHA)
+            GLES20.glUniform3f(location(sceneProgram,"uEntity"),player.x,player.y-1.65f,player.z)
+            GLES20.glDepthMask(false);drawBuffer(rainBuffer,rainCount);GLES20.glDepthMask(true);GLES20.glUniform3f(location(sceneProgram,"uEntity"),0f,0f,0f);GLES20.glDisable(GLES20.GL_BLEND)
+        }
+        if(weather.strength>.01f && weather.type in 1..3) {
+            GLES20.glDepthMask(false)
+            GLES20.glUniform3f(location(sceneProgram,"uEntity"),weather.anchorX,DreamJourney.surface(player.worldId,weather.anchorX,weather.anchorZ),weather.anchorZ)
+            if(weather.type==1)drawBuffer(rainBuffer,rainCount)
+            if(weather.type==3)drawBuffer(skyHouseBuffer,skyHouseCount)
+            GLES20.glDepthMask(true)
+        }
+        GLES20.glDisable(GLES20.GL_BLEND)
+        GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER,0)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,0)
+        finishAttributes()
+    }
+
+    override fun onDrawFrame(gl: GL10?) {
+        if(suspended){lastFrameNanos=0L;GLES20.glClearColor(.05f,.08f,.11f,1f);GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT or GLES20.GL_DEPTH_BUFFER_BIT);return}
+        val now=System.nanoTime()
+        val foregroundDt=if(lastFrameNanos==0L)0f else
+            ((now-lastFrameNanos)/1_000_000_000f).coerceIn(0f,.25f)
+        val measuredInterval33=if(lastFrameNanos==0L)0L else now-lastFrameNanos
+        val dt=foregroundDt.coerceAtMost(.05f)
+        lastFrameNanos=now
+        update(dt,foregroundDt)
+        visualLevel=DreamGraphics26.level(options.quality,options.thermalCap,options.powerMode)
+        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT or GLES20.GL_DEPTH_BUFFER_BIT)
+        frameTime=if(player.worldId in DreamVoyage.photos)74f+DreamVoyage.photos.indexOf(player.worldId)*33f else elapsed%512f
+        val walking=(abs(walkVelocityX)+abs(walkVelocityY)).coerceIn(0f,1f)
+        val bob=sin(walkTime*8.5f)*.017f*walking * (if(options.reduceMotion)0f else 1f)*
+            (if(player.worldId==DreamWorlds.CRATER && !craterPhysics.grounded) 0f else 1f)
+        val gravity=player.worldId==DreamGravity.ID
+        eye=if(gravity)DreamGravity.point(player.x,player.z,player.y+bob)else floatArrayOf(player.x,player.y+bob,player.z)
+        if(chapter33.hidden.isNotEmpty()){val node=chapter33.nodes(player.worldId).firstOrNull{it.key=="c33:hide:"+chapter33.hidden};if(node!=null)eye=floatArrayOf(node.x,if(chapter33.hidden=="wardrobe")1.87f else .55f,node.z+.15f)}
+        if(!options.reduceMotion&&chapter33.giant>.1f)eye[1]+=sin(elapsed*6f)*.018f*chapter33.giant
+        val lookYaw33=if(chapter33.hidden=="wardrobe")kotlin.math.PI.toFloat()else player.yaw
+        fun axis(x:Float,y:Float,z:Float)=if(gravity)DreamGravity.vector(player.z,x,y,z)else floatArrayOf(x,y,z)
+        forward=axis(sin(lookYaw33)*cos(pitch),sin(pitch),-cos(lookYaw33)*cos(pitch))
+        cameraUp=axis(-sin(lookYaw33)*sin(pitch),cos(pitch),cos(lookYaw33)*sin(pitch))
+        cameraRight=axis(cos(lookYaw33),0f,sin(lookYaw33))
+        fatal35.target?.let{p->if(fatal35.held){
+            val f=fatal35;val q=(f.progress/.28f).coerceIn(0f,1f);val blend=q*q*(3f-2f*q)
+            val face=when(p.model){"observatory"->9.4f;"root-eye"->11f;"mushroom"->3f;"water-eye"->1.4f;"gentleman"->4.1f;"tenant"->4.34f;"seraph"->3.6f;else->4.8f}
+            val cy=DreamJourney.surface(player.worldId,p.x,p.z)+p.y+face*p.scale
+            val distance=maxOf(1.25f,p.scale*1.25f)
+            val goal=floatArrayOf(p.x+heldDirection35[0]*distance,cy-(if(p.model=="water-eye").15f else .20f),p.z+heldDirection35[2]*distance)
+            val amount=if(options.reduceMotion)blend*.18f else blend
+            eye=FloatArray(3){heldEye35[it]+(goal[it]-heldEye35[it])*amount}
+            if(!options.reduceMotion)eye[1]+=kotlin.math.sin(f.time*(1.2f+f.style*.23f))*.045f*(if(f.progress>.46f)1f else 0f)
+            val target=floatArrayOf(p.x,cy,p.z);val delta=FloatArray(3){target[it]-eye[it]};val length=sqrt(delta.sumOf{(it*it).toDouble()}).toFloat().coerceAtLeast(.01f)
+            forward=FloatArray(3){delta[it]/length};cameraUp=floatArrayOf(0f,1f,0f)
+        }}
+        Matrix.setLookAtM(view,0,eye[0],eye[1],eye[2],eye[0]+forward[0],eye[1]+forward[1],eye[2]+forward[2],cameraUp[0],cameraUp[1],cameraUp[2])
+        Matrix.perspectiveM(projection,0,if(play30.telescope)24f else 66f,width.toFloat()/height.coerceAtLeast(1),.18f,520f)
+        Matrix.multiplyMM(vp,0,projection,0,view,0)
+        ensureActiveScene();updateResidency()
+        labelTimer-=foregroundDt
+        if(labelTimer<=0f){labelTimer=.12f;portalLabels=DreamPortalNames.project(player.worldId,eye,vp){x,y,z,d->photoSight?.clear(eye[0],eye[1],eye[2],x,y,z,d)?:true}}
+        if(appliedQuality!=options.quality) {
+            appliedQuality=options.quality
+            textureStream33?.close();textureStream33=DreamTextureStream33(context,options.quality)
+            val maps=textureStream33!!.maps;atlasTexture=maps.first;materialTexture=maps.second
+            shadows?.configure(if(enhanced && colorTargetsReady)options.quality else 0)
+        }
+        priorityAge33+=foregroundDt
+        if(textureStream33?.refining==true&&priorityAge33>.5f){priorityAge33=0f;val cell=DreamChunks.key(player.x,player.z);tilePriority33=DreamMaterialPriority33.nearest(materialBounds33.filterKeys{abs(it.x-cell.x)<=1&&abs(it.z-cell.z)<=1}.values,player.x,player.z)}
+        textureStream33?.step(player.worldId,tilePriority33);textureStream33?.maps?.let{atlasTexture=it.first;materialTexture=it.second}
+        if(visualLevel>0 && DreamPower.shadowNeeded(player.worldId))shadows?.render(elapsed,eye[0],eye[1],eye[2],player.worldId==DreamRainward34.ID||player.worldId==DreamHorror32.WITNESSES||player.worldId==DreamHorror32.FOREST||player.worldId==DreamNewDreams.EYES||DreamLands.night(player.worldId)||DreamVigilia27.dark(player.worldId)||player.worldId==DreamHorizons.BED,width,height){ id ->
+            val pos=GLES20.glGetAttribLocation(id,"aPos");val kind=GLES20.glGetAttribLocation(id,"aKind")
+            val color=GLES20.glGetAttribLocation(id,"aColor")
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE0);GLES20.glBindTexture(GLES20.GL_TEXTURE_2D,atlasTexture)
+            GLES20.glUniform1i(GLES20.glGetUniformLocation(id,"uAtlas"),0)
+            GLES20.glUniform3f(GLES20.glGetUniformLocation(id,"uEntity"),0f,0f,0f)
+            for((key,buffer)in resident) {
+                if(!DreamPerformance.visible(chunkBounds.getValue(key),shadows!!.matrix,2f))continue
+                GLES20.glEnableVertexAttribArray(pos);GLES20.glEnableVertexAttribArray(kind)
+                if(color>=0)GLES20.glEnableVertexAttribArray(color)
+                gpuMeshes[buffer]?.draw(intArrayOf(pos,color,-1,kind),shadow=true)
+            }
+            GLES20.glDisableVertexAttribArray(pos);GLES20.glDisableVertexAttribArray(kind)
+            if(color>=0)GLES20.glDisableVertexAttribArray(color)
+            GLES20.glBindBuffer(GLES20.GL_ELEMENT_ARRAY_BUFFER,0)
+        }
+        val mirror=mirrorForWorld()
+        val waterPlane=DreamGraphics26.waterPlane(player.worldId)
+        val horizontal=waterPlane!=null
+        val mirrorBounds=mirror?.let{if(horizontal)DreamPerformance.Bounds(it.x-it.half,it.y-.1f,it.z-it.half,it.x+it.half,it.y+.1f,it.z+it.half)else DreamPerformance.Bounds(it.x-it.half,it.y-it.half,it.z-.2f,it.x+it.half,it.y+it.half,it.z+.2f)}
+        val mirrorNear=mirror!=null && mirrorBounds!=null && DreamPerformance.visible(mirrorBounds,vp,1f) && (if(horizontal)hypot(player.x-mirror.x,player.z-mirror.z)<(if(player.worldId==DreamWorlds.POOLS)65f else 100f) else abs(player.x-mirror.x)<65f && player.z>mirror.z+.35f && player.z<mirror.z+70f)
+        if(!mirrorNear)mirrorValid=false
+        val mirrorMoved=mirrorCamera[0].isNaN() || abs(player.x-mirrorCamera[0])>.04f || abs(player.y-mirrorCamera[1])>.04f || abs(player.z-mirrorCamera[2])>.04f || abs(player.yaw-mirrorCamera[3])>.008f || abs(pitch-mirrorCamera[4])>.008f
+        if(visualLevel>0 && mirrorNear && mirrorFbo!=0 && elapsed-mirrorTime>DreamPower.mirrorInterval(mirrorMoved,DreamPower.fps(options.fps,options.thermalCap,options.powerMode),options.thermalCap)) {
+            mirrorCamera=floatArrayOf(player.x,player.y,player.z,player.yaw,pitch)
+            mirrorTime=elapsed
+            // V * translation(2z) * reflection(z): a true planar camera reflection.
+            view.copyInto(mirrorView)
+            if(horizontal){Matrix.translateM(mirrorView,0,0f,2f*waterPlane!!,0f);Matrix.scaleM(mirrorView,0,1f,-1f,1f)}
+            else{Matrix.translateM(mirrorView,0,0f,0f,2f*mirror!!.z);Matrix.scaleM(mirrorView,0,1f,1f,-1f)}
+            Matrix.multiplyMM(mirrorVP,0,projection,0,mirrorView,0)
+            GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER,mirrorFbo)
+            GLES20.glViewport(0,0,512,512)
+            GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT or GLES20.GL_DEPTH_BUFFER_BIT)
+            drawSky(mirrored=!horizontal,horizontal=horizontal);drawWorld(true)
+            entity32?.draw(mirrorVP,if(horizontal)floatArrayOf(eye[0],2f*waterPlane!!-eye[1],eye[2])else floatArrayOf(eye[0],eye[1],2f*mirror!!.z-eye[2]),player.worldId,elapsed,encounter32.approach,if(horizontal)waterPlane else null,dynamicBodies35(),true,chapter33.echoAim,fatal35)
+            GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER,0)
+            GLES20.glViewport(0,0,width,height)
+            mirrorValid=true
+        }
+        if(player.worldId==DreamVoyage.REFUGE && photoFrames.dirty)photoFrames.load()
+        post?.begin(width,height,if(enhanced)visualLevel else 0)
+        drawWorld(phase=1);entity32?.draw(vp,eye,player.worldId,elapsed,encounter32.approach,extra=dynamicBodies35(),gesture=chapter33.echoAim,attack=fatal35);drawSky(late=true);lunar27?.draw(vp,eye,player.worldId,moonLife);drawWorld(phase=2)
+        post?.end(projection,visualLevel)
+        if(photoQueued) {
+            photoQueued=false;photoFlash=.25f
+            val temporary=DreamChronicle();temporary.flags.addAll(story.flags)
+            pendingClues=DreamPhotography.photograph(player.worldId,player.x,player.y,player.z,player.yaw,pitch,temporary){ target,distance ->
+                photoSight?.clear(player.x,player.y,player.z,(target.x-player.x)/distance,(target.y-player.y)/distance,(target.z-player.z)/distance,distance-.8f)?:true
+            }
+            pendingMysteryPhoto=DreamMystery.photoCandidate(player.worldId,player.x,player.y,player.z,player.yaw,pitch){dx,dy,dz,d->photoSight?.clear(player.x,player.y,player.z,dx,dy,dz,d)?:true}
+            photoStore.capture(width,height,player.worldId,story.visits[player.worldId]?:1){success->photoComplete=success}
+        }
+        metrics33.frame(player.worldId,measuredInterval33,System.nanoTime()-now,DreamPower.fps(options.fps,options.thermalCap,options.powerMode))
+    }
+}

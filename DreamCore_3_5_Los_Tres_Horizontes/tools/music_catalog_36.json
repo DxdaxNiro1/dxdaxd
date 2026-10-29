@@ -1,0 +1,83 @@
+[
+  {
+    "number": 65,
+    "world": "horizon_doors36",
+    "title": "Puertas donde duerme el sol",
+    "map": "Las puertas del último sol",
+    "lead": "glass",
+    "root": 55,
+    "motif": [
+      0,
+      7,
+      9,
+      4,
+      12,
+      7
+    ],
+    "harmony": [
+      0,
+      -5,
+      3,
+      0
+    ],
+    "pulse": 8.8,
+    "seconds": 112,
+    "seed": 36000,
+    "resource": "music_score_65_36",
+    "cover": "music_cover_65_36"
+  },
+  {
+    "number": 66,
+    "world": "horizon_crimson36",
+    "title": "El peso de otro cielo",
+    "map": "Bajo el gigante carmesí",
+    "lead": "bow",
+    "root": 39,
+    "motif": [
+      0,
+      1,
+      7,
+      6,
+      3,
+      0
+    ],
+    "harmony": [
+      0,
+      -5,
+      3,
+      0
+    ],
+    "pulse": 9.600000000000001,
+    "seconds": 116,
+    "seed": 36137,
+    "resource": "music_score_66_36",
+    "cover": "music_cover_66_36"
+  },
+  {
+    "number": 67,
+    "world": "horizon_blue36",
+    "title": "Antes de abrir los ojos",
+    "map": "La roca del océano infinito",
+    "lead": "felt",
+    "root": 58,
+    "motif": [
+      0,
+      4,
+      11,
+      7,
+      2,
+      9
+    ],
+    "harmony": [
+      0,
+      -5,
+      3,
+      0
+    ],
+    "pulse": 10.4,
+    "seconds": 120,
+    "seed": 36274,
+    "resource": "music_score_67_36",
+    "cover": "music_cover_67_36"
+  }
+]

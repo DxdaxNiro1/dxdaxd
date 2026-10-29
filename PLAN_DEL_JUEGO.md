@@ -1,3 +1,11 @@
+## Actualización 3.5 · Los tres horizontes
+
+Petición del usuario: crear los tres mapas de sus imágenes, acercar el acabado del mar, cielo y planeta a esas referencias, permitir caminar hasta el borde y saltar, escuchar el aire durante la caída y cerrar los ojos antes de llegar para reaparecer arriba.
+
+Implementado: isla del último sol con puertas y escaleras transitables, valle carmesí y roca de 76 m sobre océano azul. Nuevos cielos panorámicos originales compartidos con el agua reflectante, alternativa procedural y compatibilidad GLES2. Física de caída real, viento por velocidad, párpados, cambio de posición sólo en negro y guardado sobre terreno firme. Sin muros de perímetro; las superficies de agua no se vuelven caminos. Las puertas que están en el cielo distante son paisaje; las escaleras y puertas con señal son accesibles. Se conservan los accesos y el contenido anterior: 66 mundos y 67 temas.
+
+Límites: los planetas/nubes lejanos son panoramas y no modelos volumétricos; la aproximación visual no es una copia idéntica de las ilustraciones. Falta medir interacción, reproducción, FPS y temperatura en los teléfonos reales. Galería técnica de esta entrega disponible en VISTAS.md.
+
 ## Actualización 3.4 · Umbral y furia (2026-10-28, America/La_Paz)
 
 Petición: reorganizar mapa y accesos por colores y mejores posiciones, mejorar criaturas y añadir agarre, mirada, furia, grito, muerte y sangre con una secuencia diferente por espectro.

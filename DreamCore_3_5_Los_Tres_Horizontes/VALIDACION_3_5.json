@@ -1,0 +1,71 @@
+{
+  "version": "3.5",
+  "version_code": 36,
+  "application_id": "com.dreamcore.game",
+  "worlds": 66,
+  "music_tracks": 67,
+  "android": {
+    "assembleDebug": "PASS",
+    "lintDebug": "PASS",
+    "lint_errors": 0,
+    "min_sdk": 19,
+    "target_sdk": 34
+  },
+  "core_checks": {
+    "checks": {
+      "Journey19Check": 711,
+      "CraterPhysicsCheck": 36,
+      "RadialFallCheck": 480,
+      "MoonTravel17Check": 81,
+      "Ecos18Check": 847,
+      "Horizons19Check": 785,
+      "Voyage20Check": 5314,
+      "References21Check": 858,
+      "Miradas22Check": 6296,
+      "Desvios23Check": 63733,
+      "Resonancias24Check": 539,
+      "Graphics26Check": 496,
+      "Vigilia27Check": 64180,
+      "Fluidez28Check": 50776,
+      "Compatibility29Check": 1472,
+      "UltimoTren30Check": 114,
+      "Terror32Check": 349,
+      "Memoria33Check": 1270,
+      "Walking33Check": 141,
+      "ChapterVisual33Check": 86,
+      "Ecos34Check": 278,
+      "Furia35Check": 207,
+      "Horizons36Check": 52
+    },
+    "total": 199101
+  },
+  "latest_physics_collision_test": "52 assertions executed against final DreamAirfall36 + DreamHorizons36 after stair support alignment",
+  "gles_shader_pairs": 671,
+  "actual_gles_views": 24,
+  "sound_checks": 32,
+  "music_lifecycle_checks": 167,
+  "resources": {
+    "inherited_resources_unchanged": 234,
+    "old_64_scores_unchanged": true,
+    "new_resources": [
+      "drawable-nodpi/music_cover_67_36.png",
+      "drawable-nodpi/horizon_sky_0_36.jpg",
+      "drawable-nodpi/horizon_sky_1_36.jpg",
+      "drawable-nodpi/music_cover_65_36.png",
+      "drawable-nodpi/music_cover_66_36.png",
+      "drawable-nodpi/horizon_sky_2_36.jpg",
+      "raw/music_score_65_36.ogg",
+      "raw/music_score_66_36.ogg",
+      "raw/fx_fall_wind36.ogg",
+      "raw/music_score_67_36.ogg"
+    ]
+  },
+  "phone_tested": false,
+  "windows_installer": "static inspection only",
+  "limitations": [
+    "No physical handset controls/audio/temperature/FPS certification.",
+    "Panoramic skies provide distant clouds and planets; land, stairs and doors are geometry.",
+    "Finite land and open edges, not infinite walkable terrain.",
+    "Images are an artistic approximation of references."
+  ]
+}

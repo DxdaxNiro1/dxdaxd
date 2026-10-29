@@ -1,0 +1,131 @@
+{
+  "original_synthesis": true,
+  "sounds": [
+    {
+      "name": "choir",
+      "seconds": 1.1499773242630384,
+      "peak": 0.6939922571182251,
+      "decoded_bytes": 50714,
+      "bytes": 8684
+    },
+    {
+      "name": "mask",
+      "seconds": 1.2700226757369615,
+      "peak": 0.7150887250900269,
+      "decoded_bytes": 56008,
+      "bytes": 9211
+    },
+    {
+      "name": "witness",
+      "seconds": 1.3899773242630384,
+      "peak": 0.7261175513267517,
+      "decoded_bytes": 61298,
+      "bytes": 9765
+    },
+    {
+      "name": "crimson",
+      "seconds": 1.5099773242630385,
+      "peak": 0.7100760340690613,
+      "decoded_bytes": 66590,
+      "bytes": 10300
+    },
+    {
+      "name": "antler",
+      "seconds": 1.6300226757369614,
+      "peak": 0.6782098412513733,
+      "decoded_bytes": 71884,
+      "bytes": 10758
+    },
+    {
+      "name": "gold",
+      "seconds": 1.1499773242630384,
+      "peak": 0.6849212646484375,
+      "decoded_bytes": 50714,
+      "bytes": 8677
+    },
+    {
+      "name": "star",
+      "seconds": 1.2700226757369615,
+      "peak": 0.6673210263252258,
+      "decoded_bytes": 56008,
+      "bytes": 9278
+    },
+    {
+      "name": "observatory",
+      "seconds": 1.3899773242630384,
+      "peak": 0.6940706968307495,
+      "decoded_bytes": 61298,
+      "bytes": 9822
+    },
+    {
+      "name": "mushroom",
+      "seconds": 1.5099773242630385,
+      "peak": 0.7015420198440552,
+      "decoded_bytes": 66590,
+      "bytes": 10339
+    },
+    {
+      "name": "water_eye",
+      "seconds": 1.6300226757369614,
+      "peak": 0.6919276118278503,
+      "decoded_bytes": 71884,
+      "bytes": 10941
+    },
+    {
+      "name": "tenant",
+      "seconds": 1.1499773242630384,
+      "peak": 0.7121358513832092,
+      "decoded_bytes": 50714,
+      "bytes": 8794
+    },
+    {
+      "name": "curious",
+      "seconds": 1.2700226757369615,
+      "peak": 0.7091549038887024,
+      "decoded_bytes": 56008,
+      "bytes": 9353
+    },
+    {
+      "name": "mourner",
+      "seconds": 1.3899773242630384,
+      "peak": 0.7200613021850586,
+      "decoded_bytes": 61298,
+      "bytes": 9859
+    },
+    {
+      "name": "window",
+      "seconds": 1.5099773242630385,
+      "peak": 0.7376101016998291,
+      "decoded_bytes": 66590,
+      "bytes": 10528
+    },
+    {
+      "name": "cone",
+      "seconds": 1.6300226757369614,
+      "peak": 0.6931841969490051,
+      "decoded_bytes": 71884,
+      "bytes": 11128
+    },
+    {
+      "name": "root_eye",
+      "seconds": 1.1499773242630384,
+      "peak": 0.7063875198364258,
+      "decoded_bytes": 50714,
+      "bytes": 8828
+    },
+    {
+      "name": "gentleman",
+      "seconds": 1.2700226757369615,
+      "peak": 0.7031816840171814,
+      "decoded_bytes": 56008,
+      "bytes": 9366
+    },
+    {
+      "name": "seraph",
+      "seconds": 1.3899773242630384,
+      "peak": 0.6892136335372925,
+      "decoded_bytes": 61298,
+      "bytes": 9907
+    }
+  ]
+}
